@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-03T20:15:52.128598+00:00",
+  "estado": "OK",
+  "juegos_chequeados": [
+    "Call of Duty: Black Ops 7",
+    "Call of Duty: Warzone"
+  ],
+  "activision": {
+    "Call of Duty: Black Ops 7": {
+      "estado": "OK",
+      "eventos_activos": []
+    },
+    "Call of Duty: Warzone": {
+      "estado": "OK",
+      "eventos_activos": []
+    }
+  },
+  "tweets_recientes": [],
+  "eventos_activos": []
+}

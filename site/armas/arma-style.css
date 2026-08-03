@@ -1,0 +1,683 @@
+/* ════════════════════════════════════════════
+   arma-style.css — Estilos compartidos
+   Todas las páginas de arma usan este CSS
+   ════════════════════════════════════════════ */
+
+/* ─── BREADCRUMB ─── */
+.weapon-breadcrumb {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+}
+.weapon-breadcrumb a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.weapon-breadcrumb a:hover { color: #F0C419; }
+
+/* ─── HERO ─── */
+.weapon-hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 24px 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.weapon-hero h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6.5vw, 4.8rem);
+    letter-spacing: 0.02em;
+    line-height: 0.95;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #fff 0%, #F0C419 60%, #FF9500 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.weapon-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 22px;
+    letter-spacing: 0.02em;
+}
+.weapon-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+.hero-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.72rem;
+    padding: 6px 14px;
+    letter-spacing: 0.1em;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.hero-badge.tier-s {
+    background: linear-gradient(135deg, #F0C419, #FF9500);
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 16px rgba(240,196,25,0.4);
+}
+.hero-badge.tier-a {
+    background: rgba(0,255,135,0.15);
+    color: #00FF87;
+    border: 1px solid rgba(0,255,135,0.4);
+}
+.hero-badge.tier-b {
+    background: rgba(0,168,255,0.15);
+    color: #00A8FF;
+    border: 1px solid rgba(0,168,255,0.4);
+}
+.hero-badge.tier-c {
+    background: rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.hero-badge.type {
+    background: rgba(0,168,255,0.1);
+    color: #00A8FF;
+    border: 1px solid rgba(0,168,255,0.3);
+}
+.hero-badge.rank {
+    background: rgba(0,255,135,0.1);
+    color: #00FF87;
+    border: 1px solid rgba(0,255,135,0.3);
+}
+
+.weapon-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+}
+.stat-mini {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 12px 14px;
+    border-radius: 4px;
+}
+.stat-mini .label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.stat-mini .value {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #F0C419;
+}
+
+.weapon-hero-image { position: relative; }
+.weapon-hero-image img {
+    width: 100%;
+    max-width: 540px;
+    filter: drop-shadow(0 16px 40px rgba(240,196,25,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+    margin-left: auto;
+    display: block;
+}
+
+/* ─── SECCIONES ─── */
+.loadouts-section,
+.all-attachments-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px 30px;
+    border-top: 1px solid rgba(240,196,25,0.1);
+}
+.section-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+    color: #fff;
+}
+.section-title .accent { color: #F0C419; }
+.section-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.loadout-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    flex-wrap: wrap;
+}
+.loadout-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 13px 22px;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: -1px;
+}
+.loadout-tab:hover { color: rgba(255,255,255,0.8); }
+.loadout-tab.active {
+    color: #F0C419;
+    border-bottom-color: #F0C419;
+}
+.loadout-content { display: none; }
+.loadout-content.active { display: block; }
+
+/* Cards grandes (loadout meta) */
+.loadout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.attachment-card {
+    background: linear-gradient(180deg, rgba(240,196,25,0.04) 0%, rgba(255,255,255,0.015) 100%);
+    border: 1px solid rgba(240,196,25,0.18);
+    border-left: 3px solid #F0C419;
+    border-radius: 0 4px 4px 0;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.2s;
+}
+.attachment-card:hover {
+    background: linear-gradient(180deg, rgba(240,196,25,0.08) 0%, rgba(255,255,255,0.025) 100%);
+    transform: translateX(2px);
+}
+.att-icon-frame {
+    width: 64px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(240,196,25,0.12) 0%, transparent 70%);
+    border: 1px solid rgba(240,196,25,0.25);
+    border-radius: 3px;
+    position: relative;
+}
+.att-icon-frame::before,
+.att-icon-frame::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-color: rgba(240,196,25,0.6);
+}
+.att-icon-frame::before {
+    top: -1px; left: -1px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+.att-icon-frame::after {
+    bottom: -1px; right: -1px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.att-icon-frame img {
+    max-width: 92%;
+    max-height: 92%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter:
+      brightness(1.3) contrast(1.4) saturate(1.5)
+      sepia(0.3) hue-rotate(-8deg)
+      drop-shadow(0 2px 5px rgba(240,196,25,0.35));
+    transition: filter 0.2s;
+}
+.attachment-card:hover .att-icon-frame img {
+    filter:
+      brightness(1.55) contrast(1.5) saturate(1.8)
+      sepia(0.4) hue-rotate(-10deg)
+      drop-shadow(0 0 12px rgba(240,196,25,0.6));
+}
+.att-info { flex: 1; min-width: 0; }
+.att-slot {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.62rem;
+    color: rgba(240,196,25,0.75);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.att-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.att-level {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    background: rgba(0,255,135,0.1);
+    color: #00FF87;
+    border: 1px solid rgba(0,255,135,0.3);
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Código de clase */
+.class-code-box {
+    background: linear-gradient(135deg, rgba(0,255,135,0.05) 0%, rgba(0,168,255,0.03) 100%);
+    border: 1px solid rgba(0,255,135,0.25);
+    border-radius: 4px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.class-code-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00FF87, transparent);
+    opacity: 0.5;
+}
+.code-info { flex: 1; min-width: 0; }
+.code-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    color: rgba(0,255,135,0.8);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.code-value {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.35rem;
+    color: #fff;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    word-break: break-all;
+}
+.copy-btn {
+    background: rgba(0,255,135,0.1);
+    border: 1px solid rgba(0,255,135,0.4);
+    color: #00FF87;
+    padding: 9px 16px;
+    border-radius: 3px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+.copy-btn:hover {
+    background: rgba(0,255,135,0.2);
+    box-shadow: 0 0 14px rgba(0,255,135,0.2);
+}
+.copy-btn.copied { background: #00FF87; color: #000; }
+
+.loadout-tip {
+    background: rgba(0,168,255,0.04);
+    border-left: 3px solid #00A8FF;
+    padding: 14px 18px;
+    border-radius: 0 4px 4px 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+.loadout-tip strong { color: #00A8FF; font-weight: 700; }
+
+/* Placeholder cuando no hay loadout meta confirmado */
+.loadout-pending {
+    background: rgba(240,196,25,0.04);
+    border: 1px dashed rgba(240,196,25,0.3);
+    border-radius: 6px;
+    padding: 36px 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.loadout-pending-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+.loadout-pending h3 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #F0C419;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+.loadout-pending p {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* Chips de filtro (Mejora 3) */
+.slot-chips-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(180deg, #05070A 0%, rgba(5,7,10,0.95) 90%, transparent 100%);
+    padding: 14px 0 12px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(240,196,25,0.1);
+}
+.slot-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.slot-chip-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+.slot-chip {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.65);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.slot-chip:hover {
+    background: rgba(240,196,25,0.08);
+    border-color: rgba(240,196,25,0.3);
+    color: #F0C419;
+    transform: translateY(-1px);
+}
+.slot-chip.active {
+    background: rgba(240,196,25,0.15);
+    border-color: #F0C419;
+    color: #F0C419;
+    box-shadow: 0 0 14px rgba(240,196,25,0.25);
+}
+.slot-chip-count {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.65rem;
+    opacity: 0.6;
+}
+.slot-chip.active .slot-chip-count { opacity: 1; }
+
+/* Slot groups */
+.slot-group {
+    margin-bottom: 28px;
+    scroll-margin-top: 80px;
+}
+.slot-heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #F0C419;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(240,196,25,0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.slot-heading .slot-count {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.4);
+    font-weight: normal;
+}
+.attachments-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 6px;
+}
+
+/* Lista compacta con hover MEJORADO (Mejora 1) */
+.attachment-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-left: 3px solid transparent;
+    padding: 10px 14px;
+    border-radius: 0 3px 3px 0;
+    transition: all 0.25s cubic-bezier(.2,.8,.3,1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.attachment-row::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240,196,25,0.06), transparent);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+.attachment-row:hover {
+    background: rgba(240,196,25,0.08);
+    border-color: rgba(240,196,25,0.4);
+    border-left-color: #F0C419;
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(240,196,25,0.12), inset 0 0 0 1px rgba(240,196,25,0.05);
+}
+.attachment-row:hover::after { left: 100%; }
+.attachment-row:hover .att-row-name { color: #F0C419; text-shadow: 0 0 12px rgba(240,196,25,0.3); }
+.attachment-row:hover .att-row-slot-tag { color: rgba(240,196,25,1); }
+.attachment-row.in-loadout {
+    background: rgba(240,196,25,0.06);
+    border-color: rgba(240,196,25,0.3);
+    border-left-color: #F0C419;
+}
+.attachment-row.in-loadout:hover {
+    background: linear-gradient(90deg, rgba(240,196,25,0.12) 0%, rgba(255,107,0,0.04) 100%);
+}
+
+.row-icon-frame {
+    width: 56px; height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(240,196,25,0.08) 0%, transparent 70%);
+    position: relative;
+}
+.row-icon-frame::before,
+.row-icon-frame::after {
+    content: '';
+    position: absolute;
+    width: 6px; height: 6px;
+    border-color: rgba(240,196,25,0.4);
+}
+.row-icon-frame::before {
+    top: 0; left: 0;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+.row-icon-frame::after {
+    bottom: 0; right: 0;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.row-icon-frame img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter:
+      brightness(1.25) contrast(1.35) saturate(1.4)
+      sepia(0.25) hue-rotate(-8deg)
+      drop-shadow(0 1px 3px rgba(240,196,25,0.25));
+    transition: filter 0.2s;
+}
+.attachment-row:hover .row-icon-frame img {
+    filter:
+      brightness(1.5) contrast(1.45) saturate(1.7)
+      sepia(0.35) hue-rotate(-10deg)
+      drop-shadow(0 0 8px rgba(240,196,25,0.55));
+}
+.att-row-info { flex: 1; min-width: 0; }
+.att-row-slot-tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.58rem;
+    color: rgba(240,196,25,0.6);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.attachment-row.in-loadout .att-row-slot-tag::before {
+    content: '★';
+    color: #F0C419;
+    font-size: 0.9em;
+    text-shadow: 0 0 6px rgba(240,196,25,0.7);
+}
+.att-row-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+.att-row-level {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.att-row-level.special { color: #BF5FFF; }
+
+/* Mobile responsive */
+@media (max-width: 880px) {
+    .weapon-breadcrumb { padding: 12px 16px 0; }
+    .weapon-hero {
+        padding: 18px 16px 32px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .weapon-hero-image img { margin: 0 auto; max-width: 75%; }
+    .weapon-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .loadouts-section, .all-attachments-section { padding: 28px 16px; }
+    .class-code-box {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 14px;
+    }
+    .code-value { font-size: 1.05rem; }
+    .loadout-grid { grid-template-columns: 1fr; }
+    .attachments-table { grid-template-columns: 1fr; }
+    .row-icon-frame { width: 50px; height: 34px; }
+    .att-icon-frame { width: 58px; height: 42px; }
+    .att-row-name, .att-name { font-size: 0.88rem; }
+    .loadout-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .loadout-tabs::-webkit-scrollbar { display: none; }
+    .loadout-tab { white-space: nowrap; flex-shrink: 0; padding: 12px 18px; font-size: 0.85rem; }
+    .section-title { font-size: 1.4rem; }
+    .slot-chips-wrap {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .slot-chips {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+    }
+    .slot-chips::-webkit-scrollbar { display: none; }
+    .slot-chip { flex-shrink: 0; padding: 6px 12px; font-size: 0.72rem; }
+    .slot-chip-label { flex-shrink: 0; }
+    .attachment-row:hover { transform: translateX(2px); }
+}
+@media (max-width: 480px) {
+    .weapon-hero h1 { font-size: 2.5rem; }
+    .weapon-subtitle { font-size: 0.95rem; }
+    .hero-badge { font-size: 0.65rem; padding: 5px 10px; }
+    .stat-mini .value { font-size: 1.15rem; }
+    .stat-mini .label { font-size: 0.58rem; }
+    .weapon-stats-grid { gap: 6px; }
+    .stat-mini { padding: 10px 12px; }
+    .attachment-card { padding: 11px 13px; gap: 11px; }
+    .att-icon-frame { width: 52px; height: 38px; }
+    .att-name { font-size: 0.85rem; }
+    .att-slot { font-size: 0.58rem; }
+    .att-level { font-size: 0.62rem; padding: 3px 6px; }
+    .attachment-row { padding: 9px 11px; gap: 10px; }
+    .row-icon-frame { width: 46px; height: 32px; }
+    .att-row-name { font-size: 0.85rem; }
+    .att-row-slot-tag { font-size: 0.55rem; }
+    .att-row-level { font-size: 0.62rem; }
+}

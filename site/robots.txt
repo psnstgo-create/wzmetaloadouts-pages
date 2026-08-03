@@ -1,0 +1,31 @@
+# ═══════════════════════════════════════════════════════════════
+# robots.txt — WZ Meta · wzmetaloadouts.com
+# ═══════════════════════════════════════════════════════════════
+# Le indica a los buscadores qué pueden y qué no pueden indexar.
+# El sitemap.xml le dice a Google qué URLs existen.
+# ═══════════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+
+# Bloquear áreas internas que no aportan valor SEO
+Disallow: /admin/
+Disallow: /uploads/
+Disallow: /_build/
+Disallow: /_data/
+Disallow: /_noticias/
+
+# Bloquear archivos de datos (no son páginas)
+Disallow: /*.json$
+Disallow: /*.py$
+
+# Permitir explícitamente los assets que sí queremos indexar
+Allow: /icons/
+Allow: /weapons/
+Allow: /armas/
+
+# Crawl-delay opcional (1 segundo entre requests para no saturar el servidor)
+Crawl-delay: 1
+
+# Ubicación del sitemap
+Sitemap: https://wzmetaloadouts.com/sitemap.xml

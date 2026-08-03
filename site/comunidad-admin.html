@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon_wz.png">
+<title>Admin · Comunidad — WZ Meta</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070A0E;--panel:#0C1116;--gold:#F0C419;--txt:#EEF2F6;--muted:#828D99;--green:#22C55E;--red:#EF4444}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:'Rajdhani',system-ui,sans-serif;padding:24px 16px 60px;min-height:100vh}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:1.4rem;margin-bottom:4px}
+.sub{color:var(--muted);font-size:.86rem;margin-bottom:24px}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px;margin-bottom:16px}
+label{display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#a8b0ba;margin-bottom:6px}
+input{width:100%;background:#080b0f;border:1px solid rgba(255,255,255,.1);border-radius:8px;color:var(--txt);padding:10px 12px;font-family:inherit;font-size:.95rem;margin-bottom:14px}
+input:focus{outline:none;border-color:var(--gold)}
+button{background:var(--gold);color:#1a1400;border:none;border-radius:8px;padding:10px 22px;font-weight:800;cursor:pointer;font-size:.9rem;text-transform:uppercase}
+button.ghost{background:none;border:1px solid rgba(255,255,255,.15);color:var(--txt)}
+button.reject{background:rgba(239,68,68,.15);color:#f87171;border:1px solid rgba(239,68,68,.4)}
+button:disabled{opacity:.5;cursor:default}
+#loginMsg{color:#f87171;font-size:.85rem;margin-top:8px}
+#panel{display:none}
+.top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.pend-card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px;margin-bottom:14px}
+.pend-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}
+.pend-arma{font-weight:800}
+.pend-fecha{font-size:.72rem;color:var(--muted);font-family:'Share Tech Mono',monospace}
+.pend-acc{font-size:.82rem;color:#c3cad2;margin-bottom:6px}
+.pend-codigo{font-family:'Share Tech Mono',monospace;background:#080b0f;border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:6px 10px;display:inline-block;margin-bottom:6px}
+.pend-comentario{font-size:.84rem;font-style:italic;color:#c3cad2;margin-bottom:8px}
+.pend-alias{font-size:.78rem;color:var(--muted);margin-bottom:10px}
+.pend-actions{display:flex;gap:10px}
+.empty{color:var(--muted);text-align:center;padding:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Panel de <span style="color:var(--gold)">Comunidad</span></h1>
+  <p class="sub">Revisión de clases enviadas por usuarios</p>
+
+  <section class="card" id="loginCard">
+    <label for="admEmail">Email</label>
+    <input type="email" id="admEmail" autocomplete="username">
+    <label for="admPass">Contraseña</label>
+    <input type="password" id="admPass" autocomplete="current-password">
+    <button id="admLoginBtn">Ingresar</button>
+    <div id="loginMsg"></div>
+  </section>
+
+  <section id="panel">
+    <div class="top-bar">
+      <span id="admWho" style="font-size:.85rem;color:var(--muted)"></span>
+      <button class="ghost" id="admLogoutBtn">Cerrar sesión</button>
+    </div>
+    <div id="pendGrid"><div class="empty">Cargando…</div></div>
+  </section>
+</div>
+
+<script src="/vendor/supabase-js.min.js"></script>
+<script src="wz-community.js"></script>
+<script src="comunidad-admin.js"></script>
+</body></html>

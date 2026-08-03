@@ -1,0 +1,3456 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "language": "es",
+    "captured_from": "BO7 PS5 Armory · Construir Arma",
+    "captured_at": "2026-06-16",
+    "captured_season": 4,
+    "total_armas": 47,
+    "fuente": "Activision Blizzard · Treyarch · in-game stats oficiales",
+    "note": "Stats base sin attachments. 47 armas. Claves alineadas 1:1 con armas-data.json (slug del catalogo) para cruce directo en arma-render.",
+    "tipos_disponibles": [
+      "Pistola",
+      "Fusil de asalto",
+      "Fusil de precisión",
+      "Subfusil"
+    ],
+    "pendientes_revision": [
+      {
+        "nombre": "X9 Maverick (Osuno)",
+        "razon": "Blueprint epifánico - requiere recaptura en estado base"
+      },
+      {
+        "nombre": "Peacekeeper MK1",
+        "razon": "Foto del lote nuevo TAMBIEN en modo comparacion - valores incluidos provisionalmente, confirmar recaptura individual limpia"
+      },
+      {
+        "nombre": "CBRS-3",
+        "razon": "Cadencia 95 rpm transcrita tal cual; inusualmente baja para subfusil - reverificar in-game"
+      }
+    ],
+    "sin_pagina_en_catalogo": [
+      "vx-compact"
+    ],
+    "nota_nombres": "razor-9mm: catalogo lo llama 'Razor 9mm', in-game 'Razor de 9 mm' (mismo slug). vst: catalogo 'VST', in-game 'Cincelador VST'. 1911 -> slug catalogo '1911-pistol'."
+  },
+  "armas": {
+    "1911-pistol": {
+      "nombre": "1911",
+      "tipo": "Pistola",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 7
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 400,
+        "velocidad_balas_ms": 450.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.0,
+        "dispersion_cadera_saltar": 10.5,
+        "dispersion_cadera_deslizarse": 12.5,
+        "dispersion_cadera_lanzarse": 12.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 36.63,
+        "control_retroceso_horizontal": 32.66,
+        "control_retroceso_vertical": 52.66,
+        "velocidad_restablecimiento_retroceso_ms": 250,
+        "balanceo_apuntar_inmovil": 0.1,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.1,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.5,
+        "velocidad_apuntando_ms": 3.8
+      },
+      "manejo": {
+        "recarga_ms": 2337,
+        "ads_ms": 150,
+        "ads_saltar_ms": 172,
+        "esprintar_disparar_ms": 120,
+        "deslizarse_disparar_ms": 300,
+        "lanzarse_disparar_ms": 350,
+        "esprintar_disparar_saltar_ms": 149
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 80,
+          "multiplicador": "x2"
+        },
+        "cuello_pecho_alto": 60,
+        "pecho": 60,
+        "brazos": 60,
+        "abdomen": 40,
+        "caderas": 60,
+        "piernas": 40,
+        "pies": 40
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-20",
+          "dano": 40
+        },
+        {
+          "distancia_m": "20+",
+          "dano": 30
+        }
+      ]
+    },
+    "jager-45": {
+      "nombre": "Jäger 45",
+      "tipo": "Pistola",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 10
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 600,
+        "velocidad_balas_ms": 410.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 6.5,
+        "dispersion_cadera_saltar": 8.25,
+        "dispersion_cadera_deslizarse": 10.25,
+        "dispersion_cadera_lanzarse": 10.25,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 32.5,
+        "control_retroceso_horizontal": 22.39,
+        "control_retroceso_vertical": 37.81,
+        "velocidad_restablecimiento_retroceso_ms": 160,
+        "balanceo_apuntar_inmovil": 0.1,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.3,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.9
+      },
+      "manejo": {
+        "recarga_ms": 1995,
+        "ads_ms": 150,
+        "ads_saltar_ms": 172,
+        "esprintar_disparar_ms": 90,
+        "deslizarse_disparar_ms": 280,
+        "lanzarse_disparar_ms": 330,
+        "esprintar_disparar_saltar_ms": 90
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 60,
+          "multiplicador": "x2"
+        },
+        "cuello_pecho_alto": 45,
+        "pecho": 45,
+        "brazos": 45,
+        "abdomen": 30,
+        "caderas": 45,
+        "piernas": 30,
+        "pies": 30
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-20",
+          "dano": 30
+        },
+        {
+          "distancia_m": "20+",
+          "dano": 22
+        }
+      ]
+    },
+    "coda-9": {
+      "nombre": "Coda 9",
+      "tipo": "Pistola",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 20
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 938,
+        "velocidad_balas_ms": 280.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.0,
+        "dispersion_cadera_saltar": 9.0,
+        "dispersion_cadera_deslizarse": 11.0,
+        "dispersion_cadera_lanzarse": 11.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 24.53,
+        "control_retroceso_horizontal": 15.29,
+        "control_retroceso_vertical": 34.32,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.1,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.1,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.5,
+        "velocidad_apuntando_ms": 3.8
+      },
+      "manejo": {
+        "recarga_ms": 2375,
+        "ads_ms": 180,
+        "ads_saltar_ms": 208,
+        "esprintar_disparar_ms": 120,
+        "deslizarse_disparar_ms": 310,
+        "lanzarse_disparar_ms": 360,
+        "esprintar_disparar_saltar_ms": 120
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 30,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 28,
+        "pecho": 28,
+        "brazos": 28,
+        "abdomen": 25,
+        "caderas": 28,
+        "piernas": 25,
+        "pies": 25
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-8",
+          "dano": 28
+        },
+        {
+          "distancia_m": "8-18",
+          "dano": 23
+        },
+        {
+          "distancia_m": "18+",
+          "dano": 20
+        }
+      ]
+    },
+    "velox-5-7": {
+      "nombre": "Velox 5.7",
+      "tipo": "Pistola",
+      "modo_disparo": "Ráfaga",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 15
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 549,
+        "velocidad_balas_ms": 400.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 6.75,
+        "dispersion_cadera_saltar": 8.75,
+        "dispersion_cadera_deslizarse": 10.75,
+        "dispersion_cadera_lanzarse": 10.75,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 42.0,
+        "control_retroceso_horizontal": 22.28,
+        "control_retroceso_vertical": 35.88,
+        "velocidad_restablecimiento_retroceso_ms": 350,
+        "balanceo_apuntar_inmovil": 0.1,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.5,
+        "velocidad_apuntando_ms": 3.8
+      },
+      "manejo": {
+        "recarga_ms": 2267,
+        "ads_ms": 160,
+        "ads_saltar_ms": 184,
+        "esprintar_disparar_ms": 110,
+        "deslizarse_disparar_ms": 300,
+        "lanzarse_disparar_ms": 350,
+        "esprintar_disparar_saltar_ms": 136
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 50,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 44,
+        "pecho": 44,
+        "brazos": 44,
+        "abdomen": 44,
+        "caderas": 44,
+        "piernas": 44,
+        "pies": 44
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-9",
+          "dano": 44
+        },
+        {
+          "distancia_m": "9+",
+          "dano": 30
+        }
+      ]
+    },
+    "ds20-mirage": {
+      "nombre": "DS20 Mirage",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 606,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.15,
+        "dispersion_cadera_saltar": 12.15,
+        "dispersion_cadera_deslizarse": 15.15,
+        "dispersion_cadera_lanzarse": 15.15,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 10.88,
+        "control_retroceso_horizontal": 3.43,
+        "control_retroceso_vertical": 49.69,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.9,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 2323,
+        "ads_ms": 230,
+        "ads_saltar_ms": 305,
+        "esprintar_disparar_ms": 178,
+        "deslizarse_disparar_ms": 440,
+        "lanzarse_disparar_ms": 520,
+        "esprintar_disparar_saltar_ms": 196
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 53,
+          "multiplicador": "x1.4"
+        },
+        "cuello_pecho_alto": 45,
+        "pecho": 45,
+        "brazos": 45,
+        "abdomen": 41,
+        "caderas": 45,
+        "piernas": 41,
+        "pies": 41
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-39",
+          "dano": 38
+        },
+        {
+          "distancia_m": "39-65",
+          "dano": 31
+        },
+        {
+          "distancia_m": "65+",
+          "dano": 28
+        }
+      ]
+    },
+    "mxr-17": {
+      "nombre": "MXR-17",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 500,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.75,
+        "dispersion_cadera_saltar": 11.75,
+        "dispersion_cadera_deslizarse": 14.75,
+        "dispersion_cadera_lanzarse": 14.75,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 21.52,
+        "control_retroceso_horizontal": 29.16,
+        "control_retroceso_vertical": 60.86,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 3.0
+      },
+      "manejo": {
+        "recarga_ms": 2266,
+        "ads_ms": 245,
+        "ads_saltar_ms": 312,
+        "esprintar_disparar_ms": 200,
+        "deslizarse_disparar_ms": 430,
+        "lanzarse_disparar_ms": 500,
+        "esprintar_disparar_saltar_ms": 220
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 61,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 52,
+        "pecho": 52,
+        "brazos": 52,
+        "abdomen": 49,
+        "caderas": 52,
+        "piernas": 49,
+        "pies": 49
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-36",
+          "dano": 48
+        },
+        {
+          "distancia_m": "36-52",
+          "dano": 41
+        },
+        {
+          "distancia_m": "52+",
+          "dano": 40
+        }
+      ]
+    },
+    "ak-27": {
+      "nombre": "AK-27",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 690,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.5,
+        "dispersion_cadera_saltar": 12.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 17.6,
+        "control_retroceso_horizontal": 12.63,
+        "control_retroceso_vertical": 41.37,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 3.0
+      },
+      "manejo": {
+        "recarga_ms": 2465,
+        "ads_ms": 240,
+        "ads_saltar_ms": 319,
+        "esprintar_disparar_ms": 190,
+        "deslizarse_disparar_ms": 450,
+        "lanzarse_disparar_ms": 510,
+        "esprintar_disparar_saltar_ms": 209
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 46,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 39,
+        "pecho": 39,
+        "brazos": 39,
+        "abdomen": 37,
+        "caderas": 39,
+        "piernas": 37,
+        "pies": 37
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-38",
+          "dano": 38
+        },
+        {
+          "distancia_m": "38-52",
+          "dano": 32
+        },
+        {
+          "distancia_m": "52+",
+          "dano": 30
+        }
+      ]
+    },
+    "m15-mod-0": {
+      "nombre": "M15 Mod 0",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 769,
+        "velocidad_balas_ms": 910.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.85,
+        "dispersion_cadera_saltar": 11.85,
+        "dispersion_cadera_deslizarse": 14.85,
+        "dispersion_cadera_lanzarse": 14.85,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 16.81,
+        "control_retroceso_horizontal": 9.27,
+        "control_retroceso_vertical": 45.12,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 3.0
+      },
+      "manejo": {
+        "recarga_ms": 2550,
+        "ads_ms": 235,
+        "ads_saltar_ms": 312,
+        "esprintar_disparar_ms": 199,
+        "deslizarse_disparar_ms": 420,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 219
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 41,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 35,
+        "pecho": 35,
+        "brazos": 35,
+        "abdomen": 32,
+        "caderas": 35,
+        "piernas": 32,
+        "pies": 32
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-42",
+          "dano": 32
+        },
+        {
+          "distancia_m": "42-60",
+          "dano": 25
+        },
+        {
+          "distancia_m": "60+",
+          "dano": 24
+        }
+      ]
+    },
+    "maddox-rfb": {
+      "nombre": "Maddox RFB",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 40
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 690,
+        "velocidad_balas_ms": 905.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.85,
+        "dispersion_cadera_saltar": 11.85,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 27.88,
+        "control_retroceso_horizontal": 9.03,
+        "control_retroceso_vertical": 43.81,
+        "velocidad_restablecimiento_retroceso_ms": 800,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 2431,
+        "ads_ms": 240,
+        "ads_saltar_ms": 319,
+        "esprintar_disparar_ms": 180,
+        "deslizarse_disparar_ms": 420,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 198
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 43,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 38,
+        "pecho": 38,
+        "brazos": 38,
+        "abdomen": 36,
+        "caderas": 38,
+        "piernas": 36,
+        "pies": 36
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-32",
+          "dano": 35
+        },
+        {
+          "distancia_m": "32-52",
+          "dano": 29
+        },
+        {
+          "distancia_m": "52+",
+          "dano": 25
+        }
+      ]
+    },
+    "egrt-17": {
+      "nombre": "EGRT-17",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 34
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 811,
+        "velocidad_balas_ms": 915.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.5,
+        "dispersion_cadera_saltar": 12.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 14.53,
+        "control_retroceso_horizontal": 8.74,
+        "control_retroceso_vertical": 43.57,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 2685,
+        "ads_ms": 230,
+        "ads_saltar_ms": 305,
+        "esprintar_disparar_ms": 179,
+        "deslizarse_disparar_ms": 440,
+        "lanzarse_disparar_ms": 520,
+        "esprintar_disparar_saltar_ms": 260
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 42,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 35,
+        "pecho": 35,
+        "brazos": 35,
+        "abdomen": 31,
+        "caderas": 35,
+        "piernas": 31,
+        "pies": 31
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-38",
+          "dano": 35
+        },
+        {
+          "distancia_m": "38-55",
+          "dano": 30
+        },
+        {
+          "distancia_m": "55+",
+          "dano": 25
+        }
+      ]
+    },
+    "voyak-kt-3": {
+      "nombre": "Voyak KT-3",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 659,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.75,
+        "dispersion_cadera_saltar": 11.75,
+        "dispersion_cadera_deslizarse": 14.75,
+        "dispersion_cadera_lanzarse": 14.75,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 17.6,
+        "control_retroceso_horizontal": 13.81,
+        "control_retroceso_vertical": 46.86,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.9,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.2
+      },
+      "manejo": {
+        "recarga_ms": 2266,
+        "ads_ms": 230,
+        "ads_saltar_ms": 305,
+        "esprintar_disparar_ms": 170,
+        "deslizarse_disparar_ms": 390,
+        "lanzarse_disparar_ms": 460,
+        "esprintar_disparar_saltar_ms": 247
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 49,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 38,
+        "pecho": 38,
+        "brazos": 38,
+        "abdomen": 38,
+        "caderas": 38,
+        "piernas": 38,
+        "pies": 38
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-41",
+          "dano": 38
+        },
+        {
+          "distancia_m": "41-60",
+          "dano": 34
+        },
+        {
+          "distancia_m": "60+",
+          "dano": 30
+        }
+      ]
+    },
+    "vx-compact": {
+      "nombre": "VX Compact",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1034,
+        "velocidad_balas_ms": 870.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.0,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 14.82,
+        "control_retroceso_horizontal": 3.3,
+        "control_retroceso_vertical": 43.6,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.3
+      },
+      "manejo": {
+        "recarga_ms": 2320,
+        "ads_ms": 210,
+        "ads_saltar_ms": 277,
+        "esprintar_disparar_ms": 175,
+        "deslizarse_disparar_ms": 420,
+        "lanzarse_disparar_ms": 470,
+        "esprintar_disparar_saltar_ms": 254
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 33,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 28,
+        "pecho": 28,
+        "brazos": 28,
+        "abdomen": 25,
+        "caderas": 28,
+        "piernas": 25,
+        "pies": 25
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-30",
+          "dano": 28
+        },
+        {
+          "distancia_m": "30-47",
+          "dano": 23
+        },
+        {
+          "distancia_m": "47+",
+          "dano": 19
+        }
+      ]
+    },
+    "xr-3-ion": {
+      "nombre": "XR-3 ION",
+      "tipo": "Fusil de precisión",
+      "modo_disparo": "Ráfaga",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 12
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 136,
+        "velocidad_balas_ms": 820.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 15.5,
+        "dispersion_cadera_saltar": 18.0,
+        "dispersion_cadera_deslizarse": 25.0,
+        "dispersion_cadera_lanzarse": 20.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 16.0,
+        "control_retroceso_horizontal": 5.63,
+        "control_retroceso_vertical": 25.38,
+        "velocidad_restablecimiento_retroceso_ms": 1900,
+        "balanceo_apuntar_inmovil": 0.86,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.95
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.5,
+        "velocidad_agachado_ms": 2.0,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 1.8
+      },
+      "manejo": {
+        "recarga_ms": 2907,
+        "ads_ms": 620,
+        "ads_saltar_ms": 794,
+        "esprintar_disparar_ms": 250,
+        "deslizarse_disparar_ms": 500,
+        "lanzarse_disparar_ms": 580,
+        "esprintar_disparar_saltar_ms": 250
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 195,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 150,
+        "pecho": 150,
+        "brazos": 135,
+        "abdomen": 135,
+        "caderas": 135,
+        "piernas": 135,
+        "pies": 135
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-80",
+          "dano": 150
+        },
+        {
+          "distancia_m": "80+",
+          "dano": 130
+        }
+      ]
+    },
+    "shadow-sk": {
+      "nombre": "Shadow SK",
+      "tipo": "Fusil de precisión",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 10
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 100,
+        "velocidad_balas_ms": 920.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 18.0,
+        "dispersion_cadera_saltar": 18.0,
+        "dispersion_cadera_deslizarse": 25.0,
+        "dispersion_cadera_lanzarse": 20.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 26.0,
+        "control_retroceso_horizontal": 14.61,
+        "control_retroceso_vertical": 20.81,
+        "velocidad_restablecimiento_retroceso_ms": 700,
+        "balanceo_apuntar_inmovil": 0.79,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.75
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.2,
+        "velocidad_esprintar_ms": 7.1,
+        "velocidad_apuntando_ms": 2.0
+      },
+      "manejo": {
+        "recarga_ms": 2520,
+        "ads_ms": 500,
+        "ads_saltar_ms": 638,
+        "esprintar_disparar_ms": 260,
+        "deslizarse_disparar_ms": 480,
+        "lanzarse_disparar_ms": 560,
+        "esprintar_disparar_saltar_ms": 351
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 184,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 113,
+        "pecho": 113,
+        "brazos": 113,
+        "abdomen": 99,
+        "caderas": 113,
+        "piernas": 99,
+        "pies": 99
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-70",
+          "dano": 142
+        },
+        {
+          "distancia_m": "70+",
+          "dano": 140
+        }
+      ]
+    },
+    "vs-recon": {
+      "nombre": "VS Recon",
+      "tipo": "Fusil de precisión",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 6
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 43,
+        "velocidad_balas_ms": 760.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 18.0,
+        "dispersion_cadera_saltar": 18.0,
+        "dispersion_cadera_deslizarse": 25.0,
+        "dispersion_cadera_lanzarse": 20.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 35.35,
+        "control_retroceso_horizontal": 38.4,
+        "control_retroceso_vertical": 75.72,
+        "velocidad_restablecimiento_retroceso_ms": 1800,
+        "balanceo_apuntar_inmovil": 1.0,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.7
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.6,
+        "velocidad_agachado_ms": 2.1,
+        "velocidad_esprintar_ms": 7.1,
+        "velocidad_apuntando_ms": 1.9
+      },
+      "manejo": {
+        "recarga_ms": 3120,
+        "ads_ms": 525,
+        "ads_saltar_ms": 670,
+        "esprintar_disparar_ms": 260,
+        "deslizarse_disparar_ms": 500,
+        "lanzarse_disparar_ms": 580,
+        "esprintar_disparar_saltar_ms": 351
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 360,
+          "multiplicador": "x2"
+        },
+        "cuello_pecho_alto": 207,
+        "pecho": 207,
+        "brazos": 207,
+        "abdomen": 207,
+        "caderas": 207,
+        "piernas": 180,
+        "pies": 180
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-89",
+          "dano": 180
+        },
+        {
+          "distancia_m": "89+",
+          "dano": 180
+        }
+      ]
+    },
+    "hawker-hx": {
+      "nombre": "Hawker HX",
+      "tipo": "Fusil de precisión",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 7
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 48,
+        "velocidad_balas_ms": 960.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 18.0,
+        "dispersion_cadera_saltar": 18.0,
+        "dispersion_cadera_deslizarse": 25.0,
+        "dispersion_cadera_lanzarse": 20.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 23.35,
+        "control_retroceso_horizontal": 33.59,
+        "control_retroceso_vertical": 68.72,
+        "velocidad_restablecimiento_retroceso_ms": 1800,
+        "balanceo_apuntar_inmovil": 1.0,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.8
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.2,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 2.1
+      },
+      "manejo": {
+        "recarga_ms": 3240,
+        "ads_ms": 510,
+        "ads_saltar_ms": 581,
+        "esprintar_disparar_ms": 230,
+        "deslizarse_disparar_ms": 500,
+        "lanzarse_disparar_ms": 580,
+        "esprintar_disparar_saltar_ms": 311
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 300,
+          "multiplicador": "x2"
+        },
+        "cuello_pecho_alto": 165,
+        "pecho": 165,
+        "brazos": 165,
+        "abdomen": 165,
+        "caderas": 165,
+        "piernas": 165,
+        "pies": 165
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-78",
+          "dano": 150
+        },
+        {
+          "distancia_m": "78+",
+          "dano": 145
+        }
+      ]
+    },
+    "strider-300": {
+      "nombre": "Strider 300",
+      "tipo": "Fusil de precisión",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 8
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 56,
+        "velocidad_balas_ms": 990.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 18.0,
+        "dispersion_cadera_saltar": 18.0,
+        "dispersion_cadera_deslizarse": 25.0,
+        "dispersion_cadera_lanzarse": 20.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 35.35,
+        "control_retroceso_horizontal": 38.4,
+        "control_retroceso_vertical": 75.72,
+        "velocidad_restablecimiento_retroceso_ms": 1800,
+        "balanceo_apuntar_inmovil": 1.0,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.85
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.2,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 2.0
+      },
+      "manejo": {
+        "recarga_ms": 2907,
+        "ads_ms": 540,
+        "ads_saltar_ms": 690,
+        "esprintar_disparar_ms": 220,
+        "deslizarse_disparar_ms": 500,
+        "lanzarse_disparar_ms": 580,
+        "esprintar_disparar_saltar_ms": 297
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 300,
+          "multiplicador": "x2"
+        },
+        "cuello_pecho_alto": 165,
+        "pecho": 165,
+        "brazos": 165,
+        "abdomen": 165,
+        "caderas": 165,
+        "piernas": 165,
+        "pies": 165
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-90",
+          "dano": 150
+        },
+        {
+          "distancia_m": "90+",
+          "dano": 145
+        }
+      ]
+    },
+    "mpc-25": {
+      "nombre": "MPC-25",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 706,
+        "velocidad_balas_ms": 520.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.0,
+        "dispersion_cadera_saltar": 10.0,
+        "dispersion_cadera_deslizarse": 13.0,
+        "dispersion_cadera_lanzarse": 13.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 37.8,
+        "control_retroceso_horizontal": 14.72,
+        "control_retroceso_vertical": 50.8,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.1,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.5,
+        "velocidad_apuntando_ms": 3.6
+      },
+      "manejo": {
+        "recarga_ms": 2026,
+        "ads_ms": 165,
+        "ads_saltar_ms": 214,
+        "esprintar_disparar_ms": 120,
+        "deslizarse_disparar_ms": 270,
+        "lanzarse_disparar_ms": 350,
+        "esprintar_disparar_saltar_ms": 174
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 52,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 40,
+        "pecho": 40,
+        "brazos": 40,
+        "abdomen": 38,
+        "caderas": 40,
+        "piernas": 38,
+        "pies": 38
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-13",
+          "dano": 40
+        },
+        {
+          "distancia_m": "13-24",
+          "dano": 36
+        },
+        {
+          "distancia_m": "24+",
+          "dano": 27
+        }
+      ]
+    },
+    "carbon-57": {
+      "nombre": "Carbon 57",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 40
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 857,
+        "velocidad_balas_ms": 550.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.25,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 13.5,
+        "dispersion_cadera_lanzarse": 13.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 43.0,
+        "control_retroceso_horizontal": 17.02,
+        "control_retroceso_vertical": 47.86,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.4
+      },
+      "manejo": {
+        "recarga_ms": 2560,
+        "ads_ms": 175,
+        "ads_saltar_ms": 228,
+        "esprintar_disparar_ms": 113,
+        "deslizarse_disparar_ms": 360,
+        "lanzarse_disparar_ms": 460,
+        "esprintar_disparar_saltar_ms": 164
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 42,
+          "multiplicador": "x1.13"
+        },
+        "cuello_pecho_alto": 35,
+        "pecho": 35,
+        "brazos": 35,
+        "abdomen": 31,
+        "caderas": 35,
+        "piernas": 31,
+        "pies": 31
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-12.4",
+          "dano": 34
+        },
+        {
+          "distancia_m": "12.4-21.5",
+          "dano": 30
+        },
+        {
+          "distancia_m": "21.5+",
+          "dano": 24
+        }
+      ]
+    },
+    "dravec-45": {
+      "nombre": "Dravec 45",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 36
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 652,
+        "velocidad_balas_ms": 480.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.0,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 14.5,
+        "dispersion_cadera_lanzarse": 14.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 45.26,
+        "control_retroceso_horizontal": 24.29,
+        "control_retroceso_vertical": 48.14,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.5
+      },
+      "manejo": {
+        "recarga_ms": 2080,
+        "ads_ms": 170,
+        "ads_saltar_ms": 221,
+        "esprintar_disparar_ms": 125,
+        "deslizarse_disparar_ms": 370,
+        "lanzarse_disparar_ms": 450,
+        "esprintar_disparar_saltar_ms": 138
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 54,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 44,
+        "pecho": 44,
+        "brazos": 44,
+        "abdomen": 42,
+        "caderas": 44,
+        "piernas": 42,
+        "pies": 42
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-12.8",
+          "dano": 46
+        },
+        {
+          "distancia_m": "12.8-22",
+          "dano": 40
+        },
+        {
+          "distancia_m": "22+",
+          "dano": 34
+        }
+      ]
+    },
+    "razor-9mm": {
+      "nombre": "Razor de 9 mm",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1000,
+        "velocidad_balas_ms": 500.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.0,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 14.5,
+        "dispersion_cadera_lanzarse": 14.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 23.16,
+        "control_retroceso_horizontal": 15.48,
+        "control_retroceso_vertical": 46.06,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.1,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.5,
+        "velocidad_apuntando_ms": 3.6
+      },
+      "manejo": {
+        "recarga_ms": 2208,
+        "ads_ms": 175,
+        "ads_saltar_ms": 228,
+        "esprintar_disparar_ms": 103,
+        "deslizarse_disparar_ms": 350,
+        "lanzarse_disparar_ms": 430,
+        "esprintar_disparar_saltar_ms": 113
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 34,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 30,
+        "pecho": 30,
+        "brazos": 30,
+        "abdomen": 27,
+        "caderas": 30,
+        "piernas": 27,
+        "pies": 27
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-12",
+          "dano": 30
+        },
+        {
+          "distancia_m": "12-21",
+          "dano": 24
+        },
+        {
+          "distancia_m": "21+",
+          "dano": 20
+        }
+      ]
+    },
+    "rk-9": {
+      "nombre": "RK-9",
+      "tipo": "Subfusil",
+      "modo_disparo": "Ráfaga",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 570,
+        "velocidad_balas_ms": 620.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.25,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 13.5,
+        "dispersion_cadera_lanzarse": 13.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 52.65,
+        "control_retroceso_horizontal": 25.53,
+        "control_retroceso_vertical": 49.82,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.6
+      },
+      "manejo": {
+        "recarga_ms": 2293,
+        "ads_ms": 165,
+        "ads_saltar_ms": 214,
+        "esprintar_disparar_ms": 120,
+        "deslizarse_disparar_ms": 310,
+        "lanzarse_disparar_ms": 390,
+        "esprintar_disparar_saltar_ms": 174
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 56,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 47,
+        "pecho": 47,
+        "brazos": 47,
+        "abdomen": 47,
+        "caderas": 47,
+        "piernas": 47,
+        "pies": 47
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-17",
+          "dano": 47
+        },
+        {
+          "distancia_m": "17-25",
+          "dano": 40
+        },
+        {
+          "distancia_m": "25+",
+          "dano": 32
+        }
+      ]
+    },
+    "ryden-45k": {
+      "nombre": "Ryden 45K",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 923,
+        "velocidad_balas_ms": 530.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.5,
+        "dispersion_cadera_saltar": 12.5,
+        "dispersion_cadera_deslizarse": 14.0,
+        "dispersion_cadera_lanzarse": 14.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 32.01,
+        "control_retroceso_horizontal": 8.63,
+        "control_retroceso_vertical": 45.77,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.5
+      },
+      "manejo": {
+        "recarga_ms": 2346,
+        "ads_ms": 160,
+        "ads_saltar_ms": 207,
+        "esprintar_disparar_ms": 102,
+        "deslizarse_disparar_ms": 330,
+        "lanzarse_disparar_ms": 410,
+        "esprintar_disparar_saltar_ms": 112
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 39,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 32,
+        "pecho": 32,
+        "brazos": 32,
+        "abdomen": 30,
+        "caderas": 32,
+        "piernas": 30,
+        "pies": 30
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-13",
+          "dano": 35
+        },
+        {
+          "distancia_m": "13-23",
+          "dano": 30
+        },
+        {
+          "distancia_m": "23+",
+          "dano": 23
+        }
+      ]
+    },
+    "kogot-7": {
+      "nombre": "Kogot-7",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 968,
+        "velocidad_balas_ms": 540.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.25,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 43.33,
+        "control_retroceso_horizontal": 18.8,
+        "control_retroceso_vertical": 41.53,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.6
+      },
+      "manejo": {
+        "recarga_ms": 2288,
+        "ads_ms": 170,
+        "ads_saltar_ms": 221,
+        "esprintar_disparar_ms": 110,
+        "deslizarse_disparar_ms": 340,
+        "lanzarse_disparar_ms": 420,
+        "esprintar_disparar_saltar_ms": 160
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 34,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 31,
+        "pecho": 31,
+        "brazos": 31,
+        "abdomen": 27,
+        "caderas": 31,
+        "piernas": 27,
+        "pies": 27
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-13",
+          "dano": 31
+        },
+        {
+          "distancia_m": "13-21",
+          "dano": 28
+        },
+        {
+          "distancia_m": "21+",
+          "dano": 22
+        }
+      ]
+    },
+    "sturmwolf-45": {
+      "nombre": "Sturmwolf 45",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 32
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 645,
+        "velocidad_balas_ms": 540.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.25,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 40.99,
+        "control_retroceso_horizontal": 10.49,
+        "control_retroceso_vertical": 42.28,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.4
+      },
+      "manejo": {
+        "recarga_ms": 2184,
+        "ads_ms": 160,
+        "ads_saltar_ms": 221,
+        "esprintar_disparar_ms": 130,
+        "deslizarse_disparar_ms": 340,
+        "lanzarse_disparar_ms": 420,
+        "esprintar_disparar_saltar_ms": 189
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 50,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 45,
+        "pecho": 45,
+        "brazos": 38,
+        "abdomen": 38,
+        "caderas": 38,
+        "piernas": 38,
+        "pies": 38
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-13.8",
+          "dano": 47
+        },
+        {
+          "distancia_m": "13.8-23.2",
+          "dano": 42
+        },
+        {
+          "distancia_m": "23.2+",
+          "dano": 33
+        }
+      ]
+    },
+    "rev-46": {
+      "nombre": "REV-46",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 35
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1154,
+        "velocidad_balas_ms": 620.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 9.0,
+        "dispersion_cadera_saltar": 13.0,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 36.81,
+        "control_retroceso_horizontal": 5.77,
+        "control_retroceso_vertical": 47.2,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.1
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.8,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.7
+      },
+      "manejo": {
+        "recarga_ms": 2233,
+        "ads_ms": 165,
+        "ads_saltar_ms": 214,
+        "esprintar_disparar_ms": 105,
+        "deslizarse_disparar_ms": 300,
+        "lanzarse_disparar_ms": 380,
+        "esprintar_disparar_saltar_ms": 152
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 30,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 26,
+        "pecho": 26,
+        "brazos": 26,
+        "abdomen": 26,
+        "caderas": 26,
+        "piernas": 26,
+        "pies": 26
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-12",
+          "dano": 26
+        },
+        {
+          "distancia_m": "12-21",
+          "dano": 21
+        },
+        {
+          "distancia_m": "21+",
+          "dano": 18
+        }
+      ]
+    },
+    "vst": {
+      "nombre": "Cincelador VST",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1091,
+        "velocidad_balas_ms": 520.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.0,
+        "dispersion_cadera_saltar": 10.0,
+        "dispersion_cadera_deslizarse": 13.0,
+        "dispersion_cadera_lanzarse": 13.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 34.84,
+        "control_retroceso_horizontal": 9.9,
+        "control_retroceso_vertical": 46.04,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.3,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.7,
+        "velocidad_apuntando_ms": 3.8
+      },
+      "manejo": {
+        "recarga_ms": 2184,
+        "ads_ms": 155,
+        "ads_saltar_ms": 200,
+        "esprintar_disparar_ms": 100,
+        "deslizarse_disparar_ms": 220,
+        "lanzarse_disparar_ms": 320,
+        "esprintar_disparar_saltar_ms": 145
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 32,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 29,
+        "pecho": 29,
+        "brazos": 29,
+        "abdomen": 24,
+        "caderas": 29,
+        "piernas": 24,
+        "pies": 24
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-13.6",
+          "dano": 29
+        },
+        {
+          "distancia_m": "13.6-22.5",
+          "dano": 27
+        },
+        {
+          "distancia_m": "22.5+",
+          "dano": 22
+        }
+      ]
+    },
+    "cbrs-3": {
+      "nombre": "CBRS-3",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 60
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 95,
+        "velocidad_balas_ms": 590.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.6,
+        "dispersion_cadera_saltar": 12.35,
+        "dispersion_cadera_deslizarse": 15.35,
+        "dispersion_cadera_lanzarse": 15.35,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 42.01,
+        "control_retroceso_horizontal": 11.3,
+        "control_retroceso_vertical": 45.57,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.7
+      },
+      "manejo": {
+        "recarga_ms": 2848,
+        "ads_ms": 160,
+        "ads_saltar_ms": 207,
+        "esprintar_disparar_ms": 120,
+        "deslizarse_disparar_ms": 340,
+        "lanzarse_disparar_ms": 420,
+        "esprintar_disparar_saltar_ms": 174
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 54,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 42,
+        "pecho": 42,
+        "brazos": 42,
+        "abdomen": 39,
+        "caderas": 42,
+        "piernas": 39,
+        "pies": 39
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-14",
+          "dano": 42
+        },
+        {
+          "distancia_m": "14-23",
+          "dano": 36
+        },
+        {
+          "distancia_m": "23+",
+          "dano": 28
+        }
+      ]
+    },
+    "mk35-isr": {
+      "nombre": "MK35 ISR",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 750,
+        "velocidad_balas_ms": 910.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.85,
+        "dispersion_cadera_saltar": 11.85,
+        "dispersion_cadera_deslizarse": 14.85,
+        "dispersion_cadera_lanzarse": 14.85,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 16.33,
+        "control_retroceso_horizontal": 9.71,
+        "control_retroceso_vertical": 50.62,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 3.0
+      },
+      "manejo": {
+        "recarga_ms": 2493,
+        "ads_ms": 235,
+        "ads_saltar_ms": 312,
+        "esprintar_disparar_ms": 240,
+        "deslizarse_disparar_ms": 430,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 348
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 46,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 37,
+        "pecho": 37,
+        "brazos": 37,
+        "abdomen": 31,
+        "caderas": 37,
+        "piernas": 31,
+        "pies": 31
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-48",
+          "dano": 39
+        },
+        {
+          "distancia_m": "48-59",
+          "dano": 35
+        },
+        {
+          "distancia_m": "59+",
+          "dano": 30
+        }
+      ]
+    },
+    "peacekeeper-mk1": {
+      "nombre": "Peacekeeper MK1",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 870,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 7.5,
+        "dispersion_cadera_saltar": 11.5,
+        "dispersion_cadera_deslizarse": 14.25,
+        "dispersion_cadera_lanzarse": 14.25,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 11.89,
+        "control_retroceso_horizontal": 12.6,
+        "control_retroceso_vertical": 34.93,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.0,
+        "velocidad_agachado_ms": 2.7,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.3
+      },
+      "manejo": {
+        "recarga_ms": 2295,
+        "ads_ms": 230,
+        "ads_saltar_ms": 305,
+        "esprintar_disparar_ms": 160,
+        "deslizarse_disparar_ms": 370,
+        "lanzarse_disparar_ms": 450,
+        "esprintar_disparar_saltar_ms": 176
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 38,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 31,
+        "pecho": 31,
+        "brazos": 31,
+        "abdomen": 31,
+        "caderas": 31,
+        "piernas": 31,
+        "pies": 31
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-41",
+          "dano": 30
+        },
+        {
+          "distancia_m": "41-50",
+          "dano": 25
+        },
+        {
+          "distancia_m": "50+",
+          "dano": 22
+        }
+      ]
+    },
+    "grimhawk": {
+      "nombre": "Grimhawk",
+      "tipo": "Especial",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 25
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 652,
+        "velocidad_balas_ms": 40.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 9.0,
+        "dispersion_cadera_saltar": 12.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 16.6,
+        "control_retroceso_horizontal": 14.36,
+        "control_retroceso_vertical": 52.05,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.4
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 3400,
+        "ads_ms": 340,
+        "ads_saltar_ms": 459,
+        "esprintar_disparar_ms": 260,
+        "deslizarse_disparar_ms": 450,
+        "lanzarse_disparar_ms": 520,
+        "esprintar_disparar_saltar_ms": 377
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 34,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 30,
+        "pecho": 30,
+        "brazos": 30,
+        "abdomen": 30,
+        "caderas": 30,
+        "piernas": 30,
+        "pies": 30
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-20",
+          "dano": 30
+        },
+        {
+          "distancia_m": "20-30",
+          "dano": 25
+        },
+        {
+          "distancia_m": "30+",
+          "dano": 19
+        }
+      ]
+    },
+    "siren": {
+      "nombre": "Siren",
+      "tipo": "Especial",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 6
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 150,
+        "velocidad_balas_ms": 12.7
+      },
+      "precision": {
+        "dispersion_cadera_max": 0.1,
+        "dispersion_cadera_saltar": 0.1,
+        "dispersion_cadera_deslizarse": 0.1,
+        "dispersion_cadera_lanzarse": 0.1,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 20.0,
+        "control_retroceso_horizontal": 7.65,
+        "control_retroceso_vertical": 18.48,
+        "velocidad_restablecimiento_retroceso_ms": 200,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.15
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 3033,
+        "ads_ms": 260,
+        "ads_saltar_ms": 347,
+        "esprintar_disparar_ms": 230,
+        "deslizarse_disparar_ms": 400,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 334
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 180,
+          "multiplicador": "x1"
+        },
+        "cuello_pecho_alto": 180,
+        "pecho": 180,
+        "brazos": 180,
+        "abdomen": 180,
+        "caderas": 180,
+        "piernas": 180,
+        "pies": 180
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-381",
+          "dano": 180
+        },
+        {
+          "distancia_m": "381+",
+          "dano": 180
+        }
+      ]
+    },
+    "gdl-havoc": {
+      "nombre": "GDL Havoc",
+      "tipo": "Lanzador",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 5,
+        "capacidad": 4
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 82,
+        "velocidad_balas_ms": 790.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 0.1,
+        "dispersion_cadera_saltar": 0.1,
+        "dispersion_cadera_deslizarse": 0.1,
+        "dispersion_cadera_lanzarse": 0.1,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 20.0,
+        "control_retroceso_horizontal": 17.22,
+        "control_retroceso_vertical": 41.57,
+        "velocidad_restablecimiento_retroceso_ms": 200,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.15
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 4080,
+        "ads_ms": 260,
+        "ads_saltar_ms": 347,
+        "esprintar_disparar_ms": 230,
+        "deslizarse_disparar_ms": 400,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 334
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 55,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 50,
+        "pecho": 50,
+        "brazos": 50,
+        "abdomen": 50,
+        "caderas": 50,
+        "piernas": 50,
+        "pies": 50
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-381",
+          "dano": 50
+        },
+        {
+          "distancia_m": "381-406",
+          "dano": 0
+        },
+        {
+          "distancia_m": "406+",
+          "dano": 50
+        }
+      ]
+    },
+    "nx-ravager": {
+      "nombre": "NX Ravager",
+      "tipo": "Ballesta",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 6,
+        "capacidad": 1
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 21,
+        "velocidad_balas_ms": 142.2
+      },
+      "precision": {
+        "dispersion_cadera_max": 0.01,
+        "dispersion_cadera_saltar": 0.01,
+        "dispersion_cadera_deslizarse": 0.0,
+        "dispersion_cadera_lanzarse": 0.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 25.0,
+        "control_retroceso_horizontal": 0.22,
+        "control_retroceso_vertical": 5.0,
+        "velocidad_restablecimiento_retroceso_ms": 200,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.15
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 2933,
+        "ads_ms": 260,
+        "ads_saltar_ms": 347,
+        "esprintar_disparar_ms": 180,
+        "deslizarse_disparar_ms": 400,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 261
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 150,
+          "multiplicador": "x1"
+        },
+        "cuello_pecho_alto": 150,
+        "pecho": 150,
+        "brazos": 150,
+        "abdomen": 150,
+        "caderas": 150,
+        "piernas": 150,
+        "pies": 150
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-381",
+          "dano": 150
+        },
+        {
+          "distancia_m": "381+",
+          "dano": 150
+        }
+      ]
+    },
+    "m34-novaline": {
+      "nombre": "M34 Novaline",
+      "tipo": "Fusil táctico",
+      "modo_disparo": "Ráfaga / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 20
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 235,
+        "velocidad_balas_ms": 885.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 9.0,
+        "dispersion_cadera_saltar": 12.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 21.5,
+        "control_retroceso_horizontal": 10.51,
+        "control_retroceso_vertical": 42.34,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.7,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.55
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.4,
+        "velocidad_agachado_ms": 2.2,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 2.8
+      },
+      "manejo": {
+        "recarga_ms": 2545,
+        "ads_ms": 300,
+        "ads_saltar_ms": 403,
+        "esprintar_disparar_ms": 250,
+        "deslizarse_disparar_ms": 460,
+        "lanzarse_disparar_ms": 540,
+        "esprintar_disparar_saltar_ms": 363
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 81,
+          "multiplicador": "x1.4"
+        },
+        "cuello_pecho_alto": 66,
+        "pecho": 66,
+        "brazos": 66,
+        "abdomen": 48,
+        "caderas": 66,
+        "piernas": 48,
+        "pies": 48
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-30",
+          "dano": 60
+        },
+        {
+          "distancia_m": "30-45",
+          "dano": 58
+        },
+        {
+          "distancia_m": "45+",
+          "dano": 46
+        }
+      ]
+    },
+    "warden-308": {
+      "nombre": "Warden 308",
+      "tipo": "Fusil táctico",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 8
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 353,
+        "velocidad_balas_ms": 950.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.75,
+        "dispersion_cadera_saltar": 12.25,
+        "dispersion_cadera_deslizarse": 15.25,
+        "dispersion_cadera_lanzarse": 15.25,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 10.2,
+        "control_retroceso_horizontal": 10.53,
+        "control_retroceso_vertical": 57.6,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.52,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.55
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.5,
+        "velocidad_agachado_ms": 2.3,
+        "velocidad_esprintar_ms": 7.1,
+        "velocidad_apuntando_ms": 2.8
+      },
+      "manejo": {
+        "recarga_ms": 2378,
+        "ads_ms": 270,
+        "ads_saltar_ms": 361,
+        "esprintar_disparar_ms": 240,
+        "deslizarse_disparar_ms": 450,
+        "lanzarse_disparar_ms": 530,
+        "esprintar_disparar_saltar_ms": 348
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 104,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 80,
+        "pecho": 80,
+        "brazos": 80,
+        "abdomen": 64,
+        "caderas": 80,
+        "piernas": 64,
+        "pies": 64
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-20",
+          "dano": 80
+        },
+        {
+          "distancia_m": "20-51",
+          "dano": 63
+        },
+        {
+          "distancia_m": "51+",
+          "dano": 50
+        }
+      ]
+    },
+    "m8a1": {
+      "nombre": "M8A1",
+      "tipo": "Fusil táctico",
+      "modo_disparo": "Ráfaga / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 32
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 591,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.25,
+        "dispersion_cadera_saltar": 11.75,
+        "dispersion_cadera_deslizarse": 14.75,
+        "dispersion_cadera_lanzarse": 14.75,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 18.0,
+        "control_retroceso_horizontal": 33.2,
+        "control_retroceso_vertical": 41.06,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.7,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.45
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.5,
+        "velocidad_agachado_ms": 2.3,
+        "velocidad_esprintar_ms": 7.1,
+        "velocidad_apuntando_ms": 2.9
+      },
+      "manejo": {
+        "recarga_ms": 2877,
+        "ads_ms": 265,
+        "ads_saltar_ms": 354,
+        "esprintar_disparar_ms": 200,
+        "deslizarse_disparar_ms": 410,
+        "lanzarse_disparar_ms": 490,
+        "esprintar_disparar_saltar_ms": 220
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 43,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 38,
+        "pecho": 38,
+        "brazos": 34,
+        "abdomen": 34,
+        "caderas": 34,
+        "piernas": 34,
+        "pies": 34
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-45",
+          "dano": 38
+        },
+        {
+          "distancia_m": "45+",
+          "dano": 35
+        }
+      ]
+    },
+    "swordfish-a1": {
+      "nombre": "Swordfish A1",
+      "tipo": "Fusil táctico",
+      "modo_disparo": "Ráfaga",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 36
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 488,
+        "velocidad_balas_ms": 915.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.5,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 17.8,
+        "control_retroceso_horizontal": 1.68,
+        "control_retroceso_vertical": 19.95,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.7,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.45
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.4,
+        "velocidad_agachado_ms": 2.3,
+        "velocidad_esprintar_ms": 6.9,
+        "velocidad_apuntando_ms": 2.8
+      },
+      "manejo": {
+        "recarga_ms": 2622,
+        "ads_ms": 270,
+        "ads_saltar_ms": 361,
+        "esprintar_disparar_ms": 240,
+        "deslizarse_disparar_ms": 440,
+        "lanzarse_disparar_ms": 520,
+        "esprintar_disparar_saltar_ms": 348
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 51,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 45,
+        "pecho": 45,
+        "brazos": 45,
+        "abdomen": 40,
+        "caderas": 45,
+        "piernas": 40,
+        "pies": 40
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-42",
+          "dano": 45
+        },
+        {
+          "distancia_m": "42+",
+          "dano": 38
+        }
+      ]
+    },
+    "krs-7-62": {
+      "nombre": "KRS-7.62",
+      "tipo": "Fusil táctico",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 6,
+        "capacidad": 10
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 200,
+        "velocidad_balas_ms": 820.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.6,
+        "dispersion_cadera_saltar": 12.1,
+        "dispersion_cadera_deslizarse": 15.1,
+        "dispersion_cadera_lanzarse": 15.1,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 17.0,
+        "control_retroceso_horizontal": 25.03,
+        "control_retroceso_vertical": 70.1,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.52,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.4
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.2,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 3233,
+        "ads_ms": 340,
+        "ads_saltar_ms": 430,
+        "esprintar_disparar_ms": 250,
+        "deslizarse_disparar_ms": 425,
+        "lanzarse_disparar_ms": 505,
+        "esprintar_disparar_saltar_ms": 338
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 105,
+          "multiplicador": "x1.4"
+        },
+        "cuello_pecho_alto": 75,
+        "pecho": 75,
+        "brazos": 75,
+        "abdomen": 67,
+        "caderas": 75,
+        "piernas": 67,
+        "pies": 67
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-35",
+          "dano": 75
+        },
+        {
+          "distancia_m": "35-50",
+          "dano": 67
+        },
+        {
+          "distancia_m": "50+",
+          "dano": 54
+        }
+      ]
+    },
+    "xm325": {
+      "nombre": "XM325",
+      "tipo": "Ametralladora ligera",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 60
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1000,
+        "velocidad_balas_ms": 920.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.5,
+        "dispersion_cadera_saltar": 13.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 14.9,
+        "control_retroceso_horizontal": 7.37,
+        "control_retroceso_vertical": 36.52,
+        "velocidad_restablecimiento_retroceso_ms": 400,
+        "balanceo_apuntar_inmovil": 0.53,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.1
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.6,
+        "velocidad_agachado_ms": 2.0,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 2.7
+      },
+      "manejo": {
+        "recarga_ms": 4586,
+        "ads_ms": 245,
+        "ads_saltar_ms": 316,
+        "esprintar_disparar_ms": 220,
+        "deslizarse_disparar_ms": 430,
+        "lanzarse_disparar_ms": 510,
+        "esprintar_disparar_saltar_ms": 308
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 31,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 27,
+        "pecho": 27,
+        "brazos": 27,
+        "abdomen": 24,
+        "caderas": 27,
+        "piernas": 24,
+        "pies": 24
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-55",
+          "dano": 26
+        },
+        {
+          "distancia_m": "55+",
+          "dano": 22
+        }
+      ]
+    },
+    "mk-78": {
+      "nombre": "MK.78",
+      "tipo": "Ametralladora ligera",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 75
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 652,
+        "velocidad_balas_ms": 890.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 10.25,
+        "dispersion_cadera_saltar": 15.25,
+        "dispersion_cadera_deslizarse": 17.25,
+        "dispersion_cadera_lanzarse": 17.25,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 15.62,
+        "control_retroceso_horizontal": 10.7,
+        "control_retroceso_vertical": 45.92,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.53,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.07
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.6,
+        "velocidad_agachado_ms": 1.9,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 2.7
+      },
+      "manejo": {
+        "recarga_ms": 4372,
+        "ads_ms": 250,
+        "ads_saltar_ms": 323,
+        "esprintar_disparar_ms": 230,
+        "deslizarse_disparar_ms": 470,
+        "lanzarse_disparar_ms": 550,
+        "esprintar_disparar_saltar_ms": 253
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 44,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 37,
+        "pecho": 37,
+        "brazos": 37,
+        "abdomen": 35,
+        "caderas": 37,
+        "piernas": 35,
+        "pies": 35
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-50",
+          "dano": 34
+        },
+        {
+          "distancia_m": "50-68",
+          "dano": 30
+        },
+        {
+          "distancia_m": "68+",
+          "dano": 28
+        }
+      ]
+    },
+    "sokol-545": {
+      "nombre": "Sokol 545",
+      "tipo": "Ametralladora ligera",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 102
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 392,
+        "velocidad_balas_ms": 890.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 9.5,
+        "dispersion_cadera_saltar": 14.5,
+        "dispersion_cadera_deslizarse": 16.5,
+        "dispersion_cadera_lanzarse": 16.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 21.65,
+        "control_retroceso_horizontal": 11.35,
+        "control_retroceso_vertical": 52.41,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.53,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.1
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.5,
+        "velocidad_agachado_ms": 1.9,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 2.6
+      },
+      "manejo": {
+        "recarga_ms": 4986,
+        "ads_ms": 285,
+        "ads_saltar_ms": 370,
+        "esprintar_disparar_ms": 235,
+        "deslizarse_disparar_ms": 470,
+        "lanzarse_disparar_ms": 550,
+        "esprintar_disparar_saltar_ms": 329
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 52,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 44,
+        "pecho": 44,
+        "brazos": 44,
+        "abdomen": 44,
+        "caderas": 44,
+        "piernas": 44,
+        "pies": 44
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-45",
+          "dano": 44
+        },
+        {
+          "distancia_m": "45-62",
+          "dano": 41
+        },
+        {
+          "distancia_m": "62+",
+          "dano": 35
+        }
+      ]
+    },
+    "akita": {
+      "nombre": "Akita",
+      "tipo": "Escopeta",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 12,
+        "perdigones": 6
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 400,
+        "velocidad_balas_ms": 320.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 11.0,
+        "dispersion_cadera_saltar": 12.25,
+        "dispersion_cadera_deslizarse": 12.0,
+        "dispersion_cadera_lanzarse": 12.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 24.68,
+        "control_retroceso_horizontal": 25.57,
+        "control_retroceso_vertical": 67.17,
+        "velocidad_restablecimiento_retroceso_ms": 650,
+        "balanceo_apuntar_inmovil": 0.48,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.3
+      },
+      "manejo": {
+        "recarga_ms": 2900,
+        "ads_ms": 210,
+        "ads_saltar_ms": 277,
+        "esprintar_disparar_ms": 160,
+        "deslizarse_disparar_ms": 350,
+        "lanzarse_disparar_ms": 430,
+        "esprintar_disparar_saltar_ms": 232
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 26,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 26,
+        "pecho": 21,
+        "brazos": 21,
+        "abdomen": 20,
+        "caderas": 21,
+        "piernas": 20,
+        "pies": 20
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-3",
+          "dano": 20
+        },
+        {
+          "distancia_m": "3-6",
+          "dano": 13
+        },
+        {
+          "distancia_m": "6-12",
+          "dano": 10
+        },
+        {
+          "distancia_m": "12-23",
+          "dano": 8
+        }
+      ]
+    },
+    "echo-12": {
+      "nombre": "Echo 12",
+      "tipo": "Escopeta",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 12,
+        "perdigones": 8
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 75,
+        "velocidad_balas_ms": 320.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 9.3,
+        "dispersion_cadera_saltar": 12.1,
+        "dispersion_cadera_deslizarse": 12.1,
+        "dispersion_cadera_lanzarse": 12.1,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 36.9,
+        "control_retroceso_horizontal": 35.86,
+        "control_retroceso_vertical": 106.19,
+        "velocidad_restablecimiento_retroceso_ms": 650,
+        "balanceo_apuntar_inmovil": 0.48,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.6,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.2
+      },
+      "manejo": {
+        "recarga_ms": 2853,
+        "ads_ms": 240,
+        "ads_saltar_ms": 319,
+        "esprintar_disparar_ms": 180,
+        "deslizarse_disparar_ms": 400,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 198
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 38,
+          "multiplicador": "x1"
+        },
+        "cuello_pecho_alto": 38,
+        "pecho": 38,
+        "brazos": 38,
+        "abdomen": 30,
+        "caderas": 38,
+        "piernas": 30,
+        "pies": 30
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-3",
+          "dano": 38
+        },
+        {
+          "distancia_m": "3-6",
+          "dano": 35
+        },
+        {
+          "distancia_m": "6-9",
+          "dano": 29
+        },
+        {
+          "distancia_m": "9-24",
+          "dano": 15
+        }
+      ]
+    },
+    "m10-breacher": {
+      "nombre": "M10 Breacher",
+      "tipo": "Escopeta",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 8,
+        "perdigones": 8
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 76,
+        "velocidad_balas_ms": 320.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 11.5,
+        "dispersion_cadera_saltar": 14.0,
+        "dispersion_cadera_deslizarse": 13.5,
+        "dispersion_cadera_lanzarse": 13.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 53.6,
+        "control_retroceso_horizontal": 42.04,
+        "control_retroceso_vertical": 98.04,
+        "velocidad_restablecimiento_retroceso_ms": 1600,
+        "balanceo_apuntar_inmovil": 0.48,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.4,
+        "velocidad_apuntando_ms": 3.2
+      },
+      "manejo": {
+        "recarga_ms": 6128,
+        "ads_ms": 250,
+        "ads_saltar_ms": 333,
+        "esprintar_disparar_ms": 155,
+        "deslizarse_disparar_ms": 480,
+        "lanzarse_disparar_ms": 530,
+        "esprintar_disparar_saltar_ms": 171
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 60,
+          "multiplicador": "x1"
+        },
+        "cuello_pecho_alto": 54,
+        "pecho": 57,
+        "brazos": 54,
+        "abdomen": 54,
+        "caderas": 54,
+        "piernas": 54,
+        "pies": 54
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-2",
+          "dano": 60
+        },
+        {
+          "distancia_m": "2-8",
+          "dano": 55
+        },
+        {
+          "distancia_m": "8-9",
+          "dano": 45
+        },
+        {
+          "distancia_m": "9-25",
+          "dano": 32
+        }
+      ]
+    },
+    "sg-12": {
+      "nombre": "SG-12",
+      "tipo": "Escopeta",
+      "modo_disparo": "Semi-auto",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 8,
+        "perdigones": 6
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 212,
+        "velocidad_balas_ms": 320.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 10.5,
+        "dispersion_cadera_saltar": 13.5,
+        "dispersion_cadera_deslizarse": 12.5,
+        "dispersion_cadera_lanzarse": 12.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 32.48,
+        "control_retroceso_horizontal": 34.04,
+        "control_retroceso_vertical": 91.59,
+        "velocidad_restablecimiento_retroceso_ms": 650,
+        "balanceo_apuntar_inmovil": 0.48,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.2
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.7,
+        "velocidad_agachado_ms": 2.4,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.2
+      },
+      "manejo": {
+        "recarga_ms": 2860,
+        "ads_ms": 220,
+        "ads_saltar_ms": 291,
+        "esprintar_disparar_ms": 200,
+        "deslizarse_disparar_ms": 400,
+        "lanzarse_disparar_ms": 480,
+        "esprintar_disparar_saltar_ms": 280
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 25,
+          "multiplicador": "x1"
+        },
+        "cuello_pecho_alto": 25,
+        "pecho": 25,
+        "brazos": 25,
+        "abdomen": 22,
+        "caderas": 25,
+        "piernas": 22,
+        "pies": 22
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-3",
+          "dano": 25
+        },
+        {
+          "distancia_m": "3-5",
+          "dano": 20
+        },
+        {
+          "distancia_m": "5-8",
+          "dano": 18
+        },
+        {
+          "distancia_m": "8-29",
+          "dano": 15
+        }
+      ]
+    },
+    "an-94": {
+      "nombre": "AN-94",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 645,
+        "velocidad_balas_ms": 920.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.25,
+        "dispersion_cadera_saltar": 12.25,
+        "dispersion_cadera_deslizarse": 15.25,
+        "dispersion_cadera_lanzarse": 15.25,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 34.51,
+        "control_retroceso_horizontal": 15.67,
+        "control_retroceso_vertical": 48.98,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.6,
+        "velocidad_agachado_ms": 2.3,
+        "velocidad_esprintar_ms": 7.1,
+        "velocidad_apuntando_ms": 2.9
+      },
+      "manejo": {
+        "recarga_ms": 2720,
+        "ads_ms": 235,
+        "ads_saltar_ms": 319,
+        "esprintar_disparar_ms": 257,
+        "deslizarse_disparar_ms": 440,
+        "lanzarse_disparar_ms": 520,
+        "esprintar_disparar_saltar_ms": 386
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 45,
+          "multiplicador": "x1.3"
+        },
+        "cuello_pecho_alto": 38,
+        "pecho": 38,
+        "brazos": 38,
+        "abdomen": 34,
+        "caderas": 38,
+        "piernas": 34,
+        "pies": 34
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-40",
+          "dano": 38
+        },
+        {
+          "distancia_m": "40-60",
+          "dano": 34
+        },
+        {
+          "distancia_m": "60+",
+          "dano": 32
+        }
+      ]
+    },
+    "x9-maverick": {
+      "nombre": "X9 Maverick",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Ráfaga / Semi-auto",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 479,
+        "velocidad_balas_ms": 900.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.0,
+        "dispersion_cadera_saltar": 12.0,
+        "dispersion_cadera_deslizarse": 15.0,
+        "dispersion_cadera_lanzarse": 15.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 16.65,
+        "control_retroceso_horizontal": 7.43,
+        "control_retroceso_vertical": 45.84,
+        "velocidad_restablecimiento_retroceso_ms": 1000,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.8,
+        "velocidad_agachado_ms": 2.5,
+        "velocidad_esprintar_ms": 7.3,
+        "velocidad_apuntando_ms": 3.1
+      },
+      "manejo": {
+        "recarga_ms": 3230,
+        "ads_ms": 245,
+        "ads_saltar_ms": 326,
+        "esprintar_disparar_ms": 195,
+        "deslizarse_disparar_ms": 420,
+        "lanzarse_disparar_ms": 470,
+        "esprintar_disparar_saltar_ms": 215
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 57,
+          "multiplicador": "x1.2"
+        },
+        "cuello_pecho_alto": 44,
+        "pecho": 44,
+        "brazos": 44,
+        "abdomen": 43,
+        "caderas": 44,
+        "piernas": 43,
+        "pies": 43
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-42",
+          "dano": 48
+        },
+        {
+          "distancia_m": "42-55",
+          "dano": 41
+        },
+        {
+          "distancia_m": "55+",
+          "dano": 38
+        }
+      ]
+    },
+    "fg42": {
+      "nombre": "FG42",
+      "tipo": "Fusil de asalto",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 30
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 799,
+        "velocidad_balas_ms": 920.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 8.5,
+        "dispersion_cadera_saltar": 13.5,
+        "dispersion_cadera_deslizarse": 15.5,
+        "dispersion_cadera_lanzarse": 15.5,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 18.6,
+        "control_retroceso_horizontal": 12.64,
+        "control_retroceso_vertical": 40.96,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.42,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.18
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.4,
+        "velocidad_agachado_ms": 2.2,
+        "velocidad_esprintar_ms": 7.0,
+        "velocidad_apuntando_ms": 2.8
+      },
+      "manejo": {
+        "recarga_ms": 2490,
+        "ads_ms": 240,
+        "ads_saltar_ms": 319,
+        "esprintar_disparar_ms": 237,
+        "deslizarse_disparar_ms": 450,
+        "lanzarse_disparar_ms": 530,
+        "esprintar_disparar_saltar_ms": 261
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 40,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 35,
+        "pecho": 35,
+        "brazos": 35,
+        "abdomen": 31,
+        "caderas": 35,
+        "piernas": 31,
+        "pies": 31
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-40",
+          "dano": 35
+        },
+        {
+          "distancia_m": "40-58",
+          "dano": 30
+        },
+        {
+          "distancia_m": "58+",
+          "dano": 28
+        }
+      ]
+    },
+    "gremlin": {
+      "nombre": "Gremlin",
+      "tipo": "Subfusil",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 4,
+        "capacidad": 35
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 1071,
+        "velocidad_balas_ms": 518.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 2.0,
+        "dispersion_cadera_saltar": 4.0,
+        "dispersion_cadera_deslizarse": 4.0,
+        "dispersion_cadera_lanzarse": 4.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 42.01,
+        "control_retroceso_horizontal": 10.52,
+        "control_retroceso_vertical": 45.0,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.39,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.12
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 5.2,
+        "velocidad_agachado_ms": 2.6,
+        "velocidad_esprintar_ms": 7.6,
+        "velocidad_apuntando_ms": 3.7
+      },
+      "manejo": {
+        "recarga_ms": 2528,
+        "ads_ms": 160,
+        "ads_saltar_ms": 207,
+        "esprintar_disparar_ms": 107,
+        "deslizarse_disparar_ms": 320,
+        "lanzarse_disparar_ms": 400,
+        "esprintar_disparar_saltar_ms": 155
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 16,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 14,
+        "pecho": 14,
+        "brazos": 14,
+        "abdomen": 12,
+        "caderas": 14,
+        "piernas": 12,
+        "pies": 12
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-12",
+          "dano": 14
+        },
+        {
+          "distancia_m": "12-21",
+          "dano": 12
+        },
+        {
+          "distancia_m": "21+",
+          "dano": 10
+        }
+      ]
+    }
+  }
+}

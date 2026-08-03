@@ -1,0 +1,20 @@
+{
+  "_doc": "Temporadas del juego, ordenadas por fecha de lanzamiento. El home decide SOLO cual mostrar: la temporada ACTUAL es la ultima cuya fecha de lanzamiento ya paso (su banner va en el hero), y la PROXIMA es la siguiente cuya fecha todavia no llego (su banner va arriba con la cuenta regresiva). Cuando el contador llega a cero la transicion es automatica: el banner de arriba pasa al hero, el contador desaparece y los textos pasan a la temporada nueva. NO hay que tocar nada el dia del lanzamiento.",
+  "_como_agregar_la_proxima": "Agregar un objeto al final de 'temporadas' con numero, lanzamiento (ISO con zona horaria), banner y url. Nada mas. El banner con contador aparece solo, y el dia del lanzamiento pasa a ser la temporada actual automaticamente.",
+  "temporadas": [
+    {
+      "numero": 4,
+      "lanzamiento": "2026-06-04T09:00:00-07:00",
+      "banner": "/season-banner-s04.png",
+      "url": "/noticias",
+      "alt": "Temporada 4 — Warzone Black Ops 7 · novedades y roadmap"
+    },
+    {
+      "numero": 5,
+      "lanzamiento": "2026-07-23T09:00:00-07:00",
+      "banner": "/uploads/banner-bo7-s5.jpg",
+      "url": "/noticias/temporada-5-black-ops-7",
+      "alt": "Temporada 5 — Warzone Black Ops 7 · novedades y roadmap"
+    }
+  ]
+}

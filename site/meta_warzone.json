@@ -1,0 +1,2281 @@
+[
+    {
+        "ranking": 1,
+        "arma": "FG42",
+        "imagen_url": "/weapons/gold/FG42.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": true,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Optic",
+                "item": "FANG HoverPoint ELO",
+                "nivel": ""
+            },
+            {
+                "slot": "Muzzle",
+                "item": "Monolithic Suppressor",
+                "nivel": ""
+            },
+            {
+                "slot": "Barrel",
+                "item": "17\" Strident Barrel",
+                "nivel": ""
+            },
+            {
+                "slot": "Stock",
+                "item": "Termination Stock",
+                "nivel": ""
+            },
+            {
+                "slot": "Magazine",
+                "item": "Overbook Extended Mag",
+                "nivel": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 2,
+        "arma": "CBRS-3",
+        "imagen_url": "/weapons/gold/CBRS-3.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "Lethal Tools ELO",
+                "nivel": "—",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Bowen 9mm Suppressor",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "15\" Redwell Parlay Barrel",
+                "nivel": "11",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "MFS Carousel Fast Mag",
+                "nivel": "Season 4 Battle Pass",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Culata",
+                "item": "Slipway Stock",
+                "nivel": "5",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "S15-9PHUZ-Z311",
+        "fuente": "Verificado en juego — S4",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 3,
+        "arma": "MK35 ISR",
+        "imagen_url": "/weapons/gold/MK35 ISR.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": true,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "VAS 5.56 Suppressor",
+                "nivel": "3",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "18.7\" Bowen Aileron Barrel",
+                "nivel": "4",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "H-Lock Foregrip",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Libate-RT Fast Mag",
+                "nivel": "6",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "2",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "A12-34FK5-7H8YU-11",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 4,
+        "arma": "VST",
+        "imagen_url": "/weapons/gold/VST.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "Bowen .45 Suppressor",
+                "nivel": "4",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "9.7\" Enmity Barrel",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Respire Handstop",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Divest Fast Mag",
+                "nivel": "8",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "VAS Precision Shift Laser",
+                "nivel": "2",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 5,
+        "arma": "DS20 Mirage",
+        "imagen_url": "/weapons/gold/DS20 Mirage.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "black_ops_royale",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "FANG HoverPoint ELO",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Monolithic Suppressor",
+                "nivel": "4",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "17.1\" Abdicator Barrel",
+                "nivel": "9",
+                "nombre_es": "Cañón Abdicator de 43.43 cm"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Griffon Reserve Extended II",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Culata",
+                "item": "Weighted Stock",
+                "nivel": "—",
+                "nombre_es": "Culata con peso"
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 6,
+        "arma": "REV-46",
+        "imagen_url": "/weapons/gold/REV-46.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Bowen .45 Suppressor",
+                "nivel": "2"
+            },
+            {
+                "slot": "Cañón",
+                "item": "13\" LTI Dorsal Barrel",
+                "nivel": "7"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Respire Handstop",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Janus Flip Mag",
+                "nivel": "6"
+            },
+            {
+                "slot": "Láser",
+                "item": "EAM ScatterLine Laser",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 7,
+        "arma": "VS Recon",
+        "imagen_url": "/weapons/gold/VS Recon.png",
+        "categoria_tactica": "Fusil de precisión",
+        "tipo_arma": "Fusil de precisión",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "Greaves A-762",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "24.9\" Domain Barrel",
+                "nivel": "12",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Mira",
+                "item": "RistRauch 7x",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "AxisPro Handguard",
+                "nivel": "8",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "DashLine Speed Mag",
+                "nivel": "4",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "R01-VJY3U-ZA8F1-1",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 8,
+        "arma": "Hawker HX",
+        "imagen_url": "/weapons/gold/Hawker HX.png",
+        "categoria_tactica": "Fusil de precisión",
+        "tipo_arma": "Fusil de precisión",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "black_ops_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "EMT3 Compensator",
+                "nivel": "8",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "27.4\" Teleos Range Barrel",
+                "nivel": "2",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Hawker Ridge Grip",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Amrita Fast Mag",
+                "nivel": "9",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "3",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 9,
+        "arma": "Strider 300",
+        "imagen_url": "/weapons/gold/Strider 300.png",
+        "categoria_tactica": "Fusil de precisión",
+        "tipo_arma": "Fusil de precisión",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "RL-7.62 Compensator",
+                "nivel": "3",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "24.1\" Saltire Dispatch Barrel",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Cornerstone-642 Guard",
+                "nivel": "9",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Laden Extended Mag",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "2",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 10,
+        "arma": "AK-27",
+        "imagen_url": "/weapons/gold/AK-27.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "VAS LED",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "EMT3 Compensator",
+                "nivel": "3",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "17.6\" Vandal Heavy Barrel",
+                "nivel": "34",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Saber Pack Heavy Drum",
+                "nivel": "38",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Lateral Precision Grip",
+                "nivel": "2",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "A02-AV4J9-XA871-1",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 11,
+        "arma": "Ryden 45K",
+        "imagen_url": "/weapons/gold/Ryden 45K.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "Hawker Series 45",
+                "nivel": "3",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "11\" Rauch 6L-R Barrel",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Mira",
+                "item": "LTI Reflex",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Respire Handstop",
+                "nivel": "8",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Fraternity Flip Mag",
+                "nivel": "2",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 12,
+        "arma": "MXR-17",
+        "imagen_url": "/weapons/gold/MXR-17.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "black_ops_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "VAS MicroFlex",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Greaves Ti-762",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "18\" Rapid Sterling Barrel",
+                "nivel": "2",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Sentry Pro Handstop",
+                "nivel": "9",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Vault Extended Mag",
+                "nivel": "11",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 13,
+        "arma": "Sturmwolf 45",
+        "imagen_url": "/weapons/gold/Sturmwolf 45.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": true,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Hawker Series 45",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cañón",
+                "item": "11.5\" LTI Ascendancy Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Respire Handstop",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "LTI Upend Flip Mag",
+                "nivel": "7"
+            },
+            {
+                "slot": "Láser",
+                "item": "EAM ScatterLine Laser",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 14,
+        "arma": "AN-94",
+        "imagen_url": "/weapons/gold/AN-94.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "FANG HoverPoint ELO",
+                "nivel": "—"
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Monolithic Suppressor",
+                "nivel": "39"
+            },
+            {
+                "slot": "Cañón",
+                "item": "15\" Benthic Barrel",
+                "nivel": "11"
+            },
+            {
+                "slot": "Acople",
+                "item": "VAS Convergence Foregrip",
+                "nivel": "Weekly Challenge Reward"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Rexford Extended II",
+                "nivel": "32"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 15,
+        "arma": "VX Compact",
+        "imagen_url": "/weapons/gold/VX Compact.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "FANG HoverPoint ELO",
+                "nivel": "—"
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Redwell Shade-X Suppressor",
+                "nivel": "Weekly Challenge Reward"
+            },
+            {
+                "slot": "Cañón",
+                "item": "14.3\" Redwell Ascent",
+                "nivel": "—"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Inclination Extended Mag",
+                "nivel": "—"
+            },
+            {
+                "slot": "Culata",
+                "item": "Lactic Light Stock",
+                "nivel": "—"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 16,
+        "arma": "Voyak KT-3",
+        "imagen_url": "/weapons/gold/Voyak KT-3.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "SWF Tishina-11",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "19.2\" Greaves-C5 Barrel",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Force Stabilizer Handstop",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Lineguard Casket Mag",
+                "nivel": "2",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "1mW Instinct Laser Array",
+                "nivel": "8",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 17,
+        "arma": "MPC-25",
+        "imagen_url": "/weapons/gold/MPC-25.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "K&S Stalker 57-X",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "13.1\" Razorback Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Óptica",
+                "item": "LTI Mini",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "VAS Drift Lock Foregrip",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Coachwhip Fast Mag",
+                "nivel": "8"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 18,
+        "arma": "M15 MOD 0",
+        "imagen_url": "/weapons/gold/M15 MOD 0.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Redwell 5.56 Compensator",
+                "nivel": "13"
+            },
+            {
+                "slot": "Cañón",
+                "item": "20\" Delta-F2 Barrel",
+                "nivel": "6"
+            },
+            {
+                "slot": "Óptica",
+                "item": "LTI Mini",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Ironhold Angled Grip",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Backline Flip Mags",
+                "nivel": "2"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 19,
+        "arma": "Peacekeeper Mk1",
+        "imagen_url": "/weapons/gold/Peacekeeper Mk1.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "K&S Stalker 57-X",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cañón",
+                "item": "14.5\" E7-Cuff Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Óptica",
+                "item": "Lethal Tools ELO",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Lateral Precision Grip",
+                "nivel": "8"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Vulcan Reach Extension",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 20,
+        "arma": "Carbon 57",
+        "imagen_url": "/weapons/gold/Carbon 57.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "K&S Compensator",
+                "nivel": "2",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "8.5\" VAS Radiant Barrel",
+                "nivel": "4",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Mira",
+                "item": "EAM Micro Dot",
+                "nivel": "14",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Respire Handstop",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Bowen Sideline Extended",
+                "nivel": "11",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 21,
+        "arma": "X9 Maverick",
+        "imagen_url": "/weapons/gold/X9 Maverick.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Defense-H Suppressor",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cañón",
+                "item": "16\" OS-Density Barrel",
+                "nivel": "6"
+            },
+            {
+                "slot": "Óptica",
+                "item": "EAM Micro Dot",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Enhance-32 Handstop",
+                "nivel": "7"
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "9"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 22,
+        "arma": "Kogot-7",
+        "imagen_url": "/weapons/gold/Kogot-7.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "SWF Tishina-11",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "8.5\" Targil Hock-XR",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "1mW Instinct Laser Array",
+                "nivel": "26",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Empuñadura trasera",
+                "item": "Rhinebeck Grip",
+                "nivel": "25",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Vex Expanse Mag",
+                "nivel": "32",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "S10-6K4JN-R831",
+        "fuente": "Verificado en juego — S3",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 23,
+        "arma": "EGRT-17",
+        "imagen_url": "/weapons/gold/EGRT-17.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Tiling Muzzle",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cañón",
+                "item": "14.6\" LTI Verdin Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "M335-X Frag",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Verto Flip Mag",
+                "nivel": "5"
+            },
+            {
+                "slot": "Láser",
+                "item": "5mw Lockstep Laser",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 24,
+        "arma": "Sokol 545",
+        "imagen_url": "/weapons/gold/Sokol 545.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Ametralladora ligera",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "SWF Tishina-11",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cañón",
+                "item": "18.2\" Primer Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Enhance-32 Handstop",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Clepen Fast Mag",
+                "nivel": "12"
+            },
+            {
+                "slot": "Láser",
+                "item": "2mw Adaptive Tactical Laser",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 25,
+        "arma": "Dravec 45",
+        "imagen_url": "/weapons/gold/Dravec 45.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de cañón",
+                "item": "Hawker Series 45",
+                "nivel": "4",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "18\" Jetstream Barrel",
+                "nivel": "6",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Mira",
+                "item": "Lethal Tools ELO",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Láser",
+                "item": "EAM ScatterLine Laser",
+                "nivel": "7",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "FrontGate Fast Loader",
+                "nivel": "3",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "S04-BGVV5-43931",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 26,
+        "arma": "Gremlin",
+        "imagen_url": "/weapons/gold/Gremlin.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": true,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Muzzle",
+                "item": "Hawker Stabilizer MK.II",
+                "nivel": ""
+            },
+            {
+                "slot": "Stock",
+                "item": "Corticate Stock",
+                "nivel": ""
+            },
+            {
+                "slot": "Rear Grip",
+                "item": "Terse Grip",
+                "nivel": ""
+            },
+            {
+                "slot": "Barrel",
+                "item": "9\" MFS Cestus Barrel",
+                "nivel": ""
+            },
+            {
+                "slot": "Fire Mods",
+                "item": "Buffer Spring",
+                "nivel": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 27,
+        "arma": "Razor 9mm",
+        "imagen_url": "/weapons/gold/Razor 9mm.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "H-9mm Precision Comp",
+                "nivel": "2"
+            },
+            {
+                "slot": "Cañón",
+                "item": "9\" Heron Barrel",
+                "nivel": "4"
+            },
+            {
+                "slot": "Óptica",
+                "item": "EAM xL Reflex",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Respire Handstop",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Hawkline Fast Mag I",
+                "nivel": "7"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 28,
+        "arma": "MK.78",
+        "imagen_url": "/weapons/gold/MK.78.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Ametralladora ligera",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "VAS LED",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Greaves A-762",
+                "nivel": "6",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "20\" Mach-78 Barrel",
+                "nivel": "3",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Bajo Cañón",
+                "item": "Parallel Foregrip",
+                "nivel": "8",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Swift Feed Fast Belt",
+                "nivel": "11",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "M01-MK78A-LR321-2",
+        "fuente": "Verificado en juego — S3",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 29,
+        "arma": "Maddox RFB",
+        "imagen_url": "/weapons/gold/Maddox RFB.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "VAS 5.56 Suppressor",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "21\" Turbine Booster Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "M335-X Frag",
+                "nivel": "9"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Plumage Fast Mag",
+                "nivel": "16"
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "5"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 30,
+        "arma": "XM325",
+        "imagen_url": "/weapons/gold/XM325.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Ametralladora ligera",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Greaves A-762",
+                "nivel": "10"
+            },
+            {
+                "slot": "Cañón",
+                "item": "24\" Fractal-LRB Barrel",
+                "nivel": "4"
+            },
+            {
+                "slot": "Óptica",
+                "item": "Lethal Tools ELO",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Sentry Pro Handstop",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Wessi Fast Belt",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 31,
+        "arma": "M8A1",
+        "imagen_url": "/weapons/gold/M8A1.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Marksman",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Redwell 5.56 Compensator",
+                "nivel": "12"
+            },
+            {
+                "slot": "Cañón",
+                "item": "18\" Ionic-8 Barrel",
+                "nivel": "6"
+            },
+            {
+                "slot": "Óptica",
+                "item": "Lethal Tools ELO",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Ironhold Angled Grip",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Blink-Chamber Fast Clip",
+                "nivel": "4"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 32,
+        "arma": "Swordfish A1",
+        "imagen_url": "/weapons/gold/Swordfish A1.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Marksman",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "VAS 5.56 Suppressor",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cañón",
+                "item": "16.5\" Gar-xL Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Fixus Underbarrel",
+                "nivel": "8"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Dorado Extended Mag",
+                "nivel": "6"
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "5"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 33,
+        "arma": "XR-3 Ion",
+        "imagen_url": "/weapons/gold/XR-3 Ion.png",
+        "categoria_tactica": "Fusil de precisión",
+        "tipo_arma": "Fusil de precisión",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "LTI Triad Suppressor",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cañón",
+                "item": "21\" LTI Infinity Barrel",
+                "nivel": "6"
+            },
+            {
+                "slot": "Óptica",
+                "item": "VAS LED",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Stalwart-5 Handguard",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Phantom-V Fast Mag",
+                "nivel": "8"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 34,
+        "arma": "Akita",
+        "imagen_url": "/weapons/gold/Akita.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Escopeta",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Akita Full Bore-12",
+                "nivel": "10"
+            },
+            {
+                "slot": "Cañón",
+                "item": "12\" Security Cipher Barrel",
+                "nivel": "9"
+            },
+            {
+                "slot": "Óptica",
+                "item": "VAS LED",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Sapper Guard Handstop",
+                "nivel": "14"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Shell Carrier Extended I",
+                "nivel": "4"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 35,
+        "arma": "M10 Breacher",
+        "imagen_url": "/weapons/gold/M10 Breacher.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Escopeta",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Redwell Agency Suppressor",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cañón",
+                "item": "17\" Overload Barrel",
+                "nivel": "6"
+            },
+            {
+                "slot": "Óptica",
+                "item": "LTI Mini",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Force Stabilizer Handstop",
+                "nivel": "12"
+            },
+            {
+                "slot": "Láser",
+                "item": "5mw Lockstep Laser",
+                "nivel": "8"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 36,
+        "arma": "M34 Novaline",
+        "imagen_url": "/weapons/gold/M34 Novaline.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Marksman",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "RL-7.62 Compensator",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "17.3\" Velox-90 Barrel",
+                "nivel": "9"
+            },
+            {
+                "slot": "Óptica",
+                "item": "Greaves Red Dot",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Ironhold Angled Grip",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Templar Flip Mags",
+                "nivel": "2"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 37,
+        "arma": "Warden 308",
+        "imagen_url": "/weapons/gold/Warden 308.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Marksman",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Outlaw Silencer",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "17.3\" LTI Fluted-X35 Barrel",
+                "nivel": "4"
+            },
+            {
+                "slot": "Óptica",
+                "item": "VAS LED",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Speed Latch Cylinder",
+                "nivel": "9"
+            },
+            {
+                "slot": "Láser",
+                "item": "Convergence Box Laser",
+                "nivel": "8"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 38,
+        "arma": "RK-9",
+        "imagen_url": "/weapons/gold/RK-9.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Bowen .45 Suppressor",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "12.4\" VAS Tethys Barrel",
+                "nivel": "3"
+            },
+            {
+                "slot": "Óptica",
+                "item": "VAS MicroFlex",
+                "nivel": "5"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Quickstep Foregrip",
+                "nivel": "8"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Alliance Extended Mag",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 39,
+        "arma": "SG-12",
+        "imagen_url": "/weapons/gold/SG-12.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Escopeta",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "HKO Suppressor",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "20\" Hawker Reach Barrel",
+                "nivel": "4"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Ironhold Angled Grip",
+                "nivel": "10"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Collie Flip Mag",
+                "nivel": "5"
+            },
+            {
+                "slot": "Láser",
+                "item": "5mW Lockstep Laser",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 40,
+        "arma": "Echo 12",
+        "imagen_url": "/weapons/gold/Echo 12.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Escopeta",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Dual Clone Suppressor",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cañón",
+                "item": "17.3\" Nero-Twin Barrel",
+                "nivel": "7"
+            },
+            {
+                "slot": "Óptica",
+                "item": "K&S Slim Reflex",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "VAS BravoTap Drum",
+                "nivel": "6"
+            },
+            {
+                "slot": "Láser",
+                "item": "1mW Instinct Laser Array",
+                "nivel": "9"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 41,
+        "arma": "KRS-7.62",
+        "imagen_url": "/weapons/gold/KRS-7.62.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Marksman",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Óptica",
+                "item": "Bowen X-25 IR",
+                "nivel": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 42,
+        "arma": "Velox 5.7",
+        "imagen_url": "/weapons/gold/Velox 5.7.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Pistola",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Greaves Covert-5",
+                "nivel": "7"
+            },
+            {
+                "slot": "Cañón",
+                "item": "5.2\" Anvil Barrel",
+                "nivel": "8"
+            },
+            {
+                "slot": "Óptica",
+                "item": "VAS LED",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Serpens Fast Mag",
+                "nivel": "4"
+            },
+            {
+                "slot": "Láser",
+                "item": "XS-1 Tactical Laser",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 43,
+        "arma": "CODA 9",
+        "imagen_url": "/weapons/gold/CODA 9.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Pistola",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Bowen 9mm Suppressor",
+                "nivel": "2"
+            },
+            {
+                "slot": "Cañón",
+                "item": "4.1\" Paragon Barrel",
+                "nivel": "7"
+            },
+            {
+                "slot": "Óptica",
+                "item": "LTI Mini",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "NanoFeed Fast Mag",
+                "nivel": "3"
+            },
+            {
+                "slot": "Láser",
+                "item": "2mW Pinpoint Pistol Laser",
+                "nivel": "6"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 44,
+        "arma": "Jäger 45",
+        "imagen_url": "/weapons/gold/Jäger 45.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Pistola",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Jager Roar Suppressor",
+                "nivel": "3"
+            },
+            {
+                "slot": "Cañón",
+                "item": "6.3\" Elevation Barrel",
+                "nivel": "4"
+            },
+            {
+                "slot": "Óptica",
+                "item": "EAM Micro Dot",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Stryder-Snap Speed Clip",
+                "nivel": "2"
+            },
+            {
+                "slot": "Láser",
+                "item": "Vector Sync Laser",
+                "nivel": "7"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 45,
+        "arma": "Shadow SK",
+        "imagen_url": "/weapons/gold/Shadow SK.png",
+        "categoria_tactica": "Fusil de precisión",
+        "tipo_arma": "Fusil de precisión",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "EMT3 Compensator",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cañón",
+                "item": "17\" Thrust Barrel",
+                "nivel": "Barrel"
+            },
+            {
+                "slot": "Óptica",
+                "item": "Greaves Red Dot",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Targil Extended Mag",
+                "nivel": "Magazine"
+            },
+            {
+                "slot": "Láser",
+                "item": "2mW Adaptive Tactical Laser",
+                "nivel": "13"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 46,
+        "arma": "MAMMOTH",
+        "imagen_url": "/weapons/gold/MAMMOTH.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Ametralladora ligera",
+        "pick_rate": "",
+        "es_nuevo": true,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Optic",
+                "item": "FANG HoverPoint ELO",
+                "nivel": ""
+            },
+            {
+                "slot": "Muzzle",
+                "item": "Redwell Shade-X Suppressor",
+                "nivel": ""
+            },
+            {
+                "slot": "Underbarrel",
+                "item": "VAS Convergence Foregrip",
+                "nivel": ""
+            },
+            {
+                "slot": "Magazine",
+                "item": "Reconfigure Extended Mag",
+                "nivel": ""
+            },
+            {
+                "slot": "Rear Grip",
+                "item": "Furtive Grip",
+                "nivel": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 47,
+        "arma": "Siren",
+        "imagen_url": "/weapons/gold/Siren.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Especial",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Magazine",
+                "item": "MFS Deflection Core",
+                "nivel": ""
+            },
+            {
+                "slot": "Rear Grip",
+                "item": "Lancet Tear Grip",
+                "nivel": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 48,
+        "arma": "NX Ravager",
+        "imagen_url": "/weapons/gold/NX Ravager.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Especial",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Óptica",
+                "item": "Redwell 30-S 2x",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "TriBolt",
+                "nivel": "Weapon Prestige"
+            },
+            {
+                "slot": "Modificaciones de Disparo",
+                "item": "Explosive Crossbow Bolt",
+                "nivel": "15"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 49,
+        "arma": "GDL Havoc",
+        "imagen_url": "/weapons/gold/GDL Havoc.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Especial",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Cargador",
+                "item": "MFS Airstrike Mag",
+                "nivel": "Weapon Prestige"
+            },
+            {
+                "slot": "Empuñadura Trasera",
+                "item": "Actuator Grip",
+                "nivel": "5"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 50,
+        "arma": "GRIMHAWK",
+        "imagen_url": "/weapons/gold/GRIMHAWK.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Especial",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Cañón",
+                "item": "MFS Circuital Barrel",
+                "nivel": "Weapon Prestige"
+            },
+            {
+                "slot": "Óptica",
+                "item": "PrismaTech Affirm 2x",
+                "nivel": "10"
+            },
+            {
+                "slot": "Cargador",
+                "item": "P.T. Expanse Mag",
+                "nivel": "20"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    },
+    {
+        "ranking": 51,
+        "arma": "EXECUTIONER'S DUET",
+        "imagen_url": "/weapons/gold/EXECUTIONER'S DUET.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Cuerpo a cuerpo",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale"
+        ],
+        "attachments": [],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-03 12:48"
+    }
+]

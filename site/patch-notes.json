@@ -1,0 +1,336 @@
+{
+  "ultima_actualizacion": "2026-07-22T18:34:53.131104+00:00",
+  "total_patches": 6,
+  "patches": {
+    "b5513b27fe9f9141": {
+      "id": "b5513b27fe9f9141",
+      "url": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+      "titulo": "Call Of Duty Black Ops 7 Season 04 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-06-04T04:42:40.416740+00:00",
+      "descripcion": "",
+      "armas_afectadas": [
+        {
+          "slug": "sg-12",
+          "nombre": "SG-12",
+          "tipo_cambio": "buff",
+          "extracto": "SG-12 Adjustments: We are tuning down Dragon’s Breath on the SG-12, as it’s been overperforming and quickly spiking in usage. It will still be an option for stretching the range and improving base damage consistency of the weapon, but its power will "
+        },
+        {
+          "slug": "nx-ravager",
+          "nombre": "NX Ravager",
+          "tipo_cambio": "adjustment",
+          "extracto": "NX Ravager could not open the vent for the ARC‑XD during the Main Quest. Addressed an issue where the Siren did not display damage numbers when hitting Gjallarfrost. Addressed an issue where one of Dravakar’s weak points would not take critical damag"
+        }
+      ],
+      "scrape_status": "success",
+      "notificado": true,
+      "es_urgente": true
+    },
+    "df596cc2061c7471": {
+      "id": "df596cc2061c7471",
+      "url": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-patch-notes",
+      "titulo": "Call Of Duty Bo7 Warzone Season 04 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-06-04T04:42:40.474460+00:00",
+      "descripcion": "",
+      "armas_afectadas": [
+        {
+          "slug": "mpc-25",
+          "nombre": "MPC-25",
+          "tipo_cambio": "buff",
+          "extracto": "MPC-25 Built for aggressive players, offering exceptional handling, mobility, and hipfire accuracy alongside an expanded magazine and improved damage range. Collateral -"
+        },
+        {
+          "slug": "egrt-17",
+          "nombre": "EGRT-17",
+          "tipo_cambio": "adjustment",
+          "extracto": "EGRT-17 Delivers exceptional long-range performance with minimal recoil, outstanding damage range, and a best-in-class magazine size to keep you in the fight longer. The Killswitch ("
+        },
+        {
+          "slug": "ak-27",
+          "nombre": "AK-27",
+          "tipo_cambio": "adjustment",
+          "extracto": "AK-27) and Barrage (Razor 9mm) have been removed Assault Rifle Adjustments Weapon Adjustments Weapon: All Black Ops 7 ARs Adjustments: Suppressor attachment now gives a 10% Damage Range benefit Recoil Suppressor Velocity Penalty Removed Weapon: AK-27"
+        },
+        {
+          "slug": "razor-9mm",
+          "nombre": "Razor 9mm",
+          "tipo_cambio": "buff",
+          "extracto": "Razor 9mm) have been removed Assault Rifle Adjustments Weapon Adjustments Weapon: All Black Ops 7 ARs Adjustments: Suppressor attachment now gives a 10% Damage Range benefit Recoil Suppressor Velocity Penalty Removed Weapon: AK-27 Adjustments: Adjust"
+        },
+        {
+          "slug": "ds20-mirage",
+          "nombre": "DS20 Mirage",
+          "tipo_cambio": "buff",
+          "extracto": "DS20 MIRAGE Adjustments: Adjustments All Modes Vertical Recoil reduced by 8% Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 8% Monolithic Suppressor Bullet Velocity benefit reduced from "
+        },
+        {
+          "slug": "m15-mod-0",
+          "nombre": "M15 Mod 0",
+          "tipo_cambio": "buff",
+          "extracto": "M15 MOD 0 Adjustments: Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 10% Monolithic Suppressor Bullet Velocity benefit reduced from 10% to 6% Weapon:"
+        },
+        {
+          "slug": "mk35-isr",
+          "nombre": "MK35 ISR",
+          "tipo_cambio": "buff",
+          "extracto": "MK35 ISR Adjustments: Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 10% Monolithic Suppressor Bullet Velocity benefit reduced from 10% to 6% Weapon:"
+        },
+        {
+          "slug": "mxr-17",
+          "nombre": "MXR-17",
+          "tipo_cambio": "buff",
+          "extracto": "MXR-17 Adjustments: Adjustments Medium Damage Range increased from 55m to 60m Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 5% Monolithic Suppressor Bullet Velocity benefit reduced from"
+        },
+        {
+          "slug": "peacekeeper-mk1",
+          "nombre": "Peacekeeper Mk1",
+          "tipo_cambio": "buff",
+          "extracto": "PEACEKEEPER MK1 Adjustments: Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 8% Monolithic Suppressor Bullet Velocity benefit reduced from 10% to 6% Weapon:"
+        },
+        {
+          "slug": "voyak-kt-3",
+          "nombre": "Voyak KT-3",
+          "tipo_cambio": "buff",
+          "extracto": "VOYAK KT-3 Adjustments: Attachment Adjustments BR/RES Only Flip Mags Capacity increased from 35 to 40 Reload Speed benefit improved by 5% Monolithic Suppressor Bullet Velocity benefit reduced from 15% to 10% Damage Range benefit reduced from 12% to 6"
+        },
+        {
+          "slug": "dravec-45",
+          "nombre": "Dravec 45",
+          "tipo_cambio": "buff",
+          "extracto": "DRAVEC 45 Adjustments: Adjustments All Modes Rate of Fire improved from 638rpm to 652rpm Headshot multiplier increased from 1.12x to 1.15x Weapon:"
+        },
+        {
+          "slug": "kogot-7",
+          "nombre": "Kogot-7",
+          "tipo_cambio": "buff",
+          "extracto": "KOGOT-7 Adjustments: Kogot-7 Damage Adjustments Damage Range Pre-Patch Post-Patch Damage Range: Maximum Damage Range Pre-Patch: — Damage — 33 — Range — 0 - 13m Post-Patch: — Damage — 31⇩ All Modes — Range — 0 - 12.6m⇩ All Modes Damage Range: Medium D"
+        },
+        {
+          "slug": "rev-46",
+          "nombre": "REV-46",
+          "tipo_cambio": "buff",
+          "extracto": "REV-46 Adjustments: REV-46 Damage Adjustments Damage Range Pre-Patch Post-Patch Damage Range: Maximum Damage Range Pre-Patch: — Damage — 26 — Range — 0 - 12m Post-Patch: — Damage — 26 — Range — 0 - 12.5m⇧ All Modes Damage Range: Medium Damage Range 1"
+        },
+        {
+          "slug": "mk-78",
+          "nombre": "MK.78",
+          "tipo_cambio": "adjustment",
+          "extracto": "MK.78 Adjustments: MK.78 Damage Adjustments Damage Range Pre-Patch Post-Patch Damage Range: Maximum Damage Range Pre-Patch: — Damage — 36 — Range — 0 - 58m Post-Patch: — Damage — 34⇩ All Modes — Range — 0 - 50m⇩ All Modes Damage Range: Medium Damage "
+        },
+        {
+          "slug": "m10-breacher",
+          "nombre": "M10 Breacher",
+          "tipo_cambio": "buff",
+          "extracto": "M10 BREACHER Adjustments: M10 BREACHER Damage Adjustments Damage Range Pre-Patch Post-Patch Damage Range: Maximum Damage Range Pre-Patch: — Damage — 60 — Range — 0 - 1.77m Post-Patch: — Damage — 60 — Range — 0 - 1.77m Damage Range: Medium Damage Rang"
+        },
+        {
+          "slug": "vst",
+          "nombre": "VST",
+          "tipo_cambio": "adjustment",
+          "extracto": "VST. Challenges Fixed an issue where the “Hyper Lethal” Prestige Title challenge did not correctly track player placement for progression. Fixed an issue where the “Get Kills with Ground Loot Weapons” Weekly Challenge incorrectly tracked kills made w"
+        },
+        {
+          "slug": "sokol-545",
+          "nombre": "Sokol 545",
+          "tipo_cambio": "adjustment",
+          "extracto": "Sokol 545 LMG could ignore damage taken. Maps Fixed an issue causing geography to flicker in certain areas of Avalon. UI/UX Fixes issue that caused proximity chat red enemy"
+        }
+      ],
+      "scrape_status": "success",
+      "notificado": true,
+      "es_urgente": true
+    },
+    "a2078a252042254c": {
+      "id": "a2078a252042254c",
+      "url": "https://www.callofduty.com/patchnotes/2025/10/call-of-duty-black-ops-6-season-06-patch-notes",
+      "titulo": "Call Of Duty Black Ops 6 Season 06 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-06-04T04:42:40.529151+00:00",
+      "descripcion": "",
+      "armas_afectadas": [],
+      "scrape_status": "partial",
+      "notificado": true,
+      "es_urgente": true
+    },
+    "60e0c971fc7f6f6a": {
+      "id": "60e0c971fc7f6f6a",
+      "url": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+      "titulo": "Call Of Duty Bo7 Warzone Season 04 Reloaded Patch Notes",
+      "tipo": "season_reloaded",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-06-24T20:11:30.354053+00:00",
+      "descripcion": "",
+      "armas_afectadas": [
+        {
+          "slug": "an-94",
+          "nombre": "AN-94",
+          "tipo_cambio": "adjustment",
+          "extracto": "Modified barrel increases hyperburst shot count to three and adds recoil.",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "cbrs-3",
+          "nombre": "CBRS-3",
+          "tipo_cambio": "buff",
+          "extracto": "Horizontal Recoil reduced by 10%.",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "rev-46",
+          "nombre": "REV-46",
+          "tipo_cambio": "buff",
+          "extracto": "Damage range increased across all ranges.",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "vx-compact",
+          "nombre": "VX Compact",
+          "tipo_cambio": "adjustment",
+          "extracto": "Damage range increased and bullet velocity improved.",
+          "clasificado_por": "github-models"
+        }
+      ],
+      "scrape_status": "github-models",
+      "notificado": true,
+      "es_urgente": true
+    },
+    "e7a15dd7829b8f92": {
+      "id": "e7a15dd7829b8f92",
+      "url": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+      "titulo": "Call Of Duty Black Ops 7 Season 05 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-07-22T18:34:47.429654+00:00",
+      "descripcion": "",
+      "armas_afectadas": [
+        {
+          "slug": "an-94",
+          "nombre": "AN-94",
+          "tipo_cambio": "adjustment",
+          "extracto": "AN-94 Adjustments: The AN-94 vastly outclassed the TTK of other Assault Rifles with its hyperburst and skyrocketed in usage over the last few weeks. We have changed the damage profile to no longer have a 4-shot kill to the body in the Max Damage Rang",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "voyak-kt-3",
+          "nombre": "Voyak KT-3",
+          "tipo_cambio": "adjustment",
+          "extracto": "Voyak KT-3 Damage Adjustments Damage Range Pre-Patch Post-Patch Damage Range: Maximum Damage Range Pre-Patch: — Damage — 30 — Range — 0 - 24.1m Post-Patch: — Damage — 24 ⇩ — Range — 0 - 36.8m ⇧ Damage Range: Medium Damage Range Pre-Patch: — Damage — ",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "ds20-mirage",
+          "nombre": "DS20 Mirage",
+          "tipo_cambio": "buff",
+          "extracto": "DS20 Mirage Adjustments: We have made some changes to the DS20 Mirage and its Dual Fire Kit to increase the power level and address some of the specific pieces of feedback we have seen since it launched. The biggest change is that the two fire modes ",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "ryden-45k",
+          "nombre": "Ryden 45K",
+          "tipo_cambio": "adjustment",
+          "extracto": "Ryden 45K Adjustments: VST Adjustments Addressed an issue causing ironsights to misalign when firing the Ryden 45k in ADS under certain conditions. Weapon: Carbon 57 Adjustments: We are adding a delay of one second before the Fabricator Mag will star",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "vst",
+          "nombre": "VST",
+          "tipo_cambio": "adjustment",
+          "extracto": "VST Adjustments Addressed an issue causing ironsights to misalign when firing the Ryden 45k in ADS under certain conditions. Weapon:",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "carbon-57",
+          "nombre": "Carbon 57",
+          "tipo_cambio": "adjustment",
+          "extracto": "Carbon 57 Adjustments: We are adding a delay of one second before the Fabricator Mag will start generating ammo after firing. This will reduce the effectiveness of the magazine in extreme aggressive play, as well as tax the ammo count more when engag",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "swordfish-a1",
+          "nombre": "Swordfish A1",
+          "tipo_cambio": "buff",
+          "extracto": "Swordfish A1 Adjustments: We’ve continued to see feedback that the Swordfish is too strong. While it doesn’t have the highest usage, it is making a high impact in the hands of the players who are running it. The vast majority of builds are using the ",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "m8a1",
+          "nombre": "M8A1",
+          "tipo_cambio": "adjustment",
+          "extracto": "M8A1 Adjustments: This adjustment to the M8A1 is small but will help players land meaningful shots at ranges where they can improve the TTK. M8A1 Adjustments Now has a neck multiplier of 1.15x. Attachment Update 16.5&quot; Deadeye Barrel Now has a ne",
+          "clasificado_por": "keywords"
+        },
+        {
+          "slug": "coda-9",
+          "nombre": "CODA 9",
+          "tipo_cambio": "adjustment",
+          "extracto": "CODA 9 Adjustments: Attachment Updates MFS Deltacell Bulk Mag Addressed an issue resulting in unintended damage falloff at range. Launchers Launcher Adjustments Weapon Adjustments Weapon: A.R.C. M1 Adjustments: A.R.C. M1 Adjustments Can now use the A",
+          "clasificado_por": "keywords"
+        }
+      ],
+      "scrape_status": "keywords",
+      "notificado": true,
+      "es_urgente": true
+    },
+    "67079270a565e6b2": {
+      "id": "67079270a565e6b2",
+      "url": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+      "titulo": "Call Of Duty Bo7 Warzone Season 05 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "",
+      "fecha_detectada": "2026-07-22T18:34:52.186861+00:00",
+      "descripcion": "",
+      "armas_afectadas": [
+        {
+          "slug": "ak-27",
+          "nombre": "AK-27",
+          "tipo_cambio": "nerf",
+          "extracto": "Damage decreased and range reduced",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "an-94",
+          "nombre": "AN-94",
+          "tipo_cambio": "adjustment",
+          "extracto": "Damage unchanged, headshot multiplier increased, recoil reduced",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "m15-mod-0",
+          "nombre": "M15 Mod 0",
+          "tipo_cambio": "buff",
+          "extracto": "Damage increased and range extended",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "mxr-17",
+          "nombre": "MXR-17",
+          "tipo_cambio": "nerf",
+          "extracto": "Damage decreased and aim down sight speed slowed",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "x9-maverick",
+          "nombre": "X9 Maverick",
+          "tipo_cambio": "nerf",
+          "extracto": "Damage decreased and aim down sight speed slowed",
+          "clasificado_por": "github-models"
+        },
+        {
+          "slug": "vst",
+          "nombre": "VST",
+          "tipo_cambio": "adjustment",
+          "extracto": "Damage unchanged, range increased",
+          "clasificado_por": "github-models"
+        }
+      ],
+      "scrape_status": "github-models",
+      "notificado": true,
+      "es_urgente": true
+    }
+  }
+}

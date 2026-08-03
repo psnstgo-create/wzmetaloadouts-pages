@@ -1,0 +1,74 @@
+# ════════════════════════════════════════════
+#  WZ META — Decap CMS Configuration
+#  Backend: GitHub OAuth vía Cloudflare Workers
+# ════════════════════════════════════════════
+
+backend:
+  name: github
+  repo: psnstgo-create/wzmetaloadouts-web
+  branch: main
+  base_url: https://auth.wzmetaloadouts.com
+  auth_endpoint: /auth
+
+# Carpeta donde se guardan las imágenes que subes
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Idioma del panel
+locale: 'es'
+
+# URLs para preview
+site_url: https://www.wzmetaloadouts.com
+display_url: https://www.wzmetaloadouts.com
+
+
+# ─── Colecciones ───
+collections:
+  - name: "noticias"
+    label: "📰 Noticias"
+    label_singular: "Noticia"
+    folder: "_noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "noticias/{{slug}}"
+    summary: "{{titulo}} — {{date | date('DD/MM/YYYY')}}"
+    sortable_fields: ['date', 'titulo']
+    view_filters:
+      - label: "⭐ Destacadas"
+        field: destacada
+        pattern: true
+      - label: "📅 Temporadas"
+        field: categoria
+        pattern: temporadas
+      - label: "⚖️ Meta"
+        field: categoria
+        pattern: meta
+    fields:
+      - { label: "Título", name: "titulo", widget: "string", hint: "Aparece grande en la noticia" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
+      - { label: "Resumen corto", name: "resumen", widget: "text", hint: "1-2 líneas que aparecen en el listado" }
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options:
+          - { label: "📅 Temporadas", value: "temporadas" }
+          - { label: "⚖️ Meta (buffs/nerfs)", value: "meta" }
+          - { label: "🎮 Eventos in-game", value: "eventos" }
+          - { label: "📰 Noticias generales", value: "noticias" }
+        default: "noticias"
+      - { label: "Imagen Principal", name: "imagen", widget: "image", required: false, hint: "Imagen de portada (recomendado 1200x600px)" }
+      - { label: "Destacada", name: "destacada", widget: "boolean", default: false, hint: "Si está activa, aparece arriba en el feed" }
+      - label: "Tags (opcional)"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "Ej: temporada-4, mk78, buff"
+      - { label: "Contenido del artículo", name: "body", widget: "markdown", hint: "Escribe el artículo. Puedes agregar imágenes, links, listas, títulos..." }
+      - label: "Fuente Oficial (opcional)"
+        name: "fuente"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "Nombre de la fuente", name: "nombre", widget: "string", required: false }
+          - { label: "URL de la fuente", name: "url", widget: "string", required: false }

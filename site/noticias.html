@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon_wz.png">
+    <title>Noticias Warzone 2026 — Temporada 4, Roadmap y Actualizaciones | WZ Meta</title>
+    <meta name="description" content="Últimas noticias de Call of Duty Warzone: Temporada 4, roadmap oficial, parches, eventos, balance de armas y novedades del meta 2026.">
+    <meta name="keywords" content="noticias warzone, warzone temporada 4, roadmap warzone 2026, parche warzone, balance warzone, novedades cod">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://wzmetaloadouts.com/noticias">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wzmetaloadouts.com/noticias">
+    <meta property="og:title" content="Noticias Warzone 2026 — Temporada 4 y Roadmap">
+    <meta property="og:description" content="Últimas noticias, parches y actualizaciones del meta de Warzone.">
+    <meta property="og:locale" content="es_ES">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WBF0J366MC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WBF0J366MC');
+    </script>
+
+<style>
+/* ═══ SHELL NUEVO (header visor + menú + barra inferior) · scoped, no pisa style.css ═══ */
+.wzs-skip{display:none}
+header.wzhdr{position:sticky;top:0;z-index:30;background:rgba(7,10,14,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
+.wzhdr .hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;max-width:1180px;margin:0 auto}
+.wzhdr .logo{display:flex;align-items:center;gap:8px;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:.3px;color:#EEF2F6;text-decoration:none}
+.wzhdr .logo .wz{color:#F0C419}
+.wzhdr .logo svg{width:25px;height:25px}
+.wzhdr .nav-d{display:none;gap:30px;align-items:center}
+.wzhdr .nav-d a{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.9rem;letter-spacing:.12em;color:#828D99;text-transform:uppercase;display:flex;align-items:center;gap:7px;padding:6px 0;text-decoration:none}
+.wzhdr .nav-d a.on{color:#F0C419;border-bottom:2px solid #F0C419}
+.wzhdr .nav-d svg{width:16px;height:16px}
+.wzhdr .hdr-actions{display:flex;align-items:center;gap:14px}
+.wzhdr .icon-btn{background:none;border:none;color:#EEF2F6;cursor:pointer;width:25px;height:25px;display:grid;place-items:center;opacity:.82;padding:0}
+.wzhdr .icon-btn:hover{opacity:1;color:#F0C419}
+.wzhdr .upd{font-family:'Share Tech Mono',monospace;font-size:.7rem;color:#828D99}
+.wzstatus{display:flex;align-items:center;gap:12px;padding:11px 18px 2px;max-width:1180px;margin:0 auto}
+.wzstatus .live{display:inline-flex;align-items:center;gap:7px;color:#F0C419;font-weight:700;font-size:.78rem;letter-spacing:.14em}
+.wzstatus .dot{width:8px;height:8px;border-radius:50%;background:#22C55E;animation:wzpulse 2s infinite}
+@keyframes wzpulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.wzstatus .season{margin-left:auto;font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.1em;color:#F0C419;border:1px solid rgba(240,196,25,.45);border-radius:6px;padding:5px 11px;background:rgba(240,196,25,.08)}
+/* drawer */
+.wzdrawer-ov{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.62);backdrop-filter:blur(2px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.wzdrawer-ov.open{opacity:1;visibility:visible}
+.wzdrawer{position:fixed;top:0;right:0;bottom:0;z-index:51;width:min(82vw,310px);background:#0F151B;border-left:1px solid rgba(255,255,255,.06);transform:translateX(101%);transition:transform .28s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0))}
+.wzdrawer.open{transform:translateX(0);box-shadow:-20px 0 50px -20px rgba(0,0,0,.7)}
+.wzdrawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.06)}
+.wzdrawer-title{font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.2em;color:#F0C419}
+.wzdrawer-nav{display:flex;flex-direction:column;gap:3px}
+.wzdrawer-nav a{display:flex;align-items:center;gap:13px;padding:14px 12px;border-radius:10px;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:#828D99;text-decoration:none;transition:.13s}
+.wzdrawer-nav a svg{width:19px;height:19px}
+.wzdrawer-nav a:hover{background:rgba(255,255,255,.04);color:#EEF2F6}
+.wzdrawer-nav a.on{color:#F0C419;background:rgba(240,196,25,.08)}
+/* bottom nav */
+.wzbnav{position:fixed;bottom:0;left:0;right:0;z-index:40;display:flex;background:rgba(7,10,14,.95);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.06)}
+.wzbnav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 0 calc(10px + env(safe-area-inset-bottom,0));color:#828D99;font-family:'Rajdhani',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+.wzbnav a svg{width:21px;height:21px}
+.wzbnav a.on{color:#F0C419}
+body{padding-bottom:74px}
+@media(min-width:980px){.wzhdr .nav-d{display:flex}.wzhdr .menu-only{display:none}.wzbnav,.wzdrawer,.wzdrawer-ov{display:none}body{padding-bottom:0}}
+</style>
+<script type="application/ld+json" data-schema="noticias">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://wzmetaloadouts.com/"},{"@type":"ListItem","position":2,"name":"Noticias","item":"https://wzmetaloadouts.com/noticias"}]}</script><script type="application/ld+json" data-schema="noticias">{"@context":"https://schema.org","@type":"CollectionPage","name":"Noticias Warzone y Black Ops 7","url":"https://wzmetaloadouts.com/noticias","mainEntity":{"@type":"ItemList","numberOfItems":12,"itemListElement":[{"@type":"ListItem","position":1,"name":"Temporada 5 de Black Ops 7 y Call of Duty: Warzone","url":"https://wzmetaloadouts.com/noticias/temporada-5-black-ops-7"},{"@type":"ListItem","position":2,"name":"Paquete PlayStation Plus 7 de Warzone: cómo reclamarlo gratis en PS5","url":"https://wzmetaloadouts.com/noticias/paquete-playstation-plus-7-warzone"},{"@type":"ListItem","position":3,"name":"Evento Machine of War: cómo conseguir la Mammoth LMG gratis","url":"https://wzmetaloadouts.com/noticias/evento-machine-of-war-mammoth-lmg-gratis"},{"@type":"ListItem","position":4,"name":"Evento Eidskallen BO7 Zombies: recompensas y guía","url":"https://wzmetaloadouts.com/noticias/evento-eidskallen-bo7-zombies-recompensas"},{"@type":"ListItem","position":5,"name":"FG42 en Warzone: ¿nuevo meta o puro hype?","url":"https://wzmetaloadouts.com/noticias/fg42-warzone-nuevo-meta-season-5"},{"@type":"ListItem","position":6,"name":"Warzone Season 5: buffs, nerfs y cómo cambia el meta","url":"https://wzmetaloadouts.com/noticias/warzone-season-5-buffs-nerfs-nuevo-meta"},{"@type":"ListItem","position":7,"name":"Nick Cage Event Pass: cómo conseguir la AN-94 gratis en Warzone y Black Ops 7","url":"https://wzmetaloadouts.com/noticias/nick-cage-event-pass-an-94-gratis"},{"@type":"ListItem","position":8,"name":"Warzone Season 4 Reloaded: todos los buffs, nerfs y cómo cambia el meta","url":"https://wzmetaloadouts.com/noticias/warzone-season-4-reloaded-buffs-nerfs"},{"@type":"ListItem","position":9,"name":"Illicit Cargo: cómo conseguir el VX Compact gratis antes del 25 de junio","url":"https://wzmetaloadouts.com/noticias/illicit-cargo-vx-compact"},{"@type":"ListItem","position":10,"name":"Temporada 4 de Black Ops 7 y Call of Duty: Warzone","url":"https://wzmetaloadouts.com/noticias/temporada-4-black-ops-7"},{"@type":"ListItem","position":11,"name":"Temporada 3 de Black Ops 7 y Call of Duty: Warzone","url":"https://wzmetaloadouts.com/noticias/temporada-3-black-ops-7"},{"@type":"ListItem","position":12,"name":"Temporada 2 de Black Ops 7 y Call of Duty: Warzone","url":"https://wzmetaloadouts.com/noticias/temporada-2-black-ops-7"}]}}</script></head>
+<body>
+    <div class="bg-grid"></div>
+
+<header class="wzhdr">
+  <div class="hdr">
+    <a class="logo" href="/">
+      <img src="/logo.gif" alt="WZ Meta Loadouts" height="50" loading="eager">
+    </a>
+    <nav class="nav-d"><a class="" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>META</a><a class="" href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>CLASES</a><a class="" href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>ARMAS</a><a class="" href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>VENTAJAS</a><a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>COMUNIDAD</a><a class="on" href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>NOTICIAS</a></nav>
+    <div class="hdr-actions">
+      <span class="upd" id="timestamp-display">—</span>
+      <button class="icon-btn menu-only" id="menuBtn" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+    </div>
+  </div>
+</header>
+<div class="wzstatus"><span class="live"><span class="dot"></span>META LIVE</span><span class="season">TEMPORADA 4</span></div>
+<div class="wzdrawer-ov" id="drawerOverlay"></div>
+<aside class="wzdrawer" id="drawer" aria-hidden="true">
+  <div class="wzdrawer-top"><span class="wzdrawer-title">NAVEGACIÓN</span>
+    <button class="icon-btn" id="drawerClose" aria-label="Cerrar menú" style="color:#EEF2F6"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <nav class="wzdrawer-nav"><a class="" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>META</a><a class="" href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>CLASES</a><a class="" href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>ARMAS</a><a class="" href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>VENTAJAS</a><a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>COMUNIDAD</a><a class="on" href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>NOTICIAS</a></nav>
+</aside>
+
+<main>
+        <h1 class="seo-h1">Noticias Warzone 2026 — Temporada 4, Roadmap y Fuentes Oficiales</h1>
+
+        <div class="page-header">
+            <div class="page-title">NOTICIAS</div>
+            <div class="page-subtitle">PRÓXIMA TEMPORADA · ROADMAP · ACTUALIZACIONES · FUENTES OFICIALES</div>
+        </div>
+
+        <div id="noticias-container" class="noticias-container">
+        
+    <a href="/noticias/temporada-5-black-ops-7" class="hero-news">
+        <div class="hero-news-visual">
+            <img src="/uploads/s5.jpg" alt="Temporada 5 de Black Ops 7 y Call of Duty: Warzone" class="hero-news-img">
+            <div class="hero-news-overlay">
+                <span class="hero-news-cat" style="background:#FF950022;color:#FF9500;border-color:#FF950066">
+                    ⭐ DESTACADA · 📅 TEMPORADAS
+                </span>
+                <h2 class="hero-news-titulo">Temporada 5 de Black Ops 7 y Call of Duty: Warzone</h2>
+                <p class="hero-news-resumen">La Temporada 5 de Black Ops 7 y Warzone llega el 23 de julio de 2026: nuevo POI Drone Labs en Verdansk, el mapa Jubilee, Juggernaut Armor y 4 armas nuevas — FG42, Gremlin, Mammoth y Mace.</p>
+                <div class="hero-news-meta">
+                    <span class="hero-news-fecha">13 de Julio 2026</span>
+                    <span class="hero-news-leer">LEER MÁS →</span>
+                </div>
+            </div>
+        </div>
+    </a>
+        
+            <div class="news-section">
+                <h3 class="news-section-title">📰 ÚLTIMAS NOTICIAS</h3>
+                <div class="news-grid">
+                    
+    <a href="/noticias/paquete-playstation-plus-7-warzone" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/ps-plus-pack-7-warzone.webp" alt="Paquete PlayStation Plus 7 de Warzone: cómo reclamarlo gratis en PS5" class="card-news-img">
+            <span class="card-news-cat" style="background:#00A8FF22;color:#00A8FF;border-color:#00A8FF66">
+                🎮 EVENTOS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Paquete PlayStation Plus 7 de Warzone: cómo reclamarlo gratis en PS5</h3>
+            <p class="card-news-resumen">El Paquete PlayStation Plus 7 de Warzone y Black Ops 7 ya está gratis para suscriptores de PS Plus: 2 skins de Operador, 4 planos de arma y más. Te contamos cómo reclamarlo.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">2 de Agosto 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/evento-machine-of-war-mammoth-lmg-gratis" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/machine-of-war-event-banner.webp" alt="Evento Machine of War: cómo conseguir la Mammoth LMG gratis" class="card-news-img">
+            <span class="card-news-cat" style="background:#00A8FF22;color:#00A8FF;border-color:#00A8FF66">
+                🎮 EVENTOS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Evento Machine of War: cómo conseguir la Mammoth LMG gratis</h3>
+            <p class="card-news-resumen">Guía del evento Machine of War de BO7 y Warzone Season 5: fechas, cómo juntar los Fuel Cans, todas las recompensas y cómo desbloquear gratis la ametralladora Mammoth.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">30 de Julio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/evento-eidskallen-bo7-zombies-recompensas" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/eidskallen-lighthouse-evento-zombies.webp" alt="Evento Eidskallen BO7 Zombies: recompensas y guía" class="card-news-img">
+            <span class="card-news-cat" style="background:#00A8FF22;color:#00A8FF;border-color:#00A8FF66">
+                🎮 EVENTOS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Evento Eidskallen BO7 Zombies: recompensas y guía</h3>
+            <p class="card-news-resumen">Descubre cómo funciona el evento Eidskallen de BO7 Zombies, sus recompensas, rankings de 3 horas y cómo conseguir el camuflaje Ragnarök universal gratis.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">29 de Julio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/fg42-warzone-nuevo-meta-season-5" class="card-news">
+        <div class="card-news-visual">
+            <img src="/weapons/T5/FG42.png" alt="FG42 en Warzone: ¿nuevo meta o puro hype?" class="card-news-img">
+            <span class="card-news-cat" style="background:#00FF8722;color:#00FF87;border-color:#00FF8766">
+                ⚖️ META
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">FG42 en Warzone: ¿nuevo meta o puro hype?</h3>
+            <p class="card-news-resumen">Analizamos la FG42 en Warzone Season 5: cómo desbloquearla, sus mejores accesorios, ventajas, debilidades y si realmente domina el meta de largo alcance.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">29 de Julio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/warzone-season-5-buffs-nerfs-nuevo-meta" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/banner-bo7-s5.jpg" alt="Warzone Season 5: buffs, nerfs y cómo cambia el meta" class="card-news-img">
+            <span class="card-news-cat" style="background:#BF5FFF22;color:#BF5FFF;border-color:#BF5FFF66">
+                📰 NOTICIAS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Warzone Season 5: buffs, nerfs y cómo cambia el meta</h3>
+            <p class="card-news-resumen">Todos los buffs y nerfs de Warzone Season 5, las armas que suben y la mejor clase de la FG42 para dominar Battle Royale y Resurgence después del parche.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">29 de Julio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/nick-cage-event-pass-an-94-gratis" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/nick-cage-event-pass.jpg" alt="Nick Cage Event Pass: cómo conseguir la AN-94 gratis en Warzone y Black Ops 7" class="card-news-img">
+            <span class="card-news-cat" style="background:#00A8FF22;color:#00A8FF;border-color:#00A8FF66">
+                🎮 EVENTOS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Nick Cage Event Pass: cómo conseguir la AN-94 gratis en Warzone y Black Ops 7</h3>
+            <p class="card-news-resumen">Llegó el Nick Cage Event Pass junto con la Temporada 4 Reloaded. La buena noticia para los que no quieren gastar es que el nuevo fusil AN-94 y la melee Executioner's Duet se desbloquean en el track gratuito. Acá te explicamos cómo conseguirlos y qué es lo único de pago.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">25 de Junio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/warzone-season-4-reloaded-buffs-nerfs" class="card-news">
+        <div class="card-news-visual">
+            <img src="/season-banner-s04.png" alt="Warzone Season 4 Reloaded: todos los buffs, nerfs y cómo cambia el meta" class="card-news-img">
+            <span class="card-news-cat" style="background:#BF5FFF22;color:#BF5FFF;border-color:#BF5FFF66">
+                📰 NOTICIAS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Warzone Season 4 Reloaded: todos los buffs, nerfs y cómo cambia el meta</h3>
+            <p class="card-news-resumen">Llegó el parche Season 4 Reloaded de Warzone y Black Ops 7. Nerfearon al Kogot-7, al Voyak KT-3 y al Warden 308; subieron el MK35 ISR y el Sturmwolf 45; y entran dos armas nuevas, la AN-94 y la Executioner's Duet. Acá te explicamos qué cambia de verdad en el meta.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">24 de Junio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/illicit-cargo-vx-compact" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/illicit-cargo.jpg" alt="Illicit Cargo: cómo conseguir el VX Compact gratis antes del 25 de junio" class="card-news-img">
+            <span class="card-news-cat" style="background:#00A8FF22;color:#00A8FF;border-color:#00A8FF66">
+                🎮 EVENTOS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Illicit Cargo: cómo conseguir el VX Compact gratis antes del 25 de junio</h3>
+            <p class="card-news-resumen">El evento Illicit Cargo de la Temporada 4 está en sus últimos días. Completá 9 desafíos en cualquier modo para desbloquear gratis el fusil VX Compact, más 8 camuflajes y el camo Cherry Fizz.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">23 de Junio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/temporada-4-black-ops-7" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/s4.png" alt="Temporada 4 de Black Ops 7 y Call of Duty: Warzone" class="card-news-img">
+            <span class="card-news-cat" style="background:#FF950022;color:#FF9500;border-color:#FF950066">
+                📅 TEMPORADAS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Temporada 4 de Black Ops 7 y Call of Duty: Warzone</h3>
+            <p class="card-news-resumen">La Temporada 4 de Black Ops 7 llega el 4 de junio de 2026 con nuevas armas, mapas, eventos, Warzone, Zombies y recompensas exclusivas para todos los jugadores.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">3 de Junio 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/temporada-3-black-ops-7" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/imgi_6_bo7-season-03-announcement-rm.png" alt="Temporada 3 de Black Ops 7 y Call of Duty: Warzone" class="card-news-img">
+            <span class="card-news-cat" style="background:#FF950022;color:#FF9500;border-color:#FF950066">
+                📅 TEMPORADAS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Temporada 3 de Black Ops 7 y Call of Duty: Warzone</h3>
+            <p class="card-news-resumen">Descubre todas las novedades de la Temporada 3 de Black Ops 7 y Warzone: nuevos mapas, armas meta, cambios en Verdansk, modo Zombies, eventos gratuitos y fecha de lanzamiento oficial.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">23 de Mayo 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+    <a href="/noticias/temporada-2-black-ops-7" class="card-news">
+        <div class="card-news-visual">
+            <img src="/uploads/temp2.jpg" alt="Temporada 2 de Black Ops 7 y Call of Duty: Warzone" class="card-news-img">
+            <span class="card-news-cat" style="background:#FF950022;color:#FF9500;border-color:#FF950066">
+                📅 TEMPORADAS
+            </span>
+        </div>
+        <div class="card-news-body">
+            <h3 class="card-news-titulo">Temporada 2 de Black Ops 7 y Call of Duty: Warzone</h3>
+            <p class="card-news-resumen">Descubre el Pase de Batalla de la Temporada 2 de Black Ops 7 con nuevas armas, aspectos de operador, proyectos exclusivos, BlackCell, Phantom y más de 100 recompensas para desbloquear.</p>
+            <div class="card-news-meta">
+                <span class="card-news-fecha">4 de Febrero 2026</span>
+                <span class="card-news-leer">→</span>
+            </div>
+        </div>
+    </a>
+                </div>
+            </div>
+        
+    </div>
+
+        <section class="seo-text">
+            <h2>Toda la actualidad de Warzone</h2>
+            <p>Aquí se publican las novedades oficiales de Call of Duty Warzone: nuevas temporadas, parches de balance, eventos limitados, mapas nuevos y cambios en el meta.</p>
+            <h3>Recursos relacionados:</h3>
+            <p>Después de leer las novedades, revisa la <a href="/">tier list actualizada del meta</a>, las <a href="/clases">mejores clases</a> y las <a href="/ventajas">ventajas top tier</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <span class="mono-text">wzmetaloadouts.com · datos verificados en juego · actualizado cada parche · <a href="/privacy" style="color:inherit">Política de Privacidad</a></span>
+    </footer>
+
+<script src="noticias.js"></script>
+<script src="/js/server-status.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (typeof renderNoticias === 'function') renderNoticias();
+            }, 200);
+        });
+    </script>
+
+<nav class="wzbnav"><a class="" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>Meta</a><a class="" href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>Clases</a><a class="" href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>Armas</a><a class="" href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>Ventajas</a><a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Comunidad</a><a class="on" href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>Noticias</a></nav>
+<script>
+/* Menú móvil — shell nuevo */
+(function(){var b=document.getElementById('menuBtn'),d=document.getElementById('drawer'),o=document.getElementById('drawerOverlay'),c=document.getElementById('drawerClose');
+function ab(){if(!d)return;d.classList.add('open');o.classList.add('open');d.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function ce(){if(!d)return;d.classList.remove('open');o.classList.remove('open');d.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+if(b)b.addEventListener('click',ab);if(o)o.addEventListener('click',ce);if(c)c.addEventListener('click',ce);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')ce();});})();
+</script>
+
+
+</body></html>

@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cambios de Parche Warzone Black Ops 7 2026 — Buffs, Nerfs y Balance | WZ Meta</title>
+<meta name="description" content="Todos los cambios de parche de Call of Duty Warzone Black Ops 7: buffs, nerfs, armas nuevas, ajustes de daño, retroceso, rango y balance del meta actualizado.">
+<meta name="keywords" content="cambios de parche warzone, buffs warzone, nerfs warzone, black ops 7 parches, balance armas warzone, patch notes warzone 2026">
+<meta name="theme-color" content="#070A0E">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wzmetaloadouts.com/cambios">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://wzmetaloadouts.com/cambios">
+<meta property="og:title" content="Cambios de Parche Warzone Black Ops 7 2026 — Buffs y Nerfs">
+<meta property="og:description" content="Historial completo de balance: buffs, nerfs, armas nuevas y ajustes que cambian el meta de Warzone.">
+<meta property="og:image" content="https://wzmetaloadouts.com/season-banner-s04.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon_wz.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WBF0J366MC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WBF0J366MC');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://wzmetaloadouts.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cambios de Parche",
+      "item": "https://wzmetaloadouts.com/cambios"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#070A0E;
+  --panel:#0C1116;
+  --panel2:#0F151B;
+  --line:rgba(255,255,255,.06);
+  --txt:#EEF2F6;
+  --muted:#828D99;
+  --dim:#55606B;
+  --gold:#F0C419;
+  --green:#22C55E;
+  --blue:#3B82F6;
+  --purple:#A855F7;
+  --red:#EF4444;
+  --orange:#F97316;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:'Rajdhani',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.4;
+  padding-bottom:74px;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+.bg-grid{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(240,196,25,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(240,196,25,.025) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:radial-gradient(circle at 50% 8%,#000,transparent 62%);
+}
+.wrap{position:relative;z-index:1}
+
+/* HEADER */
+header.wzhdr{
+  position:sticky;
+  top:0;
+  z-index:30;
+  background:rgba(7,10,14,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.wzhdr .hdr{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 18px;
+  max-width:1180px;
+  margin:0 auto;
+}
+.wzhdr .logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Rajdhani',sans-serif;
+  font-weight:900;
+  font-size:1.3rem;
+  letter-spacing:.3px;
+  color:var(--txt);
+}
+.wzhdr .logo .wz{color:var(--gold)}
+.wzhdr .logo svg{width:25px;height:25px}
+.wzhdr .nav-d{display:none;gap:30px;align-items:center}
+.wzhdr .nav-d a{
+  font-family:'Rajdhani',sans-serif;
+  font-weight:600;
+  font-size:.9rem;
+  letter-spacing:.12em;
+  color:var(--muted);
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 0;
+}
+.wzhdr .nav-d a.on{
+  color:var(--gold);
+  border-bottom:2px solid var(--gold);
+}
+.wzhdr .nav-d svg{width:16px;height:16px}
+.wzhdr .hdr-actions{display:flex;align-items:center;gap:14px}
+.wzhdr .icon-btn{
+  background:none;
+  border:none;
+  color:var(--txt);
+  cursor:pointer;
+  width:25px;
+  height:25px;
+  display:grid;
+  place-items:center;
+  opacity:.82;
+  padding:0;
+}
+.wzhdr .icon-btn:hover{opacity:1;color:var(--gold)}
+@media(min-width:980px){
+  .wzhdr .nav-d{display:flex}
+  .menu-only{display:none}
+  body{padding-bottom:0}
+}
+
+/* STATUS */
+.wzstatus{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:11px 18px 2px;
+  max-width:1180px;
+  margin:0 auto;
+}
+.wzstatus .live{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--gold);
+  font-weight:700;
+  font-size:.78rem;
+  letter-spacing:.14em;
+}
+.wzstatus .dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  animation:wzpulse 2s infinite;
+}
+@keyframes wzpulse{
+  0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}
+  70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}
+  100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}
+}
+.wzstatus .season{
+  margin-left:auto;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.66rem;
+  letter-spacing:.1em;
+  color:var(--gold);
+  border:1px solid rgba(240,196,25,.45);
+  border-radius:6px;
+  padding:5px 11px;
+  background:rgba(240,196,25,.08);
+}
+
+/* DRAWER */
+.wzdrawer-ov{
+  position:fixed;
+  inset:0;
+  z-index:50;
+  background:rgba(0,0,0,.62);
+  backdrop-filter:blur(2px);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .25s,visibility .25s;
+}
+.wzdrawer-ov.open{opacity:1;visibility:visible}
+.wzdrawer{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  z-index:51;
+  width:min(82vw,310px);
+  background:var(--panel2);
+  border-left:1px solid var(--line);
+  transform:translateX(101%);
+  transition:transform .28s cubic-bezier(.4,0,.2,1);
+  display:flex;
+  flex-direction:column;
+  padding:16px 16px calc(16px + env(safe-area-inset-bottom,0));
+}
+.wzdrawer.open{
+  transform:translateX(0);
+  box-shadow:-20px 0 50px -20px rgba(0,0,0,.7);
+}
+.wzdrawer-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+  padding-bottom:13px;
+  border-bottom:1px solid var(--line);
+}
+.wzdrawer-title{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+  letter-spacing:.2em;
+  color:var(--gold);
+}
+.wzdrawer-nav{display:flex;flex-direction:column;gap:3px}
+.wzdrawer-nav a{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:14px 12px;
+  border-radius:10px;
+  font-family:'Rajdhani',sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.wzdrawer-nav a svg{width:19px;height:19px}
+.wzdrawer-nav a:hover{background:rgba(255,255,255,.04);color:var(--txt)}
+.wzdrawer-nav a.on{color:var(--gold);background:rgba(240,196,25,.08)}
+@media(min-width:980px){
+  .wzdrawer,.wzdrawer-ov{display:none}
+}
+
+/* PAGE */
+.patch-page{
+  max-width:1180px;
+  margin:0 auto;
+  padding:22px 18px 70px;
+}
+.patch-hero{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(240,196,25,.16);
+  border-radius:18px;
+  padding:30px 22px;
+  background:
+    radial-gradient(circle at 80% 10%,rgba(240,196,25,.14),transparent 30%),
+    linear-gradient(135deg,rgba(240,196,25,.08),rgba(255,255,255,.02) 45%,rgba(59,130,246,.06));
+  box-shadow:0 18px 55px -35px rgba(0,0,0,.8);
+}
+.patch-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+  letter-spacing:.16em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.patch-kicker::before{
+  content:"";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 12px var(--green);
+}
+.patch-hero h1{
+  font-family:'Rajdhani',sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+  line-height:.95;
+  letter-spacing:-1px;
+  font-size:clamp(2rem,7vw,4.6rem);
+  max-width:850px;
+}
+.patch-hero h1 span{color:var(--gold)}
+.patch-hero p{
+  max-width:720px;
+  margin-top:14px;
+  color:#C3CBD3;
+  font-size:1.1rem;
+  font-weight:500;
+}
+
+/* CONTROLS */
+.patch-controls{
+  display:grid;
+  gap:12px;
+  margin:18px 0;
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px;
+}
+@media(min-width:860px){
+  .patch-controls{
+    grid-template-columns:1.1fr .8fr 1.1fr;
+    align-items:center;
+  }
+}
+.patch-search{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px 14px;
+}
+.patch-search svg{
+  width:18px;
+  height:18px;
+  color:var(--muted);
+  flex:0 0 auto;
+}
+.patch-search input{
+  flex:1;
+  min-width:0;
+  border:none;
+  background:none;
+  outline:none;
+  color:var(--txt);
+  font-family:'Rajdhani',sans-serif;
+  font-size:1rem;
+  font-weight:600;
+}
+.patch-search input::placeholder{color:var(--muted)}
+.patch-select{
+  width:100%;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px 14px;
+  color:var(--txt);
+  font-family:'Rajdhani',sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  outline:none;
+}
+.patch-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-start;
+}
+@media(min-width:860px){
+  .patch-tabs{justify-content:flex-end}
+}
+.patch-tab{
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--muted);
+  border-radius:100px;
+  padding:9px 13px;
+  cursor:pointer;
+  font-family:'Rajdhani',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  transition:.15s;
+}
+.patch-tab:hover{border-color:rgba(255,255,255,.16);color:var(--txt)}
+.patch-tab.active{
+  color:var(--gold);
+  border-color:rgba(240,196,25,.55);
+  background:rgba(240,196,25,.08);
+  box-shadow:0 0 20px -12px var(--gold);
+}
+
+/* PATCH GROUPS */
+.patch-results-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin:20px 0 12px;
+}
+.patch-results-head h2{
+  font-family:'Rajdhani',sans-serif;
+  font-size:1.2rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.patch-count{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+  color:var(--muted);
+  letter-spacing:.08em;
+}
+.patch-groups{
+  display:grid;
+  gap:16px;
+}
+.patch-group{
+  background:rgba(12,17,22,.82);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+}
+.patch-group-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:15px 16px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(135deg,rgba(240,196,25,.07),rgba(255,255,255,.018));
+}
+.patch-title{
+  min-width:0;
+}
+.patch-title h3{
+  font-family:'Rajdhani',sans-serif;
+  font-size:1.05rem;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.patch-title p{
+  margin-top:2px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.66rem;
+  color:var(--muted);
+  letter-spacing:.08em;
+}
+.patch-group-meta{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.patch-pill{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.62rem;
+  letter-spacing:.08em;
+  padding:5px 8px;
+  border-radius:7px;
+  color:var(--gold);
+  background:rgba(240,196,25,.08);
+  border:1px solid rgba(240,196,25,.28);
+  text-transform:uppercase;
+}
+.patch-source{
+  color:var(--muted);
+  border-color:var(--line);
+  background:rgba(255,255,255,.025);
+}
+.patch-source:hover{
+  color:var(--gold);
+  border-color:rgba(240,196,25,.35);
+}
+.patch-records{
+  display:grid;
+  gap:10px;
+  padding:14px;
+}
+
+/* PREMIUM ACCORDION */
+.patch-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:13px;
+  background:linear-gradient(180deg,rgba(15,21,27,.92),rgba(9,13,18,.92));
+}
+.patch-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:var(--state);
+  opacity:.95;
+}
+.patch-card.is-open{
+  border-color:color-mix(in srgb,var(--state) 48%,rgba(255,255,255,.08));
+  box-shadow:0 0 32px -22px var(--state);
+}
+.patch-card-head{
+  position:relative;
+  z-index:1;
+  width:100%;
+  border:none;
+  color:inherit;
+  background:linear-gradient(90deg,rgba(255,255,255,.018),rgba(255,255,255,.01));
+  padding:14px 16px 14px 18px;
+  display:grid;
+  grid-template-columns:132px minmax(150px,.9fr) minmax(260px,1.4fr) 126px 28px;
+  gap:14px;
+  align-items:center;
+  text-align:left;
+  cursor:pointer;
+}
+.patch-card-head:hover{
+  background:linear-gradient(90deg,color-mix(in srgb,var(--state) 9%,rgba(255,255,255,.018)),rgba(255,255,255,.012));
+}
+.patch-weapon-img{
+  height:54px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:9px;
+  background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(255,255,255,.01));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.patch-weapon-img img{
+  max-width:122px;
+  max-height:46px;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 12px rgba(0,0,0,.6));
+}
+.patch-weapon-info h3{
+  font-family:'Rajdhani',sans-serif;
+  font-size:1.15rem;
+  line-height:1;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+.patch-weapon-type{
+  margin-top:4px;
+  font-family:'Share Tech Mono',monospace;
+  color:var(--muted);
+  font-size:.6rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.state-badge{
+  margin-top:7px;
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  width:fit-content;
+  font-family:'Share Tech Mono',monospace;
+  font-weight:800;
+  font-size:.6rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:6px;
+  color:var(--state);
+  background:color-mix(in srgb,var(--state) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--state) 42%,transparent);
+}
+.patch-main-change{
+  min-width:0;
+}
+.patch-main-change strong{
+  display:block;
+  font-family:'Share Tech Mono',monospace;
+  color:var(--state);
+  font-size:.72rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+.patch-main-change span{
+  color:#C3CBD3;
+  display:block;
+  font-size:.92rem;
+  line-height:1.25;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.patch-date{
+  justify-self:end;
+  text-align:right;
+  font-family:'Share Tech Mono',monospace;
+  color:var(--muted);
+  font-size:.62rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.patch-date b{
+  display:block;
+  color:#DDE4EA;
+  font-family:'Rajdhani',sans-serif;
+  font-size:.85rem;
+  letter-spacing:.05em;
+  margin-bottom:3px;
+}
+.patch-chevron{
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  color:var(--txt);
+  opacity:.82;
+  transition:.22s;
+}
+.patch-card.is-open .patch-chevron{transform:rotate(180deg);color:var(--state)}
+
+.patch-card-body{
+  display:none;
+  padding:0 16px 16px 18px;
+}
+.patch-card.is-open .patch-card-body{display:block}
+.patch-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1.65fr 1fr;
+  gap:12px;
+  padding-top:4px;
+}
+.detail-panel{
+  background:linear-gradient(180deg,rgba(255,255,255,.026),rgba(255,255,255,.012));
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:11px;
+  padding:13px;
+  min-width:0;
+}
+.detail-title{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.67rem;
+  letter-spacing:.1em;
+  color:#E8EDF3;
+  text-transform:uppercase;
+  margin-bottom:11px;
+}
+.detail-title svg{
+  width:17px;
+  height:17px;
+  color:var(--gold);
+  flex:0 0 auto;
+}
+.detail-copy{
+  color:#C9D0D8;
+  font-size:.88rem;
+  line-height:1.45;
+}
+.detail-copy mark{
+  color:var(--gold);
+  background:transparent;
+  font-weight:800;
+}
+.detail-list{
+  margin-top:12px;
+  padding-top:11px;
+  border-top:1px solid rgba(255,255,255,.07);
+  display:grid;
+  gap:9px;
+}
+.detail-bullet{
+  display:grid;
+  grid-template-columns:26px 1fr;
+  gap:8px;
+  align-items:start;
+  color:#CFD6DE;
+  font-size:.84rem;
+  line-height:1.35;
+}
+.detail-bullet i{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--state);
+  background:color-mix(in srgb,var(--state) 13%,transparent);
+  border:1px solid color-mix(in srgb,var(--state) 35%,transparent);
+  font-style:normal;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.8rem;
+}
+.compare-head{
+  display:grid;
+  grid-template-columns:1.05fr .7fr 22px .7fr;
+  gap:10px;
+  align-items:center;
+  padding:0 10px 7px;
+  color:var(--muted);
+  font-family:'Share Tech Mono',monospace;
+  font-size:.58rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.compare-head span:nth-child(2){text-align:center}
+.compare-head span:nth-child(4){text-align:center;color:var(--state)}
+.compare-list{
+  display:grid;
+  gap:7px;
+}
+.compare-row{
+  display:grid;
+  grid-template-columns:1.05fr .7fr 22px .7fr;
+  gap:10px;
+  align-items:center;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:8px;
+  padding:9px 10px;
+  background:rgba(7,10,14,.34);
+}
+.compare-label{
+  display:grid;
+  grid-template-columns:23px 1fr;
+  gap:8px;
+  align-items:center;
+  min-width:0;
+}
+.compare-icon{
+  width:23px;
+  height:23px;
+  color:var(--gold);
+  display:grid;
+  place-items:center;
+}
+.compare-name{
+  font-family:'Rajdhani',sans-serif;
+  font-weight:800;
+  font-size:.83rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  line-height:1.1;
+}
+.compare-sub{
+  display:block;
+  font-family:'Share Tech Mono',monospace;
+  color:var(--muted);
+  font-size:.56rem;
+  letter-spacing:.06em;
+  margin-top:2px;
+}
+.compare-value{
+  text-align:center;
+  line-height:1.18;
+}
+.compare-value b{
+  display:block;
+  font-family:'Rajdhani',sans-serif;
+  font-size:1.08rem;
+  color:#E8EDF3;
+}
+.compare-value small{
+  display:block;
+  color:var(--muted);
+  font-family:'Share Tech Mono',monospace;
+  font-size:.58rem;
+  margin-top:2px;
+}
+.compare-value.after b,
+.compare-value.after small{
+  color:var(--state);
+}
+.compare-arrow{
+  color:var(--muted);
+  text-align:center;
+  font-size:1.1rem;
+}
+.change-list-only{
+  display:grid;
+  gap:8px;
+}
+.simple-change{
+  display:grid;
+  grid-template-columns:68px 1fr;
+  gap:10px;
+  align-items:start;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:8px;
+  padding:9px;
+  background:rgba(7,10,14,.34);
+}
+.simple-change .state-badge{
+  margin:0;
+  justify-content:center;
+}
+.simple-change p{
+  color:#D3DAE2;
+  line-height:1.35;
+  font-size:.86rem;
+}
+.impact-list{
+  display:grid;
+  gap:8px;
+}
+.impact-item{
+  display:grid;
+  grid-template-columns:30px 1fr;
+  gap:9px;
+  align-items:center;
+  padding:9px;
+  border-radius:8px;
+  border:1px solid color-mix(in srgb,var(--state) 23%,rgba(255,255,255,.07));
+  background:color-mix(in srgb,var(--state) 8%,rgba(255,255,255,.015));
+}
+.impact-item i{
+  width:30px;
+  height:30px;
+  border-radius:8px;
+  display:grid;
+  place-items:center;
+  font-style:normal;
+  color:var(--state);
+  background:color-mix(in srgb,var(--state) 13%,transparent);
+}
+.impact-item b{
+  display:block;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.64rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.impact-item span{
+  display:block;
+  color:#B8C0CA;
+  font-size:.78rem;
+  line-height:1.25;
+  margin-top:2px;
+}
+.impact-general{
+  margin-top:8px;
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:8px;
+  background:rgba(255,255,255,.025);
+  font-family:'Share Tech Mono',monospace;
+  font-size:.62rem;
+  color:var(--muted);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.impact-general b{color:var(--state)}
+
+@media(max-width:980px){
+  .patch-card-head{
+    grid-template-columns:96px 1fr 24px;
+    gap:12px;
+  }
+  .patch-main-change,.patch-date{grid-column:2/4}
+  .patch-date{justify-self:start;text-align:left}
+  .patch-detail-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .patch-page{padding-left:12px;padding-right:12px}
+  .patch-card-head{grid-template-columns:82px 1fr 22px;padding:12px}
+  .patch-weapon-img{height:45px}
+  .patch-weapon-img img{max-width:78px;max-height:38px}
+  .patch-card-body{padding:0 12px 12px}
+  .compare-head{display:none}
+  .compare-row{grid-template-columns:1fr;gap:7px}
+  .compare-arrow{display:none}
+  .compare-value{text-align:left}
+  .simple-change{grid-template-columns:1fr}
+}
+
+/* EMPTY */
+.patch-empty{
+  padding:42px 20px;
+  text-align:center;
+  border:1px dashed rgba(255,255,255,.16);
+  border-radius:16px;
+  background:rgba(255,255,255,.02);
+  color:var(--muted);
+}
+.patch-empty h3{
+  font-family:'Rajdhani',sans-serif;
+  text-transform:uppercase;
+  color:var(--txt);
+  margin-bottom:8px;
+}
+.patch-empty p{
+  max-width:640px;
+  margin:0 auto;
+  line-height:1.55;
+}
+.patch-empty code{
+  color:var(--gold);
+  font-family:'Share Tech Mono',monospace;
+}
+
+/* SEO TEXT */
+.patch-seo{
+  margin-top:26px;
+  border:1px solid rgba(240,196,25,.12);
+  background:rgba(240,196,25,.035);
+  border-radius:16px;
+  padding:18px;
+}
+.patch-seo h2{
+  font-family:'Rajdhani',sans-serif;
+  font-size:1.2rem;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.patch-seo p{
+  color:#C3CBD3;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+.patch-seo a{
+  color:var(--gold);
+  font-weight:700;
+}
+
+/* FOOTER */
+footer{
+  position:relative;
+  z-index:1;
+  max-width:1180px;
+  margin:0 auto;
+  padding:25px 18px 34px;
+  text-align:center;
+  color:var(--muted);
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+}
+
+/* BOTTOM NAV */
+.wzbnav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:40;
+  display:flex;
+  background:rgba(7,10,14,.95);
+  backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+}
+.wzbnav a{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  padding:10px 0 calc(10px + env(safe-area-inset-bottom,0));
+  color:var(--muted);
+  font-size:.62rem;
+  font-weight:600;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.wzbnav a svg{width:21px;height:21px}
+.wzbnav a.on{color:var(--gold)}
+@media(min-width:980px){
+  .wzbnav{display:none}
+}
+</style>
+</head>
+
+<body>
+<div class="bg-grid"></div>
+<div class="wrap">
+
+<header class="wzhdr">
+  <div class="hdr">
+    <a class="logo" href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path>
+        <circle cx="12" cy="12" r="2.4" fill="var(--gold)"></circle>
+      </svg>
+      <span><span class="wz">WZ</span>MetaLoadouts</span>
+    </a>
+
+    <nav class="nav-d">
+      <a href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>
+        META
+      </a>
+      <a href="/clases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>
+        CLASES
+      </a>
+      <a href="/armas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>
+        ARMAS
+      </a>
+      <a href="/ventajas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>
+        VENTAJAS
+      </a>
+      <a class="on" href="/noticias">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>
+        NOTICIAS
+      </a>
+    </nav>
+
+    <div class="hdr-actions">
+      <button class="icon-btn menu-only" id="menuBtn" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="wzstatus">
+  <span class="live"><span class="dot"></span>META LIVE</span>
+  <span class="season">TEMPORADA 4</span>
+</div>
+
+<div class="wzdrawer-ov" id="drawerOverlay"></div>
+<aside class="wzdrawer" id="drawer" aria-hidden="true">
+  <div class="wzdrawer-top">
+    <span class="wzdrawer-title">NAVEGACIÓN</span>
+    <button class="icon-btn" id="drawerClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav class="wzdrawer-nav">
+    <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>META</a>
+    <a href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>CLASES</a>
+    <a href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>ARMAS</a>
+    <a href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>VENTAJAS</a>
+    <a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>COMUNIDAD</a><a class="on" href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>NOTICIAS</a>
+  </nav>
+</aside>
+
+<main class="patch-page">
+  <section class="patch-hero">
+    <div class="patch-kicker">Balance actualizado</div>
+    <h1>Cambios de Parche <span>Warzone BO7</span></h1>
+    <p>Historial completo de buffs, nerfs, armas nuevas y ajustes que explican por qué cambia el meta cada temporada.</p>
+  </section>
+
+  <section class="patch-controls" aria-label="Filtros de cambios">
+    <label class="patch-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="patchSearch" type="search" placeholder="Buscar arma o cambio…" autocomplete="off">
+    </label>
+
+    <select class="patch-select" id="patchSelect" aria-label="Filtrar por parche">
+      <option value="">Todos los parches</option>
+    </select>
+
+    <div class="patch-tabs" role="tablist" aria-label="Tipo de cambio">
+      <button class="patch-tab active" data-type="">Todos</button>
+      <button class="patch-tab" data-type="buff">Buffs</button>
+      <button class="patch-tab" data-type="nerf">Nerfs</button>
+      <button class="patch-tab" data-type="nuevo">Nuevo</button>
+      <button class="patch-tab" data-type="ajuste">Ajustes</button>
+    </div>
+  </section>
+
+  <div class="patch-results-head">
+    <h2>Historial de cambios</h2>
+    <span class="patch-count" id="resultCount">Cargando…</span>
+  </div>
+
+  <section class="patch-groups" id="patchGroups">
+    <div class="patch-empty">
+      <h3>Cargando parches</h3>
+      <p>Buscando datos de balance.</p>
+    </div>
+  </section>
+
+  <section class="patch-seo">
+    <h2>Cómo leer los cambios de parche</h2>
+    <p>Los cambios de parche indican cuándo un arma sube o baja en el meta. Un buff puede mejorar daño, rango, velocidad de bala, movilidad o control. Un nerf puede reducir daño, aumentar retroceso o hacer que un arma pierda consistencia.</p>
+    <p>Después de revisar los cambios, puedes volver a la <a href="/">tier list principal</a>, ver la <a href="/armas">base completa de armas</a> o revisar las <a href="/clases">mejores clases de Warzone</a>.</p>
+  </section>
+</main>
+
+<footer>
+  wzmetaloadouts.com · cambios de parche · buffs · nerfs · meta actualizado · <a href="/privacy">Política de Privacidad</a>
+</footer>
+
+</div>
+
+<nav class="wzbnav">
+  <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg>Meta</a>
+  <a href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>Clases</a>
+  <a href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>Armas</a>
+  <a href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>Ventajas</a>
+  <a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Comunidad</a><a class="on" href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>Noticias</a>
+</nav>
+
+<script>
+/* Drawer móvil */
+(function(){
+  var b=document.getElementById('menuBtn');
+  var d=document.getElementById('drawer');
+  var o=document.getElementById('drawerOverlay');
+  var c=document.getElementById('drawerClose');
+
+  function abrir(){
+    if(!d || !o) return;
+    d.classList.add('open');
+    o.classList.add('open');
+    d.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+
+  function cerrar(){
+    if(!d || !o) return;
+    d.classList.remove('open');
+    o.classList.remove('open');
+    d.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+
+  if(b) b.addEventListener('click',abrir);
+  if(o) o.addEventListener('click',cerrar);
+  if(c) c.addEventListener('click',cerrar);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') cerrar();
+  });
+})();
+</script>
+
+<script>
+(function(){
+  const state = {
+    records: [],
+    filtered: [],
+    type: '',
+    patch: '',
+    search: '',
+    openId: ''
+  };
+
+  const $ = (sel) => document.querySelector(sel);
+
+  const DETAIL_OVERRIDES = {
+    'mk35-isr|season 4 reloaded': {
+      titulo: 'Mejora en el rango de daño',
+      subtitulo: 'Mejora en los rangos de daño medio y mínimo para mayor consistencia a distancias largas.',
+      categoria: 'Fusil de asalto',
+      resumen: 'Se han mejorado los rangos de daño medio y mínimo del MK35 ISR, extendiendo su efectividad a distancias más largas.',
+      bullets: [
+        'Mayor consistencia en combates de medio y largo alcance.',
+        'Mejora la competitividad frente a otros fusiles de asalto.'
+      ],
+      comparativa: [
+        {
+          label: 'Daño máximo',
+          sub: 'Rango',
+          antes: { dano:'39', rango:'0 - 38 m' },
+          despues: { dano:'39', rango:'0 - 38 m' },
+          estado: 'sin_cambio'
+        },
+        {
+          label: 'Daño medio',
+          sub: 'Rango',
+          antes: { dano:'32', rango:'38 - 47 m' },
+          despues: { dano:'35', rango:'38 - 52 m' },
+          estado: 'buff'
+        },
+        {
+          label: 'Daño mínimo',
+          sub: 'Rango',
+          antes: { dano:'28', rango:'>47 m' },
+          despues: { dano:'30', rango:'>52 m' },
+          estado: 'buff'
+        }
+      ],
+      impacto: [
+        {
+          titulo: 'Viabilidad',
+          texto: 'Aumenta su viabilidad en mapas grandes y combates de largo alcance.',
+          icono: '↥'
+        },
+        {
+          titulo: 'Consistencia',
+          texto: 'Rangos de daño más favorables mejoran la consistencia de TTK.',
+          icono: '◎'
+        },
+        {
+          titulo: 'Posición en el meta',
+          texto: 'Puede subir en la tier list de fusiles de asalto.',
+          icono: '⚖'
+        }
+      ],
+      impacto_general: 'Alto'
+    }
+  };
+
+  const WEAPON_TYPES = {
+    'ak-27':'Fusil de asalto',
+    'ds20-mirage':'Fusil de asalto',
+    'mxr-17':'Fusil de asalto',
+    'mk35-isr':'Fusil de asalto',
+    'voyak-kt-3':'Fusil de asalto',
+    'm15-mod-0':'Fusil de asalto',
+    'peacekeeper-mk1':'Fusil de asalto',
+    'dravec-45':'SMG',
+    'kogot-7':'SMG',
+    'carbon-57':'SMG',
+    'vst':'SMG',
+    'ryden-45k':'SMG',
+    'cbrs-3':'SMG',
+    'mk-78':'LMG',
+    'xm325':'LMG',
+    'warden-308':'Fusil táctico',
+    'strider-300':'Sniper',
+    'hawker-hx':'Sniper',
+    'vs-recon':'Sniper',
+    'xr-3-ion':'Sniper'
+  };
+
+  function escapeHtml(s){
+    return String(s ?? '').replace(/[&<>"']/g, c => ({
+      '&':'&amp;',
+      '<':'&lt;',
+      '>':'&gt;',
+      '"':'&quot;',
+      "'":'&#39;'
+    }[c]));
+  }
+
+  function norm(str){
+    return String(str || '')
+      .toLowerCase()
+      .trim()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g,'');
+  }
+
+  function slugify(nombre){
+    return norm(nombre)
+      .replace(/[^a-z0-9]+/g,'-')
+      .replace(/^-+|-+$/g,'');
+  }
+
+  function niceSlug(slug){
+    return String(slug || '')
+      .replace(/-/g,' ')
+      .replace(/\b\w/g, m => m.toUpperCase());
+  }
+
+  async function safeFetch(url){
+    try{
+      const r = await fetch(url + '?v=' + Date.now(), { cache:'no-cache' });
+      if(!r.ok) return null;
+      return await r.json();
+    }catch(e){
+      return null;
+    }
+  }
+
+  function fechaKey(fecha){
+    if(!fecha) return '0000-00-00';
+    const s = String(fecha);
+    const m = s.match(/(\d{4})-(\d{2})-(\d{2})/);
+    return m ? `${m[1]}-${m[2]}-${m[3]}` : s;
+  }
+
+  function fechaLegible(fecha){
+    if(!fecha) return '';
+    const s = String(fecha).trim();
+    const m = s.match(/(\d{4})-(\d{2})-(\d{2})/);
+    if(!m) return s;
+    const meses = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+    return `${parseInt(m[3],10)} ${meses[parseInt(m[2],10)-1]} ${m[1]}`;
+  }
+
+  function tipoNormalizado(t){
+    const x = norm(t);
+    if(x.includes('buff')) return 'buff';
+    if(x.includes('nerf')) return 'nerf';
+    if(x.includes('nuevo') || x.includes('new')) return 'nuevo';
+    return 'ajuste';
+  }
+
+  function labelTipo(t){
+    const x = tipoNormalizado(t);
+    if(x === 'buff') return 'BUFF';
+    if(x === 'nerf') return 'NERF';
+    if(x === 'nuevo') return 'NUEVO';
+    return 'AJUSTE';
+  }
+
+  function stateColor(tipo){
+    const x = tipoNormalizado(tipo);
+    if(x === 'buff') return 'var(--green)';
+    if(x === 'nerf') return 'var(--red)';
+    if(x === 'nuevo') return 'var(--gold)';
+    return 'var(--blue)';
+  }
+
+  function labelParche(patch){
+    const parts = [];
+    if(patch.version) parts.push('Parche ' + patch.version);
+    else if(patch.season) parts.push(patch.season);
+    if(patch.fecha) parts.push(fechaLegible(patch.fecha));
+    return parts.filter(Boolean).join(' · ') || 'Parche sin fecha';
+  }
+
+  function patchIdFrom(patch){
+    return [
+      fechaKey(patch.fecha),
+      patch.version || '',
+      patch.season || ''
+    ].join('|');
+  }
+
+  function primaryType(record){
+    const counts = countTypes(record.cambios);
+    if(counts.nerf && !counts.buff && !counts.nuevo) return 'nerf';
+    if(counts.buff && !counts.nerf && !counts.nuevo) return 'buff';
+    if(counts.nuevo && !counts.buff && !counts.nerf) return 'nuevo';
+    if(counts.nerf >= counts.buff && counts.nerf > 0) return 'nerf';
+    if(counts.buff > 0) return 'buff';
+    return 'ajuste';
+  }
+
+  function countTypes(cambios){
+    const out = { buff:0, nerf:0, nuevo:0, ajuste:0 };
+    (cambios || []).forEach(c => {
+      const t = tipoNormalizado(c.tipo);
+      out[t] = (out[t] || 0) + 1;
+    });
+    return out;
+  }
+
+  function shortChange(record){
+    const detail = detailFor(record);
+    if(detail && detail.titulo) return detail.titulo;
+    const first = (record.cambios || [])[0];
+    return first ? first.descripcion : 'Cambio registrado';
+  }
+
+  function subChange(record){
+    const detail = detailFor(record);
+    if(detail && detail.subtitulo) return detail.subtitulo;
+    const text = (record.cambios || []).map(c => c.descripcion).join(' · ');
+    return text || 'Ajuste de balance registrado en el parche.';
+  }
+
+  function detailKey(record){
+    return `${record.slug}|${norm(record.season)}`;
+  }
+
+  function detailFor(record){
+    return record.detalle || DETAIL_OVERRIDES[detailKey(record)] || null;
+  }
+
+  function weaponImg(record){
+    return `/weapons/gold/${encodeURIComponent(record.arma)}.png`;
+  }
+
+  function weaponType(record){
+    const detail = detailFor(record);
+    return (detail && detail.categoria) || WEAPON_TYPES[record.slug] || 'Arma';
+  }
+
+  function parseWeaponEntry(slug, entry, records){
+    if(!entry) return;
+
+    const arma = entry.arma || entry.nombre || entry.name || niceSlug(slug);
+    const patches = Array.isArray(entry)
+      ? entry
+      : (entry.patches || entry.parches || entry.historial || []);
+
+    if(!Array.isArray(patches)) return;
+
+    patches.forEach((patch, patchIndex) => {
+      const cambios = patch.cambios || patch.changes || patch.ajustes || [];
+      if(!Array.isArray(cambios) || !cambios.length) return;
+
+      const cleanCambios = cambios.map((cambio, changeIndex) => ({
+        id: `${slug}-${patchIndex}-${changeIndex}`,
+        tipo: tipoNormalizado(cambio.tipo || cambio.type || cambio.kind),
+        descripcion: cambio.descripcion || cambio.description || cambio.detalle || cambio.texto || ''
+      })).filter(c => c.descripcion);
+
+      if(!cleanCambios.length) return;
+
+      records.push({
+        id: `${slug}-${patchIndex}`,
+        arma,
+        slug: slugify(arma),
+        season: patch.season || patch.temporada || '',
+        version: patch.version || '',
+        fecha: patch.fecha || patch.date || '',
+        fuente: patch.fuente || patch.source || '',
+        modos: patch.modos_afectados || patch.modos || [],
+        contexto: patch.contexto || '',
+        detalle: patch.detalle || patch.detail || null,
+        cambios: cleanCambios,
+        patchId: patchIdFrom(patch),
+        patchLabel: labelParche(patch),
+        patchSort: fechaKey(patch.fecha)
+      });
+    });
+  }
+
+  function parsePatchFile(raw){
+    const records = [];
+    if(!raw) return records;
+
+    if(Array.isArray(raw)){
+      raw.forEach((item, idx) => {
+        if(item && (item.arma || item.nombre || item.name) && (item.patches || item.parches || item.historial)){
+          parseWeaponEntry(slugify(item.arma || item.nombre || item.name), item, records);
+        }else if(item && (item.arma || item.nombre || item.name) && (item.cambios || item.changes)){
+          parseWeaponEntry(slugify(item.arma || item.nombre || item.name), {
+            arma: item.arma || item.nombre || item.name,
+            patches: [item]
+          }, records);
+        }else{
+          parseWeaponEntry('arma-' + idx, item, records);
+        }
+      });
+      return records;
+    }
+
+    if(raw.armas && typeof raw.armas === 'object'){
+      return parsePatchFile(raw.armas);
+    }
+
+    if(raw.weapons && typeof raw.weapons === 'object'){
+      return parsePatchFile(raw.weapons);
+    }
+
+    Object.entries(raw).forEach(([slug, entry]) => {
+      if(slug === '_meta') return;
+      parseWeaponEntry(slug, entry, records);
+    });
+
+    return records;
+  }
+
+  function sourceHtml(url){
+    if(!url) return '';
+    if(/^https?:\/\//i.test(url)){
+      return `<a class="patch-pill patch-source" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Fuente oficial</a>`;
+    }
+    return `<span class="patch-pill patch-source">${escapeHtml(url)}</span>`;
+  }
+
+  function buildPatchSelect(records){
+    const select = $('#patchSelect');
+    if(!select) return;
+
+    const map = new Map();
+    records.forEach(r => {
+      if(!map.has(r.patchId)){
+        map.set(r.patchId, {
+          id:r.patchId,
+          label:r.patchLabel,
+          sort:r.patchSort
+        });
+      }
+    });
+
+    const opts = [...map.values()].sort((a,b) => String(b.sort).localeCompare(String(a.sort)));
+
+    select.innerHTML = '<option value="">Todos los parches</option>' + opts.map(p => {
+      return `<option value="${escapeHtml(p.id)}">${escapeHtml(p.label)}</option>`;
+    }).join('');
+  }
+
+  function recordMatchesType(record, type){
+    if(!type) return true;
+    return record.cambios.some(c => tipoNormalizado(c.tipo) === type);
+  }
+
+  function recordChangeCount(record, type){
+    return (record.cambios || []).filter(c => !type || tipoNormalizado(c.tipo) === type).length;
+  }
+
+  function applyFilters(){
+    const q = norm(state.search);
+
+    state.filtered = state.records.filter(record => {
+      if(state.type && !recordMatchesType(record, state.type)) return false;
+      if(state.patch && record.patchId !== state.patch) return false;
+
+      if(q){
+        const haystack = norm([
+          record.arma,
+          record.season,
+          record.fecha,
+          record.version,
+          record.fuente,
+          record.contexto,
+          record.cambios.map(c => `${c.tipo} ${c.descripcion}`).join(' ')
+        ].join(' '));
+
+        if(!haystack.includes(q)) return false;
+      }
+
+      return true;
+    });
+
+    renderResults();
+  }
+
+  function groupRecords(records){
+    const map = new Map();
+
+    records.forEach(record => {
+      if(!map.has(record.patchId)){
+        map.set(record.patchId, {
+          id: record.patchId,
+          label: record.patchLabel,
+          fecha: record.fecha,
+          season: record.season,
+          version: record.version,
+          fuente: record.fuente,
+          sort: record.patchSort,
+          records: []
+        });
+      }
+
+      map.get(record.patchId).records.push(record);
+    });
+
+    return [...map.values()].sort((a,b) => String(b.sort).localeCompare(String(a.sort)));
+  }
+
+  function typePills(counts){
+    return [
+      counts.buff ? `<span class="patch-pill">${counts.buff} buff${counts.buff > 1 ? 's' : ''}</span>` : '',
+      counts.nerf ? `<span class="patch-pill">${counts.nerf} nerf${counts.nerf > 1 ? 's' : ''}</span>` : '',
+      counts.nuevo ? `<span class="patch-pill">${counts.nuevo} nueva${counts.nuevo > 1 ? 's' : ''}</span>` : '',
+      counts.ajuste ? `<span class="patch-pill">${counts.ajuste} ajuste${counts.ajuste > 1 ? 's' : ''}</span>` : ''
+    ].join('');
+  }
+
+  function groupCounts(records){
+    const counts = { buff:0, nerf:0, nuevo:0, ajuste:0, total:0 };
+    records.forEach(r => {
+      r.cambios.forEach(c => {
+        const t = tipoNormalizado(c.tipo);
+        counts[t] = (counts[t] || 0) + 1;
+        counts.total++;
+      });
+    });
+    return counts;
+  }
+
+  function renderSummaryPanel(record){
+    const detail = detailFor(record);
+    const arma = escapeHtml(record.arma);
+    const resumen = detail && detail.resumen
+      ? detail.resumen
+      : (record.contexto || `El ${arma} recibió ajustes de balance en este parche. Revisa los cambios aplicados para entender cómo afecta su rendimiento en el meta.`);
+
+    const bullets = detail && Array.isArray(detail.bullets) && detail.bullets.length
+      ? detail.bullets
+      : record.cambios.map(c => c.descripcion).slice(0,3);
+
+    return `
+      <div class="detail-panel">
+        <div class="detail-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v6h6"></path></svg>
+          Resumen del cambio
+        </div>
+        <div class="detail-copy">${escapeHtml(resumen).replace(arma, `<mark>${arma}</mark>`)}</div>
+        <div class="detail-list">
+          ${bullets.map((b,i) => `
+            <div class="detail-bullet">
+              <i>${i === 0 ? '↑' : '✓'}</i>
+              <span>${escapeHtml(b)}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  }
+
+  function compareIcon(){
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg>`;
+  }
+
+  function renderComparePanel(record){
+    const detail = detailFor(record);
+    const comp = detail && Array.isArray(detail.comparativa) ? detail.comparativa : [];
+
+    if(comp.length){
+      return `
+        <div class="detail-panel">
+          <div class="detail-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"></path></svg>
+            Antes vs Después
+          </div>
+          <div class="compare-head">
+            <span></span><span>Antes</span><span></span><span>Después</span>
+          </div>
+          <div class="compare-list">
+            ${comp.map(row => `
+              <div class="compare-row">
+                <div class="compare-label">
+                  <span class="compare-icon">${compareIcon()}</span>
+                  <span>
+                    <span class="compare-name">${escapeHtml(row.label)}</span>
+                    <span class="compare-sub">${escapeHtml(row.sub || 'Rango')}</span>
+                  </span>
+                </div>
+                <div class="compare-value">
+                  <b>${escapeHtml(row.antes && row.antes.dano)}</b>
+                  <small>${escapeHtml(row.antes && row.antes.rango)}</small>
+                </div>
+                <div class="compare-arrow">→</div>
+                <div class="compare-value after">
+                  <b>${escapeHtml(row.despues && row.despues.dano)}</b>
+                  <small>${escapeHtml(row.despues && row.despues.rango)}</small>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>`;
+    }
+
+    return `
+      <div class="detail-panel">
+        <div class="detail-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"></path></svg>
+          Cambios aplicados
+        </div>
+        <div class="change-list-only">
+          ${record.cambios.map(c => `
+            <div class="simple-change" style="--state:${stateColor(c.tipo)}">
+              <span class="state-badge">${labelTipo(c.tipo)}</span>
+              <p>${escapeHtml(c.descripcion)}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  }
+
+  function renderImpactPanel(record){
+    const detail = detailFor(record);
+    const primary = primaryType(record);
+    const fallback = primary === 'nerf'
+      ? [
+          { titulo:'Consistencia', texto:'El arma pierde margen de error o dominio en su rango más fuerte.', icono:'↓' },
+          { titulo:'Uso recomendado', texto:'Puede seguir siendo viable, pero exige mejor control y selección de distancia.', icono:'◎' },
+          { titulo:'Posición en el meta', texto:'Puede bajar posiciones frente a alternativas más estables.', icono:'⚖' }
+        ]
+      : [
+          { titulo:'Viabilidad', texto:'El arma gana valor competitivo dentro de su categoría.', icono:'↑' },
+          { titulo:'Consistencia', texto:'El cambio mejora su rendimiento o facilidad de uso.', icono:'◎' },
+          { titulo:'Posición en el meta', texto:'Puede subir posiciones si el ajuste mejora su TTK o control.', icono:'⚖' }
+        ];
+
+    const impacts = detail && Array.isArray(detail.impacto) && detail.impacto.length ? detail.impacto : fallback;
+    const general = detail && detail.impacto_general ? detail.impacto_general : (primary === 'nerf' ? 'Medio' : 'Medio');
+
+    return `
+      <div class="detail-panel">
+        <div class="detail-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M5 19l-1-10 5 4 3-8 3 8 5-4-1 10"></path></svg>
+          Impacto en el meta
+        </div>
+        <div class="impact-list">
+          ${impacts.map(item => `
+            <div class="impact-item">
+              <i>${escapeHtml(item.icono || '◎')}</i>
+              <span>
+                <b>${escapeHtml(item.titulo)}</b>
+                <span>${escapeHtml(item.texto)}</span>
+              </span>
+            </div>
+          `).join('')}
+        </div>
+        <div class="impact-general">Impacto general: <b>${escapeHtml(general)}</b></div>
+      </div>`;
+  }
+
+  function renderCard(record){
+    const primary = primaryType(record);
+    const detail = detailFor(record);
+    const open = state.openId === record.id;
+    const counts = countTypes(record.cambios);
+    const countText = record.cambios.length === 1 ? '1 cambio' : `${record.cambios.length} cambios`;
+
+    return `
+      <article class="patch-card ${open ? 'is-open' : ''}" data-record-id="${escapeHtml(record.id)}" style="--state:${stateColor(primary)}">
+        <button class="patch-card-head" type="button" aria-expanded="${open ? 'true' : 'false'}">
+          <div class="patch-weapon-img">
+            <img src="${weaponImg(record)}" alt="${escapeHtml(record.arma)}" loading="lazy" onerror="this.style.display='none'">
+          </div>
+
+          <div class="patch-weapon-info">
+            <h3>${escapeHtml(record.arma)}</h3>
+            <div class="patch-weapon-type">${escapeHtml(weaponType(record))}</div>
+            <span class="state-badge">${labelTipo(primary)}${counts.buff && counts.nerf ? ' mixto' : ''}</span>
+          </div>
+
+          <div class="patch-main-change">
+            <strong>${escapeHtml(shortChange(record))}</strong>
+            <span>${escapeHtml(subChange(record))}</span>
+          </div>
+
+          <div class="patch-date">
+            <b>${escapeHtml(fechaLegible(record.fecha))}</b>
+            ${escapeHtml(record.season || 'Parche')}
+          </div>
+
+          <div class="patch-chevron">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </div>
+        </button>
+
+        <div class="patch-card-body">
+          <div class="patch-title" style="margin:2px 0 12px 0">
+            <p>${escapeHtml(countText)} · ${record.modos && record.modos.length ? escapeHtml(record.modos.join(' / ')) : 'Modos oficiales'}</p>
+          </div>
+          <div class="patch-detail-grid">
+            ${renderSummaryPanel(record)}
+            ${renderComparePanel(record)}
+            ${renderImpactPanel(record)}
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function preferredOpenRecord(records){
+    const mk = records.find(r => r.slug === 'mk35-isr' && norm(r.season) === 'season 4 reloaded');
+    if(mk) return mk.id;
+    const detailed = records.find(r => detailFor(r));
+    if(detailed) return detailed.id;
+    return records[0] ? records[0].id : '';
+  }
+
+  function renderResults(){
+    const cont = $('#patchGroups');
+    const count = $('#resultCount');
+    const totalChanges = state.filtered.reduce((sum, r) => sum + recordChangeCount(r, state.type), 0);
+
+    if(count){
+      count.textContent = `${totalChanges} cambio${totalChanges === 1 ? '' : 's'} encontrado${totalChanges === 1 ? '' : 's'}`;
+    }
+
+    if(!cont) return;
+
+    if(!state.filtered.length){
+      cont.innerHTML = `
+        <div class="patch-empty">
+          <h3>Sin resultados</h3>
+          <p>No hay cambios que coincidan con los filtros actuales. Prueba buscar otra arma, limpiar el tipo de cambio o revisar otro parche.</p>
+        </div>`;
+      return;
+    }
+
+    const groups = groupRecords(state.filtered);
+
+    cont.innerHTML = groups.map(group => {
+      const counts = groupCounts(group.records);
+      const fuente = group.records.find(r => r.fuente)?.fuente || group.fuente || '';
+
+      return `
+        <article class="patch-group">
+          <div class="patch-group-head">
+            <div class="patch-title">
+              <h3>${escapeHtml(group.label)}</h3>
+              <p>${counts.total} cambios · ${counts.buff} buffs · ${counts.nerf} nerfs${counts.nuevo ? ' · ' + counts.nuevo + ' nuevas' : ''}${counts.ajuste ? ' · ' + counts.ajuste + ' ajustes' : ''}</p>
+            </div>
+            <div class="patch-group-meta">
+              ${typePills(counts)}
+              ${sourceHtml(fuente)}
+            </div>
+          </div>
+          <div class="patch-records">
+            ${group.records.map(record => renderCard(record)).join('')}
+          </div>
+        </article>`;
+    }).join('');
+
+    setupAccordions();
+  }
+
+  function setupAccordions(){
+    document.querySelectorAll('.patch-card-head').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.patch-card');
+        if(!card) return;
+        const id = card.dataset.recordId || '';
+        const open = !card.classList.contains('is-open');
+
+        document.querySelectorAll('.patch-card').forEach(c => {
+          c.classList.remove('is-open');
+          const b = c.querySelector('.patch-card-head');
+          if(b) b.setAttribute('aria-expanded','false');
+        });
+
+        if(open){
+          card.classList.add('is-open');
+          btn.setAttribute('aria-expanded','true');
+          state.openId = id;
+        }else{
+          state.openId = '';
+        }
+      });
+    });
+  }
+
+  function setupEvents(){
+    const search = $('#patchSearch');
+    const select = $('#patchSelect');
+
+    if(search){
+      search.addEventListener('input', () => {
+        state.search = search.value;
+        state.openId = '';
+        applyFilters();
+      });
+    }
+
+    if(select){
+      select.addEventListener('change', () => {
+        state.patch = select.value;
+        state.openId = '';
+        applyFilters();
+      });
+    }
+
+    document.querySelectorAll('.patch-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.patch-tab').forEach(x => x.classList.remove('active'));
+        btn.classList.add('active');
+        state.type = btn.dataset.type || '';
+        state.openId = '';
+        applyFilters();
+      });
+    });
+  }
+
+  async function init(){
+    setupEvents();
+
+    const raw = await safeFetch('/weapon-patches.json');
+    const records = parsePatchFile(raw)
+      .filter(r => r.arma && r.cambios && r.cambios.length)
+      .sort((a,b) => {
+        const d = String(b.patchSort).localeCompare(String(a.patchSort));
+        if(d) return d;
+
+        const aDetail = detailFor(a) ? 1 : 0;
+        const bDetail = detailFor(b) ? 1 : 0;
+        if(aDetail !== bDetail) return bDetail - aDetail;
+
+        const order = { buff:1, nerf:2, nuevo:3, ajuste:4 };
+        return (order[primaryType(a)] || 9) - (order[primaryType(b)] || 9);
+      });
+
+    state.records = records;
+    state.filtered = records;
+
+    buildPatchSelect(records);
+
+    if(!records.length){
+      const cont = $('#patchGroups');
+      const count = $('#resultCount');
+      if(count) count.textContent = '0 cambios encontrados';
+      if(cont){
+        cont.innerHTML = `
+          <div class="patch-empty">
+            <h3>Falta cargar la base de parches</h3>
+            <p>La página ya está lista, pero necesita el archivo de parches para mostrar los cambios reales. No publica datos inventados si el archivo no existe.</p>
+          </div>`;
+      }
+      return;
+    }
+
+    renderResults();
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+
+</body>
+</html>
