@@ -1,39 +1,83 @@
-name: Deploy public Pages artifact
+name: Sync private source and deploy Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - site/**
-      - .github/workflows/deploy-pages.yml
+  schedule:
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 concurrency:
-  group: pages
+  group: sync-and-deploy-pages
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 jobs:
-  deploy:
+  sync-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout fuente
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: psnstgo-create/wzmetaloadouts-web
+          ref: main
+          path: source
+          ssh-key: ${{ secrets.SOURCE_READ_KEY }}
+          persist-credentials: false
+
+      - name: Checkout repositorio publico
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          path: target
+
+      - name: Preparar y validar artefacto publico
+        env:
+          PYTHONUTF8: '1'
+          PYTHONUNBUFFERED: '1'
+        run: >-
+          python source/_build/prepare_public_site.py
+          --output "$RUNNER_TEMP/public-site"
+          --omit-cname
+
+      - name: Sincronizar solo el sitio validado
+        run: >-
+          rsync -a --delete
+          "$RUNNER_TEMP/public-site/"
+          target/site/
+
+      - name: Guardar artefacto si cambio
+        id: sync
+        working-directory: target
+        run: |
+          git config user.name "WZ Meta Publisher"
+          git config user.email "bot@wzmetaloadouts.com"
+          git add --all -- site
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "El artefacto publico no cambio."
+            exit 0
+          fi
+          source_sha=$(git -C ../source rev-parse HEAD)
+          git commit -m "Deploy: actualizar artefacto publico (${source_sha:0:12})"
+          git push origin main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Configurar Pages
-        uses: actions/configure-pages@v5
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
 
       - name: Subir artefacto publico
-        uses: actions/upload-pages-artifact@v3
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
-          path: site
+          path: target/site
 
       - name: Publicar en GitHub Pages
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
