@@ -507,9 +507,6 @@ function comCardHtml(l, idx) {
   const acc = Object.entries(l.accesorios || {});
   const r = l._resumen;
   const gustos = r.conteo.funciono;
-  const fuentes = Array.isArray(l.fuentes) ? l.fuentes : [];
-  const fuentesHtml = fuentes.map(f => `<a href="${escapeHtml(f.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(f.nombre)}</a>`).join('<span>·</span>');
-
   const accHtml = acc.map(([slot, val]) => {
     const iconSrc = arma ? `${arma.icon_path}/${comSlugSafe(val)}.png` : '';
     const icon = iconSrc
@@ -544,7 +541,7 @@ function comCardHtml(l, idx) {
         <button class="com-copy-btn" data-copy data-code="${escapeHtml(l.codigo_clase)}">Copiar</button>
       </div>
       ${l._editorial
-        ? `<div class="com-source-row"><span>Fuentes verificadas:</span>${fuentesHtml}</div>`
+        ? ''
         : `<button class="com-profile-btn" data-perfil="${escapeHtml(username)}">Ver clases de ${escapeHtml(username)}</button>`}
     </div>
   </article>`;

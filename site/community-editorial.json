@@ -16,12 +16,7 @@
         "Cañón": "16\" Bandolier Barrel",
         "Acople": "RIF Handguard",
         "Cargador": "Debase Extended Mag"
-      },
-      "fuentes": [
-        { "nombre": "WZStats", "url": "https://wzstats.gg/es/best-loadouts/fg42" },
-        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/fg42" },
-        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
-      ]
+      }
     },
     {
       "id": "editorial-cbrs-3-corto-alcance",
@@ -36,11 +31,7 @@
         "Cañón": "11\" Gaunt Barrel",
         "Cargador": "MFS Carousel Fast Mag",
         "Culata": "Casino Light Stock"
-      },
-      "fuentes": [
-        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/cbrs-3" },
-        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/cbrs-3" }
-      ]
+      }
     },
     {
       "id": "editorial-mk35-isr-largo-alcance",
@@ -55,11 +46,7 @@
         "Cañón": "16.5\" Greaves Bellum Barrel",
         "Acople": "VAS Convergence Foregrip",
         "Cargador": "Bowen Siren Drum"
-      },
-      "fuentes": [
-        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" },
-        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/mk35-isr" }
-      ]
+      }
     },
     {
       "id": "editorial-vst-corto-alcance",
@@ -74,11 +61,7 @@
         "Acople": "EAM Steady-90 Grip",
         "Cargador": "Amplify Extended Mag I",
         "Culata": "Hawker Cub-55 Pad"
-      },
-      "fuentes": [
-        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/vst" },
-        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
-      ]
+      }
     },
     {
       "id": "editorial-ds20-mirage-battle-royale",
@@ -93,10 +76,7 @@
         "Cañón": "17.1\" Abdicator Barrel",
         "Cargador": "Griffon Reserve Extended II",
         "Culata": "Weighted Stock"
-      },
-      "fuentes": [
-        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/ds20-mirage" }
-      ]
+      }
     },
     {
       "id": "editorial-rev-46-corto-alcance",
@@ -111,10 +91,7 @@
         "Cañón": "14.9\" Caudal Target Barrel",
         "Acople": "Sapper Guard Handstop",
         "Cargador": "Cawdor Extended Mag"
-      },
-      "fuentes": [
-        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/rev-46" }
-      ]
+      }
     },
     {
       "id": "editorial-carbon-57-corto-alcance",
@@ -129,10 +106,7 @@
         "Acople": "Sapper Guard Handstop",
         "Cargador": "MFS Renown Plus Mag",
         "Culata": "Hammer Platoon Pad"
-      },
-      "fuentes": [
-        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/carbon-57" }
-      ]
+      }
     },
     {
       "id": "editorial-mxr-17-largo-alcance",
@@ -147,11 +121,7 @@
         "Cañón": "17\" Greaves Scourge Barrel",
         "Cargador": "Rhodes Drum Mag",
         "Culata": "Winch Stock"
-      },
-      "fuentes": [
-        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/mxr-17" },
-        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
-      ]
+      }
     },
     {
       "id": "editorial-strider-300-francotirador",
@@ -166,11 +136,7 @@
         "Cargador": "Carnation Fast Mag",
         "Empuñadura trasera": "Hatch Quick Grip",
         "Mods de disparo": ".300 WM Overpressured"
-      },
-      "fuentes": [
-        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/strider-300" },
-        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/strider-300" }
-      ]
+      }
     },
     {
       "id": "editorial-voyak-kt-3-battle-royale",
@@ -185,10 +151,7 @@
         "Cañón": "17.6\" LTI GRAV-4 Barrel",
         "Cargador": "SK-Garrison Drum",
         "Culata": "V-Last Control Pad"
-      },
-      "fuentes": [
-        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/voyak-kt-3" }
-      ]
+      }
     }
   ]
 }
