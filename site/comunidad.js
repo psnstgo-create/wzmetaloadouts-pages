@@ -7,6 +7,7 @@ let COM_SLOTS = {};
 let COM_ARMA_ELEGIDA = null;
 let COM_ACCESORIOS_ELEGIDOS = {};
 let COM_SESION = null;
+let COM_EDITORIALES = [];
 const COM_MAX_ACCESORIOS = 5;
 
 // El SDK de Supabase puede limpiar el "#type=recovery" de la URL (via
@@ -42,6 +43,18 @@ async function comCargarArmas() {
     comPoblarFiltro();
   } catch (e) {
     console.error('No se pudo cargar armas-data.json', e);
+  }
+}
+
+async function comCargarEditoriales() {
+  try {
+    const r = await fetch('/community-editorial.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    COM_EDITORIALES = Array.isArray(data.loadouts) ? data.loadouts : [];
+  } catch (e) {
+    COM_EDITORIALES = [];
+    console.error('No se pudo cargar community-editorial.json', e);
   }
 }
 
@@ -188,7 +201,7 @@ async function comCargarStats() {
       wzsb.from('loadouts').select('id', { count: 'exact', head: true }).eq('estado', 'aprobado'),
       wzsb.from('votos').select('id', { count: 'exact', head: true })
     ]);
-    document.getElementById('comStatClases').textContent = clases ?? 0;
+    document.getElementById('comStatClases').textContent = (clases ?? 0) + COM_EDITORIALES.length;
     document.getElementById('comStatVotos').textContent = votos ?? 0;
     document.getElementById('comHeroStats').style.display = 'flex';
   } catch (e) { /* stats decorativas: si fallan, no se muestran */ }
@@ -198,7 +211,21 @@ async function comCargarStats() {
 const COM_ICONO_OJO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
 const COM_ICONO_OJO_TACHADO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><path d="M1 1l22 22"></path></svg>';
 
+function comExpandirAuth(expandido, enfocar) {
+  const card = document.getElementById('comAuthCard');
+  const panel = document.getElementById('comAuthPanel');
+  const toggle = document.getElementById('comAuthToggle');
+  card.classList.toggle('is-collapsed', !expandido);
+  panel.hidden = !expandido;
+  toggle.setAttribute('aria-expanded', String(expandido));
+  if (expandido && enfocar) {
+    requestAnimationFrame(() => document.getElementById('comLoginEmail').focus());
+  }
+}
+
 function comInitAuth() {
+  document.getElementById('comAuthToggle').addEventListener('click', () => comExpandirAuth(true, true));
+  document.getElementById('comAuthMinimize').addEventListener('click', () => comExpandirAuth(false, false));
   document.getElementById('comTabLogin').addEventListener('click', () => comCambiarTab('login'));
   document.getElementById('comTabRegistro').addEventListener('click', () => comCambiarTab('registro'));
 
@@ -276,6 +303,7 @@ function comInitAuth() {
 
   document.getElementById('comLogoutBtn').addEventListener('click', async () => {
     await wzLogout();
+    comExpandirAuth(false, false);
     await comActualizarEstadoSesion();
   });
 }
@@ -300,6 +328,7 @@ async function comActualizarEstadoSesion() {
   // tratamos como "logueado normal" hasta que elija una contraseña nueva.
   if (enRecuperacion) {
     document.getElementById('comAuthCard').style.display = 'block';
+    comExpandirAuth(true, false);
     document.getElementById('comAuthTabsWrap').style.display = 'none';
     document.getElementById('comUserBar').style.display = 'none';
     document.getElementById('comFormCard').style.display = 'none';
@@ -358,7 +387,7 @@ function comInitForm() {
     if (honeypot) return; // bot: silencio total, no delatamos el honeypot
     if (!COM_ARMA_ELEGIDA || !codigo_clase) { comMostrarMsg('comMsg', 'Elegí un arma y completá el código de clase.', false); return; }
     // Regla: una clase válida lleva SIEMPRE los 5 accesorios + el código.
-    if (!Array.isArray(COM_ACCESORIOS_ELEGIDOS) || COM_ACCESORIOS_ELEGIDOS.length !== 5) {
+    if (!COM_ACCESORIOS_ELEGIDOS || Object.keys(COM_ACCESORIOS_ELEGIDOS).length !== COM_MAX_ACCESORIOS) {
       comMostrarMsg('comMsg', 'La clase debe tener los 5 accesorios completos.', false); return;
     }
 
@@ -403,26 +432,12 @@ async function comCargarFeed() {
 
   const filtroArma = document.getElementById('comFiltroArma').value;
   const { data: loadouts, error } = await wzGetLoadoutsAprobados(filtroArma || null);
-  if (error) { grid.innerHTML = '<div class="com-loading">No se pudo cargar la comunidad. Probá recargar.</div>'; console.error(error); return; }
+  if (error) console.error('No se pudieron cargar las clases de Supabase', error);
 
-  let items = loadouts;
-  if (COM_FILTRO_USUARIO) {
-    const perfilesTmp = await wzGetPerfiles(items.map(l => l.user_id));
-    const idsDeEseUser = (perfilesTmp.data || []).filter(p => p.username === COM_FILTRO_USUARIO).map(p => p.id);
-    items = items.filter(l => idsDeEseUser.includes(l.user_id));
-  }
-
-  if (!items.length) {
-    grid.innerHTML = `<div class="com-empty">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-      <p>Todavía no hay clases aprobadas${filtroArma ? ' para esta arma' : ''}. ¡Sé el primero en compartir la tuya!</p>
-    </div>`;
-    return;
-  }
-
+  const reales = error ? [] : (loadouts || []);
   const [{ data: votos }, { data: perfiles }] = await Promise.all([
-    wzGetVotosPorLoadouts(items.map(l => l.id)),
-    wzGetPerfiles(items.map(l => l.user_id))
+    wzGetVotosPorLoadouts(reales.map(l => l.id)),
+    wzGetPerfiles(reales.map(l => l.user_id))
   ]);
 
   COM_PERFILES = {};
@@ -433,10 +448,28 @@ async function comCargarFeed() {
     (votosPorLoadout[v.loadout_id] = votosPorLoadout[v.loadout_id] || []).push(v);
   }
 
-  COM_FEED_CACHE = items.map(l => ({
+  const editoriales = COM_EDITORIALES
+    .filter(l => !filtroArma || l.arma_slug === filtroArma)
+    .map(l => ({ ...l, _editorial: true, _username: l.alias, _resumen: wzResumenVotos([]) }));
+  const comunidad = reales.map(l => ({
     ...l,
+    _editorial: false,
+    _username: (COM_PERFILES[l.user_id] || {}).username || 'Usuario',
     _resumen: wzResumenVotos(votosPorLoadout[l.id] || [])
   }));
+
+  let items = [...editoriales, ...comunidad];
+  if (COM_FILTRO_USUARIO) items = items.filter(l => l._username === COM_FILTRO_USUARIO);
+
+  if (!items.length) {
+    grid.innerHTML = `<div class="com-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+      <p>${error ? 'No se pudo cargar la comunidad. Probá recargar.' : `Todavía no hay clases aprobadas${filtroArma ? ' para esta arma' : ''}. ¡Sé el primero en compartir la tuya!`}</p>
+    </div>`;
+    return;
+  }
+
+  COM_FEED_CACHE = items;
 
   comOrdenarYRenderizar();
 }
@@ -466,14 +499,16 @@ function comCardHtml(l, idx) {
   const tipo = arma ? arma.tipo : '';
   const color = typeof colorTipo === 'function' ? colorTipo(tipo) : '#94A3B8';
   const perfil = COM_PERFILES[l.user_id] || {};
-  const username = perfil.username || 'Usuario';
+  const username = l._username || perfil.username || 'Usuario';
   const avatarHtml = perfil.avatar_url
     ? `<img class="com-avatar-img" src="${escapeHtml(perfil.avatar_url)}" alt="${escapeHtml(username)}">`
     : `<span class="com-avatar">${escapeHtml(username.charAt(0).toUpperCase())}</span>`;
-  const yaVoto = wzVotoLocal(l.id);
+  const yaVoto = l._editorial ? null : wzVotoLocal(l.id);
   const acc = Object.entries(l.accesorios || {});
   const r = l._resumen;
   const gustos = r.conteo.funciono;
+  const fuentes = Array.isArray(l.fuentes) ? l.fuentes : [];
+  const fuentesHtml = fuentes.map(f => `<a href="${escapeHtml(f.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(f.nombre)}</a>`).join('<span>·</span>');
 
   const accHtml = acc.map(([slot, val]) => {
     const iconSrc = arma ? `${arma.icon_path}/${comSlugSafe(val)}.png` : '';
@@ -500,15 +535,17 @@ function comCardHtml(l, idx) {
             <div class="com-subtitle">${escapeHtml(nombre)} Loadout${r.total ? ` · ${r.total} voto${r.total === 1 ? '' : 's'}` : ''}</div>
           </div>
         </div>
-        <button class="com-like-badge${yaVoto ? ' chosen' : ''}" data-voto="funciono" data-id="${l.id}" ${yaVoto ? 'disabled' : ''}>👍 ${gustos}</button>
+        ${l._editorial ? '<span class="com-editorial-badge">Selección editorial</span>' : `<button class="com-like-badge${yaVoto ? ' chosen' : ''}" data-voto="funciono" data-id="${l.id}" ${yaVoto ? 'disabled' : ''}>👍 ${gustos}</button>`}
       </div>
       ${acc.length ? `<div class="com-acc-list">${accHtml}</div>` : ''}
-      ${l.comentario ? `<p class="com-comentario">"${escapeHtml(l.comentario)}"</p>` : ''}
+      ${l.comentario ? `<p class="com-comentario">${l._editorial ? '' : '"'}${escapeHtml(l.comentario)}${l._editorial ? '' : '"'}</p>` : ''}
       <div class="com-codigo-row">
         <span class="com-codigo">${escapeHtml(l.codigo_clase)}</span>
         <button class="com-copy-btn" data-copy data-code="${escapeHtml(l.codigo_clase)}">Copiar</button>
       </div>
-      <button class="com-profile-btn" data-perfil="${escapeHtml(username)}">Ver clases de ${escapeHtml(username)}</button>
+      ${l._editorial
+        ? `<div class="com-source-row"><span>Fuentes verificadas:</span>${fuentesHtml}</div>`
+        : `<button class="com-profile-btn" data-perfil="${escapeHtml(username)}">Ver clases de ${escapeHtml(username)}</button>`}
     </div>
   </article>`;
 }
@@ -534,15 +571,14 @@ async function comVotar(btn) {
   await comCargarFeed(); // recarga simple para reflejar el conteo real desde el server
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  comCargarArmas();
+document.addEventListener('DOMContentLoaded', async () => {
   comInitAuth();
   comInitForm();
   comInitAvatarUpload();
   comActualizarEstadoSesion();
-  comCargarFeed();
-  comCargarStats();
   document.getElementById('comFiltroArma').addEventListener('change', () => { COM_FILTRO_USUARIO = null; comCargarFeed(); });
   document.getElementById('comOrden').addEventListener('change', comOrdenarYRenderizar);
   document.getElementById('comFiltroActivoQuitar').addEventListener('click', () => { COM_FILTRO_USUARIO = null; comCargarFeed(); });
+  await Promise.all([comCargarArmas(), comCargarEditoriales()]);
+  await Promise.all([comCargarFeed(), comCargarStats()]);
 });

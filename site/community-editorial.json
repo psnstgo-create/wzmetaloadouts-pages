@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "source_checked_at": "2026-08-04",
+  "disclosure": "Selecciones editoriales de WZ Meta. Los alias no corresponden a cuentas registradas.",
+  "loadouts": [
+    {
+      "id": "editorial-fg42-largo-alcance",
+      "alias": "Fer45",
+      "arma_slug": "fg42",
+      "codigo_clase": "A16-34FIQ-XHAUL-11",
+      "comentario": "Configuración equilibrada para largo alcance con silenciador, control y cargador ampliado.",
+      "created_at": "2026-08-04T13:50:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "16\" Bandolier Barrel",
+        "Acople": "RIF Handguard",
+        "Cargador": "Debase Extended Mag"
+      },
+      "fuentes": [
+        { "nombre": "WZStats", "url": "https://wzstats.gg/es/best-loadouts/fg42" },
+        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/fg42" },
+        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
+      ]
+    },
+    {
+      "id": "editorial-cbrs-3-corto-alcance",
+      "alias": "MaxiCod",
+      "arma_slug": "cbrs-3",
+      "codigo_clase": "S15-2W24T-N4KXW-11",
+      "comentario": "Clase de corto alcance centrada en movilidad, respuesta rápida y un cargador de 60 proyectiles.",
+      "created_at": "2026-08-04T13:40:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "11\" Gaunt Barrel",
+        "Cargador": "MFS Carousel Fast Mag",
+        "Culata": "Casino Light Stock"
+      },
+      "fuentes": [
+        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/cbrs-3" },
+        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/cbrs-3" }
+      ]
+    },
+    {
+      "id": "editorial-mk35-isr-largo-alcance",
+      "alias": "Carlosduty67",
+      "arma_slug": "mk35-isr",
+      "codigo_clase": "A12-34FK5-DRNJU-11",
+      "comentario": "Opción de largo alcance con silenciador y control estable para mantener precisión en ráfagas largas.",
+      "created_at": "2026-08-04T13:30:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "16.5\" Greaves Bellum Barrel",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Bowen Siren Drum"
+      },
+      "fuentes": [
+        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" },
+        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/mk35-isr" }
+      ]
+    },
+    {
+      "id": "editorial-vst-corto-alcance",
+      "alias": "Elfede",
+      "arma_slug": "vst",
+      "codigo_clase": "S12-6KDYX-HL11",
+      "comentario": "Configuración agresiva de corto alcance que prioriza manejo, movilidad y un cargador ampliado.",
+      "created_at": "2026-08-04T13:20:00Z",
+      "accesorios": {
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "9.7\" Enmity Barrel",
+        "Acople": "EAM Steady-90 Grip",
+        "Cargador": "Amplify Extended Mag I",
+        "Culata": "Hawker Cub-55 Pad"
+      },
+      "fuentes": [
+        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/vst" },
+        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
+      ]
+    },
+    {
+      "id": "editorial-ds20-mirage-battle-royale",
+      "alias": "Cacaroto",
+      "arma_slug": "ds20-mirage",
+      "codigo_clase": "A05-34FBS-SSSND-11",
+      "comentario": "Build recomendado para Battle Royale con perfil silencioso y estabilidad a media-larga distancia.",
+      "created_at": "2026-08-04T13:10:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "17.1\" Abdicator Barrel",
+        "Cargador": "Griffon Reserve Extended II",
+        "Culata": "Weighted Stock"
+      },
+      "fuentes": [
+        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/ds20-mirage" }
+      ]
+    },
+    {
+      "id": "editorial-rev-46-corto-alcance",
+      "alias": "MartinPac",
+      "arma_slug": "rev-46",
+      "codigo_clase": "S09-2W2AD-Q3U75-11",
+      "comentario": "Clase de corto alcance con óptica limpia, freno y cargador ampliado para peleas consecutivas.",
+      "created_at": "2026-08-04T13:00:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "14.9\" Caudal Target Barrel",
+        "Acople": "Sapper Guard Handstop",
+        "Cargador": "Cawdor Extended Mag"
+      },
+      "fuentes": [
+        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/rev-46" }
+      ]
+    },
+    {
+      "id": "editorial-carbon-57-corto-alcance",
+      "alias": "moisesvilla",
+      "arma_slug": "carbon-57",
+      "codigo_clase": "S05-6KDYT-UL11",
+      "comentario": "Selección de corto alcance con control horizontal, movilidad y mayor capacidad de munición.",
+      "created_at": "2026-08-04T12:50:00Z",
+      "accesorios": {
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "8.6\" Orbital Light Barrel",
+        "Acople": "Sapper Guard Handstop",
+        "Cargador": "MFS Renown Plus Mag",
+        "Culata": "Hammer Platoon Pad"
+      },
+      "fuentes": [
+        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/carbon-57" }
+      ]
+    },
+    {
+      "id": "editorial-mxr-17-largo-alcance",
+      "alias": "danteps5",
+      "arma_slug": "mxr-17",
+      "codigo_clase": "A03-36W2S-J343H-11",
+      "comentario": "Configuración de largo alcance con tambor, silenciador y culata de control para disparo sostenido.",
+      "created_at": "2026-08-04T12:40:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "17\" Greaves Scourge Barrel",
+        "Cargador": "Rhodes Drum Mag",
+        "Culata": "Winch Stock"
+      },
+      "fuentes": [
+        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/mxr-17" },
+        { "nombre": "WZHub", "url": "https://wzhub.gg/loadouts" }
+      ]
+    },
+    {
+      "id": "editorial-strider-300-francotirador",
+      "alias": "Fer45",
+      "arma_slug": "strider-300",
+      "codigo_clase": "R07-2JD6P-5NM5G-6J11",
+      "comentario": "Configuración de francotirador con velocidad de bala, recarga rápida y mejor manejo al apuntar.",
+      "created_at": "2026-08-04T12:30:00Z",
+      "accesorios": {
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "25\" Bowen Grooved Barrel",
+        "Cargador": "Carnation Fast Mag",
+        "Empuñadura trasera": "Hatch Quick Grip",
+        "Mods de disparo": ".300 WM Overpressured"
+      },
+      "fuentes": [
+        { "nombre": "CODMunity", "url": "https://codmunity.gg/weapon/bo7/strider-300" },
+        { "nombre": "WZRanked", "url": "https://wzranked.com/games/call-of-duty-warzone/meta/weapons/strider-300" }
+      ]
+    },
+    {
+      "id": "editorial-voyak-kt-3-battle-royale",
+      "alias": "MaxiCod",
+      "arma_slug": "voyak-kt-3",
+      "codigo_clase": "A09-34FBS-SSP4W-11",
+      "comentario": "Build silencioso para Battle Royale con tambor y control pensado para enfrentamientos a distancia.",
+      "created_at": "2026-08-04T12:20:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "17.6\" LTI GRAV-4 Barrel",
+        "Cargador": "SK-Garrison Drum",
+        "Culata": "V-Last Control Pad"
+      },
+      "fuentes": [
+        { "nombre": "NoLagVPN", "url": "https://nolagvpn.com/en/best-loadouts/voyak-kt-3" }
+      ]
+    }
+  ]
+}
