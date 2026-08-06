@@ -17,10 +17,10 @@ permissions:
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deploy1.outputs.page_url }}
     steps:
       - name: Checkout fuente
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -69,7 +69,10 @@ jobs:
           "$RUNNER_TEMP/public-site/"
           target/site/
 
-      - name: Guardar artefacto si cambio
+      # Detecta si el artefacto cambio, pero NO commitea todavia: el commit se
+      # hace SOLO si el deploy tuvo exito (ver ultimo paso). Asi, si el deploy
+      # falla, la proxima corrida re-detecta el cambio y reintenta solo.
+      - name: Detectar cambios en el artefacto
         id: sync
         working-directory: target
         run: |
@@ -79,12 +82,11 @@ jobs:
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "El artefacto publico no cambio."
-            exit 0
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "source_sha=$(git -C ../source rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            echo "El artefacto publico cambio; se desplegara."
           fi
-          source_sha=$(git -C ../source rev-parse HEAD)
-          git commit -m "Deploy: actualizar artefacto publico (${source_sha:0:12})"
-          git push origin main
-          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Configurar Pages
         if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
@@ -96,7 +98,35 @@ jobs:
         with:
           path: target/site
 
-      - name: Publicar en GitHub Pages
+      # Deploy con FAIL-FAST (5 min, no 15) + reintento automatico. Si GitHub
+      # Pages tiene un hipo de "deployment_queued", el intento corta rapido y el
+      # reintento crea un deployment nuevo (recupera hipos breves sin colgarse).
+      - name: Publicar en GitHub Pages (intento 1)
+        id: deploy1
         if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        id: deployment
+        continue-on-error: true
+        timeout-minutes: 5
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+
+      - name: Publicar en GitHub Pages (reintento)
+        id: deployment
+        if: >-
+          (steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch')
+          && steps.deploy1.outcome == 'failure'
+        timeout-minutes: 5
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+
+      # Recien ahora commitea el artefacto, y SOLO si el deploy salio bien. Si
+      # ambos intentos fallaron, no se commitea: la proxima corrida (cada 15 min)
+      # re-detecta el cambio y reintenta sola, sin dejar el sitio desactualizado.
+      - name: Confirmar artefacto (solo si el deploy tuvo exito)
+        if: >-
+          steps.sync.outputs.changed == 'true'
+          && (steps.deploy1.outcome == 'success' || steps.deployment.outcome == 'success')
+        working-directory: target
+        env:
+          SRC_SHA: ${{ steps.sync.outputs.source_sha }}
+        run: |
+          git add --all -- site
+          git commit -m "Deploy: actualizar artefacto publico (${SRC_SHA:0:12})"
+          git push origin main
