@@ -54,7 +54,16 @@
 @keyframes comToastOut{to{opacity:0;transform:translateY(8px) scale(.97)}}
 
 /* ── auth (login/registro) ── */
-.com-auth-card{background:var(--panel,#0C1116);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;margin:0 auto 36px;max-width:420px}
+.com-auth-card{background:var(--panel,#0C1116);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;margin:0 auto 26px;max-width:620px}
+.com-auth-card.is-collapsed{padding:0;background:transparent;border-color:transparent}
+.com-auth-launch{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid rgba(240,196,25,.48);border-radius:11px;padding:13px 18px;background:linear-gradient(135deg,rgba(240,196,25,.16),rgba(240,196,25,.06));color:var(--gold);font-family:'Rajdhani',sans-serif;font-size:.92rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:border-color .15s ease,background .15s ease,transform .15s ease}
+.com-auth-launch:hover{border-color:var(--gold);background:rgba(240,196,25,.2);transform:translateY(-1px)}
+.com-auth-launch svg{width:18px;height:18px;flex:0 0 auto}
+.com-auth-card:not(.is-collapsed) .com-auth-launch{display:none}
+.com-auth-panel[hidden]{display:none}
+.com-auth-panel-top{display:flex;justify-content:flex-end;margin:-8px -8px 8px}
+.com-auth-minimize{background:none;border:none;color:#828D99;padding:6px 8px;font:700 .76rem 'Rajdhani',sans-serif;text-transform:uppercase;cursor:pointer}
+.com-auth-minimize:hover{color:var(--gold)}
 .com-pass-wrap{position:relative}
 .com-pass-wrap input{padding-right:42px}
 .com-pass-toggle{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--muted);opacity:.75;padding:6px;display:flex;align-items:center}
@@ -125,6 +134,7 @@
 /* ── filtros / feed ── */
 .com-feed-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
 .com-feed-head h2{font-size:1.2rem}
+.com-editorial-note{margin:-8px 0 18px;color:#828D99;font-size:.78rem;line-height:1.45}
 .com-filters{display:flex;gap:10px;flex-wrap:wrap}
 .com-filters select{background:#0C1116;border:1px solid rgba(255,255,255,.1);border-radius:8px;color:#EEF2F6;padding:8px 12px;font-family:'Rajdhani',sans-serif;font-size:.86rem}
 
@@ -149,6 +159,7 @@
 .com-card-titles{min-width:0}
 .com-username{display:flex;align-items:center;gap:5px;font-weight:800;font-size:.92rem;letter-spacing:.02em;text-transform:uppercase}
 .com-username .verif{color:#4ade80;font-size:.85rem}
+.com-editorial-badge{display:inline-flex;align-items:center;width:fit-content;color:var(--gold);background:rgba(240,196,25,.08);border:1px solid rgba(240,196,25,.28);border-radius:20px;padding:3px 9px;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .com-subtitle{font-size:.76rem;color:#828D99;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .com-like-badge{display:flex;align-items:center;gap:6px;background:rgba(240,196,25,.09);border:1px solid rgba(240,196,25,.3);color:var(--gold);border-radius:20px;padding:5px 13px;font-size:.88rem;font-weight:800;flex:0 0 auto;font-family:inherit;cursor:pointer;transition:transform .12s ease,background .15s}
 .com-like-badge:hover{transform:scale(1.06);background:rgba(240,196,25,.16)}
@@ -297,8 +308,14 @@ body{padding-bottom:74px}
         </div>
 
         <!-- ── no logueado: login / registro ── -->
-        <section class="com-auth-card" id="comAuthCard">
-            <div id="comAuthTabsWrap">
+        <section class="com-auth-card is-collapsed" id="comAuthCard">
+            <button type="button" class="com-auth-launch" id="comAuthToggle" aria-expanded="false" aria-controls="comAuthPanel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><path d="m10 17 5-5-5-5"></path><path d="M15 12H3"></path></svg>
+                Iniciar sesión o registrarme para publicar
+            </button>
+            <div class="com-auth-panel" id="comAuthPanel" hidden>
+              <div class="com-auth-panel-top"><button type="button" class="com-auth-minimize" id="comAuthMinimize">Minimizar</button></div>
+              <div id="comAuthTabsWrap">
                 <div class="com-auth-tabs">
                     <button class="com-auth-tab active" id="comTabLogin">Iniciar sesión</button>
                     <button class="com-auth-tab" id="comTabRegistro">Registrarme</button>
@@ -357,6 +374,7 @@ body{padding-bottom:74px}
                 <button type="submit" class="com-submit">Guardar contraseña</button>
                 <div class="com-msg" id="comResetMsg"></div>
             </form>
+            </div>
         </section>
 
         <section class="com-form-card" id="comFormCard" style="display:none">
@@ -410,6 +428,7 @@ body{padding-bottom:74px}
                     </select>
                 </div>
             </div>
+            <p class="com-editorial-note">Las clases con sello “Selección editorial” fueron curadas por WZ Meta; sus alias no corresponden a cuentas registradas.</p>
             <div class="com-filtro-activo" id="comFiltroActivo">
                 <span>Viendo las clases de <strong id="comFiltroActivoNombre"></strong></span>
                 <button type="button" id="comFiltroActivoQuitar">✕ Ver todas</button>
