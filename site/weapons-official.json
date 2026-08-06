@@ -3451,6 +3451,75 @@
           "dano": 10
         }
       ]
+    },
+    "mammoth": {
+      "nombre": "Mammoth",
+      "tipo": "Ametralladora ligera",
+      "modo_disparo": "Automática",
+      "cargador": {
+        "cantidad": 3,
+        "capacidad": 50
+      },
+      "potencia_de_fuego": {
+        "cadencia_rpm": 366,
+        "velocidad_balas_ms": 820.0
+      },
+      "precision": {
+        "dispersion_cadera_max": 10.0,
+        "dispersion_cadera_saltar": 15.0,
+        "dispersion_cadera_deslizarse": 17.0,
+        "dispersion_cadera_lanzarse": 17.0,
+        "escala_retroceso_primer_disparo": 1.0,
+        "retroceso_arma": 19.4,
+        "control_retroceso_horizontal": 18.47,
+        "control_retroceso_vertical": 46.39,
+        "velocidad_restablecimiento_retroceso_ms": 600,
+        "balanceo_apuntar_inmovil": 0.53,
+        "retraso_balanceo_ms": 2200,
+        "resistencia_estremecimiento": 0.1
+      },
+      "movilidad": {
+        "velocidad_movimiento_ms": 4.1,
+        "velocidad_agachado_ms": 1.6,
+        "velocidad_esprintar_ms": 6.4,
+        "velocidad_apuntando_ms": 2.2
+      },
+      "manejo": {
+        "recarga_ms": 4733,
+        "ads_ms": 295,
+        "ads_saltar_ms": 384,
+        "esprintar_disparar_ms": 260,
+        "deslizarse_disparar_ms": 480,
+        "lanzarse_disparar_ms": 560,
+        "esprintar_disparar_saltar_ms": 364
+      },
+      "dano_por_parte": {
+        "cabeza": {
+          "valor": 60,
+          "multiplicador": "x1.1"
+        },
+        "cuello_pecho_alto": 55,
+        "pecho": 55,
+        "brazos": 55,
+        "abdomen": 55,
+        "caderas": 55,
+        "piernas": 55,
+        "pies": 55
+      },
+      "alcance_dano": [
+        {
+          "distancia_m": "0-36",
+          "dano": 55
+        },
+        {
+          "distancia_m": "36-50",
+          "dano": 46
+        },
+        {
+          "distancia_m": "50+",
+          "dano": 39
+        }
+      ]
     }
   }
 }
