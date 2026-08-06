@@ -1,5 +1,9 @@
 name: Sync private source and deploy Pages
 
+# Construye el sitio desde el repo privado y lo publica en CLOUDFLARE PAGES
+# (proyecto "wzmetaloadouts") via wrangler. Reemplaza el deploy de GitHub Pages,
+# que tenia el bug intermitente "deployment_queued". Cloudflare Pages es estable.
+
 on:
   schedule:
     - cron: '*/15 * * * *'
@@ -11,16 +15,11 @@ concurrency:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url || steps.deploy1.outputs.page_url }}
+    timeout-minutes: 15
     steps:
       - name: Checkout fuente
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -49,7 +48,7 @@ jobs:
         run: python server_status_checker.py
         continue-on-error: true
 
-      - name: Checkout repositorio publico
+      - name: Checkout repositorio publico (para el artefacto/backup)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           path: target
@@ -69,9 +68,6 @@ jobs:
           "$RUNNER_TEMP/public-site/"
           target/site/
 
-      # Detecta si el artefacto cambio, pero NO commitea todavia: el commit se
-      # hace SOLO si el deploy tuvo exito (ver ultimo paso). Asi, si el deploy
-      # falla, la proxima corrida re-detecta el cambio y reintenta solo.
       - name: Detectar cambios en el artefacto
         id: sync
         working-directory: target
@@ -85,48 +81,32 @@ jobs:
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "source_sha=$(git -C ../source rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-            echo "El artefacto publico cambio; se desplegara."
+            echo "El artefacto publico cambio; se desplegara a Cloudflare Pages."
           fi
 
-      - name: Configurar Pages
+      # Deploy a Cloudflare Pages (estable, sin el bug de GitHub Pages).
+      - name: Deploy a Cloudflare Pages
         if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >-
+          npx --yes wrangler@4 pages deploy target/site
+          --project-name=wzmetaloadouts
+          --branch=main
+          --commit-dirty=true
 
-      - name: Subir artefacto publico
-        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
-        with:
-          path: target/site
-
-      # Deploy con FAIL-FAST (5 min, no 15) + reintento automatico. Si GitHub
-      # Pages tiene un hipo de "deployment_queued", el intento corta rapido y el
-      # reintento crea un deployment nuevo (recupera hipos breves sin colgarse).
-      - name: Publicar en GitHub Pages (intento 1)
-        id: deploy1
-        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        continue-on-error: true
-        timeout-minutes: 5
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
-
-      - name: Publicar en GitHub Pages (reintento)
-        id: deployment
-        if: >-
-          (steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch')
-          && steps.deploy1.outcome == 'failure'
-        timeout-minutes: 5
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
-
-      # Recien ahora commitea el artefacto, y SOLO si el deploy salio bien. Si
-      # ambos intentos fallaron, no se commitea: la proxima corrida (cada 15 min)
-      # re-detecta el cambio y reintenta sola, sin dejar el sitio desactualizado.
-      - name: Confirmar artefacto (solo si el deploy tuvo exito)
-        if: >-
-          steps.sync.outputs.changed == 'true'
-          && (steps.deploy1.outcome == 'success' || steps.deployment.outcome == 'success')
+      # Guarda el artefacto en el repo (backup/historial) SOLO si el deploy salio
+      # bien. Si el deploy falla, no commitea y la proxima corrida reintenta.
+      - name: Guardar artefacto (backup, si el deploy funciono)
+        if: steps.sync.outputs.changed == 'true'
         working-directory: target
         env:
           SRC_SHA: ${{ steps.sync.outputs.source_sha }}
         run: |
           git add --all -- site
-          git commit -m "Deploy: actualizar artefacto publico (${SRC_SHA:0:12})"
-          git push origin main
+          git commit -m "Deploy: artefacto publico a Cloudflare Pages (${SRC_SHA:0:12})"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main && git push; then exit 0; fi
+            sleep 5
+          done
