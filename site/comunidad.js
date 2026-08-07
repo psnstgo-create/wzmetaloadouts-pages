@@ -535,7 +535,6 @@ function comCardHtml(l, idx) {
         ${l._editorial ? '<span class="com-editorial-badge">Selección editorial</span>' : `<button class="com-like-badge${yaVoto ? ' chosen' : ''}" data-voto="funciono" data-id="${l.id}" ${yaVoto ? 'disabled' : ''}>👍 ${gustos}</button>`}
       </div>
       ${acc.length ? `<div class="com-acc-list">${accHtml}</div>` : ''}
-      ${l.comentario ? `<p class="com-comentario">${l._editorial ? '' : '"'}${escapeHtml(l.comentario)}${l._editorial ? '' : '"'}</p>` : ''}
       <div class="com-codigo-row">
         <span class="com-codigo">${escapeHtml(l.codigo_clase)}</span>
         <button class="com-copy-btn" data-copy data-code="${escapeHtml(l.codigo_clase)}">Copiar</button>

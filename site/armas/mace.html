@@ -46,37 +46,24 @@
     <div class="bg-grid"></div>
 
     <header>
-        <div class="header-inner">
-            <a href="/" class="logo-block" style="text-decoration:none">
-                <img src="/logo.gif" alt="WZ Meta Loadouts" height="50" loading="eager">
-            </a>
-            <div class="header-right">
-                <div class="live-pill"><span class="live-dot"></span>LIVE</div>
-                <span id="timestamp-display" class="mono-text">—</span>
-                <!-- Botón hamburguesa (solo visible en mobile ≤880px) -->
-                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-                    <div class="menu-toggle-bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <nav class="nav-modos">
-            <button class="nav-modo active" data-modo="battle_royale">BATTLE ROYALE</button>
-            <button class="nav-modo" data-modo="resurgence">RESURGENCE</button>
-            <button class="nav-modo" data-modo="black_ops_royale">BLACK OPS ROYALE</button>
-            <button class="nav-modo" data-modo="clasificatorio">RES. CLASIFICATORIO</button>
-        </nav>
-        <nav class="nav-secciones">
-            <a href="/" class="nav-seccion">META</a>
-            <a href="/clases" class="nav-seccion">CLASES</a>
-            <a href="/ventajas" class="nav-seccion">VENTAJAS</a>
-            <a href="/comunidad" class="nav-seccion">COMUNIDAD</a><a href="/noticias" class="nav-seccion">NOTICIAS</a>
-            <a href="/armas" class="nav-seccion active">ARMAS</a>
-        </nav>
-    </header>
+  <div class="hdr">
+    <a class="logo" href="/">
+      <img src="/logo.gif" alt="WZ Meta Loadouts" height="50" loading="eager">
+    </a>
+    <nav class="nav-d">
+      <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l9-9 9 9M5 11v9h14v-9"></path></svg>META</a>
+      <a href="/clases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-1 7H7zM7 11v9h10v-9"></path></svg>CLASES</a>
+      <a class="on" href="/armas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg>ARMAS</a>
+      <a href="/ventajas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>VENTAJAS</a>
+      <a class="" href="/comunidad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>COMUNIDAD</a><a href="/noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h10M7 16h6"></path></svg>NOTICIAS</a>
+    </nav>
+    <div class="hdr-actions">
+      <button class="icon-btn menu-only" id="menuBtn" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
     <!-- ═════ MENÚ MOBILE (hamburguesa v5 limpio) ═════ -->
     <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
