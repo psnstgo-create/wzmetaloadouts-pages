@@ -43,7 +43,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 2,
@@ -93,7 +93,7 @@
         ],
         "codigo": "S15-9PHUZ-Z311",
         "fuente": "Verificado en juego — S4",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 3,
@@ -142,7 +142,7 @@
         ],
         "codigo": "A12-34FK5-7H8YU-11",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 4,
@@ -192,10 +192,106 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 5,
+        "arma": "MXR-17",
+        "imagen_url": "/weapons/gold/MXR-17.png",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "black_ops_royale"
+        ],
+        "attachments": [
+            {
+                "slot": "Mira",
+                "item": "VAS MicroFlex",
+                "nivel": "5",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Boca de cañón",
+                "item": "Greaves Ti-762",
+                "nivel": "10",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cañón",
+                "item": "18\" Rapid Sterling Barrel",
+                "nivel": "2",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Acople",
+                "item": "Sentry Pro Handstop",
+                "nivel": "9",
+                "nombre_es": ""
+            },
+            {
+                "slot": "Cargador",
+                "item": "Vault Extended Mag",
+                "nivel": "11",
+                "nombre_es": ""
+            }
+        ],
+        "codigo": "",
+        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
+        "timestamp": "2026-08-07 10:41"
+    },
+    {
+        "ranking": 6,
+        "arma": "REV-46",
+        "imagen_url": "/weapons/gold/REV-46.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Bowen .45 Suppressor",
+                "nivel": "2"
+            },
+            {
+                "slot": "Cañón",
+                "item": "13\" LTI Dorsal Barrel",
+                "nivel": "7"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Respire Handstop",
+                "nivel": "4"
+            },
+            {
+                "slot": "Cargador",
+                "item": "Janus Flip Mag",
+                "nivel": "6"
+            },
+            {
+                "slot": "Láser",
+                "item": "EAM ScatterLine Laser",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-07 10:41"
+    },
+    {
+        "ranking": 7,
         "arma": "DS20 Mirage",
         "imagen_url": "/weapons/gold/DS20 Mirage.png",
         "categoria_tactica": "Largo Alcance",
@@ -243,56 +339,10 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
-        "ranking": 6,
-        "arma": "REV-46",
-        "imagen_url": "/weapons/gold/REV-46.png",
-        "categoria_tactica": "Corto Alcance",
-        "tipo_arma": "Subfusil",
-        "pick_rate": "",
-        "es_nuevo": false,
-        "es_buff": false,
-        "es_nerfeada": false,
-        "modos": [
-            "battle_royale",
-            "resurgence",
-            "clasificatorio"
-        ],
-        "attachments": [
-            {
-                "slot": "Boca de Cañón",
-                "item": "Bowen .45 Suppressor",
-                "nivel": "2"
-            },
-            {
-                "slot": "Cañón",
-                "item": "13\" LTI Dorsal Barrel",
-                "nivel": "7"
-            },
-            {
-                "slot": "Empuñadura Delantera",
-                "item": "Respire Handstop",
-                "nivel": "4"
-            },
-            {
-                "slot": "Cargador",
-                "item": "Janus Flip Mag",
-                "nivel": "6"
-            },
-            {
-                "slot": "Láser",
-                "item": "EAM ScatterLine Laser",
-                "nivel": "3"
-            }
-        ],
-        "codigo": "",
-        "fuente": "",
-        "timestamp": "2026-08-06 11:56"
-    },
-    {
-        "ranking": 7,
+        "ranking": 8,
         "arma": "VS Recon",
         "imagen_url": "/weapons/gold/VS Recon.png",
         "categoria_tactica": "Fusil de precisión",
@@ -339,10 +389,10 @@
         ],
         "codigo": "R01-VJY3U-ZA8F1-1",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
-        "ranking": 8,
+        "ranking": 9,
         "arma": "Hawker HX",
         "imagen_url": "/weapons/gold/Hawker HX.png",
         "categoria_tactica": "Fusil de precisión",
@@ -389,10 +439,10 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
-        "ranking": 9,
+        "ranking": 10,
         "arma": "Strider 300",
         "imagen_url": "/weapons/gold/Strider 300.png",
         "categoria_tactica": "Fusil de precisión",
@@ -439,10 +489,10 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
-        "ranking": 10,
+        "ranking": 11,
         "arma": "AK-27",
         "imagen_url": "/weapons/gold/AK-27.png",
         "categoria_tactica": "Largo Alcance",
@@ -488,10 +538,10 @@
         ],
         "codigo": "A02-AV4J9-XA871-1",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
-        "ranking": 11,
+        "ranking": 12,
         "arma": "Ryden 45K",
         "imagen_url": "/weapons/gold/Ryden 45K.png",
         "categoria_tactica": "Corto Alcance",
@@ -538,105 +588,10 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
-    },
-    {
-        "ranking": 12,
-        "arma": "MXR-17",
-        "imagen_url": "/weapons/gold/MXR-17.png",
-        "categoria_tactica": "Largo Alcance",
-        "tipo_arma": "Fusil de asalto",
-        "pick_rate": "",
-        "es_nuevo": false,
-        "es_buff": false,
-        "es_nerfeada": false,
-        "modos": [
-            "battle_royale",
-            "black_ops_royale"
-        ],
-        "attachments": [
-            {
-                "slot": "Mira",
-                "item": "VAS MicroFlex",
-                "nivel": "5",
-                "nombre_es": ""
-            },
-            {
-                "slot": "Boca de cañón",
-                "item": "Greaves Ti-762",
-                "nivel": "10",
-                "nombre_es": ""
-            },
-            {
-                "slot": "Cañón",
-                "item": "18\" Rapid Sterling Barrel",
-                "nivel": "2",
-                "nombre_es": ""
-            },
-            {
-                "slot": "Acople",
-                "item": "Sentry Pro Handstop",
-                "nivel": "9",
-                "nombre_es": ""
-            },
-            {
-                "slot": "Cargador",
-                "item": "Vault Extended Mag",
-                "nivel": "11",
-                "nombre_es": ""
-            }
-        ],
-        "codigo": "",
-        "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 13,
-        "arma": "Sturmwolf 45",
-        "imagen_url": "/weapons/gold/Sturmwolf 45.png",
-        "categoria_tactica": "Corto Alcance",
-        "tipo_arma": "Subfusil",
-        "pick_rate": "",
-        "es_nuevo": false,
-        "es_buff": true,
-        "es_nerfeada": false,
-        "modos": [
-            "battle_royale",
-            "resurgence"
-        ],
-        "attachments": [
-            {
-                "slot": "Boca de Cañón",
-                "item": "Hawker Series 45",
-                "nivel": "6"
-            },
-            {
-                "slot": "Cañón",
-                "item": "11.5\" LTI Ascendancy Barrel",
-                "nivel": "2"
-            },
-            {
-                "slot": "Empuñadura Delantera",
-                "item": "Respire Handstop",
-                "nivel": "5"
-            },
-            {
-                "slot": "Cargador",
-                "item": "LTI Upend Flip Mag",
-                "nivel": "7"
-            },
-            {
-                "slot": "Láser",
-                "item": "EAM ScatterLine Laser",
-                "nivel": "3"
-            }
-        ],
-        "codigo": "",
-        "fuente": "",
-        "timestamp": "2026-08-06 11:56"
-    },
-    {
-        "ranking": 14,
         "arma": "AN-94",
         "imagen_url": "/weapons/gold/AN-94.png",
         "categoria_tactica": "Largo Alcance",
@@ -679,7 +634,52 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
+    },
+    {
+        "ranking": 14,
+        "arma": "Sturmwolf 45",
+        "imagen_url": "/weapons/gold/Sturmwolf 45.png",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "",
+        "es_nuevo": false,
+        "es_buff": true,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence"
+        ],
+        "attachments": [
+            {
+                "slot": "Boca de Cañón",
+                "item": "Hawker Series 45",
+                "nivel": "6"
+            },
+            {
+                "slot": "Cañón",
+                "item": "11.5\" LTI Ascendancy Barrel",
+                "nivel": "2"
+            },
+            {
+                "slot": "Empuñadura Delantera",
+                "item": "Respire Handstop",
+                "nivel": "5"
+            },
+            {
+                "slot": "Cargador",
+                "item": "LTI Upend Flip Mag",
+                "nivel": "7"
+            },
+            {
+                "slot": "Láser",
+                "item": "EAM ScatterLine Laser",
+                "nivel": "3"
+            }
+        ],
+        "codigo": "",
+        "fuente": "",
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 15,
@@ -725,7 +725,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 16,
@@ -775,7 +775,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 17,
@@ -821,7 +821,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 18,
@@ -867,7 +867,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 19,
@@ -913,7 +913,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 20,
@@ -964,7 +964,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 21,
@@ -1010,7 +1010,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 22,
@@ -1061,7 +1061,7 @@
         ],
         "codigo": "S10-6K4JN-R831",
         "fuente": "Verificado en juego — S3",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 23,
@@ -1107,7 +1107,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 24,
@@ -1153,7 +1153,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 25,
@@ -1204,7 +1204,7 @@
         ],
         "codigo": "S04-BGVV5-43931",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 26,
@@ -1250,7 +1250,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 27,
@@ -1296,7 +1296,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 28,
@@ -1347,7 +1347,7 @@
         ],
         "codigo": "M01-MK78A-LR321-2",
         "fuente": "Verificado en juego — S3",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 29,
@@ -1393,7 +1393,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 30,
@@ -1439,7 +1439,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 31,
@@ -1483,7 +1483,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 32,
@@ -1527,7 +1527,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 33,
@@ -1572,7 +1572,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 34,
@@ -1616,7 +1616,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 35,
@@ -1660,7 +1660,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 36,
@@ -1704,7 +1704,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 37,
@@ -1748,7 +1748,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 38,
@@ -1794,7 +1794,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 39,
@@ -1838,7 +1838,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 40,
@@ -1882,7 +1882,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 41,
@@ -1906,7 +1906,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 42,
@@ -1951,7 +1951,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 43,
@@ -1996,7 +1996,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 44,
@@ -2041,7 +2041,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 45,
@@ -2086,7 +2086,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 46,
@@ -2132,7 +2132,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 47,
@@ -2161,7 +2161,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 48,
@@ -2195,7 +2195,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 49,
@@ -2224,7 +2224,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 50,
@@ -2258,7 +2258,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     },
     {
         "ranking": 51,
@@ -2276,6 +2276,6 @@
         "attachments": [],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-06 11:56"
+        "timestamp": "2026-08-07 10:41"
     }
 ]
