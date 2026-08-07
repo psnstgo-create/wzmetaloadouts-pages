@@ -520,8 +520,8 @@ function actualizarMetaDescription(arma) {
         ? arma.modos.map(m => MODOS_ES_META[m] || m).join(' y ')
         : null;
     const cuerpo = modos
-        ? `Mejor build para ${modos} en Warzone Black Ops 7`
-        : `Mejor loadout en Warzone Black Ops 7`;
+        ? `Mejor clase y build meta para ${modos} en Warzone Black Ops 7`
+        : `Mejor clase y build meta en Warzone Black Ops 7`;
     meta.setAttribute('content', `${cabecera}${cuerpo}: accesorios, niveles de desbloqueo y código de clase.`);
 }
 
@@ -541,7 +541,7 @@ async function renderArmaPage(slug) {
             return;
         }
         arma = await cargarLoadoutMetaWarzone(arma);
-        document.title = `${arma.nombre} Loadout Warzone — Mejor Clase Black Ops 7 | WZ Meta`;
+        document.title = `${arma.nombre} Loadout Warzone — Mejor Clase y Meta Black Ops 7 | WZ Meta`;
         actualizarMetaDescription(arma);
         main.innerHTML =
             renderBreadcrumb(arma) +

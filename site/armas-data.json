@@ -1080,13 +1080,13 @@
       "_catRank": 18,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "cbrs-3": {
       "nombre": "CBRS-3",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
-      "tier": "S",
+      "tier": "C",
       "ranking": 2,
       "pick_rate": "",
       "imagen": "/weapons/gold/CBRS-3.png",
@@ -1900,7 +1900,7 @@
       "nombre": "Voyak KT-3",
       "tipo": "Fusil de asalto",
       "rango": "Largo Alcance",
-      "tier": "C",
+      "tier": "S",
       "ranking": 16,
       "pick_rate": "5.47%",
       "imagen": "/weapons/gold/Voyak KT-3.png",
@@ -2869,11 +2869,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 48,
-      "_catRank": 2,
+      "_autoRank": 49,
+      "_catRank": 3,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "carbon-57": {
       "nombre": "Carbon 57",
@@ -3813,7 +3813,7 @@
       "nombre": "DS20 Mirage",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "A",
+      "tier": "C",
       "ranking": 7,
       "pick_rate": "5.82%",
       "imagen": "/weapons/gold/DS20 Mirage.png",
@@ -4833,7 +4833,7 @@
       "nombre": "MXR-17",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "S",
+      "tier": "C",
       "ranking": 5,
       "pick_rate": "4.81%",
       "imagen": "/weapons/gold/MXR-17.png",
@@ -5380,7 +5380,7 @@
       "nombre": "EGRT-17",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 23,
       "pick_rate": null,
       "imagen": "/weapons/gold/EGRT-17.png",
@@ -5854,7 +5854,7 @@
       "nombre": "Peacekeeper Mk1",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 19,
       "pick_rate": null,
       "imagen": "/weapons/gold/Peacekeeper Mk1.png",
@@ -6369,7 +6369,7 @@
       "nombre": "Hawker HX",
       "tipo": "Rifle de francotirador",
       "rango": null,
-      "tier": "A",
+      "tier": "S",
       "ranking": 9,
       "pick_rate": "4.41%",
       "imagen": "/weapons/gold/Hawker HX.png",
@@ -6829,17 +6829,17 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 47,
-      "_catRank": 1,
+      "_autoRank": 48,
+      "_catRank": 2,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "dravec-45": {
       "nombre": "Dravec 45",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 25,
       "pick_rate": "4.76%",
       "imagen": "/weapons/gold/Dravec 45.png",
@@ -7277,7 +7277,7 @@
       "nombre": "AK-27",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "B",
+      "tier": "C",
       "ranking": 11,
       "pick_rate": "0.86%",
       "imagen": "/weapons/gold/AK-27.png",
@@ -7824,7 +7824,7 @@
       "nombre": "Ryden 45K",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "B",
+      "tier": "A",
       "ranking": 12,
       "pick_rate": "0.86%",
       "imagen": "/weapons/gold/Ryden 45K.png",
@@ -8268,7 +8268,7 @@
       "nombre": "Sturmwolf 45",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "B",
+      "tier": "S",
       "ranking": 14,
       "pick_rate": "0.80%",
       "imagen": "/weapons/gold/Sturmwolf 45.png",
@@ -8753,7 +8753,7 @@
       "nombre": "M15 Mod 0",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "C",
+      "tier": "A",
       "ranking": 18,
       "pick_rate": null,
       "imagen": "/weapons/gold/M15 MOD 0.png",
@@ -9268,7 +9268,7 @@
       "nombre": "MPC-25",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 17,
       "pick_rate": null,
       "imagen": "/weapons/gold/MPC-25.png",
@@ -9748,7 +9748,7 @@
       "nombre": "VS Recon",
       "tipo": "Rifle de francotirador",
       "rango": null,
-      "tier": "A",
+      "tier": "S",
       "ranking": 8,
       "pick_rate": "4.65%",
       "imagen": "/weapons/gold/VS Recon.png",
@@ -10203,11 +10203,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 49,
-      "_catRank": 3,
+      "_autoRank": 47,
+      "_catRank": 1,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "rev-46": {
       "nombre": "REV-46",
@@ -10632,7 +10632,7 @@
       "nombre": "Razor 9mm",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "C",
+      "tier": "A",
       "ranking": 27,
       "pick_rate": null,
       "imagen": "/weapons/gold/Razor 9mm.png",
@@ -12074,7 +12074,7 @@
       "nombre": "XM325",
       "tipo": "Ametralladora ligera",
       "rango": null,
-      "tier": "C",
+      "tier": "A",
       "ranking": 30,
       "pick_rate": null,
       "imagen": "/weapons/gold/XM325.png",
@@ -13039,11 +13039,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 43,
-      "_catRank": 22,
+      "_autoRank": 35,
+      "_catRank": 18,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 40
+      "_refDist": null
     },
     "sokol-545": {
       "nombre": "Sokol 545",
@@ -13529,7 +13529,7 @@
       "nombre": "XR-3 Ion",
       "tipo": "Rifle de francotirador",
       "rango": null,
-      "tier": "C",
+      "tier": "A",
       "ranking": 33,
       "pick_rate": null,
       "imagen": "/weapons/gold/XR-3 Ion.png",
@@ -13988,7 +13988,7 @@
       "_catRank": 4,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "swordfish-a1": {
       "nombre": "Swordfish A1",
@@ -14423,11 +14423,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 41,
-      "_catRank": 21,
+      "_autoRank": 37,
+      "_catRank": 19,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 40
+      "_refDist": null
     },
     "sg-12": {
       "nombre": "SG-12",
@@ -14755,13 +14755,13 @@
       "_catRank": 15,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "rk-9": {
       "nombre": "RK-9",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 38,
       "pick_rate": null,
       "imagen": "/weapons/gold/RK-9.png",
@@ -15590,7 +15590,7 @@
       "_catRank": 14,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "akita": {
       "nombre": "Akita",
@@ -15994,13 +15994,13 @@
       "_catRank": 13,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "shadow-sk": {
       "nombre": "Shadow SK",
       "tipo": "Rifle de francotirador",
       "rango": null,
-      "tier": "C",
+      "tier": "A",
       "ranking": 45,
       "pick_rate": null,
       "imagen": "/weapons/gold/Shadow SK.png",
@@ -16469,7 +16469,7 @@
       "_catRank": 5,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "m34-novaline": {
       "nombre": "M34 Novaline",
@@ -16954,7 +16954,7 @@
       "_catRank": 20,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 40
+      "_refDist": null
     },
     "jager-45": {
       "nombre": "Jäger 45",
@@ -17256,7 +17256,7 @@
       "_catRank": 19,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "warden-308": {
       "nombre": "Warden 308",
@@ -17696,11 +17696,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 35,
-      "_catRank": 18,
+      "_autoRank": 41,
+      "_catRank": 21,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 40
+      "_refDist": null
     },
     "velox-5-7": {
       "nombre": "Velox 5.7",
@@ -17926,7 +17926,7 @@
       "_catRank": 17,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "echo-12": {
       "nombre": "Echo 12",
@@ -18262,7 +18262,7 @@
       "_catRank": 16,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "nx-ravager": {
       "nombre": "NX Ravager",
@@ -18328,7 +18328,7 @@
       "_catRank": 21,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "gdl-havoc": {
       "nombre": "GDL Havoc",
@@ -18387,13 +18387,13 @@
       "_catRank": 22,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "vx-compact": {
       "nombre": "VX Compact",
       "tipo": "Fusil de asalto",
       "rango": "Corto Alcance",
-      "tier": "B",
+      "tier": "A",
       "ranking": 15,
       "pick_rate": "",
       "imagen": "/weapons/gold/VX Compact.png",
@@ -19048,11 +19048,11 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 37,
-      "_catRank": 19,
+      "_autoRank": 43,
+      "_catRank": 22,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 40
+      "_refDist": null
     },
     "grimhawk": {
       "nombre": "Grimhawk",
@@ -19127,7 +19127,7 @@
       "_catRank": 23,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "an-94": {
       "nombre": "AN-94",
@@ -19665,9 +19665,9 @@
       "attachments": {},
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": null,
-      "_catRank": null,
-      "inMeta": false,
+      "_autoRank": 46,
+      "_catRank": 24,
+      "inMeta": true,
       "_ttk": null,
       "_refDist": null
     },
@@ -19712,13 +19712,13 @@
       "_catRank": 20,
       "inMeta": true,
       "_ttk": null,
-      "_refDist": 0
+      "_refDist": null
     },
     "fg42": {
       "nombre": "FG42",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "S",
+      "tier": "B",
       "ranking": 1,
       "pick_rate": "",
       "imagen": "/weapons/gold/FG42.png",
@@ -20065,7 +20065,7 @@
       "nombre": "Gremlin",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
-      "tier": "C",
+      "tier": "B",
       "ranking": 26,
       "pick_rate": "",
       "imagen": "/weapons/gold/Gremlin.png",
