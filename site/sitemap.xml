@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-07T14:05:39.515957
-  Total URLs: 128
+  Fecha: 2026-08-07T17:35:49.011235
+  Total URLs: 129
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -770,6 +770,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/temporada-2-black-ops-7</loc>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/temporada-1-black-ops-7</loc>
         <lastmod>2026-08-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

@@ -194,5 +194,17 @@
     "tags": [],
     "date": "2026-02-04 15:32",
     "fecha_legible": "4 de Febrero 2026"
+  },
+  {
+    "slug": "temporada-1-black-ops-7",
+    "url": "/noticias/temporada-1-black-ops-7",
+    "titulo": "Temporada 1 de Black Ops 7 y Call of Duty: Warzone",
+    "resumen": "La Temporada 1 marcó el lanzamiento de Black Ops 7 y su integración con Warzone: mapas 6v6, nuevas armas, el modo Endgame, Zombies con Astra Malorum y el regreso de Verdansk. Repasamos todo el contenido de la temporada que arrancó todo.",
+    "imagen": "/uploads/s1.jpg",
+    "categoria": "temporadas",
+    "destacada": false,
+    "tags": [],
+    "date": "2025-12-04 09:00",
+    "fecha_legible": "4 de Diciembre 2025"
   }
 ]
