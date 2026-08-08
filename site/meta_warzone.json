@@ -43,7 +43,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 2,
@@ -93,7 +93,7 @@
         ],
         "codigo": "S15-9PHUZ-Z311",
         "fuente": "Verificado en juego — S4",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 3,
@@ -142,7 +142,7 @@
         ],
         "codigo": "A12-34FK5-7H8YU-11",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 4,
@@ -192,7 +192,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 5,
@@ -242,7 +242,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 6,
@@ -288,11 +288,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 7,
-        "arma": "DS20 Mirage",
+        "arma": "DS20 MIRAGE",
         "imagen_url": "/weapons/gold/DS20 Mirage.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -339,11 +339,11 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 8,
-        "arma": "VS Recon",
+        "arma": "VS RECON",
         "imagen_url": "/weapons/gold/VS Recon.png",
         "categoria_tactica": "Fusil de precisión",
         "tipo_arma": "Fusil de precisión",
@@ -389,11 +389,11 @@
         ],
         "codigo": "R01-VJY3U-ZA8F1-1",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 9,
-        "arma": "Hawker HX",
+        "arma": "HAWKER HX",
         "imagen_url": "/weapons/gold/Hawker HX.png",
         "categoria_tactica": "Fusil de precisión",
         "tipo_arma": "Fusil de precisión",
@@ -439,11 +439,11 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 10,
-        "arma": "Strider 300",
+        "arma": "STRIDER 300",
         "imagen_url": "/weapons/gold/Strider 300.png",
         "categoria_tactica": "Fusil de precisión",
         "tipo_arma": "Fusil de precisión",
@@ -489,7 +489,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 11,
@@ -538,11 +538,11 @@
         ],
         "codigo": "A02-AV4J9-XA871-1",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 12,
-        "arma": "Ryden 45K",
+        "arma": "RYDEN 45K",
         "imagen_url": "/weapons/gold/Ryden 45K.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -588,7 +588,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 13,
@@ -634,17 +634,17 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 14,
-        "arma": "Sturmwolf 45",
+        "arma": "STURMWOLF 45",
         "imagen_url": "/weapons/gold/Sturmwolf 45.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
         "pick_rate": "",
         "es_nuevo": false,
-        "es_buff": true,
+        "es_buff": false,
         "es_nerfeada": false,
         "modos": [
             "battle_royale",
@@ -679,11 +679,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 15,
-        "arma": "VX Compact",
+        "arma": "VX COMPACT",
         "imagen_url": "/weapons/gold/VX Compact.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -725,11 +725,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 16,
-        "arma": "Voyak KT-3",
+        "arma": "VOYAK KT-3",
         "imagen_url": "/weapons/gold/Voyak KT-3.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -775,7 +775,7 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 17,
@@ -821,7 +821,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 18,
@@ -867,11 +867,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 19,
-        "arma": "Peacekeeper Mk1",
+        "arma": "PEACEKEEPER MK1",
         "imagen_url": "/weapons/gold/Peacekeeper Mk1.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -913,11 +913,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 20,
-        "arma": "Carbon 57",
+        "arma": "CARBON 57",
         "imagen_url": "/weapons/gold/Carbon 57.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -964,11 +964,11 @@
         ],
         "codigo": "",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 21,
-        "arma": "X9 Maverick",
+        "arma": "X9 MAVERICK",
         "imagen_url": "/weapons/gold/X9 Maverick.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -1010,11 +1010,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 22,
-        "arma": "Kogot-7",
+        "arma": "KOGOT-7",
         "imagen_url": "/weapons/gold/Kogot-7.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -1061,7 +1061,7 @@
         ],
         "codigo": "S10-6K4JN-R831",
         "fuente": "Verificado en juego — S3",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 23,
@@ -1107,11 +1107,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 24,
-        "arma": "Sokol 545",
+        "arma": "SOKOL 545",
         "imagen_url": "/weapons/gold/Sokol 545.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Ametralladora ligera",
@@ -1153,11 +1153,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 25,
-        "arma": "Dravec 45",
+        "arma": "DRAVEC 45",
         "imagen_url": "/weapons/gold/Dravec 45.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -1204,11 +1204,11 @@
         ],
         "codigo": "S04-BGVV5-43931",
         "fuente": "GameSpot / wzranked — Temporada 4, junio 2026",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 26,
-        "arma": "Gremlin",
+        "arma": "GREMLIN",
         "imagen_url": "/weapons/gold/Gremlin.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -1250,11 +1250,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 27,
-        "arma": "Razor 9mm",
+        "arma": "RAZOR 9MM",
         "imagen_url": "/weapons/gold/Razor 9mm.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Subfusil",
@@ -1296,7 +1296,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 28,
@@ -1347,11 +1347,11 @@
         ],
         "codigo": "M01-MK78A-LR321-2",
         "fuente": "Verificado en juego — S3",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 29,
-        "arma": "Maddox RFB",
+        "arma": "MADDOX RFB",
         "imagen_url": "/weapons/gold/Maddox RFB.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Fusil de asalto",
@@ -1393,7 +1393,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 30,
@@ -1439,7 +1439,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 31,
@@ -1483,11 +1483,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 32,
-        "arma": "Swordfish A1",
+        "arma": "SWORDFISH A1",
         "imagen_url": "/weapons/gold/Swordfish A1.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Marksman",
@@ -1527,11 +1527,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 33,
-        "arma": "XR-3 Ion",
+        "arma": "XR-3 ION",
         "imagen_url": "/weapons/gold/XR-3 Ion.png",
         "categoria_tactica": "Fusil de precisión",
         "tipo_arma": "Fusil de precisión",
@@ -1572,11 +1572,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 34,
-        "arma": "Akita",
+        "arma": "AKITA",
         "imagen_url": "/weapons/gold/Akita.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Escopeta",
@@ -1616,11 +1616,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 35,
-        "arma": "M10 Breacher",
+        "arma": "M10 BREACHER",
         "imagen_url": "/weapons/gold/M10 Breacher.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Escopeta",
@@ -1660,11 +1660,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 36,
-        "arma": "M34 Novaline",
+        "arma": "M34 NOVALINE",
         "imagen_url": "/weapons/gold/M34 Novaline.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Marksman",
@@ -1704,11 +1704,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 37,
-        "arma": "Warden 308",
+        "arma": "WARDEN 308",
         "imagen_url": "/weapons/gold/Warden 308.png",
         "categoria_tactica": "Largo Alcance",
         "tipo_arma": "Marksman",
@@ -1748,7 +1748,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 38,
@@ -1794,7 +1794,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 39,
@@ -1838,11 +1838,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 40,
-        "arma": "Echo 12",
+        "arma": "ECHO 12",
         "imagen_url": "/weapons/gold/Echo 12.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Escopeta",
@@ -1882,7 +1882,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 41,
@@ -1906,11 +1906,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 42,
-        "arma": "Velox 5.7",
+        "arma": "VELOX 5.7",
         "imagen_url": "/weapons/gold/Velox 5.7.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Pistola",
@@ -1951,7 +1951,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 43,
@@ -1996,11 +1996,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 44,
-        "arma": "Jäger 45",
+        "arma": "JÄGER 45",
         "imagen_url": "/weapons/gold/Jäger 45.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Pistola",
@@ -2041,11 +2041,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 45,
-        "arma": "Shadow SK",
+        "arma": "SHADOW SK",
         "imagen_url": "/weapons/gold/Shadow SK.png",
         "categoria_tactica": "Fusil de precisión",
         "tipo_arma": "Fusil de precisión",
@@ -2086,7 +2086,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 46,
@@ -2132,11 +2132,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 47,
-        "arma": "Siren",
+        "arma": "SIREN",
         "imagen_url": "/weapons/gold/Siren.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Especial",
@@ -2161,11 +2161,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 48,
-        "arma": "NX Ravager",
+        "arma": "NX RAVAGER",
         "imagen_url": "/weapons/gold/NX Ravager.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Especial",
@@ -2195,11 +2195,11 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 49,
-        "arma": "GDL Havoc",
+        "arma": "GDL HAVOC",
         "imagen_url": "/weapons/gold/GDL Havoc.png",
         "categoria_tactica": "Corto Alcance",
         "tipo_arma": "Especial",
@@ -2224,7 +2224,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 50,
@@ -2258,7 +2258,7 @@
         ],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     },
     {
         "ranking": 51,
@@ -2276,6 +2276,6 @@
         "attachments": [],
         "codigo": "",
         "fuente": "",
-        "timestamp": "2026-08-07 10:41"
+        "timestamp": "2026-08-08 10:20"
     }
 ]
