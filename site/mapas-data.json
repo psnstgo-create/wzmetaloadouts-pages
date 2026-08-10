@@ -66,10 +66,22 @@
         "Promenade",
         "Park",
         "Train Station",
-        "Hills"
+        "Hills",
+        "Drone Labs"
       ],
       "fecha": "2026-04-02",
-      "seo_desc": "Mapa de Verdansk en Warzone (Black Ops 7): mapa tactico con todos los POIs y callouts, y recorrido completo por la ciudad mas iconica del Battle Royale."
+      "seo_desc": "Mapa de Verdansk en Warzone (Black Ops 7): mapa tactico con todos los POIs y callouts, y recorrido completo por la ciudad mas iconica del Battle Royale.",
+      "updates": [
+        {
+          "temporada": "Temporada 5",
+          "fecha": "23 jul 2026",
+          "titulo": "Nuevo POI: Drone Labs",
+          "texto": "Verdansk sumó <strong>Drone Labs</strong>, al sur de Quarry y al este de la Estación de TV: dos edificios en L conectados por tirolesa y una pasarela, divididos en Oficinas Administrativas e Investigación y Desarrollo, con loot de nivel alto y una pista de obstáculos para drones en la parte de atrás. También hay un JLTV armado guardado en un garage cerrado que se desbloquea con un código.",
+          "img": "/mapas/img/verdansk-dronelabs.jpg",
+          "link": "/noticias/temporada-5-black-ops-7",
+          "link_texto": "Ver todo lo nuevo de la Temporada 5 →"
+        }
+      ]
     },
     "rebirth-island": {
       "nombre": "Rebirth Island",

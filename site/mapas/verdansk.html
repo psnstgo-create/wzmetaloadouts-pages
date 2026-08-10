@@ -104,6 +104,16 @@ body{padding-bottom:70px}
 .lb .lbl{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#EEF2F6;font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.9rem;text-shadow:0 2px 8px #000}
 .map-foot{max-width:1100px;margin:34px auto 0;padding:0 20px}
 .map-foot a.btn-volver{display:inline-block;font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#F0C419;border:1px solid rgba(240,196,25,.4);border-radius:8px;padding:11px 18px;text-decoration:none}
+/* recuadro de actualización de mapa */
+.map-update{overflow:hidden;max-width:900px;margin:20px auto 0;background:#0b1016;border:1px solid rgba(240,196,25,.28);border-left:3px solid #F0C419;border-radius:12px}
+.map-update .u-img{width:100%;height:auto;display:block;border-bottom:1px solid rgba(255,255,255,.06)}
+.map-update .u-body{padding:16px 18px}
+.map-update .u-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.map-update .u-badge{font-family:'Share Tech Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:rgba(240,196,25,.14);border:1px solid rgba(240,196,25,.4);color:#F0C419}
+.map-update .u-date{font-family:'Share Tech Mono',monospace;font-size:.66rem;color:#828D99;letter-spacing:.04em}
+.map-update h3{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:#EEF2F6;margin:0 0 6px}
+.map-update p{font-family:'Rajdhani',sans-serif;font-size:.98rem;line-height:1.6;color:#B9C2CC;margin:0}
+.map-update a.u-link{display:inline-block;margin-top:10px;font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:.04em;color:#F0C419;text-decoration:none;border-bottom:1px solid rgba(240,196,25,.4)}
 </style>
 </head>
 <body>
@@ -154,6 +164,23 @@ body{padding-bottom:70px}
       <div class="map-wrap">
         <p class="map-intro">Verdansk es el mapa de Battle Royale más icónico de Call of Duty: Warzone. Ambientado en la ciudad ficticia de Verdansk (Kastovia), combina zonas urbanas densas con grandes espacios abiertos, y volvió a Warzone en la Temporada 3 de Black Ops 7 (2 de abril de 2026). Es un mapa grande pensado para partidas masivas, con combate a corta distancia en interiores y peleas de largo alcance en avenidas y colinas. Abajo tenés el mapa táctico con todos los POIs y un recorrido zona por zona.</p>
       </div>
+
+      <!-- MAP-UPDATES:start (generado por _build/build_map_updates.py desde mapas-data.json → <slug>.updates) -->
+      <div class="map-wrap">
+        <div class="map-update">
+          <img class="u-img" src="/mapas/img/verdansk-dronelabs.jpg" alt="Nuevo POI: Drone Labs" loading="lazy">
+          <div class="u-body">
+            <div class="u-top">
+              <span class="u-badge">🔄 Actualización de mapa</span>
+              <span class="u-date">Temporada 5 · 23 jul 2026</span>
+            </div>
+            <h3>Nuevo POI: Drone Labs</h3>
+            <p>Verdansk sumó <strong>Drone Labs</strong>, al sur de Quarry y al este de la Estación de TV: dos edificios en L conectados por tirolesa y una pasarela, divididos en Oficinas Administrativas e Investigación y Desarrollo, con loot de nivel alto y una pista de obstáculos para drones en la parte de atrás. También hay un JLTV armado guardado en un garage cerrado que se desbloquea con un código.</p>
+            <a class="u-link" href="/noticias/temporada-5-black-ops-7">Ver todo lo nuevo de la Temporada 5 →</a>
+          </div>
+        </div>
+      </div>
+      <!-- MAP-UPDATES:end -->
 
       <div class="map-sec-h"><h2>Mapa táctico · Todos los POIs</h2><span class="ln"></span></div>
       <div class="map-wrap">
