@@ -136,6 +136,42 @@
       ],
       "fecha": "2024-03-01",
       "seo_desc": "Mapa de Rebirth Island en Warzone: mapa tactico con todos los POIs y callouts (Prison, Bioweapons, Factory...) y recorrido por la isla de Resurgimiento."
+    },
+    "havens-hollow": {
+      "nombre": "Haven's Hollow",
+      "modo": "warzone",
+      "tipo": "Resurgimiento",
+      "imagen": "/mapas/img/havens-thumb.jpg",
+      "hero": "/mapas/img/havens-hero.jpg",
+      "tacmap": "/mapas/img/havens-tacmap.jpg",
+      "galeria": [
+        "/mapas/img/havens-mainstreet-w.jpg",
+        "/mapas/img/havens-mainstreet-e.jpg",
+        "/mapas/img/havens-riverboat.jpg",
+        "/mapas/img/havens-barn.jpg",
+        "/mapas/img/havens-chapel.jpg",
+        "/mapas/img/havens-pond.jpg",
+        "/mapas/img/havens-mansion.jpg",
+        "/mapas/img/havens-train-station.jpg",
+        "/mapas/img/havens-research-center.jpg",
+        "/mapas/img/havens-coal-depot.jpg",
+        "/mapas/img/havens-lumbermill.jpg"
+      ],
+      "descripcion": "Haven's Hollow es el mapa de Resurgimiento que estreno Call of Duty: Warzone junto a la Temporada 1 de Black Ops 7 (4 de diciembre de 2025). Un pueblo pequeno de Nueva Inglaterra en pleno otono, sobre una isla, pensado para partidas rapidas e intensas. Combina combate cerrado en Main Street y la Mansion (con su famoso fosil de T-Rex, guino al mapa Shattered Veil) con angulos abiertos hacia el Riverboat, el Lumbermill y el Coal Depot. Debajo tenes el mapa tactico con todos los POIs y un recorrido por sus zonas.",
+      "pois": [
+        "Main Street",
+        "Riverboat",
+        "Barn",
+        "Chapel",
+        "Pond",
+        "Mansion",
+        "Train Station",
+        "Research Center",
+        "Coal Depot",
+        "Lumbermill"
+      ],
+      "fecha": "2025-12-04",
+      "seo_desc": "Mapa de Haven's Hollow en Warzone (Black Ops 7): mapa tactico con todos los POIs y callouts (Main Street, Mansion, Riverboat, Lumbermill...) y recorrido por el mapa de Resurgimiento."
     }
   }
 }

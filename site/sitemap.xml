@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-10T18:56:35.762918
-  Total URLs: 132
+  Fecha: 2026-08-10T19:46:01.779018
+  Total URLs: 133
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -794,6 +794,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/mapas/rebirth-island</loc>
+        <lastmod>2026-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/mapas/havens-hollow</loc>
         <lastmod>2026-08-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
