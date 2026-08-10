@@ -172,6 +172,40 @@
       ],
       "fecha": "2025-12-04",
       "seo_desc": "Mapa de Haven's Hollow en Warzone (Black Ops 7): mapa tactico con todos los POIs y callouts (Main Street, Mansion, Riverboat, Lumbermill...) y recorrido por el mapa de Resurgimiento."
+    },
+    "fortunes-keep": {
+      "nombre": "Fortune's Keep",
+      "modo": "warzone",
+      "tipo": "Resurgimiento",
+      "imagen": "/mapas/img/fortunes-thumb.jpg",
+      "hero": "/mapas/img/fortunes-hero.jpg",
+      "tacmap": "/mapas/img/fortunes-tacmap.jpg",
+      "galeria": [
+        "/mapas/img/fortunes-keep.jpg",
+        "/mapas/img/fortunes-keep-patio.jpg",
+        "/mapas/img/fortunes-town.jpg",
+        "/mapas/img/fortunes-winery.jpg",
+        "/mapas/img/fortunes-graveyard.jpg",
+        "/mapas/img/fortunes-grotto.jpg",
+        "/mapas/img/fortunes-lighthouse.jpg"
+      ],
+      "descripcion": "Fortune's Keep es uno de los mapas de Resurgimiento mas queridos de Call of Duty: Warzone. Una isla pequena de estilo mediterraneo, un poco mas grande que Rebirth, coronada por un castillo (el Keep) y con un pueblo costero italiano lleno de callejones y azoteas. Debuto en junio de 2022 con la actualizacion Mercenaries of Fortune y hoy esta activo en Resurgimiento Ranked de la Temporada 5. Debajo tenes el mapa tactico con los 12 POIs y un recorrido por sus zonas.",
+      "pois": [
+        "Keep",
+        "Town",
+        "Terraces",
+        "Gatehouse",
+        "Bay",
+        "Winery",
+        "Camp",
+        "Lighthouse",
+        "Overlook",
+        "Smuggler's Cove",
+        "Grotto",
+        "Graveyard"
+      ],
+      "fecha": "2022-06-22",
+      "seo_desc": "Mapa de Fortune's Keep en Warzone: mapa tactico con los 12 POIs y callouts (Keep, Town, Winery, Lighthouse...) y recorrido por la isla de Resurgimiento."
     }
   }
 }

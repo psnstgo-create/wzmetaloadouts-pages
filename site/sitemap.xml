@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-10T19:46:01.779018
-  Total URLs: 133
+  Fecha: 2026-08-10T20:28:02.933268
+  Total URLs: 134
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -800,6 +800,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/mapas/havens-hollow</loc>
+        <lastmod>2026-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/mapas/fortunes-keep</loc>
         <lastmod>2026-08-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
