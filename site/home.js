@@ -285,6 +285,11 @@ function statsDe(a){
 
 // ── render: cards destacadas ──
 const ROLES={largo:'Mejor largo alcance',corto:'Mejor corto alcance',sniper:'Mejor sniper'};
+// Imagen gold correcta desde armas-data.json (evita 404 por mayúsculas en meta_warzone.json)
+function goldSrc(a){
+  const rec=HOME_ARMAS_DATA[slugify(a.arma||a.nombre||'')];
+  return (rec&&rec.imagen)?rec.imagen:`/weapons/gold/${a.arma}.png`;
+}
 function cardHtml(a,n,roleKey){
   if(!a)return '';
   const acc=colorTipo(a.tipo_arma), tier=tierDe(a), tcol=tierColor(tier), bt=textoBoton(acc);
@@ -293,7 +298,7 @@ function cardHtml(a,n,roleKey){
   return `
   <article class="fcard" style="--a:${acc};--a10:${hexA(acc,.1)};--a14:${hexA(acc,.15)};--a30:${hexA(acc,.34)};--bt:${bt}">
     <div class="fc-img">
-      <img src="/weapons/gold/${escapeHtml(a.arma)}.png" alt="${escapeHtml(a.arma)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <img src="${escapeHtml(goldSrc(a))}" alt="${escapeHtml(a.arma)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <svg style="display:none;height:84px;color:${acc};opacity:.55" viewBox="0 0 200 60" fill="currentColor">${silDe(a)}</svg>
     </div>
     <div class="fc-meta">
@@ -356,7 +361,7 @@ function filaArma(a, i){
       <div class="rnum">${i+1}</div>
       <div class="rname">${escapeHtml(a.arma)}<span class="rcat">${escapeHtml(catCortaTop(a))}</span></div>
       ${trendTop(a)}
-      <div class="rmini"><img src="/weapons/gold/${escapeHtml(a.arma)}.png" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><svg style="display:none" viewBox="0 0 200 60" fill="currentColor">${silDe(a)}</svg></div>
+      <div class="rmini"><img src="${escapeHtml(goldSrc(a))}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><svg style="display:none" viewBox="0 0 200 60" fill="currentColor">${silDe(a)}</svg></div>
       <div class="rtier">${tier}</div>
     </a>`;
 }
