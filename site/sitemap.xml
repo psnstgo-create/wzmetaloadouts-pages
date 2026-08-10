@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-10T15:36:24.888052
-  Total URLs: 131
+  Fecha: 2026-08-10T16:32:13.224242
+  Total URLs: 132
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -788,6 +788,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/mapas/verdansk</loc>
+        <lastmod>2026-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/mapas/rebirth-island</loc>
         <lastmod>2026-08-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
