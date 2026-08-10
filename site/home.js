@@ -506,6 +506,14 @@ function setPillActive(pill){
   document.querySelectorAll('.pill').forEach(x=>x.classList.remove('on'));
   if(pill)pill.classList.add('on');
 }
+// Al cambiar de modo/categoría, volver la vista a la primera card
+function scrollCards(){
+  const el=document.getElementById('featured');if(!el)return;
+  const hdr=document.querySelector('header');
+  const off=(hdr?hdr.offsetHeight:64)+8;
+  const y=el.getBoundingClientRect().top+window.pageYOffset-off;
+  window.scrollTo({top:y<0?0:y,behavior:'smooth'});
+}
 function initPills(){
   document.querySelectorAll('.pill').forEach(p=>{
     p.addEventListener('click',()=>{
@@ -519,10 +527,12 @@ function initPills(){
         setPillActive(p);
         setHero(modo);
         renderAll();
+        scrollCards();
       }else if(cat){
         ACTIVE_CAT=cat;
         setPillActive(p);
         renderAll();
+        scrollCards();
       }
     });
   });
