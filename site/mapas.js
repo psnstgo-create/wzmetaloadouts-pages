@@ -21,8 +21,17 @@
     return Object.keys(m).map(function (slug) { var o = m[slug]; o._slug = slug; return o; });
   }
 
+  // Un mapa puede pertenecer a varios modos (ej. Avalon: warzone + endgame).
+  // Usa 'modos' (array) si está; si no, cae a 'modo' (string) por compatibilidad.
+  function modosDe(mp) {
+    if (mp.modos && mp.modos.length) return mp.modos;
+    return mp.modo ? [mp.modo] : [];
+  }
+
   function contarPorModo() {
-    var c = {}; listaMapas().forEach(function (mp) { c[mp.modo] = (c[mp.modo] || 0) + 1; });
+    var c = {}; listaMapas().forEach(function (mp) {
+      modosDe(mp).forEach(function (k) { c[k] = (c[k] || 0) + 1; });
+    });
     return c;
   }
 
@@ -43,11 +52,13 @@
   }
 
   function card(mp) {
-    var modoLabel = (DATA.modos && DATA.modos[mp.modo]) || mp.modo;
+    var badges = modosDe(mp).map(function (k) {
+      return '<span class="mc-mode">' + esc((DATA.modos && DATA.modos[k]) || k) + '</span>';
+    }).join('');
     return '<a class="map-card" href="/mapas/' + esc(mp._slug) + '">' +
       '<div class="mc-img"><img src="' + esc(mp.imagen) + '" alt="Mapa de ' + esc(mp.nombre) + '" loading="lazy" onerror="this.style.opacity=0"></div>' +
       '<div class="mc-body">' +
-      '<div class="mc-badges"><span class="mc-mode">' + esc(modoLabel) + '</span>' + (mp.tipo ? '<span class="mc-tipo">' + esc(mp.tipo) + '</span>' : '') + '</div>' +
+      '<div class="mc-badges">' + badges + (mp.tipo ? '<span class="mc-tipo">' + esc(mp.tipo) + '</span>' : '') + '</div>' +
       '<h3>' + esc(mp.nombre) + '</h3>' +
       '</div></a>';
   }
@@ -55,7 +66,7 @@
   function renderGrid() {
     var grid = document.getElementById('mapGrid'); if (!grid) return;
     var arr = listaMapas().filter(function (mp) {
-      if (modoActivo !== 'todos' && mp.modo !== modoActivo) return false;
+      if (modoActivo !== 'todos' && modosDe(mp).indexOf(modoActivo) === -1) return false;
       if (termino && esc(mp.nombre).toLowerCase().indexOf(termino) === -1) return false;
       return true;
     });

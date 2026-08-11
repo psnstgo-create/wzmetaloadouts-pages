@@ -512,6 +512,10 @@
     "avalon": {
       "nombre": "Avalon",
       "modo": "warzone",
+      "modos": [
+        "warzone",
+        "endgame"
+      ],
       "tipo": "Battle Royale",
       "imagen": "/mapas/img/avalon-thumb.jpg",
       "hero": "/mapas/img/avalon-hero.jpg",
@@ -542,6 +546,96 @@
       "descripcion": "Avalon es el mapa grande de Battle Royale de Warzone (modo Black Ops Royale, inspirado en el Blackout original), construido sobre el mapa Avalon de Black Ops 7 donde debuto como mapa de Endgame. Una enorme isla mediterranea con mas de 20 POIs (Trinity Stadium, Casino, Winery, High/Low Town, Cliff Town, Car Factory...) y multiples formas de moverse: vehiculos, wingsuit, gancho y omnimovimiento.",
       "fecha": "2026-03-12",
       "seo_desc": "Mapa de Avalon en Warzone (Black Ops Royale): mapa tactico con todos los POIs y callouts del mapa grande de Battle Royale de Black Ops 7."
+    },
+    "vandorn-farm": {
+      "nombre": "Vandorn Farm",
+      "modo": "zombies",
+      "tipo": "Supervivencia",
+      "imagen": "/mapas/img/vandorn-farm-thumb.jpg",
+      "hero": "/mapas/img/vandorn-farm-hero.jpg",
+      "collage": "/mapas/img/vandorn-farm-collage.jpg",
+      "formato": "Supervivencia",
+      "ambiente": "Dark Aether",
+      "descripcion": "Vandorn Farm es un mapa de Zombies de Supervivencia de lanzamiento de Black Ops 7: una variante condensada e intensa ambientada en una granja aislada dentro del Dark Aether. Combate de oleadas sin pausa entre el granero, la casa y los cobertizos, con la niebla del Eter Oscuro cerrando el horizonte y los mismos horrores de Ashes of the Damned.",
+      "fecha": "2025-11-14",
+      "seo_desc": "Mapa Vandorn Farm en Black Ops 7 (Zombies Supervivencia): granja aislada en el Dark Aether, variante condensada de oleadas, con vistas oficiales."
+    },
+    "dead-ops-arcade-4": {
+      "nombre": "Dead Ops Arcade 4",
+      "modo": "zombies",
+      "tipo": "Arcade",
+      "imagen": "/mapas/img/dead-ops-arcade-4-thumb.jpg",
+      "hero": "/mapas/img/dead-ops-arcade-4-hero.jpg",
+      "collage": "/mapas/img/dead-ops-arcade-4-collage.jpg",
+      "formato": "Arcade",
+      "descripcion": "Dead Ops Arcade 4: Papaback in Black es el modo Zombies de arcade con vista cenital (twin-stick shooter) de Black Ops 7, heredero de la saga Dead Ops Arcade. Enfrentá hordas masivas de zombis en niveles retro llenos de power-ups, vidas y caos: un respiro arcade frente al terror round-based.",
+      "fecha": "2025-11-14",
+      "seo_desc": "Mapa Dead Ops Arcade 4 en Black Ops 7: el modo Zombies de arcade con vista cenital (twin-stick), con arte oficial."
+    },
+    "totenreich": {
+      "nombre": "Totenreich",
+      "modo": "zombies",
+      "tipo": "Round-Based",
+      "imagen": "/mapas/img/totenreich-thumb.jpg",
+      "hero": "/mapas/img/totenreich-hero.jpg",
+      "collage": "/mapas/img/totenreich-collage.jpg",
+      "formato": "Round-Based",
+      "temporada": "Temporada 3",
+      "descripcion": "Totenreich es un mapa de Zombies round-based de la Temporada 3 de Black Ops 7, ambientado en Eidskallen, una aldea pesquera nórdica de la costa noruega arrancada de la realidad y arrastrada al Dark Aether. Tras la derrota del Dark Heart en Paradox Junction, los Gemelos transportan a la tripulación a este pueblo azotado por el viento, habitado desde la Edad de Bronce.",
+      "fecha": "2026-04-30",
+      "seo_desc": "Mapa Totenreich en Black Ops 7 (Zombies round-based, T3): la aldea pesquera nórdica de Eidskallen en el Dark Aether, con vistas oficiales."
+    },
+    "kowakujo": {
+      "nombre": "Kowakujō",
+      "modo": "zombies",
+      "tipo": "Round-Based",
+      "imagen": "/mapas/img/kowakujo-thumb.jpg",
+      "hero": "/mapas/img/kowakujo-hero.jpg",
+      "collage": "/mapas/img/kowakujo-collage.jpg",
+      "formato": "Round-Based",
+      "temporada": "Temporada 4",
+      "descripcion": "Kowakujō es el mapa de Zombies round-based de la Temporada 4 de Black Ops 7: un castillo feudal japonés en el Dark Aether, rodeado de volcanes activos y ahogado en fuego. Trae la Gobblegum Hellping Hound y una nueva Arma Maravilla, con combate entre torii, patios y lava.",
+      "fecha": "2026-06-04",
+      "seo_desc": "Mapa Kowakujō en Black Ops 7 (Zombies round-based, T4): castillo feudal japonés en el Dark Aether rodeado de volcanes, con vistas oficiales."
+    },
+    "eidskallen-lighthouse": {
+      "nombre": "Eidskallen Lighthouse",
+      "modo": "zombies",
+      "tipo": "Supervivencia",
+      "imagen": "/mapas/img/eidskallen-lighthouse-thumb.jpg",
+      "hero": "/mapas/img/eidskallen-lighthouse-hero.jpg",
+      "collage": "/mapas/img/eidskallen-lighthouse-collage.jpg",
+      "formato": "Supervivencia",
+      "temporada": "Temporada 5",
+      "descripcion": "Eidskallen Lighthouse es un mapa de Zombies de Supervivencia de la Temporada 5 de Black Ops 7, congelado en Beacon Island. Combate de oleadas sin pausa alrededor del faro azotado por la nieve, en la misma costa nórdica de Totenreich.",
+      "fecha": "2026-07-23",
+      "seo_desc": "Mapa Eidskallen Lighthouse en Black Ops 7 (Zombies Supervivencia, T5): faro congelado en Beacon Island, con vistas oficiales."
+    },
+    "paradox-junction": {
+      "nombre": "Paradox Junction",
+      "modo": "zombies",
+      "tipo": "Round-Based",
+      "imagen": "/mapas/img/paradox-junction-thumb.jpg",
+      "hero": "/mapas/img/paradox-junction-hero.jpg",
+      "collage": "/mapas/img/paradox-junction-collage.jpg",
+      "formato": "Round-Based",
+      "temporada": "Temporada 2",
+      "descripcion": "Paradox Junction es el mapa de Zombies round-based de la Temporada 2 de Black Ops 7, que devuelve a los jugadores a un Nuketown arrasado por los muertos, esta vez partido entre dos epocas: antes y despues de la detonacion. Continua la historia de Astra Malorum con viajes en el tiempo y trae de vuelta el Arma Maravilla Blundergat (y su version mejorada, la Sundergat). Es el tercer mapa de Zombies q",
+      "fecha": "2026-03-11",
+      "seo_desc": "Mapa Paradox Junction en Black Ops 7 (Zombies round-based, T2): un Nuketown partido entre dos epocas por viajes en el tiempo, con vistas oficiales."
+    },
+    "ashwood": {
+      "nombre": "Ashwood",
+      "modo": "zombies",
+      "tipo": "Supervivencia",
+      "imagen": "/mapas/img/ashwood-thumb.jpg",
+      "hero": "/mapas/img/ashwood-hero.jpg",
+      "collage": "/mapas/img/ashwood-collage.jpg",
+      "formato": "Supervivencia",
+      "temporada": "Temporada 3",
+      "descripcion": "Ashwood es un mapa de Zombies de Supervivencia de la Temporada 3 de Black Ops 7: combate de oleadas sin pausa alrededor de la mortuoria Ashwood y el pueblo, bajo el cielo carmesi del Dark Aether.",
+      "fecha": "2026-03-12",
+      "seo_desc": "Mapa Ashwood en Black Ops 7 (Zombies Supervivencia, T3): combate de oleadas alrededor de la mortuoria Ashwood en el Dark Aether, con vistas oficiales."
     }
   }
 }
