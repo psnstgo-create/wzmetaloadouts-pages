@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-12T10:50:59.258187
-  Total URLs: 164
+  Fecha: 2026-08-12T13:41:38.086655
+  Total URLs: 165
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -701,6 +701,12 @@
         <lastmod>2026-08-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/warzone-quita-ganchos-grapple-hooks</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/como-desbloquear-mace-warzone-bo7</loc>
