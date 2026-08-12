@@ -10,19 +10,26 @@ Allow: /
 
 # Bloquear áreas internas que no aportan valor SEO
 Disallow: /admin/
-Disallow: /uploads/
 Disallow: /_build/
 Disallow: /_data/
 Disallow: /_noticias/
 
-# Bloquear archivos de datos (no son páginas)
-Disallow: /*.json$
+# Scripts server-side: no son páginas
 Disallow: /*.py$
 
-# Permitir explícitamente los assets que sí queremos indexar
+# ⚠️ NO bloquear /uploads/ ni los .json:
+#   Googlebot los NECESITA para RENDERIZAR el home (meta_warzone.json) y
+#   /mapas (mapas-data.json). Bloquearlos hacía que Google viera esas páginas
+#   vacías. Las imágenes de /uploads/ (og:image de noticias) también deben ser
+#   crawleables para Google Imágenes y las tarjetas sociales.
+
+# Permitir explícitamente los assets y datos que queremos que Google lea
 Allow: /icons/
 Allow: /weapons/
 Allow: /armas/
+Allow: /mapas/
+Allow: /uploads/
+Allow: /*.json$
 
 # Crawl-delay opcional (1 segundo entre requests para no saturar el servidor)
 Crawl-delay: 1
