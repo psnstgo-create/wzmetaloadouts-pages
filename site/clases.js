@@ -368,6 +368,14 @@ function _buildClase(r, ap, as) {
 
 // Construye TODAS las clases desde el arreglo de armas (Object.values de
 // armas-data.armas). Devuelve null si no hay datos (conserva el respaldo).
+//
+// DIVERSIDAD: para que las 6 tarjetas no muestren siempre el mismo #1, se
+// lleva un set `usados` GLOBAL (ambos slots). Cada clase toma la mejor arma
+// de su pool que aún no se haya usado — así la página muestra un muestrario
+// de loadouts distintos y viables. GUARDIA DE CALIDAD: solo se "diversifica"
+// hacia armas Tier S/A; si ya no quedan buenas sin usar, se repite la mejor
+// antes que mostrar una floja. El "Meta Absoluto" va primero -> siempre se
+// queda con los #1 reales del meta.
 function _esTipo(a, re) { return re.test(_norm(a.tipo || '')); }
 function buildClases(armasArr) {
     if (!Array.isArray(armasArr) || !armasArr.length) return null;
@@ -380,17 +388,24 @@ function buildClases(armasArr) {
     };
     pools.largo = pools.ar;   // alias de receta: "largo alcance" = mejor fusil
     pools.corto = pools.smg;  //                 "corto alcance"  = mejor subfusil
-    const usadosP = new Set();
-    function take(poolName, avoid) {
+
+    const usados = new Set();                            // variedad global (ambos slots)
+    const good = a => ['S', 'A'].includes(_tierDe(a));   // no mostrar armas flojas por variar
+    function take(poolName, evitar) {
         const pool = pools[poolName] || [];
-        for (const a of pool) { if (a && a.nombre && (!avoid || !avoid.has(_norm(a.nombre)))) return a; }
-        return pool[0] || null;   // si todo está "usado", repite el mejor
+        const libre = a => a && a.nombre && !evitar.has(_norm(a.nombre));
+        // 1) sin usar + buena  2) buena (repite el mejor)  3) la que sea
+        let c = pool.find(a => libre(a) && good(a) && !usados.has(_norm(a.nombre)))
+             || pool.find(a => libre(a) && good(a))
+             || pool.find(a => libre(a))
+             || pool[0] || null;
+        if (c) usados.add(_norm(c.nombre));
+        return c;
     }
     const out = [];
     for (const r of RECETAS) {
-        const ap = take(r.primaria.pool, r.primaria.unique ? usadosP : null);
+        const ap = take(r.primaria.pool, new Set());
         if (!ap) continue;
-        if (r.primaria.unique) usadosP.add(_norm(ap.nombre));
         const as = take(r.secundaria.pool, new Set([_norm(ap.nombre)]));  // secundaria ≠ primaria
         if (!as) continue;
         out.push(_buildClase(r, ap, as));
