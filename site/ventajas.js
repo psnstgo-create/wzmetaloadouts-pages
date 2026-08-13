@@ -307,6 +307,91 @@ const TACTICOS = [
 ];
 
 
+// ════════════════════════════════════════════════════════════════════
+//   MULTIJUGADOR BLACK OPS 7 — sistema de perks propio (distinto a WZ)
+//   Los perks se agrupan en 3 ESPECIALIDADES DE COMBATE:
+//     • ENFORCER (rojo)     — ofensiva y movilidad agresiva
+//     • RECON (azul)        — sigilo, radar e información
+//     • STRATEGIST (verde)  — objetivos, equipamiento y soporte
+//   Equipar 3 perks de la misma especialidad activa su BONUS (ver
+//   ESPECIALIDADES abajo). Especialidad = tag `slot`; tier según wzstats,
+//   efectos verificados. No llevan icono propio: se muestra un distintivo
+//   con la inicial y el color de la especialidad.
+// ════════════════════════════════════════════════════════════════════
+const MULTIJUGADOR = [
+    // ─────────── ENFORCER (ofensiva / movilidad) ───────────
+    { nombre: 'LIGERO', nombre_en: 'Lightweight', slot: 'ENFORCER', tier: 'S', uso: 'Movilidad',
+      descripcion: 'Aumenta la velocidad de sprint y acelera la recuperación tras deslizarte o clavarte. Suma distancia de salto, deslizamiento y clavado. Base del meta de movimiento.' },
+    { nombre: 'CARROÑERO', nombre_en: 'Scavenger', slot: 'ENFORCER', tier: 'S', uso: 'Sostenibilidad',
+      descripcion: 'Reabastece munición y equipamiento de los enemigos eliminados. Sustain fiable para mantener rachas largas sin quedarte sin balas.' },
+    { nombre: 'GUNG HO', nombre_en: 'Gung-Ho', slot: 'ENFORCER', tier: 'A', uso: 'Combate',
+      descripcion: 'Podés disparar mientras esprintas y moverte más rápido al recargar o usar equipamiento. Define el meta agresivo de subfusil.' },
+    { nombre: 'REENGANCHE', nombre_en: 'Looper', slot: 'ENFORCER', tier: 'A', uso: 'Rachas',
+      descripcion: 'Permite volver a ganar tus rachas de puntos dentro de la misma vida, encadenando streaks si mantenés la presión.' },
+    { nombre: 'FONDO', nombre_en: 'Bankroll', slot: 'ENFORCER', tier: 'A', uso: 'Rachas',
+      descripcion: 'Empezás cada vida con progreso extra acumulado hacia tu racha de puntos. Ideal para llegar antes a los scorestreaks.' },
+    { nombre: 'ASESINO', nombre_en: 'Assassin', slot: 'ENFORCER', tier: 'A', uso: 'Combate',
+      descripcion: 'Marca a los enemigos que van en racha y suelta un paquete de recompensa al eliminarlos. Premia cazar a los que dominan la partida.' },
+    { nombre: 'DESTREZA', nombre_en: 'Dexterity', slot: 'ENFORCER', tier: 'B', uso: 'Movilidad',
+      descripcion: 'Estabiliza la puntería durante deslizamientos, clavados y wall jumps: mantenés el control con mira mientras te movés. Además reduce el daño por caída.' },
+    { nombre: 'APURADO', nombre_en: 'Close Shave', slot: 'ENFORCER', tier: 'C', uso: 'Combate',
+      descripcion: 'Las bajas cuerpo a cuerpo restauran salud y dan puntos extra. Nicho, para estilos muy agresivos de corto alcance.' },
+    { nombre: 'ESPRÍNTER TÁCTICO', nombre_en: 'Tac Sprinter', slot: 'ENFORCER', tier: 'D', uso: 'Movilidad',
+      descripcion: 'Prolonga el sprint táctico, pero reduce la velocidad del sprint normal. El intercambio rara vez compensa frente a Ligero.' },
+
+    // ─────────── RECON (sigilo / información) ───────────
+    { nombre: 'FANTASMA', nombre_en: 'Ghost', slot: 'RECON', tier: 'S', uso: 'Sigilo',
+      descripcion: 'Te oculta de los UAV, el Pulso de Reconocimiento y las Alarmas de Proximidad mientras te movés o jugás el objetivo. Indispensable para no aparecer en el radar.' },
+    { nombre: 'NINJA', nombre_en: 'Ninja', slot: 'RECON', tier: 'S', uso: 'Sigilo',
+      descripcion: 'Silencia el sonido de tus pasos: te volvés casi inaudible para los enemigos cercanos. Enorme en modos de audio competitivo.' },
+    { nombre: 'SANGRE FRÍA', nombre_en: 'Cold-Blooded', slot: 'RECON', tier: 'S', uso: 'Sigilo',
+      descripcion: 'Te hace indetectable para las miras térmicas y los sistemas de puntería por IA y de rachas enemigas. Anula que te fijen automáticamente.' },
+    { nombre: 'VIGILANCIA', nombre_en: 'Vigilance', slot: 'RECON', tier: 'S', uso: 'Alerta',
+      descripcion: 'Te avisa cuando aparecés en el minimapa enemigo y te da inmunidad a los UAV contrarios y a los Scramblers. Información pura para sobrevivir.' },
+    { nombre: 'RASTREADOR', nombre_en: 'Tracker', slot: 'RECON', tier: 'A', uso: 'Alerta',
+      descripcion: 'Muestra las pisadas de los enemigos en el mundo y los marca automáticamente al apuntar. Convierte cada rastro en información.' },
+    { nombre: 'ONDA EXPANSIVA', nombre_en: 'Blast Link', slot: 'RECON', tier: 'A', uso: 'Alerta',
+      descripcion: 'Marca a los enemigos dañados por explosivos y comparte esa información con todo tu equipo. Fuerte para squads coordinados.' },
+    { nombre: 'INGENIERO', nombre_en: 'Engineer', slot: 'RECON', tier: 'B', uso: 'Utilidad',
+      descripcion: 'Ve el equipamiento y las rachas enemigas a través de las paredes y evita activar trampas y minas. Contrarresta el juego de equipamiento.' },
+
+    // ─────────── STRATEGIST (objetivos / soporte) ───────────
+    { nombre: 'MANOS RÁPIDAS', nombre_en: 'Fast Hands', slot: 'STRATEGIST', tier: 'A', uso: 'Utilidad',
+      descripcion: 'Recargas, cambios de arma y recuperación de granadas más rápidos. Devolvé granadas enemigas con más margen. Comodidad que se nota en cada duelo.' },
+    { nombre: 'CHALECO ANTIEXPLOSIVOS', nombre_en: 'Flak Jacket', slot: 'STRATEGIST', tier: 'A', uso: 'Defensa',
+      descripcion: 'Reduce drásticamente el daño por explosiones y fuego. Clave contra spam de letales y modos de objetivo cargados de explosivos.' },
+    { nombre: 'MECÁNICO', nombre_en: 'Gearhead', slot: 'STRATEGIST', tier: 'B', uso: 'Utilidad',
+      descripcion: 'Duplica las cargas de tu Mejora de Campo y recarga el equipamiento con el tiempo. Más uptime de utilidad.' },
+    { nombre: 'ENLACE DE CARGA', nombre_en: 'Charge Link', slot: 'STRATEGIST', tier: 'B', uso: 'Soporte',
+      descripcion: 'Acelera la recarga de la Mejora de Campo para vos y los aliados cercanos. Soporte de equipo en modos de objetivo.' },
+    { nombre: 'GUARDIÁN', nombre_en: 'Guardian', slot: 'STRATEGIST', tier: 'B', uso: 'Soporte',
+      descripcion: 'Mejora la velocidad de curación y de reanimación mientras jugás el objetivo. Pensado para anclar zonas con tu escuadra.' },
+    { nombre: 'MÁSCARA TÁCTICA', nombre_en: 'Tech Mask', slot: 'STRATEGIST', tier: 'B', uso: 'Defensa',
+      descripcion: 'Reduce el efecto de destellos, gas y EMP enemigos y previene el hackeo. Te mantiene funcional entre el caos de utilidades.' }
+];
+
+// Icono REAL de cada perk (descargado a icons/perks-bo7/ — imágenes en nuestro
+// repo, sin links externos). El slug = nombre_en en minúsculas con guiones,
+// que coincide con los nombres de archivo. Si algún icono faltara, el render
+// cae al distintivo con la inicial y el color de la especialidad.
+MULTIJUGADOR.forEach(p => {
+    if (!p.icon) {
+        const slug = p.nombre_en.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        p.icon = `icons/perks-bo7/${slug}.png`;
+    }
+});
+
+// Bonus de cada especialidad (se activan al equipar 3 perks de la misma).
+const ESPECIALIDADES = [
+    { nombre: 'ENFORCER', color: '#EF4444', desc: 'Tras cada baja, ganás un impulso breve de velocidad de movimiento y regeneración de salud. Recompensa el juego agresivo y encadenar peleas.' },
+    { nombre: 'RECON', color: '#00A8FF', desc: 'Al reaparecer ves la dirección del enemigo más cercano, y el HUD pulsa en los bordes ante enemigos fuera de tu vista. Awareness constante.' },
+    { nombre: 'STRATEGIST', color: '#00FF87', desc: 'Ganás puntos extra por objetivos, desplegás el equipamiento más rápido y resaltás el equipamiento enemigo cercano. Rey de los modos de objetivo.' }
+];
+
+// Color por especialidad (para el distintivo cuando el perk no tiene icono).
+const ESP_COLORS = { ENFORCER: '#EF4444', RECON: '#00A8FF', STRATEGIST: '#00FF87' };
+
+
 function injectVentajasReadabilityFix() {
     if (document.getElementById('ventajas-readability-fix')) return;
     const style = document.createElement('style');
@@ -351,14 +436,22 @@ function injectVentajasReadabilityFix() {
     document.head.appendChild(style);
 }
 
-const TIER_COLORS_V = { S: '#FF9500', A: '#00FF87', B: '#00A8FF', C: '#BF5FFF' };
+const TIER_COLORS_V = { S: '#FF9500', A: '#00FF87', B: '#00A8FF', C: '#BF5FFF', D: '#7A8494' };
 
 function renderItemVentaja(item) {
     const color = TIER_COLORS_V[item.tier];
+    // Los perks de MP no tienen icono propio: se muestra un distintivo con la
+    // inicial y el color de su especialidad de combate.
+    const espColor = (typeof ESP_COLORS !== 'undefined' && ESP_COLORS[item.slot]) || color;
+    const iconoHtml = item.icon
+        ? `<img src="${item.icon}" alt="${item.nombre}" onerror="this.style.display='none'">`
+        : `<div class="ventaja-badge" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+                font-family:var(--font-mono);font-size:20px;font-weight:800;color:${espColor};
+                background:${espColor}14;border-radius:8px">${(item.slot || '?').charAt(0)}</div>`;
     return `
     <div class="ventaja-card" style="border-left:3px solid ${color}">
         <div class="ventaja-icono-img">
-            <img src="${item.icon}" alt="${item.nombre}" onerror="this.style.display='none'">
+            ${iconoHtml}
         </div>
         <div class="ventaja-info">
             <div class="ventaja-header">
@@ -401,6 +494,7 @@ function renderVentajas(filtro = 'perks') {
     if (filtro === 'perks') lista = VENTAJAS;
     else if (filtro === 'letales') lista = LETALES;
     else if (filtro === 'tacticos') lista = TACTICOS;
+    else if (filtro === 'multijugador') lista = (typeof MULTIJUGADOR !== 'undefined' ? MULTIJUGADOR : []);
     else lista = VENTAJAS;
 
     if (!lista.length) {
@@ -414,13 +508,42 @@ function renderVentajas(filtro = 'perks') {
         S: lista.filter(i => i.tier === 'S'),
         A: lista.filter(i => i.tier === 'A'),
         B: lista.filter(i => i.tier === 'B'),
-        C: lista.filter(i => i.tier === 'C')
+        C: lista.filter(i => i.tier === 'C'),
+        D: lista.filter(i => i.tier === 'D')
     };
 
+    // En Multijugador BO7, arriba de la tier list va el bloque que explica las
+    // 3 especialidades de combate y su bonus (equipar 3 perks de la misma).
+    const banner = (filtro === 'multijugador' && typeof ESPECIALIDADES !== 'undefined')
+        ? renderEspecialidades()
+        : '';
+
     container.innerHTML = `
+        ${banner}
         ${renderTierGroup('S', grupos.S, '#FF9500')}
         ${renderTierGroup('A', grupos.A, '#00FF87')}
         ${renderTierGroup('B', grupos.B, '#00A8FF')}
         ${renderTierGroup('C', grupos.C, '#BF5FFF')}
+        ${renderTierGroup('D', grupos.D, '#7A8494')}
     `;
+}
+
+// Bloque de especialidades de combate (solo Multijugador BO7).
+function renderEspecialidades() {
+    const cards = ESPECIALIDADES.map(e => `
+        <div style="flex:1 1 220px;min-width:200px;background:linear-gradient(135deg,rgba(15,21,27,.96),rgba(8,12,17,.98));
+            border:1px solid ${e.color}44;border-left:3px solid ${e.color};border-radius:10px;padding:14px 16px">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="width:10px;height:10px;border-radius:50%;background:${e.color};display:inline-block"></span>
+                <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:2px;color:${e.color};font-weight:800">${e.nombre}</span>
+            </div>
+            <div style="color:#D9E1EA;font-size:.88rem;line-height:1.5">${e.desc}</div>
+        </div>`).join('');
+    return `
+    <div style="margin-bottom:22px">
+        <div style="font-family:var(--font-mono);font-size:12px;letter-spacing:3px;color:#AEB8C4;margin-bottom:10px">
+            ⬢ ESPECIALIDADES DE COMBATE — equipá 3 perks de la misma para activar su bonus
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>
+    </div>`;
 }
