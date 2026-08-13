@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-13T10:52:08.832613
-  Total URLs: 173
+  Fecha: 2026-08-13T13:06:52.135764
+  Total URLs: 174
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -749,6 +749,12 @@
         <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/evento-call-of-duty-endowment-c-o-d-e-bowl-vii</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/warzone-quita-ganchos-grapple-hooks</loc>
