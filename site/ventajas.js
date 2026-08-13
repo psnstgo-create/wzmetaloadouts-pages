@@ -490,11 +490,17 @@ function renderVentajas(filtro = 'perks') {
     const container = document.getElementById('ventajas-container');
     if (!container) return;
 
+    // Al salir del tab Multijugador se limpia el filtro de especialidad.
+    if (filtro !== 'multijugador') espFiltro = null;
+
     let lista;
     if (filtro === 'perks') lista = VENTAJAS;
     else if (filtro === 'letales') lista = LETALES;
     else if (filtro === 'tacticos') lista = TACTICOS;
-    else if (filtro === 'multijugador') lista = (typeof MULTIJUGADOR !== 'undefined' ? MULTIJUGADOR : []);
+    else if (filtro === 'multijugador') {
+        lista = (typeof MULTIJUGADOR !== 'undefined' ? MULTIJUGADOR : []);
+        if (espFiltro) lista = lista.filter(p => p.slot === espFiltro);   // filtro por especialidad
+    }
     else lista = VENTAJAS;
 
     if (!lista.length) {
@@ -528,21 +534,44 @@ function renderVentajas(filtro = 'perks') {
     `;
 }
 
-// Bloque de especialidades de combate (solo Multijugador BO7).
+// Especialidad seleccionada como filtro en el tab Multijugador (o null = todas).
+let espFiltro = null;
+
+// Alterna el filtro por especialidad: tocar la seleccionada la deselecciona.
+function toggleEspecialidad(esp) {
+    espFiltro = (espFiltro === esp) ? null : esp;
+    renderVentajas('multijugador');
+}
+
+// Bloque de especialidades de combate (solo Multijugador BO7). Cada tarjeta
+// es un FILTRO: al tocarla muestra solo esos perks y queda seleccionada;
+// al tocarla de nuevo (o tocar otra) vuelve a la normalidad.
 function renderEspecialidades() {
-    const cards = ESPECIALIDADES.map(e => `
-        <div style="flex:1 1 220px;min-width:200px;background:linear-gradient(135deg,rgba(15,21,27,.96),rgba(8,12,17,.98));
-            border:1px solid ${e.color}44;border-left:3px solid ${e.color};border-radius:10px;padding:14px 16px">
+    const cards = ESPECIALIDADES.map(e => {
+        const sel = espFiltro === e.nombre;
+        const n = (typeof MULTIJUGADOR !== 'undefined' ? MULTIJUGADOR.filter(p => p.slot === e.nombre).length : 0);
+        return `
+        <div onclick="toggleEspecialidad('${e.nombre}')" role="button" tabindex="0" aria-pressed="${sel}"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleEspecialidad('${e.nombre}')}"
+            style="flex:1 1 220px;min-width:200px;cursor:pointer;user-select:none;transition:.15s;
+            background:${sel ? e.color + '1f' : 'linear-gradient(135deg,rgba(15,21,27,.96),rgba(8,12,17,.98))'};
+            border:1px solid ${sel ? e.color : e.color + '44'};border-left:3px solid ${e.color};border-radius:10px;padding:14px 16px;
+            box-shadow:${sel ? '0 0 0 1px ' + e.color + ',0 0 22px -6px ' + e.color : 'none'}">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
                 <span style="width:10px;height:10px;border-radius:50%;background:${e.color};display:inline-block"></span>
                 <span style="font-family:var(--font-mono);font-size:13px;letter-spacing:2px;color:${e.color};font-weight:800">${e.nombre}</span>
+                <span style="margin-left:auto;font-family:var(--font-mono);font-size:10px;letter-spacing:1px;color:${e.color}">${sel ? '✓ FILTRANDO' : n + ' PERKS'}</span>
             </div>
             <div style="color:#D9E1EA;font-size:.88rem;line-height:1.5">${e.desc}</div>
-        </div>`).join('');
+        </div>`;
+    }).join('');
+    const hint = espFiltro
+        ? `mostrando solo <b style="color:#EEF2F6">${espFiltro}</b> — tocá de nuevo para quitar el filtro`
+        : 'equipá 3 perks de la misma para activar su bonus — tocá una para filtrar';
     return `
     <div style="margin-bottom:22px">
         <div style="font-family:var(--font-mono);font-size:12px;letter-spacing:3px;color:#AEB8C4;margin-bottom:10px">
-            ⬢ ESPECIALIDADES DE COMBATE — equipá 3 perks de la misma para activar su bonus
+            ⬢ ESPECIALIDADES DE COMBATE — ${hint}
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">${cards}</div>
     </div>`;

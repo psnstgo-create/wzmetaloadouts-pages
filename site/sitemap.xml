@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-13T19:24:04.425314
-  Total URLs: 173
+  Fecha: 2026-08-13T21:41:38.254963
+  Total URLs: 174
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -749,6 +749,12 @@
         <lastmod>2026-08-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/warzone-black-ops-7-season-05-reloaded</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/warzone-quita-ganchos-grapple-hooks</loc>
