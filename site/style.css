@@ -1229,6 +1229,20 @@ footer a:hover { color: var(--gold); }
     font-family: var(--font-ui); font-size: 15px;
     color: var(--text-sec); line-height: 1.7;
 }
+/* Imágenes intercaladas en el cuerpo (del blog oficial). height:auto para que
+   NO se estiren (los <img> sin height explícito respetan el aspect-ratio). */
+.noticia-cuerpo img {
+    display: block;
+    width: 100%; height: auto;
+    margin: 22px 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+.noticia-cuerpo img + em,
+.noticia-cuerpo em.caption {
+    display: block; margin: -12px 0 20px;
+    font-size: 13px; color: var(--text-muted); text-align: center;
+}
 
 .noticia-cuerpo h1, .noticia-cuerpo h2, .noticia-cuerpo h3 {
     font-family: var(--font-display); font-weight: 800;
