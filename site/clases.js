@@ -1,8 +1,13 @@
 // ════════════════════════════════════════════
 //   CLASES.JS — Renderizado de clases/loadouts
 // ════════════════════════════════════════════
+// Las clases se CONSTRUYEN desde el meta EN VIVO (meta_warzone.json):
+// cada arquetipo (RECETAS, más abajo) elige sus armas del ranking actual
+// por categoría. Si el scraper mueve el ranking, las clases cambian solas
+// (y al re-hornear, también para Google). El array de abajo es solo el
+// RESPALDO que se muestra si el fetch del meta falla.
 
-const CLASES = [
+const CLASES_FALLBACK = [
     {
         id: 'meta_absoluto',
         estilo: 'META ABSOLUTO',
@@ -215,6 +220,184 @@ const CLASES = [
     }
 ];
 
+// ════════════════════════════════════════════════════════════════════
+//   RECETAS — arquetipos de clase. Las ARMAS se eligen del meta en vivo.
+//   Cada receta declara de qué "pool" del ranking saca primaria/secundaria:
+//     largo  = mejor de "Largo Alcance"   (FA / LMG / marksman)
+//     corto  = mejor de "Corto Alcance"    (SMG / escopeta)
+//     sniper = mejor "Fusil de precisión"
+//     ar     = mejor Fusil de asalto        smg = mejor Subfusil
+//   `unique:true` en la primaria evita repetir el mismo arma como primaria
+//   de otra clase (así cada tarjeta destaca un arma distinta).
+//   Los `stats` describen el PERFIL de juego del arquetipo (no del arma
+//   puntual), por eso se mantienen fijos por receta.
+// ════════════════════════════════════════════════════════════════════
+const RECETAS = [
+    {
+        id: 'meta_absoluto', estilo: 'META ABSOLUTO', nombre: 'Todo Terreno', icono: 'meta',
+        dificultad: 'RECOMENDADO', color: '#FF9500',
+        modos: ['battle_royale', 'resurgence', 'clasificatorio'],
+        primaria: { pool: 'largo', rol: 'PRIMARIA', unique: true },
+        secundaria: { pool: 'corto', rol: 'SECUNDARIA' },
+        stats: { movilidad: 75, daño: 82, rango: 80, facilidad: 85 },
+        desc: (p, s) => `El ${p.nombre} encabeza el meta actual${_nota(p)} y el ${s.nombre} cubre el corto alcance. La combinación más sólida para casi cualquier situación.`
+    },
+    {
+        id: 'agresivo', estilo: 'ESTILO AGRESIVO', nombre: 'Rush & Destroy', icono: 'agresivo',
+        dificultad: 'FÁCIL', color: '#EF4444',
+        modos: ['battle_royale', 'resurgence'],
+        primaria: { pool: 'smg', rol: 'PRIMARIA', unique: true },
+        secundaria: { pool: 'ar', rol: 'SECUNDARIA' },
+        stats: { movilidad: 85, daño: 80, rango: 72, facilidad: 82 },
+        desc: (p, s) => `Presión constante: el ${p.nombre} limpia interiores y peleas cerradas${_nota(p)}, y el ${s.nombre} te respalda en el medio alcance.`
+    },
+    {
+        id: 'sniper', estilo: 'FRANCOTIRADOR', nombre: 'One Shot King', icono: 'sniper',
+        dificultad: 'AVANZADO', color: '#BF5FFF',
+        modos: ['battle_royale', 'clasificatorio'],
+        primaria: { pool: 'sniper', rol: 'PRIMARIA', unique: true },
+        secundaria: { pool: 'smg', rol: 'SECUNDARIA' },
+        stats: { movilidad: 58, daño: 100, rango: 100, facilidad: 55 },
+        desc: (p, s) => `Para los que juegan de posición. El ${p.nombre} castiga a distancia${_nota(p)}, y el ${s.nombre} te respalda cuando te cierran el hueco.`
+    },
+    {
+        id: 'resurgence', estilo: 'RESURGENCE SPECIALIST', nombre: 'Domina el Respawn', icono: 'resurgence',
+        dificultad: 'MEDIO', color: '#00A8FF',
+        modos: ['resurgence'],
+        primaria: { pool: 'smg', rol: 'PRIMARIA', unique: true },
+        secundaria: { pool: 'largo', rol: 'SECUNDARIA' },
+        stats: { movilidad: 88, daño: 80, rango: 68, facilidad: 80 },
+        desc: (p, s) => `Pensado para el ritmo rápido de Resurgence: el ${p.nombre}${_nota(p)} se apoya en el ${s.nombre} para estirar el alcance.`
+    },
+    {
+        id: 'black_ops_royale', estilo: 'BLACK OPS ROYALE', nombre: 'Floor Loot King', icono: 'bor',
+        dificultad: 'ESTRATÉGICO', color: '#06B6D4',
+        modos: ['black_ops_royale'],
+        primaria: {
+            pool: 'largo', rol: 'BUSCAR EN LOOT', attachments: [
+                { slot: 'Arquetipo', item: 'Recon — Prioriza este' },
+                { slot: 'Mejora 1', item: 'Control Retroceso Vertical' },
+                { slot: 'Mejora 2', item: 'Control Retroceso Horizontal' },
+                { slot: 'Mejora 3', item: 'Rango de Daño Aumentado' },
+                { slot: 'Mejora 4', item: 'Cargador Grande' }
+            ]
+        },
+        secundaria: {
+            pool: 'sniper', rol: 'BUSCAR EN LOOT', attachments: [
+                { slot: 'Nota', item: 'En BOR usas Arquetipos, no attachments' },
+                { slot: 'Arquetipo', item: 'Sniper — Mayor velocidad de bala' },
+                { slot: 'Mejora 1', item: 'Velocidad de Bala' },
+                { slot: 'Mejora 2', item: 'Daño por Disparo' },
+                { slot: 'Consejo', item: 'Prioriza recoger esta arma' }
+            ]
+        },
+        stats: { movilidad: 65, daño: 88, rango: 85, facilidad: 60 },
+        desc: (p, s) => `En Black Ops Royale no hay clases: usás lo que encontrás. El ${p.nombre} y el ${s.nombre} están entre las armas más fuertes del loot del suelo ahora mismo.`
+    },
+    {
+        id: 'clasificatorio', estilo: 'RANKED / CLASIFICATORIO', nombre: 'Competitive Edge', icono: 'ranked',
+        dificultad: 'ALTO NIVEL', color: '#00FF87',
+        modos: ['clasificatorio'],
+        primaria: { pool: 'largo', rol: 'PRIMARIA' },
+        secundaria: { pool: 'smg', rol: 'SECUNDARIA' },
+        stats: { movilidad: 60, daño: 90, rango: 95, facilidad: 62 },
+        desc: (p, s) => `En el clasificatorio mandan la consistencia y el control. El ${p.nombre} domina las distancias largas${_nota(p)} y el ${s.nombre} resuelve el corto.`
+    }
+];
+
+// Clases activas: arrancan con el respaldo (contenido inmediato para el
+// pre-render / sin-JS-fetch) y se pisan con las del meta en vivo al cargar.
+let CLASES = CLASES_FALLBACK;
+
+// ── Helpers de construcción desde armas-data.json (fuente CANÓNICA) ─────
+// Se elige por _catRank (el mismo ranking por categoría que usan el tier
+// list, el home y las fichas) -> las clases nunca contradicen al resto del
+// sitio. Los attachments en vivo los pone attachmentsDe() desde
+// meta_warzone.json; aquí solo va el fallback (loadout de la propia arma).
+function _colorTipo(tipo) {
+    const t = _norm(tipo);
+    if (t.includes('subfusil')) return '#00FF87';
+    if (t.includes('asalto')) return '#3B82F6';
+    if (t.includes('francotirador') || t.includes('precis')) return '#BF5FFF';
+    if (t.includes('tactico') || t.includes('marksman')) return '#F59E0B';
+    if (t.includes('ametralladora')) return '#EF4444';
+    if (t.includes('escopeta')) return '#06B6D4';
+    return '#3B82F6';
+}
+function _tierDe(a) {
+    const c = a._catRank;
+    return a.tier || (c != null ? (c <= 2 ? 'S' : c <= 5 ? 'A' : c <= 9 ? 'B' : 'C') : 'A');
+}
+function _nota(w) {
+    if (w && w._flags) {
+        if (w._flags.nuevo) return ' (arma nueva de la temporada)';
+        if (w._flags.buff) return ' tras su reciente buff';
+    }
+    return '';
+}
+// Fallback de attachments: el primer loadout de la propia arma en armas-data.
+function _attFallback(a) {
+    const lo = Array.isArray(a.loadouts) ? a.loadouts[0] : null;
+    const items = lo && Array.isArray(lo.items) ? lo.items : [];
+    return items.map(x => ({ slot: x.label || traducirSlot(x.slot || ''), item: traducirItem(x.name || x.item || '') }));
+}
+
+function _armaObj(a, rol) {
+    return {
+        nombre: a.nombre, rol, tipo: a.tipo || '',
+        tier: _tierDe(a),
+        imagen: a.imagen || `/weapons/gold/${a.nombre}.png`,
+        color: _colorTipo(a.tipo),
+        attachments: _attFallback(a),
+        _flags: { nuevo: !!a.es_nuevo, buff: !!a.es_buff, nerf: !!a.es_nerfeada }
+    };
+}
+
+function _buildClase(r, ap, as) {
+    const primaria = _armaObj(ap, r.primaria.rol || 'PRIMARIA');
+    const secundaria = _armaObj(as, r.secundaria.rol || 'SECUNDARIA');
+    if (r.primaria.attachments) primaria.attachments = r.primaria.attachments;      // BOR: arquetipos fijos
+    if (r.secundaria.attachments) secundaria.attachments = r.secundaria.attachments;
+    return {
+        id: r.id, estilo: r.estilo, nombre: r.nombre, icono: r.icono,
+        dificultad: r.dificultad, modos: r.modos, color: r.color,
+        primaria, secundaria, stats: r.stats,
+        descripcion: r.desc(primaria, secundaria)
+    };
+}
+
+// Construye TODAS las clases desde el arreglo de armas (Object.values de
+// armas-data.armas). Devuelve null si no hay datos (conserva el respaldo).
+function _esTipo(a, re) { return re.test(_norm(a.tipo || '')); }
+function buildClases(armasArr) {
+    if (!Array.isArray(armasArr) || !armasArr.length) return null;
+    const rank = a => (a._catRank != null ? a._catRank : 999);
+    const byRank = arr => arr.slice().sort((x, y) => rank(x) - rank(y));
+    const pools = {
+        ar:     byRank(armasArr.filter(a => _esTipo(a, /asalto/))),
+        smg:    byRank(armasArr.filter(a => _esTipo(a, /subfusil/))),
+        sniper: byRank(armasArr.filter(a => _esTipo(a, /francotirador|precis/)))
+    };
+    pools.largo = pools.ar;   // alias de receta: "largo alcance" = mejor fusil
+    pools.corto = pools.smg;  //                 "corto alcance"  = mejor subfusil
+    const usadosP = new Set();
+    function take(poolName, avoid) {
+        const pool = pools[poolName] || [];
+        for (const a of pool) { if (a && a.nombre && (!avoid || !avoid.has(_norm(a.nombre)))) return a; }
+        return pool[0] || null;   // si todo está "usado", repite el mejor
+    }
+    const out = [];
+    for (const r of RECETAS) {
+        const ap = take(r.primaria.pool, r.primaria.unique ? usadosP : null);
+        if (!ap) continue;
+        if (r.primaria.unique) usadosP.add(_norm(ap.nombre));
+        const as = take(r.secundaria.pool, new Set([_norm(ap.nombre)]));  // secundaria ≠ primaria
+        if (!as) continue;
+        out.push(_buildClase(r, ap, as));
+    }
+    return out.length ? out : null;
+}
+
 // ── Iconos propios (SVG line-tactical, heredan el color via currentColor) ──
 const ICON_PATHS = {
     agresivo:  '<path d="M4 5L11 12L4 19"/><path d="M12 5L19 12L12 19"/>',
@@ -360,51 +543,43 @@ function _modoActual() {
 
 async function cargarMeta() {
     try {
-        const r = await fetch('/meta_warzone.json', { cache: 'no-cache' });
-        if (!r.ok) return;
-        const data = await r.json();
-        const arr = Array.isArray(data) ? data : (data.armas || []);
-        const map = {};
-        arr.forEach(a => {
-            const nom = a.arma || a.nombre;
-            const att = a.attachments;
-            if (nom && Array.isArray(att) && att.length) {
-                map[_norm(nom)] = att.map(x => ({
-                    slot: traducirSlot(x.slot || x.tipo || ''),
-                    item: traducirItem(x.item || x.nombre || '')
-                }));
-            }
-        });
-        META_LOADOUTS = map;
-        // Tier CANONICO en vivo: los tiers escritos en CLASES son una foto del
-        // dia en que se curo la clase; aca se pisan con el tier sincronizado
-        // de armas-data.json (_catRank de meta-core, el mismo del resto del sitio).
+        // 1) meta_warzone.json -> META_LOADOUTS: attachments EN VIVO por nombre
+        //    de arma. attachmentsDe() los usa al renderizar cada clase.
         try {
-            const r2 = await fetch('/armas-data.json', { cache: 'no-cache' });
-            if (r2.ok) {
-                const d2 = await r2.json();
-                const tierPorNombre = {};
-                Object.values(d2.armas || {}).forEach(a => {
-                    if (!a || !a.nombre) return;
-                    const cr = a._catRank;
-                    const t = (cr != null)
-                        ? (cr <= 2 ? 'S' : cr <= 5 ? 'A' : cr <= 9 ? 'B' : 'C')
-                        : (a.tier || null);
-                    if (t) tierPorNombre[_norm(a.nombre)] = t;
+            const r = await fetch('/meta_warzone.json', { cache: 'no-cache' });
+            if (r.ok) {
+                const data = await r.json();
+                const metaArr = Array.isArray(data) ? data : (data.armas || []);
+                const map = {};
+                metaArr.forEach(a => {
+                    const nom = a.arma || a.nombre;
+                    const att = a.attachments;
+                    if (nom && Array.isArray(att) && att.length) {
+                        map[_norm(nom)] = att.map(x => ({
+                            slot: traducirSlot(x.slot || x.tipo || ''),
+                            item: traducirItem(x.item || x.nombre || '')
+                        }));
+                    }
                 });
-                (typeof CLASES !== 'undefined' ? CLASES : []).forEach(c => {
-                    Object.values(c).forEach(v => {
-                        if (v && typeof v === 'object' && v.nombre && v.tier) {
-                            const t = tierPorNombre[_norm(v.nombre)];
-                            if (t) v.tier = t;
-                        }
-                    });
-                });
+                META_LOADOUTS = map;
             }
-        } catch (e2) { /* sin armas-data: quedan los tiers de respaldo */ }
-        if (typeof renderTodas === 'function') renderTodas(_modoActual()); // re-render con loadouts en vivo
+        } catch (e1) { /* sin meta_warzone: attachmentsDe usa el loadout propio */ }
+
+        // 2) armas-data.json -> CONSTRUIR las clases. La selección de armas se
+        //    hace por _catRank (el MISMO ranking canónico del tier list, el
+        //    home y las fichas). Así, cuando el scraper mueve el meta, las
+        //    clases se re-arman solas (y al re-hornear, también para Google).
+        const r2 = await fetch('/armas-data.json', { cache: 'no-cache' });
+        if (r2.ok) {
+            const d2 = await r2.json();
+            const live = buildClases(Object.values(d2.armas || {}));
+            if (live && live.length) CLASES = live;
+        }
+
+        if (typeof renderTodas === 'function') renderTodas(_modoActual()); // re-render con clases en vivo
     } catch (e) {
-        console.warn('[CLASES] meta_warzone.json no disponible, uso loadouts de respaldo');
+        console.warn('[CLASES] datos no disponibles, uso clases de respaldo');
+        if (typeof renderTodas === 'function') renderTodas(_modoActual());
     }
 }
 
