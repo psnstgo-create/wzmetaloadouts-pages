@@ -62,8 +62,38 @@ body{padding-bottom:70px}
 .bo7-card h3{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.25rem;color:#EEF2F6;margin:0 0 4px}
 .bo7-card .cnt{font-family:'Share Tech Mono',monospace;font-size:.66rem;letter-spacing:.12em;color:#4DB8FF}
 .bo7-card p{color:#C7D0DA;font-family:'Rajdhani',sans-serif;font-size:.95rem;line-height:1.5;margin:8px 0 0}
-.bo7-note{margin:6px 0 30px;padding:16px 18px;border-radius:12px;background:rgba(240,196,25,.06);border:1px solid rgba(240,196,25,.25);color:#D9E1EA;font-family:'Rajdhani',sans-serif;font-size:.95rem;line-height:1.55}
+.bo7-hero h1 .hl{color:#4DB8FF}
+.bo7-note{margin:26px 0 30px;padding:16px 18px;border-radius:12px;background:rgba(240,196,25,.06);border:1px solid rgba(240,196,25,.25);color:#D9E1EA;font-family:'Rajdhani',sans-serif;font-size:.95rem;line-height:1.55}
 .bo7-note a{color:#F0C419;font-weight:700}
+/* nav secundaria + búsqueda + chips */
+.bo7-sub{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0 4px}
+.bo7-sub a{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.04em;color:#B9C2CC;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:7px 15px;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:.13s}
+.bo7-sub a svg{width:15px;height:15px}
+.bo7-sub a:hover{color:#EEF2F6;border-color:#4DB8FF}
+.bo7-search{max-width:480px;margin:18px auto 6px}
+.bo7-search input{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:#EEF2F6;font-family:'Rajdhani',sans-serif;font-size:.95rem;outline:none}
+.bo7-search input:focus{border-color:rgba(0,168,255,.5)}
+#bo7Cats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0}
+.bo7-chip{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.04em;color:#B9C2CC;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:6px 14px;cursor:pointer;transition:.13s}
+.bo7-chip:hover{color:#EEF2F6;border-color:rgba(255,255,255,.25)}
+.bo7-chip.on{color:#0a0f0a;background:#4DB8FF;border-color:#4DB8FF}
+.bo7-count{text-align:center;font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.1em;color:#828D99;margin:2px 0 14px}
+.bo7-sec-h{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.15rem;color:#EEF2F6;letter-spacing:.02em;margin:6px 0 12px;border-left:3px solid #F0C419;padding-left:10px}
+#bo7New{margin:22px 0 8px}
+/* tarjetas de arma */
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:14px}
+.wcard{display:flex;align-items:center;gap:15px;position:relative;padding:18px 20px;border-radius:14px;text-decoration:none;background:linear-gradient(135deg,rgba(15,21,27,.96),rgba(8,12,17,.98));border:1px solid rgba(255,255,255,.08);border-left:4px solid var(--tc,#4DB8FF);transition:transform .13s,border-color .13s}
+.wcard:hover{transform:translateY(-2px);border-color:var(--tc,#4DB8FF)}
+.wc-tier{position:absolute;top:10px;right:12px;font-family:'Share Tech Mono',monospace;font-weight:800;font-size:.82rem;color:#0a0f0a;width:26px;height:26px;display:grid;place-items:center;border-radius:6px}
+.wc-img{width:104px;height:66px;flex-shrink:0;display:grid;place-items:center}
+.wc-img img{max-width:100%;max-height:100%;object-fit:contain}
+.wc-body{min-width:0;flex:1}
+.wc-name{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.32rem;color:#EEF2F6;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.wc-new{font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:#0a0f0a;background:#00FF87;padding:3px 7px;border-radius:4px}
+.wc-meta{font-family:'Rajdhani',sans-serif;font-size:.92rem;color:#9AA4B0;margin-top:4px}
+.wc-pick{color:#B9C2CC}
+.wc-arrow{width:20px;height:20px;color:#5a6472;flex-shrink:0}
+.bo7-empty{text-align:center;color:#828D99;font-family:'Rajdhani',sans-serif;padding:30px}
 </style>
 </head>
 <body>
@@ -102,37 +132,25 @@ body{padding-bottom:70px}
 
     <main class="bo7-page">
       <div class="bo7-hero">
-        <div class="bo7-kicker">Call of Duty</div>
-        <h1>Black Ops 7</h1>
-        <p>Todo el contenido propio de BO7 en un lugar: sus mapas de Multijugador, los de Zombies y la tier list de ventajas por especialidad. El meta de armas es compartido con Warzone.</p>
+        <div class="bo7-kicker">Call of Duty · Temporada 5</div>
+        <h1>El meta de <span class="hl">Black Ops 7</span></h1>
+        <p>Las mejores armas y loadouts de Black Ops 7, rankeadas. El mismo arsenal que Warzone: tier, pick rate y builds verificados, actualizados cada parche.</p>
       </div>
 
-      <div class="bo7-grid">
-        <a class="bo7-card" href="/mapas-multijugador-black-ops-7">
-          <div class="bo7-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3L3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15"></path></svg></div>
-          <h3>Multijugador</h3>
-          <span class="cnt">19 MAPAS · 6V6 Y 20V20</span>
-          <p>Todos los mapas del multijugador de BO7 con sus POIs y callouts: Nuketown 2025, Blackheart, Colossus y más.</p>
-        </a>
-        <a class="bo7-card" href="/mapas-zombies-black-ops-7">
-          <div class="bo7-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7v5l-2 3h18l-2-3V9a7 7 0 0 0-7-7z"></path><path d="M9 21h6"></path></svg></div>
-          <h3>Zombies</h3>
-          <span class="cnt">10 MAPAS · ROUND-BASED Y MÁS</span>
-          <p>Los mapas de Zombies de BO7, incluido Rex Infernus (el final de la historia): round-based, supervivencia y arcade.</p>
-        </a>
-        <a class="bo7-card" href="/armas?juego=bo7">
-          <div class="bo7-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-4h12l-2 4M8 12v4M16 12v4"></path></svg></div>
-          <h3>Armas</h3>
-          <span class="cnt">TODO EL ARSENAL · TIER LIST · BUILDS</span>
-          <p>Todas las armas de Black Ops 7 con sus stats, tier y loadouts. Son las mismas que se usan en Warzone.</p>
-        </a>
-        <a class="bo7-card" href="/ventajas#multijugador">
-          <div class="bo7-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg></div>
-          <h3>Ventajas (Perks)</h3>
-          <span class="cnt">22 PERKS · 3 ESPECIALIDADES</span>
-          <p>Tier list de los perks del multijugador de BO7 por especialidad de combate: Enforcer, Recon y Strategist.</p>
-        </a>
-      </div>
+      <nav class="bo7-sub" aria-label="Secciones de Black Ops 7">
+        <a href="/mapas-multijugador-black-ops-7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3L3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15"></path></svg>Mapas Multijugador</a>
+        <a href="/mapas-zombies-black-ops-7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7v5l-2 3h18l-2-3V9a7 7 0 0 0-7-7z"></path><path d="M9 21h6"></path></svg>Mapas Zombies</a>
+        <a href="/ventajas#multijugador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"></path></svg>Ventajas (Perks)</a>
+      </nav>
+
+      <div class="bo7-search"><input id="bo7Search" type="text" placeholder="Buscar arma por nombre (ej: mk35, fg42)" autocomplete="off" spellcheck="false"></div>
+
+      <section id="bo7New"></section>
+
+      <div class="bo7-sec-h">Todas las armas</div>
+      <div id="bo7Cats"></div>
+      <div class="bo7-count"><span id="bo7Count">53</span> ARMAS DE BLACK OPS 7</div>
+      <div id="bo7Grid"><div class="bo7-empty">Cargando arsenal…</div></div>
 
       <div class="bo7-note">
         El <b>arsenal es compartido con Warzone</b>: las armas de Black Ops 7 son las mismas que se usan en Warzone. Por eso la <a href="/">tier list</a> y las <a href="/clases">mejores clases</a> valen para los dos.
@@ -156,6 +174,7 @@ body{padding-bottom:70px}
     function ce(){if(!d)return;d.classList.remove('open');o.classList.remove('open');document.body.style.overflow='';}
     if(b)b.addEventListener('click',ab);if(o)o.addEventListener('click',ce);if(c)c.addEventListener('click',ce);})();
     </script>
+    <script src="/js/bo7-hub.js"></script>
     <script src="/js/game-switch.js"></script>
     <script src="/js/server-status.js"></script>
 
