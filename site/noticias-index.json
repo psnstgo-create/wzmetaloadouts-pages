@@ -1,5 +1,24 @@
 [
   {
+    "slug": "evento-last-call",
+    "url": "/noticias/evento-last-call",
+    "titulo": "Last Call en Warzone: ¡Conseguí gratis la nueva arma cuerpo a cuerpo Mace!",
+    "resumen": "Preparate para el evento Last Call en Call of Duty Warzone. Enterate de las fechas, cómo participar y cómo desbloquear gratis la devastadora arma Mace.",
+    "imagen": "/uploads/evento-last-call.jpg",
+    "categoria": "eventos",
+    "destacada": false,
+    "tags": [
+      "Warzone",
+      "Last Call",
+      "Evento",
+      "Mace",
+      "Black Ops 7",
+      "Temporada 5"
+    ],
+    "date": "2026-08-14 13:42",
+    "fecha_legible": "14 de Agosto 2026"
+  },
+  {
     "slug": "warzone-black-ops-7-season-05-reloaded",
     "url": "/noticias/warzone-black-ops-7-season-05-reloaded",
     "titulo": "Season 05 Reloaded de Warzone y Black Ops 7: vuelve Black Ops Royale, llega Loaded Resurgence y más",
