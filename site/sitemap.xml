@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-14T15:35:23.095034
-  Total URLs: 175
+  Fecha: 2026-08-14T16:53:03.017611
+  Total URLs: 176
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -44,6 +44,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/mapas</loc>
+        <lastmod>2026-08-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/black-ops-7</loc>
         <lastmod>2026-08-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

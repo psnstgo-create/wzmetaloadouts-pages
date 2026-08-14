@@ -105,7 +105,7 @@ body{padding-bottom:74px}
             border: 1px solid rgba(255,255,255,.11) !important;
             box-shadow: 0 0 18px -12px rgba(255,255,255,.45) !important;
         }
-    </style></head>
+    </style><style id="wzgame-style">.wzgame-bar{display:flex;justify-content:center;gap:8px;padding:10px 14px;background:rgba(7,10,14,.6);border-bottom:1px solid rgba(255,255,255,.06)}.wzgame-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-ui,"Rajdhani",sans-serif);font-weight:700;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;padding:8px 20px;border-radius:9px;text-decoration:none;cursor:pointer;transition:.15s;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#AEB8C4}.wzgame-btn:hover{color:#EEF2F6;border-color:rgba(255,255,255,.22)}.wzgame-btn.on{background:linear-gradient(135deg,#57b524,#8ed13f);border-color:#8ed13f;color:#0a0f0a;box-shadow:0 0 18px -6px #8ed13f}.wzgame-btn.soon{opacity:.5;cursor:not-allowed}.wzgame-tag{font-size:.6rem;letter-spacing:.1em;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.12);color:#cfd6de}.wzgame-btn.on .wzgame-tag{background:rgba(0,0,0,.2);color:#0a0f0a}</style></head>
 <body>
     <div class="bg-grid"></div>
 
@@ -120,7 +120,7 @@ body{padding-bottom:74px}
       <button class="icon-btn menu-only" id="menuBtn" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
     </div>
   </div>
-</header>
+</header><nav class="wzgame-bar" aria-label="Elegir juego"><a class="wzgame-btn on" href="/">Warzone</a><a class="wzgame-btn" href="/black-ops-7">Black Ops 7</a><span class="wzgame-btn soon">Modern Warfare 4<span class="wzgame-tag">PRONTO</span></span></nav>
 <div class="wzstatus"><span class="live"><span class="dot"></span>META LIVE</span><span class="season">TEMPORADA 5</span></div>
 <div class="wzdrawer-ov" id="drawerOverlay"></div>
 <aside class="wzdrawer" id="drawer" aria-hidden="true">
@@ -478,6 +478,7 @@ body{padding-bottom:74px}
     </footer>
 
 <script src="ventajas.js"></script>
+<script src="/js/game-switch.js"></script>
 <script src="/js/server-status.js"></script>
 
     <script>
@@ -489,7 +490,13 @@ body{padding-bottom:74px}
             if (typeof renderVentajas === 'function') renderVentajas(tipo);
         }
         document.addEventListener('DOMContentLoaded', () => {
-            if (typeof renderVentajas === 'function') renderVentajas('perks');
+            // Soporte de deep-link por hash (ej: /ventajas#multijugador desde el hub BO7)
+            const hash = (location.hash || '').replace('#', '');
+            const valido = ['perks', 'multijugador', 'letales', 'tacticos'];
+            const inicial = valido.includes(hash) ? hash : 'perks';
+            const btn = document.querySelector(`.ventajas-tab[data-tipo="${inicial}"]`);
+            if (btn && inicial !== 'perks') cambiarTipoVentaja(btn, inicial);
+            else if (typeof renderVentajas === 'function') renderVentajas('perks');
         });
     </script>
 

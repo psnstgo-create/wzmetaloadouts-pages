@@ -716,7 +716,22 @@ async function init() {
     let source;
 
     if (armasDataRes.ok) {
-        const armasData = await armasDataRes.json();
+        let armasData = await armasDataRes.json();
+        // Filtro por JUEGO (ej: /armas?juego=bo7 desde el hub de Black Ops 7).
+        // Cada arma trae 'juego' (Fase 0). Hoy todas son bo7 → no cambia nada;
+        // cuando MW4 integre, /armas?juego=mw4 muestra solo las de MW4. Sin
+        // param = Warzone (todas las integradas al momento).
+        try {
+            const juegoParam = new URLSearchParams(location.search).get('juego');
+            if (juegoParam && armasData.armas) {
+                const filtradas = {};
+                Object.entries(armasData.armas).forEach(([slug, w]) => {
+                    if ((w.juego || 'bo7') === juegoParam) filtradas[slug] = w;
+                });
+                armasData = Object.assign({}, armasData, { armas: filtradas });
+                console.log(`[ARMAS] filtrado por juego='${juegoParam}': ${Object.keys(filtradas).length} armas`);
+            }
+        } catch (e) { /* sin URLSearchParams: sin filtro */ }
         raw = adaptArmasDataToLegacyFormat(armasData, freshRankings);
         source = `armas-data.json + meta_warzone.json (cruzados)`;
     } else {
