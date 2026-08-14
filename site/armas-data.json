@@ -15,6 +15,7 @@
   "armas": {
     "kogot-7": {
       "nombre": "Kogot-7",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
       "tier": "C",
@@ -509,6 +510,7 @@
     },
     "mk-78": {
       "nombre": "MK.78",
+      "juego": "bo7",
       "tipo": "Ametralladora ligera",
       "rango": "Largo Alcance",
       "tier": "C",
@@ -758,6 +760,7 @@
     },
     "coda-9": {
       "nombre": "CODA 9",
+      "juego": "bo7",
       "tipo": "Pistola",
       "rango": "Corto Alcance",
       "tier": "C",
@@ -1084,6 +1087,7 @@
     },
     "cbrs-3": {
       "nombre": "CBRS-3",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
       "tier": "C",
@@ -1599,6 +1603,7 @@
     },
     "1911-pistol": {
       "nombre": "1911 Pistol",
+      "juego": "bo7",
       "tipo": "Pistola",
       "rango": "Corto Alcance",
       "tier": "—",
@@ -1898,6 +1903,7 @@
     },
     "voyak-kt-3": {
       "nombre": "Voyak KT-3",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": "Largo Alcance",
       "tier": "S",
@@ -2412,6 +2418,7 @@
     },
     "strider-300": {
       "nombre": "Strider 300",
+      "juego": "bo7",
       "tipo": "Rifle de francotirador",
       "rango": null,
       "tier": "A",
@@ -2877,6 +2884,7 @@
     },
     "carbon-57": {
       "nombre": "Carbon 57",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "C",
@@ -3316,6 +3324,7 @@
     },
     "vst": {
       "nombre": "VST",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "S",
@@ -3811,6 +3820,7 @@
     },
     "ds20-mirage": {
       "nombre": "DS20 Mirage",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -4311,6 +4321,7 @@
     },
     "mk35-isr": {
       "nombre": "MK35 ISR",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "S",
@@ -4831,6 +4842,7 @@
     },
     "mxr-17": {
       "nombre": "MXR-17",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -5378,6 +5390,7 @@
     },
     "egrt-17": {
       "nombre": "EGRT-17",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "B",
@@ -5852,6 +5865,7 @@
     },
     "peacekeeper-mk1": {
       "nombre": "Peacekeeper Mk1",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "B",
@@ -6367,6 +6381,7 @@
     },
     "hawker-hx": {
       "nombre": "Hawker HX",
+      "juego": "bo7",
       "tipo": "Rifle de francotirador",
       "rango": null,
       "tier": "S",
@@ -6837,6 +6852,7 @@
     },
     "dravec-45": {
       "nombre": "Dravec 45",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "B",
@@ -7275,6 +7291,7 @@
     },
     "ak-27": {
       "nombre": "AK-27",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -7822,6 +7839,7 @@
     },
     "ryden-45k": {
       "nombre": "Ryden 45K",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "A",
@@ -8266,6 +8284,7 @@
     },
     "sturmwolf-45": {
       "nombre": "Sturmwolf 45",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "S",
@@ -8751,6 +8770,7 @@
     },
     "m15-mod-0": {
       "nombre": "M15 Mod 0",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "A",
@@ -9266,6 +9286,7 @@
     },
     "mpc-25": {
       "nombre": "MPC-25",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "B",
@@ -9746,6 +9767,7 @@
     },
     "vs-recon": {
       "nombre": "VS Recon",
+      "juego": "bo7",
       "tipo": "Rifle de francotirador",
       "rango": null,
       "tier": "S",
@@ -10211,6 +10233,7 @@
     },
     "rev-46": {
       "nombre": "REV-46",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "A",
@@ -10630,6 +10653,7 @@
     },
     "razor-9mm": {
       "nombre": "Razor 9mm",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "A",
@@ -11110,6 +11134,7 @@
     },
     "x9-maverick": {
       "nombre": "X9 Maverick",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -11608,6 +11633,7 @@
     },
     "maddox-rfb": {
       "nombre": "Maddox RFB",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -12072,6 +12098,7 @@
     },
     "xm325": {
       "nombre": "XM325",
+      "juego": "bo7",
       "tipo": "Ametralladora ligera",
       "rango": null,
       "tier": "A",
@@ -12552,6 +12579,7 @@
     },
     "m8a1": {
       "nombre": "M8A1",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -13047,6 +13075,7 @@
     },
     "sokol-545": {
       "nombre": "Sokol 545",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -13527,6 +13556,7 @@
     },
     "xr-3-ion": {
       "nombre": "XR-3 Ion",
+      "juego": "bo7",
       "tipo": "Rifle de francotirador",
       "rango": null,
       "tier": "A",
@@ -13992,6 +14022,7 @@
     },
     "swordfish-a1": {
       "nombre": "Swordfish A1",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "C",
@@ -14431,6 +14462,7 @@
     },
     "sg-12": {
       "nombre": "SG-12",
+      "juego": "bo7",
       "tipo": "Escopeta",
       "rango": null,
       "tier": "C",
@@ -14759,6 +14791,7 @@
     },
     "rk-9": {
       "nombre": "RK-9",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
       "tier": "B",
@@ -15234,6 +15267,7 @@
     },
     "m10-breacher": {
       "nombre": "M10 Breacher",
+      "juego": "bo7",
       "tipo": "Escopeta",
       "rango": null,
       "tier": "C",
@@ -15594,6 +15628,7 @@
     },
     "akita": {
       "nombre": "Akita",
+      "juego": "bo7",
       "tipo": "Escopeta",
       "rango": null,
       "tier": "C",
@@ -15998,6 +16033,7 @@
     },
     "shadow-sk": {
       "nombre": "Shadow SK",
+      "juego": "bo7",
       "tipo": "Rifle de francotirador",
       "rango": null,
       "tier": "A",
@@ -16473,6 +16509,7 @@
     },
     "m34-novaline": {
       "nombre": "M34 Novaline",
+      "juego": "bo7",
       "tipo": "Fusil táctico",
       "rango": null,
       "tier": "C",
@@ -16958,6 +16995,7 @@
     },
     "jager-45": {
       "nombre": "Jäger 45",
+      "juego": "bo7",
       "tipo": "Pistola",
       "rango": null,
       "tier": "C",
@@ -17260,6 +17298,7 @@
     },
     "warden-308": {
       "nombre": "Warden 308",
+      "juego": "bo7",
       "tipo": "Fusil táctico",
       "rango": null,
       "tier": "C",
@@ -17704,6 +17743,7 @@
     },
     "velox-5-7": {
       "nombre": "Velox 5.7",
+      "juego": "bo7",
       "tipo": "Pistola",
       "rango": null,
       "tier": "C",
@@ -17930,6 +17970,7 @@
     },
     "echo-12": {
       "nombre": "Echo 12",
+      "juego": "bo7",
       "tipo": "Escopeta",
       "rango": null,
       "tier": "C",
@@ -18266,6 +18307,7 @@
     },
     "nx-ravager": {
       "nombre": "NX Ravager",
+      "juego": "bo7",
       "tipo": "Ballesta",
       "rango": null,
       "tier": "C",
@@ -18332,6 +18374,7 @@
     },
     "gdl-havoc": {
       "nombre": "GDL Havoc",
+      "juego": "bo7",
       "tipo": "Lanzador",
       "rango": null,
       "tier": "C",
@@ -18391,6 +18434,7 @@
     },
     "vx-compact": {
       "nombre": "VX Compact",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": "Corto Alcance",
       "tier": "A",
@@ -18910,6 +18954,7 @@
     },
     "krs-7-62": {
       "nombre": "KRS-7.62",
+      "juego": "bo7",
       "tipo": "Fusil táctico",
       "rango": "Largo Alcance",
       "tier": "C",
@@ -19056,6 +19101,7 @@
     },
     "grimhawk": {
       "nombre": "Grimhawk",
+      "juego": "bo7",
       "tipo": "Especial",
       "rango": null,
       "tier": "C",
@@ -19131,6 +19177,7 @@
     },
     "an-94": {
       "nombre": "AN-94",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": "Largo Alcance",
       "tier": "B",
@@ -19650,6 +19697,7 @@
     },
     "executioners-duet": {
       "nombre": "Executioner's Duet",
+      "juego": "bo7",
       "tipo": "Cuerpo a cuerpo",
       "rango": null,
       "tier": "C",
@@ -19673,6 +19721,7 @@
     },
     "siren": {
       "nombre": "Siren",
+      "juego": "bo7",
       "tipo": "Especial",
       "rango": "—",
       "tier": "C",
@@ -19716,6 +19765,7 @@
     },
     "fg42": {
       "nombre": "FG42",
+      "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
       "tier": "B",
@@ -20063,6 +20113,7 @@
     },
     "gremlin": {
       "nombre": "Gremlin",
+      "juego": "bo7",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
       "tier": "B",
@@ -20368,6 +20419,7 @@
     },
     "mammoth": {
       "nombre": "Mammoth",
+      "juego": "bo7",
       "tipo": "Ametralladora ligera",
       "rango": "Largo Alcance",
       "tier": "C",
@@ -20730,6 +20782,7 @@
     },
     "mace": {
       "nombre": "Mace",
+      "juego": "bo7",
       "tipo": "Cuerpo a cuerpo",
       "rango": null,
       "tier": null,

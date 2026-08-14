@@ -9,6 +9,7 @@
   "mapas": {
     "verdansk": {
       "nombre": "Verdansk",
+      "juego": "warzone",
       "modo": "warzone",
       "tipo": "Battle Royale",
       "imagen": "/mapas/img/verdansk-thumb.jpg",
@@ -85,6 +86,7 @@
     },
     "rebirth-island": {
       "nombre": "Rebirth Island",
+      "juego": "warzone",
       "modo": "warzone",
       "tipo": "Resurgimiento",
       "imagen": "/mapas/img/rebirth-thumb.jpg",
@@ -151,6 +153,7 @@
     },
     "havens-hollow": {
       "nombre": "Haven's Hollow",
+      "juego": "warzone",
       "modo": "warzone",
       "tipo": "Resurgimiento",
       "imagen": "/mapas/img/havens-thumb.jpg",
@@ -187,6 +190,7 @@
     },
     "fortunes-keep": {
       "nombre": "Fortune's Keep",
+      "juego": "warzone",
       "modo": "warzone",
       "tipo": "Resurgimiento",
       "imagen": "/mapas/img/fortunes-thumb.jpg",
@@ -221,6 +225,7 @@
     },
     "nuketown-2025": {
       "nombre": "Nuketown 2025",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/nuketown-2025-thumb.jpg",
@@ -235,6 +240,7 @@
     },
     "blackheart": {
       "nombre": "Blackheart",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/blackheart-thumb.jpg",
@@ -248,6 +254,7 @@
     },
     "colossus": {
       "nombre": "Colossus",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/colossus-thumb.jpg",
@@ -261,6 +268,7 @@
     },
     "cortex": {
       "nombre": "Cortex",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/cortex-thumb.jpg",
@@ -274,6 +282,7 @@
     },
     "den": {
       "nombre": "Den",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/den-thumb.jpg",
@@ -287,6 +296,7 @@
     },
     "exposure": {
       "nombre": "Exposure",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/exposure-thumb.jpg",
@@ -300,6 +310,7 @@
     },
     "express": {
       "nombre": "Express",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/express-thumb.jpg",
@@ -314,6 +325,7 @@
     },
     "flagship": {
       "nombre": "Flagship",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/flagship-thumb.jpg",
@@ -327,6 +339,7 @@
     },
     "hijacked": {
       "nombre": "Hijacked",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/hijacked-thumb.jpg",
@@ -341,6 +354,7 @@
     },
     "homestead-mp": {
       "nombre": "Homestead",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/homestead-mp-thumb.jpg",
@@ -354,6 +368,7 @@
     },
     "imprint": {
       "nombre": "Imprint",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/imprint-thumb.jpg",
@@ -367,6 +382,7 @@
     },
     "paranoia": {
       "nombre": "Paranoia",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/paranoia-thumb.jpg",
@@ -380,6 +396,7 @@
     },
     "raid": {
       "nombre": "Raid",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/raid-thumb.jpg",
@@ -394,6 +411,7 @@
     },
     "retrieval": {
       "nombre": "Retrieval",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/retrieval-thumb.jpg",
@@ -407,6 +425,7 @@
     },
     "scar": {
       "nombre": "Scar",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/scar-thumb.jpg",
@@ -420,6 +439,7 @@
     },
     "the-forge": {
       "nombre": "The Forge",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/the-forge-thumb.jpg",
@@ -433,6 +453,7 @@
     },
     "toshin": {
       "nombre": "Toshin",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Núcleo 6v6",
       "imagen": "/mapas/img/toshin-thumb.jpg",
@@ -446,6 +467,7 @@
     },
     "mission-edge": {
       "nombre": "Mission: Edge",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Skirmish 20v20",
       "imagen": "/mapas/img/mission-edge-thumb.jpg",
@@ -459,6 +481,7 @@
     },
     "mission-tide": {
       "nombre": "Mission: Tide",
+      "juego": "bo7",
       "modo": "multijugador",
       "tipo": "Skirmish 20v20",
       "imagen": "/mapas/img/mission-tide-thumb.jpg",
@@ -472,6 +495,7 @@
     },
     "ashes-of-the-damned": {
       "nombre": "Ashes of the Damned",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/ashes-of-the-damned-thumb.jpg",
@@ -485,6 +509,7 @@
     },
     "astra-malorum": {
       "nombre": "Astra Malorum",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/astra-malorum-thumb.jpg",
@@ -498,6 +523,7 @@
     },
     "rex-infernus": {
       "nombre": "Rex Infernus",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/rex-infernus-thumb.jpg",
@@ -511,6 +537,7 @@
     },
     "avalon": {
       "nombre": "Avalon",
+      "juego": "warzone",
       "modo": "warzone",
       "modos": [
         "warzone",
@@ -549,6 +576,7 @@
     },
     "vandorn-farm": {
       "nombre": "Vandorn Farm",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Supervivencia",
       "imagen": "/mapas/img/vandorn-farm-thumb.jpg",
@@ -562,6 +590,7 @@
     },
     "dead-ops-arcade-4": {
       "nombre": "Dead Ops Arcade 4",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Arcade",
       "imagen": "/mapas/img/dead-ops-arcade-4-thumb.jpg",
@@ -574,6 +603,7 @@
     },
     "totenreich": {
       "nombre": "Totenreich",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/totenreich-thumb.jpg",
@@ -587,6 +617,7 @@
     },
     "kowakujo": {
       "nombre": "Kowakujō",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/kowakujo-thumb.jpg",
@@ -600,6 +631,7 @@
     },
     "eidskallen-lighthouse": {
       "nombre": "Eidskallen Lighthouse",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Supervivencia",
       "imagen": "/mapas/img/eidskallen-lighthouse-thumb.jpg",
@@ -613,6 +645,7 @@
     },
     "paradox-junction": {
       "nombre": "Paradox Junction",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Round-Based",
       "imagen": "/mapas/img/paradox-junction-thumb.jpg",
@@ -626,6 +659,7 @@
     },
     "ashwood": {
       "nombre": "Ashwood",
+      "juego": "bo7",
       "modo": "zombies",
       "tipo": "Supervivencia",
       "imagen": "/mapas/img/ashwood-thumb.jpg",

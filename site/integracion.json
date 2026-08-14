@@ -1,0 +1,9 @@
+{
+  "_comentario": "Integracion Warzone <-> titulo premium. 'juego_actual' = que juego alimenta el META de Warzone hoy (tier list, clases). Cada arma y mapa lleva su campo 'juego' (bo7 | mw4 | warzone). REGLA: Warzone (tier list, clases, mapas BR) sigue el juego integrado del momento y NO se filtra; los hubs por juego (BO7 / MW4) filtran su contenido por 'juego' (MP, Zombies, perks). Fase 0 del plan MW4 (2026-08): hoy todo es BO7; cuando MW4 integre, cambiar 'juego_actual' a 'mw4' y taggear las armas/mapas nuevos con juego:'mw4'. Escribir SIEMPRE con LF.",
+  "juego_actual": "bo7",
+  "juegos": {
+    "warzone": { "nombre": "Warzone", "corto": "WZ", "color": "#F0C419", "tipo": "persistente", "estado": "actual" },
+    "bo7":     { "nombre": "Black Ops 7", "corto": "BO7", "color": "#00A8FF", "tipo": "integrado", "lanzamiento": "2025-11", "estado": "actual" },
+    "mw4":     { "nombre": "Modern Warfare 4", "corto": "MW4", "color": "#EF4444", "tipo": "integrado", "lanzamiento": "2026-11", "estado": "proximo" }
+  }
+}
