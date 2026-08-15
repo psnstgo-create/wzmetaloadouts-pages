@@ -35,23 +35,29 @@
   }
 
   function injectStyle() {
-    if (document.getElementById('wzgame-style')) return;
+    // reemplazar el estilo si el pre-render horneó una versión vieja
+    var prev = document.getElementById('wzgame-style');
+    if (prev) prev.remove();
     var s = document.createElement('style');
     s.id = 'wzgame-style';
     s.textContent = [
-      '.wzgame-bar{display:flex;justify-content:center;gap:8px;padding:10px 14px;',
+      '.wzgame-bar{display:flex;justify-content:center;align-items:center;gap:10px;padding:10px 14px;flex-wrap:wrap;',
       'background:rgba(7,10,14,.6);border-bottom:1px solid rgba(255,255,255,.06)}',
-      '.wzgame-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-ui,"Rajdhani",sans-serif);',
-      'font-weight:700;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;',
-      'padding:8px 20px;border-radius:9px;text-decoration:none;cursor:pointer;transition:.15s;',
-      'border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#AEB8C4}',
-      '.wzgame-btn:hover{color:#EEF2F6;border-color:rgba(255,255,255,.22)}',
-      '.wzgame-btn.on{background:linear-gradient(135deg,#57b524,#8ed13f);border-color:#8ed13f;',
-      'color:#0a0f0a;box-shadow:0 0 18px -6px #8ed13f}',
-      '.wzgame-btn.soon{opacity:.5;cursor:not-allowed}',
-      '.wzgame-tag{font-size:.6rem;letter-spacing:.1em;padding:2px 6px;border-radius:5px;',
-      'background:rgba(255,255,255,.12);color:#cfd6de}',
-      '.wzgame-btn.on .wzgame-tag{background:rgba(0,0,0,.2);color:#0a0f0a}'
+      '.wzgame-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;',
+      'padding:6px 22px;border-radius:10px;text-decoration:none;cursor:pointer;transition:.15s;',
+      'border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}',
+      '.wzgame-btn img{height:30px;width:auto;display:block;opacity:.72;transition:.15s}',
+      '.wzgame-btn:hover{border-color:rgba(255,255,255,.28)}',
+      '.wzgame-btn:hover img{opacity:1}',
+      '.wzgame-btn.on{border-color:#8ed13f;background:rgba(142,209,63,.12);box-shadow:0 0 22px -6px #8ed13f}',
+      '.wzgame-btn.on img{opacity:1}',
+      '.wzgame-txt{font-family:var(--font-ui,"Rajdhani",sans-serif);font-weight:700;font-size:.9rem;',
+      'letter-spacing:.08em;text-transform:uppercase;color:#AEB8C4}',
+      '.wzgame-btn.on .wzgame-txt{color:#EEF2F6}',
+      '.wzgame-btn.soon{opacity:.55;cursor:not-allowed}',
+      '.wzgame-tag{font-family:var(--font-mono,monospace);font-size:.58rem;letter-spacing:.1em;padding:2px 6px;',
+      'border-radius:5px;background:rgba(255,255,255,.12);color:#cfd6de}',
+      '@media(max-width:520px){.wzgame-btn{padding:5px 12px;min-height:40px}.wzgame-btn img{height:24px}}'
     ].join('');
     document.head.appendChild(s);
   }
@@ -59,7 +65,12 @@
   function render(juegos) {
     // index.html/servidores.html usan <header> sin clase; el resto <header class="wzhdr">
     var host = document.querySelector('header.wzhdr') || document.querySelector('header');
-    if (!host || document.querySelector('.wzgame-bar')) return;
+    if (!host) return;
+    // Si el pre-render horneó una barra vieja en el HTML, la reemplazamos por la
+    // versión EN VIVO (así un cambio en este script siempre se refleja, no queda
+    // pegada la horneada).
+    var vieja = document.querySelector('.wzgame-bar');
+    if (vieja) vieja.remove();
     var actual = juegoActual();
     var bar = document.createElement('nav');
     bar.className = 'wzgame-bar';
@@ -72,8 +83,12 @@
       var el = document.createElement(proximo ? 'span' : 'a');
       el.className = 'wzgame-btn' + (id === actual ? ' on' : '') + (proximo ? ' soon' : '');
       if (!proximo) el.href = HOME[id] || '/';
-      var nombre = (info.corto && id !== 'warzone') ? info.nombre : info.nombre; // nombre completo
-      el.innerHTML = nombre + (proximo ? '<span class="wzgame-tag">PRONTO</span>' : '');
+      el.setAttribute('aria-label', info.nombre);
+      // logo (imagen) si el juego lo tiene; si falla o no hay, cae al texto
+      var contenido = info.logo
+        ? '<img src="' + info.logo + '" alt="' + info.nombre + '" onerror="this.outerHTML=\'<span class=\\\'wzgame-txt\\\'>' + info.nombre + '</span>\'">'
+        : '<span class="wzgame-txt">' + info.nombre + '</span>';
+      el.innerHTML = contenido + (proximo ? '<span class="wzgame-tag">PRONTO</span>' : '');
       bar.appendChild(el);
     });
 
