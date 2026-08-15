@@ -4,6 +4,6 @@
   "juegos": {
     "warzone": { "nombre": "Warzone", "corto": "WZ", "color": "#F0C419", "logo": "/img/games/warzone.png", "tipo": "persistente", "estado": "actual" },
     "bo7":     { "nombre": "Black Ops 7", "corto": "BO7", "color": "#00A8FF", "logo": "/img/games/bo7.png", "tipo": "integrado", "lanzamiento": "2025-11", "estado": "actual" },
-    "mw4":     { "nombre": "Modern Warfare 4", "corto": "MW4", "color": "#EF4444", "tipo": "integrado", "lanzamiento": "2026-10", "estado": "proximo" }
+    "mw4":     { "nombre": "Modern Warfare 4", "corto": "MW4", "color": "#EF4444", "logo": "/img/games/mw4.png", "tipo": "integrado", "lanzamiento": "2026-10", "estado": "proximo" }
   }
 }
