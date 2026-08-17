@@ -498,8 +498,49 @@ function renderCambios(){
 // ── hero ──
 function setHero(modo){const el=document.getElementById('heroBg');if(el&&HERO_BG[modo])el.style.backgroundImage=HERO_BG[modo];}
 
+// ── render: META ACTUAL destacado (el loadout meta del momento, SEO) ──
+function modoLabelMeta(){
+  if(MODO==='resurgence')return'Resurgence';
+  if(MODO==='clasificatorio'||MODO==='res_clasificatorio')return'Ranked';
+  return'Warzone';
+}
+function mhGunHtml(a,roleTxt){
+  const tier=tierDe(a),tcol=tierColor(tier),slug=slugify(a.arma);
+  const st=statsDe(a)[0]; // auto: TTK · sniper: "1 al torso"
+  const statTxt=esTipoSniper(a)?String(st.v):(st.v&&st.v!=='—'?`TTK ${st.v}`:'');
+  return `<a class="mh-gun" href="/armas/${slug}">
+    <div class="mh-pic"><img src="${escapeHtml(goldSrc(a))}" alt="${escapeHtml(a.arma)}" loading="lazy" onerror="this.style.opacity=0"></div>
+    <div class="mh-info">
+      <div class="mh-role">${escapeHtml(roleTxt)}</div>
+      <div class="mh-name">${escapeHtml(a.arma)}</div>
+      <div class="mh-chips"><span class="mh-tier" style="color:${tcol};background:${hexA(tcol,.13)};border:1px solid ${hexA(tcol,.35)}">TIER ${tier}</span>${statTxt?`<span class="mh-stat">${escapeHtml(statTxt)}</span>`:''}</div>
+    </div>
+  </a>`;
+}
+function renderMetaActual(){
+  const cont=document.getElementById('metaActual');if(!cont)return;
+  const prim=mejorDe('largo'), sec=mejorDe('corto');
+  if(!prim||!sec){cont.hidden=true;return;}
+  cont.hidden=false;
+  const ts=todasLasArmas[0]&&todasLasArmas[0].timestamp;
+  const upd=ts?('Actualizado '+fechaSolo(ts)):'';
+  const modo=modoLabelMeta();
+  cont.innerHTML=`<div class="mh-inner">
+    <div class="mh-head">
+      <span class="mh-tag"><span class="mh-dot"></span>Meta actual</span>
+      <h2 class="mh-title">El loadout que domina ${modo} ahora</h2>
+      ${upd?`<span class="mh-upd">${escapeHtml(upd)}</span>`:''}
+    </div>
+    <div class="mh-grid">
+      ${mhGunHtml(prim,'Primaria · Largo alcance')}
+      <div class="mh-plus">+</div>
+      ${mhGunHtml(sec,'Secundaria · Corto alcance')}
+    </div>
+  </div>`;
+}
+
 // ── render total ──
-function renderAll(){renderFeatured();renderTop5();renderCambios();}
+function renderAll(){renderMetaActual();renderFeatured();renderTop5();renderCambios();}
 
 // ── pills (modo filtra + hero; categoría navega al catálogo) ──
 function setPillActive(pill){
