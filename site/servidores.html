@@ -184,6 +184,14 @@ header{position:sticky;top:0;z-index:30;background:rgba(7,10,14,.9);
 .plat-item.operativo .plat-st{color:var(--green)}
 .plat-item.caido .plat-st{color:var(--red)}
 .plat-item.degradado .plat-st{color:var(--orange)}
+/* Última caída reportada (historial del evento resuelto más reciente) */
+.srv-lastdown{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:12px;
+  padding:9px 14px;border-radius:10px;background:var(--panel);border:1px solid var(--line);
+  font-family:'Rajdhani',sans-serif;font-size:.86rem;color:var(--muted)}
+.srv-lastdown b{color:var(--txt);font-weight:700}
+.srv-lastdown .ld-ic{color:var(--orange)}
+.srv-lastdown .ld-dur{font-family:'Share Tech Mono',monospace;font-size:.68rem;letter-spacing:.06em;
+  color:var(--orange);background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3);border-radius:6px;padding:2px 8px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué Warzone no conecta si el estado dice ONLINE?", "acceptedAnswer": {"@type": "Answer", "text": "El estado \"ONLINE\" indica que los servidores globales están activos. Problemas de conexión individuales pueden deberse a tu ISP, NAT restringido, o mantenimientos locales por región. Si el status es ONLINE pero no entras, prueba reiniciar el router o verificar tu tipo de NAT en configuración de red."}}, {"@type": "Question", "name": "¿Cada cuánto se actualiza el estado?", "acceptedAnswer": {"@type": "Answer", "text": "Nuestro sistema verifica el estado en Activision Support automáticamente cada hora y lo guarda en nuestro servidor. La página que ves refleja la última verificación disponible. En caso de caída masiva, el bot detecta el cambio y actualiza el estado en minutos."}}, {"@type": "Question", "name": "¿Los servidores de Warzone y BO7 se caen juntos?", "acceptedAnswer": {"@type": "Answer", "text": "No necesariamente. Al ser infraestructuras separadas, es común que Warzone esté caído por mantenimiento mientras BO7 funciona con normalidad, y viceversa. Sin embargo, si hay un fallo en el backend de Activision (autenticación, Battle.net), ambos se ven afectados al mismo tiempo."}}, {"@type": "Question", "name": "¿Dónde reporto un problema con los servidores?", "acceptedAnswer": {"@type": "Answer", "text": "El canal oficial es support.activision.com. También puedes reportar problemas en el Twitter de @ATVIAssist donde el equipo de soporte responde en tiempo real durante incidentes."}}]}</script>
 </head>
@@ -233,6 +241,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(7,10,14,.9);
   <h1>Estado de<br><span>Servidores COD</span></h1>
   <p>Estado en tiempo real de Warzone y Black Ops 7. Actualizado automáticamente desde Activision.</p>
   <div class="srv-ts">Última verificación: <b id="srvTimestamp">comprobando…</b></div>
+  <div class="srv-lastdown" id="srvLastDown" hidden></div>
 </div>
 
 <!-- CARDS -->
@@ -418,6 +427,28 @@ document.getElementById('faq').addEventListener('click', function(e){
                + '<div class="plat-st">' + (LBL[e]||e) + '</div></div></div>';
         }).join('');
         if (sec) sec.hidden = false;
+      }
+
+      // Última caída REPORTADA (historial): d.ultima_caida del checker
+      const uc = d.ultima_caida;
+      const ld = document.getElementById('srvLastDown');
+      if (uc && uc.inicio && ld) {
+        const MES = { january:'ene', february:'feb', march:'mar', april:'abr', may:'may', june:'jun', july:'jul', august:'ago', september:'sep', october:'oct', november:'nov', december:'dic' };
+        const fmtFecha = function(s){
+          const m = String(s||'').match(/([A-Za-z]+)\s+(\d+),\s+(\d{4})\s+(.+)/);
+          if (!m) return s || '';
+          return m[2] + ' ' + (MES[m[1].toLowerCase()] || m[1]) + ' ' + m[3] + ', ' + m[4];
+        };
+        let dur = '';
+        try {
+          const a = new Date(String(uc.inicio).replace(/\bP[SD]T\b|\bPT\b/i,'').trim());
+          const b = new Date(String(uc.fin).replace(/\bP[SD]T\b|\bPT\b/i,'').trim());
+          const min = Math.round((b - a) / 60000);
+          if (min > 0) dur = min < 60 ? (min + ' min') : (Math.floor(min/60) + 'h ' + (min % 60) + 'min');
+        } catch(e){}
+        ld.innerHTML = '<span class="ld-ic">⚠</span> Última caída reportada: <b>' + fmtFecha(uc.inicio) + '</b>'
+          + (dur ? ' <span class="ld-dur">duró ' + dur + '</span>' : '');
+        ld.hidden = false;
       }
     })
     .catch(function(){

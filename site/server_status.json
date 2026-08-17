@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T14:15:50.865659+00:00",
+  "timestamp": "2026-08-17T14:35:48.784869+00:00",
   "estado": "OK",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
@@ -45,6 +45,12 @@
       "estado": "operativo"
     }
   ],
+  "ultima_caida": {
+    "titulo": "Connectivity drop across listed titles",
+    "inicio": "August 17, 2026 9:43 AM PST",
+    "fin": "August 17, 2026 11:25 AM PST",
+    "event_id": "25618"
+  },
   "tweets_recientes": [],
   "eventos_activos": []
 }
