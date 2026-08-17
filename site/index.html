@@ -456,6 +456,22 @@ footer{border-top:1px solid rgba(255,149,0,.1);padding:18px 24px;text-align:cent
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
 .mono-text{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:1px}
+/* Banner de caída de servidores (server-status.js). La home NO linkea style.css
+   (usa CSS inline), así que estas reglas se duplican acá; si no, el banner salía
+   sin estilo SOLO en la home cuando hay una caída activa. Fallbacks para las 2
+   vars que la home no define (--text-sec, --font-display). */
+.server-status-banner{display:flex;align-items:flex-start;gap:14px;margin:16px 0 20px;padding:14px 18px;background:linear-gradient(135deg,rgba(255,59,59,.12),rgba(255,59,59,.04));border:1px solid rgba(255,59,59,.4);border-left:4px solid var(--red,#ff3b3b);color:var(--text,#EEF2F6);box-shadow:0 0 30px rgba(255,59,59,.08);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));animation:ssb-pulse 2s ease-in-out infinite;position:relative}
+@keyframes ssb-pulse{0%,100%{box-shadow:0 0 30px rgba(255,59,59,.08)}50%{box-shadow:0 0 40px rgba(255,59,59,.18)}}
+.ssb-icon{font-family:var(--font-display,'Rajdhani',sans-serif);font-size:26px;color:var(--red,#ff3b3b);line-height:1;flex-shrink:0;text-shadow:0 0 12px rgba(255,59,59,.6);margin-top:2px}
+.ssb-content{flex:1;min-width:0}
+.ssb-title{font-family:var(--font-display,'Rajdhani',sans-serif);font-weight:800;font-size:13px;letter-spacing:3px;color:var(--red,#ff3b3b);text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ssb-time{font-family:var(--font-mono,monospace);font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px;font-weight:400;text-transform:none}
+.ssb-detail{font-family:var(--font-ui,'Rajdhani',sans-serif);font-size:13px;color:var(--text-sec,#B9C2CC);line-height:1.45;margin-bottom:8px}
+.ssb-link{font-family:var(--font-mono,monospace);font-size:11px;letter-spacing:1.5px;color:var(--red,#ff3b3b);text-decoration:none;text-transform:uppercase;display:inline-block;padding-top:2px;transition:opacity .2s,transform .2s}
+.ssb-link:hover{opacity:.8;transform:translateX(3px)}
+.ssb-close{background:transparent;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);width:24px;height:24px;cursor:pointer;font-size:14px;line-height:1;padding:0;display:flex;align-items:center;justify-content:center;border-radius:3px;transition:all .2s;flex-shrink:0}
+.ssb-close:hover{background:rgba(255,59,59,.15);border-color:var(--red,#ff3b3b);color:var(--text,#EEF2F6)}
+@media(max-width:640px){.server-status-banner{margin:12px 0 16px;padding:12px 14px;gap:10px}.ssb-icon{font-size:22px}.ssb-title{font-size:11px;letter-spacing:2px;gap:6px}.ssb-time{font-size:9px}.ssb-detail{font-size:12px}.ssb-link{font-size:10px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"WZ Meta","alternateName":["WZ Meta Loadouts","wzmeta","wz meta","metawarzone"],"url":"https://wzmetaloadouts.com/","inLanguage":"es","description":"Tier list y mejores armas del meta de Warzone, actualizado cada parche."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WZ Meta","alternateName":["WZ Meta Loadouts","wzmeta","wz meta","metawarzone"],"url":"https://wzmetaloadouts.com/","logo":"https://wzmetaloadouts.com/favicon_wz.png","description":"Tier list, builds y datos verificados en juego de Call of Duty: Warzone y Black Ops 7, actualizados cada parche."}</script>

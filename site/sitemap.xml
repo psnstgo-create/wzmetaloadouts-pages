@@ -2,7 +2,7 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-17T12:40:28.468600
+  Fecha: 2026-08-17T13:49:43.701650
   Total URLs: 176
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -148,7 +148,7 @@
         <loc>https://wzmetaloadouts.com/armas/cbrs-3</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/1911-pistol</loc>
@@ -160,7 +160,7 @@
         <loc>https://wzmetaloadouts.com/armas/voyak-kt-3</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/strider-300</loc>
@@ -184,7 +184,7 @@
         <loc>https://wzmetaloadouts.com/armas/ds20-mirage</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/mk35-isr</loc>
@@ -196,67 +196,67 @@
         <loc>https://wzmetaloadouts.com/armas/mxr-17</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/egrt-17</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/peacekeeper-mk1</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/hawker-hx</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/dravec-45</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/ak-27</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/ryden-45k</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/sturmwolf-45</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/m15-mod-0</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/mpc-25</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/vs-recon</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/rev-46</loc>
@@ -268,7 +268,7 @@
         <loc>https://wzmetaloadouts.com/armas/razor-9mm</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/x9-maverick</loc>
@@ -286,7 +286,7 @@
         <loc>https://wzmetaloadouts.com/armas/xm325</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/m8a1</loc>
@@ -304,7 +304,7 @@
         <loc>https://wzmetaloadouts.com/armas/xr-3-ion</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/swordfish-a1</loc>
@@ -322,7 +322,7 @@
         <loc>https://wzmetaloadouts.com/armas/rk-9</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/m10-breacher</loc>
@@ -340,7 +340,7 @@
         <loc>https://wzmetaloadouts.com/armas/shadow-sk</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/m34-novaline</loc>
@@ -388,7 +388,7 @@
         <loc>https://wzmetaloadouts.com/armas/vx-compact</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/krs-7-62</loc>
@@ -424,13 +424,13 @@
         <loc>https://wzmetaloadouts.com/armas/fg42</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/gremlin</loc>
         <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/armas/mammoth</loc>
