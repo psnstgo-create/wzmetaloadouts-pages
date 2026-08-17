@@ -1,35 +1,50 @@
 {
-  "timestamp": "2026-08-17T13:52:30.554192+00:00",
-  "estado": "ALERTA",
+  "timestamp": "2026-08-17T14:15:50.865659+00:00",
+  "estado": "OK",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
     "Call of Duty: Warzone"
   ],
   "activision": {
     "Call of Duty: Black Ops 7": {
-      "estado": "ALERTA",
-      "eventos_activos": [
-        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
-      ]
+      "estado": "OK",
+      "eventos_activos": []
     },
     "Call of Duty: Warzone": {
-      "estado": "ALERTA",
-      "eventos_activos": [
-        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
-      ]
+      "estado": "OK",
+      "eventos_activos": []
     }
   },
-  "tweets_recientes": [],
-  "eventos_activos": [
+  "plataformas": [
     {
-      "fuente": "activision",
-      "juego": "Call of Duty: Black Ops 7",
-      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+      "nombre": "PlayStation 5",
+      "estado": "operativo"
     },
     {
-      "fuente": "activision",
-      "juego": "Call of Duty: Warzone",
-      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+      "nombre": "XBOX Series X|S",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "PlayStation 4",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX One",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Battle.net",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Steam",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX on PC",
+      "estado": "operativo"
     }
-  ]
+  ],
+  "tweets_recientes": [],
+  "eventos_activos": []
 }

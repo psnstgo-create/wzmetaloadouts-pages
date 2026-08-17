@@ -168,6 +168,22 @@ header{position:sticky;top:0;z-index:30;background:rgba(7,10,14,.9);
   letter-spacing:.08em;color:var(--muted);transition:border-color .15s,color .15s}
 .srv-link:hover{border-color:rgba(240,196,25,.4);color:var(--gold)}
 .srv-link svg{width:14px;height:14px}
+/* Estado por plataforma (grid automático desde server_status.json) */
+.plat-section{max-width:860px;margin:6px auto 0;padding:0 18px}
+.plat-title{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.06em;color:var(--txt);text-transform:uppercase;margin:22px 0 10px}
+.plat-grid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:520px){.plat-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:880px){.plat-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.plat-item{display:flex;align-items:center;gap:11px;padding:11px 13px;border-radius:12px;background:var(--panel);border:1px solid var(--line)}
+.plat-ic{width:22px;height:22px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;line-height:1}
+.plat-item.operativo .plat-ic{background:rgba(34,197,94,.15);color:var(--green)}
+.plat-item.caido .plat-ic{background:rgba(239,68,68,.15);color:var(--red)}
+.plat-item.degradado .plat-ic{background:rgba(251,191,36,.15);color:var(--orange)}
+.plat-name{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.95rem;color:var(--txt);line-height:1.15}
+.plat-st{font-family:'Share Tech Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;margin-top:1px}
+.plat-item.operativo .plat-st{color:var(--green)}
+.plat-item.caido .plat-st{color:var(--red)}
+.plat-item.degradado .plat-st{color:var(--orange)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué Warzone no conecta si el estado dice ONLINE?", "acceptedAnswer": {"@type": "Answer", "text": "El estado \"ONLINE\" indica que los servidores globales están activos. Problemas de conexión individuales pueden deberse a tu ISP, NAT restringido, o mantenimientos locales por región. Si el status es ONLINE pero no entras, prueba reiniciar el router o verificar tu tipo de NAT en configuración de red."}}, {"@type": "Question", "name": "¿Cada cuánto se actualiza el estado?", "acceptedAnswer": {"@type": "Answer", "text": "Nuestro sistema verifica el estado en Activision Support automáticamente cada hora y lo guarda en nuestro servidor. La página que ves refleja la última verificación disponible. En caso de caída masiva, el bot detecta el cambio y actualiza el estado en minutos."}}, {"@type": "Question", "name": "¿Los servidores de Warzone y BO7 se caen juntos?", "acceptedAnswer": {"@type": "Answer", "text": "No necesariamente. Al ser infraestructuras separadas, es común que Warzone esté caído por mantenimiento mientras BO7 funciona con normalidad, y viceversa. Sin embargo, si hay un fallo en el backend de Activision (autenticación, Battle.net), ambos se ven afectados al mismo tiempo."}}, {"@type": "Question", "name": "¿Dónde reporto un problema con los servidores?", "acceptedAnswer": {"@type": "Answer", "text": "El canal oficial es support.activision.com. También puedes reportar problemas en el Twitter de @ATVIAssist donde el equipo de soporte responde en tiempo real durante incidentes."}}]}</script>
 </head>
@@ -248,6 +264,12 @@ header{position:sticky;top:0;z-index:30;background:rgba(7,10,14,.9);
     <div class="srv-plat">PS5 · PS4 · Xbox Series · Xbox One · PC</div>
   </div>
 
+</div>
+
+<!-- ESTADO POR PLATAFORMA (automático desde Activision) -->
+<div class="plat-section" id="platSection" hidden>
+  <div class="plat-title">Estado por plataforma</div>
+  <div class="plat-grid" id="platGrid"></div>
 </div>
 
 
@@ -380,6 +402,23 @@ document.getElementById('faq').addEventListener('click', function(e){
       setCard('cardWZ', 'badgeWZ', 'txtWZ', 'eventosWZ',  av['Call of Duty: Warzone']);
       const ts = document.getElementById('srvTimestamp');
       if (ts && d.timestamp) ts.textContent = fmtTs(d.timestamp);
+
+      // Estado por PLATAFORMA (grid): d.plataformas viene del checker
+      const plats = d.plataformas || [];
+      const grid = document.getElementById('platGrid');
+      const sec  = document.getElementById('platSection');
+      if (plats.length && grid) {
+        const LBL = { operativo:'Operativo', caido:'Interrupción', degradado:'Degradado' };
+        const IC  = { operativo:'✓', caido:'✕', degradado:'!' };
+        const esc = function(s){ return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); };
+        grid.innerHTML = plats.map(function(p){
+          const e = (p.estado || 'operativo');
+          return '<div class="plat-item ' + e + '"><span class="plat-ic">' + (IC[e]||'✓') + '</span>'
+               + '<div><div class="plat-name">' + esc(p.nombre) + '</div>'
+               + '<div class="plat-st">' + (LBL[e]||e) + '</div></div></div>';
+        }).join('');
+        if (sec) sec.hidden = false;
+      }
     })
     .catch(function(){
       ['cardBO7','cardWZ'].forEach(function(id){

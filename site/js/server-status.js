@@ -88,6 +88,40 @@ function renderServerStatusPill(data) {
     }).join('');
 }
 
+// ── Traducción del aviso de Activision (inglés → español) ──
+// Los mensajes de estado de Activision vienen en inglés. Se traducen las frases
+// típicas y se limpia el prefijo "Call of Duty:" (redundante). Lo que no matchea
+// queda como está (no rompe). El orden importa: frases largas primero.
+const _SS_TRAD = [
+    [/we['’]?re\s+currently\s+experiencing\s+connectivity\s+issues\s+for\s+these\s+titles:?/i, 'Estamos con problemas de conectividad en estos títulos:'],
+    [/we\s+are\s+currently\s+experiencing\s+connectivity\s+issues\s+for\s+these\s+titles:?/i, 'Estamos con problemas de conectividad en estos títulos:'],
+    [/we['’]?re\s+aware\s+of\s+an\s+issue/i, 'Estamos al tanto de un problema'],
+    [/we\s+are\s+aware\s+of\s+an\s+issue/i, 'Estamos al tanto de un problema'],
+    [/we\s+are\s+investigating|we['’]?re\s+investigating/i, 'Estamos investigando'],
+    [/we['’]?re\s+currently\s+experiencing|we\s+are\s+currently\s+experiencing/i, 'Estamos teniendo'],
+    [/we['’]?re\s+experiencing|we\s+are\s+experiencing/i, 'Estamos teniendo'],
+    [/this\s+(issue|problem)\s+has\s+been\s+resolved|we\s+have\s+resolved\s+(this|the)\s+issue|has\s+been\s+resolved/i, 'Se resolvió el problema'],
+    [/an\s+issue\s+affecting/gi, 'un problema que afecta a'],
+    [/\baffecting\b/gi, 'que afecta a'],
+    [/connectivity\s+issues/gi, 'problemas de conectividad'],
+    [/online\s+services\s+are\s+experiencing/gi, 'los servicios en línea están teniendo'],
+    [/online\s+services/gi, 'los servicios en línea'],
+    [/for\s+these\s+titles:?/gi, 'en estos títulos:'],
+    [/players\s+may\s+experience/gi, 'los jugadores pueden tener'],
+    [/we\s+apologize\s+for\s+(the|any)\s+inconvenience/gi, 'pedimos disculpas por las molestias'],
+    [/thank\s+you\s+for\s+your\s+patience/gi, 'gracias por tu paciencia'],
+    [/we['’]?ll\s+provide\s+an\s+update|we\s+will\s+provide\s+an\s+update/gi, 'daremos novedades'],
+    [/Call\s+of\s+Duty:?\s*/g, ''],
+];
+function _ssTraducir(t) {
+    if (!t) return t;
+    _SS_TRAD.forEach(([re, es]) => { t = t.replace(re, es); });
+    t = t.replace(/\s{2,}/g, ' ').trim();
+    // Mayúscula al inicio y después de punto (queda prolijo tras las sustituciones)
+    t = t.replace(/(^|[.!?]\s+)([a-záéíóúñ])/g, (m, sep, c) => sep + c.toUpperCase());
+    return t;
+}
+
 // ── Banner de alerta (solo si hay caída activa) ──
 function renderServerStatusBanner(data) {
     let banner = document.getElementById('server-status-banner');
@@ -101,14 +135,14 @@ function renderServerStatusBanner(data) {
     const tweets = (data.tweets_recientes || []).slice(0, 1);
 
     let detalles;
-    if (eventos.length > 0) {
-        detalles = _ssEscapeHtml(eventos[0].texto || '').substring(0, 200);
-        if (detalles.length === 200) detalles += '…';
-    } else if (tweets.length > 0) {
-        detalles = _ssEscapeHtml(tweets[0].texto || '').substring(0, 200);
-    } else {
-        detalles = 'Activision investiga problemas en los servidores.';
-    }
+    let crudo;
+    if (eventos.length > 0) crudo = eventos[0].texto || '';
+    else if (tweets.length > 0) crudo = tweets[0].texto || '';
+    else crudo = 'Activision investiga problemas en los servidores.';
+    // Traducir el aviso al español ANTES de escapar/truncar
+    crudo = _ssTraducir(crudo);
+    detalles = _ssEscapeHtml(crudo).substring(0, 220);
+    if (crudo.length > 220) detalles += '…';
 
     let haceCuanto = '';
     try {
