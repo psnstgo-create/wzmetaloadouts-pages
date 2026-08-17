@@ -1,19 +1,14 @@
 {
   "mk35-isr": [
     {
-      "pareja": "mk35-isr-vs-voyak-kt-3",
-      "rival": "Voyak KT-3",
-      "rival_slug": "voyak-kt-3"
-    },
-    {
-      "pareja": "mk35-isr-vs-m15-mod-0",
-      "rival": "M15 Mod 0",
-      "rival_slug": "m15-mod-0"
-    },
-    {
       "pareja": "mk35-isr-vs-fg42",
       "rival": "FG42",
       "rival_slug": "fg42"
+    },
+    {
+      "pareja": "mk35-isr-vs-voyak-kt-3",
+      "rival": "Voyak KT-3",
+      "rival_slug": "voyak-kt-3"
     },
     {
       "pareja": "mk35-isr-vs-vx-compact",
@@ -21,63 +16,14 @@
       "rival_slug": "vx-compact"
     },
     {
-      "pareja": "mk35-isr-vs-egrt-17",
-      "rival": "EGRT-17",
-      "rival_slug": "egrt-17"
-    }
-  ],
-  "voyak-kt-3": [
-    {
-      "pareja": "mk35-isr-vs-voyak-kt-3",
-      "rival": "MK35 ISR",
-      "rival_slug": "mk35-isr"
-    },
-    {
-      "pareja": "voyak-kt-3-vs-m15-mod-0",
+      "pareja": "mk35-isr-vs-m15-mod-0",
       "rival": "M15 Mod 0",
       "rival_slug": "m15-mod-0"
     },
     {
-      "pareja": "voyak-kt-3-vs-fg42",
-      "rival": "FG42",
-      "rival_slug": "fg42"
-    },
-    {
-      "pareja": "voyak-kt-3-vs-vx-compact",
-      "rival": "VX Compact",
-      "rival_slug": "vx-compact"
-    },
-    {
-      "pareja": "voyak-kt-3-vs-egrt-17",
-      "rival": "EGRT-17",
-      "rival_slug": "egrt-17"
-    }
-  ],
-  "m15-mod-0": [
-    {
-      "pareja": "mk35-isr-vs-m15-mod-0",
-      "rival": "MK35 ISR",
-      "rival_slug": "mk35-isr"
-    },
-    {
-      "pareja": "voyak-kt-3-vs-m15-mod-0",
-      "rival": "Voyak KT-3",
-      "rival_slug": "voyak-kt-3"
-    },
-    {
-      "pareja": "m15-mod-0-vs-fg42",
-      "rival": "FG42",
-      "rival_slug": "fg42"
-    },
-    {
-      "pareja": "m15-mod-0-vs-vx-compact",
-      "rival": "VX Compact",
-      "rival_slug": "vx-compact"
-    },
-    {
-      "pareja": "m15-mod-0-vs-egrt-17",
-      "rival": "EGRT-17",
-      "rival_slug": "egrt-17"
+      "pareja": "mk35-isr-vs-an-94",
+      "rival": "AN-94",
+      "rival_slug": "an-94"
     }
   ],
   "fg42": [
@@ -87,14 +33,9 @@
       "rival_slug": "mk35-isr"
     },
     {
-      "pareja": "voyak-kt-3-vs-fg42",
+      "pareja": "fg42-vs-voyak-kt-3",
       "rival": "Voyak KT-3",
       "rival_slug": "voyak-kt-3"
-    },
-    {
-      "pareja": "m15-mod-0-vs-fg42",
-      "rival": "M15 Mod 0",
-      "rival_slug": "m15-mod-0"
     },
     {
       "pareja": "fg42-vs-vx-compact",
@@ -102,9 +43,41 @@
       "rival_slug": "vx-compact"
     },
     {
-      "pareja": "fg42-vs-egrt-17",
-      "rival": "EGRT-17",
-      "rival_slug": "egrt-17"
+      "pareja": "fg42-vs-m15-mod-0",
+      "rival": "M15 Mod 0",
+      "rival_slug": "m15-mod-0"
+    },
+    {
+      "pareja": "fg42-vs-an-94",
+      "rival": "AN-94",
+      "rival_slug": "an-94"
+    }
+  ],
+  "voyak-kt-3": [
+    {
+      "pareja": "mk35-isr-vs-voyak-kt-3",
+      "rival": "MK35 ISR",
+      "rival_slug": "mk35-isr"
+    },
+    {
+      "pareja": "fg42-vs-voyak-kt-3",
+      "rival": "FG42",
+      "rival_slug": "fg42"
+    },
+    {
+      "pareja": "voyak-kt-3-vs-vx-compact",
+      "rival": "VX Compact",
+      "rival_slug": "vx-compact"
+    },
+    {
+      "pareja": "voyak-kt-3-vs-m15-mod-0",
+      "rival": "M15 Mod 0",
+      "rival_slug": "m15-mod-0"
+    },
+    {
+      "pareja": "voyak-kt-3-vs-an-94",
+      "rival": "AN-94",
+      "rival_slug": "an-94"
     }
   ],
   "vx-compact": [
@@ -114,213 +87,240 @@
       "rival_slug": "mk35-isr"
     },
     {
-      "pareja": "voyak-kt-3-vs-vx-compact",
-      "rival": "Voyak KT-3",
-      "rival_slug": "voyak-kt-3"
-    },
-    {
-      "pareja": "m15-mod-0-vs-vx-compact",
-      "rival": "M15 Mod 0",
-      "rival_slug": "m15-mod-0"
-    },
-    {
       "pareja": "fg42-vs-vx-compact",
       "rival": "FG42",
       "rival_slug": "fg42"
     },
     {
-      "pareja": "vx-compact-vs-egrt-17",
-      "rival": "EGRT-17",
-      "rival_slug": "egrt-17"
-    }
-  ],
-  "egrt-17": [
-    {
-      "pareja": "mk35-isr-vs-egrt-17",
-      "rival": "MK35 ISR",
-      "rival_slug": "mk35-isr"
-    },
-    {
-      "pareja": "voyak-kt-3-vs-egrt-17",
+      "pareja": "voyak-kt-3-vs-vx-compact",
       "rival": "Voyak KT-3",
       "rival_slug": "voyak-kt-3"
     },
     {
-      "pareja": "m15-mod-0-vs-egrt-17",
+      "pareja": "vx-compact-vs-m15-mod-0",
       "rival": "M15 Mod 0",
       "rival_slug": "m15-mod-0"
     },
     {
-      "pareja": "fg42-vs-egrt-17",
+      "pareja": "vx-compact-vs-an-94",
+      "rival": "AN-94",
+      "rival_slug": "an-94"
+    }
+  ],
+  "m15-mod-0": [
+    {
+      "pareja": "mk35-isr-vs-m15-mod-0",
+      "rival": "MK35 ISR",
+      "rival_slug": "mk35-isr"
+    },
+    {
+      "pareja": "fg42-vs-m15-mod-0",
       "rival": "FG42",
       "rival_slug": "fg42"
     },
     {
-      "pareja": "vx-compact-vs-egrt-17",
+      "pareja": "voyak-kt-3-vs-m15-mod-0",
+      "rival": "Voyak KT-3",
+      "rival_slug": "voyak-kt-3"
+    },
+    {
+      "pareja": "vx-compact-vs-m15-mod-0",
       "rival": "VX Compact",
       "rival_slug": "vx-compact"
+    },
+    {
+      "pareja": "m15-mod-0-vs-an-94",
+      "rival": "AN-94",
+      "rival_slug": "an-94"
+    }
+  ],
+  "an-94": [
+    {
+      "pareja": "mk35-isr-vs-an-94",
+      "rival": "MK35 ISR",
+      "rival_slug": "mk35-isr"
+    },
+    {
+      "pareja": "fg42-vs-an-94",
+      "rival": "FG42",
+      "rival_slug": "fg42"
+    },
+    {
+      "pareja": "voyak-kt-3-vs-an-94",
+      "rival": "Voyak KT-3",
+      "rival_slug": "voyak-kt-3"
+    },
+    {
+      "pareja": "vx-compact-vs-an-94",
+      "rival": "VX Compact",
+      "rival_slug": "vx-compact"
+    },
+    {
+      "pareja": "m15-mod-0-vs-an-94",
+      "rival": "M15 Mod 0",
+      "rival_slug": "m15-mod-0"
+    }
+  ],
+  "cbrs-3": [
+    {
+      "pareja": "cbrs-3-vs-vst",
+      "rival": "VST",
+      "rival_slug": "vst"
+    },
+    {
+      "pareja": "cbrs-3-vs-rev-46",
+      "rival": "REV-46",
+      "rival_slug": "rev-46"
+    },
+    {
+      "pareja": "cbrs-3-vs-sturmwolf-45",
+      "rival": "Sturmwolf 45",
+      "rival_slug": "sturmwolf-45"
+    },
+    {
+      "pareja": "cbrs-3-vs-ryden-45k",
+      "rival": "Ryden 45K",
+      "rival_slug": "ryden-45k"
+    },
+    {
+      "pareja": "cbrs-3-vs-mpc-25",
+      "rival": "MPC-25",
+      "rival_slug": "mpc-25"
     }
   ],
   "vst": [
     {
-      "pareja": "vst-vs-ryden-45k",
-      "rival": "Ryden 45K",
-      "rival_slug": "ryden-45k"
-    },
-    {
-      "pareja": "vst-vs-dravec-45",
-      "rival": "Dravec 45",
-      "rival_slug": "dravec-45"
-    },
-    {
-      "pareja": "vst-vs-sturmwolf-45",
-      "rival": "Sturmwolf 45",
-      "rival_slug": "sturmwolf-45"
-    },
-    {
-      "pareja": "vst-vs-peacekeeper-mk1",
-      "rival": "Peacekeeper Mk1",
-      "rival_slug": "peacekeeper-mk1"
+      "pareja": "cbrs-3-vs-vst",
+      "rival": "CBRS-3",
+      "rival_slug": "cbrs-3"
     },
     {
       "pareja": "vst-vs-rev-46",
       "rival": "REV-46",
       "rival_slug": "rev-46"
-    }
-  ],
-  "ryden-45k": [
-    {
-      "pareja": "vst-vs-ryden-45k",
-      "rival": "VST",
-      "rival_slug": "vst"
     },
-    {
-      "pareja": "ryden-45k-vs-dravec-45",
-      "rival": "Dravec 45",
-      "rival_slug": "dravec-45"
-    },
-    {
-      "pareja": "ryden-45k-vs-sturmwolf-45",
-      "rival": "Sturmwolf 45",
-      "rival_slug": "sturmwolf-45"
-    },
-    {
-      "pareja": "ryden-45k-vs-peacekeeper-mk1",
-      "rival": "Peacekeeper Mk1",
-      "rival_slug": "peacekeeper-mk1"
-    },
-    {
-      "pareja": "ryden-45k-vs-rev-46",
-      "rival": "REV-46",
-      "rival_slug": "rev-46"
-    }
-  ],
-  "dravec-45": [
-    {
-      "pareja": "vst-vs-dravec-45",
-      "rival": "VST",
-      "rival_slug": "vst"
-    },
-    {
-      "pareja": "ryden-45k-vs-dravec-45",
-      "rival": "Ryden 45K",
-      "rival_slug": "ryden-45k"
-    },
-    {
-      "pareja": "dravec-45-vs-sturmwolf-45",
-      "rival": "Sturmwolf 45",
-      "rival_slug": "sturmwolf-45"
-    },
-    {
-      "pareja": "dravec-45-vs-peacekeeper-mk1",
-      "rival": "Peacekeeper Mk1",
-      "rival_slug": "peacekeeper-mk1"
-    },
-    {
-      "pareja": "dravec-45-vs-rev-46",
-      "rival": "REV-46",
-      "rival_slug": "rev-46"
-    }
-  ],
-  "sturmwolf-45": [
     {
       "pareja": "vst-vs-sturmwolf-45",
-      "rival": "VST",
-      "rival_slug": "vst"
-    },
-    {
-      "pareja": "ryden-45k-vs-sturmwolf-45",
-      "rival": "Ryden 45K",
-      "rival_slug": "ryden-45k"
-    },
-    {
-      "pareja": "dravec-45-vs-sturmwolf-45",
-      "rival": "Dravec 45",
-      "rival_slug": "dravec-45"
-    },
-    {
-      "pareja": "sturmwolf-45-vs-peacekeeper-mk1",
-      "rival": "Peacekeeper Mk1",
-      "rival_slug": "peacekeeper-mk1"
-    },
-    {
-      "pareja": "sturmwolf-45-vs-rev-46",
-      "rival": "REV-46",
-      "rival_slug": "rev-46"
-    }
-  ],
-  "peacekeeper-mk1": [
-    {
-      "pareja": "vst-vs-peacekeeper-mk1",
-      "rival": "VST",
-      "rival_slug": "vst"
-    },
-    {
-      "pareja": "ryden-45k-vs-peacekeeper-mk1",
-      "rival": "Ryden 45K",
-      "rival_slug": "ryden-45k"
-    },
-    {
-      "pareja": "dravec-45-vs-peacekeeper-mk1",
-      "rival": "Dravec 45",
-      "rival_slug": "dravec-45"
-    },
-    {
-      "pareja": "sturmwolf-45-vs-peacekeeper-mk1",
       "rival": "Sturmwolf 45",
       "rival_slug": "sturmwolf-45"
     },
     {
-      "pareja": "peacekeeper-mk1-vs-rev-46",
-      "rival": "REV-46",
-      "rival_slug": "rev-46"
+      "pareja": "vst-vs-ryden-45k",
+      "rival": "Ryden 45K",
+      "rival_slug": "ryden-45k"
+    },
+    {
+      "pareja": "vst-vs-mpc-25",
+      "rival": "MPC-25",
+      "rival_slug": "mpc-25"
     }
   ],
   "rev-46": [
     {
+      "pareja": "cbrs-3-vs-rev-46",
+      "rival": "CBRS-3",
+      "rival_slug": "cbrs-3"
+    },
+    {
       "pareja": "vst-vs-rev-46",
       "rival": "VST",
       "rival_slug": "vst"
     },
     {
-      "pareja": "ryden-45k-vs-rev-46",
-      "rival": "Ryden 45K",
-      "rival_slug": "ryden-45k"
-    },
-    {
-      "pareja": "dravec-45-vs-rev-46",
-      "rival": "Dravec 45",
-      "rival_slug": "dravec-45"
-    },
-    {
-      "pareja": "sturmwolf-45-vs-rev-46",
+      "pareja": "rev-46-vs-sturmwolf-45",
       "rival": "Sturmwolf 45",
       "rival_slug": "sturmwolf-45"
     },
     {
-      "pareja": "peacekeeper-mk1-vs-rev-46",
-      "rival": "Peacekeeper Mk1",
-      "rival_slug": "peacekeeper-mk1"
+      "pareja": "rev-46-vs-ryden-45k",
+      "rival": "Ryden 45K",
+      "rival_slug": "ryden-45k"
+    },
+    {
+      "pareja": "rev-46-vs-mpc-25",
+      "rival": "MPC-25",
+      "rival_slug": "mpc-25"
+    }
+  ],
+  "sturmwolf-45": [
+    {
+      "pareja": "cbrs-3-vs-sturmwolf-45",
+      "rival": "CBRS-3",
+      "rival_slug": "cbrs-3"
+    },
+    {
+      "pareja": "vst-vs-sturmwolf-45",
+      "rival": "VST",
+      "rival_slug": "vst"
+    },
+    {
+      "pareja": "rev-46-vs-sturmwolf-45",
+      "rival": "REV-46",
+      "rival_slug": "rev-46"
+    },
+    {
+      "pareja": "sturmwolf-45-vs-ryden-45k",
+      "rival": "Ryden 45K",
+      "rival_slug": "ryden-45k"
+    },
+    {
+      "pareja": "sturmwolf-45-vs-mpc-25",
+      "rival": "MPC-25",
+      "rival_slug": "mpc-25"
+    }
+  ],
+  "ryden-45k": [
+    {
+      "pareja": "cbrs-3-vs-ryden-45k",
+      "rival": "CBRS-3",
+      "rival_slug": "cbrs-3"
+    },
+    {
+      "pareja": "vst-vs-ryden-45k",
+      "rival": "VST",
+      "rival_slug": "vst"
+    },
+    {
+      "pareja": "rev-46-vs-ryden-45k",
+      "rival": "REV-46",
+      "rival_slug": "rev-46"
+    },
+    {
+      "pareja": "sturmwolf-45-vs-ryden-45k",
+      "rival": "Sturmwolf 45",
+      "rival_slug": "sturmwolf-45"
+    },
+    {
+      "pareja": "ryden-45k-vs-mpc-25",
+      "rival": "MPC-25",
+      "rival_slug": "mpc-25"
+    }
+  ],
+  "mpc-25": [
+    {
+      "pareja": "cbrs-3-vs-mpc-25",
+      "rival": "CBRS-3",
+      "rival_slug": "cbrs-3"
+    },
+    {
+      "pareja": "vst-vs-mpc-25",
+      "rival": "VST",
+      "rival_slug": "vst"
+    },
+    {
+      "pareja": "rev-46-vs-mpc-25",
+      "rival": "REV-46",
+      "rival_slug": "rev-46"
+    },
+    {
+      "pareja": "sturmwolf-45-vs-mpc-25",
+      "rival": "Sturmwolf 45",
+      "rival_slug": "sturmwolf-45"
+    },
+    {
+      "pareja": "ryden-45k-vs-mpc-25",
+      "rival": "Ryden 45K",
+      "rival_slug": "ryden-45k"
     }
   ],
   "vs-recon": [

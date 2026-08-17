@@ -313,7 +313,14 @@ function calcularOrdenAuto() {
             const min = Math.min(...ttks), max = Math.max(...ttks);
             auto.forEach(a => {
                 a._ttkNorm = (max === min) ? 100 : Math.round(100 * (max - a._ttk) / (max - min));
-                a._score = a._ttkNorm + a._mom;
+                // Meta REAL del scraper (ranking wzstats, se actualiza a diario):
+                // #1 = 100 y baja 4 por puesto. Antes el ranking real solo
+                // DESEMPATABA, así que armas meta con TTK feo (CBRS-3, FG42,
+                // MXR-17) caían al fondo. Ahora pesa 50/50 con el TTK, como ya
+                // hacía el grupo de snipers (resto) más abajo.
+                const rk = a.ranking || 999;
+                a._metaNorm = Math.max(0, 100 - (rk - 1) * 4);
+                a._score = Math.round(0.4 * a._ttkNorm + 0.6 * a._metaNorm) + a._mom;
                 a._auto = true;
             });
             auto.sort((x, y) => y._score - x._score || x._ttk - y._ttk || (x.ranking || 999) - (y.ranking || 999));

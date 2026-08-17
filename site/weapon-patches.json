@@ -1,2 +1,1557 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+{
+  "_meta": {
+    "descripcion": "Historial oficial de cambios buff/nerf por arma. Cada entrada cita la fuente verificable.",
+    "fuente_oficial": "Treyarch / Raven Software · publicado en callofduty.com/patchnotes",
+    "ultima_actualizacion": "2026-07-23",
+    "cobertura": "Season 1 (4 dic 2025) hasta Season 5 (jul 2026), incluyendo S1 Reloaded, S2 Reloaded y Season 4 Reloaded (24 jun 2026)",
+    "armas_incluidas": 26,
+    "armas_top_15": [
+      "ak-27",
+      "ds20-mirage",
+      "mk35-isr",
+      "mxr-17",
+      "voyak-kt-3",
+      "dravec-45",
+      "kogot-7",
+      "mk-78",
+      "strider-300",
+      "hawker-hx",
+      "vs-recon",
+      "carbon-57",
+      "vst",
+      "ryden-45k",
+      "cbrs-3"
+    ],
+    "regla_fecha_visible": "La fecha visible corresponde a la fecha oficial de publicación de las notas del parche en callofduty.com. Si una actualización se activa en otra fecha, registrar ese dato aparte como fecha_lanzamiento."
+  },
+  "ak-27": {
+    "nombre": "AK-27",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo bajó de 39 a 38 y su rango de 40m a 38m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio bajó de 35 a 32 y su rango de 60m a 52m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño mínimo bajó de 30 a 29 (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala reducida de 920 m/s a 900 m/s (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Reducción de retroceso horizontal y shake al disparar (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: capacidad subió de 35 a 40 balas (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: velocidad de recarga mejorada 10% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: velocidad de bala bajó de 20% a 12% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: rango de daño bajó de 12% a 8% (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "7.62 Soviet FMJ: velocidad de bala mejoró de 14% a 18% (solo BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango de four-shot kill extendido aproximadamente 2 metros"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "ADS (Aim Down Sight) time reducido de 270ms a 260ms"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes",
+        "contexto": "El Battle Scar conversion kit recibió un multiplicador a torso superior y cuello, permitiendo two-shot kills a corta distancia con ambos en zona."
+      },
+      {
+        "season": "Season 2",
+        "fecha": "2026-02-04",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejoras en control de retroceso, velocidad de bala y otras estadísticas (junto a sus attachments)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/02/call-of-duty-warzone-season-02-patch-notes"
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel: ahora otorga bonus de ADS movement speed y mejor rendimiento a media distancia (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      }
+    ]
+  },
+  "ds20-mirage": {
+    "nombre": "DS20 Mirage",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Ajustes al DS20 Mirage y su Dual Fire Kit para subir su nivel de poder (cambios en los dos modos de disparo)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso vertical reducido 8% (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: capacidad subió de 35 a 40 balas (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: velocidad de recarga mejorada 8% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: velocidad de bala bajó de 20% a 12% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: rango de daño bajó de 12% a 8% (solo BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Aumento considerable en rango de daño para dar más variedad en combate de largo alcance"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 2",
+        "fecha": "2026-02-04",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejoras en control de retroceso, velocidad de bala y otras estadísticas (junto a sus attachments)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/02/call-of-duty-warzone-season-02-patch-notes"
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel: ahora otorga bonus de ADS movement speed y mejor rendimiento a media distancia (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes",
+        "contexto": "Treyarch actualizó el Mid-Range Barrel en todos los ARs BO7 para builds de soporte sniper."
+      },
+      {
+        "season": "Season 1",
+        "fecha": "2025-12-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Zombies"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Cadencia de disparo reducida para mejor balance contra hordas"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2025/12/call-of-duty-black-ops-7-season-01-patch-notes"
+      }
+    ]
+  },
+  "mxr-17": {
+    "nombre": "MXR-17",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo bajó de 49 a 48 y su rango de 40m a 36m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio bajó de 42 a 41 y su rango de 60m a 52m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de apuntado ralentizada de 235 ms a 245 ms (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala reducida de 920 m/s a 900 m/s (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango de daño medio subió de 55m a 60m (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: capacidad subió de 35 a 40 balas (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: velocidad de recarga mejorada 5% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: velocidad de bala bajó de 15% a 10% (solo BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Aumento considerable en rango de daño para dar más variedad en combate de largo alcance"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 2",
+        "fecha": "2026-02-04",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejoras en control de retroceso, velocidad de bala y otras estadísticas (junto a sus attachments)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/02/call-of-duty-warzone-season-02-patch-notes"
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Battle-Scar Conversion: damage profile ajustado para requerir una bala adicional en cada rango de daño (BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel: ahora otorga bonus de ADS movement speed y mejor rendimiento a media distancia (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes",
+        "contexto": "La conversión Battle-Scar tenía TTK ligeramente demasiado rápido. Mid-Range Barrel actualizado en todos los ARs BO7."
+      },
+      {
+        "season": "Season 1",
+        "fecha": "2025-11-13",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Nerfs específicos aplicados al arma y varios attachments en el lanzamiento de Black Ops 7"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2025/11/call-of-duty-black-ops-7-launch-patch-notes"
+      }
+    ]
+  },
+  "mk35-isr": {
+    "nombre": "MK35 ISR",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejora en el rango de daño"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: capacidad subió de 35 a 40 balas (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: velocidad de recarga mejorada 10% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: velocidad de bala bajó de 10% a 6% (solo BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nuevo",
+            "descripcion": "Arma nueva agregada en Season 3 junto con la VST"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      }
+    ]
+  },
+  "voyak-kt-3": {
+    "nombre": "Voyak KT-3",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso base reducido 5% (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Rango de daño reducido (menos dominante frente a otros fusiles de asalto)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Retroceso aumentado"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: capacidad subió de 35 a 40 balas (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Flip Mags: velocidad de recarga mejorada 5% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: velocidad de bala bajó de 15% a 10% (solo BR/RES)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Monolithic Suppressor: rango de daño bajó de 12% a 6% (solo BR/RES)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "17.6\" LTI Grav-4 Barrel: velocidad de bala mejoró de 15% a 20% (solo BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Rango de daño reducido"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala reducida"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Retroceso horizontal aumentado 8%"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes",
+        "contexto": "El Voyak KT-3 había ganado popularidad recientemente, por eso este nerf de balance."
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel: ahora otorga bonus de ADS movement speed y mejor rendimiento a media distancia (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      }
+    ]
+  },
+  "dravec-45": {
+    "nombre": "Dravec 45",
+    "patches": [
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Cadencia de disparo mejorada de 638 rpm a 652 rpm (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Multiplicador de daño a la cabeza subió de 1.12x a 1.15x (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Ajustes de balance — Treyarch describió que el Dravec 45 fue 'bajado un nivel' por estar sobre-balanceado"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 2 Reloaded",
+        "fecha": "2026-03-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo subió de 45 a 47 (todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Cadencia de disparo bajó de 652rpm a 638rpm (todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/03/call-of-duty-bo7-warzone-season-02-reloaded-patch-notes",
+        "contexto": "Rework de balance: la reducción de cadencia permitió aumentar el daño manteniendo el TTK objetivo. Mejora en peleas cercanas."
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel SMG: mayor velocidad de bala, mejoras en beneficios a media distancia, menos penalizaciones (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      },
+      {
+        "season": "Season 1",
+        "fecha": "2025-11-13",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "Ajustes específicos al arma y attachments en el lanzamiento de Black Ops 7"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2025/11/call-of-duty-black-ops-7-launch-patch-notes"
+      },
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo bajó de 47 a 46 y su rango de 13.5m a 12.8m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio bajó de 41 a 40 y su rango de 23m a 22m (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  },
+  "kogot-7": {
+    "nombre": "Kogot-7",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Rango de daño reducido"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño base rebalanceado (pierde poder a media-larga distancia)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo: daño bajó de 33 a 31, rango bajó de 0–13m a 0–12.6m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio 1: rango inicial bajó de 13m a 12.6m, daño sin cambios en 28 (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de ADS lenta: subió de 160ms a 170ms (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+        "contexto": "Treyarch identificó al Kogot-7 como una de las armas más fuertes de Season 3, por eso este nerf."
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Attachments de control de retroceso nerfeados — el build optimizado del Kogot rinde peor tras este patch"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 3 Reloaded",
+        "fecha": "2026-04-30",
+        "modos_afectados": [
+          "Black Ops Royale"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "El Kogot-7 fue reemplazado por la VST con los builds Burner y Stalker en Black Ops Royale"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-reloaded-patch-notes"
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel SMG: mayor velocidad de bala, mejoras en beneficios a media distancia, menos penalizaciones (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes",
+        "contexto": "El Mid-Range Barrel de todos los SMGs BO7 fue actualizado para ser más viable en combate extendido."
+      }
+    ]
+  },
+  "mk-78": {
+    "nombre": "MK.78",
+    "patches": [
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo: daño bajó de 36 a 34, rango bajó de 0–58m a 0–50m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio 1: daño bajó de 32 a 30, rango bajó de 58–75m a 50–68m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño mínimo: daño bajó de 30 a 28, rango bajó de >75m a >68m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala bajó de 930 m/s a 890 m/s (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+        "contexto": "Treyarch identificó al MK.78 como una de las armas más fuertes de Season 3, por eso este nerf agresivo."
+      },
+      {
+        "season": "Season 2 Reloaded",
+        "fecha": "2026-03-24",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "Ground loot build actualizado: Greaves AccuSpot 3x reemplazado por Redwell 30-S 2x; Bowen Sentry Foregrip reemplazado por EAM Steady-90 Grip (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/03/call-of-duty-bo7-warzone-season-02-reloaded-patch-notes"
+      },
+      {
+        "season": "Season 2",
+        "fecha": "2026-02-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nuevo",
+            "descripcion": "Arma nueva agregada en Season 2, reemplazando al Sokol 545 en el pase de batalla"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/02/call-of-duty-warzone-season-02-patch-notes"
+      }
+    ]
+  },
+  "strider-300": {
+    "nombre": "Strider 300",
+    "patches": [
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño a la cabeza aumentado 33%"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+        "contexto": "Junto con este buff, se removió un bug del Sharpshooter Mod que daba 33% extra de daño headshot, compensando."
+      }
+    ]
+  },
+  "hawker-hx": {
+    "nombre": "Hawker HX",
+    "patches": [
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño a la cabeza aumentado 33%"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+        "contexto": "Junto con este buff, se removió un bug del Sharpshooter Mod que daba 33% extra de daño headshot, compensando."
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nuevo",
+            "descripcion": "Arma nueva agregada en Season 1 Reloaded. Sniper bolt-action con two playstyles: one-shot headshot en rango limitado por defecto, o one-shot sin límite de rango con el barrel Prestige MFS 25\" Votive Barrel. Desbloqueada vía evento Quantum Exchange."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      }
+    ]
+  },
+  "vs-recon": {
+    "nombre": "VS Recon",
+    "patches": [
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño a la cabeza aumentado 33%"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+        "contexto": "Junto con este buff, se removió un bug del Sharpshooter Mod que daba 33% extra de daño headshot, compensando."
+      }
+    ]
+  },
+  "carbon-57": {
+    "nombre": "Carbon 57",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo bajó de 35 a 34 y su rango de 13.8m a 12.4m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio bajó de 31 a 30 y su rango de 23m a 21.5m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Multiplicador de cabeza bajó de 1.2x a 1.13x (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Aumento en rango de daño para ser más competitiva en su clase"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Pequeñas mejoras adicionales en estadísticas del arma"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes",
+        "contexto": "Tras estos buffs el Carbon 57 se convirtió en una opción viable para builds enfocados en daño a la cabeza."
+      }
+    ]
+  },
+  "vst": {
+    "nombre": "VST",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango de daño medio extendido de 22m a 22.5m (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "VST Adjustments Addressed an issue causing ironsights to misalign when firing the Ryden 45k in ADS under certain conditions. Weapon:"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+        "auto_detectado": true
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "Bug fix: se corrigió un problema que permitía velocidad de ADS más rápida de lo previsto"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      },
+      {
+        "season": "Season 3",
+        "fecha": "2026-04-02",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nuevo",
+            "descripcion": "Arma nueva agregada en Season 3 junto con la MK35 ISR"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 1 Reloaded",
+        "fecha": "2026-01-08",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mid-Range Barrel SMG: mayor velocidad de bala, mejoras en beneficios a media distancia, menos penalizaciones (BR/RES)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      }
+    ]
+  },
+  "ryden-45k": {
+    "nombre": "Ryden 45K",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "Ryden 45K Adjustments: VST Adjustments Addressed an issue causing ironsights to misalign when firing the Ryden 45k in ADS under certain conditions. Weapon: Carbon 57 Adjustments: We are adding a delay of one second before the Fabricator Mag will star"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+        "auto_detectado": true
+      },
+      {
+        "season": "Season 1",
+        "fecha": "2025-11-13",
+        "modos_afectados": [
+          "Multiplayer"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "Ajustes específicos al arma y attachments en el lanzamiento de Black Ops 7"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2025/11/call-of-duty-black-ops-7-launch-patch-notes"
+      }
+    ]
+  },
+  "cbrs-3": {
+    "nombre": "CBRS-3",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso horizontal reducido 10%."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "auto_detectado": true,
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 4",
+        "fecha": "2026-06-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nuevo",
+            "descripcion": "Arma nueva agregada en Season 4. SMG full-auto con 60 balas en cargador base (75 con Redwell Sprocket Mag), el mayor de su clase."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes"
+      }
+    ]
+  },
+  "_cambios_globales": {
+    "season_4": {
+      "fecha": "2026-06-04",
+      "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-black-ops-7-season-04-patch-notes",
+      "cambios": [
+        {
+          "tipo": "buff",
+          "afecta": "Todos los Fusiles de Asalto BO7",
+          "descripcion": "Supresor ahora da +10% de rango de daño"
+        },
+        {
+          "tipo": "buff",
+          "afecta": "Todos los Fusiles de Asalto BO7",
+          "descripcion": "Eliminada la penalización de velocidad del Recoil Suppressor"
+        },
+        {
+          "tipo": "buff",
+          "afecta": "Todos los Subfusiles BO7",
+          "descripcion": "Supresor ahora da +10% de rango de daño"
+        },
+        {
+          "tipo": "buff",
+          "afecta": "Todas las Ametralladoras Ligeras BO7",
+          "descripcion": "Supresor ahora da +8% de rango de daño"
+        },
+        {
+          "tipo": "buff",
+          "afecta": "Todas las Ametralladoras Ligeras BO7",
+          "descripcion": "Eliminada la penalización de velocidad del Recoil Suppressor"
+        }
+      ]
+    },
+    "season_1_reloaded": {
+      "fecha": "2026-01-08",
+      "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes",
+      "cambios": [
+        {
+          "tipo": "buff",
+          "afecta": "Todos los Fusiles de Asalto BO7",
+          "descripcion": "Mid-Range Barrel: ahora otorga bonus de ADS movement speed y mejor rendimiento a media distancia"
+        },
+        {
+          "tipo": "buff",
+          "afecta": "Todos los Subfusiles BO7",
+          "descripcion": "Mid-Range Barrel SMG: mayor velocidad de bala, mejoras en beneficios a media distancia, menos penalizaciones"
+        }
+      ]
+    }
+  },
+  "an-94": {
+    "nombre": "AN-94",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño mínimo subió de 30 a 32 (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Multiplicador de cabeza subió de 1.2x a 1.3x (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de apuntado mejorada de 240 ms a 235 ms (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso base reducido ~8% (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "AN-94 Adjustments: The AN-94 vastly outclassed the TTK of other Assault Rifles with its hyperburst and skyrocketed in usage over the last few weeks. We have changed the damage profile to no longer have a 4-shot kill to the body in the Max Damage Rang"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+        "auto_detectado": true
+      },
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "El cañón modificado aumenta la ráfaga inicial a tres disparos y añade retroceso."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "auto_detectado": true,
+        "fecha_lanzamiento": "2026-06-25"
+      }
+    ]
+  },
+  "rev-46": {
+    "nombre": "REV-46",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango de daño aumentado en todas las distancias."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "auto_detectado": true,
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Multiplicador de cabeza subió de 1.2x a 1.3x (BR/Resurgence)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de apuntado mejorada de 165 ms a 160 ms (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  },
+  "vx-compact": {
+    "nombre": "VX Compact",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango de daño aumentado y velocidad de bala mejorada."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "auto_detectado": true,
+        "fecha_lanzamiento": "2026-06-25"
+      }
+    ]
+  },
+  "warden-308": {
+    "nombre": "Warden 308",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Rangos de daño reducidos"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Multiplicadores de daño rebalanceados (one-shot kill menos probable)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      }
+    ]
+  },
+  "sturmwolf-45": {
+    "nombre": "Sturmwolf 45",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejora en el rango de daño"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo subió de 45 a 47 (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Daño medio subió de 41 a 42 (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de apuntado mejorada de 170 ms a 160 ms (Todos los modos)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  },
+  "maddox-rfb": {
+    "nombre": "Maddox RFB",
+    "patches": [
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Revierte parte de los nerfeos de retroceso y rango de daño de temporadas anteriores; vuelve a ser competitiva en el meta de fusiles de asalto"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      }
+    ]
+  },
+  "x9-maverick": {
+    "nombre": "X9 Maverick",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo bajó de 50 a 48 y su rango de 50m a 42m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño medio bajó de 42 a 41 y su rango de 60m a 55m (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de apuntado ralentizada de 235 ms a 245 ms (Todos los modos)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala reducida de 930 m/s a 900 m/s (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 4 Reloaded",
+        "fecha": "2026-06-24",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Mejoras de rango en todas las zonas de daño"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Enfriamiento de ráfaga reducido de 150 ms a 142 ms"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
+        "fecha_lanzamiento": "2026-06-25"
+      }
+    ]
+  },
+  "swordfish-a1": {
+    "nombre": "Swordfish A1",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Retardo de ráfaga aumentado de 280 ms a 300 ms (era demasiado fuerte)"
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "MFS Penta Burst Mod: más retroceso y su mejora de retardo de ráfaga bajó de 20% a 10%"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  },
+  "m8a1": {
+    "nombre": "M8A1",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "M8A1 Adjustments: This adjustment to the M8A1 is small but will help players land meaningful shots at ranges where they can improve the TTK. M8A1 Adjustments Now has a neck multiplier of 1.15x. Attachment Update 16.5&quot; Deadeye Barrel Now has a ne"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+        "auto_detectado": true
+      }
+    ]
+  },
+  "coda-9": {
+    "nombre": "CODA 9",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-04",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "fix",
+            "descripcion": "CODA 9 Adjustments: Attachment Updates MFS Deltacell Bulk Mag Addressed an issue resulting in unintended damage falloff at range. Launchers Launcher Adjustments Weapon Adjustments Weapon: A.R.C. M1 Adjustments: A.R.C. M1 Adjustments Can now use the A"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-black-ops-7-season-05-patch-notes",
+        "auto_detectado": true
+      }
+    ]
+  },
+  "m15-mod-0": {
+    "nombre": "M15 Mod 0",
+    "patches": [
+      {
+        "season": "Season 5",
+        "fecha": "2026-07-22",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo subió de 32 a 33 y su rango de 38m a 42m (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Daño medio subió de 25 a 26 y su rango de 52m a 60m (Todos los modos)"
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de bala aumentada de 900 m/s a 910 m/s (BR/Resurgence)"
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  }
+}
