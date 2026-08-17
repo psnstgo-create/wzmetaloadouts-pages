@@ -323,6 +323,49 @@ function renderBreadcrumb(arma) {
     `;
 }
 
+// ── Video "Míralo en acción" (SEO: VideoObject + facade liviano) ──
+// Lee videos-armas.json[slug] (lo llena _build/fetch_videos.py desde la API
+// de YouTube). Muestra una miniatura real que abre el video en YouTube (sin
+// iframe → no toca la CSP) e inyecta el schema VideoObject para que Google
+// muestre el resultado enriquecido de video. Si no hay video real, no se
+// muestra nada (nunca se inventa).
+function _ldSafe(obj) {
+    // evita romper el <script> si el título trae "</script>" o "<"
+    return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
+function renderVideoSection(arma, video) {
+    if (!video || !video.videoId) return '';
+    const id = String(video.videoId);
+    const title = video.title || `${arma.nombre} — Warzone gameplay`;
+    const channel = video.channel || '';
+    const thumb = video.thumb || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    const watch = `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
+    const desc = `Gameplay y build del ${arma.nombre} en Warzone Black Ops 7${channel ? ' · ' + channel : ''}.`;
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": title,
+        "description": desc,
+        "thumbnailUrl": [thumb],
+        "embedUrl": `https://www.youtube-nocookie.com/embed/${id}`,
+        "contentUrl": watch
+    };
+    if (video.published) schema.uploadDate = video.published;
+    if (video.duration) schema.duration = video.duration;
+    return `
+        <section class="video-section">
+            <h2 class="section-title">Míralo en <span class="accent">acción</span></h2>
+            <p class="section-subtitle">Gameplay y build del ${escapeHtml(arma.nombre)} en el meta actual de Warzone</p>
+            <a class="yt-facade" href="${watch}" target="_blank" rel="noopener noreferrer" aria-label="Ver en YouTube: ${escapeHtml(title)}">
+                <img class="yt-thumb" src="${escapeHtml(thumb)}" alt="Video: ${escapeHtml(title)}" loading="lazy" onerror="this.closest('.yt-facade').classList.add('yt-nothumb')">
+                <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48"><path class="yt-play-bg" d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.5C4 2.3 2.3 4.8 1.5 7.7.1 13 0 24 0 24s.1 11 1.5 16.3c.8 2.9 2.5 5.4 5.4 6.2C12.2 47.9 34 48 34 48s21.8-.1 27.1-1.5c2.9-.8 4.6-3.3 5.4-6.2C67.9 35 68 24 68 24s-.1-11-1.5-16.3z"></path><path d="M45 24 27 14v20" fill="#fff"></path></svg></span>
+                <span class="yt-info"><span class="yt-title">${escapeHtml(title)}</span>${channel ? `<span class="yt-ch">${escapeHtml(channel)}</span>` : ''}</span>
+            </a>
+            <script type="application/ld+json">${_ldSafe(schema)}</script>
+        </section>
+    `;
+}
+
 function setupIconFallback() {
     document.querySelectorAll('.row-icon-frame img, .att-icon-frame img').forEach(img => {
         img.addEventListener('error', function() {
@@ -543,10 +586,17 @@ async function renderArmaPage(slug) {
         arma = await cargarLoadoutMetaWarzone(arma);
         document.title = `${arma.nombre} Loadout Warzone — Mejor Clase y Meta Black Ops 7 | WZ Meta`;
         actualizarMetaDescription(arma);
+        // video real del arma (si existe) para "Míralo en acción" + schema
+        let video = null;
+        try {
+            const rv = await fetch('/videos-armas.json?v=' + Date.now());
+            if (rv.ok) { const vs = await rv.json(); video = vs && vs[slug]; }
+        } catch (e) { /* sin video: la sección simplemente no aparece */ }
         main.innerHTML =
             renderBreadcrumb(arma) +
             renderHero(arma) +
             renderLoadoutsSection(arma) +
+            renderVideoSection(arma, video) +
             renderAllAttachmentsSection(arma);
         setupLoadoutTabs();
         setupChipsScroll();

@@ -135,12 +135,53 @@
 
 /* ─── SECCIONES ─── */
 .loadouts-section,
-.all-attachments-section {
+.all-attachments-section,
+.video-section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 40px 24px 30px;
     border-top: 1px solid rgba(240,196,25,0.1);
 }
+/* "Míralo en acción" — facade de YouTube (miniatura que abre el video) */
+.yt-facade {
+    display: block;
+    position: relative;
+    max-width: 780px;
+    margin: 18px 0 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.09);
+    background: #0d0a12;
+    text-decoration: none;
+    color: inherit;
+    aspect-ratio: 16 / 9;
+    transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.yt-facade:hover { border-color: rgba(255,0,0,0.5); transform: translateY(-2px); box-shadow: 0 14px 34px -18px rgba(255,0,0,0.6); }
+.yt-thumb { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yt-nothumb { background: linear-gradient(135deg,#241016,#120a10); }
+.yt-nothumb .yt-thumb { display: none; }
+.yt-play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 68px; height: 48px; display: flex; align-items: center; justify-content: center;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,.5)); transition: transform .15s;
+}
+.yt-play svg { width: 100%; height: 100%; }
+.yt-play-bg { fill: #f00; opacity: .92; }
+.yt-facade:hover .yt-play { transform: translate(-50%,-50%) scale(1.08); }
+.yt-facade:hover .yt-play-bg { opacity: 1; }
+.yt-info {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 26px 14px 12px;
+    background: linear-gradient(to top, rgba(0,0,0,.82), transparent);
+    display: flex; flex-direction: column; gap: 2px;
+}
+.yt-title {
+    font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1rem; color: #fff;
+    line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.yt-ch { font-family: 'Share Tech Mono', monospace; font-size: .72rem; color: rgba(255,255,255,.7); }
+@media (max-width: 640px) { .video-section { padding: 28px 16px; } .yt-play { width: 54px; height: 38px; } .yt-title { font-size: .9rem; } }
 .section-title {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 900;
