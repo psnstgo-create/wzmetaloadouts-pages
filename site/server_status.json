@@ -1,20 +1,35 @@
 {
-  "timestamp": "2026-08-17T10:47:01.349073+00:00",
-  "estado": "OK",
+  "timestamp": "2026-08-17T11:14:32.347729+00:00",
+  "estado": "ALERTA",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
     "Call of Duty: Warzone"
   ],
   "activision": {
     "Call of Duty: Black Ops 7": {
-      "estado": "OK",
-      "eventos_activos": []
+      "estado": "ALERTA",
+      "eventos_activos": [
+        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+      ]
     },
     "Call of Duty: Warzone": {
-      "estado": "OK",
-      "eventos_activos": []
+      "estado": "ALERTA",
+      "eventos_activos": [
+        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+      ]
     }
   },
   "tweets_recientes": [],
-  "eventos_activos": []
+  "eventos_activos": [
+    {
+      "fuente": "activision",
+      "juego": "Call of Duty: Black Ops 7",
+      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+    },
+    {
+      "fuente": "activision",
+      "juego": "Call of Duty: Warzone",
+      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Black Ops 6"
+    }
+  ]
 }
