@@ -51,6 +51,43 @@
       '</div></a>';
   }
 
+  var _raf = null;
+  function startAutoScroll(track) {
+    if (_raf) { cancelAnimationFrame(_raf); _raf = null; }
+    // respeta "reducir movimiento" del sistema
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var sets = track.querySelectorAll('.lv-set');
+    if (sets.length < 2) return;
+
+    // pausa al interactuar (mouse / touch), para poder hacer click cómodo
+    if (!track._lvBound) {
+      track._lvBound = true;
+      track.addEventListener('mouseenter', function () { track._lvPause = true; });
+      track.addEventListener('mouseleave', function () { track._lvPause = false; });
+      track.addEventListener('touchstart', function () { track._lvPause = true; }, { passive: true });
+      track.addEventListener('touchend', function () {
+        clearTimeout(track._lvT);
+        track._lvT = setTimeout(function () { track._lvPause = false; }, 2500);
+      });
+    }
+    track._lvPause = false;
+    track._lvPos = track.scrollLeft;                // acumulador float (scrollLeft se redondea a entero)
+
+    function step() {
+      var wrap = sets[1].offsetLeft;                // ancho exacto del 1er set (loop sin cortes)
+      if (!track._lvPause && wrap > 0) {
+        track._lvPos += 0.5;                         // desplazamiento leve hacia la derecha
+        if (track._lvPos >= wrap) track._lvPos -= wrap;
+        track.scrollLeft = track._lvPos;
+      } else {
+        track._lvPos = track.scrollLeft;            // si está pausado/arrastrado, re-sincroniza
+      }
+      _raf = requestAnimationFrame(step);
+    }
+    _raf = requestAnimationFrame(step);
+  }
+
   function render(data) {
     var sec = document.getElementById('liveNow');
     if (!sec) return;
@@ -60,9 +97,13 @@
     var track = sec.querySelector('.lv-track');
     var count = sec.querySelector('.lv-count');
     if (!track) return;
-    track.innerHTML = streams.map(cardHtml).join('');
+    // dos sets idénticos → el auto-scroll puede hacer loop infinito sin saltos
+    var cards = streams.map(cardHtml).join('');
+    track.innerHTML = '<div class="lv-set">' + cards + '</div>' +
+                      '<div class="lv-set" aria-hidden="true">' + cards + '</div>';
     if (count) count.textContent = streams.length + (streams.length === 1 ? ' canal' : ' canales');
     sec.hidden = false;
+    startAutoScroll(track);
   }
 
   async function check() {
