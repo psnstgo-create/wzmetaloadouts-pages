@@ -48,6 +48,17 @@ jobs:
         run: python server_status_checker.py
         continue-on-error: true
 
+      # Streams de Warzone en vivo (Twitch). Corre acá (repo PUBLICO, minutos
+      # de Actions GRATIS) en vez del repo privado, cada 15 min con el sync.
+      # Necesita los secrets TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET en ESTE repo.
+      - name: Actualizar streams en vivo (Twitch)
+        working-directory: source
+        env:
+          TWITCH_CLIENT_ID:     ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: python twitch_live.py
+        continue-on-error: true
+
       - name: Checkout repositorio publico (para el artefacto/backup)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
