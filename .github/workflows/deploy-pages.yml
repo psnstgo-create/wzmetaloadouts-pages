@@ -59,6 +59,19 @@ jobs:
         run: python twitch_live.py
         continue-on-error: true
 
+      # Panel de analytics privado (GA4 + Search Console → panel/data.json).
+      # Necesita los secrets GA_SA_JSON / GA4_PROPERTY_ID / GSC_SITE en ESTE repo.
+      - name: Actualizar analytics del panel
+        working-directory: source
+        env:
+          GA_SA_JSON:      ${{ secrets.GA_SA_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GSC_SITE:        ${{ secrets.GSC_SITE }}
+        run: |
+          python -m pip install --disable-pip-version-check google-auth requests
+          python analytics_fetch.py
+        continue-on-error: true
+
       # Pre-render SEO + sitemap: se HORNEAN acá (repo PUBLICO, Actions GRATIS)
       # en vez del repo privado. Playwright ya está instalado (server-status).
       # Hornea el HTML renderizado (tier list, stats, "Míralo en acción" + schema
