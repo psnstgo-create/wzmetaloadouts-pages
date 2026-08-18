@@ -10,6 +10,7 @@ Allow: /
 
 # Bloquear áreas internas que no aportan valor SEO
 Disallow: /admin/
+Disallow: /panel/
 Disallow: /_build/
 Disallow: /_data/
 Disallow: /_noticias/
