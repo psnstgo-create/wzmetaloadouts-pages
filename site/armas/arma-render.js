@@ -570,7 +570,7 @@ function actualizarMetaDescription(arma) {
     const cuerpo = modos
         ? `Mejor clase y build meta para ${modos} en Warzone Black Ops 7`
         : `Mejor clase y build meta en Warzone Black Ops 7`;
-    meta.setAttribute('content', `${cabecera}${cuerpo}: accesorios, niveles de desbloqueo y código de clase.`);
+    meta.setAttribute('content', `${cabecera}${cuerpo}: accesorios, código de clase listo para copiar y gameplay en video. Actualizado con el meta 2026.`);
 }
 
 async function renderArmaPage(slug) {
