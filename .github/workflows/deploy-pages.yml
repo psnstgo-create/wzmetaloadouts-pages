@@ -19,7 +19,7 @@ permissions:
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout fuente
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -58,6 +58,27 @@ jobs:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: python twitch_live.py
         continue-on-error: true
+
+      # Pre-render SEO + sitemap: se HORNEAN acá (repo PUBLICO, Actions GRATIS)
+      # en vez del repo privado. Playwright ya está instalado (server-status).
+      # Hornea el HTML renderizado (tier list, stats, "Míralo en acción" + schema
+      # de video) para que Google lo vea crudo. No commitea: el artefacto
+      # desplegado queda horneado; prepare_public_site.py lo copia tal cual.
+      - name: Sincronizar numero de temporada en textos
+        working-directory: source
+        continue-on-error: true
+        run: python _build/sync_temporada_texto.py
+
+      - name: Pre-render SEO (fichas + home + catalogo)
+        working-directory: source
+        timeout-minutes: 9
+        continue-on-error: true
+        run: python _build/prerender.py
+
+      - name: Regenerar sitemap
+        working-directory: source
+        continue-on-error: true
+        run: python _build/build_sitemap.py
 
       - name: Checkout repositorio publico (para el artefacto/backup)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
