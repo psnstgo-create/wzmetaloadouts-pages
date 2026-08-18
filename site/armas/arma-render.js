@@ -333,8 +333,13 @@ function _ldSafe(obj) {
     // evita romper el <script> si el título trae "</script>" o "<"
     return JSON.stringify(obj).replace(/</g, '\\u003c');
 }
-function renderVideoSection(arma, video) {
-    if (!video || !video.videoId) return '';
+function renderVideoSection(arma, videos) {
+    // videos puede ser una LISTA (rota entre varios recientes) o un objeto (compat)
+    const lista = (Array.isArray(videos) ? videos : (videos ? [videos] : []))
+        .filter(v => v && v.videoId);
+    if (!lista.length) return '';
+    // rotación: uno al azar en cada visita (todos son de los más recientes)
+    const video = lista[Math.floor(Math.random() * lista.length)];
     const id = String(video.videoId);
     const title = video.title || `${arma.nombre} — Warzone gameplay`;
     const channel = video.channel || '';
