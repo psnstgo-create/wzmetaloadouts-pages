@@ -15,7 +15,6 @@ jobs:
         shell: python
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           import json
           import os
@@ -24,9 +23,9 @@ jobs:
           import urllib.request
 
           token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
-          account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
-          if not token or not account_id:
-              raise SystemExit("Missing Cloudflare credentials")
+          account_id = "85148e6d78a9b40431ec1715c9754bfa"
+          if not token:
+              raise SystemExit("Missing Cloudflare API token")
 
           api = "https://api.cloudflare.com/client/v4"
 
