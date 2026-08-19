@@ -1,13 +1,56 @@
 {
-  "timestamp": "2026-08-19T02:03:38.599339+00:00",
+  "timestamp": "2026-08-19T02:56:46.633962+00:00",
   "estado": "OK",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
     "Call of Duty: Warzone"
   ],
-  "activision": {},
-  "plataformas": [],
-  "ultima_caida": null,
+  "activision": {
+    "Call of Duty: Black Ops 7": {
+      "estado": "OK",
+      "eventos_activos": []
+    },
+    "Call of Duty: Warzone": {
+      "estado": "OK",
+      "eventos_activos": []
+    }
+  },
+  "plataformas": [
+    {
+      "nombre": "PlayStation 5",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX Series X|S",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "PlayStation 4",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX One",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Battle.net",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Steam",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX on PC",
+      "estado": "operativo"
+    }
+  ],
+  "ultima_caida": {
+    "titulo": "Connectivity drop across listed titles",
+    "inicio": "August 17, 2026 9:43 AM PST",
+    "fin": "August 17, 2026 11:25 AM PST",
+    "event_id": "25618"
+  },
   "tweets_recientes": [],
   "eventos_activos": []
 }
