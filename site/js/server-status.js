@@ -147,7 +147,8 @@ function renderServerStatusBanner(data) {
     let haceCuanto = '';
     try {
         const minutos = Math.floor((new Date() - new Date(data.timestamp)) / 60000);
-        haceCuanto = minutos < 60 ? `hace ${minutos} min` : `hace ${Math.floor(minutos / 60)}h`;
+        const rel = minutos < 60 ? `${minutos} min` : `${Math.floor(minutos / 60)}h`;
+        haceCuanto = `verificado hace ${rel}`;
     } catch (e) { /* sin fecha valida */ }
 
     if (!banner) {
