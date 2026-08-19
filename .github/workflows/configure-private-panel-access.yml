@@ -1,0 +1,111 @@
+name: Configure private panel Access (temporary)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Create and verify the private Access application
+        shell: python
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+
+          token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
+          account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
+          if not token or not account_id:
+              raise SystemExit("Missing Cloudflare credentials")
+
+          api = "https://api.cloudflare.com/client/v4"
+
+          def request(method, path, payload=None):
+              data = None if payload is None else json.dumps(payload).encode("utf-8")
+              req = urllib.request.Request(
+                  api + path,
+                  data=data,
+                  method=method,
+                  headers={
+                      "Authorization": f"Bearer {token}",
+                      "Content-Type": "application/json",
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as response:
+                      body = json.load(response)
+              except urllib.error.HTTPError as error:
+                  body = error.read().decode("utf-8", "replace")
+                  raise SystemExit(f"Cloudflare API HTTP {error.code}: {body}")
+              if not body.get("success"):
+                  raise SystemExit(f"Cloudflare API rejected the request: {body.get('errors')}")
+              return body.get("result")
+
+          idps = request(
+              "GET",
+              f"/accounts/{account_id}/access/identity_providers?per_page=200",
+          )
+          otp = next((provider for provider in idps if provider.get("type") == "onetimepin"), None)
+          if not otp:
+              raise SystemExit("One-time PIN identity provider was not found")
+
+          hostname = "panel.wzmetaloadouts.com"
+          apps = request("GET", f"/accounts/{account_id}/access/apps?per_page=1000")
+          existing = next((app for app in apps if app.get("domain") == hostname), None)
+          if existing:
+              print(json.dumps({
+                  "status": "already_exists",
+                  "id": existing.get("id"),
+                  "name": existing.get("name"),
+                  "domain": existing.get("domain"),
+              }))
+              sys.exit(0)
+
+          payload = {
+              "name": "Panel privado WZ Meta",
+              "type": "self_hosted",
+              "domain": hostname,
+              "destinations": [{"type": "public", "uri": hostname}],
+              "session_duration": "8h",
+              "allowed_idps": [otp["id"]],
+              "auto_redirect_to_identity": True,
+              "app_launcher_visible": False,
+              "allow_authenticate_via_warp": False,
+              "allow_iframe": False,
+              "enable_binding_cookie": True,
+              "http_only_cookie_attribute": True,
+              "same_site_cookie_attribute": "strict",
+              "options_preflight_bypass": False,
+              "policies": [{
+                  "name": "Solo propietarios WZ Meta",
+                  "decision": "allow",
+                  "precedence": 1,
+                  "session_duration": "8h",
+                  "include": [
+                      {"email": {"email": "psnstgo@gmail.com"}},
+                      {"email": {"email": "wzmetaloadouts@gmail.com"}},
+                  ],
+              }],
+          }
+
+          created = request(
+              "POST",
+              f"/accounts/{account_id}/access/apps",
+              payload,
+          )
+          print(json.dumps({
+              "status": "created",
+              "id": created.get("id"),
+              "name": created.get("name"),
+              "domain": created.get("domain"),
+          }))
