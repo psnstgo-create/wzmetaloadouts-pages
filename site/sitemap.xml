@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-08-19T21:42:29.301276
-  Total URLs: 179
+  Fecha: 2026-08-19T22:02:35.394748
+  Total URLs: 180
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -794,6 +794,12 @@
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/como-desbloquear-mace-warzone-bo7</loc>
+        <lastmod>2026-08-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/ewc-2026-warzone-g2-campeon</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

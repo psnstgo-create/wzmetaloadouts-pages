@@ -62,6 +62,27 @@
     "fecha_legible": "6 de Agosto 2026"
   },
   {
+    "slug": "ewc-2026-warzone-g2-campeon",
+    "url": "/noticias/ewc-2026-warzone-g2-campeon",
+    "titulo": "G2 Esports, campeón del Warzone en el Esports World Cup 2026",
+    "resumen": "G2 Esports se coronó campeón de Warzone Resurgence en el Esports World Cup 2026 tras vencer a T1 en una gran final a 11 mapas. Anziety fue el MVP del torneo.",
+    "imagen": "/uploads/ewc-2026-warzone-g2-campeon.jpg",
+    "categoria": "competitivo",
+    "destacada": false,
+    "tags": [
+      "Warzone",
+      "Esports",
+      "Esports World Cup",
+      "EWC 2026",
+      "G2 Esports",
+      "Competitivo",
+      "Resurgence",
+      "Black Ops 7"
+    ],
+    "date": "2026-08-03 12:00",
+    "fecha_legible": "3 de Agosto 2026"
+  },
+  {
     "slug": "paquete-playstation-plus-7-warzone",
     "url": "/noticias/paquete-playstation-plus-7-warzone",
     "titulo": "Paquete PlayStation Plus 7 de Warzone: cómo reclamarlo gratis en PS5",
