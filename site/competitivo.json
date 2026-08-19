@@ -1,0 +1,29 @@
+{
+  "actualizado": "2026-08-19",
+  "circuito": {
+    "nombre": "Call of Duty: Warzone Resurgence Series (COD:WRS) 2026",
+    "premio": "1.2M USD",
+    "descripcion": "El circuito oficial del Warzone competitivo (formato Resurgence). Combina clasificatorios online, dos LAN en DreamHack Birmingham y DreamHack Atlanta, y culmina en el Championship del Esports World Cup.",
+    "fuente": "https://callofduty.worldseriesofwarzone.com/article/Introducing-CODWRS-2026"
+  },
+  "resultados": [
+    {
+      "torneo": "Esports World Cup 2026 — Warzone Resurgence Championship",
+      "fecha": "3 de agosto de 2026",
+      "lugar": "París, Francia",
+      "bolsa": "1M USD · 32 equipos",
+      "resumen": "G2 Esports se coronó campeón del Warzone en el Esports World Cup 2026 tras una Gran Final a 11 mapas, cerrando la definición en Rebirth Island con un 3v1 clutch. Anthony «Anziety» Moran fue el MVP del torneo. Fue la redención para G2, que había terminado 17º el año anterior.",
+      "podio": [
+        { "pos": 1, "equipo": "G2 Esports", "detalle": "250.000 USD + 1000 pts · MVP: Anziety (Anthony Moran)" },
+        { "pos": 2, "equipo": "T1", "detalle": "150.000 USD + 750 pts" },
+        { "pos": 3, "equipo": "JD Gaming", "detalle": "" },
+        { "pos": 4, "equipo": "Twisted Minds", "detalle": "campeón defensor" }
+      ],
+      "fuente": "https://esportsworldcup.com/en/news/cod-warzone-at-ewc26-champion-g2-esports-redeems-themselves"
+    }
+  ],
+  "ranked": {
+    "titulo": "Ranked Resurgence",
+    "texto": "El modo competitivo dentro del juego es Ranked Resurgence: partidas clasificatorias con divisiones y SR (Skill Rating), donde escalás de Bronce a Iridiscente / Top 250. Es la puerta de entrada al Warzone competitivo y donde practican los aspirantes al circuito COD:WRS."
+  }
+}
