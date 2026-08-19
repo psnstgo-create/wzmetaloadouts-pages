@@ -1,13 +1,71 @@
 {
-  "timestamp": "2026-08-19T19:51:00.804619+00:00",
-  "estado": "OK",
+  "timestamp": "2026-08-19T20:17:02.081341+00:00",
+  "estado": "ALERTA",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
     "Call of Duty: Warzone"
   ],
-  "activision": {},
-  "plataformas": [],
-  "ultima_caida": null,
+  "activision": {
+    "Call of Duty: Black Ops 7": {
+      "estado": "ALERTA",
+      "eventos_activos": [
+        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Black Ops 4, Call of Duty: Black Ops Cold War, Call of Duty: Black Ops 6, Call of Duty: Modern Warfare, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Modern Warfare 4, Call of Duty: Vanguard, Crash Bandicoot 4: It's About Time, Tony Hawk's Pro Skater 3 + 4"
+      ]
+    },
+    "Call of Duty: Warzone": {
+      "estado": "ALERTA",
+      "eventos_activos": [
+        "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Black Ops 4, Call of Duty: Black Ops Cold War, Call of Duty: Black Ops 6, Call of Duty: Modern Warfare, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Modern Warfare 4, Call of Duty: Vanguard, Crash Bandicoot 4: It's About Time, Tony Hawk's Pro Skater 3 + 4"
+      ]
+    }
+  },
+  "plataformas": [
+    {
+      "nombre": "PlayStation 5",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX Series X|S",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "PlayStation 4",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX One",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Battle.net",
+      "estado": "caido"
+    },
+    {
+      "nombre": "Steam",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX on PC",
+      "estado": "operativo"
+    }
+  ],
+  "ultima_caida": {
+    "titulo": "Connectivity drop across listed titles",
+    "inicio": "August 17, 2026 9:43 AM PST",
+    "fin": "August 17, 2026 11:25 AM PST",
+    "event_id": "25618"
+  },
   "tweets_recientes": [],
-  "eventos_activos": []
+  "eventos_activos": [
+    {
+      "fuente": "activision",
+      "juego": "Call of Duty: Black Ops 7",
+      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Black Ops 4, Call of Duty: Black Ops Cold War, Call of Duty: Black Ops 6, Call of Duty: Modern Warfare, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Modern Warfare 4, Call of Duty: Vanguard, Crash Bandicoot 4: It's About Time, Tony Hawk's Pro Skater 3 + 4"
+    },
+    {
+      "fuente": "activision",
+      "juego": "Call of Duty: Warzone",
+      "texto": "We’re currently experiencing connectivity issues for these titles: Call of Duty: Black Ops 7, Call of Duty: Warzone, Call of Duty: Black Ops 4, Call of Duty: Black Ops Cold War, Call of Duty: Black Ops 6, Call of Duty: Modern Warfare, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III, Call of Duty: Modern Warfare 4, Call of Duty: Vanguard, Crash Bandicoot 4: It's About Time, Tony Hawk's Pro Skater 3 + 4"
+    }
+  ]
 }
