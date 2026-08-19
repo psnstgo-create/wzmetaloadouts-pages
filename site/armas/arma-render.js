@@ -371,6 +371,31 @@ function renderVideoSection(arma, videos) {
     `;
 }
 
+// ── "Explorá más": linking interno a los hubs (tier list, comparar, clases…) ──
+function renderMasLinks(arma) {
+    const t = _norm(arma.tipo || '');
+    let tierTipo = '/mejores-fusiles-asalto-warzone', tierLabel = 'Mejores fusiles';
+    if (t.includes('subfusil')) { tierTipo = '/mejores-smg-warzone'; tierLabel = 'Mejores SMG'; }
+    else if (t.includes('francotirador') || t.includes('precision')) { tierTipo = '/mejores-francotiradores-warzone'; tierLabel = 'Mejores snipers'; }
+    else if (t.includes('escopeta')) { tierTipo = '/mejores-escopetas-warzone'; tierLabel = 'Mejores escopetas'; }
+    else if (!t.includes('asalto')) { tierTipo = '/tier-list-armas-warzone'; tierLabel = 'Tier list completa'; }
+    const links = [
+        ['/tier-list-armas-warzone', 'Tier list de armas'],
+        [tierTipo, tierLabel],
+        ['/comparar', 'Comparar armas'],
+        ['/clases', 'Clases meta'],
+        ['/ventajas', 'Mejores ventajas'],
+    ];
+    const pills = links.map(([h, txt]) =>
+        `<a href="${h}" style="font-family:'Share Tech Mono',monospace;font-size:.78rem;letter-spacing:.04em;color:#EEF2F6;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:9px 16px;text-decoration:none;transition:.15s" onmouseover="this.style.borderColor='#F0C419';this.style.color='#F0C419'" onmouseout="this.style.borderColor='rgba(255,255,255,.09)';this.style.color='#EEF2F6'">${txt}</a>`
+    ).join('');
+    return `<section class="video-section" aria-label="Explorá más de Warzone">
+        <h2 class="section-title">Explorá <span class="accent">más</span></h2>
+        <p class="section-subtitle">Tier lists, comparaciones y clases del meta de Warzone</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">${pills}</div>
+    </section>`;
+}
+
 function setupIconFallback() {
     document.querySelectorAll('.row-icon-frame img, .att-icon-frame img').forEach(img => {
         img.addEventListener('error', function() {
@@ -602,7 +627,8 @@ async function renderArmaPage(slug) {
             renderHero(arma) +
             renderLoadoutsSection(arma) +
             renderVideoSection(arma, video) +
-            renderAllAttachmentsSection(arma);
+            renderAllAttachmentsSection(arma) +
+            renderMasLinks(arma);
         setupLoadoutTabs();
         setupChipsScroll();
         setupIconFallback();
