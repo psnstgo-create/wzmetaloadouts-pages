@@ -50,13 +50,7 @@ jobs:
                   raise SystemExit(f"Cloudflare API rejected the request: {body.get('errors')}")
               return body.get("result")
 
-          idps = request(
-              "GET",
-              f"/accounts/{account_id}/access/identity_providers?per_page=200",
-          )
-          otp = next((provider for provider in idps if provider.get("type") == "onetimepin"), None)
-          if not otp:
-              raise SystemExit("One-time PIN identity provider was not found")
+          otp_id = "d6b45d17-13cb-4a02-aec2-2759dfb663c2"
 
           hostname = "panel.wzmetaloadouts.com"
           apps = request("GET", f"/accounts/{account_id}/access/apps?per_page=1000")
@@ -76,7 +70,7 @@ jobs:
               "domain": hostname,
               "destinations": [{"type": "public", "uri": hostname}],
               "session_duration": "8h",
-              "allowed_idps": [otp["id"]],
+              "allowed_idps": [otp_id],
               "auto_redirect_to_identity": True,
               "app_launcher_visible": False,
               "allow_authenticate_via_warp": False,
