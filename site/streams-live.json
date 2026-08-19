@@ -1,29 +1,11 @@
 {
-  "generado": "2026-08-19T04:21:04Z",
+  "generado": "2026-08-19T05:03:00Z",
   "streams": [
-    {
-      "login": "mirreytv",
-      "name": "MirreyTv",
-      "title": "Torneo Switcharoo x $100,000 || Anziety x Rxul",
-      "viewers": 422,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mirreytv-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/929430cd-d894-4e7c-8a67-cfc3e376d698-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "goatclamp",
-      "name": "GoatClamp",
-      "title": "TORNEO SWITCH RESURGENCE x $50,000 | Redes: @GoatClamp",
-      "viewers": 321,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goatclamp-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d812d829-56b5-4418-92e8-0ec95f9110e4-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
     {
       "login": "criminalgod_",
       "name": "criminalgod_",
       "title": "Ranked #1 LATAM y PR   #GOLEV💙",
-      "viewers": 205,
+      "viewers": 448,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_criminalgod_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c76ebb28-0b4a-44b4-a424-e5f513c98f3e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -32,7 +14,7 @@
       "login": "mingod",
       "name": "Mingod",
       "title": "REBIRTH KING | CT | !youtube",
-      "viewers": 174,
+      "viewers": 247,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mingod-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/afa0d4e9-8430-4e66-b2ca-f9f6ef06aea5-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -41,7 +23,7 @@
       "login": "woodzzii",
       "name": "woodzzii",
       "title": "EL MEJOR DE MEXICO EN ACCION +9KD RANKS TOP 250 | !sub !yt !discord !control",
-      "viewers": 166,
+      "viewers": 245,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_woodzzii-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f2b1ebc2-2a45-4579-846c-4da33f8d55c1-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -50,9 +32,27 @@
       "login": "elstronk",
       "name": "elStronk",
       "title": "No hay roki pero hay AUDICIÓN",
-      "viewers": 155,
+      "viewers": 202,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elstronk-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3fe8c6c3-a7dd-42f2-8e62-211d948ef4c0-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "onexxgg",
+      "name": "OneXxgg",
+      "title": "REGRESE! CLASH ROYALE NOCTURNO",
+      "viewers": 189,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_onexxgg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6406a46a-a213-4577-9f68-3bbcea91f854-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "zdark",
+      "name": "zDark",
+      "title": "TORNEITOOO SWITCH RESURGENCE !!! @leviatangg",
+      "viewers": 108,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2d301fa1-5097-4ace-8bba-c7cc3844d627-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -65,21 +65,12 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "zdark",
-      "name": "zDark",
-      "title": "TORNEITOOO SWITCH RESURGENCE !!! @leviatangg",
-      "viewers": 62,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2d301fa1-5097-4ace-8bba-c7cc3844d627-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "rickystrikisoficial",
-      "name": "RickystrikisOficial",
-      "title": "🔥🐦‍🔥 ONLY DETRIS PHOENIX CUSTOMS🔥🐦‍🔥@phoenixarenagaming",
-      "viewers": 53,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rickystrikisoficial-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e2860d10-17a9-4496-b780-4b308a4b4d84-profile_image-300x300.png",
+      "login": "toxicos_oficcial",
+      "name": "toxicos_oficcial",
+      "title": "dia 6 jugando warzon",
+      "viewers": 59,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_toxicos_oficcial-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/512a3e85-931a-4a24-8507-99cd175b6ca1-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -92,12 +83,30 @@
       "game": "Call of Duty: Warzone"
     },
     {
+      "login": "mirosdevora",
+      "name": "MirosDevora",
+      "title": "✨CONFIRMADO equipo PARA EL COD NEXT✨ !noti !redes",
+      "viewers": 35,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mirosdevora-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/9fc006d8-1262-42bd-95fc-8b62cc3b6a32-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
       "login": "kathandre",
       "name": "Kathandre",
       "title": "Chill con el chat  hoy🐦‍🔥",
-      "viewers": 35,
+      "viewers": 32,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kathandre-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/dfdae570-36fb-42de-8dd7-12b07cb0742d-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "gsitegg",
+      "name": "GSITEGG",
+      "title": "OFFICIAL BROADCAST: 2 ELITES 1 DETRI CUSTOMS by @gsitegg |👻!redes !socials !calendar",
+      "viewers": 32,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gsitegg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6bd901-90fe-47dd-be26-a192f3af2900-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
