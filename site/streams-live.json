@@ -1,38 +1,65 @@
 {
-  "generado": "2026-08-20T15:02:14Z",
+  "generado": "2026-08-20T15:47:13Z",
   "streams": [
+    {
+      "login": "ketchup",
+      "name": "Ketchup",
+      "title": "⚡️⚠️ Ranks w/@swagg & @ArmoryAceGaming ⚠️⚡️| Player for @onefamily_PR 🦍 !hacks !meta !sens !allsettings",
+      "viewers": 1010,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ketchup-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cda7a627-2e8b-4ac5-9299-3ea54c657805-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "kestico",
+      "name": "Kestico",
+      "title": "🚨NUEVA TEMPORADA 5.5 de WARZONE YA! + COD NEXT MAÑANA🚨 !movement !audio",
+      "viewers": 690,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kestico-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2df86dba-1146-4854-b2db-ffb267239d31-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
     {
       "login": "mrsoki",
       "name": "MrSoki",
       "title": "REGALANDO BETAS de MODERN WARFARE 4 | NUEVA TEMPORADA ☢️ !meta",
-      "viewers": 362,
+      "viewers": 457,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrsoki-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b801de57-32c6-4eb5-a2d4-3d22c2eaa4a6-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lamejorclase",
-      "name": "LaMejorClase",
-      "title": "MAÑANA -> COD NEXT + BETA MW4🟨| DÚOS CON ZYRPES🚨|🟠!nolagvpn🔴!prozis🔵!mando",
-      "viewers": 222,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lamejorclase-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/33cdad88-d3da-403c-9c07-ccc457209d62-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "zyrpesland",
       "name": "zyrpesland",
       "title": "TENGO CODIGOS BETA | EXTENSIBLE MAÑANA🟨!scuf 🟩!monster🟥!prozis",
-      "viewers": 214,
+      "viewers": 215,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zyrpesland-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0cf31ce6-dd6a-49a6-8813-ce3d8489b977-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "lamejorclase",
+      "name": "LaMejorClase",
+      "title": "MAÑANA -> COD NEXT + BETA MW4🟨| DÚOS CON ZYRPES🚨|🟠!nolagvpn🔴!prozis🔵!mando",
+      "viewers": 195,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lamejorclase-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/33cdad88-d3da-403c-9c07-ccc457209d62-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "soykronosgg",
+      "name": "soykronosgg",
+      "title": "🛑NUEVA TEMPOORADA RECARGADA🛑🛑RANKED TOP250 CON LA NUEVA META🛑",
+      "viewers": 104,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soykronosgg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/06e7065c-a04a-4bde-8a42-1ad3ed304301-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "borraskka",
       "name": "borraskka",
       "title": "🚨SORTEO BETAS MW4 YA! GTA 6 NUEVO LEAK🚨| !Paypal !Discord !Redes | 🟩",
-      "viewers": 94,
+      "viewers": 92,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_borraskka-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d1cf174d-6359-4c4b-88db-689b8429d064-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -41,72 +68,45 @@
       "login": "tojor",
       "name": "TojoR",
       "title": "RANKEEEDS - MAÑANA COD NEXT MW4!!!",
-      "viewers": 51,
+      "viewers": 48,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tojor-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/866b8b70-961b-4691-8c7f-60d7bfec261f-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "manitos_gaming",
+      "name": "manitos_gaming",
+      "title": "Los Mejores Malos - Juernes y el cuerpo lo sabe!!  18+ 08/20/26",
+      "viewers": 44,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_manitos_gaming-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ac9fca13-20bd-49fd-94ee-8b9de861bc09-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "flopardo39",
       "name": "flopardo39",
       "title": "TOP #1 DE POMONA MAÑANERO COMO TE GUSTA !DC !ÑEMA",
-      "viewers": 26,
+      "viewers": 32,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "renrizevods",
-      "name": "RenRizeVODs",
-      "title": "EN VIVO VODS 24/7 - REPETICIONES DEL CANAL DE @RenRize ♡ !redes !wsp",
-      "viewers": 24,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_renrizevods-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ea7dd7fc-a619-4d65-9214-6e202c883841-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "sebasberon",
       "name": "SEBASBERON",
       "title": "Salsita & Warzone | !colombia",
-      "viewers": 17,
+      "viewers": 19,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sebasberon-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fdef8f55-59b8-49ba-9703-474d20285235-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "ganstachii",
-      "name": "GansTachii",
-      "title": "☁️Rankeds w/ @TojoR  @MrSoki ☁️",
-      "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ganstachii-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bd6937da-90ff-4725-a182-7b3d1c5f6f8d-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "pepitasahot",
-      "name": "pepitasahot",
-      "title": "Rank Grind iris  SoloQ",
-      "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pepitasahot-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/de7332a8-b2f5-46b3-a623-7b9b6933a1b0-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "r3loadgg",
-      "name": "R3LOADGG",
-      "title": "NUEVO META/TEMP 5 RECARGADA",
-      "viewers": 10,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3loadgg-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cbc81a25-d072-436a-87b7-65e2ced3853b-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "thundervf",
-      "name": "ThunderVF",
-      "title": "+18 /┌∩┐(◣_◢)┌∩┐ | !dice !musica !cola !pc",
-      "viewers": 9,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thundervf-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cc9051e4-82e9-4fdf-bb1c-9e7ca9d51529-profile_image-300x300.png",
+      "login": "eldurogamings",
+      "name": "ElDuroGamings",
+      "title": "Farmeando aura al 1000000",
+      "viewers": 16,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldurogamings-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/55fb31cd-25c8-44a9-ac73-d48cd1917c74-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
