@@ -1090,7 +1090,7 @@
       "juego": "bo7",
       "tipo": "Subfusil",
       "rango": "Corto Alcance",
-      "tier": "S",
+      "tier": "B",
       "ranking": 2,
       "pick_rate": "",
       "imagen": "/weapons/gold/CBRS-3.png",
@@ -1595,10 +1595,10 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 2,
-      "_catRank": 1,
+      "_autoRank": 12,
+      "_catRank": 6,
       "inMeta": true,
-      "_ttk": 418,
+      "_ttk": 501,
       "_refDist": 0
     },
     "1911-pistol": {
@@ -3812,8 +3812,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 4,
-      "_catRank": 2,
+      "_autoRank": 2,
+      "_catRank": 1,
       "inMeta": true,
       "_ttk": 440,
       "_refDist": 0
@@ -4313,8 +4313,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 13,
-      "_catRank": 7,
+      "_autoRank": 11,
+      "_catRank": 6,
       "inMeta": true,
       "_ttk": 792,
       "_refDist": 40
@@ -4845,7 +4845,7 @@
       "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "B",
+      "tier": "C",
       "ranking": 5,
       "pick_rate": "4.81%",
       "imagen": "/weapons/gold/MXR-17.png",
@@ -5382,8 +5382,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 17,
-      "_catRank": 9,
+      "_autoRank": 21,
+      "_catRank": 11,
       "inMeta": true,
       "_ttk": 720,
       "_refDist": 40
@@ -5393,7 +5393,7 @@
       "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "C",
+      "tier": "B",
       "ranking": 23,
       "pick_rate": null,
       "imagen": "/weapons/gold/EGRT-17.png",
@@ -5857,10 +5857,10 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 21,
-      "_catRank": 11,
+      "_autoRank": 17,
+      "_catRank": 9,
       "inMeta": true,
-      "_ttk": 592,
+      "_ttk": 518,
       "_refDist": 40
     },
     "peacekeeper-mk1": {
@@ -7283,8 +7283,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 22,
-      "_catRank": 11,
+      "_autoRank": 24,
+      "_catRank": 12,
       "inMeta": true,
       "_ttk": 460,
       "_refDist": 0
@@ -8276,10 +8276,10 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 10,
-      "_catRank": 5,
+      "_autoRank": 6,
+      "_catRank": 3,
       "inMeta": true,
-      "_ttk": 455,
+      "_ttk": 390,
       "_refDist": 0
     },
     "sturmwolf-45": {
@@ -8792,7 +8792,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−33%), velocidad de bala (+15%) y cargador (+10 balas). A cambio sacrifica velocidad de ADS (-15%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−42%), velocidad de bala (+20%) y cargador (+10 balas). A cambio sacrifica velocidad de ADS (-15%).",
           "items": [
             {
               "slot": "Optic",
@@ -8800,14 +8800,14 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
-            },
-            {
               "slot": "Barrel",
               "label": "Cañón",
               "name": "16\" Reticulated Barrel"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "RL-5.56 Brake"
             },
             {
               "slot": "Magazine",
@@ -8815,9 +8815,9 @@
               "name": "Backline Flip Mags"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Caravan-H2 Grip"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Buffer Spring"
             }
           ]
         },
@@ -8827,9 +8827,10 @@
           "emoji": "⚡",
           "codigo": "",
           "modos": [
-            "resurgence"
+            "resurgence",
+            "clasificatorio"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−13%), cargador (+10 balas), ADS más rápido (+9%) y sprint-a-disparo (+9%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−33%).",
           "items": [
             {
               "slot": "Optic",
@@ -8840,38 +8841,6 @@
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "RL-5.56 Brake"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "15\" Mirage Light Barrel"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Caravan-H2 Grip"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Backline Flip Mags"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
-            "clasificatorio"
-          ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−18%) y cargador (+15 balas).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
             },
             {
               "slot": "Barrel",
@@ -8879,19 +8848,14 @@
               "name": "20\" Delta-F2 Barrel"
             },
             {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Buffer Spring"
             },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Caravan-H2 Grip"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Mayday Extended Mag"
             }
           ]
         }
@@ -9289,7 +9253,7 @@
       "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "B",
+      "tier": "A",
       "ranking": 17,
       "pick_rate": null,
       "imagen": "/weapons/gold/MPC-25.png",
@@ -9759,10 +9723,10 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 12,
-      "_catRank": 6,
+      "_autoRank": 10,
+      "_catRank": 5,
       "inMeta": true,
-      "_ttk": 510,
+      "_ttk": 425,
       "_refDist": 0
     },
     "vs-recon": {
@@ -10236,7 +10200,7 @@
       "juego": "bo7",
       "tipo": "Subfusil",
       "rango": null,
-      "tier": "A",
+      "tier": "S",
       "ranking": 6,
       "pick_rate": null,
       "imagen": "/weapons/gold/REV-46.png",
@@ -10645,8 +10609,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 6,
-      "_catRank": 3,
+      "_autoRank": 4,
+      "_catRank": 2,
       "inMeta": true,
       "_ttk": 468,
       "_refDist": 0
@@ -11625,8 +11589,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 27,
-      "_catRank": 14,
+      "_autoRank": 29,
+      "_catRank": 15,
       "inMeta": true,
       "_ttk": 626,
       "_refDist": 40
@@ -12090,8 +12054,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 23,
-      "_catRank": 12,
+      "_autoRank": 27,
+      "_catRank": 14,
       "inMeta": true,
       "_ttk": 696,
       "_refDist": 40
@@ -13548,8 +13512,8 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 29,
-      "_catRank": 15,
+      "_autoRank": 31,
+      "_catRank": 16,
       "inMeta": true,
       "_ttk": 765,
       "_refDist": 40
@@ -19180,7 +19144,7 @@
       "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": "Largo Alcance",
-      "tier": "B",
+      "tier": "S",
       "ranking": 13,
       "pick_rate": "",
       "imagen": "/weapons/gold/AN-94.png",
@@ -19689,10 +19653,10 @@
       },
       "es_nuevo": false,
       "es_buff": false,
-      "_autoRank": 11,
-      "_catRank": 6,
+      "_autoRank": 3,
+      "_catRank": 2,
       "inMeta": true,
-      "_ttk": 651,
+      "_ttk": 558,
       "_refDist": 40
     },
     "executioners-duet": {
@@ -19768,7 +19732,7 @@
       "juego": "bo7",
       "tipo": "Fusil de asalto",
       "rango": null,
-      "tier": "S",
+      "tier": "B",
       "ranking": 1,
       "pick_rate": "",
       "imagen": "/weapons/gold/FG42.png",
@@ -20105,8 +20069,8 @@
       },
       "es_nuevo": true,
       "es_buff": false,
-      "_autoRank": 3,
-      "_catRank": 2,
+      "_autoRank": 13,
+      "_catRank": 7,
       "inMeta": true,
       "_ttk": 601,
       "_refDist": 40
@@ -20411,10 +20375,10 @@
       },
       "es_nuevo": true,
       "es_buff": false,
-      "_autoRank": 24,
-      "_catRank": 12,
+      "_autoRank": 22,
+      "_catRank": 11,
       "inMeta": true,
-      "_ttk": 952,
+      "_ttk": 896,
       "_refDist": 0
     },
     "mammoth": {
@@ -20774,10 +20738,10 @@
       },
       "es_nuevo": true,
       "es_buff": false,
-      "_autoRank": 31,
-      "_catRank": 16,
+      "_autoRank": 23,
+      "_catRank": 12,
       "inMeta": true,
-      "_ttk": 820,
+      "_ttk": 656,
       "_refDist": 40
     },
     "mace": {

@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2026-07-22T18:34:53.131104+00:00",
-  "total_patches": 6,
+  "ultima_actualizacion": "2026-08-20T21:47:24.748694+00:00",
+  "total_patches": 7,
   "patches": {
     "b5513b27fe9f9141": {
       "id": "b5513b27fe9f9141",
@@ -330,6 +330,132 @@
       ],
       "scrape_status": "github-models",
       "notificado": true,
+      "es_urgente": true
+    },
+    "07be14c1916dfe4d": {
+      "id": "07be14c1916dfe4d",
+      "url": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+      "titulo": "Call of Duty: Warzone Season 05 Reloaded Patch Notes",
+      "tipo": "season_reloaded",
+      "fecha_publicacion": "Wed, 19 Aug 2026 00:00:00 GMT",
+      "fecha_detectada": "2026-08-20T21:47:24.748694+00:00",
+      "descripcion": "Balance oficial de armas de Season 05 Reloaded.",
+      "armas_afectadas": [
+        {
+          "slug": "an-94",
+          "nombre": "AN-94",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 38→41 y alcance máximo 40→45 m; daño medio 34→37; daño mínimo 32→33 (todos los modos). Menor sacudida de retícula y 10% menos retroceso vertical; mejoras al cañón 15\" Benthic (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "egrt-17",
+          "nombre": "EGRT-17",
+          "tipo_cambio": "adjustment",
+          "extracto": "Alcance máximo 38→42 m, daño medio 30→31 y daño mínimo 25→26; rangos medio/mínimo ampliados (todos los modos). Velocidad de bala 900→880 m/s y retroceso aumentado 10% (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "fg42",
+          "nombre": "FG42",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño mínimo reducido de 28 a 27 más allá de 58 m.",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "m15-mod-0",
+          "nombre": "M15 Mod 0",
+          "tipo_cambio": "buff",
+          "extracto": "Velocidad de bala 910→920 m/s; mejoras a 20\" Delta-F2, Buffer Spring y 16\" Reticulated Barrel.",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mk35-isr",
+          "nombre": "MK35 ISR",
+          "tipo_cambio": "buff",
+          "extracto": "Alcance máximo 38→42 m, rango medio ampliado hasta 58 m y daño mínimo 30→31 (todos los modos). Velocidad de bala 910→920 m/s y mejoras a Greaves Bellum, PN-Cursus y 5.56 NATO FMJ (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mxr-17",
+          "nombre": "MXR-17",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño máximo 48→46, medio 41→38 y mínimo 38→34; rango medio reducido hasta 45 m (todos los modos). Velocidad de bala 900→880 m/s y retroceso aumentado 10% (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "vx-compact",
+          "nombre": "VX Compact",
+          "tipo_cambio": "buff",
+          "extracto": "Rango medio ampliado de 50 a 55 m (todos los modos) y velocidad de bala 890→910 m/s (BR/Resurgence). Mejoras a Redwell 5.56 Compensator, Lateral Precision Grip y 13\" Promontory Barrel.",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "cbrs-3",
+          "nombre": "CBRS-3",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño máximo 42→38 y medio 36→34; rangos reducidos a 13 m y 22 m (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "gremlin",
+          "nombre": "Gremlin",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 14→15 y medio 12→13; alcance máximo 11,6→12,5 m y multiplicadores inferiores 0,9x→0,95x. Procural Extended Mag aumenta de 40 a 50 balas (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mpc-25",
+          "nombre": "MPC-25",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 40→42 y daño medio 36→37 (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "ryden-45k",
+          "nombre": "Ryden 45K",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo aumentado de 35 a 36 (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "sturmwolf-45",
+          "nombre": "Sturmwolf 45",
+          "tipo_cambio": "buff",
+          "extracto": "Retroceso horizontal reducido (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mammoth",
+          "nombre": "Mammoth",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 55→63, medio 46→52 y mínimo 39→43; multiplicador de cabeza 1,1x→1,2x. Velocidad de bala aumentada de 820 a 870 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "m10-breacher",
+          "nombre": "M10 Breacher",
+          "tipo_cambio": "buff",
+          "extracto": "Argus Lever: daño ADS máximo 32→34 y medio 30→32 (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "sg-12",
+          "nombre": "SG-12",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 25→28 y medio 20→23; rangos ampliados, multiplicador de cabeza 1x→1,2x y sprint-to-fire 200→170 ms. 12 Gauge Slug mejora daño de cabeza/torso, rangos y velocidad de bala 240→600 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "strider-300",
+          "nombre": "Strider 300",
+          "tipo_cambio": "buff",
+          "extracto": "25\" Bowen Grooved Barrel reduce la penalización ADS 11%→7%; .300 WM Overpressured mejora velocidad de bala 18%→22%.",
+          "clasificado_por": "verificacion-manual-oficial"
+        }
+      ],
+      "scrape_status": "verificado-manual-oficial",
+      "notificado": false,
       "es_urgente": true
     }
   }

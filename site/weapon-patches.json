@@ -2,9 +2,9 @@
   "_meta": {
     "descripcion": "Historial oficial de cambios buff/nerf por arma. Cada entrada cita la fuente verificable.",
     "fuente_oficial": "Treyarch / Raven Software · publicado en callofduty.com/patchnotes",
-    "ultima_actualizacion": "2026-07-23",
-    "cobertura": "Season 1 (4 dic 2025) hasta Season 5 (jul 2026), incluyendo S1 Reloaded, S2 Reloaded y Season 4 Reloaded (24 jun 2026)",
-    "armas_incluidas": 26,
+    "ultima_actualizacion": "2026-08-20",
+    "cobertura": "Season 1 (4 dic 2025) hasta Season 5 Reloaded (19 ago 2026), incluyendo los parches Reloaded disponibles",
+    "armas_incluidas": 33,
     "armas_top_15": [
       "ak-27",
       "ds20-mirage",
@@ -264,6 +264,28 @@
     "nombre": "MXR-17",
     "patches": [
       {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo 48→46, medio 41→38 y mínimo 38→34; rango medio reducido hasta 45 m (todos los modos)."
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala 900→880 m/s y retroceso aumentado 10% (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
         "season": "Season 5",
         "fecha": "2026-07-22",
         "modos_afectados": [
@@ -389,6 +411,28 @@
   "mk35-isr": {
     "nombre": "MK35 ISR",
     "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Alcance máximo 38→42 m, rango medio ampliado hasta 58 m y daño mínimo 30→31 (todos los modos)."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de bala 910→920 m/s y mejoras a Greaves Bellum, PN-Cursus y 5.56 NATO FMJ (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
       {
         "season": "Season 4 Reloaded",
         "fecha": "2026-06-24",
@@ -838,6 +882,23 @@
     "nombre": "Strider 300",
     "patches": [
       {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "25\" Bowen Grooved Barrel reduce la penalización ADS 11%→7%; .300 WM Overpressured mejora velocidad de bala 18%→22%."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
         "season": "Season 4",
         "fecha": "2026-06-04",
         "modos_afectados": [
@@ -1049,6 +1110,24 @@
     "nombre": "Ryden 45K",
     "patches": [
       {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo aumentado de 35 a 36 (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
         "season": "Season 5",
         "fecha": "2026-07-04",
         "modos_afectados": [
@@ -1084,6 +1163,24 @@
   "cbrs-3": {
     "nombre": "CBRS-3",
     "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo 42→38 y medio 36→34; rangos reducidos a 13 m y 22 m (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
       {
         "season": "Season 4 Reloaded",
         "fecha": "2026-06-24",
@@ -1172,6 +1269,28 @@
   "an-94": {
     "nombre": "AN-94",
     "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 38→41 y alcance máximo 40→45 m; daño medio 34→37; daño mínimo 32→33 (todos los modos)."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Menor sacudida de retícula y 10% menos retroceso vertical; mejoras al cañón 15\" Benthic (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
       {
         "season": "Season 5",
         "fecha": "2026-07-22",
@@ -1285,6 +1404,28 @@
     "nombre": "VX Compact",
     "patches": [
       {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rango medio ampliado de 50 a 55 m (todos los modos) y velocidad de bala 890→910 m/s (BR/Resurgence)."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Mejoras a Redwell 5.56 Compensator, Lateral Precision Grip y 13\" Promontory Barrel."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
         "season": "Season 4 Reloaded",
         "fecha": "2026-06-24",
         "modos_afectados": [
@@ -1333,6 +1474,23 @@
   "sturmwolf-45": {
     "nombre": "Sturmwolf 45",
     "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso horizontal reducido (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
       {
         "season": "Season 4 Reloaded",
         "fecha": "2026-06-24",
@@ -1528,6 +1686,23 @@
     "nombre": "M15 Mod 0",
     "patches": [
       {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de bala 910→920 m/s; mejoras a 20\" Delta-F2, Buffer Spring y 16\" Reticulated Barrel."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
         "season": "Season 5",
         "fecha": "2026-07-22",
         "modos_afectados": [
@@ -1550,6 +1725,182 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      }
+    ]
+  },
+  "egrt-17": {
+    "nombre": "EGRT-17",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Alcance máximo 38→42 m, daño medio 30→31 y daño mínimo 25→26; rangos medio/mínimo ampliados (todos los modos)."
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Velocidad de bala 900→880 m/s y retroceso aumentado 10% (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "fg42": {
+    "nombre": "FG42",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño mínimo reducido de 28 a 27 más allá de 58 m."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "gremlin": {
+    "nombre": "Gremlin",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 14→15 y medio 12→13; alcance máximo 11,6→12,5 m y multiplicadores inferiores 0,9x→0,95x."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Procural Extended Mag aumenta de 40 a 50 balas (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "mpc-25": {
+    "nombre": "MPC-25",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 40→42 y daño medio 36→37 (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "mammoth": {
+    "nombre": "Mammoth",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 55→63, medio 46→52 y mínimo 39→43; multiplicador de cabeza 1,1x→1,2x."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Velocidad de bala aumentada de 820 a 870 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "m10-breacher": {
+    "nombre": "M10 Breacher",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Argus Lever: daño ADS máximo 32→34 y medio 30→32 (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "sg-12": {
+    "nombre": "SG-12",
+    "patches": [
+      {
+        "season": "Season 5 Reloaded",
+        "fecha": "2026-08-19",
+        "modos_afectados": [
+          "Multiplayer",
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 25→28 y medio 20→23; rangos ampliados, multiplicador de cabeza 1x→1,2x y sprint-to-fire 200→170 ms."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "12 Gauge Slug mejora daño de cabeza/torso, rangos y velocidad de bala 240→600 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
         "verificado_manual": true
       }
     ]
