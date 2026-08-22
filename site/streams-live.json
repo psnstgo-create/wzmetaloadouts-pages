@@ -1,29 +1,38 @@
 {
-  "generado": "2026-08-22T21:35:15Z",
+  "generado": "2026-08-22T21:55:53Z",
   "streams": [
+    {
+      "login": "pandatvmx",
+      "name": "PandaTvMx",
+      "title": "NUEVO COD, SERA EL MEJOR!?  | [ESP/ENG] | 2k STREAM 🔴",
+      "viewers": 68,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "thegoodplayer08",
+      "name": "thegoodplayer08",
+      "title": "CHARLANDO Y JUGANDO WARZONE | !PC !SENS",
+      "viewers": 28,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thegoodplayer08-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3e8bb65-5154-4c82-bea5-aba5dcbf2809-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
     {
       "login": "vnetodz",
       "name": "vNetodz",
       "title": "MW4 BETA 🦇 | EWC 2026 Finalist | !Redes !Playlist",
-      "viewers": 33,
+      "viewers": 27,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vnetodz-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bbcdfdb1-51ce-41d4-92d2-9243059d3ba1-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "aandreaa_18",
-      "name": "aandreaa_18",
-      "title": "✨Primer Stream largo💋Especial 12 Horas💋✨",
-      "viewers": 23,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aandreaa_18-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2c8a1817-71d7-4b6a-a475-84b2009b9070-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "reshes19",
       "name": "reshes19",
       "title": "NUEVO CALL OF DUTY MODERN WARFARE 4",
-      "viewers": 22,
+      "viewers": 23,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_reshes19-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a8d70eb4-2338-42a8-b2e8-bc2d7a2cea93-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -32,36 +41,18 @@
       "login": "lxjimmy0",
       "name": "lxjimmy0",
       "title": "Live with Restream",
-      "viewers": 21,
+      "viewers": 23,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lxjimmy0-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/79b8c038-9737-4d9f-af7b-5946122f8888-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "thegoodplayer08",
-      "name": "thegoodplayer08",
-      "title": "CHARLANDO Y JUGANDO WARZONE | !PC !SENS",
-      "viewers": 18,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thegoodplayer08-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3e8bb65-5154-4c82-bea5-aba5dcbf2809-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "elrojotw",
-      "name": "elROJOtw",
-      "title": "☠️ Hasta que NO GANE en WARZONE no APAGO STREAM ☠️ | (Limite 12h)",
-      "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elrojotw-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6f9013fa-ad85-46b8-924c-e10866d4cc8f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "z0sito",
-      "name": "z0sito",
-      "title": "SACANDO LA NUKE AURAAAAA",
-      "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_z0sito-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/307f99ee-45bf-4c80-b7bc-5359bf504829-profile_image-300x300.jpeg",
+      "login": "aandreaa_18",
+      "name": "aandreaa_18",
+      "title": "✨Primer Stream largo💋Especial 12 Horas💋✨",
+      "viewers": 22,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aandreaa_18-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2c8a1817-71d7-4b6a-a475-84b2009b9070-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -74,37 +65,46 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "dozzma",
-      "name": "Dozzma",
-      "title": "😎¿¡Ola Keaze!?😎⚠️un poquito de la beta⚠️ | 🔴2k stream🟣 | ⚠️F/A LMK⚠️| !meta !comandos |",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dozzma-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6919fa63-7c9d-452e-9897-bd9c45bf4210-profile_image-300x300.png",
+      "login": "z0sito",
+      "name": "z0sito",
+      "title": "SACANDO LA NUKE AURAAAAA",
+      "viewers": 11,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_z0sito-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/307f99ee-45bf-4c80-b7bc-5359bf504829-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "bryanx_tv",
-      "name": "Bryanx_Tv",
-      "title": "BryanxTv Jugando Beta de Mw4|@Bryanx_Tv Meta de subs 22|25",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bryanx_tv-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/490ac531-882e-4561-8211-0bb977d755b1-profile_image-300x300.png",
+      "login": "vmrrob",
+      "name": "vMrROB",
+      "title": "passion 🧪 | @vmrrob | !pc !sens !controller !audio",
+      "viewers": 10,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vmrrob-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0a7d342c-d7e9-44ec-b9ed-d213e8a2d8c5-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "valvoka_ioachdrummer",
       "name": "Valvoka_ioachdrummer",
       "title": "wuarzone manqueando como siempre",
-      "viewers": 10,
+      "viewers": 9,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valvoka_ioachdrummer-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cf822cd5-5b22-4d0c-9642-f499662be9c1-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "bryanx_tv",
+      "name": "Bryanx_Tv",
+      "title": "BryanxTv Jugando Beta de Mw4|@Bryanx_Tv Meta de subs 22|25",
+      "viewers": 9,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bryanx_tv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/490ac531-882e-4561-8211-0bb977d755b1-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "eljoceo",
       "name": "Eljoceo",
       "title": "SÁBADO DE MANCOS - SALA PRIVADA - ÚNETE A LA PARTIDA",
-      "viewers": 10,
+      "viewers": 8,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eljoceo-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/74e19145-ea4e-4b0f-9e42-7be4e416c68d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
