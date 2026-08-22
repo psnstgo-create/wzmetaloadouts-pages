@@ -1,112 +1,103 @@
 {
-  "generado": "2026-08-22T00:42:52Z",
+  "generado": "2026-08-22T02:04:48Z",
   "streams": [
     {
       "login": "goatclamp",
       "name": "GoatClamp",
       "title": "COD NEXT! PROBANDO NUEVO MW4 🤓 | Redes: @GoatClamp",
-      "viewers": 221,
+      "viewers": 215,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goatclamp-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d812d829-56b5-4418-92e8-0ec95f9110e4-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "tenux_official_",
+      "name": "tenux_official_",
+      "title": "BATTLE ROYAL GRIND",
+      "viewers": 121,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tenux_official_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b2d34b9b-c889-42b7-a600-1eed430c0f8d-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "titopower_",
+      "name": "TitoPower_",
+      "title": "🇩🇴🧟 WZ #1 | ¡COMENZAMOS! 💀 |",
+      "viewers": 84,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_titopower_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/86e791e0-aa72-41fd-a160-e57bda92f260-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "zoruky",
       "name": "Zoruky",
       "title": "#1 Solo vs Squads 😈🔥!youtube !discord !prime !sens",
-      "viewers": 78,
+      "viewers": 70,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zoruky-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/120eeef5-e496-4a8f-bed0-bb433f273f45-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "och8bits",
-      "name": "och8bits",
-      "title": "Guarsonsitos !!! ....",
-      "viewers": 46,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_och8bits-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f5f848c1-1480-4964-8687-986b1f9f85b1-profile_image-300x300.png",
+      "login": "pandatvmx",
+      "name": "PandaTvMx",
+      "title": "NUEVO COD, SERA EL MEJOR!?  | [ESP/ENG] | 2k STREAM 🔴",
+      "viewers": 47,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "slifeeerr",
-      "name": "slifeeerr",
-      "title": "Modern Warfare 4 Beta 2v2 Killrace x $500 w/ @offsossa / !sens !pc",
+      "login": "keeoss_",
+      "name": "keeoss_",
+      "title": "SORTEANDO 2 BLACK CELLS PARA LA COMUNIDAD !pc !yt !paypal",
+      "viewers": 27,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "bellcbunn",
+      "name": "BellCBunn",
+      "title": "NERFEARON AL FEMBOY ☠️| NO ME DIERON LA BETA | WARZONE |",
+      "viewers": 22,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bellcbunn-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/53b305f8-dd2d-468d-9c05-906acd89adb3-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "xaxolaleyendachilenax",
+      "name": "xaxolaleyendachilenax",
+      "title": "EL MEJOR STREAMER DE WARZONE EN CHILE",
+      "viewers": 21,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xaxolaleyendachilenax-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a307cf62-2828-4c06-9ac4-7d863e527619-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "firruwz",
+      "name": "firruwz",
+      "title": "Custom  / competitive player for @onfamily_ / !pc !sens",
       "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_slifeeerr-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/25331784-137f-4ace-b9eb-d4801a9e9d1c-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_firruwz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b9e26a37-563d-429a-9ee3-6595ddc4534f-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "real_hasta4",
-      "name": "Real_hasta4",
-      "title": "🚨¡¡MODERN WARFARE 4 BETA ABIERTA!!🚨 WARZONE💙VERDANSK😘 FORTNITE💜😉🚨¡¡RESIDENT EVIL REQUIEM!! 🏆🔥",
-      "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_real_hasta4-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c1fa642-69d0-4242-926a-4b958a0d8eb2-profile_image-300x300.png",
+      "login": "kemystrusdv",
+      "name": "KemystrusDV",
+      "title": "Un dia de trabajo largo, ahora toca pasarla de chill uwu",
+      "viewers": 15,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kemystrusdv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a9c542db-a3ce-4134-ba45-bad98b5109d7-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "petah07",
-      "name": "Petah07",
-      "title": "Beta MW4. El primero el jugarlo en mi casa.",
-      "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_petah07-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/26086142-53d1-4239-85f5-4feba40a815f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lawlet_",
-      "name": "LAWLET_",
-      "title": "BETA MW4 - BEST DOMINICAN PLAYER | Blink Respawn 2 TIMES LAN CHAMP | !sense !hacks",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lawlet_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/77f0a2a3-db45-4cd8-b42f-53786161d18f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "orejaschoflix",
-      "name": "OrejasChoflix",
-      "title": "COD  RANKED    !!!     Sin miedo al éxito Chofleros       ! DROPS     !24 VDO    !CLIPS    !!! CLAN CHOFX !!!",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orejaschoflix-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c8116781-7552-4a66-8267-7442e2401e2e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "ladywonggaming",
-      "name": "LadyWongGaming",
-      "title": "VIERNES DE VARIEDAD 🌸✨",
+      "login": "lethalprime_",
+      "name": "lethalprime_",
+      "title": "PROBANDO LA BETA MW4",
       "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ladywonggaming-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/42472131-748c-4416-bbb4-4964dedeb11d-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "ttv_sone89",
-      "name": "ttv_sone89",
-      "title": "🔴EN VIVO | NUEVO MANDO 🔥 @TeamClownGaming 1 SUB= 8 FLEXIONES ¿HABRA ENFADOS? 💯🔞💯 !REDES !DISCORD DANDOLE DURO!",
-      "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ttv_sone89-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/509d46dd-1140-40d6-a774-9ec6fe7424e2-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "licreimon",
-      "name": "LicReimon",
-      "title": "Viernes y el puerco lo sabe ¡Ánimo Raza!",
-      "viewers": 9,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_licreimon-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/05ee78e2-1058-476d-a2a6-d88712c3fad2-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "zuttoberam",
-      "name": "Zuttoberam",
-      "title": "░Warzone░ 🎮Jugando un ratito  NUEVA TEMPORADA 🎮░",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zuttoberam-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4df0df47-053b-4a30-9312-90be0fc5525f-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lethalprime_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5a0df3a4-a546-4711-b9dc-832da91c24b9-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
