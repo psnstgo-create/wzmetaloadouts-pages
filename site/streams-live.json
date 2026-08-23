@@ -1,20 +1,11 @@
 {
-  "generado": "2026-08-23T04:51:48Z",
+  "generado": "2026-08-23T05:06:23Z",
   "streams": [
-    {
-      "login": "criminalgod_",
-      "name": "criminalgod_",
-      "title": "RANKED TOP 250 w/zDark  #GOLEV💙",
-      "viewers": 380,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_criminalgod_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c76ebb28-0b4a-44b4-a424-e5f513c98f3e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
     {
       "login": "zdark",
       "name": "zDark",
       "title": "RANKSSS HASTA TOP 250!!!!",
-      "viewers": 321,
+      "viewers": 242,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2d301fa1-5097-4ace-8bba-c7cc3844d627-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -29,10 +20,19 @@
       "game": "Call of Duty: Warzone"
     },
     {
+      "login": "qshiroo",
+      "name": "qShiroo",
+      "title": "Cuartetos porque me cansé de la beta",
+      "viewers": 74,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_qshiroo-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bbc0ac82-1845-46ae-bdde-c032fd5ad0c4-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
       "login": "el_mata69",
       "name": "El_Mata69",
       "title": "WARZONE / Lunes nos vamos con TULY a GUANAJUATO 🔥",
-      "viewers": 58,
+      "viewers": 64,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_el_mata69-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e86080e4-e954-4d0f-aacf-4a57ec060ab0-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -41,7 +41,7 @@
       "login": "fessery_",
       "name": "Fessery_",
       "title": "NUEVO HOGAR NUEVO COD Y NUEVO YO QUE MÁS PUEDO PEDIR | INSTAGRAM/X Fessery_",
-      "viewers": 45,
+      "viewers": 51,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fessery_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/da4e1020-9dbc-47cb-a800-c2766ac262e8-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -50,27 +50,36 @@
       "login": "loganjorel",
       "name": "loganjorel",
       "title": "Un sabado contigo",
-      "viewers": 30,
+      "viewers": 39,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_loganjorel-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b1584cbd-f895-4726-b880-52233b5b1fb9-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "gsitegg",
-      "name": "GSITEGG",
-      "title": "OFFICIAL BROADCAST: $100 GTD 2 ELITES 1 DETRI by @gsitegg x @gnzlzz |👻!redes !socials !calendar",
-      "viewers": 30,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gsitegg-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6bd901-90fe-47dd-be26-a192f3af2900-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "maarkitox",
       "name": "maarkitox",
       "title": "13.000 Horas de Wz bro!",
-      "viewers": 28,
+      "viewers": 34,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_maarkitox-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5074442a-f4f2-4096-bc6a-756874c2b2c8-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "gsitegg",
+      "name": "GSITEGG",
+      "title": "OFFICIAL BROADCAST: $100 GTD 2 ELITES 1 DETRI by @gsitegg x @gnzlzz |👻!redes !socials !calendar",
+      "viewers": 33,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gsitegg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6bd901-90fe-47dd-be26-a192f3af2900-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "verokuudere",
+      "name": "VeroKuudere",
+      "title": "Beta MODERN WARFARE 4♥// Jugando con el chat♥// !id !jugar !paypal !redes",
+      "viewers": 22,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_verokuudere-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bff6a88e-9e89-4255-9549-7d20e9a99a24-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -83,30 +92,21 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "verokuudere",
-      "name": "VeroKuudere",
-      "title": "Beta MODERN WARFARE 4♥// Jugando con el chat♥// !id !jugar !paypal !redes",
-      "viewers": 19,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_verokuudere-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bff6a88e-9e89-4255-9549-7d20e9a99a24-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
       "login": "lethalprime_",
       "name": "lethalprime_",
       "title": "ELITE / DETRI / TORNEO 200$",
-      "viewers": 19,
+      "viewers": 16,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lethalprime_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5a0df3a4-a546-4711-b9dc-832da91c24b9-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "phoenixarenagaming",
-      "name": "phoenixarenagaming",
-      "title": "🔥🐦‍🔥 ONLY DETRIS PHOENIX CUSTOMS🔥🐦‍🔥",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_phoenixarenagaming-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8ef0d59f-2ba8-4124-bab7-9226bae84a53-profile_image-300x300.png",
+      "login": "aandreaa_18",
+      "name": "aandreaa_18",
+      "title": "✨Primer Stream largo💋Especial 12 Horas💋✨",
+      "viewers": 14,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aandreaa_18-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2c8a1817-71d7-4b6a-a475-84b2009b9070-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
