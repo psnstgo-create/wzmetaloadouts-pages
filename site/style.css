@@ -1270,6 +1270,116 @@ footer a:hover { color: var(--gold); }
     border: 1px solid var(--border);
 }
 
+/* Lectura visual del balance de los parches: una rama para cada dirección. */
+.patch-balance {
+    position: relative;
+    margin: 30px 0 34px;
+    padding: 22px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 50% 52%, rgba(255, 193, 7, 0.09), transparent 32%),
+        linear-gradient(135deg, rgba(30, 39, 48, 0.98), rgba(10, 14, 18, 0.98));
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 10px;
+}
+
+.patch-balance::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 13%; left: 13%;
+    height: 2px;
+    background: linear-gradient(90deg, #28c76f, var(--gold), #ff5d5d);
+}
+
+.patch-balance-head { position: relative; z-index: 1; text-align: center; }
+.patch-balance-eyebrow {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+.noticia-cuerpo .patch-balance h2 {
+    margin: 0 0 4px;
+    color: var(--text);
+    font-size: 22px;
+}
+.patch-balance-head p { margin: 0; color: var(--text-muted); font-size: 13px; }
+
+.patch-balance-tree {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 116px minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+    margin-top: 22px;
+}
+.patch-branch { position: relative; display: grid; gap: 7px; }
+.patch-branch::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 38px;
+    border-top: 1px dashed currentColor;
+    opacity: 0.7;
+}
+.patch-branch--buff { color: #35d17b; }
+.patch-branch--buff::after { right: -38px; }
+.patch-branch--nerf { color: #ff6b6b; }
+.patch-branch--nerf::after { left: -38px; }
+.patch-branch-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 3px 5px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1.4px;
+}
+.patch-branch-title span { font-size: 17px; font-family: Arial, sans-serif; font-weight: 700; }
+.patch-branch-title small { margin-left: auto; color: var(--text-muted); font-size: 9px; letter-spacing: 1px; }
+.patch-node {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px 10px;
+    padding: 8px 9px;
+    color: var(--text);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid currentColor;
+    border-color: color-mix(in srgb, currentColor 36%, transparent);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.25;
+}
+.patch-node a { color: inherit; font-weight: 800; text-decoration: none; }
+.patch-node strong { color: inherit; }
+.patch-node span { color: var(--text-sec); font-size: 10px; }
+.patch-balance-core {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 112px;
+    padding: 12px 6px;
+    color: var(--text);
+    text-align: center;
+    background: #141a21;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px rgba(255, 193, 7, 0.07), 0 0 24px rgba(255, 193, 7, 0.12);
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+.patch-balance-core strong { color: var(--gold); font-family: var(--font-display); font-size: 28px; line-height: 0.95; }
+.patch-balance-core em { margin-top: 5px; color: var(--text-muted); font-size: 8px; font-style: normal; }
+
 .noticia-fuente-box {
     margin: 32px 0;
     padding: 14px 18px;
@@ -1321,6 +1431,11 @@ footer a:hover { color: var(--gold); }
     .hero-news-overlay { padding: 20px; }
     .news-grid { grid-template-columns: 1fr; }
     .noticia-titulo-art { font-size: 28px; }
+    .patch-balance { padding: 18px 14px; }
+    .patch-balance-tree { grid-template-columns: 1fr; gap: 18px; }
+    .patch-balance-core { order: -1; width: 104px; min-height: 104px; margin: 0 auto; }
+    .patch-branch::after { display: none; }
+    .patch-node { padding: 8px; }
 }
 
 /* ════════════ WEAPON PLACEHOLDER ════════════ */
