@@ -1,11 +1,20 @@
 {
-  "generado": "2026-08-24T17:43:22Z",
+  "generado": "2026-08-24T18:04:52Z",
   "streams": [
+    {
+      "login": "mirreytv",
+      "name": "MirreyTv",
+      "title": "🔥 DE BROZE A IRIDISCENTE CON RANDOMS! 😈 Después BONUS HUNT de $100,000 💰",
+      "viewers": 307,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mirreytv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/929430cd-d894-4e7c-8a67-cfc3e376d698-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
     {
       "login": "soykronosgg",
       "name": "soykronosgg",
       "title": "🛑NUEVA TEMPOORADA RECARGADA🛑🛑RANKED TOP250 CON LA NUEVA META🛑",
-      "viewers": 225,
+      "viewers": 236,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soykronosgg-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/06e7065c-a04a-4bde-8a42-1ad3ed304301-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -14,7 +23,7 @@
       "login": "eslatiza",
       "name": "eslatiza",
       "title": "VOD COD ! bf6 Redsec !",
-      "viewers": 218,
+      "viewers": 233,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eslatiza-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c1a6d21-595a-410f-9dc1-79b2fcd9fc1d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -23,90 +32,81 @@
       "login": "donluckymx",
       "name": "donluckymx",
       "title": "LA UNICA REACCION REAL AL NUEVO COD !!!",
-      "viewers": 173,
+      "viewers": 153,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_donluckymx-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f6ee3adb-8e04-49af-bec2-fbc9a53f1122-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "viperr97",
+      "name": "Viperr97",
+      "title": "🚨 [DROPS] NUEVO MAPA DE BR + RESURGI CONFIRMADOS! 🚨 | !GAMESIR !META !NOXAR",
+      "viewers": 147,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_viperr97-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2af8e821-8db8-4ccc-9766-3299d4e741ac-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "eldreamstv",
       "name": "eldreamstv",
       "title": "🔴NUEVO META ABSOLUTO🔴SUBS 672/800🏁",
-      "viewers": 77,
+      "viewers": 94,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldreamstv-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cd49db75-6334-46bd-b759-0ba74dba7af2-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "sebasberon",
-      "name": "SEBASBERON",
-      "title": "Lunes de Salsita | #HALAMADRID",
-      "viewers": 31,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sebasberon-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fdef8f55-59b8-49ba-9703-474d20285235-profile_image-300x300.png",
+      "login": "disgrazze",
+      "name": "Disgrazze",
+      "title": "Ranked Solo Q Hasta Iri!",
+      "viewers": 50,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_disgrazze-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f68f0f69-3680-464d-a44f-4c684b193e2e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "kiir745",
       "name": "KiiR745",
       "title": "SE ACABAAAAAAA👾 DÍA 27 EXTENSIBLE DE VERANO 👾 RATÓN Y TECLADO 👾",
-      "viewers": 24,
+      "viewers": 34,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kiir745-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/58091265-4a1b-401f-a71d-1939368afc2e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "lethalprime_",
-      "name": "lethalprime_",
-      "title": "MW4 + RANKED con SEGUIDORES",
-      "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lethalprime_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/51e6c555-62e2-4bc9-bf1b-fcf20b42a7ad-profile_image-300x300.png",
+      "login": "sebasberon",
+      "name": "SEBASBERON",
+      "title": "Lunes de Salsita | #HALAMADRID",
+      "viewers": 20,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sebasberon-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fdef8f55-59b8-49ba-9703-474d20285235-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "keeoss_",
       "name": "keeoss_",
       "title": "🎮 VOLVIO EL PRIME EN SOLOS 🔥 I !pc !yt !sens",
-      "viewers": 10,
+      "viewers": 13,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "orejaschoflix",
-      "name": "OrejasChoflix",
-      "title": "COD  RANKED    !!!     Sin miedo al éxito Chofleros       ! DROPS     !24 VDO    !CLIPS    !!! CLAN CHOFX !!!",
-      "viewers": 8,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orejaschoflix-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c8116781-7552-4a66-8267-7442e2401e2e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "thesonsoket",
-      "name": "TheSonsoket",
-      "title": "🔴MISION de CAMPAÑA ATRINCHERADOS😱 JUGANDO MULTIJUGADOR BETA CERRADA😎 Y WARZNE SQUAD CON RANDOMS",
-      "viewers": 8,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thesonsoket-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ac66085a-e3dc-4178-86d0-753e7b1d3010-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "saglann",
       "name": "Saglann",
       "title": "AYUDANDO SEGUIDORES CON LA NUKE | 17 | !sens !buena !guapo !pc !Saglan | @saglann",
-      "viewers": 8,
+      "viewers": 12,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_saglann-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6bd78ddc-aa8d-4561-8026-ec9a70b4bf42-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "zchicho",
-      "name": "zChicho",
-      "title": "Nukesita",
-      "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zchicho-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f6b41bd0-14a8-4c93-b7b6-7576be17abe7-profile_image-300x300.jpeg",
+      "login": "ttv_sone89",
+      "name": "ttv_sone89",
+      "title": "🔴EN VIVO | NUEVO MANDO 🔥 PROBANDO BETA MW4 @TeamClownGaming 1 SUB= 8 FLEXIONES ¿HABRA ENFADOS?💯🔞💯 !REDES !DISCORD DANDOLE DURO!",
+      "viewers": 8,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ttv_sone89-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/509d46dd-1140-40d6-a774-9ec6fe7424e2-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
