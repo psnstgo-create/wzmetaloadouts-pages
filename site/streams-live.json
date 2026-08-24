@@ -1,11 +1,20 @@
 {
-  "generado": "2026-08-24T15:52:57Z",
+  "generado": "2026-08-24T15:59:25Z",
   "streams": [
+    {
+      "login": "soykronosgg",
+      "name": "soykronosgg",
+      "title": "🛑NUEVA TEMPOORADA RECARGADA🛑🛑RANKED TOP250 CON LA NUEVA META🛑",
+      "viewers": 93,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soykronosgg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/06e7065c-a04a-4bde-8a42-1ad3ed304301-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
     {
       "login": "flopardo39",
       "name": "flopardo39",
       "title": "TOP #1 DE POMONA MAÑANERO COMO TE GUSTA !DC !ÑEMA",
-      "viewers": 38,
+      "viewers": 31,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -14,7 +23,7 @@
       "login": "sebasberon",
       "name": "SEBASBERON",
       "title": "Lunes de Salsita | #HALAMADRID",
-      "viewers": 34,
+      "viewers": 24,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sebasberon-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fdef8f55-59b8-49ba-9703-474d20285235-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -23,7 +32,7 @@
       "login": "albayjesstwitch",
       "name": "AlbayJessTwitch",
       "title": "♦♦ {+18 }🎮 Buenos dias,buenas tardes,buenas noches de bichines 🥰🔥",
-      "viewers": 16,
+      "viewers": 19,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_albayjesstwitch-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/20c028b1-c5bf-4869-a20f-5ad784067736-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -41,7 +50,7 @@
       "login": "eldurogamings",
       "name": "ElDuroGamings",
       "title": "Que  jugamos hoy?",
-      "viewers": 13,
+      "viewers": 12,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldurogamings-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/55fb31cd-25c8-44a9-ac73-d48cd1917c74-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -50,7 +59,7 @@
       "login": "lethalprime_",
       "name": "lethalprime_",
       "title": "MW4 + RANKED con SEGUIDORES",
-      "viewers": 12,
+      "viewers": 11,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lethalprime_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/51e6c555-62e2-4bc9-bf1b-fcf20b42a7ad-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -59,7 +68,7 @@
       "login": "chargvlie",
       "name": "chargvlie",
       "title": "FEIZ INICIO DE SEMANAS 2 DE PING TOP GLOBAL 🥵!pc !sensi",
-      "viewers": 9,
+      "viewers": 8,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chargvlie-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6e24b3-5342-4c1c-ba8c-5c9c8d081bad-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -74,39 +83,30 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "mrlobor1",
-      "name": "MrloboR1",
-      "title": "☢️Wellcome☢️2k 💪💯 Español,English& Finnish! (vähän)",
-      "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrlobor1-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/75ccc417-5175-492c-ba00-3000bc4c0f8f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
       "login": "thekrith",
       "name": "TheKritH",
       "title": "AQUI NO HAY BETA ;)   AMPLIABLE !!! XD   PIDE UNA CANCION MIENTRAS JUEGO ! FREEE ! AMENIZA EL DIRECTO !",
-      "viewers": 5,
+      "viewers": 4,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thekrith-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/de77a403-fa9d-4b54-9116-cc9d3fb33693-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "mrlobor1",
+      "name": "MrloboR1",
+      "title": "☢️Wellcome☢️2k 💪💯 Español,English& Finnish! (vähän)",
+      "viewers": 3,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrlobor1-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/75ccc417-5175-492c-ba00-3000bc4c0f8f-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "danissuarez1",
       "name": "danissuarez1",
       "title": "🔴RANKED PLAY WARZONE!!🔴",
-      "viewers": 4,
+      "viewers": 2,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_danissuarez1-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d1850b3e-1f4d-4fb1-bdec-aa6d9221f883-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "elciervo99_",
-      "name": "elciervo99_",
-      "title": "lunes de privadas y rankeds con seguidores",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elciervo99_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/75d25f91-54d2-4f61-94e9-42af41358fbc-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]

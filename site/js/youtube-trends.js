@@ -156,19 +156,36 @@
     return Number(value).toFixed(digits).replace('.', ',') + '%';
   }
 
-  function chartMaximum(series) {
-    var observed = 0;
+  function chartBounds(series) {
+    var observedMinimum = Infinity;
+    var observedMaximum = 0;
     series.forEach(function (item) {
       item.points.forEach(function (point) {
-        observed = Math.max(observed, point.value);
+        observedMinimum = Math.min(observedMinimum, point.value);
+        observedMaximum = Math.max(observedMaximum, point.value);
       });
     });
 
-    // La señal se mueve normalmente entre 5% y 30%. Una escala fija de 0–100%
-    // hacía que cambios reales parecieran planos. El cero sigue siendo la base,
-    // pero el techo se adapta solo a la muestra visible.
-    var step = observed <= 5 ? 1 : (observed <= 15 ? 2.5 : (observed <= 35 ? 5 : (observed <= 70 ? 10 : 20)));
-    return Math.max(step * 2, Math.ceil(observed * 1.16 / step) * step);
+    if (!isFinite(observedMinimum) || observedMaximum <= 0) {
+      return { minimum: 0, maximum: 5, zoomed: false };
+    }
+
+    // El radar compara solo las tres armas líderes. Usar 0–100% (o incluso
+    // 0–12%) desperdicia espacio y esconde variaciones reales de semana a
+    // semana. Esta escala se amplía únicamente al rango observado y se señala
+    // explícitamente en el gráfico para no sugerir una base cero inexistente.
+    var span = Math.max(observedMaximum - observedMinimum, 0.8);
+    var targetStep = span / 4;
+    var magnitude = Math.pow(10, Math.floor(Math.log(targetStep) / Math.LN10));
+    var normalized = targetStep / magnitude;
+    var multiplier = normalized <= 1 ? 1 : (normalized <= 2 ? 2 : (normalized <= 2.5 ? 2.5 : (normalized <= 5 ? 5 : 10)));
+    var step = multiplier * magnitude;
+    var padding = Math.max(step, span * 0.22);
+    var minimum = Math.max(0, Math.floor((observedMinimum - padding) / step) * step);
+    var maximum = Math.ceil((observedMaximum + padding) / step) * step;
+
+    if (maximum - minimum < step * 4) maximum = minimum + step * 4;
+    return { minimum: minimum, maximum: maximum, zoomed: minimum > 0 };
   }
 
   function chart(series) {
@@ -182,7 +199,10 @@
     var plotHeight = height - top - bottom;
     var count = series[0].points.length;
     var labels = series[0].points.map(function (point) { return point.label; });
-    var maximum = chartMaximum(series);
+    var bounds = chartBounds(series);
+    var minimum = bounds.minimum;
+    var maximum = bounds.maximum;
+    var range = maximum - minimum;
     var tickCount = 4;
     var svg = '<div class="ytw-chart-wrap"><svg class="ytw-chart-svg" viewBox="0 0 ' + width + ' ' + height + '" ' +
       'role="img" aria-labelledby="ytwChartTitle ytwChartDesc">' +
@@ -190,8 +210,12 @@
       '<desc id="ytwChartDesc">Participación porcentual dentro del contenido reciente detectado.</desc>';
 
     svg += '<text class="axis" x="' + left + '" y="13">TENDENCIA (%)</text>';
+    if (bounds.zoomed) {
+      svg += '<text class="zoom-note" x="' + (width - right) + '" y="13" text-anchor="end">RANGO AMPLIADO · ' +
+        axisPercent(minimum, maximum) + '–' + axisPercent(maximum, maximum) + '</text>';
+    }
     for (var tick = 0; tick <= tickCount; tick += 1) {
-      var tickValue = maximum - maximum * tick / tickCount;
+      var tickValue = maximum - range * tick / tickCount;
       var y = top + plotHeight * tick / tickCount;
       svg += '<line class="grid" x1="' + left + '" y1="' + y + '" x2="' + (width - right) + '" y2="' + y + '"></line>' +
         '<text class="axis" x="' + (left - 10) + '" y="' + (y + 4) + '" text-anchor="end">' + axisPercent(tickValue, maximum) + '</text>';
@@ -206,7 +230,7 @@
       var coordinates = item.points.map(function (point, index) {
         return {
           x: left + (count === 1 ? plotWidth / 2 : plotWidth * index / (count - 1)),
-          y: top + plotHeight - point.value / maximum * plotHeight,
+          y: top + plotHeight - (point.value - minimum) / range * plotHeight,
           point: point
         };
       });
@@ -219,12 +243,12 @@
       coordinates.forEach(function (coordinate) {
         svg += '<circle class="point" cx="' + coordinate.x + '" cy="' + coordinate.y + '" r="5" fill="' + colors[seriesIndex] + '">' +
           '<title>' + esc(item.row.name) + ': ' + formatPercent(coordinate.point.value) + ' · ' + esc(coordinate.point.label) + '</title></circle>';
-        if (coordinate.point.value > 0) {
-          var offset = seriesIndex === 1 ? 17 : (seriesIndex === 2 ? -18 : -9);
+        if (coordinate.point.value > 0 && coordinate === coordinates[coordinates.length - 1]) {
+          var offset = seriesIndex === 0 ? -12 : (seriesIndex === 1 ? 17 : 38);
           var labelY = coordinate.y < top + 18
             ? coordinate.y + 20
             : Math.max(12, Math.min(height - bottom - 4, coordinate.y + offset));
-          svg += '<text class="value" x="' + coordinate.x + '" y="' + labelY + '">' + formatPercent(coordinate.point.value) + '</text>';
+          svg += '<text class="value" fill="' + colors[seriesIndex] + '" x="' + coordinate.x + '" y="' + labelY + '">' + formatPercent(coordinate.point.value) + '</text>';
         }
       });
     });
