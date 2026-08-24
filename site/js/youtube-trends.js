@@ -151,6 +151,26 @@
       '<div class="ytw-insight-value">' + formatPercent(leader.share) + '<small>de la señal · 4 semanas</small></div></div>';
   }
 
+  function axisPercent(value, maximum) {
+    var digits = maximum < 10 || Math.abs(value % 1) > 0.001 ? 1 : 0;
+    return Number(value).toFixed(digits).replace('.', ',') + '%';
+  }
+
+  function chartMaximum(series) {
+    var observed = 0;
+    series.forEach(function (item) {
+      item.points.forEach(function (point) {
+        observed = Math.max(observed, point.value);
+      });
+    });
+
+    // La señal se mueve normalmente entre 5% y 30%. Una escala fija de 0–100%
+    // hacía que cambios reales parecieran planos. El cero sigue siendo la base,
+    // pero el techo se adapta solo a la muestra visible.
+    var step = observed <= 5 ? 1 : (observed <= 15 ? 2.5 : (observed <= 35 ? 5 : (observed <= 70 ? 10 : 20)));
+    return Math.max(step * 2, Math.ceil(observed * 1.16 / step) * step);
+  }
+
   function chart(series) {
     var width = 1000;
     var height = 280;
@@ -162,7 +182,7 @@
     var plotHeight = height - top - bottom;
     var count = series[0].points.length;
     var labels = series[0].points.map(function (point) { return point.label; });
-    var maximum = 100;
+    var maximum = chartMaximum(series);
     var tickCount = 4;
     var svg = '<div class="ytw-chart-wrap"><svg class="ytw-chart-svg" viewBox="0 0 ' + width + ' ' + height + '" ' +
       'role="img" aria-labelledby="ytwChartTitle ytwChartDesc">' +
@@ -174,7 +194,7 @@
       var tickValue = maximum - maximum * tick / tickCount;
       var y = top + plotHeight * tick / tickCount;
       svg += '<line class="grid" x1="' + left + '" y1="' + y + '" x2="' + (width - right) + '" y2="' + y + '"></line>' +
-        '<text class="axis" x="' + (left - 10) + '" y="' + (y + 4) + '" text-anchor="end">' + Math.round(tickValue) + '%</text>';
+        '<text class="axis" x="' + (left - 10) + '" y="' + (y + 4) + '" text-anchor="end">' + axisPercent(tickValue, maximum) + '</text>';
     }
 
     labels.forEach(function (label, index) {
@@ -190,8 +210,12 @@
           point: point
         };
       });
-      svg += '<polyline class="line" stroke="' + colors[seriesIndex] + '" points="' +
-        coordinates.map(function (point) { return point.x + ',' + point.y; }).join(' ') + '"></polyline>';
+      var pointList = coordinates.map(function (point) { return point.x + ',' + point.y; }).join(' ');
+      var baseline = top + plotHeight;
+      svg += '<polygon class="area" fill="' + colors[seriesIndex] + '" points="' +
+        coordinates[0].x + ',' + baseline + ' ' + pointList + ' ' +
+        coordinates[coordinates.length - 1].x + ',' + baseline + '"></polygon>';
+      svg += '<polyline class="line" stroke="' + colors[seriesIndex] + '" points="' + pointList + '"></polyline>';
       coordinates.forEach(function (coordinate) {
         svg += '<circle class="point" cx="' + coordinate.x + '" cy="' + coordinate.y + '" r="5" fill="' + colors[seriesIndex] + '">' +
           '<title>' + esc(item.row.name) + ': ' + formatPercent(coordinate.point.value) + ' · ' + esc(coordinate.point.label) + '</title></circle>';
@@ -265,7 +289,8 @@
     var generated = new Date(data.generatedAt);
     var freshHours = Math.min(336, Math.max(1, Number(data.freshForHours) || 36));
     var age = Date.now() - generated.getTime();
-    if (!Number.isFinite(generated.getTime()) || age < -600000 || age > freshHours * 3600000) return;
+    if (!Number.isFinite(generated.getTime()) || age < -600000) return;
+    var stale = age > freshHours * 3600000;
 
     currentRows = data.ranking.map(function (row) {
       var days = row && validDays(row.dailyVideos);
@@ -281,7 +306,11 @@
     if (currentRows.length < 3) return;
 
     if (updated) updated.textContent = generatedLabel(data.generatedAt);
-    if (notice) notice.textContent = String(data.notice || 'Videos publicados; no representa uso dentro del juego.').slice(0, 160);
+    if (notice) {
+      var baseNotice = String(data.notice || 'Videos publicados; no representa uso dentro del juego.').slice(0, 160);
+      notice.textContent = stale ? 'Última muestra disponible. ' + baseNotice : baseNotice;
+    }
+    section.dataset.stale = stale ? 'true' : 'false';
     renderTrends();
     section.hidden = false;
   }

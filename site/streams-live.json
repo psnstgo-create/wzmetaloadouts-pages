@@ -1,11 +1,11 @@
 {
-  "generado": "2026-08-24T14:23:35Z",
+  "generado": "2026-08-24T14:35:03Z",
   "streams": [
     {
       "login": "eslatiza",
       "name": "eslatiza",
       "title": "VOD COD ! bf6 Redsec !",
-      "viewers": 141,
+      "viewers": 133,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eslatiza-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c1a6d21-595a-410f-9dc1-79b2fcd9fc1d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -14,7 +14,7 @@
       "login": "flopardo39",
       "name": "flopardo39",
       "title": "TOP #1 DE POMONA MAÑANERO COMO TE GUSTA !DC !ÑEMA",
-      "viewers": 39,
+      "viewers": 40,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -23,7 +23,7 @@
       "login": "albayjesstwitch",
       "name": "AlbayJessTwitch",
       "title": "♦♦ {+18 }🎮 Buenos dias,buenas tardes,buenas noches de bichines 🥰🔥",
-      "viewers": 27,
+      "viewers": 28,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_albayjesstwitch-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/20c028b1-c5bf-4869-a20f-5ad784067736-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -32,18 +32,9 @@
       "login": "luciavietto21",
       "name": "luciavietto21",
       "title": "FARMEAMOS LAURA || !alias !Paypal !mp",
-      "viewers": 13,
+      "viewers": 8,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luciavietto21-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b752a6a5-5b55-46df-ac47-c5a303408773-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "orejaschoflix",
-      "name": "OrejasChoflix",
-      "title": "COD  RANKED    !!!     Sin miedo al éxito Chofleros       ! DROPS     !24 VDO    !CLIPS    !!! CLAN CHOFX !!!",
-      "viewers": 9,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orejaschoflix-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c8116781-7552-4a66-8267-7442e2401e2e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -56,12 +47,21 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "yami7_tv",
-      "name": "yami7_tv",
-      "title": "RANKED O MW4???!! /// Hoy toca reirnos un poco de los españoles 💥🔫 || Nuevos comandos!!! !discord !redes !comandos",
+      "login": "orejaschoflix",
+      "name": "OrejasChoflix",
+      "title": "COD  RANKED    !!!     Sin miedo al éxito Chofleros       ! DROPS     !24 VDO    !CLIPS    !!! CLAN CHOFX !!!",
       "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yami7_tv-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/51102ea8-842e-4597-a421-54c10d41cbdc-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_orejaschoflix-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c8116781-7552-4a66-8267-7442e2401e2e-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "xxbelgon",
+      "name": "xxbelgon",
+      "title": "[ESP/EN] Warzoneo de Chill, por la tarde sin Chorrete...",
+      "viewers": 4,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xxbelgon-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c3afbb1e-be36-4c80-8d14-08acdcedc82e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -74,6 +74,15 @@
       "game": "Call of Duty: Warzone"
     },
     {
+      "login": "yami7_tv",
+      "name": "yami7_tv",
+      "title": "RANKED O MW4???!! /// Hoy toca reirnos un poco de los españoles 💥🔫 || Nuevos comandos!!! !discord !redes !comandos",
+      "viewers": 3,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yami7_tv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/51102ea8-842e-4597-a421-54c10d41cbdc-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
       "login": "leo_letal",
       "name": "Leo_Letal",
       "title": "UN RATO DE WZ PORQUE SI",
@@ -83,30 +92,21 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "xxbelgon",
-      "name": "xxbelgon",
-      "title": "[ESP/EN] Warzoneo de Chill, por la tarde sin Chorrete...",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xxbelgon-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c3afbb1e-be36-4c80-8d14-08acdcedc82e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "pipper_",
-      "name": "pipper_",
-      "title": "THE SINKING CITY 2 + TARDE DE WARZONE || HAY NUEVO VÍDEO EN !YT || POOOOLVORA🚬🤘",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pipper_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2c2209e6-6246-4082-b229-27191d1f527e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
       "login": "locavix_19",
       "name": "locavix_19",
       "title": "🔷HOLII🔷PC🔷VUESTRA STREMEAR FAVORITA🔷LLAMADME LOQUI🔷",
-      "viewers": 1,
+      "viewers": 3,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_locavix_19-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/68bb03a4-644d-4e78-902b-711edb4b6311-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "fecheok",
+      "name": "fecheOk",
+      "title": "Buen luneees😉",
+      "viewers": 2,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fecheok-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7ed1c6fb-a72f-44fd-98ad-73ce7041e3da-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
