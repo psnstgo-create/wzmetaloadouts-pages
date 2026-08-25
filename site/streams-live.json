@@ -1,11 +1,11 @@
 {
-  "generado": "2026-08-25T14:10:46Z",
+  "generado": "2026-08-25T15:01:07Z",
   "streams": [
     {
       "login": "eslatiza",
       "name": "eslatiza",
       "title": "VOD COD ! bf6 Redsec !",
-      "viewers": 228,
+      "viewers": 210,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eslatiza-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0c1a6d21-595a-410f-9dc1-79b2fcd9fc1d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -14,9 +14,18 @@
       "login": "flopardo39",
       "name": "flopardo39",
       "title": "TOP #1 DE POMONA BUENOS DIAS CHATT !DC !ÑEMA",
-      "viewers": 30,
+      "viewers": 41,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "sebasberon",
+      "name": "SEBASBERON",
+      "title": "Salsita y futbol | #HALAMADRID",
+      "viewers": 21,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sebasberon-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fdef8f55-59b8-49ba-9703-474d20285235-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -38,75 +47,66 @@
       "game": "Call of Duty: Warzone"
     },
     {
+      "login": "tru3no_7393",
+      "name": "tru3no_7393",
+      "title": "haciendo otro extensible 24 horas parte 5🟡!extensible",
+      "viewers": 5,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tru3no_7393-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a7a04c8-c645-40ec-8a0b-f17436f0a369-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
       "login": "mexiclan13",
       "name": "mexiclan13",
       "title": "BO7 Zombies🤔😂",
-      "viewers": 5,
+      "viewers": 4,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mexiclan13-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8700f81d-7d1e-4a4a-b2e4-1078fcc61d17-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "mr_elfojohn99",
+      "name": "mr_elfojohn99",
+      "title": "Partidas Traquis de Calentamiento",
+      "viewers": 4,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mr_elfojohn99-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bd92702f-ed65-4aa7-8ad2-ac7d8a3a2ae9-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "oo_milu_oo",
       "name": "oo_MILU_oo",
       "title": "relajate chill  y eventos   ☠️ 💯",
-      "viewers": 5,
+      "viewers": 4,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oo_milu_oo-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7fd2d6d1-c911-40f5-964d-1a2707f17f43-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "bettotepeto",
-      "name": "BETTOTEPETO",
-      "title": "Byd bo7",
+      "login": "godconkah",
+      "name": "GodConkah",
+      "title": "☆ Late Night Vibes ☆",
       "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bettotepeto-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8ffcea3e-27de-4bc7-beb9-51b06ee1dbf2-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_godconkah-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6218e61e-a23d-4d81-a771-12e6ca98a11d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "afam16",
-      "name": "afam16",
-      "title": "Ranked y mucho +",
+      "login": "silviabascal",
+      "name": "silviabascal",
+      "title": "✨ Tarde de Ranked ✨| @clanangelesmercenarios",
+      "viewers": 3,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_silviabascal-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6c5edb70-2870-42fe-bbc4-38fb0d704b01-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "pepitasahot",
+      "name": "pepitasahot",
+      "title": "Rank Grind iris  SoloQ",
       "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_afam16-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7a3b3936-66f1-40fb-a21f-36ef2ba53f8b-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "damakarmav2",
-      "name": "damakarmav2",
-      "title": "Volví mas manca que nunca! Unete!",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_damakarmav2-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e45b23c6-25c7-4f05-99ed-d2215e1a2c3f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "elmedey",
-      "name": "ElMedey",
-      "title": "intento #100 para llegar a iri",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elmedey-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b8035fc9-9a11-4c44-9ece-e195886cb3a2-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "nagato_nk",
-      "name": "Nagato_NK",
-      "title": "Subiendo Armas",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nagato_nk-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c8566fa6-c740-4f65-90c1-4ba757ae2216-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "edwinxzkiller",
-      "name": "edwinxzkiller",
-      "title": "RUBINOT.....ANDOOO <3!!!!! LEEEEEEEEEEET'S  GOOOOOOOOO",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_edwinxzkiller-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5569ae02-1dd2-424a-a34a-3f9c8bd071fc-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pepitasahot-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/de7332a8-b2f5-46b3-a623-7b9b6933a1b0-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     }
   ]
