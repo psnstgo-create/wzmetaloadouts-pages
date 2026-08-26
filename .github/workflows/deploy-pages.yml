@@ -90,15 +90,85 @@ jobs:
         run: python twitch_live.py
         continue-on-error: true
 
+      # GitHub no garantiza que un cron se ejecute en el minuto exacto. Decidimos
+      # por antigüedad del último radar válido: así una ejecución retrasada lo
+      # refresca, sin consumir la cuota de YouTube en cada sincronización.
+      - name: Decidir actualización del radar
+        id: radar_due
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          now = datetime.now(timezone.utc)
+          event_name = os.environ.get("EVENT_NAME", "")
+          radar_path = Path("target/site/youtube-trends.json")
+          state_path = Path("target/radar-refresh-state.json")
+          due, reason = True, "sin radar válido"
+
+          try:
+              data = json.loads(radar_path.read_text(encoding="utf-8"))
+              generated_at = datetime.fromisoformat(
+                  str(data.get("generatedAt", "")).replace("Z", "+00:00")
+              )
+              age_hours = (now - generated_at.astimezone(timezone.utc)).total_seconds() / 3600
+              if data.get("method") == "recent_search_sample" and age_hours < 20:
+                  due, reason = False, f"radar vigente ({age_hours:.1f} h)"
+              else:
+                  reason = f"radar vencido ({age_hours:.1f} h)"
+          except Exception:
+              pass
+
+          # Si la API externa falla, limitamos los reintentos a uno cada seis
+          # horas para no agotar cuota ni llenar el historial de despliegues.
+          try:
+              state = json.loads(state_path.read_text(encoding="utf-8"))
+              attempted_at = datetime.fromisoformat(
+                  str(state.get("attemptedAt", "")).replace("Z", "+00:00")
+              )
+              attempt_age = (now - attempted_at.astimezone(timezone.utc)).total_seconds() / 3600
+              if due and event_name != "workflow_dispatch" and attempt_age < 6:
+                  due, reason = False, f"reintento diferido ({attempt_age:.1f} h)"
+          except Exception:
+              pass
+
+          if event_name == "workflow_dispatch":
+              due, reason = True, "ejecución manual"
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"due={'true' if due else 'false'}\n")
+              output.write(f"reason={reason}\n")
+          print(f"Radar: {reason}. Actualizar: {due}")
+          PY
+
       # Muestra equilibrada de las 20 armas del meta: cuatro consultas semanales
-      # por arma (80 búsquedas). Se ejecuta una vez al día para respetar cuota.
+      # por arma (80 búsquedas). Solo corre cuando el cache está vencido.
       - name: Actualizar radar de armas (YouTube oficial)
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 4 * * *'
+        if: steps.radar_due.outputs.due == 'true'
         working-directory: source
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python _build/youtube_trends.py --min-age-hours 20
         continue-on-error: true
+
+      - name: Registrar intento del radar
+        if: always() && steps.radar_due.outputs.due == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          Path("target/radar-refresh-state.json").write_text(
+              json.dumps({"attemptedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}) + "\n",
+              encoding="utf-8",
+          )
+          PY
 
       # Pre-render SEO + sitemap: se HORNEAN acá (repo PUBLICO, Actions GRATIS)
       # en vez del repo privado. Playwright ya está instalado (server-status).
@@ -142,7 +212,7 @@ jobs:
         run: |
           git config user.name "WZ Meta Publisher"
           git config user.email "bot@wzmetaloadouts.com"
-          git add --all -- site
+          git add --all -- site radar-refresh-state.json
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "El artefacto publico no cambio."
@@ -172,7 +242,7 @@ jobs:
         env:
           SRC_SHA: ${{ steps.sync.outputs.source_sha }}
         run: |
-          git add --all -- site
+          git add --all -- site radar-refresh-state.json
           git commit -m "Deploy: artefacto publico a Cloudflare Pages (${SRC_SHA:0:12})"
           for i in 1 2 3 4 5; do
             if git pull --rebase --autostash origin main && git push; then exit 0; fi
