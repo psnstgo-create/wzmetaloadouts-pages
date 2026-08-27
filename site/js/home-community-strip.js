@@ -36,6 +36,32 @@
     return String(alias || '?').trim().slice(0, 2).toUpperCase();
   }
 
+  function shortAccessory(name) {
+    var value = String(name || '').trim();
+    if (/\bELO\b/i.test(value)) return 'ELO';
+    if (/suppressor/i.test(value)) return 'SUP';
+    if (/brake/i.test(value)) return 'BRK';
+    if (/barrel/i.test(value)) {
+      var size = value.match(/\d+(?:\.\d+)?\s*\"/);
+      return size ? size[0].replace(/\s/g, '') : 'BAR';
+    }
+    if (/mag|drum/i.test(value)) return 'MAG';
+    if (/stock|pad/i.test(value)) return 'STK';
+    if (/grip|handstop|handguard|foregrip/i.test(value)) return 'GRP';
+    if (/laser/i.test(value)) return 'LSR';
+    return value.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase() || 'MOD';
+  }
+
+  function attachmentsMarkup(item) {
+    if (!item.accesorios || typeof item.accesorios !== 'object') return '';
+    var attachments = Object.keys(item.accesorios).slice(0, 5).map(function (type) {
+      var name = String(item.accesorios[type] || '').trim();
+      if (!name) return '';
+      return '<span class="hc-attachment" title="' + esc(type + ': ' + name) + '" aria-label="' + esc(type + ': ' + name) + '">' + esc(shortAccessory(name)) + '</span>';
+    }).filter(Boolean).join('');
+    return attachments ? '<div class="hc-attachments" aria-label="Cinco accesorios de la clase">' + attachments + '</div>' : '';
+  }
+
   function render(loadouts, weapons) {
     var cards = loadouts.filter(function (item) {
       return item && safeSlug(item.arma_slug) && weapons[item.arma_slug] &&
@@ -43,17 +69,22 @@
     }).slice(0, 9);
     if (!cards.length) return;
 
-    rail.innerHTML = cards.map(function (item) {
+    function cardMarkup(item, duplicate) {
       var weapon = weapons[item.arma_slug];
       var image = safeImage(weapon.imagen) ? weapon.imagen : '';
-      return '<article class="hc-card">' +
-        '<a class="hc-card-link" href="/armas/' + encodeURIComponent(item.arma_slug) + '" aria-label="Ver ficha de ' + esc(weapon.nombre) + '"></a>' +
+      var hidden = duplicate ? ' aria-hidden="true"' : '';
+      var tabIndex = duplicate ? ' tabindex="-1"' : '';
+      return '<article class="hc-card' + (duplicate ? ' hc-card--copy' : '') + '"' + hidden + '>' +
+        '<a class="hc-card-link" href="/armas/' + encodeURIComponent(item.arma_slug) + '" aria-label="Ver ficha de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
         (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
         '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
-        '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong></div>' +
+        '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item) + '</div>' +
         '<div class="hc-bottom"><span class="hc-code">' + esc(item.codigo_clase) + '</span>' +
-        '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '">Copiar</button></div></article>';
-    }).join('');
+        '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '"' + tabIndex + '>Copiar</button></div></article>';
+    }
+
+    rail.innerHTML = cards.map(function (item) { return cardMarkup(item, false); }).join('') +
+      cards.map(function (item) { return cardMarkup(item, true); }).join('');
 
     rail.querySelectorAll('.hc-copy').forEach(function (button) {
       button.addEventListener('click', function () {
@@ -66,14 +97,51 @@
       });
     });
     section.hidden = false;
+    startAutoScroll();
   }
 
-  document.querySelectorAll('[data-hc-nav]').forEach(function (button) {
-    button.addEventListener('click', function () {
-      var direction = button.getAttribute('data-hc-nav') === 'next' ? 1 : -1;
-      rail.scrollBy({ left: direction * Math.max(250, rail.clientWidth * 0.78), behavior: 'smooth' });
-    });
-  });
+  function startAutoScroll() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var firstCard = rail.querySelector('.hc-card:not(.hc-card--copy)');
+    var firstCopy = rail.querySelector('.hc-card--copy');
+    if (!firstCard || !firstCopy) return;
+    var cycleWidth = firstCopy.offsetLeft - firstCard.offsetLeft;
+    if (!cycleWidth) return;
+
+    var paused = false;
+    var lastFrame = 0;
+    var resumeTimer = 0;
+    var position = rail.scrollLeft;
+    function pause() {
+      paused = true;
+      window.clearTimeout(resumeTimer);
+    }
+    function resumeSoon() {
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(function () { paused = false; }, 1800);
+    }
+    function frame(now) {
+      if (!lastFrame) lastFrame = now;
+      var elapsed = Math.min(now - lastFrame, 60);
+      lastFrame = now;
+      if (!paused && !document.hidden) {
+        position += elapsed * 0.014;
+        if (position >= cycleWidth) position -= cycleWidth;
+        rail.scrollLeft = position;
+      }
+      window.requestAnimationFrame(frame);
+    }
+    rail.addEventListener('mouseenter', pause);
+    rail.addEventListener('mouseleave', resumeSoon);
+    rail.addEventListener('focusin', pause);
+    rail.addEventListener('focusout', resumeSoon);
+    rail.addEventListener('touchstart', pause, { passive: true });
+    rail.addEventListener('touchend', resumeSoon, { passive: true });
+    rail.addEventListener('scroll', function () {
+      if (Math.abs(rail.scrollLeft - position) > 3) position = rail.scrollLeft;
+    }, { passive: true });
+    window.requestAnimationFrame(frame);
+  }
 
   Promise.all([
     fetch('/community-editorial.json', { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }),
