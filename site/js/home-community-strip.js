@@ -52,12 +52,27 @@
     return value.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase() || 'MOD';
   }
 
-  function attachmentsMarkup(item) {
+  function safeAttachmentBase(value) {
+    return typeof value === 'string' && /^\/icons\/attachments\/[a-z0-9-]+$/.test(value);
+  }
+
+  function attachmentFilename(name) {
+    return String(name || '')
+      .replace(/[<>:"/\\|?*]+/g, '')
+      .replace(/\s+/g, '_');
+  }
+
+  function attachmentsMarkup(item, weapon) {
     if (!item.accesorios || typeof item.accesorios !== 'object') return '';
+    var attachmentBase = safeAttachmentBase(weapon && weapon.icon_path) ? weapon.icon_path : '';
     var attachments = Object.keys(item.accesorios).slice(0, 5).map(function (type) {
       var name = String(item.accesorios[type] || '').trim();
       if (!name) return '';
-      return '<span class="hc-attachment" title="' + esc(type + ': ' + name) + '" aria-label="' + esc(type + ': ' + name) + '">' + esc(shortAccessory(name)) + '</span>';
+      var image = attachmentBase ? attachmentBase + '/' + attachmentFilename(name) + '.png' : '';
+      var fallback = image ? '' : ' hc-attachment--text';
+      return '<span class="hc-attachment' + fallback + '" title="' + esc(type + ': ' + name) + '" aria-label="' + esc(type + ': ' + name) + '">' +
+        (image ? '<img class="hc-attachment-icon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.remove();this.parentElement.classList.add(\'hc-attachment--text\')">' : '') +
+        '<b>' + esc(shortAccessory(name)) + '</b></span>';
     }).filter(Boolean).join('');
     return attachments ? '<div class="hc-attachments" aria-label="Cinco accesorios de la clase">' + attachments + '</div>' : '';
   }
@@ -78,7 +93,7 @@
         '<a class="hc-card-link" href="/armas/' + encodeURIComponent(item.arma_slug) + '" aria-label="Ver ficha de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
         (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
         '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
-        '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item) + '</div>' +
+        '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item, weapon) + '</div>' +
         '<div class="hc-bottom"><span class="hc-code">' + esc(item.codigo_clase) + '</span>' +
         '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '"' + tabIndex + '>Copiar</button></div></article>';
     }
