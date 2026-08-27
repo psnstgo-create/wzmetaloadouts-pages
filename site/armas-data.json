@@ -3342,53 +3342,16 @@
           "id": "wz-battle_royale",
           "nombre": "Meta BR",
           "emoji": "🎯",
-          "codigo": "",
+          "codigo": "S12-7166A-FQ11",
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−37%), cargador (+10 balas) y sprint-a-disparo (+38%).",
+          "descripcion": "Clase de Battle Royale equilibrada: prioriza control, capacidad y consistencia para encadenar bajas.",
           "items": [
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "Hawker Stabilizer MK.II"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Pillion Ready Grip"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Amplify Extended Mag I"
-            },
-            {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "VAS Convergence Foregrip"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "VAS Blench Pad"
-            }
-          ]
-        },
-        {
-          "id": "wz-resurgence",
-          "nombre": "Meta Resurgence",
-          "emoji": "⚡",
-          "codigo": "",
-          "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−8%), alcance (+22%), ADS más rápido (+32%) y sprint-a-disparo (+91%).",
-          "items": [
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Pillion Ready Grip"
+              "name": "LTI Stentorian Brake"
             },
             {
               "slot": "Barrel",
@@ -3396,9 +3359,46 @@
               "name": "9.7\" Enmity Barrel"
             },
             {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Avarice Extended Mag II"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "EAM Steady-90 Grip"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Quiver Control Grip"
+            }
+          ]
+        },
+        {
+          "id": "wz-resurgence",
+          "nombre": "Meta Resurgence",
+          "emoji": "⚡",
+          "codigo": "S12-E3USQ-SY911",
+          "modos": [
+            "resurgence"
+          ],
+          "descripcion": "Clase de Resurgence para presión corta: movilidad, munición suficiente y una dispersión estable al pelear cerca.",
+          "items": [
+            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "Hawker Stabilizer MK.II"
+              "name": "Hawker Hybrid .45"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "9.7\" Enmity Barrel"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Avarice Extended Mag II"
             },
             {
               "slot": "Stock",
@@ -3408,7 +3408,7 @@
             {
               "slot": "Laser",
               "label": "Láser",
-              "name": "LTI SwiftPoint Laser"
+              "name": "EAM ScatterLine Laser"
             }
           ]
         },
@@ -3416,11 +3416,11 @@
           "id": "wz-clasificatorio",
           "nombre": "Meta Ranked",
           "emoji": "👑",
-          "codigo": "",
+          "codigo": "S12-9SEQQ-M711",
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−37%), ADS más rápido (+11%) y sprint-a-disparo (+61%).",
+          "descripcion": "Clase de Ranked de bajo retroceso: pensada para tiros repetibles y control al mantener presión.",
           "items": [
             {
               "slot": "Muzzle",
@@ -3428,24 +3428,24 @@
               "name": "Hawker Stabilizer MK.II"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Pillion Ready Grip"
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "9.7\" Enmity Barrel"
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Avarice Extended Mag II"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Quiver Control Grip"
             },
             {
               "slot": "Stock",
               "label": "Culata",
               "name": "VAS Blench Pad"
-            },
-            {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "VAS Convergence Foregrip"
             }
           ]
         }
