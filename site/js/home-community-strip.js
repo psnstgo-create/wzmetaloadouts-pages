@@ -131,8 +131,6 @@
       }
       window.requestAnimationFrame(frame);
     }
-    rail.addEventListener('mouseenter', pause);
-    rail.addEventListener('mouseleave', resumeSoon);
     rail.addEventListener('focusin', pause);
     rail.addEventListener('focusout', resumeSoon);
     rail.addEventListener('touchstart', pause, { passive: true });
