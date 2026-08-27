@@ -143,7 +143,9 @@ function codigoDeHome(a){
   // si la tarjeta muestra el build del modo (Resurgence/Ranked), usar SU codigo
   const nk=norm(a.arma||a.nombre);
   const bm=typeof buildPropioParaModo==='function'?buildPropioParaModo(nk):null;
-  if(MODO!=='battle_royale'&&bm&&(bm.modos||[]).includes(MODO)){
+  // Si la fuente externa no trajo código, la tarjeta usa el build propio
+  // completo (accesorios + código), nunca una combinación inconsistente.
+  if(bm&&bm.codigo&&(!String(a.codigo||'').trim()||(MODO!=='battle_royale'&&(bm.modos||[]).includes(MODO)))){
     return (bm.codigo||'').trim();
   }
   const l=loadoutPrincipalHome(a);
@@ -164,6 +166,13 @@ function attachmentsDeHome(a){
   const metaAtt=HOME_LOADOUTS[nk];
   const buildModo=buildPropioParaModo(nk);
   const propio=buildModo?buildModo.items:null; // build propio: armas-data.json / _build/score_builds.py
+
+  // Sin código compartible en la fuente externa: publicar solo un loadout
+  // propio completo que sí tenga sus cinco accesorios y código real.
+  if(buildModo&&buildModo.codigo&&Array.isArray(propio)&&propio.length&&!String(a.codigo||'').trim()){
+    const arr=normalizarAttachmentsHome(propio.map(it=>({slot:it.label||it.slot,item:it.name})));
+    if(arr.length)return arr;
+  }
 
   // En Resurgence/Ranked el build propio del modo manda: el scrapeado de
   // meta_warzone.json es generico (BR). En BR sigue mandando el scrapeado
