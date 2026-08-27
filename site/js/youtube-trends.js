@@ -3,7 +3,6 @@
 
   var section = document.getElementById('ytWeaponTrends');
   var grid = document.getElementById('ytWeaponTrendsGrid');
-  var updated = document.getElementById('ytWeaponTrendsUpdated');
   var notice = document.getElementById('ytWeaponTrendsNotice');
   if (!section || !grid) return;
 
@@ -67,18 +66,6 @@
     return firstParts[1] && firstParts[1] === lastParts[1]
       ? firstParts[0] + '–' + last
       : first + '–' + last;
-  }
-
-  function generatedLabel(value) {
-    var date = new Date(value);
-    if (!Number.isFinite(date.getTime())) return '';
-    try {
-      return new Intl.DateTimeFormat('es-419', {
-        day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'
-      }).format(date);
-    } catch (_) {
-      return '';
-    }
   }
 
   function pointsFor(row) {
@@ -329,10 +316,10 @@
     }).filter(Boolean);
     if (currentRows.length < 3) return;
 
-    if (updated) updated.textContent = generatedLabel(data.generatedAt);
     if (notice) {
-      var baseNotice = String(data.notice || 'Videos publicados; no representa uso dentro del juego.').slice(0, 160);
-      notice.textContent = stale ? 'Última muestra disponible. ' + baseNotice : baseNotice;
+      notice.textContent = stale
+        ? 'Radar en actualización; mostramos la última muestra válida.'
+        : 'Señal basada en contenido reciente; no mide el uso dentro de partidas.';
     }
     section.dataset.stale = stale ? 'true' : 'false';
     renderTrends();
