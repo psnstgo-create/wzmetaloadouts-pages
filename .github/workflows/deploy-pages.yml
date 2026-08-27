@@ -219,24 +219,13 @@ jobs:
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "source_sha=$(git -C ../source rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-            echo "El artefacto publico cambio; se desplegara a Cloudflare Pages."
+            echo "El artefacto publico cambio; se guardara antes de desplegar."
           fi
 
-      # Deploy a Cloudflare Pages (estable, sin el bug de GitHub Pages).
-      - name: Deploy a Cloudflare Pages
-        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: >-
-          npx --yes wrangler@4 pages deploy target/site
-          --project-name=wzmetaloadouts
-          --branch=main
-          --commit-dirty=true
-
-      # Guarda el artefacto en el repo (backup/historial) SOLO si el deploy salio
-      # bien. Si el deploy falla, no commitea y la proxima corrida reintenta.
-      - name: Guardar artefacto (backup, si el deploy funciono)
+      # Primero guarda el artefacto. Nunca se despliega un radar nuevo que no
+      # pueda persistir: así un siguiente sync no puede restaurar una muestra
+      # antigua por una carrera de pushes.
+      - name: Guardar artefacto antes del deploy
         if: steps.sync.outputs.changed == 'true'
         working-directory: target
         env:
@@ -248,3 +237,18 @@ jobs:
             if git pull --rebase --autostash origin main && git push; then exit 0; fi
             sleep 5
           done
+          echo "No se pudo guardar el artefacto tras 5 intentos." >&2
+          exit 1
+
+      # Deploy a Cloudflare Pages (estable, sin el bug de GitHub Pages). Solo
+      # corre después de que un artefacto cambiado quede respaldado con éxito.
+      - name: Deploy a Cloudflare Pages
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >-
+          npx --yes wrangler@4 pages deploy target/site
+          --project-name=wzmetaloadouts
+          --branch=main
+          --commit-dirty=true
