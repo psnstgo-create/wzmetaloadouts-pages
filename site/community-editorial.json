@@ -1,8 +1,83 @@
 {
   "schema_version": 1,
-  "source_checked_at": "2026-08-04",
+  "source_checked_at": "2026-08-28",
   "disclosure": "Selecciones editoriales de WZ Meta. Los alias no corresponden a cuentas registradas.",
   "loadouts": [
+    {
+      "id": "editorial-an94-largo-alcance-s5r",
+      "alias": "NovaK",
+      "arma_slug": "an-94",
+      "codigo_clase": "A13-23Y3A-MYDVW-11",
+      "comentario": "Build de largo alcance revisado para Season 5 Reloaded: silenciador, control y cargador ampliado.",
+      "created_at": "2026-08-28T13:10:00Z",
+      "accesorios": {
+        "Mira": "Redwell 30-S 2x",
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "15\" Benthic Barrel",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Rexford Extended II"
+      }
+    },
+    {
+      "id": "editorial-vst-corto-alcance-s5r",
+      "alias": "JaceR",
+      "arma_slug": "vst",
+      "codigo_clase": "S12-9CWYJ-WD11",
+      "comentario": "Alternativa actual de movilidad para peleas cortas, con control suficiente para encadenar eliminaciones.",
+      "created_at": "2026-08-28T13:00:00Z",
+      "accesorios": {
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "9.7\" Enmity Barrel",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Avarice Extended Mag II",
+        "Culata": "Hawker Cub-55 Pad"
+      }
+    },
+    {
+      "id": "editorial-rev46-corto-alcance-s5r",
+      "alias": "LouWZ",
+      "arma_slug": "rev-46",
+      "codigo_clase": "S09-21YNH-J5LNK-YU11",
+      "comentario": "Configuración de corto alcance con cañón de movilidad y munición FMJ para duelos agresivos.",
+      "created_at": "2026-08-28T12:50:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "9.6\" Redwell Anolis Barrel",
+        "Cargador": "Cawdor Extended Mag",
+        "Mods de disparo": "4.6x30mm FMJ"
+      }
+    },
+    {
+      "id": "editorial-mpc25-corto-alcance-s5r",
+      "alias": "RavenK",
+      "arma_slug": "mpc-25",
+      "codigo_clase": "S06-T483Y-ZWL11-1",
+      "comentario": "Clase de corto alcance enfocada en respuesta y manejo para quien prefiera la MPC-25.",
+      "created_at": "2026-08-28T12:40:00Z",
+      "accesorios": {
+        "Cañón": "14.5\" VAS Ashe Barrel",
+        "Acople": "Quickstep Foregrip",
+        "Mira": "EAM xL Reflex",
+        "Cargador": "Sustain-25 Extended Mag",
+        "Culata": "K-1 Pedal Stock"
+      }
+    },
+    {
+      "id": "editorial-rk9-control-s5r",
+      "alias": "KiroWZ",
+      "arma_slug": "rk-9",
+      "codigo_clase": "S02-9SEQI-FH11",
+      "comentario": "Opción de bajo retroceso para el RK-9, pensada para mantener control en ráfagas.",
+      "created_at": "2026-08-28T12:30:00Z",
+      "accesorios": {
+        "Boca de cañón": "Hawker Stabilizer MK.II",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Ascot Drum Mag",
+        "Empuñadura trasera": "Nanopulse Grip",
+        "Culata": "VAS Conduit Stock"
+      }
+    },
     {
       "id": "editorial-fg42-largo-alcance",
       "alias": "Fer45",
