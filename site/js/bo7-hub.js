@@ -67,6 +67,57 @@
       '<img src="' + esc(w.imagen || '') + '" alt="" loading="lazy" onerror="this.style.opacity=0"></a>';
   }
 
+  function loadoutDestacado(w) {
+    var loadouts = Array.isArray(w.loadouts) ? w.loadouts : [];
+    return loadouts.find(function (l) { return l.codigo && Array.isArray(l.items) && l.items.length >= 5; }) ||
+      loadouts.find(function (l) { return Array.isArray(l.items) && l.items.length >= 5; }) || null;
+  }
+
+  function copiarCodigo(button, code) {
+    function listo() {
+      var original = button.textContent;
+      button.textContent = 'Código copiado ✓';
+      setTimeout(function () { button.textContent = original; }, 1800);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(code).then(listo).catch(function () {});
+      return;
+    }
+    var campo = document.createElement('textarea');
+    campo.value = code;
+    campo.setAttribute('readonly', '');
+    campo.style.position = 'fixed';
+    campo.style.opacity = '0';
+    document.body.appendChild(campo);
+    campo.select();
+    try { document.execCommand('copy'); listo(); } catch (e) {}
+    document.body.removeChild(campo);
+  }
+
+  function renderFeatured() {
+    var host = document.getElementById('bo7Featured');
+    if (!host) return;
+    var weapon = ALL.filter(esMetaActual).find(function (w) { return loadoutDestacado(w); });
+    if (!weapon) { host.innerHTML = ''; return; }
+    var loadout = loadoutDestacado(weapon);
+    var tier = tierDe(weapon);
+    var code = loadout.codigo || '';
+    var accesorios = loadout.items.slice(0, 5).map(function (item) {
+      var slot = item.label || item.slot || 'Accesorio';
+      return '<span class="bo7-featured-item" title="' + esc(slot + ': ' + (item.name || '')) + '"><b>' + esc(slot) + '</b>' + esc(item.name || '') + '</span>';
+    }).join('');
+    var copiar = code ? '<button class="bo7-copy" type="button" data-bo7-copy-code="' + esc(code) + '">Copiar código</button>' : '';
+    host.innerHTML = '<article class="bo7-featured-card">' +
+      '<div class="bo7-featured-code">' + (code ? 'Código de importación' : 'Build recomendada') + '</div>' +
+      '<div><div class="bo7-featured-label"><span class="bo7-featured-tier">' + esc(tier) + '</span>' + esc(loadout.nombre || 'Clase meta') + '</div>' +
+      '<h3>' + esc(weapon.nombre) + '</h3><p class="bo7-featured-role">' + esc(weapon.tipo || 'Arma') + ' · 5 accesorios</p>' +
+      '<div class="bo7-featured-items">' + accesorios + '</div>' +
+      '<div class="bo7-featured-actions">' + copiar + '<a class="bo7-featured-open" href="/armas/' + encodeURIComponent(weapon.slug) + '">Ver clase completa →</a></div></div>' +
+      '<img class="bo7-featured-weapon" src="' + esc(weapon.imagen || '') + '" alt="' + esc(weapon.nombre) + '" loading="eager" onerror="this.style.opacity=0"></article>';
+    var button = host.querySelector('[data-bo7-copy-code]');
+    if (button) button.addEventListener('click', function () { copiarCodigo(button, button.dataset.bo7CopyCode); });
+  }
+
   function renderHot() {
     var host = document.getElementById('bo7HotList');
     if (!host) return;
@@ -170,7 +221,7 @@
         }).sort(function (a, b) {
           return (a.ranking || 999) - (b.ranking || 999);
         });
-        renderStats(); renderHot(); renderRadar(); renderCats(); renderGrid();
+        renderStats(); renderFeatured(); renderHot(); renderRadar(); renderCats(); renderGrid();
       })
       .catch(function (e) {
         var host = document.getElementById('bo7Grid');
