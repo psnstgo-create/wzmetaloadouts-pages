@@ -39,6 +39,14 @@ function comSlugSafe(s) {
   return (s || '').replace(/[<>:"/\\|?*]+/g, '').replace(/\s+/g, '_');
 }
 
+function comAvatarTone(username) {
+  const tones = ['violet', 'cyan', 'lime', 'rose', 'amber'];
+  const value = String(username || '');
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) hash = ((hash * 31) + value.charCodeAt(i)) >>> 0;
+  return tones[hash % tones.length];
+}
+
 async function comCargarArmas() {
   try {
     const r = await fetch('/armas-data.json', { cache: 'no-cache' });
@@ -521,7 +529,7 @@ function comCardHtml(l, idx) {
   const username = l._username || perfil.username || 'Usuario';
   const avatarHtml = perfil.avatar_url
     ? `<img class="com-avatar-img" src="${escapeHtml(perfil.avatar_url)}" alt="${escapeHtml(username)}">`
-    : `<span class="com-avatar">${escapeHtml(username.charAt(0).toUpperCase())}</span>`;
+    : `<span class="com-avatar com-avatar--${comAvatarTone(username)}">${escapeHtml(username.charAt(0).toUpperCase())}</span>`;
   const yaVoto = l._editorial ? null : wzVotoLocal(l.id);
   const acc = Object.entries(l.accesorios || {});
   const r = l._resumen;

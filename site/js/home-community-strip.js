@@ -41,6 +41,14 @@
     return String(alias || '?').trim().slice(0, 2).toUpperCase();
   }
 
+  function avatarTone(alias) {
+    var tones = ['violet', 'cyan', 'lime', 'rose', 'amber'];
+    var value = String(alias || '');
+    var hash = 0;
+    for (var i = 0; i < value.length; i += 1) hash = ((hash * 31) + value.charCodeAt(i)) >>> 0;
+    return tones[hash % tones.length];
+  }
+
   function shortAccessory(name) {
     var value = String(name || '').trim();
     if (/\bELO\b/i.test(value)) return 'ELO';
@@ -97,7 +105,7 @@
       return '<article class="hc-card' + (duplicate ? ' hc-card--copy' : '') + '"' + hidden + '>' +
         '<a class="hc-card-link" href="' + communityHref(item) + '" aria-label="Ver clase compartida de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
         (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
-        '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
+        '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar hc-tone-' + avatarTone(item.alias) + '">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
         '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item, weapon) + '</div>' +
         '<div class="hc-bottom"><span class="hc-code">' + esc(item.codigo_clase) + '</span>' +
         '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '"' + tabIndex + '>Copiar</button></div></article>';
