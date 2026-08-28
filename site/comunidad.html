@@ -140,7 +140,7 @@
 
 .com-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
 .com-card{position:relative;background:linear-gradient(180deg,#0D1319,#0A0F14);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:0;display:flex;flex-direction:column;overflow:hidden;animation:comCardIn .4s cubic-bezier(.2,.7,.3,1) both;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
-.com-card:hover{transform:translateY(-4px);border-color:rgba(240,196,25,.4);box-shadow:0 18px 40px -16px rgba(0,0,0,.85),0 0 24px -6px rgba(240,196,25,.14)}
+.com-card:hover{transform:translateY(-4px);border-color:rgba(240,196,25,.4);box-shadow:0 18px 40px -16px rgba(0,0,0,.85),0 0 24px -6px rgba(240,196,25,.14)}.com-card.is-linked{border-color:rgba(240,196,25,.78);box-shadow:0 0 0 2px rgba(240,196,25,.16),0 22px 44px -18px rgba(0,0,0,.85),0 0 32px -8px rgba(240,196,25,.22)}
 @keyframes comCardIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.com-card{animation:none}.com-card:hover{transform:none}}
 

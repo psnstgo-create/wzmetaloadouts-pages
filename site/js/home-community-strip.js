@@ -32,6 +32,11 @@
     return (weapon.tipo || 'Arma') + ' · build destacado';
   }
 
+  function communityHref(loadout) {
+    var id = String(loadout && loadout.id || '');
+    return id ? '/comunidad?clase=' + encodeURIComponent(id) + '#comGrid' : '/comunidad#comGrid';
+  }
+
   function initials(alias) {
     return String(alias || '?').trim().slice(0, 2).toUpperCase();
   }
@@ -90,7 +95,7 @@
       var hidden = duplicate ? ' aria-hidden="true"' : '';
       var tabIndex = duplicate ? ' tabindex="-1"' : '';
       return '<article class="hc-card' + (duplicate ? ' hc-card--copy' : '') + '"' + hidden + '>' +
-        '<a class="hc-card-link" href="/armas/' + encodeURIComponent(item.arma_slug) + '" aria-label="Ver ficha de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
+        '<a class="hc-card-link" href="' + communityHref(item) + '" aria-label="Ver clase compartida de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
         (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
         '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
         '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item, weapon) + '</div>' +

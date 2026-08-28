@@ -9,6 +9,13 @@ let COM_ACCESORIOS_ELEGIDOS = {};
 let COM_SESION = null;
 let COM_EDITORIALES = [];
 const COM_MAX_ACCESORIOS = 5;
+let COM_CLASE_DESTACADA = null;
+let COM_CLASE_DESTACADA_ENFOCADA = false;
+
+try {
+  const claseDesdeUrl = new URLSearchParams(window.location.search).get('clase');
+  if (claseDesdeUrl && /^[A-Za-z0-9-]{1,120}$/.test(claseDesdeUrl)) COM_CLASE_DESTACADA = claseDesdeUrl;
+} catch (e) { /* URL sin parámetros compatibles */ }
 
 // El SDK de Supabase puede limpiar el "#type=recovery" de la URL (via
 // detectSessionInUrl) antes de que comActualizarEstadoSesion() llegue a
@@ -491,6 +498,18 @@ function comOrdenarYRenderizar() {
     comCargarFeed();
     window.scrollTo({ top: document.getElementById('comFiltroActivo').offsetTop - 120, behavior: 'smooth' });
   }));
+  comEnfocarClaseCompartida(grid);
+}
+
+function comEnfocarClaseCompartida(grid) {
+  if (!COM_CLASE_DESTACADA) return;
+  const card = [...grid.querySelectorAll('[data-com-loadout-id]')]
+    .find(el => el.dataset.comLoadoutId === COM_CLASE_DESTACADA);
+  if (!card) return;
+  card.classList.add('is-linked');
+  if (COM_CLASE_DESTACADA_ENFOCADA) return;
+  COM_CLASE_DESTACADA_ENFOCADA = true;
+  requestAnimationFrame(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }));
 }
 
 function comCardHtml(l, idx) {
@@ -515,7 +534,7 @@ function comCardHtml(l, idx) {
     return `<div class="com-acc-row">${icon}<span class="slot">${escapeHtml(slot)}</span><span class="val">${escapeHtml(comNombreES(val))}</span></div>`;
   }).join('');
 
-  return `<article class="com-card" style="animation-delay:${Math.min(idx * 70, 500)}ms">
+  return `<article class="com-card" data-com-loadout-id="${escapeHtml(String(l.id || ''))}" style="animation-delay:${Math.min(idx * 70, 500)}ms">
     <div class="com-card-weapon">
       ${arma ? `<img src="${escapeHtml(arma.imagen)}" alt="" loading="lazy" onerror="this.remove()">` : ''}
       <div class="wname">
