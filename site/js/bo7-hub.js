@@ -20,6 +20,7 @@
 
   var ALL = [];
   var filtroCat = 'todos';
+  var filtroVista = 'meta';
   var query = '';
 
   function tierDe(w) {
@@ -45,13 +46,53 @@
       '</a>';
   }
 
-  function renderNew() {
-    var host = document.getElementById('bo7New');
+  function esMetaActual(w) {
+    var tier = tierDe(w);
+    return tier === 'S' || tier === 'A';
+  }
+
+  function hotCardHTML(w, index) {
+    var tier = tierDe(w);
+    var col = TIER_COLOR[tier] || '#00FF87';
+    return '<a class="bo7-hot" href="/armas/' + encodeURIComponent(w.slug) + '" style="--hot-color:' + col + '">' +
+      '<span class="bo7-hot-rank">#' + (index + 1) + '</span>' +
+      '<img src="' + esc(w.imagen || '') + '" alt="" loading="lazy" onerror="this.style.opacity=0">' +
+      '<span><strong>' + esc(w.nombre) + '</strong><span>' + tier + ' Tier · ' + esc(w.tipo || 'Arma') + '</span></span></a>';
+  }
+
+  function radarCardHTML(w) {
+    return '<a class="bo7-radar-card" href="/armas/' + encodeURIComponent(w.slug) + '">' +
+      '<span class="bo7-radar-tag">Nueva temporada</span><strong>' + esc(w.nombre) + '</strong>' +
+      '<span>' + esc(w.tipo || 'Arma') + '</span>' +
+      '<img src="' + esc(w.imagen || '') + '" alt="" loading="lazy" onerror="this.style.opacity=0"></a>';
+  }
+
+  function renderHot() {
+    var host = document.getElementById('bo7HotList');
+    if (!host) return;
+    var meta = ALL.filter(esMetaActual).slice(0, 3);
+    host.innerHTML = meta.length
+      ? meta.map(hotCardHTML).join('')
+      : '<div class="bo7-empty">El meta se está actualizando.</div>';
+  }
+
+  function renderRadar() {
+    var host = document.getElementById('bo7Radar');
     if (!host) return;
     var nuevas = ALL.filter(function (w) { return w.es_nuevo; });
     if (!nuevas.length) { host.style.display = 'none'; return; }
-    host.innerHTML = '<div class="bo7-sec-h">🆕 Nuevas en la Temporada</div>' +
-      '<div class="wgrid">' + nuevas.map(cardHTML).join('') + '</div>';
+    host.innerHTML = nuevas.map(radarCardHTML).join('');
+  }
+
+  function renderStats() {
+    var meta = ALL.filter(esMetaActual).length;
+    var nuevas = ALL.filter(function (w) { return w.es_nuevo; }).length;
+    var total = ALL.length;
+    var values = { bo7MetaCount: meta, bo7NewCount: nuevas, bo7TotalCount: total };
+    Object.keys(values).forEach(function (id) {
+      var node = document.getElementById(id);
+      if (node) node.textContent = values[id];
+    });
   }
 
   function renderCats() {
@@ -83,7 +124,10 @@
       var lbl = CAT[w.tipo] || w.tipo;
       var okCat = filtroCat === 'todos' || lbl === filtroCat;
       var okQ = !query || (w.nombre || '').toLowerCase().indexOf(query) !== -1;
-      return okCat && okQ;
+      var okVista = filtroVista === 'todas' ||
+        (filtroVista === 'meta' && esMetaActual(w)) ||
+        (filtroVista === 'nuevas' && w.es_nuevo);
+      return okCat && okQ && okVista;
     });
     var cnt = document.getElementById('bo7Count');
     if (cnt) cnt.textContent = lista.length;
@@ -92,9 +136,30 @@
       : '<div class="bo7-empty">Sin armas para ese filtro.</div>';
   }
 
+  function elegirVista(vista) {
+    filtroVista = vista;
+    document.querySelectorAll('.bo7-view').forEach(function (button) {
+      var activa = button.dataset.view === vista;
+      button.classList.toggle('on', activa);
+      button.setAttribute('aria-selected', String(activa));
+    });
+    renderGrid();
+  }
+
   function init() {
     var search = document.getElementById('bo7Search');
     if (search) search.addEventListener('input', function () { query = search.value.toLowerCase().trim(); renderGrid(); });
+    document.querySelectorAll('.bo7-view').forEach(function (button) {
+      button.addEventListener('click', function () { elegirVista(button.dataset.view); });
+    });
+    document.querySelectorAll('[data-bo7-view]').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        elegirVista(link.dataset.bo7View);
+        var arsenal = document.getElementById('bo7Arsenal');
+        if (arsenal) arsenal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
     fetch('/armas-data.json?v=' + Date.now(), { cache: 'no-cache' })
       .then(function (r) { return r.json(); })
       .then(function (d) {
@@ -105,7 +170,7 @@
         }).sort(function (a, b) {
           return (a.ranking || 999) - (b.ranking || 999);
         });
-        renderNew(); renderCats(); renderGrid();
+        renderStats(); renderHot(); renderRadar(); renderCats(); renderGrid();
       })
       .catch(function (e) {
         var host = document.getElementById('bo7Grid');
