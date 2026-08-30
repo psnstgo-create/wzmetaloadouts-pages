@@ -1,112 +1,103 @@
 {
-  "generado": "2026-08-29T23:16:01Z",
+  "generado": "2026-08-30T01:21:35Z",
   "streams": [
-    {
-      "login": "vmrrob",
-      "name": "vMrROB",
-      "title": "NUEVO CONTROL + HANDCAM | passion 🧪 | @vmrrob | !RAZER !EXITLAG !DUBBY | !pc !sens !controller !audio",
-      "viewers": 849,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vmrrob-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0a7d342c-d7e9-44ec-b9ed-d213e8a2d8c5-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
     {
       "login": "criminalgod_",
       "name": "criminalgod_",
       "title": "RANKED WZ Y BETA MW4 EN LA TARDE",
-      "viewers": 493,
+      "viewers": 381,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_criminalgod_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c76ebb28-0b4a-44b4-a424-e5f513c98f3e-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "ketchup",
+      "name": "Ketchup",
+      "title": "⚡️⚠️ Ranked Grind ⚠️⚡️| Player for @onefamily_PR 🦍 !hacks !meta !sens !allsettings",
+      "viewers": 338,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ketchup-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cda7a627-2e8b-4ac5-9299-3ea54c657805-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "tenux_official_",
       "name": "tenux_official_",
       "title": "Les gusto Warzone 2 prime?",
-      "viewers": 107,
+      "viewers": 97,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tenux_official_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b2d34b9b-c889-42b7-a600-1eed430c0f8d-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "renrizevods",
-      "name": "RenRizeVODs",
-      "title": "EN VIVO VODS 24/7 - REPETICIONES DEL CANAL DE @RenRize ♡ !redes !wsp",
-      "viewers": 49,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_renrizevods-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ea7dd7fc-a619-4d65-9214-6e202c883841-profile_image-300x300.png",
+      "login": "ellaager",
+      "name": "ElLaager",
+      "title": "oda",
+      "viewers": 85,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ellaager-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b37152da-298c-4211-b46f-0e0c03189b70-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "panquidios",
-      "name": "Panquidios",
-      "title": "PANQUI VS PRYMO! CUSTOMS! 16 VS 16, LOS MEJORES 8 PASAN A LA FINAL!  5:00 P.M GRUPOS  8:30 P.M FINALES",
-      "viewers": 37,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_panquidios-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3e5a2c96-faae-48fb-914c-62ab3bb7f1f9-profile_image-300x300.png",
+      "login": "zoruky",
+      "name": "Zoruky",
+      "title": "#1 Solo vs Squads 😈🔥!youtube !discord !prime !sens",
+      "viewers": 50,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zoruky-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/120eeef5-e496-4a8f-bed0-bb433f273f45-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "yess_suaste14",
-      "name": "Yess_Suaste14",
-      "title": "WARZONE PUBS DE CHILL || !Discord !Redes @yess_suaste14",
-      "viewers": 20,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yess_suaste14-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8269d616-d310-433b-986d-1a7fadd9d05c-profile_image-300x300.png",
+      "login": "prymo_k",
+      "name": "Prymo_k",
+      "title": "Copa Doble P Cast",
+      "viewers": 41,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_prymo_k-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/75892546-96d4-4aae-8ca4-0eb0a54c177f-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "gsitegg",
+      "name": "GSITEGG",
+      "title": "OFFICIAL BROADCAST: $150 GTD FEMALE CUSTOMS by @gsitegg x @younkingzorg |👻!redes !socials !calendar",
+      "viewers": 36,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gsitegg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6bd901-90fe-47dd-be26-a192f3af2900-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "itslov_",
+      "name": "itslov_",
+      "title": "TORNEO CON INGLISH COMMS💛🦈 || ⋆.˚🦋༘⋆ !Redes !Wishlist !Paypal !Playlist",
+      "viewers": 30,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_itslov_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c1e11108-e60d-4d5f-b588-07a3ccf868f3-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "thegoodplayer08",
       "name": "thegoodplayer08",
       "title": "WARZONE MODER WARFARE 4 | !PC !SENS",
-      "viewers": 19,
+      "viewers": 22,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thegoodplayer08-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3e8bb65-5154-4c82-bea5-aba5dcbf2809-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "ampatrampa",
-      "name": "ampatrampa",
-      "title": "HEMOS VOLVIDO AL COD 😎 /// !discord !redes !wishlist !memide",
+      "login": "luciavietto21",
+      "name": "luciavietto21",
+      "title": "PRIVADAS DE MUSHEEER|| !alias !Paypal !mp",
+      "viewers": 15,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luciavietto21-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b752a6a5-5b55-46df-ac47-c5a303408773-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "mcamila__",
+      "name": "mcamila__",
+      "title": "TORNEITO",
       "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ampatrampa-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f8254aac-5985-4699-a959-76f5c0f19fb3-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "noahkuz",
-      "name": "noahkuz",
-      "title": "CALL OF DUTY BETA WARZONE VAMOS A ESTO FIN DE SEMANA DIA 2",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_noahkuz-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/079dcdd0-12b0-4e25-a1bc-884f6f0e2848-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "valeri_05",
-      "name": "valeri_05",
-      "title": "FEMALE CUSTOM $150 GTD  CON AUDIO IMAGINARIO LMKK // !redes !id !discord //",
-      "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valeri_05-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/9a35d0dd-59d3-417b-b274-5feffd2eceed-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "keeoss_",
-      "name": "keeoss_",
-      "title": "🎮 #1 SOLOS COLOMBIA + HANDCAM 🔥 I !pc !yt !sens",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "z0sito",
-      "name": "z0sito",
-      "title": "Ya estoy hasta la chingada",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_z0sito-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/307f99ee-45bf-4c80-b7bc-5359bf504829-profile_image-300x300.jpeg",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mcamila__-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2acd002a-663a-4070-a5b3-23c86cb29e8a-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
