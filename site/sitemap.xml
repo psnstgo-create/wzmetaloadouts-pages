@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-09-01T18:19:46.872137
-  Total URLs: 191
+  Fecha: 2026-09-01T18:41:19.062158
+  Total URLs: 192
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -833,6 +833,12 @@
         <lastmod>2026-09-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/modern-warfare-4-beta-abierta-gratis</loc>
+        <lastmod>2026-09-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/warzone-season-05-reloaded-buffs-nerfs-meta</loc>
