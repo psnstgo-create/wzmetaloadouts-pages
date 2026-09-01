@@ -2907,13 +2907,8 @@
             "battle_royale",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−27%), alcance (+21%), cargador (+10 balas), ADS más rápido (+40%) y sprint-a-disparo (+43%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−61%), alcance (+20%) y cargador (+10 balas).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "8.6\" Orbital Light Barrel"
-            },
             {
               "slot": "Magazine",
               "label": "Cargador",
@@ -2932,7 +2927,12 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Oberon Tactical Pad"
+              "name": "Heavy Bound Pad"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
             }
           ]
         },
@@ -2944,13 +2944,8 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−14%), alcance (+21%), cargador (+10 balas), ADS más rápido (+40%) y sprint-a-disparo (+68%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−16%), alcance (+20%), cargador (+10 balas), ADS más rápido (+26%) y sprint-a-disparo (+52%).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "8.6\" Orbital Light Barrel"
-            },
             {
               "slot": "Stock",
               "label": "Culata",
@@ -2970,6 +2965,11 @@
               "slot": "Magazine",
               "label": "Cargador",
               "name": "MFS Renown Plus Mag"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "8.6\" Orbital Light Barrel"
             }
           ]
         }
@@ -3842,7 +3842,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−42%), velocidad de bala (+15%) y sprint-a-disparo (+7%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−5%), velocidad de bala (+55%), alcance (+10%) y cargador (+10 balas). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-20%).",
           "items": [
             {
               "slot": "Optic",
@@ -3850,24 +3850,24 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17.1\" Abdicator Barrel"
-            },
-            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
+              "name": "Monolithic Suppressor"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Stratagem Tight Stock"
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "18.9\" Westerlies Barrel"
             },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "A1-C Control Grip"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Andean Extended Mag"
             }
           ]
         },
@@ -3877,61 +3877,15 @@
           "emoji": "⚡",
           "codigo": "",
           "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−31%) y sprint-a-disparo (+14%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "14.2\" Winged Barrel"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Trunk Mix Stock"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "A1-C Control Grip"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
+            "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−47%). A cambio sacrifica velocidad de ADS (-11%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−20%), ADS más rápido (+10%) y sprint-a-disparo (+15%).",
           "items": [
             {
               "slot": "Optic",
               "label": "Mira",
               "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "18.9\" Westerlies Barrel"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Weighted Stock"
             },
             {
               "slot": "Muzzle",
@@ -3942,6 +3896,16 @@
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "A1-C Control Grip"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Stratagem Tight Stock"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Recoil Sync Unit"
             }
           ]
         }
@@ -4864,7 +4828,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−18%), velocidad de bala (+35%), alcance (+18%) y cargador (+85 balas). A cambio sacrifica velocidad de ADS (-17%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−21%), velocidad de bala (+35%), alcance (+18%) y cargador (+70 balas). A cambio sacrifica velocidad de ADS (-13%).",
           "items": [
             {
               "slot": "Optic",
@@ -4882,14 +4846,14 @@
               "name": "Redwell 7.62 Brake"
             },
             {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Vault Extended Mag"
-            },
-            {
               "slot": "Fire Mods",
               "label": "Mods de disparo",
               "name": "7.62 NATO FMJ"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Fissure Grip"
             }
           ]
         },
@@ -4901,7 +4865,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−25%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−16%) y velocidad de bala (+40%).",
           "items": [
             {
               "slot": "Optic",
@@ -4938,7 +4902,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−42%). A cambio sacrifica velocidad de ADS (-10%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−27%) y velocidad de bala (+40%). A cambio sacrifica velocidad de ADS (-8%).",
           "items": [
             {
               "slot": "Optic",
@@ -4958,7 +4922,7 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Winch Stock"
+              "name": "VAS TH-09 Stock"
             },
             {
               "slot": "Underbarrel",
@@ -5887,7 +5851,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−60%). A cambio sacrifica velocidad de ADS (-8%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−24%), velocidad de bala (+14%) y alcance (+14%).",
           "items": [
             {
               "slot": "Optic",
@@ -5895,9 +5859,9 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "MFS Counterforce-C1 Stock"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "5.7x28mm FMJ"
             },
             {
               "slot": "Muzzle",
@@ -5905,14 +5869,14 @@
               "name": "K&S Brake-2B"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "19.4\" Stimulus Barrel"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Kinetix-Mk 1 Grip"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
             }
           ]
         },
@@ -5922,46 +5886,10 @@
           "emoji": "⚡",
           "codigo": "",
           "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−30%), ADS más rápido (+18%) y sprint-a-disparo (+20%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "K&S Brake-2B"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Pathfinder-Skel Stock"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Kinetix-Mk 1 Grip"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "19.4\" Stimulus Barrel"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
+            "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−50%). A cambio sacrifica velocidad de ADS (-9%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−34%).",
           "items": [
             {
               "slot": "Optic",
@@ -5969,9 +5897,9 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "EAM Blitzfire Stock"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Buffer Spring"
             },
             {
               "slot": "Muzzle",
@@ -5979,14 +5907,14 @@
               "name": "K&S Brake-2B"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "19.4\" Stimulus Barrel"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Kinetix-Mk 1 Grip"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
             }
           ]
         }
@@ -6874,17 +6802,12 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−13%), cargador (+12 balas), ADS más rápido (+27%) y sprint-a-disparo (+38%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−35%) y cargador (+12 balas).",
           "items": [
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Hawker Stabilizer MK.II"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "12\" Cloud Barrel"
             },
             {
               "slot": "Magazine",
@@ -6899,7 +6822,12 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Converge Tactical Stock"
+              "name": "Endurance LD-6 Stock"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Accelerated Recoil System"
             }
           ]
         },
@@ -6911,17 +6839,17 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−8%), ADS más rápido (+61%) y sprint-a-disparo (+47%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−5%), ADS más rápido (+48%) y sprint-a-disparo (+33%).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "12\" Cloud Barrel"
-            },
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Hawker Stabilizer MK.II"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Converge Tactical Stock"
             },
             {
               "slot": "Rear Grip",
@@ -6929,9 +6857,9 @@
               "name": "QuikArm Grip"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Converge Tactical Stock"
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "12\" Cloud Barrel"
             },
             {
               "slot": "Laser",
@@ -6948,32 +6876,32 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−8%), cargador (+12 balas), ADS más rápido (+53%) y sprint-a-disparo (+38%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−25%), cargador (+12 balas), ADS más rápido (+7%) y sprint-a-disparo (+12%).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "12\" Cloud Barrel"
-            },
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Hawker Stabilizer MK.II"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "QuikArm Grip"
-            },
-            {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Converge Tactical Stock"
+              "name": "Endurance LD-6 Stock"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Vantix-8 Grip"
             },
             {
               "slot": "Magazine",
               "label": "Cargador",
               "name": "Gator Extended Mag"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "12\" Cloud Barrel"
             }
           ]
         }
@@ -7313,7 +7241,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−41%), velocidad de bala (+15%) y sprint-a-disparo (+16%). A cambio sacrifica velocidad de ADS (-15%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−7%), velocidad de bala (+53%), alcance (+10%) y sprint-a-disparo (+16%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-20%).",
           "items": [
             {
               "slot": "Optic",
@@ -7323,12 +7251,7 @@
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "Eclipse 7.62 Brake"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17.6\" Vandal Heavy Barrel"
+              "name": "Monolithic Suppressor"
             },
             {
               "slot": "Comb",
@@ -7339,6 +7262,11 @@
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Czar Control Grip"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "17\" Bystro Speed Barrel"
             }
           ]
         },
@@ -7350,7 +7278,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−29%), ADS más rápido (+5%) y sprint-a-disparo (+17%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−26%), ADS más rápido (+5%) y sprint-a-disparo (+17%).",
           "items": [
             {
               "slot": "Optic",
@@ -7368,14 +7296,14 @@
               "name": "Garin Variable Comb"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17\" Bystro Speed Barrel"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Czar Control Grip"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
             }
           ]
         },
@@ -7387,7 +7315,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−29%) y sprint-a-disparo (+16%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−35%) y sprint-a-disparo (+16%). A cambio sacrifica velocidad de ADS (-9%).",
           "items": [
             {
               "slot": "Optic",
@@ -7395,24 +7323,24 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "Eclipse 7.62 Brake"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17\" Bystro Speed Barrel"
-            },
-            {
               "slot": "Comb",
               "label": "Peine",
               "name": "Caliban Light Comb"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Czar Control Grip"
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Eclipse 7.62 Brake"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Pugil Heavy Stock"
             }
           ]
         }
@@ -7859,10 +7787,9 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale",
-            "clasificatorio"
+            "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−42%), ADS más rápido (+5%) y sprint-a-disparo (+25%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−35%) y cargador (+20 balas). A cambio sacrifica velocidad de ADS (-10%).",
           "items": [
             {
               "slot": "Optic",
@@ -7875,11 +7802,6 @@
               "name": "Hawker Stabilizer MK.II"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "9\" Basilisk Barrel"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Bounty Grip"
@@ -7888,6 +7810,11 @@
               "slot": "Stock",
               "label": "Culata",
               "name": "VAS Interlock Stock"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Forward Breach Mag"
             }
           ]
         },
@@ -7899,7 +7826,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−5%), ADS más rápido (+22%) y sprint-a-disparo (+71%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−5%), ADS más rápido (+17%) y sprint-a-disparo (+64%).",
           "items": [
             {
               "slot": "Optic",
@@ -7907,14 +7834,14 @@
               "name": "Lethal Tools ELO"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "9\" Basilisk Barrel"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Lennox Grip"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "9\" Basilisk Barrel"
             },
             {
               "slot": "Muzzle",
@@ -7925,6 +7852,43 @@
               "slot": "Laser",
               "label": "Láser",
               "name": "LTI SwiftPoint Laser"
+            }
+          ]
+        },
+        {
+          "id": "wz-clasificatorio",
+          "nombre": "Meta Ranked",
+          "emoji": "👑",
+          "codigo": "",
+          "modos": [
+            "clasificatorio"
+          ],
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−35%), ADS más rápido (+10%) y sprint-a-disparo (+18%).",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "Lethal Tools ELO"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Hawker Stabilizer MK.II"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Bounty Grip"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "VAS Interlock Stock"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "9\" Basilisk Barrel"
             }
           ]
         }
@@ -8792,45 +8756,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−42%), velocidad de bala (+20%) y cargador (+10 balas). A cambio sacrifica velocidad de ADS (-15%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "16\" Reticulated Barrel"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Backline Flip Mags"
-            },
-            {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "Buffer Spring"
-            }
-          ]
-        },
-        {
-          "id": "wz-resurgence",
-          "nombre": "Meta Resurgence",
-          "emoji": "⚡",
-          "codigo": "",
-          "modos": [
-            "resurgence",
-            "clasificatorio"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−33%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−15%), velocidad de bala (+37%) y cargador (+30 balas). A cambio sacrifica velocidad de ADS (-8%).",
           "items": [
             {
               "slot": "Optic",
@@ -8848,14 +8774,88 @@
               "name": "20\" Delta-F2 Barrel"
             },
             {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "Buffer Spring"
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Bowen Bulwark Mag"
             },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Caravan-H2 Grip"
+            }
+          ]
+        },
+        {
+          "id": "wz-resurgence",
+          "nombre": "Meta Resurgence",
+          "emoji": "⚡",
+          "codigo": "",
+          "modos": [
+            "resurgence"
+          ],
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−26%) y cargador (+15 balas).",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "FANG HoverPoint ELO"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "RL-5.56 Brake"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Caravan-H2 Grip"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Mayday Extended Mag"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Buffer Spring"
+            }
+          ]
+        },
+        {
+          "id": "wz-clasificatorio",
+          "nombre": "Meta Ranked",
+          "emoji": "👑",
+          "codigo": "",
+          "modos": [
+            "clasificatorio"
+          ],
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−26%), ADS más rápido (+6%) y sprint-a-disparo (+10%).",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "FANG HoverPoint ELO"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "RL-5.56 Brake"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Ultralight Tactical Stock"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Caravan-H2 Grip"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "Buffer Spring"
             }
           ]
         }
@@ -9272,7 +9272,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−56%), cargador (+10 balas) y sprint-a-disparo (+38%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−64%) y cargador (+10 balas).",
           "items": [
             {
               "slot": "Barrel",
@@ -9287,7 +9287,7 @@
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
-              "name": "Torque Prime Grip"
+              "name": "Magnate Grip"
             },
             {
               "slot": "Magazine",
@@ -9309,7 +9309,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−41%), ADS más rápido (+18%) y sprint-a-disparo (+68%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−38%), ADS más rápido (+18%) y sprint-a-disparo (+68%).",
           "items": [
             {
               "slot": "Rear Grip",
@@ -9346,7 +9346,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−56%), ADS más rápido (+8%) y sprint-a-disparo (+56%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−53%), ADS más rápido (+8%) y sprint-a-disparo (+56%).",
           "items": [
             {
               "slot": "Barrel",
@@ -9354,14 +9354,14 @@
               "name": "8.6\" MFS Stratus-X Barrel"
             },
             {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "K&S Brake-2B"
-            },
-            {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Torque Prime Grip"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "K&S Brake-2B"
             },
             {
               "slot": "Underbarrel",
@@ -10639,7 +10639,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−59%), velocidad de bala (+96%) y cargador (+55 balas). A cambio sacrifica velocidad de ADS (-9%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−52%), velocidad de bala (+96%) y cargador (+55 balas). A cambio sacrifica velocidad de ADS (-9%).",
           "items": [
             {
               "slot": "Optic",
@@ -10662,9 +10662,9 @@
               "name": "Hawker Stabilizer MK.II"
             },
             {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "VAS Convergence Foregrip"
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Vice Grip"
             }
           ]
         },
@@ -10676,7 +10676,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora velocidad de bala (+36%), cargador (+55 balas), ADS más rápido (+62%) y sprint-a-disparo (+41%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−5%), velocidad de bala (+36%), cargador (+55 balas), ADS más rápido (+12%) y sprint-a-disparo (+39%).",
           "items": [
             {
               "slot": "Optic",
@@ -10684,24 +10684,24 @@
               "name": "Lethal Tools ELO"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "9\" Heron Barrel"
-            },
-            {
               "slot": "Fire Mods",
               "label": "Mods de disparo",
               "name": "Razor 9mm Wildfire Conversion"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Haste Ribbed Grip"
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Hawker Stabilizer MK.II"
             },
             {
               "slot": "Stock",
               "label": "Culata",
               "name": "Constrictor Pad"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "ReadiFlex Grip"
             }
           ]
         },
@@ -10713,7 +10713,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−26%), velocidad de bala (+36%), cargador (+55 balas), ADS más rápido (+19%) y sprint-a-disparo (+28%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−51%), velocidad de bala (+96%) y cargador (+55 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -10728,7 +10728,7 @@
             {
               "slot": "Barrel",
               "label": "Cañón",
-              "name": "9\" Heron Barrel"
+              "name": "12\" MFS Sidewinder Barrel"
             },
             {
               "slot": "Underbarrel",
@@ -11118,9 +11118,10 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale"
+            "battle_royale",
+            "resurgence"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−59%), velocidad de bala (+20%) y cargador (+21 balas). A cambio sacrifica velocidad de ADS (-14%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−51%) y cargador (+21 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -11133,51 +11134,14 @@
               "name": "16\" OS-Density Barrel"
             },
             {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "NovaBurst Brake"
-            },
-            {
               "slot": "Underbarrel",
               "label": "Acople",
               "name": "VAS Convergence Foregrip"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Granulated OM1 Grip"
-            }
-          ]
-        },
-        {
-          "id": "wz-resurgence",
-          "nombre": "Meta Resurgence",
-          "emoji": "⚡",
-          "codigo": "",
-          "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−39%), velocidad de bala (+8%) y cargador (+15 balas).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17.6\" Chiral-02 Barrel"
-            },
-            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "NovaBurst Brake"
-            },
-            {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "VAS Convergence Foregrip"
             },
             {
               "slot": "Rear Grip",
@@ -11194,7 +11158,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−39%), velocidad de bala (+8%) y cargador (+15 balas). A cambio sacrifica velocidad de ADS (-12%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−46%), cargador (+21 balas), ADS más rápido (+6%) y sprint-a-disparo (+10%).",
           "items": [
             {
               "slot": "Optic",
@@ -11202,14 +11166,14 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17.6\" Chiral-02 Barrel"
-            },
-            {
               "slot": "Underbarrel",
               "label": "Acople",
               "name": "VAS Convergence Foregrip"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "16\" OS-Density Barrel"
             },
             {
               "slot": "Muzzle",
@@ -11219,7 +11183,7 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "H01-90 Full Stock"
+              "name": "Hawker Skeleton Stock"
             }
           ]
         }
@@ -12084,7 +12048,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−45%), velocidad de bala (+20%) y cargador (+680 balas). A cambio sacrifica velocidad de ADS (-14%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−20%) y cargador (+880 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -12102,14 +12066,14 @@
               "name": "Leyden Spark Belt Fed"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "19.3\" R-556 Chief Barrel"
-            },
-            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Redwell 7.62 Brake"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "L1-Command Grip"
             }
           ]
         },
@@ -12119,46 +12083,10 @@
           "emoji": "⚡",
           "codigo": "",
           "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−14%) y cargador (+240 balas).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "VG-0 Light Stock"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Leyden Spark Belt Fed"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "22\" Hermes Fluted Barrel"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "Redwell 7.62 Brake"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
+            "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−45%) y cargador (+240 balas). A cambio sacrifica velocidad de ADS (-11%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−32%) y cargador (+440 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -12176,14 +12104,14 @@
               "name": "Leyden Spark Belt Fed"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "22\" Hermes Fluted Barrel"
-            },
-            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "RL-7.62 Compensator"
+              "name": "Redwell 7.62 Brake"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "L1-Command Grip"
             }
           ]
         }
@@ -12563,83 +12491,11 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale"
-          ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−19%), velocidad de bala (+20%), alcance (+7%) y sprint-a-disparo (+13%). Con silenciador para no aparecer en el minimapa al disparar.",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "Monolithic Suppressor"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "M8A1 AutoStrike-X8 Conversion"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "G7-Launch Grip"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Sentinel Extended Mag"
-            }
-          ]
-        },
-        {
-          "id": "wz-resurgence",
-          "nombre": "Meta Resurgence",
-          "emoji": "⚡",
-          "codigo": "",
-          "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−29%), ADS más rápido (+6%) y sprint-a-disparo (+13%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "M8A1 AutoStrike-X8 Conversion"
-            },
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "RL-5.56 Brake"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "G7-Launch Grip"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Gridlock Stock"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
+            "battle_royale",
+            "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−46%) y sprint-a-disparo (+11%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−46%), ADS más rápido (+13%) y sprint-a-disparo (+13%).",
           "items": [
             {
               "slot": "Optic",
@@ -12647,14 +12503,14 @@
               "name": "FANG HoverPoint ELO"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "M8A1 AutoStrike-X8 Conversion"
-            },
-            {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "RL-5.56 Brake"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "M8A1 AutoStrike-X8 Conversion"
             },
             {
               "slot": "Rear Grip",
@@ -13059,83 +12915,11 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale"
-          ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−96%), velocidad de bala (+5%) y cargador (+204 balas). A cambio sacrifica velocidad de ADS (-12%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Samarskiy Overdrive Belt"
-            },
-            {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "MFS 48-Dread Burst Mod"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "18.2\" Parlous Heavy Barrel"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Taction Control Stock"
-            }
-          ]
-        },
-        {
-          "id": "wz-resurgence",
-          "nombre": "Meta Resurgence",
-          "emoji": "⚡",
-          "codigo": "",
-          "modos": [
-            "resurgence"
-          ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−76%), cargador (+204 balas), ADS más rápido (+5%) y sprint-a-disparo (+6%).",
-          "items": [
-            {
-              "slot": "Optic",
-              "label": "Mira",
-              "name": "FANG HoverPoint ELO"
-            },
-            {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Samarskiy Overdrive Belt"
-            },
-            {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "MFS 48-Dread Burst Mod"
-            },
-            {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Taction Control Stock"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "15.6\" Stolos Short Barrel"
-            }
-          ]
-        },
-        {
-          "id": "wz-clasificatorio",
-          "nombre": "Meta Ranked",
-          "emoji": "👑",
-          "codigo": "",
-          "modos": [
+            "battle_royale",
+            "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−79%) y cargador (+204 balas).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−81%) y cargador (+398 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -13153,14 +12937,14 @@
               "name": "MFS 48-Dread Burst Mod"
             },
             {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Eclipse 7.62 Brake"
+            },
+            {
               "slot": "Stock",
               "label": "Culata",
               "name": "Taction Control Stock"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "18.2\" Primer Barrel"
             }
           ]
         }
@@ -13542,7 +13326,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−8%), velocidad de bala (+75%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-9%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−8%), velocidad de bala (+65%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-8%).",
           "items": [
             {
               "slot": "Optic",
@@ -13579,7 +13363,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−13%), velocidad de bala (+40%), ADS más rápido (+5%) y sprint-a-disparo (+6%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−8%), velocidad de bala (+50%), alcance (+8%) y sprint-a-disparo (+6%). Con silenciador para no aparecer en el minimapa al disparar.",
           "items": [
             {
               "slot": "Optic",
@@ -13589,17 +13373,17 @@
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
-              "name": "Triptych Brake"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "20\" Ion Trinity Barrel"
+              "name": "Monolithic Suppressor"
             },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "XR-Initialize Grip"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "20\" Ion Trinity Barrel"
             },
             {
               "slot": "Magazine",
@@ -13616,7 +13400,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−18%), velocidad de bala (+60%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-9%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−18%), velocidad de bala (+50%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-8%).",
           "items": [
             {
               "slot": "Optic",
@@ -14777,13 +14561,8 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−31%), cargador (+12 balas), ADS más rápido (+18%) y sprint-a-disparo (+38%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−65%), cargador (+12 balas), ADS más rápido (+10%) y sprint-a-disparo (+21%).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "8.7\" EAM Hollow Barrel"
-            },
             {
               "slot": "Underbarrel",
               "label": "Acople",
@@ -14795,14 +14574,19 @@
               "name": "Hawker Stabilizer MK.II"
             },
             {
-              "slot": "Magazine",
-              "label": "Cargador",
-              "name": "Alliance Extended Mag"
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "8.7\" EAM Hollow Barrel"
             },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Nanopulse Grip"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Alliance Extended Mag"
             }
           ]
         },
@@ -14814,12 +14598,12 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−23%), ADS más rápido (+26%) y sprint-a-disparo (+90%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−55%), ADS más rápido (+18%) y sprint-a-disparo (+73%).",
           "items": [
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "8.7\" EAM Hollow Barrel"
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "MFS Ironlung Handstop"
             },
             {
               "slot": "Rear Grip",
@@ -14827,9 +14611,9 @@
               "name": "606-T Skeleton Grip"
             },
             {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "MFS Ironlung Handstop"
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "8.7\" EAM Hollow Barrel"
             },
             {
               "slot": "Muzzle",
@@ -14851,17 +14635,17 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−23%), ADS más rápido (+28%) y sprint-a-disparo (+85%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−72%), ADS más rápido (+10%) y sprint-a-disparo (+56%).",
           "items": [
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "8.7\" EAM Hollow Barrel"
-            },
             {
               "slot": "Underbarrel",
               "label": "Acople",
               "name": "MFS Ironlung Handstop"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "8.7\" EAM Hollow Barrel"
             },
             {
               "slot": "Muzzle",
@@ -14876,7 +14660,7 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Vectra Tactical Stock"
+              "name": "VAS Conduit Stock"
             }
           ]
         }
@@ -15251,30 +15035,29 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale",
-            "clasificatorio"
+            "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−35%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−27%), ADS más rápido (+5%) y sprint-a-disparo (+62%).",
           "items": [
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "15.5\" Light Barrel"
+            },
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Breacher Onyx Brake"
             },
             {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "12 Gauge Slug"
-            },
-            {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17\" Overload Barrel"
-            },
-            {
               "slot": "Stock",
               "label": "Culata",
               "name": "Collapsible Stock"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "12 Gauge Slug"
             },
             {
               "slot": "Underbarrel",
@@ -15289,19 +15072,20 @@
           "emoji": "⚡",
           "codigo": "",
           "modos": [
-            "resurgence"
+            "resurgence",
+            "clasificatorio"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−31%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−20%), ADS más rápido (+10%) y sprint-a-disparo (+69%).",
           "items": [
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "15.5\" Light Barrel"
+            },
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Breacher Onyx Brake"
-            },
-            {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "12 Gauge Slug"
             },
             {
               "slot": "Stock",
@@ -15309,14 +15093,14 @@
               "name": "Collapsible Stock"
             },
             {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "EAM Steady-90 Grip"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "12 Gauge Slug"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17\" Overload Barrel"
+              "slot": "Laser",
+              "label": "Láser",
+              "name": "1mW Instinct Laser Array"
             }
           ]
         }
@@ -15612,35 +15396,34 @@
           "emoji": "🎯",
           "codigo": "",
           "modos": [
-            "battle_royale",
-            "clasificatorio"
+            "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−17%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−7%), cargador (+86 balas) y ADS más rápido (+11%).",
           "items": [
-            {
-              "slot": "Muzzle",
-              "label": "Boca de cañón",
-              "name": "Phantasm 12G Brake"
-            },
             {
               "slot": "Rear Grip",
               "label": "Empuñadura trasera",
               "name": "Paradise Gen-4 Grip"
             },
             {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "Buffer Spring"
-            },
-            {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "Zero Shift Handstop"
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Phantasm 12G Brake"
             },
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Mobile Security Stock"
+              "name": "Akita Scorchlink Akimbo"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "10.3\" Lightpad Strike Barrel"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Thinpoint Fast Mag"
             }
           ]
         },
@@ -15652,32 +15435,69 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−13%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−5%), ADS más rápido (+16%) y sprint-a-disparo (+75%).",
           "items": [
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Pioneer Blaze Grip"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "10.3\" Lightpad Strike Barrel"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Thinpoint Fast Mag"
+            },
+            {
+              "slot": "Laser",
+              "label": "Láser",
+              "name": "LTI SwiftPoint Laser"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Phantasm 12G Brake"
+            }
+          ]
+        },
+        {
+          "id": "wz-clasificatorio",
+          "nombre": "Meta Ranked",
+          "emoji": "👑",
+          "codigo": "",
+          "modos": [
+            "clasificatorio"
+          ],
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−5%), ADS más rápido (+11%) y sprint-a-disparo (+62%).",
+          "items": [
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Pioneer Blaze Grip"
+            },
             {
               "slot": "Muzzle",
               "label": "Boca de cañón",
               "name": "Phantasm 12G Brake"
             },
             {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "10.3\" Lightpad Strike Barrel"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Thinpoint Fast Mag"
+            },
+            {
               "slot": "Stock",
               "label": "Culata",
               "name": "Mobile Security Stock"
-            },
-            {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Paradise Gen-4 Grip"
-            },
-            {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "Buffer Spring"
-            },
-            {
-              "slot": "Underbarrel",
-              "label": "Acople",
-              "name": "Sapper Guard Handstop"
             }
           ]
         }
@@ -16019,7 +15839,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−30%), velocidad de bala (+65%) y alcance (+7%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-14%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−30%), velocidad de bala (+65%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-13%).",
           "items": [
             {
               "slot": "Muzzle",
@@ -16093,7 +15913,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−12%), velocidad de bala (+65%) y alcance (+7%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-10%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−12%), velocidad de bala (+65%) y alcance (+8%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-9%).",
           "items": [
             {
               "slot": "Muzzle",
@@ -16495,7 +16315,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−8%), velocidad de bala (+20%), alcance (+7%) y cargador (+10 balas). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-11%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−6%), velocidad de bala (+45%), alcance (+8%) y cargador (+10 balas). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-17%).",
           "items": [
             {
               "slot": "Optic",
@@ -16518,9 +16338,9 @@
               "name": "Bowen 762 Extended Mag"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Infantry-XY Stock"
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "17.3\" Velox-90 Barrel"
             }
           ]
         },
@@ -16532,7 +16352,7 @@
           "modos": [
             "resurgence"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−30%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−19%) y cargador (+10 balas).",
           "items": [
             {
               "slot": "Optic",
@@ -16550,14 +16370,14 @@
               "name": "Actuation-76 Grip"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Battalion Core Stock"
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "Force Stabilizer Handstop"
             },
             {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "Recoil Sync Unit"
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Bowen 762 Extended Mag"
             }
           ]
         },
@@ -16569,7 +16389,7 @@
           "modos": [
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−32%) y velocidad de bala (+18%). A cambio sacrifica velocidad de ADS (-10%).",
+          "descripcion": "Pensado para Ranked: precisión y consistencia por encima de todo. Mejora control de retroceso (−19%).",
           "items": [
             {
               "slot": "Optic",
@@ -16589,12 +16409,12 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "Seismic Fixed Stock"
+              "name": "Mil-Spec Light Stock"
             },
             {
-              "slot": "Barrel",
-              "label": "Cañón",
-              "name": "17.3\" Velox-90 Barrel"
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "Force Stabilizer Handstop"
             }
           ]
         }
@@ -17284,7 +17104,7 @@
           "modos": [
             "battle_royale"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−30%), velocidad de bala (+20%) y alcance (+43%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-12%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−29%), velocidad de bala (+20%) y alcance (+33%). Con silenciador para no aparecer en el minimapa al disparar. A cambio sacrifica velocidad de ADS (-16%).",
           "items": [
             {
               "slot": "Optic",
@@ -17309,7 +17129,7 @@
             {
               "slot": "Stock",
               "label": "Culata",
-              "name": "LTI Skeleton Stock"
+              "name": "Warden Folding Stock"
             }
           ]
         },
@@ -17322,7 +17142,7 @@
             "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−57%), alcance (+33%), ADS más rápido (+36%) y sprint-a-disparo (+46%).",
+          "descripcion": "Pensado para Resurgence: respawns rápidos y peleas cortas, prioriza el manejo. Mejora control de retroceso (−48%), alcance (+33%), ADS más rápido (+36%) y sprint-a-disparo (+46%).",
           "items": [
             {
               "slot": "Optic",
@@ -17958,7 +17778,7 @@
             "resurgence",
             "clasificatorio"
           ],
-          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−35%) y velocidad de bala (+35%).",
+          "descripcion": "Pensado para Battle Royale: peleas a media-larga distancia. Mejora control de retroceso (−50%), velocidad de bala (+35%), ADS más rápido (+10%) y sprint-a-disparo (+11%).",
           "items": [
             {
               "slot": "Barrel",
@@ -17966,9 +17786,9 @@
               "name": "18\" MFS Greyhound Barrel"
             },
             {
-              "slot": "Fire Mods",
-              "label": "Mods de disparo",
-              "name": "12 Gauge Slug"
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "Axel Control Grip"
             },
             {
               "slot": "Muzzle",
@@ -17976,14 +17796,14 @@
               "name": "Twin Dampener"
             },
             {
-              "slot": "Rear Grip",
-              "label": "Empuñadura trasera",
-              "name": "Axel Control Grip"
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "VAS BravoTap Drum"
             },
             {
-              "slot": "Stock",
-              "label": "Culata",
-              "name": "Greaves Stalker Stock"
+              "slot": "Fire Mods",
+              "label": "Mods de disparo",
+              "name": "12 Gauge Slug"
             }
           ]
         }
