@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T01:34:34.328014+00:00",
+  "timestamp": "2026-09-02T06:24:20.248918+00:00",
   "estado": "OK",
   "juegos_chequeados": [
     "Call of Duty: Black Ops 7",
@@ -15,7 +15,36 @@
       "eventos_activos": []
     }
   },
-  "plataformas": [],
+  "plataformas": [
+    {
+      "nombre": "PlayStation 5",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX Series X|S",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "PlayStation 4",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX One",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Battle.net",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "Steam",
+      "estado": "operativo"
+    },
+    {
+      "nombre": "XBOX on PC",
+      "estado": "operativo"
+    }
+  ],
   "ultima_caida": null,
   "tweets_recientes": [],
   "eventos_activos": []
