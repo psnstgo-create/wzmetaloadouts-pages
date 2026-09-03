@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source_checked_at": "2026-08-28",
+  "source_checked_at": "2026-09-03",
   "disclosure": "Selecciones editoriales de WZ Meta. Los alias no corresponden a cuentas registradas.",
   "loadouts": [
     {
@@ -226,6 +226,38 @@
         "Cañón": "17.6\" LTI GRAV-4 Barrel",
         "Cargador": "SK-Garrison Drum",
         "Culata": "V-Last Control Pad"
+      }
+    },
+    {
+      "id": "editorial-soki-vst-season-5r",
+      "creator_id": "soki",
+      "alias": "Soki",
+      "arma_slug": "vst",
+      "codigo_clase": "S12-6KDY2-9U11",
+      "comentario": "VST de corto alcance mostrada por Soki para Season 5 Reloaded, con movilidad y manejo para peleas rápidas.",
+      "created_at": "2026-09-03T17:10:00Z",
+      "accesorios": {
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "9.7\" Enmity Barrel",
+        "Acople": "EAM Steady-90 Grip",
+        "Cargador": "Avarice Extended Mag II",
+        "Culata": "Hawker Cub-55 Pad"
+      }
+    },
+    {
+      "id": "editorial-diazbiffle-mpc25-resurgence",
+      "creator_id": "diazbiffle",
+      "alias": "DiazBiffle",
+      "arma_slug": "mpc-25",
+      "codigo_clase": "S06-D5R4S-Y11",
+      "comentario": "MPC-25 de DiazBiffle para Resurgence Ranked: cañón largo, cargador ampliado y manejo rápido.",
+      "created_at": "2026-09-03T17:05:00Z",
+      "accesorios": {
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "14.5\" VAS Ashe Barrel",
+        "Cargador": "Sustain-25 Extended Mag",
+        "Empuñadura trasera": "Quickshift Grip",
+        "Culata": "K-1 Pedal Stock"
       }
     }
   ]

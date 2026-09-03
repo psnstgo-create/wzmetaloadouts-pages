@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T16:22:07Z",
+  "generatedAt": "2026-09-03T22:06:36Z",
   "creators": [
     {
       "id": "soki",
@@ -10,25 +10,10 @@
       "tone": "gold",
       "avatar": "https://yt3.ggpht.com/ytc/AIdro_mtgPxAvHtF2IHl7gsOFUd-VPv1FblRC6WVnj-LmOgTybw=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "d5IDJUyD8NA",
-        "title": "ACTIVISION CAMBIA MODERN WARFARE 4",
-        "publishedAt": "2026-09-03T15:20:21Z",
-        "url": "https://www.youtube.com/watch?v=d5IDJUyD8NA",
-        "buildSignal": false
-      }
-    },
-    {
-      "id": "deusamir",
-      "name": "DeusAmir",
-      "region": "México",
-      "youtubeUrl": "https://www.youtube.com/@DeusAmir",
-      "tone": "cyan",
-      "avatar": "https://yt3.ggpht.com/ytc/AIdro_lh_OUVXb7AM-st_sH8yGFsxCCtNs4xS6APUtoBc_0696E=s800-c-k-c0x00ffffff-no-rj",
-      "latest": {
-        "id": "VxMOOFmnRAY",
-        "title": "ACTIVISION se DISCULPA y cambia WARZONE 4…",
-        "publishedAt": "2026-08-31T22:01:49Z",
-        "url": "https://www.youtube.com/watch?v=VxMOOFmnRAY",
+        "id": "NjzME1mK0bo",
+        "title": "MESES DESPUES ¿SIGUE VIVO? ASI ESTA BLACK OPS en PS5",
+        "publishedAt": "2026-09-03T18:20:36Z",
+        "url": "https://www.youtube.com/watch?v=NjzME1mK0bo",
         "buildSignal": false
       }
     },
@@ -55,10 +40,10 @@
       "tone": "lime",
       "avatar": "https://yt3.ggpht.com/RDNF7GZAEZa2EfyDmtpYqgzkZOuN_SLbm5SiGfcelTQDRYhn2H4vKJ6surqmYl02G23rTxcWhA=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "iZbx2FQkc74",
+        "id": "gW6S6JTHUqI",
         "title": "¡$1.2 MILLONES EN JUEGO! 🔥 Mundial de Battle Royale | Pullze Check",
-        "publishedAt": "2026-09-03T00:58:09Z",
-        "url": "https://www.youtube.com/watch?v=iZbx2FQkc74",
+        "publishedAt": "2026-09-03T19:08:16Z",
+        "url": "https://www.youtube.com/watch?v=gW6S6JTHUqI",
         "buildSignal": false
       }
     },
@@ -70,10 +55,10 @@
       "tone": "amber",
       "avatar": "https://yt3.ggpht.com/MT18Iq79fh_llZeS_QvtxSHVWUmTrW8T9qL1LQi7_hVBEEHMRCYyVAq-ZdwmKTfhLrFL5XgE=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "qsAf99f988Y",
-        "title": "Why Did MW4 Change Scorestreaks Like This?",
-        "publishedAt": "2026-09-02T19:51:31Z",
-        "url": "https://www.youtube.com/watch?v=qsAf99f988Y",
+        "id": "DTDHxxOP7Qk",
+        "title": "Why Nobody Cares About Warzone Anymore",
+        "publishedAt": "2026-09-03T20:00:16Z",
+        "url": "https://www.youtube.com/watch?v=DTDHxxOP7Qk",
         "buildSignal": false
       }
     },
@@ -85,10 +70,10 @@
       "tone": "rose",
       "avatar": "https://yt3.ggpht.com/ytc/AIdro_n6t73kX-BRIRuuIvszQUeohPaVp37CTGGy12fCN_D3PW8=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "0clLBRh_ZBc",
-        "title": "WARZONE... We Need To Talk.",
-        "publishedAt": "2026-09-02T21:35:39Z",
-        "url": "https://www.youtube.com/watch?v=0clLBRh_ZBc",
+        "id": "FzVFeQW1L1I",
+        "title": "Call Of Duty Just EXPOSED Their Own Anti-Cheat…",
+        "publishedAt": "2026-09-03T21:35:35Z",
+        "url": "https://www.youtube.com/watch?v=FzVFeQW1L1I",
         "buildSignal": false
       }
     },
@@ -119,6 +104,21 @@
         "title": "My HONEST Review of Warzone in MW4…",
         "publishedAt": "2026-09-02T18:30:35Z",
         "url": "https://www.youtube.com/watch?v=-uJffJ5rDBo",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "diazbiffle",
+      "name": "DiazBiffle",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/@DiazBiffle",
+      "tone": "lime",
+      "avatar": "https://yt3.ggpht.com/kBpCX0xj5QhVmfMqormLtcbnDedqCAGIFs2B_BR12zCnOwTAPw_aq5mBfN_RT3oEQUTbZgeW2g=s800-c-k-c0x00ffffff-no-rj",
+      "latest": {
+        "id": "5I8fUyGE-o8",
+        "title": "🔴 LIVE | $60,000 TOURNEY GROUP STAGE DAY 1 | @DiazBiffle",
+        "publishedAt": "2026-09-03T08:33:51Z",
+        "url": "https://www.youtube.com/watch?v=5I8fUyGE-o8",
         "buildSignal": false
       }
     }

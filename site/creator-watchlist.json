@@ -64,6 +64,22 @@
       "youtubeHandle": "@JoeWo",
       "youtubeUrl": "https://www.youtube.com/@JoeWo",
       "tone": "violet"
+    },
+    {
+      "id": "diazbiffle",
+      "name": "DiazBiffle",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCObKYg-TWWi1KloaFoAuAsA",
+      "youtubeUrl": "https://www.youtube.com/@DiazBiffle",
+      "tone": "lime"
+    },
+    {
+      "id": "mrmarveltv",
+      "name": "MrMarvelTV",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCqBaw9Ze5EJ4fJVbaXbhnmw",
+      "youtubeUrl": "https://www.youtube.com/@MrMarvelTV",
+      "tone": "amber"
     }
   ]
 }
