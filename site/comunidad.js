@@ -272,10 +272,11 @@ function comRenderRadarCreadores(data) {
     const latest = creator.latest && typeof creator.latest === 'object' ? creator.latest : null;
     const videoUrl = String(latest?.url || creator.youtubeUrl || '');
     const safeUrl = /^https:\/\/www\.youtube\.com\//.test(videoUrl) ? videoUrl : '';
+    const avatarUrl = /^https:\/\//.test(String(creator.avatar || '')) ? String(creator.avatar) : '';
     const title = latest?.title ? escapeHtml(String(latest.title)) : 'Canal en seguimiento para próximas clases';
     const when = latest ? comFechaRelativa(latest.publishedAt) : 'seguimiento activo';
     return `<article class="creator-card">
-      <div class="creator-top"><span class="creator-avatar tone-${escapeHtml(String(creator.tone || 'gold'))}">${escapeHtml(String(creator.name || '?').slice(0, 1).toUpperCase())}</span><div><div class="creator-name">${name}</div><div class="creator-region">${escapeHtml(String(creator.region || 'Warzone'))}</div></div></div>
+      <div class="creator-top">${avatarUrl ? `<img class="creator-avatar-img" src="${escapeHtml(avatarUrl)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer">` : `<span class="creator-avatar tone-${escapeHtml(String(creator.tone || 'gold'))}">${escapeHtml(String(creator.name || '?').slice(0, 1).toUpperCase())}</span>`}<div><div class="creator-name">${name}</div><div class="creator-region">${escapeHtml(String(creator.region || 'Warzone'))}</div></div></div>
       ${safeUrl ? `<a class="creator-video" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${title}</a>` : `<span class="creator-watch">${title}</span>`}
       <div class="creator-foot"><span>${when}</span>${latest?.buildSignal ? '<span class="creator-build-signal">BUILD DETECTADA</span>' : safeUrl ? `<a class="creator-youtube" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">Ver contenido ↗</a>` : ''}</div>
     </article>`;
