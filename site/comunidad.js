@@ -8,6 +8,7 @@ let COM_ARMA_ELEGIDA = null;
 let COM_ACCESORIOS_ELEGIDOS = {};
 let COM_SESION = null;
 let COM_EDITORIALES = [];
+let COM_CREADORES = [];
 const COM_MAX_ACCESORIOS = 5;
 let COM_CLASE_DESTACADA = null;
 let COM_CLASE_DESTACADA_ENFOCADA = false;
@@ -252,37 +253,40 @@ function comExpandirAuth(expandido, enfocar) {
   }
 }
 
-function comFechaRelativa(valor) {
-  const fecha = new Date(valor || '');
-  if (Number.isNaN(fecha.getTime())) return 'seguimiento activo';
-  const dias = Math.max(0, Math.floor((Date.now() - fecha.getTime()) / 86400000));
-  if (dias === 0) return 'hoy';
-  if (dias === 1) return 'ayer';
-  return `hace ${dias} días`;
-}
-
 function comRenderRadarCreadores(data) {
   const section = document.getElementById('creatorRadar');
   const list = document.getElementById('creatorRadarList');
   const state = document.getElementById('creatorRadarState');
   const creators = Array.isArray(data?.creators) ? data.creators : [];
-  if (!creators.length) return;
-  list.innerHTML = creators.map(creator => {
+  const porId = new Map(creators.map(creator => [String(creator.id || ''), creator]));
+  // El radar público no muestra vídeos: solo clases que ya existen dentro de
+  // Comunidad y que pasan la misma revisión de 5 accesorios + código.
+  const clases = COM_EDITORIALES
+    .filter(loadout => {
+      const accesorios = Object.keys(loadout.accesorios || {});
+      return typeof loadout.creator_id === 'string'
+        && porId.has(loadout.creator_id)
+        && accesorios.length === COM_MAX_ACCESORIOS
+        && typeof loadout.codigo_clase === 'string'
+        && loadout.codigo_clase.trim().length > 0;
+    })
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  if (!clases.length) return;
+
+  list.innerHTML = clases.map(loadout => {
+    const creator = porId.get(loadout.creator_id);
     const name = escapeHtml(String(creator.name || 'Creador'));
-    const latest = creator.latest && typeof creator.latest === 'object' ? creator.latest : null;
-    const videoUrl = String(latest?.url || creator.youtubeUrl || '');
-    const safeUrl = /^https:\/\/www\.youtube\.com\//.test(videoUrl) ? videoUrl : '';
     const avatarUrl = /^https:\/\//.test(String(creator.avatar || '')) ? String(creator.avatar) : '';
-    const title = latest?.title ? escapeHtml(String(latest.title)) : 'Canal en seguimiento para próximas clases';
-    const when = latest ? comFechaRelativa(latest.publishedAt) : 'seguimiento activo';
+    const arma = COM_ARMAS[loadout.arma_slug] || {};
+    const nombreArma = escapeHtml(String(arma.nombre || loadout.arma_slug || 'Clase Warzone'));
+    const codigo = escapeHtml(String(loadout.codigo_clase));
+    const claseUrl = `/comunidad?clase=${encodeURIComponent(String(loadout.id))}`;
     return `<article class="creator-card">
       <div class="creator-top">${avatarUrl ? `<img class="creator-avatar-img" src="${escapeHtml(avatarUrl)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer">` : `<span class="creator-avatar tone-${escapeHtml(String(creator.tone || 'gold'))}">${escapeHtml(String(creator.name || '?').slice(0, 1).toUpperCase())}</span>`}<div><div class="creator-name">${name}</div><div class="creator-region">${escapeHtml(String(creator.region || 'Warzone'))}</div></div></div>
-      ${safeUrl ? `<a class="creator-video" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${title}</a>` : `<span class="creator-watch">${title}</span>`}
-      <div class="creator-foot"><span>${when}</span>${latest?.buildSignal ? '<span class="creator-build-signal">BUILD DETECTADA</span>' : safeUrl ? `<a class="creator-youtube" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">Ver contenido ↗</a>` : ''}</div>
+      <a class="creator-class" href="${claseUrl}"><strong>${nombreArma}</strong><span>${codigo}</span><b>Ver clase en Comunidad →</b></a>
     </article>`;
   }).join('');
-  const generated = new Date(data.generatedAt || '');
-  state.textContent = Number.isNaN(generated.getTime()) ? 'Seguimiento activo' : `Actualizado ${comFechaRelativa(generated)}`;
+  state.textContent = `${clases.length} clase${clases.length === 1 ? '' : 's'} verificadas`;
   section.hidden = false;
 }
 
@@ -290,7 +294,7 @@ async function comCargarRadarCreadores() {
   try {
     const response = await fetch('/creator-radar.json', { cache: 'no-cache' });
     if (!response.ok) return;
-    comRenderRadarCreadores(await response.json());
+    COM_CREADORES = await response.json();
   } catch (e) {
     console.info('Radar de creadores no disponible todavía', e);
   }
@@ -694,5 +698,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('comOrden').addEventListener('change', comOrdenarYRenderizar);
   document.getElementById('comFiltroActivoQuitar').addEventListener('click', () => { COM_FILTRO_USUARIO = null; comCargarFeed(); });
   await Promise.all([comCargarArmas(), comCargarEditoriales(), comCargarRadarCreadores()]);
+  comRenderRadarCreadores(COM_CREADORES);
   await Promise.all([comCargarFeed(), comCargarStats()]);
 });
