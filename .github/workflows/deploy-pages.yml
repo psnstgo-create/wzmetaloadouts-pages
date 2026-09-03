@@ -61,6 +61,29 @@ jobs:
             echo "Radar anterior inválido; se conserva el inicial."
           fi
 
+      # El radar de creadores también se conserva en el artefacto público. Así
+      # una respuesta temporalmente fallida de YouTube nunca vacía la sección.
+      - name: Recuperar radar de creadores anterior
+        shell: bash
+        run: |
+          candidate="target/site/creator-radar.json"
+          if [[ ! -s "$candidate" ]]; then
+            echo "No hay radar de creadores anterior; se usará el inicial de la fuente."
+            exit 0
+          fi
+          if python - "$candidate" <<'PY'
+          import json, pathlib, sys
+          data = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
+          if data.get("schemaVersion") != 1 or not isinstance(data.get("creators"), list):
+              raise SystemExit(1)
+          PY
+          then
+            cp "$candidate" source/creator-radar.json
+            echo "Radar de creadores anterior recuperado."
+          else
+            echo "Radar de creadores anterior inválido; se conserva el inicial."
+          fi
+
       - name: Preparar Python para estado de servidores
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
@@ -170,6 +193,61 @@ jobs:
           )
           PY
 
+      # Las listas de reproducción de los canales consumen muy poca cuota de
+      # YouTube. Se revisan cuatro veces al día y jamás publican una clase por
+      # sí solas: solo actualizan el contenido que el equipo debe revisar.
+      - name: Decidir actualización del radar de creadores
+        id: creators_due
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          now = datetime.now(timezone.utc)
+          due, reason = True, "sin radar válido"
+          try:
+              data = json.loads(Path("target/site/creator-radar.json").read_text(encoding="utf-8"))
+              generated = datetime.fromisoformat(str(data.get("generatedAt", "")).replace("Z", "+00:00"))
+              age_hours = (now - generated.astimezone(timezone.utc)).total_seconds() / 3600
+              if data.get("schemaVersion") == 1 and isinstance(data.get("creators"), list) and age_hours < 6:
+                  due, reason = False, f"radar vigente ({age_hours:.1f} h)"
+              else:
+                  reason = f"radar vencido ({age_hours:.1f} h)"
+          except Exception:
+              pass
+          if os.environ.get("EVENT_NAME") == "workflow_dispatch":
+              due, reason = True, "ejecución manual"
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"due={'true' if due else 'false'}\n")
+          print(f"Radar de creadores: {reason}. Actualizar: {due}")
+          PY
+
+      - name: Actualizar radar de creadores (YouTube oficial)
+        if: steps.creators_due.outputs.due == 'true'
+        working-directory: source
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python _build/creator_radar.py
+        continue-on-error: true
+
+      - name: Registrar actualización de creadores
+        if: always() && steps.creators_due.outputs.due == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          Path("target/creator-radar-refresh-state.json").write_text(
+              json.dumps({"attemptedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
       # Pre-render SEO + sitemap: se HORNEAN acá (repo PUBLICO, Actions GRATIS)
       # en vez del repo privado. Playwright ya está instalado (server-status).
       # Hornea el HTML renderizado (tier list, stats, "Míralo en acción" + schema
@@ -212,7 +290,7 @@ jobs:
         run: |
           git config user.name "WZ Meta Publisher"
           git config user.email "bot@wzmetaloadouts.com"
-          git add --all -- site radar-refresh-state.json
+          git add --all -- site radar-refresh-state.json creator-radar-refresh-state.json
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "El artefacto publico no cambio."
@@ -231,7 +309,7 @@ jobs:
         env:
           SRC_SHA: ${{ steps.sync.outputs.source_sha }}
         run: |
-          git add --all -- site radar-refresh-state.json
+          git add --all -- site radar-refresh-state.json creator-radar-refresh-state.json
           git commit -m "Deploy: artefacto publico a Cloudflare Pages (${SRC_SHA:0:12})"
           for i in 1 2 3 4 5; do
             if git pull --rebase --autostash origin main && git push; then exit 0; fi
