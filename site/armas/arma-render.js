@@ -230,6 +230,33 @@ function renderLoadoutsSection(arma) {
     `;
 }
 
+function renderCommunityCta(arma, slug) {
+    const nombre = escapeHtml(arma.nombre);
+    const armaUrl = encodeURIComponent(slug);
+    return `
+        <section class="weapon-community-cta" aria-label="Compartir clase de ${nombre}">
+            <div>
+                <span class="weapon-community-kicker">COMUNIDAD WZ META</span>
+                <h2>¿Tu build de ${nombre} te funciona mejor?</h2>
+                <p>Compartila con sus 5 accesorios y código. La revisamos antes de publicarla.</p>
+            </div>
+            <a href="/comunidad?arma=${armaUrl}#comAuthCard" data-community-weapon="${escapeHtml(slug)}">Compartir mi clase <span aria-hidden="true">→</span></a>
+        </section>
+    `;
+}
+
+function setupCommunityCta() {
+    document.querySelectorAll('[data-community-weapon]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof window.gtag !== 'function') return;
+            window.gtag('event', 'community_weapon_cta_click', {
+                event_category: 'community',
+                arma_slug: link.dataset.communityWeapon || '',
+            });
+        });
+    });
+}
+
 function renderSlotChips(arma) {
     const slots = Object.keys(arma.attachments || {});
     if (slots.length === 0) return '';
@@ -626,10 +653,12 @@ async function renderArmaPage(slug) {
             renderBreadcrumb(arma) +
             renderHero(arma) +
             renderLoadoutsSection(arma) +
+            renderCommunityCta(arma, slug) +
             renderVideoSection(arma, video) +
             renderAllAttachmentsSection(arma) +
             renderMasLinks(arma);
         setupLoadoutTabs();
+        setupCommunityCta();
         setupChipsScroll();
         setupIconFallback();
 

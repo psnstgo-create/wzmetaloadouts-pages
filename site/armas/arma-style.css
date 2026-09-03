@@ -199,6 +199,26 @@
     font-size: 0.95rem;
 }
 
+/* ─── CTA contextual: convertir la intención de una ficha de arma en aporte ─── */
+.weapon-community-cta {
+    max-width: 1280px;
+    margin: 10px auto 18px;
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border: 1px solid rgba(240,196,25,.26);
+    border-radius: 14px;
+    background: linear-gradient(110deg, rgba(240,196,25,.10), rgba(12,17,22,.88) 48%, rgba(22,197,94,.06));
+}
+.weapon-community-kicker { display:block; color:#F0C419; font-family:'Share Tech Mono',monospace; font-size:.68rem; letter-spacing:.13em; }
+.weapon-community-cta h2 { margin:5px 0 3px; color:#fff; font-family:'Rajdhani',sans-serif; font-weight:800; font-size:1.3rem; }
+.weapon-community-cta p { margin:0; color:rgba(255,255,255,.58); font-size:.92rem; }
+.weapon-community-cta a { flex:0 0 auto; display:inline-flex; align-items:center; gap:9px; padding:11px 16px; border-radius:8px; background:#F0C419; color:#111; text-decoration:none; font-family:'Rajdhani',sans-serif; font-weight:900; text-transform:uppercase; letter-spacing:.04em; transition:transform .15s,background .15s; }
+.weapon-community-cta a:hover { background:#ffd42a; transform:translateY(-1px); }
+@media (max-width:640px) { .weapon-community-cta { margin:8px 16px 16px; padding:18px; align-items:flex-start; flex-direction:column; gap:14px; } .weapon-community-cta h2 { font-size:1.16rem; } .weapon-community-cta a { width:100%; justify-content:center; } }
+
 .loadout-tabs {
     display: flex;
     gap: 0;

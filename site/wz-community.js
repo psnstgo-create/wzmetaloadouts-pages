@@ -10,6 +10,13 @@ const WZ_SUPABASE_KEY = 'sb_publishable_K9getRZ8g1RRu6ycx_z1Cw_ZhS9bLnY';
 
 const wzsb = window.supabase.createClient(WZ_SUPABASE_URL, WZ_SUPABASE_KEY);
 
+// Eventos sin datos personales para medir el embudo de Comunidad en GA4.
+// No enviar emails, nombres de usuario ni códigos: solo la etapa y el arma.
+function wzTrackCommunity(eventName, params = {}) {
+  if (typeof window.gtag !== 'function') return;
+  window.gtag('event', eventName, { event_category: 'community', ...params });
+}
+
 const WZ_VOTO_LABELS = {
   funciono:    { emoji: '✅', texto: 'Me funcionó' },
   masomenos:   { emoji: '😐', texto: 'Más o menos' },

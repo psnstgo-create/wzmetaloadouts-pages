@@ -11,10 +11,18 @@ let COM_EDITORIALES = [];
 const COM_MAX_ACCESORIOS = 5;
 let COM_CLASE_DESTACADA = null;
 let COM_CLASE_DESTACADA_ENFOCADA = false;
+let COM_ARMA_DESDE_URL = null;
+let COM_ENTRADA_CONTEXTUAL = false;
 
 try {
-  const claseDesdeUrl = new URLSearchParams(window.location.search).get('clase');
+  const parametrosUrl = new URLSearchParams(window.location.search);
+  const claseDesdeUrl = parametrosUrl.get('clase');
   if (claseDesdeUrl && /^[A-Za-z0-9-]{1,120}$/.test(claseDesdeUrl)) COM_CLASE_DESTACADA = claseDesdeUrl;
+  const armaDesdeUrl = parametrosUrl.get('arma');
+  if (armaDesdeUrl && /^[a-z0-9-]{1,80}$/.test(armaDesdeUrl)) {
+    COM_ARMA_DESDE_URL = armaDesdeUrl;
+    COM_ENTRADA_CONTEXTUAL = true;
+  }
 } catch (e) { /* URL sin parámetros compatibles */ }
 
 // El SDK de Supabase puede limpiar el "#type=recovery" de la URL (via
@@ -56,6 +64,9 @@ async function comCargarArmas() {
     COM_SLOTS = data._slot_translations || {};
     comPoblarArmaGrid();
     comPoblarFiltro();
+    if (COM_ARMA_DESDE_URL && COM_ARMAS[COM_ARMA_DESDE_URL]) {
+      comElegirArma(COM_ARMA_DESDE_URL);
+    }
   } catch (e) {
     console.error('No se pudo cargar armas-data.json', e);
   }
@@ -234,15 +245,26 @@ function comExpandirAuth(expandido, enfocar) {
   panel.hidden = !expandido;
   toggle.setAttribute('aria-expanded', String(expandido));
   if (expandido && enfocar) {
-    requestAnimationFrame(() => document.getElementById('comLoginEmail').focus());
+    requestAnimationFrame(() => {
+      const campo = document.querySelector('.com-auth-form.active input');
+      if (campo) campo.focus();
+    });
   }
 }
 
 function comInitAuth() {
-  document.getElementById('comAuthToggle').addEventListener('click', () => comExpandirAuth(true, true));
+  document.getElementById('comAuthToggle').addEventListener('click', () => {
+    comCambiarTab('registro');
+    wzTrackCommunity('community_publish_cta_open', { entry_point: 'community' });
+    wzTrackCommunity('community_register_view', { entry_point: 'community' });
+    comExpandirAuth(true, true);
+  });
   document.getElementById('comAuthMinimize').addEventListener('click', () => comExpandirAuth(false, false));
   document.getElementById('comTabLogin').addEventListener('click', () => comCambiarTab('login'));
-  document.getElementById('comTabRegistro').addEventListener('click', () => comCambiarTab('registro'));
+  document.getElementById('comTabRegistro').addEventListener('click', () => {
+    comCambiarTab('registro');
+    wzTrackCommunity('community_register_view', { entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
+  });
 
   document.querySelectorAll('.com-pass-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -302,6 +324,7 @@ function comInitAuth() {
     const email = document.getElementById('comRegEmail').value.trim();
     const password = document.getElementById('comRegPass').value;
     if (username.length < 3) { comMostrarMsg('comRegMsg', 'El nombre de usuario debe tener al menos 3 caracteres.', false); return; }
+    wzTrackCommunity('community_register_submit', { entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
     const { error } = await wzRegistrar(email, password, username);
     if (error) {
       let msg = 'No se pudo crear la cuenta. Probá de nuevo.';
@@ -312,6 +335,8 @@ function comInitAuth() {
       comMostrarMsg('comRegMsg', msg, false);
       return;
     }
+    try { localStorage.setItem('wz_community_pending_registration', '1'); } catch (e) { /* métrica opcional */ }
+    wzTrackCommunity('community_register_created', { entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
     comMostrarMsg('comRegMsg', '¡Cuenta creada! Revisá tu email para confirmar antes de publicar.', true);
     await comActualizarEstadoSesion();
   });
@@ -361,6 +386,16 @@ async function comActualizarEstadoSesion() {
     const username = perfil ? perfil.username : COM_SESION.user.email;
     document.getElementById('comUsername').textContent = username;
     comPintarAvatar(username, perfil && perfil.avatar_url);
+    try {
+      if (localStorage.getItem('wz_community_pending_registration') === '1') {
+        wzTrackCommunity('community_account_confirmed', { entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
+        localStorage.removeItem('wz_community_pending_registration');
+      }
+      if (sessionStorage.getItem('wz_community_loadout_form_seen') !== '1') {
+        wzTrackCommunity('community_loadout_form_view', { entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
+        sessionStorage.setItem('wz_community_loadout_form_seen', '1');
+      }
+    } catch (e) { /* medición opcional, nunca bloquea publicar */ }
   }
 }
 
@@ -400,13 +435,18 @@ function comInitForm() {
     const honeypot = document.getElementById('comWeb').value;
 
     if (honeypot) return; // bot: silencio total, no delatamos el honeypot
-    if (!COM_ARMA_ELEGIDA || !codigo_clase) { comMostrarMsg('comMsg', 'Elegí un arma y completá el código de clase.', false); return; }
+    if (!COM_ARMA_ELEGIDA || !codigo_clase) {
+      wzTrackCommunity('community_loadout_validation_error', { reason: 'weapon_or_code' });
+      comMostrarMsg('comMsg', 'Elegí un arma y completá el código de clase.', false); return;
+    }
     // Regla: una clase válida lleva SIEMPRE los 5 accesorios + el código.
     if (!COM_ACCESORIOS_ELEGIDOS || Object.keys(COM_ACCESORIOS_ELEGIDOS).length !== COM_MAX_ACCESORIOS) {
+      wzTrackCommunity('community_loadout_validation_error', { reason: 'attachments' });
       comMostrarMsg('comMsg', 'La clase debe tener los 5 accesorios completos.', false); return;
     }
 
     btn.disabled = true;
+    wzTrackCommunity('community_loadout_submit', { arma_slug: COM_ARMA_ELEGIDA, entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
     const { error } = await wzEnviarLoadout({
       arma_slug: COM_ARMA_ELEGIDA, comentario, codigo_clase,
       accesorios: COM_ACCESORIOS_ELEGIDOS
@@ -418,6 +458,7 @@ function comInitForm() {
       console.error(error);
       return;
     }
+    wzTrackCommunity('community_loadout_submitted', { arma_slug: COM_ARMA_ELEGIDA, entry_point: COM_ENTRADA_CONTEXTUAL ? 'weapon_page' : 'community' });
     comMostrarMsg('comMsg', '¡Gracias! Tu clase quedó pendiente de revisión.', true);
     document.getElementById('comForm').reset();
     document.getElementById('comAccesoriosWrap').style.display = 'none';
@@ -598,6 +639,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   comInitAuth();
   comInitForm();
   comInitAvatarUpload();
+  if (COM_ENTRADA_CONTEXTUAL) {
+    comCambiarTab('registro');
+    wzTrackCommunity('community_contextual_cta_open', { arma_slug: COM_ARMA_DESDE_URL });
+    wzTrackCommunity('community_register_view', { entry_point: 'weapon_page' });
+    comExpandirAuth(true, true);
+  }
   comActualizarEstadoSesion();
   document.getElementById('comFiltroArma').addEventListener('change', () => { COM_FILTRO_USUARIO = null; comCargarFeed(); });
   document.getElementById('comOrden').addEventListener('change', comOrdenarYRenderizar);
