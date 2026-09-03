@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-03T15:42:16Z",
+  "creators": [
+    {
+      "id": "soki",
+      "name": "Soki",
+      "region": "España",
+      "youtubeUrl": "https://www.youtube.com/@Soki",
+      "tone": "gold",
+      "latest": {
+        "id": "dYW1Q86sfbg",
+        "title": "ESTO ESTA FUERA DE CONTROL",
+        "publishedAt": "2026-08-30T19:00:24Z",
+        "url": "https://www.youtube.com/watch?v=dYW1Q86sfbg",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "deusamir",
+      "name": "DeusAmir",
+      "region": "México",
+      "youtubeUrl": "https://www.youtube.com/@DeusAmir",
+      "tone": "cyan",
+      "latest": {
+        "id": "VxMOOFmnRAY",
+        "title": "ACTIVISION se DISCULPA y cambia WARZONE 4…",
+        "publishedAt": "2026-08-31T22:01:49Z",
+        "url": "https://www.youtube.com/watch?v=VxMOOFmnRAY",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "kesto",
+      "name": "Kesto",
+      "region": "España",
+      "youtubeUrl": "https://www.youtube.com/@Kesto",
+      "tone": "violet",
+      "latest": null
+    },
+    {
+      "id": "mirreytv",
+      "name": "MirreyTv",
+      "region": "México",
+      "youtubeUrl": "https://www.youtube.com/@MirreyTv",
+      "tone": "lime",
+      "latest": {
+        "id": "iZbx2FQkc74",
+        "title": "¡$1.2 MILLONES EN JUEGO! 🔥 Mundial de Battle Royale | Pullze Check",
+        "publishedAt": "2026-09-03T00:58:09Z",
+        "url": "https://www.youtube.com/watch?v=iZbx2FQkc74",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "jgod",
+      "name": "JGOD",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/@JGOD",
+      "tone": "amber",
+      "latest": {
+        "id": "qsAf99f988Y",
+        "title": "Why Did MW4 Change Scorestreaks Like This?",
+        "publishedAt": "2026-09-02T19:51:31Z",
+        "url": "https://www.youtube.com/watch?v=qsAf99f988Y",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "whosimmortal",
+      "name": "WhosImmortal",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/@WhosImmortal",
+      "tone": "rose",
+      "latest": {
+        "id": "0clLBRh_ZBc",
+        "title": "WARZONE... We Need To Talk.",
+        "publishedAt": "2026-09-02T21:35:39Z",
+        "url": "https://www.youtube.com/watch?v=0clLBRh_ZBc",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "icemanisaac",
+      "name": "IceManIsaac",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/@IceManIsaac",
+      "tone": "cyan",
+      "latest": {
+        "id": "2POg050CTCQ",
+        "title": "[4k60] New DMZ Big Map First Look!!! Max Graphics + Last Day of MW4 Beta",
+        "publishedAt": "2026-09-01T19:19:18Z",
+        "url": "https://www.youtube.com/watch?v=2POg050CTCQ",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "joewo",
+      "name": "JoeWo",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/@JoeWo",
+      "tone": "violet",
+      "latest": {
+        "id": "-uJffJ5rDBo",
+        "title": "My HONEST Review of Warzone in MW4…",
+        "publishedAt": "2026-09-02T18:30:35Z",
+        "url": "https://www.youtube.com/watch?v=-uJffJ5rDBo",
+        "buildSignal": false
+      }
+    }
+  ]
+}

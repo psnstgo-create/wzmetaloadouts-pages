@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "creators": [
+    {
+      "id": "soki",
+      "name": "Soki",
+      "region": "España",
+      "youtubeChannelId": "UCDQUs3zf-cP79rKWp6Pfx3A",
+      "youtubeUrl": "https://www.youtube.com/@Soki",
+      "tone": "gold"
+    },
+    {
+      "id": "deusamir",
+      "name": "DeusAmir",
+      "region": "México",
+      "youtubeChannelId": "UCKfbT_yLZKTKX7dyfx8SAuA",
+      "youtubeUrl": "https://www.youtube.com/@DeusAmir",
+      "tone": "cyan"
+    },
+    {
+      "id": "kesto",
+      "name": "Kesto",
+      "region": "España",
+      "youtubeHandle": "@Kesto",
+      "youtubeUrl": "https://www.youtube.com/@Kesto",
+      "tone": "violet"
+    },
+    {
+      "id": "mirreytv",
+      "name": "MirreyTv",
+      "region": "México",
+      "youtubeHandle": "@MirreyTv",
+      "youtubeUrl": "https://www.youtube.com/@MirreyTv",
+      "tone": "lime"
+    },
+    {
+      "id": "jgod",
+      "name": "JGOD",
+      "region": "Estados Unidos",
+      "youtubeHandle": "@JGOD",
+      "youtubeUrl": "https://www.youtube.com/@JGOD",
+      "tone": "amber"
+    },
+    {
+      "id": "whosimmortal",
+      "name": "WhosImmortal",
+      "region": "Estados Unidos",
+      "youtubeHandle": "@WhosImmortal",
+      "youtubeUrl": "https://www.youtube.com/@WhosImmortal",
+      "tone": "rose"
+    },
+    {
+      "id": "icemanisaac",
+      "name": "IceManIsaac",
+      "region": "Estados Unidos",
+      "youtubeHandle": "@IceManIsaac",
+      "youtubeUrl": "https://www.youtube.com/@IceManIsaac",
+      "tone": "cyan"
+    },
+    {
+      "id": "joewo",
+      "name": "JoeWo",
+      "region": "Estados Unidos",
+      "youtubeHandle": "@JoeWo",
+      "youtubeUrl": "https://www.youtube.com/@JoeWo",
+      "tone": "violet"
+    }
+  ]
+}
