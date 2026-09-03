@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-09-03T14:34:57.644579
-  Total URLs: 192
+  Fecha: 2026-09-03T14:51:15.999284
+  Total URLs: 193
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -833,6 +833,12 @@
         <lastmod>2026-09-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/freerun-descent-challenge-bo7-recompensas</loc>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/modern-warfare-4-beta-abierta-gratis</loc>
