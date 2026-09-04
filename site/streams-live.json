@@ -1,11 +1,11 @@
 {
-  "generado": "2026-09-04T21:27:02Z",
+  "generado": "2026-09-04T23:07:33Z",
   "streams": [
     {
       "login": "deusamir",
       "name": "deusamir",
       "title": "NUEVA META ABSOLUTA - RETO TOP 250 IMPOSIBLE",
-      "viewers": 2093,
+      "viewers": 1944,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deusamir-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6db1417f-99a5-4fc3-9ead-55f3a0152e63-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -14,52 +14,70 @@
       "login": "winghaven",
       "name": "Winghaven",
       "title": "🔴 LIGA DE WARZONE PCL $60K - GRUPO B VS GRUPO C",
-      "viewers": 365,
+      "viewers": 530,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_winghaven-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/winghaven-profile_image-e460c2f839357ebb-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "rickystrikisoficial",
-      "name": "RickystrikisOficial",
-      "title": "🔥🐦‍🔥 $60,000 PULLZECHECK LADDER GROUP STAGE DAY 3 B VS C🔥🐦‍🔥  @phoenixarenagaming",
-      "viewers": 67,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rickystrikisoficial-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e2860d10-17a9-4496-b780-4b308a4b4d84-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "xtraj",
       "name": "xtraj",
       "title": "PCL FINALES FASE DE GRUPOS | Player for @onfamily_pr | !redes !raid !prime",
-      "viewers": 58,
+      "viewers": 68,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xtraj-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d783b94c-d0b4-4240-a23a-75c17650637d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "javiix__",
-      "name": "Javiix__",
-      "title": "$60,000 PCL GROUPS DAY 2 !boost !scuf !sens",
-      "viewers": 53,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_javiix__-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/93cd243f-0eba-4e63-9c8a-f6fc9cef074a-profile_image-300x300.png",
+      "login": "tenux_official_",
+      "name": "tenux_official_",
+      "title": "Solo vs tryhards",
+      "viewers": 61,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tenux_official_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b2d34b9b-c889-42b7-a600-1eed430c0f8d-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "zcastillo",
-      "name": "zCastillo",
-      "title": "🚨Rankeds🚨 | #WeAreBack | #WAB | @zcastillo |",
-      "viewers": 46,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zcastillo-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/02e7f767-6ff4-4b04-a814-1eee1dd02ee5-profile_image-300x300.png",
+      "login": "rickystrikisoficial",
+      "name": "RickystrikisOficial",
+      "title": "🔥🐦‍🔥 $60,000 PULLZECHECK LADDER GROUP STAGE DAY 3 B VS C🔥🐦‍🔥  @phoenixarenagaming",
+      "viewers": 60,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rickystrikisoficial-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e2860d10-17a9-4496-b780-4b308a4b4d84-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "kiir745",
+      "name": "KiiR745",
+      "title": "👾 SUBTEMBER 👾 RATÓN Y TECLADO 👾",
+      "viewers": 44,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kiir745-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/58091265-4a1b-401f-a71d-1939368afc2e-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "camzzz17",
+      "name": "CamZzz17",
+      "title": "PCL Quals w/ Javiix y Chicho",
+      "viewers": 32,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_camzzz17-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a61afe60-4c53-45a9-ae0d-669a7d77bf3d-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "vsuareez",
+      "name": "vSuareez",
+      "title": "SIGO EN PS5... #FREEPATRIARCA",
+      "viewers": 31,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vsuareez-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a188191f-d5df-49cd-a7b2-5a3db39d91f6-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "goodbye60hz",
       "name": "GooDBye60hz",
       "title": "PCL Group stage dia 2 w/ 9z team || TOP 1 Argentina || !redes 9z Globant",
-      "viewers": 27,
+      "viewers": 28,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goodbye60hz-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f088bba9-e4b4-4215-a4a9-10ed5356e606-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -68,45 +86,27 @@
       "login": "vnetodz",
       "name": "vNetodz",
       "title": "PCL Group Stage 🦇 | EWC 2026 Finalist | !Redes !Playlist",
-      "viewers": 24,
+      "viewers": 21,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vnetodz-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bbcdfdb1-51ce-41d4-92d2-9243059d3ba1-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "marycarmenrr",
-      "name": "marycarmenrr",
-      "title": "🚨 VOLVEMOS A LAS RANKS - TORNEO PCL 🚨   || @empire_esportsx PLAYER & CC || !discord",
-      "viewers": 18,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marycarmenrr-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/68b1febf-78c3-46ec-bda2-068e1911d9ad-profile_image-300x300.png",
+      "login": "thegoodplayer08",
+      "name": "thegoodplayer08",
+      "title": "EL MAN QUE JUEGA PURAS INDIVIDUALES | !PC !SENS",
+      "viewers": 20,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thegoodplayer08-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3e8bb65-5154-4c82-bea5-aba5dcbf2809-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "alvaritoisgod_",
-      "name": "alvaritoisgod_",
-      "title": "Challs and Customs",
-      "viewers": 17,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alvaritoisgod_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/be6baf5d-7ec0-4540-b6db-cbc2df975606-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "michelmagana",
-      "name": "michelmagana",
-      "title": "BR Y BOOMBANANA✨| Próximo extensible sin límite? | !paypal !redes",
-      "viewers": 17,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_michelmagana-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/31db6d82-d0eb-47a9-85b6-2409e12d7192-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "marialepiperno",
-      "name": "marialepiperno",
-      "title": "stream express ♡ || !clases !pc",
-      "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_marialepiperno-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/21541f1f-e307-4e2e-9e4f-87758942bfce-profile_image-300x300.png",
+      "login": "keeoss_",
+      "name": "keeoss_",
+      "title": "🎮 #SUPTEMBER | BOOSTEANDO CUENTA A IRI 🔥 I !pc !yt !sens",
+      "viewers": 19,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     }
   ]
