@@ -1,11 +1,17 @@
-/* Carrusel de la comunidad en la home. Lee solo el catálogo editorial público:
-   no depende de sesión, Supabase ni datos privados. */
+/* Clases destacadas en la home. Separa aportes de la comunidad de las
+   clases verificadas de creadores y mantiene ambos feeds dentro del sitio. */
 (function () {
   'use strict';
 
   var section = document.getElementById('homeCommunityStrip');
-  var rail = document.getElementById('homeCommunityRail');
-  if (!section || !rail) return;
+  var communityRail = document.getElementById('homeCommunityRail');
+  var creatorRail = document.getElementById('homeCreatorRail');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-hc-feed]'));
+  var communityPanel = document.getElementById('hcPanelCommunity');
+  var creatorPanel = document.getElementById('hcPanelCreators');
+  var creatorCount = document.getElementById('hcCreatorCount');
+  var scrollingRails = [];
+  if (!section || !communityRail || !creatorRail || !communityPanel || !creatorPanel) return;
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -21,6 +27,10 @@
     return typeof value === 'string' &&
       /^\/weapons\/(?:[A-Za-z0-9_ .%()-]+\/)*[A-Za-z0-9_ .%()-]+$/.test(value) &&
       !/(?:^|\/)\.\.(?:\/|$)/.test(value);
+  }
+
+  function safeAvatar(value) {
+    return typeof value === 'string' && /^https:\/\/[A-Za-z0-9.-]+\//.test(value);
   }
 
   function contextFor(loadout, weapon) {
@@ -52,15 +62,12 @@
   function shortAccessory(name) {
     var value = String(name || '').trim();
     if (/\bELO\b/i.test(value)) return 'ELO';
-    if (/suppressor/i.test(value)) return 'SUP';
-    if (/brake/i.test(value)) return 'BRK';
-    if (/barrel/i.test(value)) {
-      var size = value.match(/\d+(?:\.\d+)?\s*\"/);
-      return size ? size[0].replace(/\s/g, '') : 'BAR';
-    }
-    if (/mag|drum/i.test(value)) return 'MAG';
-    if (/stock|pad/i.test(value)) return 'STK';
-    if (/grip|handstop|handguard|foregrip/i.test(value)) return 'GRP';
+    if (/suppressor|silenciador/i.test(value)) return 'SUP';
+    if (/brake|freno/i.test(value)) return 'BRK';
+    if (/barrel|cañón/i.test(value)) return 'BAR';
+    if (/mag|drum|cargador|tambor/i.test(value)) return 'MAG';
+    if (/stock|pad|culata|almohadilla/i.test(value)) return 'STK';
+    if (/grip|handstop|handguard|foregrip|empuñadura|acople/i.test(value)) return 'GRP';
     if (/laser/i.test(value)) return 'LSR';
     return value.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase() || 'MOD';
   }
@@ -70,9 +77,7 @@
   }
 
   function attachmentFilename(name) {
-    return String(name || '')
-      .replace(/[<>:"/\\|?*]+/g, '')
-      .replace(/\s+/g, '_');
+    return String(name || '').replace(/[<>:"/\\|?*]+/g, '').replace(/\s+/g, '_');
   }
 
   function attachmentsMarkup(item, weapon) {
@@ -90,30 +95,49 @@
     return attachments ? '<div class="hc-attachments" aria-label="Cinco accesorios de la clase">' + attachments + '</div>' : '';
   }
 
-  function render(loadouts, weapons) {
-    var cards = loadouts.filter(function (item) {
-      return item && safeSlug(item.arma_slug) && weapons[item.arma_slug] &&
-        typeof item.alias === 'string' && typeof item.codigo_clase === 'string' && item.codigo_clase;
-    }).slice(0, 9);
-    if (!cards.length) return;
-
-    function cardMarkup(item, duplicate) {
-      var weapon = weapons[item.arma_slug];
-      var image = safeImage(weapon.imagen) ? weapon.imagen : '';
-      var hidden = duplicate ? ' aria-hidden="true"' : '';
-      var tabIndex = duplicate ? ' tabindex="-1"' : '';
-      return '<article class="hc-card' + (duplicate ? ' hc-card--copy' : '') + '"' + hidden + '>' +
-        '<a class="hc-card-link" href="' + communityHref(item) + '" aria-label="Ver clase compartida de ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
-        (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
-        '<div class="hc-body"><div class="hc-top"><span class="hc-author"><i class="hc-avatar hc-tone-' + avatarTone(item.alias) + '">' + esc(initials(item.alias)) + '</i>' + esc(item.alias) + '</span>' +
-        '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span></div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item, weapon) + '</div>' +
-        '<div class="hc-bottom"><span class="hc-code">' + esc(item.codigo_clase) + '</span>' +
-        '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '"' + tabIndex + '>Copiar</button></div></article>';
+  function avatarMarkup(item, creator) {
+    var alias = creator ? creator.name : item.alias;
+    var avatar = creator && safeAvatar(creator.avatar) ? creator.avatar : '';
+    if (avatar) {
+      return '<img class="hc-avatar hc-avatar--image" src="' + esc(avatar) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">';
     }
+    return '<i class="hc-avatar hc-tone-' + avatarTone(alias) + '">' + esc(initials(alias)) + '</i>';
+  }
 
-    rail.innerHTML = cards.map(function (item) { return cardMarkup(item, false); }).join('') +
-      cards.map(function (item) { return cardMarkup(item, true); }).join('');
+  function cardMarkup(item, weapon, creator, duplicate) {
+    var isCreator = Boolean(creator);
+    var alias = isCreator ? creator.name : item.alias;
+    var image = safeImage(weapon.imagen) ? weapon.imagen : '';
+    var hidden = duplicate ? ' aria-hidden="true"' : '';
+    var tabIndex = duplicate ? ' tabindex="-1"' : '';
+    var region = isCreator && creator.region ? '<span class="hc-region">' + esc(creator.region) + '</span>' : '';
+    return '<article class="hc-card' + (isCreator ? ' hc-card--creator' : '') + (duplicate ? ' hc-card--copy' : '') + '"' + hidden + '>' +
+      '<a class="hc-card-link" href="' + communityHref(item) + '" aria-label="Ver clase de ' + esc(alias) + ' para ' + esc(weapon.nombre) + '"' + tabIndex + '></a>' +
+      '<div class="hc-card-accent" aria-hidden="true"></div>' +
+      (image ? '<img class="hc-weapon" src="' + esc(image) + '" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' : '<span></span>') +
+      '<div class="hc-body"><div class="hc-top"><span class="hc-author">' + avatarMarkup(item, creator) + '<span>' + esc(alias) + region + '</span></span>' +
+      (isCreator ? '<span class="hc-verified" title="Clase verificada">✓ CREADOR</span>' : '<span class="hc-kind">' + esc(contextFor(item, weapon)) + '</span>') +
+      '</div><strong class="hc-weapon-name">' + esc(weapon.nombre) + '</strong>' + attachmentsMarkup(item, weapon) + '</div>' +
+      '<div class="hc-bottom"><span class="hc-code"><small>CÓDIGO</small>' + esc(item.codigo_clase) + '</span>' +
+      '<button class="hc-copy" type="button" data-code="' + esc(item.codigo_clase) + '"' + tabIndex + '>Copiar</button></div></article>';
+  }
 
+  function isComplete(item, weapons) {
+    return item && safeSlug(item.arma_slug) && weapons[item.arma_slug] &&
+      typeof item.alias === 'string' && typeof item.codigo_clase === 'string' && item.codigo_clase.trim() &&
+      item.accesorios && Object.keys(item.accesorios).length === 5;
+  }
+
+  function renderRail(rail, cards, weapons, creatorsById) {
+    if (!cards.length) return false;
+    var originals = cards.map(function (item) {
+      return cardMarkup(item, weapons[item.arma_slug], creatorsById[item.creator_id] || null, false);
+    }).join('');
+    var copies = cards.map(function (item) {
+      return cardMarkup(item, weapons[item.arma_slug], creatorsById[item.creator_id] || null, true);
+    }).join('');
+    // Tres vueltas garantizan movimiento continuo incluso si solo hay dos creadores.
+    rail.innerHTML = originals + copies + copies;
     rail.querySelectorAll('.hc-copy').forEach(function (button) {
       button.addEventListener('click', function () {
         var code = button.getAttribute('data-code') || '';
@@ -124,18 +148,13 @@
         }).catch(function () {});
       });
     });
-    section.hidden = false;
-    startAutoScroll();
+    return true;
   }
 
-  function startAutoScroll() {
+  function startAutoScroll(rail) {
+    if (!rail || scrollingRails.indexOf(rail) !== -1) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var firstCard = rail.querySelector('.hc-card:not(.hc-card--copy)');
-    var firstCopy = rail.querySelector('.hc-card--copy');
-    if (!firstCard || !firstCopy) return;
-    var cycleWidth = firstCopy.offsetLeft - firstCard.offsetLeft;
-    if (!cycleWidth) return;
-
+    scrollingRails.push(rail);
     var paused = false;
     var lastFrame = 0;
     var resumeTimer = 0;
@@ -152,7 +171,10 @@
       if (!lastFrame) lastFrame = now;
       var elapsed = Math.min(now - lastFrame, 60);
       lastFrame = now;
-      if (!paused && !document.hidden) {
+      var firstCard = rail.querySelector('.hc-card:not(.hc-card--copy)');
+      var firstCopy = rail.querySelector('.hc-card--copy');
+      var cycleWidth = firstCard && firstCopy ? firstCopy.offsetLeft - firstCard.offsetLeft : 0;
+      if (!paused && !document.hidden && cycleWidth > 0 && rail.offsetParent !== null) {
         position += elapsed * 0.014;
         if (position >= cycleWidth) position -= cycleWidth;
         rail.scrollLeft = position;
@@ -161,6 +183,8 @@
     }
     rail.addEventListener('focusin', pause);
     rail.addEventListener('focusout', resumeSoon);
+    rail.addEventListener('mouseenter', pause);
+    rail.addEventListener('mouseleave', resumeSoon);
     rail.addEventListener('touchstart', pause, { passive: true });
     rail.addEventListener('touchend', resumeSoon, { passive: true });
     rail.addEventListener('scroll', function () {
@@ -169,13 +193,52 @@
     window.requestAnimationFrame(frame);
   }
 
+  function selectFeed(feed) {
+    var creators = feed === 'creators';
+    communityPanel.hidden = creators;
+    creatorPanel.hidden = !creators;
+    tabs.forEach(function (tab) {
+      var active = tab.getAttribute('data-hc-feed') === feed;
+      tab.classList.toggle('is-active', active);
+      tab.setAttribute('aria-selected', String(active));
+      tab.setAttribute('tabindex', active ? '0' : '-1');
+    });
+    window.requestAnimationFrame(function () { startAutoScroll(creators ? creatorRail : communityRail); });
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () { selectFeed(tab.getAttribute('data-hc-feed')); });
+    tab.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault();
+      var next = tab === tabs[0] ? tabs[1] : tabs[0];
+      next.focus();
+      next.click();
+    });
+  });
+
   Promise.all([
     fetch('/community-editorial.json', { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }),
-    fetch('/armas-data.json', { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; })
+    fetch('/armas-data.json', { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }),
+    fetch('/creator-radar.json', { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; })
   ]).then(function (result) {
     var editorial = result[0];
     var catalog = result[1];
+    var radar = result[2];
     if (!editorial || !catalog || !Array.isArray(editorial.loadouts) || !catalog.armas) return;
-    render(editorial.loadouts, catalog.armas);
+    var creatorsById = {};
+    var creators = radar && Array.isArray(radar.creators) ? radar.creators : [];
+    creators.forEach(function (creator) { creatorsById[String(creator.id || '')] = creator; });
+    var complete = editorial.loadouts.filter(function (item) { return isComplete(item, catalog.armas); });
+    var creatorCards = complete.filter(function (item) { return item.creator_id && creatorsById[item.creator_id]; }).slice(0, 9);
+    var communityCards = complete.filter(function (item) { return !item.creator_id; }).slice(0, 9);
+    var hasCommunity = renderRail(communityRail, communityCards, catalog.armas, creatorsById);
+    var hasCreators = renderRail(creatorRail, creatorCards, catalog.armas, creatorsById);
+    if (!hasCommunity && !hasCreators) return;
+    if (creatorCount && hasCreators) creatorCount.textContent = creatorCards.length;
+    var creatorTab = document.getElementById('hcTabCreators');
+    if (creatorTab) creatorTab.hidden = !hasCreators;
+    section.hidden = false;
+    selectFeed(hasCommunity ? 'community' : 'creators');
   }).catch(function () {});
 })();

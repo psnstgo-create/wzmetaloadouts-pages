@@ -279,11 +279,26 @@ function comRenderRadarCreadores(data) {
     const avatarUrl = /^https:\/\//.test(String(creator.avatar || '')) ? String(creator.avatar) : '';
     const arma = COM_ARMAS[loadout.arma_slug] || {};
     const nombreArma = escapeHtml(String(arma.nombre || loadout.arma_slug || 'Clase Warzone'));
+    const tipoArma = escapeHtml(String(arma.tipo || 'Warzone'));
     const codigo = escapeHtml(String(loadout.codigo_clase));
     const claseUrl = `/comunidad?clase=${encodeURIComponent(String(loadout.id))}`;
+    const accesorios = Object.entries(loadout.accesorios || {}).slice(0, COM_MAX_ACCESORIOS).map(([slot, valor]) => {
+      const iconSrc = arma.icon_path ? `${arma.icon_path}/${comSlugSafe(valor)}.png` : '';
+      const etiqueta = `${comNombreES(COM_SLOTS[slot] || slot)}: ${comNombreES(valor)}`;
+      return `<span class="creator-mini-acc" title="${escapeHtml(etiqueta)}" aria-label="${escapeHtml(etiqueta)}">${iconSrc ? `<img src="${escapeHtml(iconSrc)}" alt="" loading="lazy" onerror="this.remove();this.parentElement.classList.add('is-text')">` : ''}<b>${escapeHtml(comNombreES(slot).slice(0, 3).toUpperCase())}</b></span>`;
+    }).join('');
     return `<article class="creator-card">
-      <div class="creator-top">${avatarUrl ? `<img class="creator-avatar-img" src="${escapeHtml(avatarUrl)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer">` : `<span class="creator-avatar tone-${escapeHtml(String(creator.tone || 'gold'))}">${escapeHtml(String(creator.name || '?').slice(0, 1).toUpperCase())}</span>`}<div><div class="creator-name">${name}</div><div class="creator-region">${escapeHtml(String(creator.region || 'Warzone'))}</div></div></div>
-      <a class="creator-class" href="${claseUrl}"><strong>${nombreArma}</strong><span>${codigo}</span><b>Ver clase en Comunidad →</b></a>
+      <a class="creator-card-link" href="${claseUrl}" aria-label="Ver clase verificada de ${name} para ${nombreArma}">
+        <div class="creator-top">
+          <div class="creator-identity">${avatarUrl ? `<img class="creator-avatar-img" src="${escapeHtml(avatarUrl)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer">` : `<span class="creator-avatar tone-${escapeHtml(String(creator.tone || 'gold'))}">${escapeHtml(String(creator.name || '?').slice(0, 1).toUpperCase())}</span>`}<div><div class="creator-name">${name}</div><div class="creator-region">${escapeHtml(String(creator.region || 'Warzone'))}</div></div></div>
+          <span class="creator-verified">✓ Creador</span>
+        </div>
+        <div class="creator-build">
+          ${arma.imagen ? `<img class="creator-weapon-img" src="${escapeHtml(arma.imagen)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ''}
+          <div class="creator-weapon-data"><span>${tipoArma}</span><strong>${nombreArma}</strong><div class="creator-mini-accs">${accesorios}</div></div>
+        </div>
+        <div class="creator-code-row"><span><small>Código para importar</small>${codigo}</span><b>Ver clase <i>→</i></b></div>
+      </a>
     </article>`;
   }).join('');
   state.textContent = `${clases.length} clase${clases.length === 1 ? '' : 's'} verificadas`;
