@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T14:01:43Z",
+  "generatedAt": "2026-09-04T14:15:47Z",
   "creators": [
     {
       "id": "soki",
@@ -149,6 +149,51 @@
         "title": "the NEW *BROKEN* BEST META LOADOUT in Warzone after the NEW UPDATE! (Best AN94 Class)",
         "publishedAt": "2026-09-03T21:00:16Z",
         "url": "https://www.youtube.com/watch?v=7FIEDEUOJZU",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "booya",
+      "name": "Booya",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/channel/UCDSjAODXTpAHF9K4HqI6SNA",
+      "tone": "rose",
+      "avatar": "https://yt3.ggpht.com/XsqGkqvtK-x9YhZVtm5B3DmWxHWaDEWtH25biwP4X2TtB1HG-JbVflFccFeas-Vw7NP7vFVsqw=s800-c-k-c0x00ffffff-no-rj",
+      "latest": {
+        "id": "-mRamAq4P7s",
+        "title": "the #1 RANKED META LOADOUT to USE in WARZONE SEASON 5! (Rebirth Island)",
+        "publishedAt": "2026-09-04T12:51:26Z",
+        "url": "https://www.youtube.com/watch?v=-mRamAq4P7s",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "eyeqew",
+      "name": "EyeQew",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/channel/UCSF0PqIaps7jindnj6ICTfQ",
+      "tone": "cyan",
+      "avatar": "https://yt3.ggpht.com/ytc/AIdro_kdFNsxjsPiBzja1QRguQnghWjt5Wb0hcCxp-3D2Rk5SDk=s800-c-k-c0x00ffffff-no-rj",
+      "latest": {
+        "id": "i3fVs1C6AqM",
+        "title": "new *BROKEN* AN-94 LOADOUT in Warzone! 😳 (BUFFED)",
+        "publishedAt": "2026-09-03T21:25:02Z",
+        "url": "https://www.youtube.com/watch?v=i3fVs1C6AqM",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "ryda",
+      "name": "Ryda",
+      "region": "Estados Unidos",
+      "youtubeUrl": "https://www.youtube.com/channel/UCUXRJYe_KiVX155KkwaKwSA",
+      "tone": "violet",
+      "avatar": "https://yt3.ggpht.com/Tp5VaT_4KSncb0SZ9koW-5pVIt0rOvkQzz-iGE6rqhLaAdGE4H1eOuhT3xzw_1TW2SApZTK4TA=s800-c-k-c0x00ffffff-no-rj",
+      "latest": {
+        "id": "Il0sXDQw5zk",
+        "title": "*NEW* META MOVEMENT SMG LOADOUT in WARZONE! 👑 (Best VST Class Setup)",
+        "publishedAt": "2026-09-03T22:27:26Z",
+        "url": "https://www.youtube.com/watch?v=Il0sXDQw5zk",
         "buildSignal": false
       }
     }

@@ -229,6 +229,70 @@
       }
     },
     {
+      "id": "editorial-booya-an94-control",
+      "creator_id": "booya",
+      "alias": "Booya",
+      "arma_slug": "an-94",
+      "codigo_clase": "A13-21XVE-68E3R-Q511",
+      "comentario": "AN-94 de Booya orientada al control a distancia, con mira 2x, silenciador y munición FMJ.",
+      "created_at": "2026-09-04T18:20:00Z",
+      "accesorios": {
+        "Mira": "Redwell 30-S 2x",
+        "Boca de cañón": "VAS 5.56 Suppressor",
+        "Cañón": "15\" Benthic Barrel",
+        "Cargador": "Vernal Flip Mag",
+        "Mods de disparo": "5.45 FMJ"
+      }
+    },
+    {
+      "id": "editorial-booya-rev46-corto-alcance",
+      "creator_id": "booya",
+      "alias": "Booya",
+      "arma_slug": "rev-46",
+      "codigo_clase": "S09-2W2D6-93ETN-11",
+      "comentario": "REV-46 de Booya para corto alcance, combinando reflejo limpio, control y cargador ampliado.",
+      "created_at": "2026-09-04T18:15:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "14.9\" Caudal Target Barrel",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Cawdor Extended Mag"
+      }
+    },
+    {
+      "id": "editorial-eyeqew-an94-control",
+      "creator_id": "eyeqew",
+      "alias": "EyeQew",
+      "arma_slug": "an-94",
+      "codigo_clase": "A13-21WS6-6QGEL-6711",
+      "comentario": "AN-94 de EyeQew equilibrada para media y larga distancia, con silenciador, control y munición FMJ.",
+      "created_at": "2026-09-04T18:10:00Z",
+      "accesorios": {
+        "Boca de cañón": "Monolithic Suppressor",
+        "Cañón": "15\" Benthic Barrel",
+        "Acople": "VAS Convergence Foregrip",
+        "Cargador": "Vernal Flip Mag",
+        "Mods de disparo": "5.45 FMJ"
+      }
+    },
+    {
+      "id": "editorial-ryda-vst-movimiento",
+      "creator_id": "ryda",
+      "alias": "Ryda",
+      "arma_slug": "vst",
+      "codigo_clase": "S12-2JD6P-B2MIX-5611",
+      "comentario": "VST de Ryda para movimiento y combate cercano, con control al disparar desde la cadera y cargador de 50.",
+      "created_at": "2026-09-04T18:05:00Z",
+      "accesorios": {
+        "Boca de cañón": "Hawker Hybrid .45",
+        "Acople": "EAM Steady-90 Grip",
+        "Cargador": "Avarice Extended Mag II",
+        "Culata": "LTI Stern Aim Pad",
+        "Mods de disparo": "9mm Parabellum Overpressured"
+      }
+    },
+    {
       "id": "editorial-soki-vst-season-5r",
       "creator_id": "soki",
       "alias": "Soki",

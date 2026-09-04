@@ -80,6 +80,30 @@
       "youtubeChannelId": "UCqBaw9Ze5EJ4fJVbaXbhnmw",
       "youtubeUrl": "https://www.youtube.com/@MrMarvelTV",
       "tone": "amber"
+    },
+    {
+      "id": "booya",
+      "name": "Booya",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCDSjAODXTpAHF9K4HqI6SNA",
+      "youtubeUrl": "https://www.youtube.com/channel/UCDSjAODXTpAHF9K4HqI6SNA",
+      "tone": "rose"
+    },
+    {
+      "id": "eyeqew",
+      "name": "EyeQew",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCSF0PqIaps7jindnj6ICTfQ",
+      "youtubeUrl": "https://www.youtube.com/channel/UCSF0PqIaps7jindnj6ICTfQ",
+      "tone": "cyan"
+    },
+    {
+      "id": "ryda",
+      "name": "Ryda",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCUXRJYe_KiVX155KkwaKwSA",
+      "youtubeUrl": "https://www.youtube.com/channel/UCUXRJYe_KiVX155KkwaKwSA",
+      "tone": "violet"
     }
   ]
 }
