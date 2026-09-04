@@ -235,7 +235,7 @@
       "arma_slug": "an-94",
       "codigo_clase": "A13-21XVE-68E3R-Q511",
       "comentario": "AN-94 de Booya orientada al control a distancia, con mira 2x, silenciador y munición FMJ.",
-      "created_at": "2026-09-04T18:20:00Z",
+      "created_at": "2026-09-04T14:20:00Z",
       "accesorios": {
         "Mira": "Redwell 30-S 2x",
         "Boca de cañón": "VAS 5.56 Suppressor",
@@ -251,7 +251,7 @@
       "arma_slug": "rev-46",
       "codigo_clase": "S09-2W2D6-93ETN-11",
       "comentario": "REV-46 de Booya para corto alcance, combinando reflejo limpio, control y cargador ampliado.",
-      "created_at": "2026-09-04T18:15:00Z",
+      "created_at": "2026-09-04T14:15:00Z",
       "accesorios": {
         "Mira": "FANG HoverPoint ELO",
         "Boca de cañón": "LTI Stentorian Brake",
@@ -267,7 +267,7 @@
       "arma_slug": "an-94",
       "codigo_clase": "A13-21WS6-6QGEL-6711",
       "comentario": "AN-94 de EyeQew equilibrada para media y larga distancia, con silenciador, control y munición FMJ.",
-      "created_at": "2026-09-04T18:10:00Z",
+      "created_at": "2026-09-04T14:10:00Z",
       "accesorios": {
         "Boca de cañón": "Monolithic Suppressor",
         "Cañón": "15\" Benthic Barrel",
@@ -283,7 +283,7 @@
       "arma_slug": "vst",
       "codigo_clase": "S12-2JD6P-B2MIX-5611",
       "comentario": "VST de Ryda para movimiento y combate cercano, con control al disparar desde la cadera y cargador de 50.",
-      "created_at": "2026-09-04T18:05:00Z",
+      "created_at": "2026-09-04T14:05:00Z",
       "accesorios": {
         "Boca de cañón": "Hawker Hybrid .45",
         "Acople": "EAM Steady-90 Grip",
