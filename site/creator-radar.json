@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T18:53:38Z",
+  "generatedAt": "2026-09-04T20:12:58Z",
   "creators": [
     {
       "id": "soki",
@@ -55,10 +55,10 @@
       "tone": "lime",
       "avatar": "https://yt3.ggpht.com/RDNF7GZAEZa2EfyDmtpYqgzkZOuN_SLbm5SiGfcelTQDRYhn2H4vKJ6surqmYl02G23rTxcWhA=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "kC6hCad7hAk",
+        "id": "3ahrENt6gXg",
         "title": "🔥 ¡RANKEDS CON RANDOMS! LLEVÁNDOLOS HASTA IRIDESCENTE 😈",
-        "publishedAt": "2026-09-04T17:06:58Z",
-        "url": "https://www.youtube.com/watch?v=kC6hCad7hAk",
+        "publishedAt": "2026-09-04T17:07:03Z",
+        "url": "https://www.youtube.com/watch?v=3ahrENt6gXg",
         "buildSignal": false
       }
     },
@@ -145,10 +145,10 @@
       "tone": "amber",
       "avatar": "https://yt3.ggpht.com/HnlNZJZMmRXA43t6QJOcGOMnPUYszUerTeHNRy6_YV_bED0IpZf8_Q75ee4Ct4yOgaQGFrO8=s800-c-k-c0x00ffffff-no-rj",
       "latest": {
-        "id": "7FIEDEUOJZU",
-        "title": "the NEW *BROKEN* BEST META LOADOUT in Warzone after the NEW UPDATE! (Best AN94 Class)",
-        "publishedAt": "2026-09-03T21:00:16Z",
-        "url": "https://www.youtube.com/watch?v=7FIEDEUOJZU",
+        "id": "dzJd4wsdJTw",
+        "title": "I Just EXPOSED the AN94 SMG in Warzone",
+        "publishedAt": "2026-09-04T20:00:26Z",
+        "url": "https://www.youtube.com/watch?v=dzJd4wsdJTw",
         "buildSignal": false
       }
     },
@@ -194,6 +194,21 @@
         "title": "12 KD Solo vs Quads | Chasing Another 40 Bomb",
         "publishedAt": "2026-09-04T14:46:11Z",
         "url": "https://www.youtube.com/watch?v=C3rt8hOiZ8s",
+        "buildSignal": false
+      }
+    },
+    {
+      "id": "anti4k",
+      "name": "Anti4k",
+      "region": "Internacional",
+      "youtubeUrl": "https://www.youtube.com/@anti4k-wz",
+      "tone": "lime",
+      "avatar": "https://yt3.ggpht.com/95IVFJsBW4QDvRr2LTIbh-QJsd77w6Bfc2L0oPdY-TJyc76EsTpfXPYGO7yjCC5Zz_em0CGSMFM=s800-c-k-c0x00ffffff-no-rj",
+      "latest": {
+        "id": "TuVlrlEV_i8",
+        "title": "The NEW MAX SPEED Welgun META is PERFECT in Warzone 😍👑",
+        "publishedAt": "2026-09-04T13:30:17Z",
+        "url": "https://www.youtube.com/watch?v=TuVlrlEV_i8",
         "buildSignal": false
       }
     }

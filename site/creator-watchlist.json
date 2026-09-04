@@ -104,6 +104,14 @@
       "youtubeChannelId": "UCUXRJYe_KiVX155KkwaKwSA",
       "youtubeUrl": "https://www.youtube.com/channel/UCUXRJYe_KiVX155KkwaKwSA",
       "tone": "violet"
+    },
+    {
+      "id": "anti4k",
+      "name": "Anti4k",
+      "region": "Internacional",
+      "youtubeChannelId": "UC2nP0TEN3DjieKCknudKYRg",
+      "youtubeUrl": "https://www.youtube.com/@anti4k-wz",
+      "tone": "lime"
     }
   ]
 }
