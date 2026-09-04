@@ -246,8 +246,91 @@
     color: #F0C419;
     border-bottom-color: #F0C419;
 }
+.loadout-tab.shared-classes-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.loadout-tab.shared-classes-tab span {
+    display: grid;
+    place-items: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 999px;
+    color: #07131A;
+    background: #62D9FF;
+    font: 900 .7rem 'Share Tech Mono', monospace;
+}
+.loadout-tab.shared-classes-tab.active {
+    color: #7DE5FF;
+    border-bottom-color: #45C9F2;
+}
 .loadout-content { display: none; }
 .loadout-content.active { display: block; }
+
+/* Clases de Comunidad y Creadores dentro de la ficha del arma */
+.shared-classes-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 16px;
+    padding: 15px 18px;
+    border: 1px solid rgba(69,201,242,.2);
+    border-radius: 10px;
+    background: linear-gradient(105deg, rgba(69,201,242,.09), rgba(11,17,23,.85) 55%, rgba(240,196,25,.05));
+}
+.shared-classes-summary > div:first-child { display: grid; gap: 3px; }
+.shared-classes-summary > div:first-child span { color:#62D9FF; font:700 .64rem 'Share Tech Mono',monospace; letter-spacing:.11em; }
+.shared-classes-summary > div:first-child strong { color:#F4F8FB; font:800 1.05rem 'Rajdhani',sans-serif; }
+.shared-summary-counts { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+.shared-summary-counts span { padding:6px 9px; border:1px solid rgba(255,255,255,.09); border-radius:6px; color:#AFC0CC; background:rgba(255,255,255,.025); font:700 .66rem 'Share Tech Mono',monospace; text-transform:uppercase; }
+.shared-loadouts-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.shared-loadout-card { overflow:hidden; border:1px solid rgba(255,255,255,.1); border-radius:12px; background:linear-gradient(180deg,#0D141A,#090E13); box-shadow:0 14px 35px -28px #000; }
+.shared-loadout-card.is-creator { border-color:rgba(69,201,242,.28); }
+.shared-loadout-card.is-community { border-color:rgba(240,196,25,.22); }
+.shared-loadout-head { min-height:66px; padding:12px 14px; display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:1px solid rgba(255,255,255,.07); background:rgba(255,255,255,.018); }
+.shared-author { display:flex; align-items:center; gap:10px; min-width:0; }
+.shared-author > span:last-child { min-width:0; display:grid; gap:2px; }
+.shared-author small { color:#71808C; font:700 .58rem 'Share Tech Mono',monospace; letter-spacing:.08em; }
+.shared-author strong { color:#F4F7FA; font:900 1rem 'Rajdhani',sans-serif; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.shared-avatar,.shared-avatar-img { width:38px; height:38px; border-radius:50%; flex:0 0 auto; }
+.shared-avatar { display:grid; place-items:center; color:#07131A; background:linear-gradient(135deg,#6FE4FF,#268BB5); font:900 .92rem 'Rajdhani',sans-serif; box-shadow:0 0 0 2px rgba(98,217,255,.18); }
+.shared-avatar-img { object-fit:cover; background:#111A21; box-shadow:0 0 0 2px rgba(98,217,255,.2); }
+.shared-avatar.shared-tone-violet { background:linear-gradient(135deg,#C29AFF,#7040D0); }
+.shared-avatar.shared-tone-lime { background:linear-gradient(135deg,#BFF36B,#51A76D); }
+.shared-avatar.shared-tone-rose { background:linear-gradient(135deg,#FFADBF,#CF4D79); }
+.shared-avatar.shared-tone-amber { background:linear-gradient(135deg,#FFBC61,#E66B20); }
+.shared-origin-badge { flex:0 0 auto; padding:5px 8px; border:1px solid rgba(69,201,242,.28); border-radius:5px; color:#62D9FF; background:rgba(69,201,242,.07); font:800 .58rem 'Share Tech Mono',monospace; letter-spacing:.05em; }
+.is-community .shared-origin-badge { border-color:rgba(240,196,25,.28); color:#F0C419; background:rgba(240,196,25,.06); }
+.shared-attachments { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:rgba(255,255,255,.055); }
+.shared-attachment { min-width:0; min-height:58px; padding:8px 10px; display:flex; align-items:center; gap:8px; background:#0B1116; }
+.shared-attachment-icon { width:42px; height:34px; flex:0 0 auto; display:grid; place-items:center; position:relative; border:1px solid rgba(255,255,255,.08); border-radius:5px; background:radial-gradient(circle,rgba(240,196,25,.09),transparent 70%); }
+.shared-attachment-icon img { position:relative; z-index:1; max-width:92%; max-height:88%; object-fit:contain; }
+.shared-attachment-icon i { position:absolute; color:rgba(255,255,255,.18); font-style:normal; }
+.shared-attachment > span:last-child { min-width:0; display:grid; gap:2px; }
+.shared-attachment small { color:#7C8993; font:700 .55rem 'Share Tech Mono',monospace; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.shared-attachment strong { color:#E6EDF2; font:700 .76rem 'Rajdhani',sans-serif; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.shared-comment { min-height:42px; margin:0; padding:10px 14px; color:#8F9BA5; font-size:.78rem; line-height:1.35; border-top:1px solid rgba(255,255,255,.05); }
+.shared-loadout-foot { padding:11px 14px; display:grid; grid-template-columns:minmax(0,1fr) auto auto; align-items:center; gap:8px; border-top:1px solid rgba(255,255,255,.07); background:rgba(0,0,0,.14); }
+.shared-code { min-width:0; display:grid; gap:2px; }
+.shared-code small { color:#687883; font:700 .53rem 'Share Tech Mono',monospace; letter-spacing:.06em; }
+.shared-code strong { color:#F0C419; font:800 .73rem 'Share Tech Mono',monospace; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.shared-copy,.shared-loadout-foot a { border:1px solid rgba(255,255,255,.11); border-radius:6px; padding:8px 10px; color:#D9E4EB; background:rgba(255,255,255,.035); font:800 .67rem 'Rajdhani',sans-serif; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:.15s; }
+.shared-copy:hover,.shared-loadout-foot a:hover { color:#fff; border-color:rgba(98,217,255,.42); background:rgba(98,217,255,.08); }
+.shared-loadout-foot a span { color:#62D9FF; margin-left:4px; }
+
+@media (max-width:850px) {
+    .shared-loadouts-grid { grid-template-columns:1fr; }
+}
+@media (max-width:560px) {
+    .shared-classes-summary { align-items:flex-start; flex-direction:column; }
+    .shared-summary-counts { justify-content:flex-start; }
+    .shared-attachments { grid-template-columns:1fr; }
+    .shared-loadout-foot { grid-template-columns:1fr auto; }
+    .shared-loadout-foot a { grid-column:1 / -1; text-align:center; }
+}
 
 /* Cards grandes (loadout meta) */
 .loadout-grid {

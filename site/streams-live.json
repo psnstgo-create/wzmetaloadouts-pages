@@ -1,112 +1,112 @@
 {
-  "generado": "2026-09-04T16:56:51Z",
+  "generado": "2026-09-04T18:53:26Z",
   "streams": [
+    {
+      "login": "deusamir",
+      "name": "deusamir",
+      "title": "NUEVA META ABSOLUTA - RETO TOP 250 IMPOSIBLE",
+      "viewers": 1271,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deusamir-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6db1417f-99a5-4fc3-9ead-55f3a0152e63-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "mirreytv",
+      "name": "MirreyTv",
+      "title": "🔥 ¡RANKEDS CON RANDOMS! LLEVÁNDOLOS HASTA IRIDESCENTE 😈",
+      "viewers": 311,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mirreytv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/929430cd-d894-4e7c-8a67-cfc3e376d698-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
     {
       "login": "soykronosgg",
       "name": "soykronosgg",
       "title": "🛑RANKED TOP250 NUEVA META🛑",
-      "viewers": 186,
+      "viewers": 157,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soykronosgg-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/06e7065c-a04a-4bde-8a42-1ad3ed304301-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "viperr97",
+      "name": "Viperr97",
+      "title": "🏆 DÍA 3 PCL x $1,000,000 | GRUPO B vs C | !GAMESIR !PCL !NOXAR",
+      "viewers": 134,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_viperr97-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2af8e821-8db8-4ccc-9766-3299d4e741ac-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "disgrazze",
       "name": "Disgrazze",
       "title": "Ranked Solo Q!",
-      "viewers": 123,
+      "viewers": 80,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_disgrazze-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f68f0f69-3680-464d-a44f-4c684b193e2e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "borraskka",
-      "name": "borraskka",
-      "title": "🚨SOLOQ RANKEDS IRIDISCENTE - DESPUÉS ONIMUSHA FINAL🚨| !Paypal !Discord !Redes | 🟩",
+      "login": "eldreamstv",
+      "name": "eldreamstv",
+      "title": "NUEVA REV 46 META ABSOLUTA!! / TOP #1 REBIRTH 6.50 KD / SUBS 813/900🏁 / !EXITLAG !CONTROL",
       "viewers": 68,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_borraskka-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d1cf174d-6359-4c4b-88db-689b8429d064-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldreamstv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cd49db75-6334-46bd-b759-0ba74dba7af2-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "donluckymx",
-      "name": "donluckymx",
-      "title": "EN EL JUEGO DEL MOMENTO WARDOGS!!",
-      "viewers": 58,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_donluckymx-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f6ee3adb-8e04-49af-bec2-fbc9a53f1122-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "javiix__",
-      "name": "Javiix__",
-      "title": "21.00 $60,000 PCL GROUP !boost !scuf !sens",
-      "viewers": 44,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_javiix__-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/93cd243f-0eba-4e63-9c8a-f6fc9cef074a-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "turuk10",
-      "name": "Turuk10",
-      "title": "🎯 🇪🇸 TOP1 SniperTerminator de Mi casa!! 🇪🇸 🎯  BR Solos 👏💪 Doble Cam, !comandos !dice",
-      "viewers": 32,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_turuk10-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/56ce14bf-d94b-4f63-b3da-5e39a3791864-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "tojor",
-      "name": "TojoR",
-      "title": "RANKEEDS - SUBTEMBER ACTIVO",
-      "viewers": 26,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tojor-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/866b8b70-961b-4691-8c7f-60d7bfec261f-profile_image-300x300.png",
+      "login": "huracckan",
+      "name": "huracckan",
+      "title": "Vamos allá.... COD ... Suscribete y sigueme en twitch !!!!😜  !!!!! BLACK OPS 7!!! VAMOOOOS",
+      "viewers": 42,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_huracckan-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1bfc7893-a45c-4402-92ce-ba15c8779178-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "eldurogamings",
       "name": "ElDuroGamings",
       "title": "viernes i have something speacial for you!!",
-      "viewers": 23,
+      "viewers": 18,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldurogamings-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/55fb31cd-25c8-44a9-ac73-d48cd1917c74-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "valki95",
+      "name": "Valki95",
+      "title": "💓hOLA vamos a chambear y despues a jugar || !ds !redes 💓",
+      "viewers": 14,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_valki95-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b916a139-21d0-4b38-93fc-5b6b2240b461-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "alvaritoisgod_",
+      "name": "alvaritoisgod_",
+      "title": "Challs and Customs",
+      "viewers": 13,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alvaritoisgod_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/be6baf5d-7ec0-4540-b6db-cbc2df975606-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "saglann",
+      "name": "Saglann",
+      "title": "CK 2v2 EMPIEZA SEPTIEMBRE  DIA 3 | 17 | !sens !buena !guapo !pc !Saglan | @saglann",
+      "viewers": 12,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_saglann-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6bd78ddc-aa8d-4561-8026-ec9a70b4bf42-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "elchef_gg",
       "name": "ElChef_gg",
       "title": "🍳JUGANDO CON EL CHAT / OJOS NUEVOS!🔪 🟣!commands 🟠!aura",
-      "viewers": 23,
+      "viewers": 12,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elchef_gg-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/23b17250-e989-45cb-82ed-bf71b198f5a9-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "renrizevods",
-      "name": "RenRizeVODs",
-      "title": "EN VIVO VODS 24/7 - REPETICIONES DEL CANAL DE @RenRize ♡ !redes !wsp",
-      "viewers": 21,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_renrizevods-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ea7dd7fc-a619-4d65-9214-6e202c883841-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "keeoss_",
-      "name": "keeoss_",
-      "title": "🎮 #SUPTEMBER | BOOSTEANDO CUENTA A IRI 🔥 I !pc !yt !sens",
-      "viewers": 17,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "chargvlie",
-      "name": "chargvlie",
-      "title": "HOY TOCA PC ON TOP 🥵!pc !sensi",
-      "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chargvlie-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6e24b3-5342-4c1c-ba8c-5c9c8d081bad-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]

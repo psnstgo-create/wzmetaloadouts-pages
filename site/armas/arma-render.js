@@ -212,19 +212,180 @@ function renderLoadout(loadout, iconPath, idx, attachments) {
     `;
 }
 
-function renderLoadoutsSection(arma) {
-    if (!arma.loadouts || arma.loadouts.length === 0) {
+function loadCommunityDependency(src, id, ready) {
+    if (ready && ready()) return Promise.resolve();
+    const existing = document.getElementById(id);
+    if (existing) {
+        return new Promise((resolve, reject) => {
+            if (!ready || ready()) return resolve();
+            existing.addEventListener('load', resolve, { once: true });
+            existing.addEventListener('error', reject, { once: true });
+        });
+    }
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.id = id;
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+}
+
+function communityTone(alias) {
+    const tones = ['violet', 'cyan', 'lime', 'rose', 'amber'];
+    let hash = 0;
+    String(alias || '').split('').forEach(char => { hash = ((hash * 31) + char.charCodeAt(0)) >>> 0; });
+    return tones[hash % tones.length];
+}
+
+function validSharedLoadout(loadout, slug) {
+    return loadout && loadout.arma_slug === slug
+        && typeof loadout.codigo_clase === 'string'
+        && loadout.codigo_clase.trim()
+        && Object.keys(loadout.accesorios || {}).length === 5;
+}
+
+async function cargarClasesCompartidas(slug) {
+    let editoriales = [];
+    let creatorsById = new Map();
+    try {
+        const [editorialResponse, creatorResponse] = await Promise.all([
+            fetch('/community-editorial.json?v=' + Date.now(), { cache: 'no-cache' }),
+            fetch('/creator-radar.json?v=' + Date.now(), { cache: 'no-cache' }),
+        ]);
+        if (editorialResponse.ok) {
+            const data = await editorialResponse.json();
+            editoriales = (Array.isArray(data.loadouts) ? data.loadouts : [])
+                .filter(item => validSharedLoadout(item, slug));
+        }
+        if (creatorResponse.ok) {
+            const data = await creatorResponse.json();
+            creatorsById = new Map((Array.isArray(data.creators) ? data.creators : [])
+                .map(creator => [String(creator.id || ''), creator]));
+        }
+    } catch (e) {
+        console.info('[ARMA] Clases editoriales no disponibles', e);
+    }
+
+    const clases = editoriales.map(item => {
+        const creator = item.creator_id ? creatorsById.get(String(item.creator_id)) : null;
+        return {
+            ...item,
+            _origin: item.creator_id ? 'creator' : 'community',
+            _alias: creator?.name || item.alias || 'Comunidad',
+            _avatar: creator?.avatar || '',
+            _tone: creator?.tone || communityTone(item.alias),
+        };
+    });
+
+    // Las clases aprobadas por usuarios registrados se consultan en vivo. Si
+    // Supabase no responde, las editoriales siguen visibles y la ficha no falla.
+    try {
+        await loadCommunityDependency('/vendor/supabase-js.min.js', 'weapon-supabase-sdk', () => !!window.supabase);
+        await loadCommunityDependency('/wz-community.js', 'weapon-community-client', () => typeof window.wzGetLoadoutsAprobados === 'function');
+        if (typeof window.wzGetLoadoutsAprobados === 'function') {
+            const { data: reales, error } = await window.wzGetLoadoutsAprobados(slug);
+            if (!error && Array.isArray(reales) && reales.length) {
+                let profilesById = new Map();
+                if (typeof window.wzGetPerfiles === 'function') {
+                    const { data: profiles } = await window.wzGetPerfiles(reales.map(item => item.user_id).filter(Boolean));
+                    profilesById = new Map((profiles || []).map(profile => [profile.id, profile]));
+                }
+                reales.filter(item => validSharedLoadout(item, slug)).forEach(item => {
+                    const profile = profilesById.get(item.user_id) || {};
+                    clases.push({
+                        ...item,
+                        _origin: 'community',
+                        _alias: profile.username || 'Jugador WZ',
+                        _avatar: profile.avatar_url || '',
+                        _tone: communityTone(profile.username || item.id),
+                    });
+                });
+            }
+        }
+    } catch (e) {
+        console.info('[ARMA] Comunidad en vivo no disponible', e);
+    }
+
+    return clases.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+}
+
+function sharedAvatar(loadout) {
+    const alias = String(loadout._alias || 'Comunidad');
+    const avatar = String(loadout._avatar || '');
+    if (/^https:\/\//.test(avatar)) {
+        return `<img class="shared-avatar-img" src="${escapeHtml(avatar)}" alt="${escapeHtml(alias)}" loading="lazy" referrerpolicy="no-referrer">`;
+    }
+    return `<span class="shared-avatar shared-tone-${escapeHtml(loadout._tone || communityTone(alias))}">${escapeHtml(alias.slice(0, 1).toUpperCase())}</span>`;
+}
+
+function renderSharedLoadout(loadout, arma) {
+    const id = String(loadout.id || '').replace(/[^A-Za-z0-9_-]/g, '');
+    const alias = String(loadout._alias || 'Comunidad');
+    const isCreator = loadout._origin === 'creator';
+    const accessories = Object.entries(loadout.accesorios || {}).map(([slot, name]) => {
+        const iconSrc = `${arma.icon_path}/${slugSafe(name)}.png`;
+        return `<div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="${escapeHtml(iconSrc)}" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>${escapeHtml(slot)}</small><strong>${escapeHtml(nombreAccES(name))}</strong></span>
+        </div>`;
+    }).join('');
+    return `<article class="shared-loadout-card ${isCreator ? 'is-creator' : 'is-community'}">
+        <header class="shared-loadout-head">
+            <div class="shared-author">${sharedAvatar(loadout)}<span><small>${isCreator ? 'CLASE DE CREADOR' : 'CLASE DE LA COMUNIDAD'}</small><strong>${escapeHtml(alias)}</strong></span></div>
+            <span class="shared-origin-badge">${isCreator ? '✓ CREADOR' : 'COMUNIDAD'}</span>
+        </header>
+        <div class="shared-attachments">${accessories}</div>
+        ${loadout.comentario ? `<p class="shared-comment">${escapeHtml(loadout.comentario)}</p>` : ''}
+        <footer class="shared-loadout-foot">
+            <div class="shared-code"><small>CÓDIGO PARA IMPORTAR</small><strong id="shared-code-${escapeHtml(id)}">${escapeHtml(loadout.codigo_clase)}</strong></div>
+            <button class="shared-copy" type="button" onclick="copyCode('shared-code-${escapeHtml(id)}', this)">📋 Copiar</button>
+            <a href="/comunidad?clase=${encodeURIComponent(String(loadout.id || ''))}#comGrid">Ver clase <span>→</span></a>
+        </footer>
+    </article>`;
+}
+
+function renderSharedClassesContent(classes, arma, active) {
+    const creators = classes.filter(item => item._origin === 'creator').length;
+    const community = classes.length - creators;
+    return `<div class="loadout-content${active ? ' active' : ''}" data-loadout="community-classes">
+        <div class="shared-classes-summary">
+            <div><span>LOADOUTS VERIFICADOS</span><strong>${classes.length} clase${classes.length === 1 ? '' : 's'} para ${escapeHtml(arma.nombre)}</strong></div>
+            <div class="shared-summary-counts">${creators ? `<span>✓ ${creators} de creadores</span>` : ''}${community ? `<span>◉ ${community} de comunidad</span>` : ''}</div>
+        </div>
+        <div class="shared-loadouts-grid">${classes.map(item => renderSharedLoadout(item, arma)).join('')}</div>
+    </div>`;
+}
+
+function renderLoadoutsSection(arma, sharedClasses) {
+    const metaLoadouts = Array.isArray(arma.loadouts) ? arma.loadouts : [];
+    const communityClasses = Array.isArray(sharedClasses) ? sharedClasses : [];
+    if (!metaLoadouts.length && !communityClasses.length) {
         return '';
     }
-    const tabs = arma.loadouts.map(l =>
-        `<button class="loadout-tab ${arma.loadouts[0].id === l.id ? 'active' : ''}" data-loadout="${l.id}">${l.emoji || ''} ${escapeHtml(l.nombre)}</button>`
-    ).join('');
-    const contents = arma.loadouts.map((l, i) => renderLoadout(l, arma.icon_path, i, arma.attachments)).join('');
+    const tabs = metaLoadouts.map((loadout, index) => ({
+        html: `<button class="loadout-tab ${index === 0 ? 'active' : ''}" data-loadout="${loadout.id}">${loadout.emoji || ''} ${escapeHtml(loadout.nombre)}</button>`,
+        id: loadout.id,
+    }));
+    if (communityClasses.length) {
+        const sharedTab = {
+            html: `<button class="loadout-tab shared-classes-tab${metaLoadouts.length ? '' : ' active'}" data-loadout="community-classes">👥 Comunidad <span>${communityClasses.length}</span></button>`,
+            id: 'community-classes',
+        };
+        const brIndex = tabs.findIndex(tab => /battle_royale/i.test(tab.id));
+        tabs.splice(brIndex >= 0 ? brIndex + 1 : Math.min(1, tabs.length), 0, sharedTab);
+    }
+    const contents = metaLoadouts.map((loadout, index) => renderLoadout(loadout, arma.icon_path, index, arma.attachments)).join('')
+        + (communityClasses.length ? renderSharedClassesContent(communityClasses, arma, !metaLoadouts.length) : '');
+    const subtitle = communityClasses.length
+        ? 'Compará el build meta con clases verificadas de la comunidad y creadores de Warzone.'
+        : 'Build óptimo según rol y rango de combate. Los 5 attachments marcados con ★ en la lista completa.';
     return `
         <section class="loadouts-section">
             <h2 class="section-title">Mejores <span class="accent">Loadouts</span></h2>
-            <p class="section-subtitle">Build óptimo según rol y rango de combate. Los 5 attachments marcados con ★ en la lista completa.</p>
-            <div class="loadout-tabs">${tabs}</div>
+            <p class="section-subtitle">${subtitle}</p>
+            <div class="loadout-tabs">${tabs.map(tab => tab.html).join('')}</div>
             ${contents}
         </section>
     `;
@@ -643,16 +804,22 @@ async function renderArmaPage(slug) {
         arma = await cargarLoadoutMetaWarzone(arma);
         document.title = `${arma.nombre} Loadout Warzone — Mejor Clase y Meta Black Ops 7 | WZ Meta`;
         actualizarMetaDescription(arma);
-        // video real del arma (si existe) para "Míralo en acción" + schema
-        let video = null;
-        try {
-            const rv = await fetch('/videos-armas.json?v=' + Date.now());
-            if (rv.ok) { const vs = await rv.json(); video = vs && vs[slug]; }
-        } catch (e) { /* sin video: la sección simplemente no aparece */ }
+        // Video y clases compartidas se resuelven en paralelo para no demorar
+        // innecesariamente la ficha. Ambas secciones son opcionales.
+        const [video, sharedClasses] = await Promise.all([
+            (async () => {
+                try {
+                    const rv = await fetch('/videos-armas.json?v=' + Date.now());
+                    if (rv.ok) { const vs = await rv.json(); return vs && vs[slug]; }
+                } catch (e) { /* sin video: la sección simplemente no aparece */ }
+                return null;
+            })(),
+            cargarClasesCompartidas(slug),
+        ]);
         main.innerHTML =
             renderBreadcrumb(arma) +
             renderHero(arma) +
-            renderLoadoutsSection(arma) +
+            renderLoadoutsSection(arma, sharedClasses) +
             renderCommunityCta(arma, slug) +
             renderVideoSection(arma, video) +
             renderAllAttachmentsSection(arma) +

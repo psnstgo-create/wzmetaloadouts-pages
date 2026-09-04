@@ -386,7 +386,7 @@
     .mv-badge.mv-buff{background:rgba(74,222,128,.15);color:var(--buff)} .mv-badge.mv-nerf{background:rgba(248,113,113,.15);color:var(--nerf)}
     .mv-note{margin:16px 0 0;display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:.82rem;line-height:1.4;border-top:1px solid rgba(255,255,255,.08);padding-top:12px}
     .mv-i{width:20px;height:20px;flex:0 0 auto;border:1px solid rgba(255,255,255,.4);border-radius:50%;display:grid;place-items:center;font-family:'Share Tech Mono',monospace;color:#fff;font-size:.74rem}
-    @media(max-width:600px){.mv-widget{padding:18px 15px;margin:24px auto}.mv-title{font-size:1.45rem}.mv-verdict{font-size:.98rem}.mv-row{flex-direction:column}}</style></head>
+    @media(max-width:600px){.mv-widget{padding:18px 15px;margin:24px auto}.mv-title{font-size:1.45rem}.mv-verdict{font-size:.98rem}.mv-row{flex-direction:column}}</style><script id="weapon-supabase-sdk" src="/vendor/supabase-js.min.js"></script><script id="weapon-community-client" src="/wz-community.js"></script></head>
 <body>
     <div class="bg-grid"></div>
 
@@ -473,8 +473,8 @@
     
         <section class="loadouts-section">
             <h2 class="section-title">Mejores <span class="accent">Loadouts</span></h2>
-            <p class="section-subtitle">Build óptimo según rol y rango de combate. Los 5 attachments marcados con ★ en la lista completa.</p>
-            <div class="loadout-tabs"><button class="loadout-tab active" data-loadout="wz-battle_royale">🎯 Meta BR</button><button class="loadout-tab " data-loadout="wz-resurgence">⚡ Meta Resurgence</button><button class="loadout-tab " data-loadout="wz-clasificatorio">👑 Meta Ranked</button></div>
+            <p class="section-subtitle">Compará el build meta con clases verificadas de la comunidad y creadores de Warzone.</p>
+            <div class="loadout-tabs"><button class="loadout-tab active" data-loadout="wz-battle_royale">🎯 Meta BR</button><button class="loadout-tab shared-classes-tab" data-loadout="community-classes">👥 Comunidad <span>1</span></button><button class="loadout-tab " data-loadout="wz-resurgence">⚡ Meta Resurgence</button><button class="loadout-tab " data-loadout="wz-clasificatorio">👑 Meta Ranked</button></div>
             
         <div class="loadout-content active" data-loadout="wz-battle_royale">
             <div class="loadout-grid">
@@ -670,7 +670,40 @@
         </div>
     
         </div>
-    
+    <div class="loadout-content" data-loadout="community-classes">
+        <div class="shared-classes-summary">
+            <div><span>LOADOUTS VERIFICADOS</span><strong>1 clase para FG42</strong></div>
+            <div class="shared-summary-counts"><span>◉ 1 de comunidad</span></div>
+        </div>
+        <div class="shared-loadouts-grid"><article class="shared-loadout-card is-community">
+        <header class="shared-loadout-head">
+            <div class="shared-author"><span class="shared-avatar shared-tone-violet">F</span><span><small>CLASE DE LA COMUNIDAD</small><strong>Fer45</strong></span></div>
+            <span class="shared-origin-badge">COMUNIDAD</span>
+        </header>
+        <div class="shared-attachments"><div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="/icons/attachments/fg42/FANG_HoverPoint_ELO.png" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>Mira</small><strong>FANG HoverPoint ELO</strong></span>
+        </div><div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="/icons/attachments/fg42/Monolithic_Suppressor.png" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>Boca de cañón</small><strong>Silenciador Monolithic</strong></span>
+        </div><div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="/icons/attachments/fg42/16_Bandolier_Barrel.png" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>Cañón</small><strong>Cañón Bandolier de 40.64 cm</strong></span>
+        </div><div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="/icons/attachments/fg42/RIF_Handguard.png" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>Acople</small><strong>Guardamanos RIF</strong></span>
+        </div><div class="shared-attachment">
+            <span class="shared-attachment-icon"><img src="/icons/attachments/fg42/Debase_Extended_Mag.png" alt="" loading="lazy"><i>◇</i></span>
+            <span><small>Cargador</small><strong>Cargador Debase</strong></span>
+        </div></div>
+        <p class="shared-comment">Configuración equilibrada para largo alcance con silenciador, control y cargador ampliado.</p>
+        <footer class="shared-loadout-foot">
+            <div class="shared-code"><small>CÓDIGO PARA IMPORTAR</small><strong id="shared-code-editorial-fg42-largo-alcance">A16-34FIQ-XHAUL-11</strong></div>
+            <button class="shared-copy" type="button" onclick="copyCode('shared-code-editorial-fg42-largo-alcance', this)">📋 Copiar</button>
+            <a href="/comunidad?clase=editorial-fg42-largo-alcance#comGrid">Ver clase <span>→</span></a>
+        </footer>
+    </article></div>
+    </div>
         </section><div id="wz-meta-verdict"><section class="mv-widget mv-nerf">
       <header class="mv-head">
         <div>
