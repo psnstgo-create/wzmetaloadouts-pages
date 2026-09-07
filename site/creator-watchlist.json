@@ -120,6 +120,14 @@
       "youtubeChannelId": "UCN8UZeyM7dpMbpSQehSpMNQ",
       "youtubeUrl": "https://www.youtube.com/@zyrpesland",
       "tone": "rose"
+    },
+    {
+      "id": "thegigadad",
+      "name": "TheGigaDad",
+      "region": "Estados Unidos",
+      "youtubeChannelId": "UCHszmFAKuz8YLn4jO8DARKA",
+      "youtubeUrl": "https://www.youtube.com/@TheGigaDad",
+      "tone": "cyan"
     }
   ]
 }

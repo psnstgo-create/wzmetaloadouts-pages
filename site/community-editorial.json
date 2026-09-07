@@ -355,6 +355,38 @@
         "Acople": "Sapper Guard Handstop",
         "Cargador": "MFS Carousel Fast Mag"
       }
+    },
+    {
+      "id": "editorial-thegigadad-an94-control",
+      "creator_id": "thegigadad",
+      "alias": "TheGigaDad",
+      "arma_slug": "an-94",
+      "codigo_clase": "A13-23Y4M-YT1U-11",
+      "comentario": "AN-94 de TheGigaDad para control sostenido, con mira 2x, silenciador, cañón Benthic y cargador de 60.",
+      "created_at": "2026-09-07T00:00:00Z",
+      "accesorios": {
+        "Mira": "Redwell 30-S 2x",
+        "Boca de cañón": "VAS 5.56 Suppressor",
+        "Cañón": "15\" Benthic Barrel",
+        "Acople": "Respire Handstop",
+        "Cargador": "Rexford Extended II"
+      }
+    },
+    {
+      "id": "editorial-thegigadad-rev46-agresiva",
+      "creator_id": "thegigadad",
+      "alias": "TheGigaDad",
+      "arma_slug": "rev-46",
+      "codigo_clase": "S09-2W259-FAZFH-11",
+      "comentario": "REV-46 de TheGigaDad para corto alcance: óptica limpia, freno de control, cañón Anolis, cargador ampliado y empuñadura Alpine-Bare.",
+      "created_at": "2026-09-07T00:00:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "9.6\" Redwell Anolis Barrel",
+        "Cargador": "Cawdor Extended Mag",
+        "Empuñadura trasera": "Alpine-Bare Grip"
+      }
     }
   ]
 }
