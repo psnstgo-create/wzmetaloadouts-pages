@@ -339,6 +339,22 @@
         "Cargador": "Torch Extended Mag",
         "Culata": "MFS Full Stock+"
       }
+    },
+    {
+      "id": "editorial-zyrpesland-cbrs3-ewc",
+      "creator_id": "zyrpesland",
+      "alias": "Zyrpesland",
+      "arma_slug": "cbrs-3",
+      "codigo_clase": "S15-2W2AD-Q3QNG-11",
+      "comentario": "CBRS-3 mostrada por Zyrpesland tras la EWC, afinada para control sostenido y duelos de corto alcance.",
+      "created_at": "2026-08-06T12:00:00Z",
+      "accesorios": {
+        "Mira": "FANG HoverPoint ELO",
+        "Boca de cañón": "LTI Stentorian Brake",
+        "Cañón": "11\" Gaunt Barrel",
+        "Acople": "Sapper Guard Handstop",
+        "Cargador": "MFS Carousel Fast Mag"
+      }
     }
   ]
 }
