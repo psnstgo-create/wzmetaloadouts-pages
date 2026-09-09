@@ -933,6 +933,16 @@ function _pintarCuentaRegresiva(t){
   if (!t){ banner.hidden = true; return; }
 
   banner.hidden = false;
+  banner.classList.toggle('season-announcement', Boolean(t.nombre));
+  let title = banner.querySelector('.tb-season-title');
+  if (t.nombre){
+    if (!title){
+      title = document.createElement('span');
+      title.className = 'tb-season-title';
+      banner.querySelector('.tb-frame').appendChild(title);
+    }
+    title.textContent = `TEMPORADA ${t.numero} · ${t.nombre}`;
+  }else if (title){ title.remove(); }
   banner.href = t.url || '/noticias';
   banner.setAttribute('aria-label', `Temporada ${t.numero} de Warzone Black Ops 7 — ver novedades`);
   const img = banner.querySelector('img');

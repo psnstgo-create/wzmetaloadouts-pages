@@ -15,6 +15,14 @@
       "banner": "/uploads/banner-bo7-s5.jpg",
       "url": "/noticias/temporada-5-black-ops-7",
       "alt": "Temporada 5 — Warzone Black Ops 7 · novedades y roadmap"
+    },
+    {
+      "numero": 6,
+      "lanzamiento": "2026-09-17T16:00:00Z",
+      "banner": "/uploads/bo7-warzone-season-6-the-haunting.jpg",
+      "nombre": "The Haunting",
+      "url": "/noticias/warzone-black-ops-7-temporada-6-the-haunting",
+      "alt": "Temporada 6 — The Haunting · Warzone y Black Ops 7 · 17 de septiembre"
     }
   ]
 }
