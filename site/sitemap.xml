@@ -2,8 +2,8 @@
 <!--
   Sitemap de WZ Meta · wzmetaloadouts.com
   Generado automáticamente por _build/build_sitemap.py
-  Fecha: 2026-09-09T19:56:20.740718
-  Total URLs: 194
+  Fecha: 2026-09-09T20:02:49.708338
+  Total URLs: 195
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -833,6 +833,12 @@
         <lastmod>2026-09-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.55</priority>
+    </url>
+    <url>
+        <loc>https://wzmetaloadouts.com/noticias/warzone-ranked-resurgence-season-6-recompensas</loc>
+        <lastmod>2026-09-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://wzmetaloadouts.com/noticias/warzone-black-ops-7-temporada-6-the-haunting</loc>
