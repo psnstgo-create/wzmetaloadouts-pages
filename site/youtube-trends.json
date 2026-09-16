@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "youtube-data-api-v3",
   "method": "recent_search_sample",
-  "generatedAt": "2026-09-15T16:54:57Z",
+  "generatedAt": "2026-09-16T14:28:00Z",
   "windowDays": 28,
   "freshForHours": 36,
   "trackedWeapons": 20,
@@ -15,30 +15,26 @@
       "slug": "mpc-25",
       "name": "MPC-25",
       "image": "/weapons/gold/MPC-25.png",
-      "videoCount": 148,
-      "creatorCount": 121,
-      "viewCount": 371614,
-      "newestPublishedAt": "2026-09-15T16:50:49Z",
+      "videoCount": 141,
+      "creatorCount": 116,
+      "viewCount": 542449,
+      "newestPublishedAt": "2026-09-16T13:00:27Z",
       "dailyVideos": [
         {
-          "date": "2026-08-19",
+          "date": "2026-08-20",
           "count": 0
         },
         {
-          "date": "2026-08-20",
-          "count": 3
-        },
-        {
           "date": "2026-08-21",
-          "count": 8
+          "count": 0
         },
         {
           "date": "2026-08-22",
-          "count": 3
+          "count": 0
         },
         {
           "date": "2026-08-23",
-          "count": 7
+          "count": 1
         },
         {
           "date": "2026-08-24",
@@ -50,11 +46,11 @@
         },
         {
           "date": "2026-08-26",
-          "count": 0
+          "count": 19
         },
         {
           "date": "2026-08-27",
-          "count": 14
+          "count": 13
         },
         {
           "date": "2026-08-28",
@@ -78,7 +74,7 @@
         },
         {
           "date": "2026-09-02",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2026-09-03",
@@ -90,11 +86,11 @@
         },
         {
           "date": "2026-09-05",
-          "count": 8
+          "count": 0
         },
         {
           "date": "2026-09-06",
-          "count": 5
+          "count": 0
         },
         {
           "date": "2026-09-07",
@@ -106,7 +102,7 @@
         },
         {
           "date": "2026-09-09",
-          "count": 0
+          "count": 13
         },
         {
           "date": "2026-09-10",
@@ -118,19 +114,23 @@
         },
         {
           "date": "2026-09-12",
-          "count": 11
+          "count": 0
         },
         {
           "date": "2026-09-13",
-          "count": 8
+          "count": 5
         },
         {
           "date": "2026-09-14",
-          "count": 12
+          "count": 11
         },
         {
           "date": "2026-09-15",
-          "count": 9
+          "count": 12
+        },
+        {
+          "date": "2026-09-16",
+          "count": 5
         }
       ],
       "rank": 1,
@@ -138,18 +138,14 @@
       "deltaRank": 0
     },
     {
-      "slug": "vst",
-      "name": "VST",
-      "image": "/weapons/gold/VST.png",
-      "videoCount": 151,
-      "creatorCount": 131,
-      "viewCount": 297941,
-      "newestPublishedAt": "2026-09-15T16:00:34Z",
+      "slug": "rev-46",
+      "name": "REV-46",
+      "image": "/weapons/gold/REV-46.png",
+      "videoCount": 145,
+      "creatorCount": 126,
+      "viewCount": 259027,
+      "newestPublishedAt": "2026-09-16T13:00:27Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 0
@@ -168,15 +164,15 @@
         },
         {
           "date": "2026-08-24",
-          "count": 8
+          "count": 1
         },
         {
           "date": "2026-08-25",
-          "count": 28
+          "count": 17
         },
         {
           "date": "2026-08-26",
-          "count": 0
+          "count": 19
         },
         {
           "date": "2026-08-27",
@@ -184,7 +180,133 @@
         },
         {
           "date": "2026-08-28",
-          "count": 1
+          "count": 0
+        },
+        {
+          "date": "2026-08-29",
+          "count": 5
+        },
+        {
+          "date": "2026-08-30",
+          "count": 5
+        },
+        {
+          "date": "2026-08-31",
+          "count": 13
+        },
+        {
+          "date": "2026-09-01",
+          "count": 6
+        },
+        {
+          "date": "2026-09-02",
+          "count": 10
+        },
+        {
+          "date": "2026-09-03",
+          "count": 0
+        },
+        {
+          "date": "2026-09-04",
+          "count": 0
+        },
+        {
+          "date": "2026-09-05",
+          "count": 0
+        },
+        {
+          "date": "2026-09-06",
+          "count": 0
+        },
+        {
+          "date": "2026-09-07",
+          "count": 0
+        },
+        {
+          "date": "2026-09-08",
+          "count": 11
+        },
+        {
+          "date": "2026-09-09",
+          "count": 19
+        },
+        {
+          "date": "2026-09-10",
+          "count": 0
+        },
+        {
+          "date": "2026-09-11",
+          "count": 0
+        },
+        {
+          "date": "2026-09-12",
+          "count": 0
+        },
+        {
+          "date": "2026-09-13",
+          "count": 0
+        },
+        {
+          "date": "2026-09-14",
+          "count": 6
+        },
+        {
+          "date": "2026-09-15",
+          "count": 24
+        },
+        {
+          "date": "2026-09-16",
+          "count": 9
+        }
+      ],
+      "rank": 2,
+      "direction": "up",
+      "deltaRank": 1
+    },
+    {
+      "slug": "vst",
+      "name": "VST",
+      "image": "/weapons/gold/VST.png",
+      "videoCount": 146,
+      "creatorCount": 121,
+      "viewCount": 214903,
+      "newestPublishedAt": "2026-09-16T13:49:37Z",
+      "dailyVideos": [
+        {
+          "date": "2026-08-20",
+          "count": 0
+        },
+        {
+          "date": "2026-08-21",
+          "count": 0
+        },
+        {
+          "date": "2026-08-22",
+          "count": 0
+        },
+        {
+          "date": "2026-08-23",
+          "count": 0
+        },
+        {
+          "date": "2026-08-24",
+          "count": 0
+        },
+        {
+          "date": "2026-08-25",
+          "count": 14
+        },
+        {
+          "date": "2026-08-26",
+          "count": 18
+        },
+        {
+          "date": "2026-08-27",
+          "count": 0
+        },
+        {
+          "date": "2026-08-28",
+          "count": 0
         },
         {
           "date": "2026-08-29",
@@ -192,11 +314,11 @@
         },
         {
           "date": "2026-08-30",
-          "count": 7
+          "count": 1
         },
         {
           "date": "2026-08-31",
-          "count": 15
+          "count": 13
         },
         {
           "date": "2026-09-01",
@@ -204,330 +326,204 @@
         },
         {
           "date": "2026-09-02",
-          "count": 0
-        },
-        {
-          "date": "2026-09-03",
-          "count": 0
-        },
-        {
-          "date": "2026-09-04",
-          "count": 0
-        },
-        {
-          "date": "2026-09-05",
-          "count": 0
-        },
-        {
-          "date": "2026-09-06",
-          "count": 0
-        },
-        {
-          "date": "2026-09-07",
-          "count": 17
-        },
-        {
-          "date": "2026-09-08",
-          "count": 19
-        },
-        {
-          "date": "2026-09-09",
-          "count": 1
-        },
-        {
-          "date": "2026-09-10",
-          "count": 1
-        },
-        {
-          "date": "2026-09-11",
-          "count": 0
-        },
-        {
-          "date": "2026-09-12",
-          "count": 0
-        },
-        {
-          "date": "2026-09-13",
-          "count": 6
-        },
-        {
-          "date": "2026-09-14",
-          "count": 15
-        },
-        {
-          "date": "2026-09-15",
-          "count": 18
-        }
-      ],
-      "rank": 2,
-      "direction": "up",
-      "deltaRank": 2
-    },
-    {
-      "slug": "rev-46",
-      "name": "REV-46",
-      "image": "/weapons/gold/REV-46.png",
-      "videoCount": 146,
-      "creatorCount": 129,
-      "viewCount": 213315,
-      "newestPublishedAt": "2026-09-15T16:06:10Z",
-      "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
-        {
-          "date": "2026-08-20",
-          "count": 0
-        },
-        {
-          "date": "2026-08-21",
-          "count": 0
-        },
-        {
-          "date": "2026-08-22",
-          "count": 2
-        },
-        {
-          "date": "2026-08-23",
-          "count": 5
-        },
-        {
-          "date": "2026-08-24",
-          "count": 8
-        },
-        {
-          "date": "2026-08-25",
-          "count": 17
-        },
-        {
-          "date": "2026-08-26",
-          "count": 0
-        },
-        {
-          "date": "2026-08-27",
-          "count": 0
-        },
-        {
-          "date": "2026-08-28",
-          "count": 6
-        },
-        {
-          "date": "2026-08-29",
-          "count": 7
-        },
-        {
-          "date": "2026-08-30",
-          "count": 5
-        },
-        {
-          "date": "2026-08-31",
-          "count": 13
-        },
-        {
-          "date": "2026-09-01",
-          "count": 6
-        },
-        {
-          "date": "2026-09-02",
-          "count": 0
-        },
-        {
-          "date": "2026-09-03",
-          "count": 0
-        },
-        {
-          "date": "2026-09-04",
-          "count": 0
-        },
-        {
-          "date": "2026-09-05",
-          "count": 0
-        },
-        {
-          "date": "2026-09-06",
-          "count": 0
-        },
-        {
-          "date": "2026-09-07",
-          "count": 20
-        },
-        {
-          "date": "2026-09-08",
-          "count": 16
-        },
-        {
-          "date": "2026-09-09",
-          "count": 0
-        },
-        {
-          "date": "2026-09-10",
-          "count": 0
-        },
-        {
-          "date": "2026-09-11",
-          "count": 0
-        },
-        {
-          "date": "2026-09-12",
-          "count": 0
-        },
-        {
-          "date": "2026-09-13",
-          "count": 4
-        },
-        {
-          "date": "2026-09-14",
-          "count": 22
-        },
-        {
-          "date": "2026-09-15",
-          "count": 15
-        }
-      ],
-      "rank": 3,
-      "direction": "up",
-      "deltaRank": 3
-    },
-    {
-      "slug": "ryden-45k",
-      "name": "Ryden 45K",
-      "image": "/weapons/gold/Ryden 45K.png",
-      "videoCount": 139,
-      "creatorCount": 104,
-      "viewCount": 208892,
-      "newestPublishedAt": "2026-09-15T16:30:34Z",
-      "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
-        {
-          "date": "2026-08-20",
-          "count": 0
-        },
-        {
-          "date": "2026-08-21",
-          "count": 16
-        },
-        {
-          "date": "2026-08-22",
-          "count": 5
-        },
-        {
-          "date": "2026-08-23",
-          "count": 5
-        },
-        {
-          "date": "2026-08-24",
-          "count": 2
-        },
-        {
-          "date": "2026-08-25",
-          "count": 8
-        },
-        {
-          "date": "2026-08-26",
-          "count": 6
-        },
-        {
-          "date": "2026-08-27",
-          "count": 5
-        },
-        {
-          "date": "2026-08-28",
-          "count": 5
-        },
-        {
-          "date": "2026-08-29",
-          "count": 7
-        },
-        {
-          "date": "2026-08-30",
-          "count": 3
-        },
-        {
-          "date": "2026-08-31",
-          "count": 2
-        },
-        {
-          "date": "2026-09-01",
-          "count": 2
-        },
-        {
-          "date": "2026-09-02",
-          "count": 1
-        },
-        {
-          "date": "2026-09-03",
-          "count": 8
-        },
-        {
-          "date": "2026-09-04",
-          "count": 2
-        },
-        {
-          "date": "2026-09-05",
-          "count": 5
-        },
-        {
-          "date": "2026-09-06",
-          "count": 13
-        },
-        {
-          "date": "2026-09-07",
           "count": 9
         },
         {
-          "date": "2026-09-08",
-          "count": 4
+          "date": "2026-09-03",
+          "count": 0
         },
         {
-          "date": "2026-09-09",
-          "count": 5
+          "date": "2026-09-04",
+          "count": 0
         },
         {
-          "date": "2026-09-10",
+          "date": "2026-09-05",
+          "count": 0
+        },
+        {
+          "date": "2026-09-06",
+          "count": 0
+        },
+        {
+          "date": "2026-09-07",
           "count": 1
         },
         {
-          "date": "2026-09-11",
+          "date": "2026-09-08",
           "count": 8
         },
         {
+          "date": "2026-09-09",
+          "count": 28
+        },
+        {
+          "date": "2026-09-10",
+          "count": 0
+        },
+        {
+          "date": "2026-09-11",
+          "count": 0
+        },
+        {
           "date": "2026-09-12",
-          "count": 5
+          "count": 0
         },
         {
           "date": "2026-09-13",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-09-14",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-09-15",
-          "count": 4
+          "count": 28
+        },
+        {
+          "date": "2026-09-16",
+          "count": 11
+        }
+      ],
+      "rank": 3,
+      "direction": "down",
+      "deltaRank": -1
+    },
+    {
+      "slug": "an-94",
+      "name": "AN-94",
+      "image": "/weapons/gold/AN-94.png",
+      "videoCount": 149,
+      "creatorCount": 121,
+      "viewCount": 197456,
+      "newestPublishedAt": "2026-09-16T14:22:26Z",
+      "dailyVideos": [
+        {
+          "date": "2026-08-20",
+          "count": 0
+        },
+        {
+          "date": "2026-08-21",
+          "count": 0
+        },
+        {
+          "date": "2026-08-22",
+          "count": 0
+        },
+        {
+          "date": "2026-08-23",
+          "count": 0
+        },
+        {
+          "date": "2026-08-24",
+          "count": 6
+        },
+        {
+          "date": "2026-08-25",
+          "count": 19
+        },
+        {
+          "date": "2026-08-26",
+          "count": 17
+        },
+        {
+          "date": "2026-08-27",
+          "count": 0
+        },
+        {
+          "date": "2026-08-28",
+          "count": 0
+        },
+        {
+          "date": "2026-08-29",
+          "count": 0
+        },
+        {
+          "date": "2026-08-30",
+          "count": 0
+        },
+        {
+          "date": "2026-08-31",
+          "count": 1
+        },
+        {
+          "date": "2026-09-01",
+          "count": 16
+        },
+        {
+          "date": "2026-09-02",
+          "count": 19
+        },
+        {
+          "date": "2026-09-03",
+          "count": 0
+        },
+        {
+          "date": "2026-09-04",
+          "count": 0
+        },
+        {
+          "date": "2026-09-05",
+          "count": 0
+        },
+        {
+          "date": "2026-09-06",
+          "count": 0
+        },
+        {
+          "date": "2026-09-07",
+          "count": 0
+        },
+        {
+          "date": "2026-09-08",
+          "count": 0
+        },
+        {
+          "date": "2026-09-09",
+          "count": 33
+        },
+        {
+          "date": "2026-09-10",
+          "count": 0
+        },
+        {
+          "date": "2026-09-11",
+          "count": 0
+        },
+        {
+          "date": "2026-09-12",
+          "count": 0
+        },
+        {
+          "date": "2026-09-13",
+          "count": 0
+        },
+        {
+          "date": "2026-09-14",
+          "count": 0
+        },
+        {
+          "date": "2026-09-15",
+          "count": 19
+        },
+        {
+          "date": "2026-09-16",
+          "count": 19
         }
       ],
       "rank": 4,
-      "direction": "down",
-      "deltaRank": -1
+      "direction": "up",
+      "deltaRank": 2
     },
     {
       "slug": "mk35-isr",
       "name": "MK35 ISR",
       "image": "/weapons/gold/MK35 ISR.png",
-      "videoCount": 107,
-      "creatorCount": 77,
-      "viewCount": 150836,
-      "newestPublishedAt": "2026-09-15T00:57:40Z",
+      "videoCount": 112,
+      "creatorCount": 78,
+      "viewCount": 178476,
+      "newestPublishedAt": "2026-09-16T13:00:27Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 5
-        },
         {
           "date": "2026-08-20",
           "count": 5
@@ -554,7 +550,7 @@
         },
         {
           "date": "2026-08-26",
-          "count": 1
+          "count": 3
         },
         {
           "date": "2026-08-27",
@@ -582,11 +578,11 @@
         },
         {
           "date": "2026-09-02",
-          "count": 2
+          "count": 4
         },
         {
           "date": "2026-09-03",
-          "count": 6
+          "count": 3
         },
         {
           "date": "2026-09-04",
@@ -610,11 +606,11 @@
         },
         {
           "date": "2026-09-09",
-          "count": 3
+          "count": 5
         },
         {
           "date": "2026-09-10",
-          "count": 3
+          "count": 2
         },
         {
           "date": "2026-09-11",
@@ -626,7 +622,7 @@
         },
         {
           "date": "2026-09-13",
-          "count": 8
+          "count": 9
         },
         {
           "date": "2026-09-14",
@@ -634,7 +630,11 @@
         },
         {
           "date": "2026-09-15",
-          "count": 2
+          "count": 6
+        },
+        {
+          "date": "2026-09-16",
+          "count": 3
         }
       ],
       "rank": 5,
@@ -642,73 +642,69 @@
       "deltaRank": 0
     },
     {
-      "slug": "an-94",
-      "name": "AN-94",
-      "image": "/weapons/gold/AN-94.png",
-      "videoCount": 144,
-      "creatorCount": 124,
-      "viewCount": 142839,
-      "newestPublishedAt": "2026-09-15T16:30:34Z",
+      "slug": "ryden-45k",
+      "name": "Ryden 45K",
+      "image": "/weapons/gold/Ryden 45K.png",
+      "videoCount": 132,
+      "creatorCount": 101,
+      "viewCount": 176131,
+      "newestPublishedAt": "2026-09-16T13:35:36Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 0
         },
         {
           "date": "2026-08-21",
-          "count": 0
+          "count": 8
         },
         {
           "date": "2026-08-22",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-08-23",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-08-24",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2026-08-25",
-          "count": 38
+          "count": 8
         },
         {
           "date": "2026-08-26",
-          "count": 0
+          "count": 6
         },
         {
           "date": "2026-08-27",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-08-28",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-08-29",
-          "count": 0
+          "count": 7
         },
         {
           "date": "2026-08-30",
-          "count": 0
+          "count": 3
         },
         {
           "date": "2026-08-31",
-          "count": 19
+          "count": 2
         },
         {
           "date": "2026-09-01",
-          "count": 16
+          "count": 2
         },
         {
           "date": "2026-09-02",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-09-03",
@@ -716,27 +712,27 @@
         },
         {
           "date": "2026-09-04",
-          "count": 0
+          "count": 1
         },
         {
           "date": "2026-09-05",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-09-06",
-          "count": 0
+          "count": 13
         },
         {
           "date": "2026-09-07",
-          "count": 0
+          "count": 9
         },
         {
           "date": "2026-09-08",
-          "count": 33
+          "count": 4
         },
         {
           "date": "2026-09-09",
-          "count": 0
+          "count": 9
         },
         {
           "date": "2026-09-10",
@@ -744,42 +740,42 @@
         },
         {
           "date": "2026-09-11",
-          "count": 0
+          "count": 7
         },
         {
           "date": "2026-09-12",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-09-13",
-          "count": 0
+          "count": 4
         },
         {
           "date": "2026-09-14",
-          "count": 18
+          "count": 4
         },
         {
           "date": "2026-09-15",
-          "count": 20
+          "count": 6
+        },
+        {
+          "date": "2026-09-16",
+          "count": 2
         }
       ],
       "rank": 6,
       "direction": "down",
-      "deltaRank": -4
+      "deltaRank": -2
     },
     {
       "slug": "rk-9",
       "name": "RK-9",
       "image": "/weapons/gold/RK-9.png",
-      "videoCount": 82,
-      "creatorCount": 63,
-      "viewCount": 134069,
-      "newestPublishedAt": "2026-09-14T20:00:39Z",
+      "videoCount": 84,
+      "creatorCount": 65,
+      "viewCount": 139875,
+      "newestPublishedAt": "2026-09-16T02:01:42Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 5
@@ -826,7 +822,7 @@
         },
         {
           "date": "2026-08-31",
-          "count": 3
+          "count": 4
         },
         {
           "date": "2026-09-01",
@@ -838,7 +834,7 @@
         },
         {
           "date": "2026-09-03",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-09-04",
@@ -866,7 +862,7 @@
         },
         {
           "date": "2026-09-10",
-          "count": 4
+          "count": 5
         },
         {
           "date": "2026-09-11",
@@ -887,6 +883,10 @@
         {
           "date": "2026-09-15",
           "count": 0
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
         }
       ],
       "rank": 7,
@@ -894,45 +894,41 @@
       "deltaRank": 0
     },
     {
-      "slug": "fg42",
-      "name": "FG42",
-      "image": "/weapons/gold/FG42.png",
-      "videoCount": 99,
-      "creatorCount": 59,
-      "viewCount": 133967,
-      "newestPublishedAt": "2026-09-15T15:00:37Z",
+      "slug": "sturmwolf-45",
+      "name": "Sturmwolf 45",
+      "image": "/weapons/gold/Sturmwolf 45.png",
+      "videoCount": 48,
+      "creatorCount": 44,
+      "viewCount": 134210,
+      "newestPublishedAt": "2026-09-15T14:00:39Z",
       "dailyVideos": [
         {
-          "date": "2026-08-19",
-          "count": 8
-        },
-        {
           "date": "2026-08-20",
-          "count": 8
+          "count": 0
         },
         {
           "date": "2026-08-21",
-          "count": 6
+          "count": 1
         },
         {
           "date": "2026-08-22",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-08-23",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2026-08-24",
-          "count": 3
-        },
-        {
-          "date": "2026-08-25",
           "count": 2
         },
         {
+          "date": "2026-08-25",
+          "count": 1
+        },
+        {
           "date": "2026-08-26",
-          "count": 6
+          "count": 3
         },
         {
           "date": "2026-08-27",
@@ -940,23 +936,23 @@
         },
         {
           "date": "2026-08-28",
-          "count": 3
+          "count": 2
         },
         {
           "date": "2026-08-29",
-          "count": 4
+          "count": 1
         },
         {
           "date": "2026-08-30",
-          "count": 6
+          "count": 2
         },
         {
           "date": "2026-08-31",
-          "count": 5
+          "count": 1
         },
         {
           "date": "2026-09-01",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-09-02",
@@ -968,11 +964,11 @@
         },
         {
           "date": "2026-09-04",
-          "count": 4
+          "count": 1
         },
         {
           "date": "2026-09-05",
-          "count": 1
+          "count": 3
         },
         {
           "date": "2026-09-06",
@@ -980,11 +976,11 @@
         },
         {
           "date": "2026-09-07",
-          "count": 3
+          "count": 5
         },
         {
           "date": "2026-09-08",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2026-09-09",
@@ -992,15 +988,15 @@
         },
         {
           "date": "2026-09-10",
-          "count": 6
+          "count": 1
         },
         {
           "date": "2026-09-11",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2026-09-12",
-          "count": 4
+          "count": 2
         },
         {
           "date": "2026-09-13",
@@ -1012,152 +1008,26 @@
         },
         {
           "date": "2026-09-15",
-          "count": 1
+          "count": 2
+        },
+        {
+          "date": "2026-09-16",
+          "count": 0
         }
       ],
       "rank": 8,
       "direction": "up",
-      "deltaRank": 2
-    },
-    {
-      "slug": "sturmwolf-45",
-      "name": "Sturmwolf 45",
-      "image": "/weapons/gold/Sturmwolf 45.png",
-      "videoCount": 52,
-      "creatorCount": 47,
-      "viewCount": 130877,
-      "newestPublishedAt": "2026-09-15T14:00:39Z",
-      "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 4
-        },
-        {
-          "date": "2026-08-20",
-          "count": 0
-        },
-        {
-          "date": "2026-08-21",
-          "count": 1
-        },
-        {
-          "date": "2026-08-22",
-          "count": 0
-        },
-        {
-          "date": "2026-08-23",
-          "count": 1
-        },
-        {
-          "date": "2026-08-24",
-          "count": 2
-        },
-        {
-          "date": "2026-08-25",
-          "count": 1
-        },
-        {
-          "date": "2026-08-26",
-          "count": 3
-        },
-        {
-          "date": "2026-08-27",
-          "count": 2
-        },
-        {
-          "date": "2026-08-28",
-          "count": 2
-        },
-        {
-          "date": "2026-08-29",
-          "count": 1
-        },
-        {
-          "date": "2026-08-30",
-          "count": 2
-        },
-        {
-          "date": "2026-08-31",
-          "count": 1
-        },
-        {
-          "date": "2026-09-01",
-          "count": 0
-        },
-        {
-          "date": "2026-09-02",
-          "count": 2
-        },
-        {
-          "date": "2026-09-03",
-          "count": 2
-        },
-        {
-          "date": "2026-09-04",
-          "count": 1
-        },
-        {
-          "date": "2026-09-05",
-          "count": 3
-        },
-        {
-          "date": "2026-09-06",
-          "count": 4
-        },
-        {
-          "date": "2026-09-07",
-          "count": 5
-        },
-        {
-          "date": "2026-09-08",
-          "count": 1
-        },
-        {
-          "date": "2026-09-09",
-          "count": 3
-        },
-        {
-          "date": "2026-09-10",
-          "count": 1
-        },
-        {
-          "date": "2026-09-11",
-          "count": 1
-        },
-        {
-          "date": "2026-09-12",
-          "count": 2
-        },
-        {
-          "date": "2026-09-13",
-          "count": 2
-        },
-        {
-          "date": "2026-09-14",
-          "count": 3
-        },
-        {
-          "date": "2026-09-15",
-          "count": 2
-        }
-      ],
-      "rank": 9,
-      "direction": "stable",
-      "deltaRank": 0
+      "deltaRank": 1
     },
     {
       "slug": "peacekeeper-mk1",
       "name": "Peacekeeper Mk1",
       "image": "/weapons/gold/Peacekeeper Mk1.png",
-      "videoCount": 24,
-      "creatorCount": 22,
-      "viewCount": 128213,
-      "newestPublishedAt": "2026-09-11T00:22:20Z",
+      "videoCount": 26,
+      "creatorCount": 23,
+      "viewCount": 131063,
+      "newestPublishedAt": "2026-09-16T13:00:38Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -1184,7 +1054,7 @@
         },
         {
           "date": "2026-08-26",
-          "count": 0
+          "count": 1
         },
         {
           "date": "2026-08-27",
@@ -1264,6 +1134,136 @@
         },
         {
           "date": "2026-09-15",
+          "count": 0
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
+        }
+      ],
+      "rank": 9,
+      "direction": "up",
+      "deltaRank": 1
+    },
+    {
+      "slug": "fg42",
+      "name": "FG42",
+      "image": "/weapons/gold/FG42.png",
+      "videoCount": 91,
+      "creatorCount": 53,
+      "viewCount": 130378,
+      "newestPublishedAt": "2026-09-15T22:00:29Z",
+      "dailyVideos": [
+        {
+          "date": "2026-08-20",
+          "count": 8
+        },
+        {
+          "date": "2026-08-21",
+          "count": 6
+        },
+        {
+          "date": "2026-08-22",
+          "count": 4
+        },
+        {
+          "date": "2026-08-23",
+          "count": 2
+        },
+        {
+          "date": "2026-08-24",
+          "count": 3
+        },
+        {
+          "date": "2026-08-25",
+          "count": 2
+        },
+        {
+          "date": "2026-08-26",
+          "count": 6
+        },
+        {
+          "date": "2026-08-27",
+          "count": 1
+        },
+        {
+          "date": "2026-08-28",
+          "count": 3
+        },
+        {
+          "date": "2026-08-29",
+          "count": 4
+        },
+        {
+          "date": "2026-08-30",
+          "count": 6
+        },
+        {
+          "date": "2026-08-31",
+          "count": 5
+        },
+        {
+          "date": "2026-09-01",
+          "count": 1
+        },
+        {
+          "date": "2026-09-02",
+          "count": 2
+        },
+        {
+          "date": "2026-09-03",
+          "count": 2
+        },
+        {
+          "date": "2026-09-04",
+          "count": 4
+        },
+        {
+          "date": "2026-09-05",
+          "count": 1
+        },
+        {
+          "date": "2026-09-06",
+          "count": 4
+        },
+        {
+          "date": "2026-09-07",
+          "count": 3
+        },
+        {
+          "date": "2026-09-08",
+          "count": 2
+        },
+        {
+          "date": "2026-09-09",
+          "count": 3
+        },
+        {
+          "date": "2026-09-10",
+          "count": 6
+        },
+        {
+          "date": "2026-09-11",
+          "count": 2
+        },
+        {
+          "date": "2026-09-12",
+          "count": 4
+        },
+        {
+          "date": "2026-09-13",
+          "count": 2
+        },
+        {
+          "date": "2026-09-14",
+          "count": 3
+        },
+        {
+          "date": "2026-09-15",
+          "count": 2
+        },
+        {
+          "date": "2026-09-16",
           "count": 0
         }
       ],
@@ -1275,26 +1275,22 @@
       "slug": "cbrs-3",
       "name": "CBRS-3",
       "image": "/weapons/gold/CBRS-3.png",
-      "videoCount": 114,
+      "videoCount": 111,
       "creatorCount": 68,
-      "viewCount": 117492,
-      "newestPublishedAt": "2026-09-15T12:00:08Z",
+      "viewCount": 115932,
+      "newestPublishedAt": "2026-09-16T13:30:06Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 0
         },
         {
           "date": "2026-08-21",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-08-22",
-          "count": 12
+          "count": 9
         },
         {
           "date": "2026-08-23",
@@ -1326,7 +1322,7 @@
         },
         {
           "date": "2026-08-30",
-          "count": 3
+          "count": 4
         },
         {
           "date": "2026-08-31",
@@ -1338,7 +1334,7 @@
         },
         {
           "date": "2026-09-02",
-          "count": 3
+          "count": 4
         },
         {
           "date": "2026-09-03",
@@ -1370,7 +1366,7 @@
         },
         {
           "date": "2026-09-10",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2026-09-11",
@@ -1378,7 +1374,7 @@
         },
         {
           "date": "2026-09-12",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2026-09-13",
@@ -1390,152 +1386,26 @@
         },
         {
           "date": "2026-09-15",
+          "count": 4
+        },
+        {
+          "date": "2026-09-16",
           "count": 2
         }
       ],
       "rank": 11,
-      "direction": "up",
-      "deltaRank": 5
-    },
-    {
-      "slug": "carbon-57",
-      "name": "Carbon 57",
-      "image": "/weapons/gold/Carbon 57.png",
-      "videoCount": 73,
-      "creatorCount": 45,
-      "viewCount": 114375,
-      "newestPublishedAt": "2026-09-15T08:42:20Z",
-      "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 2
-        },
-        {
-          "date": "2026-08-20",
-          "count": 1
-        },
-        {
-          "date": "2026-08-21",
-          "count": 5
-        },
-        {
-          "date": "2026-08-22",
-          "count": 5
-        },
-        {
-          "date": "2026-08-23",
-          "count": 2
-        },
-        {
-          "date": "2026-08-24",
-          "count": 3
-        },
-        {
-          "date": "2026-08-25",
-          "count": 3
-        },
-        {
-          "date": "2026-08-26",
-          "count": 5
-        },
-        {
-          "date": "2026-08-27",
-          "count": 0
-        },
-        {
-          "date": "2026-08-28",
-          "count": 1
-        },
-        {
-          "date": "2026-08-29",
-          "count": 0
-        },
-        {
-          "date": "2026-08-30",
-          "count": 4
-        },
-        {
-          "date": "2026-08-31",
-          "count": 3
-        },
-        {
-          "date": "2026-09-01",
-          "count": 0
-        },
-        {
-          "date": "2026-09-02",
-          "count": 0
-        },
-        {
-          "date": "2026-09-03",
-          "count": 4
-        },
-        {
-          "date": "2026-09-04",
-          "count": 3
-        },
-        {
-          "date": "2026-09-05",
-          "count": 3
-        },
-        {
-          "date": "2026-09-06",
-          "count": 3
-        },
-        {
-          "date": "2026-09-07",
-          "count": 3
-        },
-        {
-          "date": "2026-09-08",
-          "count": 3
-        },
-        {
-          "date": "2026-09-09",
-          "count": 0
-        },
-        {
-          "date": "2026-09-10",
-          "count": 5
-        },
-        {
-          "date": "2026-09-11",
-          "count": 3
-        },
-        {
-          "date": "2026-09-12",
-          "count": 2
-        },
-        {
-          "date": "2026-09-13",
-          "count": 5
-        },
-        {
-          "date": "2026-09-14",
-          "count": 3
-        },
-        {
-          "date": "2026-09-15",
-          "count": 2
-        }
-      ],
-      "rank": 12,
-      "direction": "down",
-      "deltaRank": -1
+      "direction": "stable",
+      "deltaRank": 0
     },
     {
       "slug": "m15-mod-0",
       "name": "M15 Mod 0",
       "image": "/weapons/gold/M15 Mod 0.png",
-      "videoCount": 20,
-      "creatorCount": 18,
-      "viewCount": 98002,
-      "newestPublishedAt": "2026-09-15T02:44:37Z",
+      "videoCount": 22,
+      "creatorCount": 19,
+      "viewCount": 101566,
+      "newestPublishedAt": "2026-09-16T01:00:03Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 1
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -1554,7 +1424,7 @@
         },
         {
           "date": "2026-08-24",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2026-08-25",
@@ -1642,12 +1512,16 @@
         },
         {
           "date": "2026-09-15",
-          "count": 2
+          "count": 5
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
         }
       ],
-      "rank": 13,
-      "direction": "down",
-      "deltaRank": -1
+      "rank": 12,
+      "direction": "up",
+      "deltaRank": 1
     },
     {
       "slug": "egrt-17",
@@ -1655,13 +1529,9 @@
       "image": "/weapons/gold/EGRT-17.png",
       "videoCount": 35,
       "creatorCount": 34,
-      "viewCount": 97002,
+      "viewCount": 98753,
       "newestPublishedAt": "2026-09-15T10:00:10Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -1769,25 +1639,151 @@
         {
           "date": "2026-09-15",
           "count": 1
+        },
+        {
+          "date": "2026-09-16",
+          "count": 0
+        }
+      ],
+      "rank": 13,
+      "direction": "up",
+      "deltaRank": 1
+    },
+    {
+      "slug": "carbon-57",
+      "name": "Carbon 57",
+      "image": "/weapons/gold/Carbon 57.png",
+      "videoCount": 77,
+      "creatorCount": 47,
+      "viewCount": 95980,
+      "newestPublishedAt": "2026-09-16T07:00:30Z",
+      "dailyVideos": [
+        {
+          "date": "2026-08-20",
+          "count": 1
+        },
+        {
+          "date": "2026-08-21",
+          "count": 5
+        },
+        {
+          "date": "2026-08-22",
+          "count": 5
+        },
+        {
+          "date": "2026-08-23",
+          "count": 2
+        },
+        {
+          "date": "2026-08-24",
+          "count": 3
+        },
+        {
+          "date": "2026-08-25",
+          "count": 3
+        },
+        {
+          "date": "2026-08-26",
+          "count": 6
+        },
+        {
+          "date": "2026-08-27",
+          "count": 0
+        },
+        {
+          "date": "2026-08-28",
+          "count": 1
+        },
+        {
+          "date": "2026-08-29",
+          "count": 0
+        },
+        {
+          "date": "2026-08-30",
+          "count": 4
+        },
+        {
+          "date": "2026-08-31",
+          "count": 3
+        },
+        {
+          "date": "2026-09-01",
+          "count": 0
+        },
+        {
+          "date": "2026-09-02",
+          "count": 2
+        },
+        {
+          "date": "2026-09-03",
+          "count": 3
+        },
+        {
+          "date": "2026-09-04",
+          "count": 3
+        },
+        {
+          "date": "2026-09-05",
+          "count": 3
+        },
+        {
+          "date": "2026-09-06",
+          "count": 3
+        },
+        {
+          "date": "2026-09-07",
+          "count": 3
+        },
+        {
+          "date": "2026-09-08",
+          "count": 3
+        },
+        {
+          "date": "2026-09-09",
+          "count": 3
+        },
+        {
+          "date": "2026-09-10",
+          "count": 4
+        },
+        {
+          "date": "2026-09-11",
+          "count": 3
+        },
+        {
+          "date": "2026-09-12",
+          "count": 2
+        },
+        {
+          "date": "2026-09-13",
+          "count": 5
+        },
+        {
+          "date": "2026-09-14",
+          "count": 3
+        },
+        {
+          "date": "2026-09-15",
+          "count": 3
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
         }
       ],
       "rank": 14,
-      "direction": "stable",
-      "deltaRank": 0
+      "direction": "down",
+      "deltaRank": -2
     },
     {
       "slug": "ds20-mirage",
       "name": "DS20 Mirage",
       "image": "/weapons/gold/DS20 Mirage.png",
-      "videoCount": 36,
-      "creatorCount": 32,
-      "viewCount": 88441,
-      "newestPublishedAt": "2026-09-15T14:30:28Z",
+      "videoCount": 32,
+      "creatorCount": 28,
+      "viewCount": 66977,
+      "newestPublishedAt": "2026-09-15T21:33:06Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 5
-        },
         {
           "date": "2026-08-20",
           "count": 2
@@ -1894,26 +1890,26 @@
         },
         {
           "date": "2026-09-15",
-          "count": 1
+          "count": 2
+        },
+        {
+          "date": "2026-09-16",
+          "count": 0
         }
       ],
       "rank": 15,
-      "direction": "down",
-      "deltaRank": -2
+      "direction": "stable",
+      "deltaRank": 0
     },
     {
       "slug": "ak-27",
       "name": "AK-27",
       "image": "/weapons/gold/AK-27.png",
-      "videoCount": 70,
-      "creatorCount": 45,
-      "viewCount": 60687,
-      "newestPublishedAt": "2026-09-15T12:00:32Z",
+      "videoCount": 68,
+      "creatorCount": 44,
+      "viewCount": 61596,
+      "newestPublishedAt": "2026-09-16T14:00:16Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 4
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -2021,25 +2017,25 @@
         {
           "date": "2026-09-15",
           "count": 3
+        },
+        {
+          "date": "2026-09-16",
+          "count": 2
         }
       ],
       "rank": 16,
-      "direction": "down",
-      "deltaRank": -1
+      "direction": "stable",
+      "deltaRank": 0
     },
     {
       "slug": "kogot-7",
       "name": "Kogot-7",
       "image": "/weapons/gold/Kogot-7.png",
-      "videoCount": 40,
-      "creatorCount": 34,
-      "viewCount": 49717,
-      "newestPublishedAt": "2026-09-15T16:50:49Z",
+      "videoCount": 39,
+      "creatorCount": 32,
+      "viewCount": 51626,
+      "newestPublishedAt": "2026-09-16T10:14:54Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 4
-        },
         {
           "date": "2026-08-20",
           "count": 4
@@ -2098,7 +2094,7 @@
         },
         {
           "date": "2026-09-03",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-09-04",
@@ -2118,7 +2114,7 @@
         },
         {
           "date": "2026-09-08",
-          "count": 2
+          "count": 3
         },
         {
           "date": "2026-09-09",
@@ -2146,6 +2142,10 @@
         },
         {
           "date": "2026-09-15",
+          "count": 3
+        },
+        {
+          "date": "2026-09-16",
           "count": 2
         }
       ],
@@ -2157,15 +2157,11 @@
       "slug": "voyak-kt-3",
       "name": "Voyak KT-3",
       "image": "/weapons/gold/Voyak KT-3.png",
-      "videoCount": 19,
-      "creatorCount": 13,
-      "viewCount": 34787,
-      "newestPublishedAt": "2026-09-15T02:45:43Z",
+      "videoCount": 20,
+      "creatorCount": 14,
+      "viewCount": 35134,
+      "newestPublishedAt": "2026-09-15T19:48:55Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 0
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -2272,7 +2268,11 @@
         },
         {
           "date": "2026-09-15",
-          "count": 1
+          "count": 2
+        },
+        {
+          "date": "2026-09-16",
+          "count": 0
         }
       ],
       "rank": 18,
@@ -2283,15 +2283,11 @@
       "slug": "razor-9mm",
       "name": "Razor 9mm",
       "image": "/weapons/gold/Razor 9mm.png",
-      "videoCount": 28,
+      "videoCount": 29,
       "creatorCount": 18,
-      "viewCount": 33742,
-      "newestPublishedAt": "2026-09-15T16:05:56Z",
+      "viewCount": 32627,
+      "newestPublishedAt": "2026-09-16T01:30:26Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 1
-        },
         {
           "date": "2026-08-20",
           "count": 1
@@ -2398,7 +2394,11 @@
         },
         {
           "date": "2026-09-15",
-          "count": 2
+          "count": 3
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
         }
       ],
       "rank": 19,
@@ -2409,15 +2409,11 @@
       "slug": "vx-compact",
       "name": "VX Compact",
       "image": "/weapons/gold/VX Compact.png",
-      "videoCount": 51,
+      "videoCount": 54,
       "creatorCount": 38,
-      "viewCount": 30773,
-      "newestPublishedAt": "2026-09-14T13:20:52Z",
+      "viewCount": 28842,
+      "newestPublishedAt": "2026-09-16T10:00:09Z",
       "dailyVideos": [
-        {
-          "date": "2026-08-19",
-          "count": 2
-        },
         {
           "date": "2026-08-20",
           "count": 2
@@ -2524,7 +2520,11 @@
         },
         {
           "date": "2026-09-15",
-          "count": 0
+          "count": 4
+        },
+        {
+          "date": "2026-09-16",
+          "count": 1
         }
       ],
       "rank": 20,
@@ -2533,31 +2533,6 @@
     }
   ],
   "history": [
-    {
-      "generatedAt": "2026-09-02T08:46:50Z",
-      "positions": {
-        "mpc-25": 1,
-        "rev-46": 2,
-        "cbrs-3": 3,
-        "vst": 4,
-        "mk35-isr": 5,
-        "m15-mod-0": 6,
-        "peacekeeper-mk1": 7,
-        "ryden-45k": 8,
-        "ds20-mirage": 9,
-        "fg42": 10,
-        "ak-27": 11,
-        "egrt-17": 12,
-        "rk-9": 13,
-        "an-94": 14,
-        "carbon-57": 15,
-        "sturmwolf-45": 16,
-        "kogot-7": 17,
-        "vx-compact": 18,
-        "razor-9mm": 19,
-        "voyak-kt-3": 20
-      }
-    },
     {
       "generatedAt": "2026-09-03T14:31:23Z",
       "positions": {
@@ -2875,6 +2850,31 @@
         "carbon-57": 12,
         "m15-mod-0": 13,
         "egrt-17": 14,
+        "ds20-mirage": 15,
+        "ak-27": 16,
+        "kogot-7": 17,
+        "voyak-kt-3": 18,
+        "razor-9mm": 19,
+        "vx-compact": 20
+      }
+    },
+    {
+      "generatedAt": "2026-09-16T14:28:00Z",
+      "positions": {
+        "mpc-25": 1,
+        "rev-46": 2,
+        "vst": 3,
+        "an-94": 4,
+        "mk35-isr": 5,
+        "ryden-45k": 6,
+        "rk-9": 7,
+        "sturmwolf-45": 8,
+        "peacekeeper-mk1": 9,
+        "fg42": 10,
+        "cbrs-3": 11,
+        "m15-mod-0": 12,
+        "egrt-17": 13,
+        "carbon-57": 14,
         "ds20-mirage": 15,
         "ak-27": 16,
         "kogot-7": 17,
