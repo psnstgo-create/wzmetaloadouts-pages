@@ -149,6 +149,34 @@ function renderHero(arma) {
     `;
 }
 
+function renderOfficialIntel(arma) {
+    const intel = arma.intel_oficial;
+    if (!intel) return '';
+    const specs = [
+        intel.niveles && ['Niveles', intel.niveles],
+        intel.cargadores && ['Cargadores', intel.cargadores],
+        intel.capacidad && ['Capacidad base', intel.capacidad]
+    ].filter(Boolean).map(([label, value]) => `<div class="official-intel-spec"><span>${escapeHtml(label)}</span><strong>${escapeHtml(String(value))}</strong></div>`).join('');
+    const details = [
+        intel.desbloqueo && ['Desbloqueo', intel.desbloqueo],
+        intel.detalle_prestigio && ['Accesorio de prestigio', intel.detalle_prestigio],
+        intel.camuflajes && ['Camuflajes de prestigio', intel.camuflajes]
+    ].filter(Boolean).map(([label, value]) => `<div><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></div>`).join('');
+    const accesorios = Array.isArray(intel.accesorios) && intel.accesorios.length
+        ? `<p class="official-intel-accessories"><b>Accesorios disponibles:</b> ${intel.accesorios.map(escapeHtml).join(' · ')}</p>` : '';
+    return `
+        <section class="official-intel">
+            <div class="official-intel-kicker">${escapeHtml(intel.etiqueta || 'Datos oficiales')}</div>
+            <h2>Información oficial de <span class="accent">${escapeHtml(arma.nombre)}</span></h2>
+            <p>${escapeHtml(intel.descripcion || '')}</p>
+            <div class="official-intel-specs">${specs}</div>
+            <div class="official-intel-details">${details}</div>
+            ${accesorios}
+            <a class="official-intel-source" href="${escapeHtml(intel.fuente_url)}" target="_blank" rel="noopener noreferrer">Ver fuente oficial de Activision ↗</a>
+            <p class="official-intel-note">Activision no publicó una tabla completa de daño, caída de daño o TTK para estas armas en las notas de lanzamiento; por eso no se estiman aquí.</p>
+        </section>`;
+}
+
 function findAttachmentLevel(attachments, slot, name) {
     const list = attachments && attachments[slot];
     if (!list) return '';
@@ -819,6 +847,7 @@ async function renderArmaPage(slug) {
         main.innerHTML =
             renderBreadcrumb(arma) +
             renderHero(arma) +
+            renderOfficialIntel(arma) +
             renderLoadoutsSection(arma, sharedClasses) +
             renderCommunityCta(arma, slug) +
             renderVideoSection(arma, video) +

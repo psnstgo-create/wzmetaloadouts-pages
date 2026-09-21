@@ -910,13 +910,20 @@ function _pintarTemporadaActual(t){
   const heroLink = document.getElementById('seasonHeroBanner');
   if (heroLink){
     heroLink.href = t.url || '/noticias';
-    heroLink.setAttribute('aria-label', `Temporada ${t.numero} de Warzone Black Ops 7`);
+    heroLink.setAttribute('aria-label', `Temporada ${t.numero} de Warzone Black Ops 7${t.nombre ? ` — ${t.nombre}` : ''}`);
     const img = heroLink.querySelector('img');
     if (img){
       const alt = t.alt || `Temporada ${t.numero} — Warzone Black Ops 7`;
       if (t.banner && img.getAttribute('src') !== t.banner) img.src = t.banner;
       img.alt = alt;
     }
+    let copy = heroLink.querySelector('.hero-banner-copy');
+    if (!copy) {
+      copy = document.createElement('span');
+      copy.className = 'hero-banner-copy';
+      heroLink.appendChild(copy);
+    }
+    copy.innerHTML = `<strong>Temporada ${t.numero}${t.nombre ? ` · ${t.nombre}` : ''}</strong><small>Warzone y Black Ops 7 · Ver novedades</small>`;
   }
   // etiqueta "TEMPORADA N" (puede haber más de una en la página)
   document.querySelectorAll('.season, [data-season-label]').forEach(el => {

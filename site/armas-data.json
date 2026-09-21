@@ -20592,6 +20592,92 @@
       "_ttk": null,
       "_refDist": null,
       "inMeta": false
+    },
+    "vmp": {
+      "nombre": "VMP",
+      "juego": "bo7",
+      "tipo": "Subfusil",
+      "rango": "Corto alcance",
+      "tier": null,
+      "ranking": null,
+      "pick_rate": "",
+      "imagen": "/weapons/gold/VMP.webp",
+      "icon_path": "/icons/attachments/vmp",
+      "stats": null,
+      "modos": [
+        "battle_royale",
+        "resurgence",
+        "clasificatorio"
+      ],
+      "loadouts": [],
+      "attachments": {},
+      "es_nuevo": true,
+      "es_buff": false,
+      "intel_oficial": {
+        "etiqueta": "Datos oficiales · Temporada 6",
+        "descripcion": "Subfusil automático de manejo rápido y alta cadencia. Activision lo presenta con daño y precisión fiables, con una caída de alcance ligera.",
+        "desbloqueo": "Pase de batalla gratis: completa la página 3. También tiene proyecto HVT en la página 3 y proyecto HVT del pase en la página 15.",
+        "detalle_prestigio": "Empuñadura trasera MFS Tactical Command Grip: mejora movilidad, control y estabilización del retroceso, además de la dispersión en postura táctica.",
+        "niveles": 35,
+        "cargadores": 4,
+        "capacidad": "40 balas",
+        "accesorios": [
+          "Mira",
+          "Boca de cañón",
+          "Cañón",
+          "Acople",
+          "Cargador",
+          "Empuñadura trasera",
+          "Culata",
+          "Láser",
+          "Modificaciones de disparo"
+        ],
+        "camuflajes": "Prestigio 1: Magma · Prestigio 2: Refract · Prestigio máximo: Llameante.",
+        "fuente_url": "https://www.callofduty.com/es/blog/2026/09/call-of-duty-black-ops-7-warzone-season-6-the-haunting-announcement"
+      }
+    },
+    "tr51-para": {
+      "nombre": "TR51 Para",
+      "juego": "bo7",
+      "tipo": "Fusil de asalto",
+      "rango": "Medio alcance",
+      "tier": null,
+      "ranking": null,
+      "pick_rate": "",
+      "imagen": "/weapons/gold/TR51-Para.webp",
+      "icon_path": "/icons/attachments/tr51-para",
+      "stats": null,
+      "modos": [
+        "battle_royale",
+        "resurgence",
+        "clasificatorio"
+      ],
+      "loadouts": [],
+      "attachments": {},
+      "es_nuevo": true,
+      "es_buff": false,
+      "intel_oficial": {
+        "etiqueta": "Datos oficiales · Temporada 6",
+        "descripcion": "Fusil de asalto semiautomático de gran daño y control sencillo a distancia. Su manejo es medio y puede convertirse a disparo automático.",
+        "desbloqueo": "Pase de batalla gratis: completa la página 6. También tiene proyecto HVT en la página 6 y proyecto HVT del pase en la página 12.",
+        "detalle_prestigio": "Cañón 18.5” MFS Fallen Angel: conversión automática de baja cadencia con más poder de parada y una mejora importante de la velocidad de bala, a cambio de parte del control.",
+        "niveles": 41,
+        "cargadores": 3,
+        "capacidad": "25 balas",
+        "accesorios": [
+          "Mira",
+          "Boca de cañón",
+          "Cañón",
+          "Acople",
+          "Cargador",
+          "Empuñadura trasera",
+          "Culata",
+          "Láser",
+          "Modificaciones de disparo"
+        ],
+        "camuflajes": "Prestigio 1: Rawhide · Prestigio 2: Cherished · Prestigio máximo: Jungle Party.",
+        "fuente_url": "https://www.callofduty.com/es/blog/2026/09/call-of-duty-black-ops-7-warzone-season-6-the-haunting-announcement"
+      }
     }
   }
 }
