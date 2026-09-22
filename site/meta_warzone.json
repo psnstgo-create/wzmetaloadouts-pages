@@ -2277,5 +2277,97 @@
         "codigo": "",
         "fuente": "",
         "timestamp": "2026-08-20 20:13"
+    },
+    {
+        "ranking": 1,
+        "arma": "VMP",
+        "imagen_url": "/weapons/gold/VMP.webp",
+        "categoria_tactica": "Corto Alcance",
+        "tipo_arma": "Subfusil",
+        "pick_rate": "24.9%",
+        "es_nuevo": true,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Muzzle",
+                "item": "LTI Stentorian Brake",
+                "nivel": "Pase de batalla S4"
+            },
+            {
+                "slot": "Barrel",
+                "item": "10.9\" Gambol Light Barrel",
+                "nivel": "30"
+            },
+            {
+                "slot": "Magazine",
+                "item": "Erudite Extended Mag",
+                "nivel": "10"
+            },
+            {
+                "slot": "Rear Grip",
+                "item": "MFS Tactical Command Grip",
+                "nivel": "Prestigio de arma"
+            },
+            {
+                "slot": "Stock",
+                "item": "Greaves Valour Pad",
+                "nivel": "8"
+            }
+        ],
+        "codigo": "S14-6K7PC-LL11",
+        "fuente": "Codmunity · VMP Warzone · 17 sep 2026",
+        "timestamp": "2026-09-22 09:00"
+    },
+    {
+        "ranking": 2,
+        "arma": "TR51 Para",
+        "imagen_url": "/weapons/gold/TR51-Para.webp",
+        "categoria_tactica": "Largo Alcance",
+        "tipo_arma": "Fusil de asalto",
+        "pick_rate": "8.7%",
+        "es_nuevo": true,
+        "es_buff": false,
+        "es_nerfeada": false,
+        "modos": [
+            "battle_royale",
+            "resurgence",
+            "clasificatorio"
+        ],
+        "attachments": [
+            {
+                "slot": "Optic",
+                "item": "Redwell 30-S 2x",
+                "nivel": "Universal"
+            },
+            {
+                "slot": "Muzzle",
+                "item": "Monolithic Suppressor",
+                "nivel": "37"
+            },
+            {
+                "slot": "Barrel",
+                "item": "17\" VAS Orsino Barrel",
+                "nivel": "26"
+            },
+            {
+                "slot": "Underbarrel",
+                "item": "VAS Convergence Foregrip",
+                "nivel": "Recompensa semanal"
+            },
+            {
+                "slot": "Fire Mods",
+                "item": "7.62 NATO Overpressured",
+                "nivel": "17"
+            }
+        ],
+        "codigo": "A17-21XVE-PJZ2E-3911",
+        "fuente": "Codmunity · TR51 Para Warzone · 21 sep 2026",
+        "timestamp": "2026-09-22 09:00"
     }
 ]

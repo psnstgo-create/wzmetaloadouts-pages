@@ -112,6 +112,9 @@ function tierBadgeClass(tier) {
 }
 
 function renderHero(arma) {
+    // La ficha siempre muestra el render dorado transparente. La portada puede
+    // elegir imagen_tornasol para destacar las incorporaciones de la temporada.
+    const heroImage = arma.imagen;
     const tierClass = tierBadgeClass(arma.tier);
     const tierBadge = arma.tier && arma.tier !== '—'
         ? `<span class="hero-badge ${tierClass}">TIER ${arma.tier}</span>`
@@ -142,7 +145,7 @@ function renderHero(arma) {
                 ${statsHtml}
             </div>
             <div class="weapon-hero-image">
-                <img src="${escapeHtml(arma.imagen)}" alt="${escapeHtml(arma.nombre)} Black Ops 7 Warzone"
+                <img src="${escapeHtml(heroImage)}" alt="${escapeHtml(arma.nombre)} Black Ops 7 Warzone"
                      onerror="this.style.opacity='0.3'">
             </div>
         </section>
@@ -164,6 +167,8 @@ function renderOfficialIntel(arma) {
     ].filter(Boolean).map(([label, value]) => `<div><b>${escapeHtml(label)}</b><span>${escapeHtml(value)}</span></div>`).join('');
     const accesorios = Array.isArray(intel.accesorios) && intel.accesorios.length
         ? `<p class="official-intel-accessories"><b>Accesorios disponibles:</b> ${intel.accesorios.map(escapeHtml).join(' · ')}</p>` : '';
+    const fuenteLabel = intel.fuente_label || 'Ver fuente oficial de Activision ↗';
+    const nota = intel.nota ? `<p class="official-intel-note">${escapeHtml(intel.nota)}</p>` : '';
     return `
         <section class="official-intel">
             <div class="official-intel-kicker">${escapeHtml(intel.etiqueta || 'Datos oficiales')}</div>
@@ -172,8 +177,8 @@ function renderOfficialIntel(arma) {
             <div class="official-intel-specs">${specs}</div>
             <div class="official-intel-details">${details}</div>
             ${accesorios}
-            <a class="official-intel-source" href="${escapeHtml(intel.fuente_url)}" target="_blank" rel="noopener noreferrer">Ver fuente oficial de Activision ↗</a>
-            <p class="official-intel-note">Activision no publicó una tabla completa de daño, caída de daño o TTK para estas armas en las notas de lanzamiento; por eso no se estiman aquí.</p>
+            <a class="official-intel-source" href="${escapeHtml(intel.fuente_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(fuenteLabel)}</a>
+            ${nota}
         </section>`;
 }
 

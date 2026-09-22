@@ -20597,25 +20597,365 @@
       "nombre": "VMP",
       "juego": "bo7",
       "tipo": "Subfusil",
-      "rango": "Corto alcance",
-      "tier": null,
-      "ranking": null,
-      "pick_rate": "",
-      "imagen": "/weapons/gold/VMP.webp",
+      "rango": "Corto Alcance",
+      "tier": "S",
+      "ranking": 1,
+      "pick_rate": "24.9%",
+      "imagen": "/weapons/gold/VMP.png",
       "icon_path": "/icons/attachments/vmp",
-      "stats": null,
+      "stats": {
+        "rpm": "952",
+        "ttk_cerca": "551 ms",
+        "vel_bala": "540 m/s",
+        "movilidad": "5.3 m/s"
+      },
       "modos": [
         "battle_royale",
         "resurgence",
         "clasificatorio"
       ],
-      "loadouts": [],
-      "attachments": {},
+      "loadouts": [
+        {
+          "id": "wz-corto-alcance",
+          "nombre": "Meta corto alcance",
+          "emoji": "⚡",
+          "codigo": "S14-6K7PC-LL11",
+          "modos": [
+            "battle_royale",
+            "resurgence"
+          ],
+          "descripcion": "Build de corto alcance de Codmunity (actualizado el 17 de septiembre): TTK medio de 551 ms entre 0–10 m y 718 ms entre 10–40 m.",
+          "items": [
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "LTI Stentorian Brake",
+              "level": "Pase de batalla S4"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "10.9\" Gambol Light Barrel",
+              "level": "30"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Erudite Extended Mag",
+              "level": "10"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "MFS Tactical Command Grip",
+              "level": "Prestigio de arma"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Greaves Valour Pad",
+              "level": "8"
+            }
+          ]
+        },
+        {
+          "id": "wz-sniper-support",
+          "nombre": "Apoyo de francotirador",
+          "emoji": "🎯",
+          "codigo": "S14-21WSG-KW34M-KN11",
+          "modos": [
+            "battle_royale"
+          ],
+          "descripcion": "Build de apoyo de francotirador de Codmunity: prioriza alcance útil y estabilidad para acompañar un arma de precisión.",
+          "items": [
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Bowen .45 Suppressor",
+              "level": "12"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "14.6\" Nocturnal-VI Barrel",
+              "level": "9"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "Sapper Guard Handstop",
+              "level": "33"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Dapple Capacity Mag",
+              "level": "35"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Modificaciones de disparo",
+              "name": "9mm Parabellum FMJ",
+              "level": "16"
+            }
+          ]
+        },
+        {
+          "id": "wz-clasificatorio",
+          "nombre": "Meta Ranked",
+          "emoji": "♛",
+          "codigo": "S14-A11S9-911",
+          "modos": [
+            "clasificatorio"
+          ],
+          "descripcion": "Build de Ranked de Codmunity: mantiene la movilidad y el manejo rápido para peleas a corta distancia.",
+          "items": [
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "LTI Stentorian Brake",
+              "level": "Pase de batalla S4"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "10.9\" Gambol Light Barrel",
+              "level": "30"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Erudite Extended Mag",
+              "level": "10"
+            },
+            {
+              "slot": "Rear Grip",
+              "label": "Empuñadura trasera",
+              "name": "MFS Tactical Command Grip",
+              "level": "Prestigio de arma"
+            },
+            {
+              "slot": "Stock",
+              "label": "Culata",
+              "name": "Greaves Valour Pad",
+              "level": "8"
+            }
+          ]
+        }
+      ],
+      "attachments": {
+        "Muzzle": [
+          {
+            "name": "LTI Stentorian Brake",
+            "label": "Fire Rate Brake",
+            "level": "Pase de batalla S4"
+          },
+          {
+            "name": "Bowen .45 Suppressor",
+            "label": "Suppressor",
+            "level": "12"
+          },
+          {
+            "name": "Hawker Stabilizer MK.II",
+            "label": "Muzzle Brake",
+            "level": "5"
+          },
+          {
+            "name": "Hawker Series 45",
+            "label": "Compensator",
+            "level": "19"
+          },
+          {
+            "name": "Hawker Hybrid .45",
+            "label": "Mobility Spread Muzzle",
+            "level": "27"
+          },
+          {
+            "name": "Monolithic Suppressor",
+            "label": "Firepower Suppressor",
+            "level": "31"
+          },
+          {
+            "name": "Redwell Shade-X Suppressor",
+            "label": "Recoil Suppressor",
+            "level": "Weekly Challenge Reward"
+          }
+        ],
+        "Barrel": [
+          {
+            "name": "10.9\" Gambol Light Barrel",
+            "label": "Short Barrel",
+            "level": "30"
+          },
+          {
+            "name": "14.6\" Nocturnal-VI Barrel",
+            "label": "Long Barrel",
+            "level": "9"
+          },
+          {
+            "name": "11.5\" Impaler Barrel",
+            "label": "Mid Range Barrel",
+            "level": "18"
+          },
+          {
+            "name": "13.4\" Quorum Velocity Barrel",
+            "label": "Handling Control Barrel",
+            "level": "23"
+          },
+          {
+            "name": "12\" Civet Barrel",
+            "label": "Hybrid Barrel",
+            "level": "34"
+          }
+        ],
+        "Underbarrel": [
+          {
+            "name": "Sapper Guard Handstop",
+            "label": "Mobile Recoil Foregrip",
+            "level": "33"
+          },
+          {
+            "name": "Vitalize Handstop",
+            "label": "Steady Sway Handstop",
+            "level": "2"
+          },
+          {
+            "name": "Respire Handstop",
+            "label": "Stable Focus Underbarrel",
+            "level": "6"
+          },
+          {
+            "name": "Force Stabilizer Handstop",
+            "label": "Recoil Control Foregrip",
+            "level": "20"
+          },
+          {
+            "name": "Quickstep Foregrip",
+            "label": "Mobility Foregrip",
+            "level": "28"
+          },
+          {
+            "name": "VAS Convergence Foregrip",
+            "label": "Bullet Deviation Foregrip",
+            "level": "Weekly Challenge Reward"
+          }
+        ],
+        "Magazine": [
+          {
+            "name": "Erudite Extended Mag",
+            "label": "Extended Mag I",
+            "level": "10"
+          },
+          {
+            "name": "Dapple Capacity Mag",
+            "label": "Extended Mag II",
+            "level": "35"
+          },
+          {
+            "name": "Regalia Fast Mag",
+            "label": "Fast Mag I",
+            "level": "4"
+          }
+        ],
+        "Rear Grip": [
+          {
+            "name": "MFS Tactical Command Grip",
+            "label": "Stabilization Grip",
+            "level": "Prestigio de arma"
+          },
+          {
+            "name": "Greaves Pacify Grip",
+            "label": "Quickdraw Grip",
+            "level": "7"
+          },
+          {
+            "name": "Plushed Poise Grip",
+            "label": "Sprint to Fire Grip",
+            "level": "14"
+          },
+          {
+            "name": "Venerate Rubber Grip",
+            "label": "Mobile Quickdraw Grip",
+            "level": "32"
+          }
+        ],
+        "Stock": [
+          {
+            "name": "Greaves Valour Pad",
+            "label": "ADS Movement Stock",
+            "level": "8"
+          },
+          {
+            "name": "Flout Heavy Pad",
+            "label": "Control Stock",
+            "level": "15"
+          },
+          {
+            "name": "Monarch Move Pad",
+            "label": "Mobility Stock",
+            "level": "21"
+          },
+          {
+            "name": "Tactician Spread Pad",
+            "label": "Tactical Spread Stock",
+            "level": "25"
+          }
+        ],
+        "Fire Mods": [
+          {
+            "name": "9mm Parabellum FMJ",
+            "label": "FMJ Ammo",
+            "level": "16"
+          },
+          {
+            "name": "Recoil Sync Unit",
+            "label": "Recoil Springs",
+            "level": "13"
+          },
+          {
+            "name": "Bolt Carrier Group",
+            "label": "Rapid Fire",
+            "level": "24"
+          },
+          {
+            "name": "9mm Parabellum Overpressured",
+            "label": "High-Velocity Ammo",
+            "level": "26"
+          }
+        ],
+        "Laser": [
+          {
+            "name": "5mW Lockstep Laser",
+            "label": "Strelok Laser",
+            "level": "3"
+          },
+          {
+            "name": "1mW Instinct Laser Array",
+            "label": "Handling Laser",
+            "level": "11"
+          },
+          {
+            "name": "3mW Motion Strike Laser",
+            "label": "Stable Laser",
+            "level": "17"
+          },
+          {
+            "name": "Convergence Box Laser",
+            "label": "Steady Aim Laser",
+            "level": "22"
+          },
+          {
+            "name": "2mW Adaptive Tactical Laser",
+            "label": "Tactical Laser",
+            "level": "29"
+          }
+        ]
+      },
       "es_nuevo": true,
       "es_buff": false,
       "intel_oficial": {
-        "etiqueta": "Datos oficiales · Temporada 6",
-        "descripcion": "Subfusil automático de manejo rápido y alta cadencia. Activision lo presenta con daño y precisión fiables, con una caída de alcance ligera.",
+        "etiqueta": "Datos de arma · Codmunity",
+        "descripcion": "Codmunity sitúa a la VMP como meta absoluto de corto alcance en Warzone, con 24,9 % de uso registrado.",
         "desbloqueo": "Pase de batalla gratis: completa la página 3. También tiene proyecto HVT en la página 3 y proyecto HVT del pase en la página 15.",
         "detalle_prestigio": "Empuñadura trasera MFS Tactical Command Grip: mejora movilidad, control y estabilización del retroceso, además de la dispersión en postura táctica.",
         "niveles": 35,
@@ -20633,37 +20973,418 @@
           "Modificaciones de disparo"
         ],
         "camuflajes": "Prestigio 1: Magma · Prestigio 2: Refract · Prestigio máximo: Llameante.",
-        "fuente_url": "https://www.callofduty.com/es/blog/2026/09/call-of-duty-black-ops-7-warzone-season-6-the-haunting-announcement"
+        "fuente_url": "https://codmunity.gg/weapon/bo7/vmp",
+        "fuente_label": "Ver build y estadísticas en Codmunity ↗"
       },
       "_autoRank": null,
       "_catRank": null,
       "_ttk": null,
       "_refDist": null,
-      "inMeta": false
+      "inMeta": false,
+      "imagen_tornasol": "/weapons/iridescent/VMP.webp",
+      "fuente_datos": "https://codmunity.gg/weapon/bo7/vmp"
     },
     "tr51-para": {
       "nombre": "TR51 Para",
       "juego": "bo7",
       "tipo": "Fusil de asalto",
-      "rango": "Medio alcance",
-      "tier": null,
-      "ranking": null,
-      "pick_rate": "",
-      "imagen": "/weapons/gold/TR51-Para.webp",
+      "rango": "Largo Alcance",
+      "tier": "A",
+      "ranking": 2,
+      "pick_rate": "8.7%",
+      "imagen": "/weapons/gold/TR51-Para.png",
       "icon_path": "/icons/attachments/tr51-para",
-      "stats": null,
+      "stats": {
+        "rpm": "625",
+        "ttk_cerca": "384 ms",
+        "vel_bala": "890 m/s",
+        "movilidad": "4.7 m/s"
+      },
       "modos": [
         "battle_royale",
         "resurgence",
         "clasificatorio"
       ],
-      "loadouts": [],
-      "attachments": {},
+      "loadouts": [
+        {
+          "id": "wz-largo-alcance",
+          "nombre": "Meta largo alcance",
+          "emoji": "🎯",
+          "codigo": "A17-21XVE-PJZ2E-3911",
+          "modos": [
+            "battle_royale",
+            "resurgence"
+          ],
+          "descripcion": "Build de largo alcance de Codmunity (actualizado el 21 de septiembre): TTK medio de 384 ms hasta 40 m y 386 ms entre 40–80 m.",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "Redwell 30-S 2x",
+              "level": "Universal"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Monolithic Suppressor",
+              "level": "37"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "17\" VAS Orsino Barrel",
+              "level": "26"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip",
+              "level": "Recompensa semanal"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Modificaciones de disparo",
+              "name": "7.62 NATO Overpressured",
+              "level": "17"
+            }
+          ]
+        },
+        {
+          "id": "wz-conversion",
+          "nombre": "Conversión automática",
+          "emoji": "⚙",
+          "codigo": "A17-23YA9-1HMD5-11",
+          "modos": [
+            "battle_royale",
+            "resurgence"
+          ],
+          "descripcion": "Alternativa automática de largo alcance de Codmunity; usa el cañón de conversión y cargador ampliado para fuego sostenido.",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "Redwell 30-S 2x",
+              "level": "Universal"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Monolithic Suppressor",
+              "level": "37"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "18.5\" MFS Fallen Angel Barrel",
+              "level": "Prestigio de arma"
+            },
+            {
+              "slot": "Underbarrel",
+              "label": "Acople",
+              "name": "VAS Convergence Foregrip",
+              "level": "Recompensa semanal"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Veruca Extended Mag",
+              "level": "13"
+            }
+          ]
+        },
+        {
+          "id": "wz-clasificatorio",
+          "nombre": "Meta Ranked",
+          "emoji": "♛",
+          "codigo": "A17-21XVE-G8E3T-I311",
+          "modos": [
+            "clasificatorio"
+          ],
+          "descripcion": "Build de Ranked de Codmunity: la conversión automática combina supresor, cargador ampliado y munición de alta velocidad.",
+          "items": [
+            {
+              "slot": "Optic",
+              "label": "Mira",
+              "name": "Redwell 30-S 2x",
+              "level": "Universal"
+            },
+            {
+              "slot": "Muzzle",
+              "label": "Boca de cañón",
+              "name": "Monolithic Suppressor",
+              "level": "37"
+            },
+            {
+              "slot": "Barrel",
+              "label": "Cañón",
+              "name": "18.5\" MFS Fallen Angel Barrel",
+              "level": "Prestigio de arma"
+            },
+            {
+              "slot": "Magazine",
+              "label": "Cargador",
+              "name": "Veruca Extended Mag",
+              "level": "13"
+            },
+            {
+              "slot": "Fire Mods",
+              "label": "Modificaciones de disparo",
+              "name": "7.62 NATO Overpressured",
+              "level": "17"
+            }
+          ]
+        }
+      ],
+      "attachments": {
+        "Optic": [
+          {
+            "name": "Redwell 30-S 2x",
+            "label": "2x Optic",
+            "level": "Universal"
+          }
+        ],
+        "Muzzle": [
+          {
+            "name": "Monolithic Suppressor",
+            "label": "Firepower Suppressor",
+            "level": "37"
+          },
+          {
+            "name": "Greaves TI-762",
+            "label": "Suppressor",
+            "level": "6"
+          },
+          {
+            "name": "Redwell 7.62 Brake",
+            "label": "Muzzle Brake",
+            "level": "12"
+          },
+          {
+            "name": "RL-7.62 Compensator",
+            "label": "Compensator",
+            "level": "23"
+          },
+          {
+            "name": "Titan-R 7.62 Compensator",
+            "label": "Mobility Spread Muzzle",
+            "level": "30"
+          },
+          {
+            "name": "LTI Stentorian Brake",
+            "label": "Fire Rate Brake",
+            "level": "Season 4 Battle Pass"
+          },
+          {
+            "name": "Redwell Shade-X Suppressor",
+            "label": "Recoil Suppressor",
+            "level": "Weekly Challenge Reward"
+          }
+        ],
+        "Barrel": [
+          {
+            "name": "17\" VAS Orsino Barrel",
+            "label": "Control Barrel",
+            "level": "26"
+          },
+          {
+            "name": "18.5\" MFS Fallen Angel Barrel",
+            "label": "Full-Auto Conversion",
+            "level": "Prestigio de arma"
+          },
+          {
+            "name": "20\" Sufferance Barrel",
+            "label": "Long Barrel",
+            "level": "2"
+          },
+          {
+            "name": "15.6\" Bowen Talarion Barrel",
+            "label": "Short Barrel",
+            "level": "20"
+          },
+          {
+            "name": "16\" Cepheid Barrel",
+            "label": "Hybrid Barrel",
+            "level": "35"
+          }
+        ],
+        "Underbarrel": [
+          {
+            "name": "VAS Convergence Foregrip",
+            "label": "Bullet Deviation Foregrip",
+            "level": "Recompensa semanal"
+          },
+          {
+            "name": "Sentry Pro Handstop",
+            "label": "Steady Sway Handstop",
+            "level": "4"
+          },
+          {
+            "name": "M335-X Frag",
+            "label": "Launcher - Standard",
+            "level": "5"
+          },
+          {
+            "name": "M335-X Drill Charge",
+            "label": "Launcher - Drill Charge",
+            "level": "11"
+          },
+          {
+            "name": "M335-X Tempest",
+            "label": "Launcher - High Explosive",
+            "level": "16"
+          },
+          {
+            "name": "Lateral Precision Grip",
+            "label": "Recoil Control Foregrip",
+            "level": "18"
+          },
+          {
+            "name": "Enhance-32 Handstop",
+            "label": "Stable Focus Underbarrel",
+            "level": "22"
+          },
+          {
+            "name": "M335-X Cloak",
+            "label": "Launcher - Smoke",
+            "level": "27"
+          },
+          {
+            "name": "EAM Steady-90 Grip",
+            "label": "Mobile Recoil Foregrip",
+            "level": "31"
+          },
+          {
+            "name": "Quickstep Foregrip",
+            "label": "Mobility Foregrip",
+            "level": "38"
+          }
+        ],
+        "Magazine": [
+          {
+            "name": "Veruca Extended Mag",
+            "label": "Extended Mag I",
+            "level": "13"
+          },
+          {
+            "name": "Fulcrum Flip Mag",
+            "label": "Flip Mag",
+            "level": "7"
+          },
+          {
+            "name": "Carus Capacity Mag",
+            "label": "Extended Mag II",
+            "level": "28"
+          }
+        ],
+        "Fire Mods": [
+          {
+            "name": "7.62 NATO FMJ",
+            "label": "FMJ Ammo",
+            "level": "9"
+          },
+          {
+            "name": "7.62 NATO Overpressured",
+            "label": "High-Velocity Ammo",
+            "level": "17"
+          },
+          {
+            "name": "Bolt Carrier Group",
+            "label": "Rapid Fire",
+            "level": "32"
+          },
+          {
+            "name": "Buffer Spring",
+            "label": "Recoil Springs",
+            "level": "41"
+          }
+        ],
+        "Laser": [
+          {
+            "name": "Convergence Box Laser",
+            "label": "Steady Aim Laser",
+            "level": "3"
+          },
+          {
+            "name": "5mW Lockstep Laser",
+            "label": "Strelok Laser",
+            "level": "15"
+          },
+          {
+            "name": "2mW Adaptive Tactical Laser",
+            "label": "Tactical Laser",
+            "level": "21"
+          },
+          {
+            "name": "1mW Instinct Laser Array",
+            "label": "Handling Laser",
+            "level": "25"
+          },
+          {
+            "name": "3mW Motion Strike Laser",
+            "label": "Stable Laser",
+            "level": "34"
+          }
+        ],
+        "Rear Grip": [
+          {
+            "name": "EAM Alacrity Grip",
+            "label": "Quickdraw Grip",
+            "level": "8"
+          },
+          {
+            "name": "Disposed Grip",
+            "label": "Sprint to Fire Grip",
+            "level": "19"
+          },
+          {
+            "name": "Pontil-246 Grip",
+            "label": "Accuracy Grip",
+            "level": "24"
+          },
+          {
+            "name": "Argos Precision Grip",
+            "label": "Mobile Quickdraw Grip",
+            "level": "33"
+          },
+          {
+            "name": "Syndicate Grip",
+            "label": "Stabilization Grip",
+            "level": "39"
+          }
+        ],
+        "Stock": [
+          {
+            "name": "Ashford Heavy Stock",
+            "label": "Control Stock",
+            "level": "10"
+          },
+          {
+            "name": "Dissident Full Stock",
+            "label": "Heavy Stock",
+            "level": "14"
+          },
+          {
+            "name": "No Stock",
+            "label": "ADS Movement Stock",
+            "level": "29"
+          },
+          {
+            "name": "Talisman Light Stock",
+            "label": "Mobility Stock",
+            "level": "36"
+          },
+          {
+            "name": "Lilith Tactical Stock",
+            "label": "Tactical Spread Stock",
+            "level": "40"
+          }
+        ]
+      },
       "es_nuevo": true,
       "es_buff": false,
       "intel_oficial": {
-        "etiqueta": "Datos oficiales · Temporada 6",
-        "descripcion": "Fusil de asalto semiautomático de gran daño y control sencillo a distancia. Su manejo es medio y puede convertirse a disparo automático.",
+        "etiqueta": "Datos de arma · Codmunity",
+        "descripcion": "Codmunity clasifica a la TR51 Para como meta de largo alcance en Warzone, con 8,7 % de uso registrado.",
         "desbloqueo": "Pase de batalla gratis: completa la página 6. También tiene proyecto HVT en la página 6 y proyecto HVT del pase en la página 12.",
         "detalle_prestigio": "Cañón 18.5” MFS Fallen Angel: conversión automática de baja cadencia con más poder de parada y una mejora importante de la velocidad de bala, a cambio de parte del control.",
         "niveles": 41,
@@ -20681,13 +21402,16 @@
           "Modificaciones de disparo"
         ],
         "camuflajes": "Prestigio 1: Rawhide · Prestigio 2: Cherished · Prestigio máximo: Jungle Party.",
-        "fuente_url": "https://www.callofduty.com/es/blog/2026/09/call-of-duty-black-ops-7-warzone-season-6-the-haunting-announcement"
+        "fuente_url": "https://codmunity.gg/weapon/bo7/tr51-para",
+        "fuente_label": "Ver build y estadísticas en Codmunity ↗"
       },
       "_autoRank": null,
       "_catRank": null,
       "_ttk": null,
       "_refDist": null,
-      "inMeta": false
+      "inMeta": false,
+      "imagen_tornasol": "/weapons/iridescent/TR51-Para.webp",
+      "fuente_datos": "https://codmunity.gg/weapon/bo7/tr51-para"
     }
   }
 }
