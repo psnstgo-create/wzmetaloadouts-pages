@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2026-08-20T21:47:24.748694+00:00",
-  "total_patches": 7,
+  "ultima_actualizacion": "2026-09-21T18:12:26.708277+00:00",
+  "total_patches": 8,
   "patches": {
     "b5513b27fe9f9141": {
       "id": "b5513b27fe9f9141",
@@ -451,6 +451,139 @@
           "nombre": "Strider 300",
           "tipo_cambio": "buff",
           "extracto": "25\" Bowen Grooved Barrel reduce la penalización ADS 11%→7%; .300 WM Overpressured mejora velocidad de bala 18%→22%.",
+          "clasificado_por": "verificacion-manual-oficial"
+        }
+      ],
+      "scrape_status": "verificado-manual-oficial",
+      "notificado": false,
+      "es_urgente": true
+    },
+    "48e3fc842947e5a1": {
+      "id": "48e3fc842947e5a1",
+      "url": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+      "titulo": "Call of Duty: Warzone Season 06 Patch Notes",
+      "tipo": "season_launch",
+      "fecha_publicacion": "Wed, 16 Sep 2026 00:00:00 GMT",
+      "fecha_detectada": "2026-09-21T18:12:26.708215+00:00",
+      "descripcion": "Balance oficial de armas de Season 6.",
+      "armas_afectadas": [
+        {
+          "slug": "an-94",
+          "nombre": "AN-94",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño máximo 41→38 y alcance 45→38 m; daño medio 37→34 hasta 52 m; daño mínimo 33→31 (todos los modos). Multiplicador de cabeza 1,3x→1,2x; retroceso +12 %, velocidad de bala 920→890 m/s y ADS 235→245 ms (BR/Resurgence). El cañón 15\" Benthic reduce sus bonificaciones de velocidad de bala 20 %→15 % y control de retroceso 25 %→15 % (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "ds20-mirage",
+          "nombre": "DS20 Mirage",
+          "tipo_cambio": "buff",
+          "extracto": "Retroceso reducido 10 % y velocidad de bala 900→915 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "egrt-17",
+          "nombre": "EGRT-17",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 35→36 y daño medio 31→32; el tramo medio llega hasta 60 m (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "m15-mod-0",
+          "nombre": "M15 MOD 0",
+          "tipo_cambio": "buff",
+          "extracto": "Daño medio 26→27 y daño mínimo 24→25; multiplicador de cabeza 1,31x→1,4x (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mk35-isr",
+          "nombre": "MK35 ISR",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño máximo 39→38 y mínimo 33→31; velocidad de bala 920→910 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "voyak-kt-3",
+          "nombre": "Voyak KT-3",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 39→42, medio 34→37 y mínimo 30→32; retroceso reducido 8 % y velocidad de bala 900→910 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "vx-compact",
+          "nombre": "VX Compact",
+          "tipo_cambio": "buff",
+          "extracto": "Daño medio 23→24 y retroceso horizontal reducido 10 % (BR/Resurgence). Cañón 13\" Promontory: control de retroceso 20 %→28 % y velocidad de bala 10 %→20 %; Recoil Sync Unit 10 %→15 % de control vertical (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mpc-25",
+          "nombre": "MPC-25",
+          "tipo_cambio": "buff",
+          "extracto": "Alcance máximo 13→13,5 m; desviación de retroceso −8 % y retroceso vertical −10 % (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "rev-46",
+          "nombre": "REV-46",
+          "tipo_cambio": "nerf",
+          "extracto": "Alcance máximo 12,8→12,2 m (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "sturmwolf-45",
+          "nombre": "Sturmwolf 45",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 47→48 (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "vst",
+          "nombre": "VST",
+          "tipo_cambio": "nerf",
+          "extracto": "Daño máximo 29→27, medio 27→24 y mínimo 22→19; ADS 155→165 ms (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "mk-78",
+          "nombre": "MK.78",
+          "tipo_cambio": "buff",
+          "extracto": "Daño mínimo 28→29 a más de 68 m (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "sokol-545",
+          "nombre": "Sokol 545",
+          "tipo_cambio": "buff",
+          "extracto": "Daño máximo 44→47 y mínimo 35→36 (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "xm325",
+          "nombre": "XM325",
+          "tipo_cambio": "buff",
+          "extracto": "Multiplicador de cabeza 1,2x→1,3x y retroceso reducido 8 % (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "echo-12",
+          "nombre": "Echo 12",
+          "tipo_cambio": "buff",
+          "extracto": "Segundo tramo de alcance ampliado de 6→6,5 m (todos los modos).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "m10-breacher",
+          "nombre": "M10 Breacher",
+          "tipo_cambio": "buff",
+          "extracto": "Rangos ampliados: 0–2 m, 2–8,3 m, 8,3–9,3 m y más de 9,3 m; velocidad de bala 320→450 m/s (BR/Resurgence).",
+          "clasificado_por": "verificacion-manual-oficial"
+        },
+        {
+          "slug": "sg-12",
+          "nombre": "SG-12",
+          "tipo_cambio": "buff",
+          "extracto": "Alcance máximo 3→3,5 m y velocidad de bala 320→450 m/s (BR/Resurgence).",
           "clasificado_por": "verificacion-manual-oficial"
         }
       ],

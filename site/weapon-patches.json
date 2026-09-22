@@ -2,9 +2,9 @@
   "_meta": {
     "descripcion": "Historial oficial de cambios buff/nerf por arma. Cada entrada cita la fuente verificable.",
     "fuente_oficial": "Treyarch / Raven Software · publicado en callofduty.com/patchnotes",
-    "ultima_actualizacion": "2026-08-20",
-    "cobertura": "Season 1 (4 dic 2025) hasta Season 5 Reloaded (19 ago 2026), incluyendo los parches Reloaded disponibles",
-    "armas_incluidas": 33,
+    "ultima_actualizacion": "2026-09-16",
+    "cobertura": "Season 1 (4 dic 2025) hasta Season 6 (16 sep 2026), incluyendo los parches Reloaded disponibles",
+    "armas_incluidas": 37,
     "armas_top_15": [
       "ak-27",
       "ds20-mirage",
@@ -257,6 +257,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2025/12/call-of-duty-black-ops-7-season-01-patch-notes"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Retroceso reducido 10 % y velocidad de bala 900→915 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -489,6 +506,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/04/call-of-duty-black-ops-7-season-03-patch-notes"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo 39→38 y mínimo 33→31; velocidad de bala 920→910 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -602,6 +636,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 39→42, medio 34→37 y mínimo 30→32; retroceso reducido 8 % y velocidad de bala 900→910 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -875,6 +926,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/02/call-of-duty-warzone-season-02-patch-notes"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño mínimo 28→29 a más de 68 m (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1103,6 +1171,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/01/call-of-duty-bo7-warzone-season-01-reloaded-patch-notes"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo 29→27, medio 27→24 y mínimo 22→19; ADS 155→165 ms (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1354,6 +1439,31 @@
         "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
         "auto_detectado": true,
         "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Daño máximo 41→38 y alcance 45→38 m; daño medio 37→34 hasta 52 m; daño mínimo 33→31 (todos los modos)."
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "Multiplicador de cabeza 1,3x→1,2x; retroceso +12 %, velocidad de bala 920→890 m/s y ADS 235→245 ms (BR/Resurgence)."
+          },
+          {
+            "tipo": "nerf",
+            "descripcion": "El cañón 15\" Benthic reduce sus bonificaciones de velocidad de bala 20 %→15 % y control de retroceso 25 %→15 % (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1396,6 +1506,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "nerf",
+            "descripcion": "Alcance máximo 12,8→12,2 m (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
         "verificado_manual": true
       }
     ]
@@ -1442,6 +1569,27 @@
         "fuente": "https://www.callofduty.com/patchnotes/2026/06/call-of-duty-bo7-warzone-season-04-reloaded-patch-notes",
         "auto_detectado": true,
         "fecha_lanzamiento": "2026-06-25"
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño medio 23→24 y retroceso horizontal reducido 10 % (BR/Resurgence)."
+          },
+          {
+            "tipo": "buff",
+            "descripcion": "Cañón 13\" Promontory: control de retroceso 20 %→28 % y velocidad de bala 10 %→20 %; Recoil Sync Unit 10 %→15 % de control vertical (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1531,6 +1679,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 47→48 (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
         "verificado_manual": true
       }
     ]
@@ -1683,7 +1848,7 @@
     ]
   },
   "m15-mod-0": {
-    "nombre": "M15 Mod 0",
+    "nombre": "M15 MOD 0",
     "patches": [
       {
         "season": "Season 5 Reloaded",
@@ -1726,6 +1891,23 @@
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/07/call-of-duty-bo7-warzone-season-05-patch-notes",
         "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño medio 26→27 y daño mínimo 24→25; multiplicador de cabeza 1,31x→1,4x (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1751,6 +1933,23 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 35→36 y daño medio 31→32; el tramo medio llega hasta 60 m (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
         "auto_detectado": false,
         "verificado_manual": true
       }
@@ -1826,6 +2025,23 @@
         "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
         "auto_detectado": false,
         "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Alcance máximo 13→13,5 m; desviación de retroceso −8 % y retroceso vertical −10 % (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1875,6 +2091,23 @@
         "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
         "auto_detectado": false,
         "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Rangos ampliados: 0–2 m, 2–8,3 m, 8,3–9,3 m y más de 9,3 m; velocidad de bala 320→450 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
       }
     ]
   },
@@ -1900,6 +2133,89 @@
           }
         ],
         "fuente": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      },
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Alcance máximo 3→3,5 m y velocidad de bala 320→450 m/s (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "sokol-545": {
+    "nombre": "Sokol 545",
+    "patches": [
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Daño máximo 44→47 y mínimo 35→36 (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "xm325": {
+    "nombre": "XM325",
+    "patches": [
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Multiplicador de cabeza 1,2x→1,3x y retroceso reducido 8 % (BR/Resurgence)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+        "auto_detectado": false,
+        "verificado_manual": true
+      }
+    ]
+  },
+  "echo-12": {
+    "nombre": "Echo 12",
+    "patches": [
+      {
+        "season": "Season 6",
+        "fecha": "2026-09-16",
+        "modos_afectados": [
+          "Battle Royale",
+          "Resurgence"
+        ],
+        "cambios": [
+          {
+            "tipo": "buff",
+            "descripcion": "Segundo tramo de alcance ampliado de 6→6,5 m (todos los modos)."
+          }
+        ],
+        "fuente": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
         "auto_detectado": false,
         "verificado_manual": true
       }

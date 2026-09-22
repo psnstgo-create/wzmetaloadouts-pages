@@ -32,9 +32,9 @@
       "vx-compact"
     ],
     "nota_nombres": "razor-9mm: catalogo lo llama 'Razor 9mm', in-game 'Razor de 9 mm' (mismo slug). vst: catalogo 'VST', in-game 'Cincelador VST'. 1911 -> slug catalogo '1911-pistol'.",
-    "ultimo_parche_aplicado": "2026-08-19",
-    "fuente_ultimo_parche": "https://www.callofduty.com/patchnotes/2026/08/call-of-duty-bo7-warzone-season-05-reloaded-patch-notes",
-    "nota_parche": "Solo se aplicaron cifras explícitas de Raven. Los valores por parte del cuerpo que el parche no publica requieren una nueva captura en la Armería."
+    "ultimo_parche_aplicado": "2026-09-16",
+    "fuente_ultimo_parche": "https://www.callofduty.com/patchnotes/2026/09/call-of-duty-bo7-warzone-season-06-patch-notes",
+    "nota_parche": "Se aplicaron exclusivamente las cifras explícitas de Raven para Season 6. Las zonas de impacto que la nota no desglosa conservan la captura de Armería; no se estiman valores nuevos."
   },
   "armas": {
     "1911-pistol": {
@@ -311,7 +311,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 606,
-        "velocidad_balas_ms": 900.0
+        "velocidad_balas_ms": 915
       },
       "precision": {
         "dispersion_cadera_max": 8.15,
@@ -552,7 +552,7 @@
       "dano_por_parte": {
         "cabeza": {
           "valor": 41,
-          "multiplicador": "x1.3"
+          "multiplicador": "x1.4"
         },
         "cuello_pecho_alto": 35,
         "pecho": 35,
@@ -565,15 +565,15 @@
       "alcance_dano": [
         {
           "distancia_m": "0-42",
-          "dano": 32
+          "dano": 33
         },
         {
           "distancia_m": "42-60",
-          "dano": 25
+          "dano": 27
         },
         {
           "distancia_m": "60+",
-          "dano": 24
+          "dano": 25
         }
       ]
     },
@@ -703,11 +703,11 @@
       "alcance_dano": [
         {
           "distancia_m": "0-42",
-          "dano": 35
+          "dano": 36
         },
         {
-          "distancia_m": "45-60",
-          "dano": 31
+          "distancia_m": "42-60",
+          "dano": 32
         },
         {
           "distancia_m": "60+",
@@ -725,7 +725,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 659,
-        "velocidad_balas_ms": 900.0
+        "velocidad_balas_ms": 910
       },
       "precision": {
         "dispersion_cadera_max": 7.75,
@@ -771,16 +771,16 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-41",
-          "dano": 38
+          "distancia_m": "0-40",
+          "dano": 42
         },
         {
-          "distancia_m": "41-60",
-          "dano": 34
+          "distancia_m": "40-60",
+          "dano": 37
         },
         {
           "distancia_m": "60+",
-          "dano": 30
+          "dano": 32
         }
       ]
     },
@@ -845,7 +845,7 @@
         },
         {
           "distancia_m": "38-55",
-          "dano": 23
+          "dano": 24
         },
         {
           "distancia_m": "55+",
@@ -1234,11 +1234,11 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-13",
+          "distancia_m": "0-13.5",
           "dano": 42
         },
         {
-          "distancia_m": "13-23.5",
+          "distancia_m": "13.5-23.5",
           "dano": 37
         },
         {
@@ -1718,7 +1718,7 @@
       "alcance_dano": [
         {
           "distancia_m": "0-13.8",
-          "dano": 47
+          "dano": 48
         },
         {
           "distancia_m": "13.8-23.2",
@@ -1786,15 +1786,15 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-12",
+          "distancia_m": "0-12.2",
           "dano": 26
         },
         {
-          "distancia_m": "12-21",
+          "distancia_m": "12.2-22.5",
           "dano": 21
         },
         {
-          "distancia_m": "21+",
+          "distancia_m": "22.5+",
           "dano": 18
         }
       ]
@@ -1833,7 +1833,7 @@
       },
       "manejo": {
         "recarga_ms": 2184,
-        "ads_ms": 155,
+        "ads_ms": 165,
         "ads_saltar_ms": 200,
         "esprintar_disparar_ms": 100,
         "deslizarse_disparar_ms": 220,
@@ -1855,16 +1855,16 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-13.6",
-          "dano": 29
-        },
-        {
-          "distancia_m": "13.6-22.5",
+          "distancia_m": "0-12.8",
           "dano": 27
         },
         {
+          "distancia_m": "12.8-22.5",
+          "dano": 24
+        },
+        {
           "distancia_m": "22.5+",
-          "dano": 22
+          "dano": 19
         }
       ]
     },
@@ -1947,7 +1947,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 750,
-        "velocidad_balas_ms": 920.0
+        "velocidad_balas_ms": 910
       },
       "precision": {
         "dispersion_cadera_max": 7.85,
@@ -1994,7 +1994,7 @@
       "alcance_dano": [
         {
           "distancia_m": "0-42",
-          "dano": 39
+          "dano": 38
         },
         {
           "distancia_m": "42-58",
@@ -2724,7 +2724,7 @@
       "dano_por_parte": {
         "cabeza": {
           "valor": 31,
-          "multiplicador": "x1.2"
+          "multiplicador": "x1.3"
         },
         "cuello_pecho_alto": 27,
         "pecho": 27,
@@ -2810,7 +2810,7 @@
         },
         {
           "distancia_m": "68+",
-          "dano": 28
+          "dano": 29
         }
       ]
     },
@@ -2871,7 +2871,7 @@
       "alcance_dano": [
         {
           "distancia_m": "0-45",
-          "dano": 44
+          "dano": 47
         },
         {
           "distancia_m": "45-62",
@@ -2879,7 +2879,7 @@
         },
         {
           "distancia_m": "62+",
-          "dano": 35
+          "dano": 36
         }
       ]
     },
@@ -3014,19 +3014,19 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-3",
+          "distancia_m": "0-2.55",
           "dano": 38
         },
         {
-          "distancia_m": "3-6",
+          "distancia_m": "2.55-6.5",
           "dano": 35
         },
         {
-          "distancia_m": "6-9",
+          "distancia_m": "6.5-9",
           "dano": 29
         },
         {
-          "distancia_m": "9-24",
+          "distancia_m": "9+",
           "dano": 15
         }
       ]
@@ -3042,7 +3042,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 76,
-        "velocidad_balas_ms": 320.0
+        "velocidad_balas_ms": 450
       },
       "precision": {
         "dispersion_cadera_max": 11.5,
@@ -3092,15 +3092,15 @@
           "dano": 60
         },
         {
-          "distancia_m": "2-8",
+          "distancia_m": "2-8.3",
           "dano": 55
         },
         {
-          "distancia_m": "8-9",
+          "distancia_m": "8.3-9.3",
           "dano": 45
         },
         {
-          "distancia_m": "9-25",
+          "distancia_m": "9.3+",
           "dano": 32
         }
       ]
@@ -3116,7 +3116,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 212,
-        "velocidad_balas_ms": 320.0
+        "velocidad_balas_ms": 450
       },
       "precision": {
         "dispersion_cadera_max": 10.5,
@@ -3162,11 +3162,11 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-3",
+          "distancia_m": "0-3.5",
           "dano": 28
         },
         {
-          "distancia_m": "3-5.2",
+          "distancia_m": "3.5-5.2",
           "dano": 23
         },
         {
@@ -3189,7 +3189,7 @@
       },
       "potencia_de_fuego": {
         "cadencia_rpm": 645,
-        "velocidad_balas_ms": 920.0
+        "velocidad_balas_ms": 890
       },
       "precision": {
         "dispersion_cadera_max": 8.25,
@@ -3213,7 +3213,7 @@
       },
       "manejo": {
         "recarga_ms": 2720,
-        "ads_ms": 235,
+        "ads_ms": 245,
         "ads_saltar_ms": 319,
         "esprintar_disparar_ms": 257,
         "deslizarse_disparar_ms": 440,
@@ -3223,7 +3223,7 @@
       "dano_por_parte": {
         "cabeza": {
           "valor": 45,
-          "multiplicador": "x1.3"
+          "multiplicador": "x1.2"
         },
         "cuello_pecho_alto": 38,
         "pecho": 38,
@@ -3235,16 +3235,16 @@
       },
       "alcance_dano": [
         {
-          "distancia_m": "0-45",
-          "dano": 41
+          "distancia_m": "0-38",
+          "dano": 38
         },
         {
-          "distancia_m": "45-60",
-          "dano": 37
+          "distancia_m": "38-52",
+          "dano": 34
         },
         {
-          "distancia_m": "60+",
-          "dano": 33
+          "distancia_m": "52+",
+          "dano": 31
         }
       ]
     },
