@@ -61,7 +61,14 @@ def main():
         collector.ARMAS_DATA.write_bytes(raw)
         collector.OUTPUT = folder / "youtube-trends.json"
         collector.atomic_write(collector.OUTPUT, previous)
-        sys.argv = [sys.argv[0], "--min-age-hours", "20"]
+        # A manual afternoon refresh must not skip the following morning.
+        # Only suppress duplicate API reads within the same Santiago day.
+        from zoneinfo import ZoneInfo
+        current_time = datetime.now(timezone.utc)
+        prior_time = collector.parse_date(previous.get("generatedAt"))
+        local_zone = ZoneInfo("America/Santiago")
+        same_day = prior_time and prior_time.astimezone(local_zone).date() == current_time.astimezone(local_zone).date()
+        sys.argv = [sys.argv[0], "--min-age-hours", "20" if same_day else "0"]
         status = collector.main()
         if status:
             return status
