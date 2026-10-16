@@ -1,0 +1,39 @@
+name: Configure public Twitch Worker secrets
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  configure:
+    if: github.repository == 'psnstgo-create/wzmetaloadouts-pages' && github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Configure only existing Twitch Worker bindings
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          account = os.environ['CLOUDFLARE_ACCOUNT_ID']
+          token = os.environ['CLOUDFLARE_API_TOKEN']
+          for name in ['TWITCH_CLIENT_ID', 'TWITCH_CLIENT_SECRET']:
+              value = os.environ[name]
+              if not value:
+                  raise SystemExit('Required Twitch secret unavailable')
+              request = urllib.request.Request(
+                  f'https://api.cloudflare.com/client/v4/accounts/{account}/workers/scripts/wz-twitch-live/secrets',
+                  data=json.dumps({'name':name,'text':value,'type':'secret_text'}).encode(),
+                  headers={'Authorization':'Bearer '+token,'Content-Type':'application/json'}, method='PUT')
+              try:
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      result=json.load(response)
+                  if result.get('success') is not True:
+                      raise SystemExit('Cloudflare secret configuration failed')
+              except urllib.error.HTTPError as error:
+                  raise SystemExit(f'Cloudflare rejected secret configuration: HTTP {error.code}') from None
+          print('Twitch Worker bindings configured; no secret values logged.')
+          PY
