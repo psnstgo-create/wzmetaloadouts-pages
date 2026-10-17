@@ -2,42 +2,69 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-10-17T18:36:48Z",
+  "generado": "2026-10-17T20:57:17Z",
   "streams": [
     {
-      "login": "criminalgod_",
-      "name": "criminalgod_",
-      "title": "SABADO DE WARZONE PUBS / TOP #1  DE PR",
-      "viewers": 241,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_criminalgod_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c76ebb28-0b4a-44b4-a424-e5f513c98f3e-profile_image-300x300.png",
+      "login": "tenux_official_",
+      "name": "tenux_official_",
+      "title": "Torneo y MW4 despues!",
+      "viewers": 115,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tenux_official_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b2d34b9b-c889-42b7-a600-1eed430c0f8d-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "titopower_",
       "name": "TitoPower_",
-      "title": "🇩🇴🧟WZ #5 | ¡COMENZAMOS! 💀 |",
+      "title": "🇩🇴🧟WZ #40 | ¡COMENZAMOS! 💀 |",
       "viewers": 104,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_titopower_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/86e791e0-aa72-41fd-a160-e57bda92f260-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "eldreamstv",
-      "name": "eldreamstv",
-      "title": "🔥REGRESO A WARZONE! UNETE YA🔥 !EXITLAG !SUB !PRIME !REDES",
-      "viewers": 59,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldreamstv-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cd49db75-6334-46bd-b759-0ba74dba7af2-profile_image-300x300.png",
+      "login": "zdark",
+      "name": "zDark",
+      "title": "🎃TORNEO SWITCHARO X $50,000 🎃 | !SUBTEMBER!! | @zDark",
+      "viewers": 84,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5636b07d-4c06-4fb7-85c1-492edc011d07-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "pandatvmx",
+      "name": "PandaTvMx",
+      "title": "TORNEO SWITCHAROO CK💰 [ESP/ENG] | 2k STREAM 🔴",
+      "viewers": 70,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "goodbye60hz",
+      "name": "GooDBye60hz",
+      "title": "Custom Switch CK x Reapzr w/ Shifty & Prodigy $500 | TOP 1 Argentina || !redes",
+      "viewers": 38,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goodbye60hz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f088bba9-e4b4-4215-a4a9-10ed5356e606-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "flopardo39",
       "name": "flopardo39",
       "title": "HE VUELTO AL PRIME NUEVO SPOT LLEGATE YAA",
-      "viewers": 22,
+      "viewers": 35,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "kesneii",
+      "name": "Kesneii",
+      "title": "#1 1VS4 SABADO DE RELAJO | !pc  !mando | @kesneii",
+      "viewers": 32,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kesneii-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c10cff4d-743e-4d98-b04d-60833b3f9dab-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -50,66 +77,21 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "ttv_sone89",
-      "name": "ttv_sone89",
-      "title": "🔴EN VIVO | NUEVO MANDO 🔥 @TeamClownGaming 1 SUB= 8 FLEXIONES ¿HABRA ENFADOS?💯🔞💯 !REDES !DISCORD DANDOLE DURO!",
-      "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ttv_sone89-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/509d46dd-1140-40d6-a774-9ec6fe7424e2-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "keeoss_",
-      "name": "keeoss_",
-      "title": "🎮 TOP #40 DEL MUNDO EN PÚBLICAS 🗣️🔥 I !pc !yt !sens",
-      "viewers": 14,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
+      "login": "tyn_house",
+      "name": "Tyn_House",
+      "title": "🔥POV TOP 250 GRIND | TOURNAMENTS EVERY DAY & !PC !SENS !CONTROLLER !DEADZONE",
+      "viewers": 18,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tyn_house-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/9a6580d9-fc79-4ab8-ab60-4f038039322e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "gutigallego",
       "name": "gutigallego",
       "title": "¡ESPECIAL 1 AÑO DE GUTIGALLEGO! 12 HORAS DE DIRECTO. EL CHAT MANDA !🔥🔥🔥🔥🔥🔥🔥🔥",
-      "viewers": 13,
+      "viewers": 14,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gutigallego-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/371ce67e-36c3-4427-a6e8-2783d5d960ee-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "elchef_gg",
-      "name": "ElChef_gg",
-      "title": "🎮 SÁBADOS CON \"EL CHEF\" 🔫  🟣!discord 🟠!aura 🟢commands",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elchef_gg-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/23b17250-e989-45cb-82ed-bf71b198f5a9-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "noirtv__",
-      "name": "NoirTv__",
-      "title": "2V2 KILLRACE W RAG",
-      "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_noirtv__-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4ee00614-0587-4b9c-a8ae-b86364f938b7-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "mimirportatil_",
-      "name": "mimirportatil_",
-      "title": "[ES/FR/EN] no she que hacer | COMANDOS: !discord !lit",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mimirportatil_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1f864eb5-0a8a-489b-8035-058d76a4ce75-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "chargvlie",
-      "name": "chargvlie",
-      "title": "SABADITO RICO ☕ !pc !sensi",
-      "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chargvlie-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6e24b3-5342-4c1c-ba8c-5c9c8d081bad-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
