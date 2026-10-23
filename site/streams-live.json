@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-10-22T22:44:00Z",
+  "generado": "2026-10-23T01:02:08Z",
   "streams": [
     {
-      "login": "goatclamp",
-      "name": "GoatClamp",
-      "title": "NUEVO WARZONE?? NUEVO MODO?? VEN | Redes: @GoatClamp",
-      "viewers": 253,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_goatclamp-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d812d829-56b5-4418-92e8-0ec95f9110e4-profile_image-300x300.png",
+      "login": "elstronk",
+      "name": "elStronk",
+      "title": "Armas solo para pros",
+      "viewers": 182,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elstronk-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3fe8c6c3-a7dd-42f2-8e62-211d948ef4c0-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -23,10 +23,37 @@
       "game": "Call of Duty: Warzone"
     },
     {
+      "login": "zoruky",
+      "name": "Zoruky",
+      "title": "#1 Solo vs Squads 😈🔥!youtube !discord !prime !sens",
+      "viewers": 71,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zoruky-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/120eeef5-e496-4a8f-bed0-bb433f273f45-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "itstinnyy",
+      "name": "itstinnyy",
+      "title": "WHEEL COED SWITCHAROO !",
+      "viewers": 36,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_itstinnyy-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/30ba234d-773a-4de3-a1ff-43be02186cb3-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "gsitegg",
+      "name": "GSITEGG",
+      "title": "🔥| SPOOKY SEASON : 1 ELITE 2 DETRIS (Nvl. INTERMEDIO)  | 🔥",
+      "viewers": 33,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gsitegg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6bd901-90fe-47dd-be26-a192f3af2900-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
       "login": "thegoodplayer08",
       "name": "thegoodplayer08",
       "title": "Nochez bifle | !PC !SENS",
-      "viewers": 31,
+      "viewers": 29,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thegoodplayer08-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d3e8bb65-5154-4c82-bea5-aba5dcbf2809-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -35,7 +62,7 @@
       "login": "alvaritoisgod_",
       "name": "alvaritoisgod_",
       "title": "nuevo cod",
-      "viewers": 28,
+      "viewers": 19,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alvaritoisgod_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/be6baf5d-7ec0-4540-b6db-cbc2df975606-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
@@ -44,72 +71,45 @@
       "login": "villha_",
       "name": "villha_",
       "title": "SUBIENDO LAS ARMAS DE MW4 PARA HACER ARMA META!!!",
-      "viewers": 19,
+      "viewers": 18,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_villha_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0a0b2a4c-35a4-4121-a4c1-98f99276489a-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "michelmagana",
-      "name": "michelmagana",
-      "title": "MULTI HASTA QUE ME DUELAN LAS NACHAS 😮‍💨 | !paypal !redes",
-      "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_michelmagana-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/39b946e7-bc26-4c46-ab49-22f74347b0b8-profile_image-300x300.png",
+      "login": "vanewnx",
+      "name": "VaneWnx",
+      "title": "JUEGANDO WARZONEE UNETEEE!!! 🤓☝ | !dc !redes !paypal",
+      "viewers": 15,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vanewnx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1bbd0403-1c93-4033-81a9-08d2599a5236-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "zchicho",
-      "name": "zChicho",
-      "title": "Switch",
+      "login": "owi_stream",
+      "name": "owi_stream",
+      "title": "+18│IRL│EMME│hoy WZ en modo cazadora jijj :p │!warzone !discord !say (se escucha tu msg)",
+      "viewers": 15,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_owi_stream-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/05e29a02-a127-4605-84ef-cacdf8010264-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "ist_carlitosv2",
+      "name": "Ist_Carlitosv2",
+      "title": "Call Of Duty",
       "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zchicho-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f6b41bd0-14a8-4c93-b7b6-7576be17abe7-profile_image-300x300.jpeg",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ist_carlitosv2-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6041fb96-8710-47bb-b634-2f56370998eb-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "millidollamexcan",
-      "name": "millidollaMEXCAN",
-      "title": "MW4 QUICKIE  |   ROAD TO 1K FOLLOWERS   |   IMAGINEMONOS COSAS CHINGONAS",
-      "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_millidollamexcan-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2abf7a02-fa5d-4a0c-a0f1-d7183c83ca76-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "gutigallego",
-      "name": "gutigallego",
-      "title": "🔥 WARZONE CON GUTI GALLEGO  | EL CHAT MANDA  | RETOS, RISAS Y LOCURAS 🔥",
-      "viewers": 12,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gutigallego-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/371ce67e-36c3-4427-a6e8-2783d5d960ee-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "ttvangelica",
-      "name": "TTVAngelica",
-      "title": "ADIVINA QUIEN VOLVIO?TU STITCH FAVORITA :D",
-      "viewers": 10,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ttvangelica-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/91e3f62f-b00f-499c-bd06-91690c0617a7-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "wipirdz",
-      "name": "WipiRDz",
-      "title": "🔞🧿🔫WZ 🔫 @WipiRDz 🧿🔹,!comandos..ᵐᵒʳᵉ🔮🇩🇴🔹",
-      "viewers": 8,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wipirdz-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f58866fc-6b9e-4494-a66d-a4d1def90d51-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "saglann",
-      "name": "saglann",
-      "title": "SWITCH 700€ | 17 | !sens !buena !guapo !pc !Saglan | @saglann",
-      "viewers": 6,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_saglann-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/9a78ea4c-3ceb-4393-8f53-5ebb10757c9e-profile_image-300x300.png",
+      "login": "tyn_house",
+      "name": "Tyn_House",
+      "title": "🔥POV TOP 250 GRIND | TOURNAMENTS EVERY DAY & !PC !SENS !CONTROLLER !DEADZONE",
+      "viewers": 11,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tyn_house-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/9a6580d9-fc79-4ab8-ab60-4f038039322e-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
