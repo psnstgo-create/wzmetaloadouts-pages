@@ -2,60 +2,69 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-10-25T17:42:32Z",
+  "generado": "2026-10-25T20:01:06Z",
   "streams": [
     {
       "login": "titopower_",
       "name": "TitoPower_",
       "title": "🇩🇴🧟WZ #40 | ¡COMENZAMOS! 💀 |",
-      "viewers": 151,
+      "viewers": 144,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_titopower_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/86e791e0-aa72-41fd-a160-e57bda92f260-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "31pet3r",
-      "name": "31pet3r",
-      "title": "sacando los movimientos insanos en mouse y teclado!",
-      "viewers": 43,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_31pet3r-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8c523fec-b7f0-4781-a962-c610b6c63fa1-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "miringocho",
-      "name": "Miringocho",
-      "title": "Poniendo a los mancos en su lugar 🤌🏻",
-      "viewers": 13,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_miringocho-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0ca164b5-2eaf-4aa8-b7dc-f77ff3b85360-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "keeoss_",
       "name": "keeoss_",
       "title": "🎮 PÚBLICAS | POV TOP #4O del TOP 250 🗣️🔥 I !pc !yt !sens",
-      "viewers": 11,
+      "viewers": 20,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keeoss_-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4a0c6b32-d0a9-457c-8917-c8eedbad2ce5-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "chargvlie",
-      "name": "chargvlie",
-      "title": "PRIVADAS DE DOMINGO WARZONE X MW4 MULTI 🫡🗣️ !pc !sensi",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chargvlie-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6e24b3-5342-4c1c-ba8c-5c9c8d081bad-profile_image-300x300.png",
+      "login": "yess_suaste14",
+      "name": "Yess_Suaste14",
+      "title": "UN DÍA MÁS EN WARZONE  || !Discord !Redes @Yess_Suaste14",
+      "viewers": 15,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yess_suaste14-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8269d616-d310-433b-986d-1a7fadd9d05c-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "eleagleeyes",
-      "name": "ElEagleEyes",
-      "title": "Un rapidin Stream 216",
-      "viewers": 6,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eleagleeyes-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0a3214f8-722e-4cc1-9649-d818bbc40a13-profile_image-300x300.png",
+      "login": "atomiko97",
+      "name": "atomiko97",
+      "title": "🎯 EL MEJOR SNIPER DE CUBA| 0% AIM ASSIST |🔥!razer !pc !monitor !teclado !raton",
+      "viewers": 14,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_atomiko97-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/79710fb7-c9a7-477b-ae11-94b0ad2dc6ac-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "vdevanessa",
+      "name": "VdeVanessa",
+      "title": "!drops || WARZONE || @driftesports_ / !redes !discord !team",
+      "viewers": 9,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vdevanessa-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/db152e1f-4a4e-4c82-92f5-57c4a1bb5a53-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "anaekuri",
+      "name": "AnaeKuri",
+      "title": "Tu tía en DMZ, no entiendo nada",
+      "viewers": 9,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anaekuri-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8c765db2-0646-4a74-8da3-fc271633487c-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "bauza_hd",
+      "name": "bauza_hd",
+      "title": "🎤 AQUÍ SE VIENE A DISCUTIR, NO A GANAR 😂",
+      "viewers": 8,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bauza_hd-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3de66969-101a-4534-b84c-37dd2fb77bd5-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
@@ -68,48 +77,39 @@
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "kikoelmago",
-      "name": "kikoelmago",
-      "title": "pasateeee para saludarr// drops activooos//probando mw4 goooooo",
+      "login": "pochitocai",
+      "name": "pochitocai",
+      "title": "sale extensible!!!",
+      "viewers": 5,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pochitocai-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5dd85760-6166-4f00-b88a-e83d8cb7d409-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "fortuna_dj04",
+      "name": "fortuna_Dj04",
+      "title": "dmz y multi  💣☠️",
+      "viewers": 5,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fortuna_dj04-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e15124d1-a7b3-44c1-96b5-536e31911ad2-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "zambranomx",
+      "name": "ZambranoMx",
+      "title": "Stream mañanero, revivimos, ya estamos de regreso.",
       "viewers": 4,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kikoelmago-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/dfac2030-1afc-4c43-988d-3e68c46f63a7-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zambranomx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f1f66956-3124-4d02-89fd-88d5ddbe999d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "jonaknight",
-      "name": "jonaknight",
-      "title": "Domingo de chill! distraete vive y se feliz! vamo a juegar",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jonaknight-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4f7644de-f28b-4a82-ac2d-37358ca61560-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "gonzclarck08",
-      "name": "GonzClarck08",
-      "title": "Domingo cañeroo!!...ROAD TO PARTNER 📈🔥",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_gonzclarck08-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4bc9884e-34ac-4808-8499-9333d6abaae4-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "thekrith",
-      "name": "TheKritH",
-      "title": "AQUI NO HAY MULTI ;) / SNIPING BROOO NO PRO PROPLAYER;) /  MAÑANA EXTENSIBLE ? NOOOOOO XD",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thekrith-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5a7e0498-a43d-4c79-8e5b-c481dfff6a4d-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lobikherida",
-      "name": "lobikherida",
-      "title": "+🔞 (ES)  🐺🔥 | MI SALUD MENTAL VS. WARZONE xD",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lobikherida-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c77cc57a-97de-4e83-b074-aa3566b047ab-profile_image-300x300.png",
+      "login": "dannillol",
+      "name": "dannillol",
+      "title": "Challs bc why not",
+      "viewers": 4,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dannillol-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/15f515ef-2351-4fb2-8ae9-6614757b7a23-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
