@@ -2,114 +2,105 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-11-07T13:29:38Z",
+  "generado": "2026-11-07T18:16:05Z",
   "streams": [
     {
-      "login": "banzaigamers",
-      "name": "BanzaiGamers",
-      "title": "🎖️ DROPS / La MancoSquad esta de regreso como los viejos tiempos - REPLAY",
-      "viewers": 17,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_banzaigamers-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0d64c04c-1379-46c3-8079-456fe2ef69e2-profile_image-300x300.png",
+      "login": "kestico",
+      "name": "Kestico",
+      "title": "🚨VOLVIÓ REBIRTH ISLAND A WARZONE YA! 🚨!audio !sorteo",
+      "viewers": 672,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kestico-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2df86dba-1146-4854-b2db-ffb267239d31-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "lokodel17",
-      "name": "lokodel17",
-      "title": "Finde de vicio masivo || TOP 1º DE ANDORRA POV  🇦🇩😱",
+      "login": "mrsoki",
+      "name": "MrSoki",
+      "title": "✅!DROPS EXTENSIBLE del NUEVO WARZONE MODERN WARFARE 4",
+      "viewers": 654,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrsoki-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/84432b49-f9ef-4139-8994-eae08cfad75d-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "zyrpesland",
+      "name": "zyrpesland",
+      "title": "‼️SOLO WINS EN EL NUEVO WARZONE‼️‼️🟨!scuf 🟩!monster🟥!prozis",
+      "viewers": 193,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zyrpesland-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0cf31ce6-dd6a-49a6-8813-ce3d8489b977-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "soykronosgg",
+      "name": "soykronosgg",
+      "title": "🛑NUEVO WARZONE NUEVA META🛑",
+      "viewers": 123,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soykronosgg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/06e7065c-a04a-4bde-8a42-1ad3ed304301-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "borraskka",
+      "name": "borraskka",
+      "title": "🚨(!DROPS) ENCONTRÉ EL NUEVO META🟩| SACANDO LA MATERIA OSCURA en WARZONE💀| !Paypal !Discord !Redes | 🟩",
+      "viewers": 108,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_borraskka-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/69bc526e-5a04-4248-bb62-a5634549c037-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "eldreamstv",
+      "name": "eldreamstv",
+      "title": "(DROPS) REGRESO REBIRT ISLAND AL NUEVO WZ!💛 !EXITLAG !SUB !PRIME !REDES",
+      "viewers": 92,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eldreamstv-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1f555215-1a67-49e4-b6d5-dc6b8a88aca6-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "vnetodz",
+      "name": "vNetodz",
+      "title": "TORNEOS 2V2 ALL DAY | #3 RANKED PLAYER POV 🦇 | !Redes !Playlist",
+      "viewers": 32,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vnetodz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bbcdfdb1-51ce-41d4-92d2-9243059d3ba1-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "flopardo39",
+      "name": "flopardo39",
+      "title": "JUGANDO EL NUEVO WARZONEE",
+      "viewers": 30,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_flopardo39-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a59ae08e-9f69-40aa-916c-827ce7b09705-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "elchef_gg",
+      "name": "ElChef_gg",
+      "title": "🎮 Probando el Battle royale por 1era vez!🍳 🟣!discord 🟠!aura 🟢!commands",
+      "viewers": 26,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elchef_gg-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/23b17250-e989-45cb-82ed-bf71b198f5a9-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "turuk10",
+      "name": "Turuk10",
+      "title": "🎯 🇪🇸 TOP1 SniperTerminator de Mi casa!! 🇪🇸 🎯   Teclado-Ratón Player!! Nuevo Warzone !!!! 💪 Doble Cam, !comandos !dice",
+      "viewers": 19,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_turuk10-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e1f0133-0506-4bb7-8f86-bffb80d5a6e7-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "dizi_mx",
+      "name": "dizi_mx",
+      "title": "EL MEJOR DUO DE LATAM🔥",
       "viewers": 16,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lokodel17-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/13e43261-5d92-4430-811d-25ef4899cc9e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "brandyxoh",
-      "name": "brandyxoh",
-      "title": "POR FIN LLEGA EL NUEVO WARZONE/TODA LA INFO ACA  / LA CABRA YA ESTA ACA/EL MEJOR EN 1 VS  4 / VENTE A COTORREAR",
-      "viewers": 15,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brandyxoh-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e7e04f40-e4eb-4789-a717-3c7f3847517d-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "thecyberneticgames",
-      "name": "thecyberneticgames",
-      "title": "Repetición-🚨 NUEVO WARZONE 4 | PRIMERAS PARTIDAS | Vamos a probarlo 🔥",
-      "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thecyberneticgames-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8a443e56-948e-42b9-9725-de7065cae87d-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "pantergirl389",
-      "name": "pantergirl389",
-      "title": "//Llegó la hora de la murision// (PC) Acomodate, suscribete y disfruta!!!",
-      "viewers": 4,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pantergirl389-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c702de7b-8bcc-415c-9e22-bce0433ebe45-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "abrakastudio",
-      "name": "abrakastudio",
-      "title": "Warzone🎮| Únete al chat 🗣️ !speak",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_abrakastudio-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/96d3bf27-bfd5-4bd6-9dcd-c1c893dfa6e7-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "eseljesusss",
-      "name": "Eseljesusss",
-      "title": "SUBIENDO EL NIVEL UN RATO",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eseljesusss-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5deecea2-d21c-4c01-ae64-3a3e060841b7-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lalo_hdz12",
-      "name": "lalo_hdz12",
-      "title": "Full Grind Br o Resu! | Warzone Mw4 | !pc🔥",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lalo_hdz12-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/62f1fcca-47dc-422c-8f56-6e18379d31ca-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "duranron",
-      "name": "Duranron",
-      "title": "El Nuevo Warzone lest goooo",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_duranron-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/76079b94-d4d7-40a3-a745-5608df715d9b-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "pabloc171",
-      "name": "pabloc171",
-      "title": "NUEVA TEMPORADA || VICIADA HISTORICA 24H??? || 18 BAJAS || 3 WINS  || Racha de 3 WINS seguidas",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pabloc171-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b670a8fc-06e6-4b36-889c-3ac5c44b5820-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "nic4augusto",
-      "name": "nic4augusto",
-      "title": "Warzone y UFC ?",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nic4augusto-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "dior_wz",
-      "name": "dior_wz",
-      "title": "Regresaa BO7 ☠️👽",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dior_wz-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/588ac7cb-5b38-4789-8abe-9345d14644a6-profile_image-300x300.jpeg",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dizi_mx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/99ca39d4-9958-4dba-8e74-4cb75ad18dcc-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
