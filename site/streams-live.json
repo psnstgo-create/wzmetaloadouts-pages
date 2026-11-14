@@ -2,105 +2,114 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-11-13T23:41:37Z",
+  "generado": "2026-11-14T03:38:08Z",
   "streams": [
-    {
-      "login": "deusamir",
-      "name": "deusamir",
-      "title": "COPA PANTANO x $100,000 🏆 NACIONES - REGRESAN LOS CORILLOS (DÍA 2)",
-      "viewers": 1621,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_deusamir-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6db1417f-99a5-4fc3-9ead-55f3a0152e63-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
     {
       "login": "ketchup",
       "name": "Ketchup",
-      "title": "⚡️⚠️ Pubs + 2vs2 ⚠️⚡️!hacks !meta !sens !allsettings",
-      "viewers": 686,
+      "title": "⚡️⚠️ 2vs2 x $3,000 w/@lenun ⚠️⚡️!hacks !meta !sens !allsettings",
+      "viewers": 266,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ketchup-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cda7a627-2e8b-4ac5-9299-3ea54c657805-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "criminalgod_",
-      "name": "criminalgod_",
-      "title": "Torneos de 2v2 $500+ Killrace w/ @elolamgg hasta que me duerma...🏆",
-      "viewers": 138,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_criminalgod_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c76ebb28-0b4a-44b4-a424-e5f513c98f3e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "zdark",
-      "name": "zDark",
-      "title": "🏆🧌 COPA PANTANO TKR NACIONES x $50,000 ! | @zDark",
-      "viewers": 60,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5636b07d-4c06-4fb7-85c1-492edc011d07-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "superblazing_",
-      "name": "superblazing_",
-      "title": "🚨1VS4 NUEVO WARZONE🚨5 dias para GTA 6🌴🟣",
-      "viewers": 50,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_superblazing_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0bb81391-ed98-48de-9510-b73dc83488b4-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lanpy",
-      "name": "LANPY",
-      "title": "💀Warzone baby!💀 @thanatheboss manqueando para ustedes! 🫪🫪🫪",
-      "viewers": 43,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lanpy-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5c6d625e-67a7-4748-8f00-57ee6aa7301e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "vsuareez",
-      "name": "vSuareez",
-      "title": "SOLO VS SQUAD CON EL PATRIARCA!!",
-      "viewers": 43,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vsuareez-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a188191f-d5df-49cd-a7b2-5a3db39d91f6-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "tenux_official_",
-      "name": "tenux_official_",
-      "title": "Torneo switch 2v2 $1,000+",
-      "viewers": 40,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tenux_official_-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b2d34b9b-c889-42b7-a600-1eed430c0f8d-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "kathandre",
-      "name": "Kathandre",
-      "title": "COPA PANTANO BY  @deusamir ⭐ NovaX ORG 🌌",
-      "viewers": 37,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kathandre-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/dfdae570-36fb-42de-8dd7-12b07cb0742d-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "ertristoni",
-      "name": "ertristoni",
-      "title": "NUEVO EVENTO HALL OF FUT UNLEASHED ¿FUT CHAMPIONS O RIVALS ROAD TO ELITE? | WARZONE CON SEGUIDORES🪖 𝐑𝐄𝐃𝐄𝐒: @ertristoni ❗rebajas",
-      "viewers": 35,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ertristoni-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/aaeb2951-2fab-48bd-a474-04bc9f73f4b4-profile_image-300x300.png",
+      "login": "blumecl",
+      "name": "BlumeCl",
+      "title": "LA MADRE DEL WZ",
+      "viewers": 74,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blumecl-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/506ecae1-8ce2-4ee2-b959-44850293a42a-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "kngmatii",
       "name": "Kngmatii",
-      "title": "🚨🔥TKR COPA PANTANO DIA 2 - TORNEO 2V2 SWITCH X $1000 DEPUES| !scuf | !pc | !redes 🔥🚨",
-      "viewers": 25,
+      "title": "🚨🔥$3000 CK 2V2 SWITCH w/ Prisewz | !scuf | !pc | !redes 🔥🚨",
+      "viewers": 66,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kngmatii-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1305994c-6c0c-4d34-8b1f-4cd1234a0112-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "lupitatourneys",
+      "name": "LupitaTourneys",
+      "title": "TORNEO LOW COST - MW4  X MGG MUDDY GAMING   --- !Amazon !pp",
+      "viewers": 56,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lupitatourneys-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3e21987e-9713-428a-9fa5-0ba8021c8cd8-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "manitos_gaming",
+      "name": "manitos_gaming",
+      "title": "El Mejor Malo - Viernes De Subs! - WaRzONe - MW4 - New FUnNY - mE dEJAN sOLO!!",
+      "viewers": 53,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_manitos_gaming-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ac9fca13-20bd-49fd-94ee-8b9de861bc09-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "wysymo",
+      "name": "Wysymo",
+      "title": "WYSYMO IN DA HAUS",
+      "viewers": 52,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wysymo-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/96a5d288-a610-4968-b2b5-b9acb1f72fc0-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "rivotr1l",
+      "name": "Rivotr1l",
+      "title": "🔴SOLOS M&K🔴!ceneka !exitlag !hacks",
+      "viewers": 48,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rivotr1l-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/122cabe8-0be5-4e73-b4ea-2c587ac39e10-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "kesneii",
+      "name": "Kesneii",
+      "title": "#1 1VS4 HOY SUPERAMOS RECORD  | !pc  !mando | @kesneii",
+      "viewers": 43,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kesneii-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c10cff4d-743e-4d98-b04d-60833b3f9dab-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "nitta_vt",
+      "name": "Nitta_VT",
+      "title": "¡PRIMER ANIVERSARIO! EXTENSIBLE DÍA 28 CHUPISTREAAAAAM OwO  @nitta_vt 🪖!WT !DISCORD !CARTAS !STEAM",
+      "viewers": 39,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nitta_vt-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a4fff743-15fc-4d43-b6f6-be8e96e06901-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "pandatvmx",
+      "name": "PandaTvMx",
+      "title": "NUEVO WZ | TORNEOS 2V2s Y CHALLS [ESP/ENG] | 2k STREAM 🔴",
+      "viewers": 34,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "prymo_k",
+      "name": "Prymo_k",
+      "title": "SWITCHAROO 2V2 LATE NIGHT",
+      "viewers": 34,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_prymo_k-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/75892546-96d4-4aae-8ca4-0eb0a54c177f-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "asaldac",
+      "name": "asaldac",
+      "title": "VIERNES 13 DE STRUM | FOLLOW ME",
+      "viewers": 33,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asaldac-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/asaldac-profile_image-0bc7c5a457ef1a34-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
