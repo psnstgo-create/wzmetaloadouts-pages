@@ -2,105 +2,114 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-11-21T15:34:33Z",
+  "generado": "2026-11-21T21:06:20Z",
   "streams": [
     {
-      "login": "thundervf",
-      "name": "ThunderVF",
-      "title": "+18 /┌∩┐(◣_◢)┌∩┐ | !dice !musica !cola !pc",
+      "login": "pandatvmx",
+      "name": "PandaTvMx",
+      "title": "TORNEOS 2V2s Y CHALLS [ESP/ENG] | 2k STREAM 🔴",
+      "viewers": 51,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "yess_suaste14",
+      "name": "Yess_Suaste14",
+      "title": "Cuidado con las balas perdidas!! WZ || !Discord !Redes @Yess_Suaste14",
+      "viewers": 25,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yess_suaste14-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8269d616-d310-433b-986d-1a7fadd9d05c-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "javiix__",
+      "name": "Javiix__",
+      "title": "challs/tournaments !mando !sens",
+      "viewers": 23,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_javiix__-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/93cd243f-0eba-4e63-9c8a-f6fc9cef074a-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "vnetodz",
+      "name": "vNetodz",
+      "title": "TORNEOS 2V2 | #3 RANKED PLAYER POV 🦇 | !Redes !Playlist",
+      "viewers": 21,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vnetodz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bbcdfdb1-51ce-41d4-92d2-9243059d3ba1-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "alvaritoisgod",
+      "name": "alvaritoisgod",
+      "title": "tournament",
+      "viewers": 12,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alvaritoisgod-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/be6baf5d-7ec0-4540-b6db-cbc2df975606-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "vkingantiquera",
+      "name": "vkingantiquera",
+      "title": "LEGIONES REÚNANSE!!!",
+      "viewers": 12,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_vkingantiquera-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e507db07-e810-451a-acc3-2df357a53e9d-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "saglann",
+      "name": "saglann",
+      "title": "500$ CK 2V2 | 17 | !sens !buena !guapo !pc !Saglan | @saglann",
       "viewers": 9,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_thundervf-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/cc9051e4-82e9-4fdf-bb1c-9e7ca9d51529-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_saglann-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/df7af34c-a7c2-46b9-b3c3-b3cc0e99dfe9-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "mamadisim0o",
-      "name": "mamadisim0o",
-      "title": "🍺 BR  FULL 😎🍺....WZ....😎....@mamadisim0o .....🇪🇸🇪🇸🇪🇸",
-      "viewers": 9,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mamadisim0o-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a45c5eeb-e682-455e-8bb5-9324ca82f9ac-profile_image-300x300.png",
+      "login": "davicitoo_",
+      "name": "davicitoo_",
+      "title": "Matando el rato en wz",
+      "viewers": 4,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_davicitoo_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/793fb908-04e7-43e3-bf0c-411e7cdf86ae-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "florenchinotv",
-      "name": "FlorenChinoTV",
-      "title": "Trabajando Y Jugando (Sin🎧) El Chino Mas Madridista",
-      "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_florenchinotv-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/019fe12d-0b1b-4ac2-9c4a-3ae3c71c2238-profile_image-300x300.png",
+      "login": "profchriis",
+      "name": "ProfChriis",
+      "title": "FRIENDSGIVING!!! HOY SE BEBE",
+      "viewers": 4,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_profchriis-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7838765d-b442-4f07-a732-2877168b02c7-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "red_layon",
-      "name": "RED_LAYON",
-      "title": "MAÑANERO 2V2 | #1 DE CHIAPAS | Player For @berserkersclan",
-      "viewers": 3,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_red_layon-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/41a341b6-1c31-4c56-9559-e6496b670123-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "idxop_00",
-      "name": "idxop_00",
-      "title": "NEW META CLASS!!DOMINATIG THE LOBBY🎮🔞🔥",
+      "login": "xnouzz",
+      "name": "xNouzz",
+      "title": "pa lacaga |   | !redes !hacks !graficos !config",
       "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_idxop_00-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1905c563-adb9-47a2-aa44-f2a7a753d6f3-profile_image-300x300.jpeg",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_xnouzz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8362801e-31ac-4aea-943b-8bead1219f72-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "itswizard93",
-      "name": "itswizard93",
-      "title": "Challsito!",
-      "viewers": 2,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_itswizard93-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/640066a1-0bdb-4e56-8cb9-d7e1a4716c1f-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "fecheok",
-      "name": "fecheOk",
-      "title": "Buen finde plebes 🤠",
+      "login": "masciomercs",
+      "name": "masciomercs",
+      "title": "LUDOPATA EN COD | 🇦🇷 !meta !redes !opti !audio !ig",
       "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_fecheok-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7ed1c6fb-a72f-44fd-98ad-73ce7041e3da-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_masciomercs-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d2d7029c-0605-4f25-8d08-1dcce444d6c2-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "yorchdenuevayorch",
-      "name": "yorchdenuevayorch",
-      "title": "Warzone",
+      "login": "bychikyxx",
+      "name": "bychikyxx",
+      "title": "Volvemos !!!!!! Call of dutyy Warzoneeee! 🎮🔥 !comandos, nuevos emotes! !pc !sens !social !duelo",
       "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yorchdenuevayorch-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/user-default-pictures-uv/ce57700a-def9-11e9-842d-784f43822e80-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "galindor",
-      "name": "Galindor",
-      "title": "WARZONE GRIND🎮 |",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galindor-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/35bf5a30-93f7-4e5d-95f3-b498eda18d2e-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "oziking_2113",
-      "name": "oziking_2113",
-      "title": "((QUIEN SE ANIMA A DARLE)) manden DM😁 MW4 jugando Dmz🤯😎✔️✔️ esto esta a fuego💥💥",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oziking_2113-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d9748b53-c211-45aa-8c96-2b9fbe1d4b87-profile_image-300x300.jpeg",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "petare_vzla",
-      "name": "petare_vzla",
-      "title": "My Stream",
-      "viewers": 1,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_petare_vzla-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e161ae09-12c4-43c0-89ad-1cdccc8ec79a-profile_image-300x300.png",
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bychikyxx-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/846c82db-332f-4124-b528-df39557edcd0-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     }
   ]
