@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "youtube-data-api-v3",
   "method": "recent_search_sample",
-  "generatedAt": "2026-11-21T17:35:13Z",
+  "generatedAt": "2026-11-22T17:51:03Z",
   "windowDays": 28,
   "freshForHours": 36,
   "trackedWeapons": 20,
@@ -15,15 +15,11 @@
       "slug": "m4",
       "name": "M4",
       "image": "/weapons/mw4/warzone/m4.webp",
-      "videoCount": 74,
-      "creatorCount": 71,
-      "viewCount": 890190,
-      "newestPublishedAt": "2026-11-21T17:15:23Z",
+      "videoCount": 91,
+      "creatorCount": 87,
+      "viewCount": 1048873,
+      "newestPublishedAt": "2026-11-22T16:53:11Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -42,11 +38,137 @@
         },
         {
           "date": "2026-10-30",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-10-31",
+          "count": 0
+        },
+        {
+          "date": "2026-11-01",
           "count": 3
+        },
+        {
+          "date": "2026-11-02",
+          "count": 0
+        },
+        {
+          "date": "2026-11-03",
+          "count": 0
+        },
+        {
+          "date": "2026-11-04",
+          "count": 0
+        },
+        {
+          "date": "2026-11-05",
+          "count": 0
+        },
+        {
+          "date": "2026-11-06",
+          "count": 0
+        },
+        {
+          "date": "2026-11-07",
+          "count": 0
+        },
+        {
+          "date": "2026-11-08",
+          "count": 28
+        },
+        {
+          "date": "2026-11-09",
+          "count": 0
+        },
+        {
+          "date": "2026-11-10",
+          "count": 0
+        },
+        {
+          "date": "2026-11-11",
+          "count": 0
+        },
+        {
+          "date": "2026-11-12",
+          "count": 0
+        },
+        {
+          "date": "2026-11-13",
+          "count": 3
+        },
+        {
+          "date": "2026-11-14",
+          "count": 11
+        },
+        {
+          "date": "2026-11-15",
+          "count": 13
+        },
+        {
+          "date": "2026-11-16",
+          "count": 0
+        },
+        {
+          "date": "2026-11-17",
+          "count": 0
+        },
+        {
+          "date": "2026-11-18",
+          "count": 0
+        },
+        {
+          "date": "2026-11-19",
+          "count": 0
+        },
+        {
+          "date": "2026-11-20",
+          "count": 6
+        },
+        {
+          "date": "2026-11-21",
+          "count": 17
+        },
+        {
+          "date": "2026-11-22",
+          "count": 10
+        }
+      ],
+      "rank": 1,
+      "direction": "stable",
+      "deltaRank": 0
+    },
+    {
+      "slug": "cronen-osprey",
+      "name": "Cronen Osprey",
+      "image": "/weapons/mw4/warzone/cronen-osprey.webp",
+      "videoCount": 93,
+      "creatorCount": 84,
+      "viewCount": 333117,
+      "newestPublishedAt": "2026-11-22T16:41:30Z",
+      "dailyVideos": [
+        {
+          "date": "2026-10-26",
+          "count": 0
+        },
+        {
+          "date": "2026-10-27",
+          "count": 0
+        },
+        {
+          "date": "2026-10-28",
+          "count": 0
+        },
+        {
+          "date": "2026-10-29",
+          "count": 1
+        },
+        {
+          "date": "2026-10-30",
+          "count": 0
+        },
+        {
+          "date": "2026-10-31",
+          "count": 0
         },
         {
           "date": "2026-11-01",
@@ -74,11 +196,11 @@
         },
         {
           "date": "2026-11-07",
-          "count": 21
+          "count": 0
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 29
         },
         {
           "date": "2026-11-09",
@@ -98,15 +220,15 @@
         },
         {
           "date": "2026-11-13",
-          "count": 2
+          "count": 0
         },
         {
           "date": "2026-11-14",
-          "count": 16
+          "count": 0
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 32
         },
         {
           "date": "2026-11-16",
@@ -122,18 +244,22 @@
         },
         {
           "date": "2026-11-19",
-          "count": 3
+          "count": 0
         },
         {
           "date": "2026-11-20",
-          "count": 17
+          "count": 3
         },
         {
           "date": "2026-11-21",
+          "count": 17
+        },
+        {
+          "date": "2026-11-22",
           "count": 11
         }
       ],
-      "rank": 1,
+      "rank": 2,
       "direction": "up",
       "deltaRank": 1
     },
@@ -141,15 +267,11 @@
       "slug": "vel-46",
       "name": "VEL 46",
       "image": "/weapons/mw4/warzone/vel-46.webp",
-      "videoCount": 105,
-      "creatorCount": 92,
-      "viewCount": 332570,
-      "newestPublishedAt": "2026-11-21T17:00:20Z",
+      "videoCount": 104,
+      "creatorCount": 89,
+      "viewCount": 295446,
+      "newestPublishedAt": "2026-11-22T16:00:31Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -168,7 +290,7 @@
         },
         {
           "date": "2026-10-30",
-          "count": 6
+          "count": 0
         },
         {
           "date": "2026-10-31",
@@ -176,7 +298,7 @@
         },
         {
           "date": "2026-11-01",
-          "count": 0
+          "count": 3
         },
         {
           "date": "2026-11-02",
@@ -200,11 +322,11 @@
         },
         {
           "date": "2026-11-07",
-          "count": 32
+          "count": 0
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 28
         },
         {
           "date": "2026-11-09",
@@ -228,11 +350,11 @@
         },
         {
           "date": "2026-11-14",
-          "count": 29
+          "count": 10
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 27
         },
         {
           "date": "2026-11-16",
@@ -248,34 +370,34 @@
         },
         {
           "date": "2026-11-19",
-          "count": 15
+          "count": 0
         },
         {
           "date": "2026-11-20",
-          "count": 14
+          "count": 8
         },
         {
           "date": "2026-11-21",
-          "count": 7
+          "count": 14
+        },
+        {
+          "date": "2026-11-22",
+          "count": 12
         }
       ],
-      "rank": 2,
+      "rank": 3,
       "direction": "down",
       "deltaRank": -1
     },
     {
-      "slug": "cronen-osprey",
-      "name": "Cronen Osprey",
-      "image": "/weapons/mw4/warzone/cronen-osprey.webp",
-      "videoCount": 94,
-      "creatorCount": 82,
-      "viewCount": 311210,
-      "newestPublishedAt": "2026-11-21T17:00:16Z",
+      "slug": "kg-7-vulcan",
+      "name": "KG-7 Vulcan",
+      "image": "/weapons/mw4/warzone/kg-7-vulcan.webp",
+      "videoCount": 53,
+      "creatorCount": 40,
+      "viewCount": 239373,
+      "newestPublishedAt": "2026-11-22T17:48:54Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -322,15 +444,15 @@
         },
         {
           "date": "2026-11-06",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-11-07",
-          "count": 29
+          "count": 2
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 7
         },
         {
           "date": "2026-11-09",
@@ -350,15 +472,15 @@
         },
         {
           "date": "2026-11-13",
-          "count": 0
+          "count": 4
         },
         {
           "date": "2026-11-14",
-          "count": 31
+          "count": 9
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 6
         },
         {
           "date": "2026-11-16",
@@ -374,34 +496,34 @@
         },
         {
           "date": "2026-11-19",
-          "count": 8
+          "count": 3
         },
         {
           "date": "2026-11-20",
-          "count": 16
+          "count": 7
         },
         {
           "date": "2026-11-21",
-          "count": 9
+          "count": 4
+        },
+        {
+          "date": "2026-11-22",
+          "count": 5
         }
       ],
-      "rank": 3,
+      "rank": 4,
       "direction": "up",
       "deltaRank": 1
     },
     {
-      "slug": "mosin-nagant",
-      "name": "Mosin-Nagant",
-      "image": "/weapons/mw4/warzone/mosin-nagant.webp",
-      "videoCount": 61,
-      "creatorCount": 53,
-      "viewCount": 220225,
-      "newestPublishedAt": "2026-11-21T17:15:02Z",
+      "slug": "iso-nightshade",
+      "name": "ISO Nightshade",
+      "image": "/weapons/mw4/warzone/iso-nightshade.webp",
+      "videoCount": 97,
+      "creatorCount": 90,
+      "viewCount": 156148,
+      "newestPublishedAt": "2026-11-22T15:00:18Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -416,19 +538,19 @@
         },
         {
           "date": "2026-10-29",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-10-30",
-          "count": 0
-        },
-        {
-          "date": "2026-10-31",
           "count": 1
         },
         {
+          "date": "2026-10-31",
+          "count": 4
+        },
+        {
           "date": "2026-11-01",
-          "count": 0
+          "count": 1
         },
         {
           "date": "2026-11-02",
@@ -448,15 +570,15 @@
         },
         {
           "date": "2026-11-06",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-11-07",
-          "count": 13
+          "count": 0
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 31
         },
         {
           "date": "2026-11-09",
@@ -476,15 +598,15 @@
         },
         {
           "date": "2026-11-13",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-11-14",
-          "count": 16
+          "count": 3
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 23
         },
         {
           "date": "2026-11-16",
@@ -500,7 +622,7 @@
         },
         {
           "date": "2026-11-19",
-          "count": 5
+          "count": 0
         },
         {
           "date": "2026-11-20",
@@ -508,152 +630,26 @@
         },
         {
           "date": "2026-11-21",
-          "count": 7
-        }
-      ],
-      "rank": 4,
-      "direction": "up",
-      "deltaRank": 2
-    },
-    {
-      "slug": "kg-7-vulcan",
-      "name": "KG-7 Vulcan",
-      "image": "/weapons/mw4/warzone/kg-7-vulcan.webp",
-      "videoCount": 49,
-      "creatorCount": 39,
-      "viewCount": 216345,
-      "newestPublishedAt": "2026-11-21T17:15:02Z",
-      "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
+          "count": 14
         },
         {
-          "date": "2026-10-26",
-          "count": 0
-        },
-        {
-          "date": "2026-10-27",
-          "count": 0
-        },
-        {
-          "date": "2026-10-28",
-          "count": 0
-        },
-        {
-          "date": "2026-10-29",
-          "count": 1
-        },
-        {
-          "date": "2026-10-30",
-          "count": 0
-        },
-        {
-          "date": "2026-10-31",
-          "count": 0
-        },
-        {
-          "date": "2026-11-01",
-          "count": 0
-        },
-        {
-          "date": "2026-11-02",
-          "count": 0
-        },
-        {
-          "date": "2026-11-03",
-          "count": 0
-        },
-        {
-          "date": "2026-11-04",
-          "count": 0
-        },
-        {
-          "date": "2026-11-05",
-          "count": 1
-        },
-        {
-          "date": "2026-11-06",
-          "count": 5
-        },
-        {
-          "date": "2026-11-07",
-          "count": 2
-        },
-        {
-          "date": "2026-11-08",
-          "count": 0
-        },
-        {
-          "date": "2026-11-09",
-          "count": 0
-        },
-        {
-          "date": "2026-11-10",
-          "count": 0
-        },
-        {
-          "date": "2026-11-11",
-          "count": 0
-        },
-        {
-          "date": "2026-11-12",
-          "count": 3
-        },
-        {
-          "date": "2026-11-13",
-          "count": 9
-        },
-        {
-          "date": "2026-11-14",
-          "count": 9
-        },
-        {
-          "date": "2026-11-15",
-          "count": 0
-        },
-        {
-          "date": "2026-11-16",
-          "count": 0
-        },
-        {
-          "date": "2026-11-17",
-          "count": 0
-        },
-        {
-          "date": "2026-11-18",
-          "count": 5
-        },
-        {
-          "date": "2026-11-19",
-          "count": 4
-        },
-        {
-          "date": "2026-11-20",
-          "count": 7
-        },
-        {
-          "date": "2026-11-21",
-          "count": 3
+          "date": "2026-11-22",
+          "count": 10
         }
       ],
       "rank": 5,
       "direction": "up",
-      "deltaRank": 2
+      "deltaRank": 1
     },
     {
-      "slug": "iso-nightshade",
-      "name": "ISO Nightshade",
-      "image": "/weapons/mw4/warzone/iso-nightshade.webp",
-      "videoCount": 81,
-      "creatorCount": 76,
-      "viewCount": 175711,
-      "newestPublishedAt": "2026-11-21T16:19:50Z",
+      "slug": "han-86",
+      "name": "Han 86",
+      "image": "/weapons/mw4/warzone/han-86.webp",
+      "videoCount": 55,
+      "creatorCount": 52,
+      "viewCount": 154415,
+      "newestPublishedAt": "2026-11-22T16:06:28Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -672,11 +668,11 @@
         },
         {
           "date": "2026-10-30",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-10-31",
-          "count": 4
+          "count": 2
         },
         {
           "date": "2026-11-01",
@@ -700,15 +696,15 @@
         },
         {
           "date": "2026-11-06",
-          "count": 4
+          "count": 0
         },
         {
           "date": "2026-11-07",
-          "count": 16
+          "count": 8
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 10
         },
         {
           "date": "2026-11-09",
@@ -728,15 +724,15 @@
         },
         {
           "date": "2026-11-13",
-          "count": 3
+          "count": 0
         },
         {
           "date": "2026-11-14",
-          "count": 19
+          "count": 12
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 9
         },
         {
           "date": "2026-11-16",
@@ -752,18 +748,148 @@
         },
         {
           "date": "2026-11-19",
-          "count": 14
+          "count": 2
         },
         {
           "date": "2026-11-20",
-          "count": 12
+          "count": 4
         },
         {
           "date": "2026-11-21",
-          "count": 8
+          "count": 6
+        },
+        {
+          "date": "2026-11-22",
+          "count": 2
         }
       ],
       "rank": 6,
+      "direction": "up",
+      "deltaRank": 3
+    },
+    {
+      "slug": "mosin-nagant",
+      "name": "Mosin-Nagant",
+      "image": "/weapons/mw4/warzone/mosin-nagant.webp",
+      "videoCount": 54,
+      "creatorCount": 52,
+      "viewCount": 147360,
+      "newestPublishedAt": "2026-11-22T16:06:28Z",
+      "dailyVideos": [
+        {
+          "date": "2026-10-26",
+          "count": 0
+        },
+        {
+          "date": "2026-10-27",
+          "count": 0
+        },
+        {
+          "date": "2026-10-28",
+          "count": 0
+        },
+        {
+          "date": "2026-10-29",
+          "count": 0
+        },
+        {
+          "date": "2026-10-30",
+          "count": 0
+        },
+        {
+          "date": "2026-10-31",
+          "count": 1
+        },
+        {
+          "date": "2026-11-01",
+          "count": 0
+        },
+        {
+          "date": "2026-11-02",
+          "count": 0
+        },
+        {
+          "date": "2026-11-03",
+          "count": 0
+        },
+        {
+          "date": "2026-11-04",
+          "count": 0
+        },
+        {
+          "date": "2026-11-05",
+          "count": 0
+        },
+        {
+          "date": "2026-11-06",
+          "count": 0
+        },
+        {
+          "date": "2026-11-07",
+          "count": 6
+        },
+        {
+          "date": "2026-11-08",
+          "count": 2
+        },
+        {
+          "date": "2026-11-09",
+          "count": 0
+        },
+        {
+          "date": "2026-11-10",
+          "count": 0
+        },
+        {
+          "date": "2026-11-11",
+          "count": 0
+        },
+        {
+          "date": "2026-11-12",
+          "count": 0
+        },
+        {
+          "date": "2026-11-13",
+          "count": 0
+        },
+        {
+          "date": "2026-11-14",
+          "count": 4
+        },
+        {
+          "date": "2026-11-15",
+          "count": 15
+        },
+        {
+          "date": "2026-11-16",
+          "count": 0
+        },
+        {
+          "date": "2026-11-17",
+          "count": 0
+        },
+        {
+          "date": "2026-11-18",
+          "count": 0
+        },
+        {
+          "date": "2026-11-19",
+          "count": 0
+        },
+        {
+          "date": "2026-11-20",
+          "count": 5
+        },
+        {
+          "date": "2026-11-21",
+          "count": 11
+        },
+        {
+          "date": "2026-11-22",
+          "count": 10
+        }
+      ],
+      "rank": 7,
       "direction": "down",
       "deltaRank": -3
     },
@@ -771,15 +897,11 @@
       "slug": "csg-35",
       "name": "CSG-35",
       "image": "/weapons/mw4/warzone/csg-35.webp",
-      "videoCount": 38,
+      "videoCount": 39,
       "creatorCount": 35,
-      "viewCount": 117100,
-      "newestPublishedAt": "2026-11-21T17:05:10Z",
+      "viewCount": 138046,
+      "newestPublishedAt": "2026-11-21T20:08:35Z",
       "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
         {
           "date": "2026-10-26",
           "count": 0
@@ -826,7 +948,7 @@
         },
         {
           "date": "2026-11-06",
-          "count": 2
+          "count": 0
         },
         {
           "date": "2026-11-07",
@@ -834,7 +956,7 @@
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2026-11-09",
@@ -846,11 +968,11 @@
         },
         {
           "date": "2026-11-11",
-          "count": 3
+          "count": 0
         },
         {
           "date": "2026-11-12",
-          "count": 3
+          "count": 2
         },
         {
           "date": "2026-11-13",
@@ -862,7 +984,7 @@
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 5
         },
         {
           "date": "2026-11-16",
@@ -870,7 +992,7 @@
         },
         {
           "date": "2026-11-17",
-          "count": 4
+          "count": 2
         },
         {
           "date": "2026-11-18",
@@ -886,29 +1008,155 @@
         },
         {
           "date": "2026-11-21",
-          "count": 2
+          "count": 4
+        },
+        {
+          "date": "2026-11-22",
+          "count": 0
         }
       ],
-      "rank": 7,
+      "rank": 8,
+      "direction": "down",
+      "deltaRank": -1
+    },
+    {
+      "slug": "axion",
+      "name": "Axion",
+      "image": "/weapons/mw4/warzone/axion.webp",
+      "videoCount": 49,
+      "creatorCount": 42,
+      "viewCount": 111164,
+      "newestPublishedAt": "2026-11-21T23:45:26Z",
+      "dailyVideos": [
+        {
+          "date": "2026-10-26",
+          "count": 0
+        },
+        {
+          "date": "2026-10-27",
+          "count": 0
+        },
+        {
+          "date": "2026-10-28",
+          "count": 0
+        },
+        {
+          "date": "2026-10-29",
+          "count": 2
+        },
+        {
+          "date": "2026-10-30",
+          "count": 2
+        },
+        {
+          "date": "2026-10-31",
+          "count": 0
+        },
+        {
+          "date": "2026-11-01",
+          "count": 2
+        },
+        {
+          "date": "2026-11-02",
+          "count": 0
+        },
+        {
+          "date": "2026-11-03",
+          "count": 0
+        },
+        {
+          "date": "2026-11-04",
+          "count": 0
+        },
+        {
+          "date": "2026-11-05",
+          "count": 0
+        },
+        {
+          "date": "2026-11-06",
+          "count": 0
+        },
+        {
+          "date": "2026-11-07",
+          "count": 3
+        },
+        {
+          "date": "2026-11-08",
+          "count": 2
+        },
+        {
+          "date": "2026-11-09",
+          "count": 0
+        },
+        {
+          "date": "2026-11-10",
+          "count": 0
+        },
+        {
+          "date": "2026-11-11",
+          "count": 2
+        },
+        {
+          "date": "2026-11-12",
+          "count": 2
+        },
+        {
+          "date": "2026-11-13",
+          "count": 1
+        },
+        {
+          "date": "2026-11-14",
+          "count": 1
+        },
+        {
+          "date": "2026-11-15",
+          "count": 8
+        },
+        {
+          "date": "2026-11-16",
+          "count": 0
+        },
+        {
+          "date": "2026-11-17",
+          "count": 2
+        },
+        {
+          "date": "2026-11-18",
+          "count": 7
+        },
+        {
+          "date": "2026-11-19",
+          "count": 4
+        },
+        {
+          "date": "2026-11-20",
+          "count": 3
+        },
+        {
+          "date": "2026-11-21",
+          "count": 8
+        },
+        {
+          "date": "2026-11-22",
+          "count": 0
+        }
+      ],
+      "rank": 9,
       "direction": "up",
-      "deltaRank": 2
+      "deltaRank": 1
     },
     {
       "slug": "x-58-nyx",
       "name": "X-58 Nyx",
       "image": "/weapons/mw4/warzone/x-58-nyx.webp",
-      "videoCount": 47,
-      "creatorCount": 42,
-      "viewCount": 94631,
-      "newestPublishedAt": "2026-11-21T07:53:12Z",
+      "videoCount": 51,
+      "creatorCount": 45,
+      "viewCount": 108468,
+      "newestPublishedAt": "2026-11-22T17:39:20Z",
       "dailyVideos": [
         {
-          "date": "2026-10-25",
-          "count": 0
-        },
-        {
           "date": "2026-10-26",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2026-10-27",
@@ -960,7 +1208,7 @@
         },
         {
           "date": "2026-11-08",
-          "count": 0
+          "count": 3
         },
         {
           "date": "2026-11-09",
@@ -968,7 +1216,7 @@
         },
         {
           "date": "2026-11-10",
-          "count": 2
+          "count": 0
         },
         {
           "date": "2026-11-11",
@@ -988,7 +1236,7 @@
         },
         {
           "date": "2026-11-15",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2026-11-16",
@@ -1012,288 +1260,19 @@
         },
         {
           "date": "2026-11-21",
+          "count": 2
+        },
+        {
+          "date": "2026-11-22",
           "count": 1
-        }
-      ],
-      "rank": 8,
-      "direction": "stable",
-      "deltaRank": 0
-    },
-    {
-      "slug": "han-86",
-      "name": "Han 86",
-      "image": "/weapons/mw4/warzone/han-86.webp",
-      "videoCount": 62,
-      "creatorCount": 58,
-      "viewCount": 73715,
-      "newestPublishedAt": "2026-11-21T14:00:31Z",
-      "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
-        {
-          "date": "2026-10-26",
-          "count": 0
-        },
-        {
-          "date": "2026-10-27",
-          "count": 0
-        },
-        {
-          "date": "2026-10-28",
-          "count": 0
-        },
-        {
-          "date": "2026-10-29",
-          "count": 0
-        },
-        {
-          "date": "2026-10-30",
-          "count": 1
-        },
-        {
-          "date": "2026-10-31",
-          "count": 2
-        },
-        {
-          "date": "2026-11-01",
-          "count": 0
-        },
-        {
-          "date": "2026-11-02",
-          "count": 0
-        },
-        {
-          "date": "2026-11-03",
-          "count": 0
-        },
-        {
-          "date": "2026-11-04",
-          "count": 0
-        },
-        {
-          "date": "2026-11-05",
-          "count": 0
-        },
-        {
-          "date": "2026-11-06",
-          "count": 5
-        },
-        {
-          "date": "2026-11-07",
-          "count": 12
-        },
-        {
-          "date": "2026-11-08",
-          "count": 0
-        },
-        {
-          "date": "2026-11-09",
-          "count": 0
-        },
-        {
-          "date": "2026-11-10",
-          "count": 0
-        },
-        {
-          "date": "2026-11-11",
-          "count": 0
-        },
-        {
-          "date": "2026-11-12",
-          "count": 0
-        },
-        {
-          "date": "2026-11-13",
-          "count": 7
-        },
-        {
-          "date": "2026-11-14",
-          "count": 18
-        },
-        {
-          "date": "2026-11-15",
-          "count": 0
-        },
-        {
-          "date": "2026-11-16",
-          "count": 0
-        },
-        {
-          "date": "2026-11-17",
-          "count": 0
-        },
-        {
-          "date": "2026-11-18",
-          "count": 5
-        },
-        {
-          "date": "2026-11-19",
-          "count": 2
-        },
-        {
-          "date": "2026-11-20",
-          "count": 5
-        },
-        {
-          "date": "2026-11-21",
-          "count": 5
-        }
-      ],
-      "rank": 9,
-      "direction": "down",
-      "deltaRank": -4
-    },
-    {
-      "slug": "axion",
-      "name": "Axion",
-      "image": "/weapons/mw4/warzone/axion.webp",
-      "videoCount": 43,
-      "creatorCount": 38,
-      "viewCount": 70127,
-      "newestPublishedAt": "2026-11-21T15:56:51Z",
-      "dailyVideos": [
-        {
-          "date": "2026-10-25",
-          "count": 0
-        },
-        {
-          "date": "2026-10-26",
-          "count": 0
-        },
-        {
-          "date": "2026-10-27",
-          "count": 1
-        },
-        {
-          "date": "2026-10-28",
-          "count": 0
-        },
-        {
-          "date": "2026-10-29",
-          "count": 2
-        },
-        {
-          "date": "2026-10-30",
-          "count": 2
-        },
-        {
-          "date": "2026-10-31",
-          "count": 0
-        },
-        {
-          "date": "2026-11-01",
-          "count": 0
-        },
-        {
-          "date": "2026-11-02",
-          "count": 0
-        },
-        {
-          "date": "2026-11-03",
-          "count": 0
-        },
-        {
-          "date": "2026-11-04",
-          "count": 0
-        },
-        {
-          "date": "2026-11-05",
-          "count": 0
-        },
-        {
-          "date": "2026-11-06",
-          "count": 0
-        },
-        {
-          "date": "2026-11-07",
-          "count": 3
-        },
-        {
-          "date": "2026-11-08",
-          "count": 0
-        },
-        {
-          "date": "2026-11-09",
-          "count": 1
-        },
-        {
-          "date": "2026-11-10",
-          "count": 2
-        },
-        {
-          "date": "2026-11-11",
-          "count": 2
-        },
-        {
-          "date": "2026-11-12",
-          "count": 2
-        },
-        {
-          "date": "2026-11-13",
-          "count": 1
-        },
-        {
-          "date": "2026-11-14",
-          "count": 1
-        },
-        {
-          "date": "2026-11-15",
-          "count": 2
-        },
-        {
-          "date": "2026-11-16",
-          "count": 1
-        },
-        {
-          "date": "2026-11-17",
-          "count": 4
-        },
-        {
-          "date": "2026-11-18",
-          "count": 7
-        },
-        {
-          "date": "2026-11-19",
-          "count": 4
-        },
-        {
-          "date": "2026-11-20",
-          "count": 3
-        },
-        {
-          "date": "2026-11-21",
-          "count": 5
         }
       ],
       "rank": 10,
-      "direction": "stable",
-      "deltaRank": 0
+      "direction": "down",
+      "deltaRank": -2
     }
   ],
   "history": [
-    {
-      "generatedAt": "2026-11-08T16:41:29Z",
-      "positions": {
-        "mpc-25": 1,
-        "vmp": 2,
-        "rev-46": 3,
-        "ds20-mirage": 4,
-        "voyak-kt-3": 5,
-        "vx-compact": 6,
-        "ryden-45k": 7,
-        "sturmwolf-45": 8,
-        "egrt-17": 9,
-        "m15-mod-0": 10,
-        "xm325": 11,
-        "echo-12": 12,
-        "mk-78": 13,
-        "sokol-545": 14,
-        "m10-breacher": 15,
-        "sg-12": 16
-      }
-    },
     {
       "generatedAt": "2026-11-09T20:46:13Z",
       "positions": {
@@ -1499,6 +1478,21 @@
         "x-58-nyx": 8,
         "han-86": 9,
         "axion": 10
+      }
+    },
+    {
+      "generatedAt": "2026-11-22T17:51:03Z",
+      "positions": {
+        "m4": 1,
+        "cronen-osprey": 2,
+        "vel-46": 3,
+        "kg-7-vulcan": 4,
+        "iso-nightshade": 5,
+        "han-86": 6,
+        "mosin-nagant": 7,
+        "csg-35": 8,
+        "axion": 9,
+        "x-58-nyx": 10
       }
     }
   ]
