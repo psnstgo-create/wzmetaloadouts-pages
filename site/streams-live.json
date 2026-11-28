@@ -2,114 +2,105 @@
   "schemaVersion": 1,
   "status": "ok",
   "language": "es",
-  "generado": "2026-11-28T04:19:20Z",
+  "generado": "2026-11-28T13:19:42Z",
   "streams": [
     {
-      "login": "zdark",
-      "name": "zDark",
-      "title": "🌎$1500 SWITCH ! | @zDark",
-      "viewers": 138,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zdark-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5636b07d-4c06-4fb7-85c1-492edc011d07-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "lupitatourneys",
-      "name": "LupitaTourneys",
-      "title": "120 GTD TORNEO -10X-12   - MW4  X MGG MUDDY GAMING   --- !Amazon !pp",
-      "viewers": 70,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lupitatourneys-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5b4c6fe3-9d47-49c2-bd0c-593d34173d0a-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "pandatvmx",
-      "name": "PandaTvMx",
-      "title": "TORNEO DE 2V2 X $$$ [ESP/ENG] | 2k STREAM",
-      "viewers": 62,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandatvmx-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11f92752-8c57-41d8-a1ae-cab76a43a8c6-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "javiix__",
-      "name": "Javiix__",
-      "title": "challs/tournaments !mando !sens",
-      "viewers": 54,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_javiix__-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/93cd243f-0eba-4e63-9c8a-f6fc9cef074a-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "eze_9219",
-      "name": "Eze_9219",
-      "title": "-- Apaguen la estufa lpm... y se viene peor 🥲  -- | Stream 184/296 | -- !s TTS --#ApexPartner ✅",
-      "viewers": 22,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eze_9219-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7fc3f33d-b086-468c-a195-206867774aec-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "spooniepaulie",
-      "name": "SpooniePaulie",
-      "title": "ABRIENDO SOBRES POKEMÓN Y WARZONE?  | 📌 !ID !REDES !DS !WISHLIST 🎁",
-      "viewers": 21,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spooniepaulie-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d9bb8313-816a-4e32-aacb-80f00559be80-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "heypriss",
-      "name": "HeyPriss",
-      "title": "⭐ Qué título le pondrías al directo? / !redes @heypriss",
-      "viewers": 20,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_heypriss-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fbcd4849-ce2b-41d5-bee9-9390e9f62987-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "superxorlando",
-      "name": "superxorlando",
-      "title": "2v2 wt Abbys ||| WARZONE |||",
-      "viewers": 11,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_superxorlando-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a10f98e0-e302-447c-b484-0fa7e2d4ec5b-profile_image-300x300.png",
-      "game": "Call of Duty: Warzone"
-    },
-    {
-      "login": "edijaeger",
-      "name": "EdiJaeger",
-      "title": "HOY SEGUIMOS CON GTA VI CAP 3 - ROCKET LEAGUE - WARZONE - TACONEROS FOREVER",
-      "viewers": 10,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_edijaeger-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0ddfe5d7-c61a-428e-a17c-5884a8120d6f-profile_image-300x300.png",
+      "login": "unpakete",
+      "name": "UnPaKeTe",
+      "title": "35% DESCUENTO en SUBS⭐️WARZONE en su PRIME⭐️ !configuracion !redes !mando !prime",
+      "viewers": 143,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unpakete-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8387fa50-1fbd-43fd-8fe1-19a352f8d903-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     },
     {
       "login": "soyhectoralexandria",
       "name": "soyhectoralexandria",
       "title": "🚨VIERNES DE FRIO SUPER CHILL EN WZ🚨 | *SUBS 270 / 300*| !PAYPAL !BANCO !PC",
-      "viewers": 10,
+      "viewers": 7,
       "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_soyhectoralexandria-440x248.jpg",
       "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11cbcfe4-ec6a-42a5-8d3b-e1fe4cc0dc5d-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "nicoliniuzu",
-      "name": "NicoliniUzu",
-      "title": "wz de chillaquil",
-      "viewers": 7,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nicoliniuzu-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/67f7a7da-1f46-4d2d-893b-9a6f5fb8655d-profile_image-300x300.png",
+      "login": "ogsektor",
+      "name": "ogsektor",
+      "title": "10x12 Lupita Switcharo w LisaEU 1,200POT",
+      "viewers": 6,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogsektor-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/556bcb46-3e94-4ab0-99f9-315471def59f-profile_image-300x300.png",
       "game": "Call of Duty: Warzone"
     },
     {
-      "login": "zroki__",
-      "name": "zroki__",
-      "title": "CRYSTALROKY",
-      "viewers": 5,
-      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zroki__-440x248.jpg",
-      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/64619cc7-bfd2-432f-a53a-a1fd43b275e9-profile_image-300x300.png",
+      "login": "didierovsky",
+      "name": "Didierovsky",
+      "title": "HOY QUIERO BEBEL, UN RATO DE WZ Y LUEGO ROBLOXITO",
+      "viewers": 3,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_didierovsky-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1e76362b-8c38-429b-a51b-7ef906fbd5ff-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "ben_martz",
+      "name": "ben_martz",
+      "title": "Stream de chill",
+      "viewers": 3,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ben_martz-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2ee3ccca-2f38-4a0e-96ac-646bd98c01b0-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "urifrazius",
+      "name": "urifrazius",
+      "title": "grind",
+      "viewers": 2,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_urifrazius-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/aae222f6-44a0-4447-8e97-cd3a0c30f56e-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "erdavidfalla",
+      "name": "erdavidfalla",
+      "title": "warzone",
+      "viewers": 1,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_erdavidfalla-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/715f4cd3-22f4-4866-a6d2-31947c07a8ec-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "luisigi23",
+      "name": "luisigi23",
+      "title": "Wz resurgimiento",
+      "viewers": 1,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luisigi23-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/1a1de409-c733-4d94-8757-3a4049d187b5-profile_image-300x300.jpeg",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "anubisl420",
+      "name": "anubisl420",
+      "title": "☠️ANUBIS GOD OF DEATH☠️🔴WARZONE GOD🔴ESPAÑOL🔴ENGLISH🔴HEBREW🔴",
+      "viewers": 1,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_anubisl420-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/83957cbc-eb33-46f3-8aed-3bdb2948349d-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "pepitasssss",
+      "name": "pepitasssss",
+      "title": "elite 3v3 1200$",
+      "viewers": 1,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pepitasssss-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0f065405-eea7-457e-9532-e300579c12e3-profile_image-300x300.png",
+      "game": "Call of Duty: Warzone"
+    },
+    {
+      "login": "dany_hass_cocar_",
+      "name": "dany_hass_cocar_",
+      "title": "Call of Duty Modern Warfare 4",
+      "viewers": 1,
+      "thumb": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dany_hass_cocar_-440x248.jpg",
+      "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/bae7d1e7-88da-48d2-b70e-750a043fefea-profile_image-300x300.jpeg",
       "game": "Call of Duty: Warzone"
     }
   ]
